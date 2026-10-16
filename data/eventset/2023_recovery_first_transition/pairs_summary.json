@@ -1,0 +1,85 @@
+{
+ "year": 2023,
+ "pairs": 4900,
+ "only_reason": null,
+ "exclude_reason": null,
+ "j30_definition": "intersection/union, empty union scores zero",
+ "unique_recoveries": 4873,
+ "unique_hijacks": 4900,
+ "bootstrap_components": 4871,
+ "ci_method": "1000 connected-event cluster bootstrap resamples, seed 0; link-weighted mean",
+ "t90_definition": "continuous first-arrival 90% quantile; undefined for empty final set",
+ "timing_comparable_pairs": 4900,
+ "hijack_t90_observed": 4900,
+ "recovery_t90_observed": 4900,
+ "zero_hijack_reach": 0,
+ "zero_recovery_reach": 0,
+ "gap_s_p50": 31.0,
+ "hijack": {
+  "j30_mean": 0.5787,
+  "t90_s_p50": 120.8099215,
+  "t90_gt_5min_frac": 0.359,
+  "reach_p50": 78.0
+ },
+ "recovery": {
+  "j30_mean": 0.5468,
+  "t90_s_p50": 95.149654,
+  "t90_gt_5min_frac": 0.3518,
+  "reach_p50": 69.0
+ },
+ "paired_j30_diff_recovery_minus_hijack": {
+  "mean": -0.0319,
+  "ci95": [
+   -0.0423,
+   -0.021
+  ]
+ },
+ "recovery_slower_t90_frac": 0.5727,
+ "recovery_lower_j30_frac": 0.5739,
+ "recovery_reach_over_hijack_reach_p50": 1.081,
+ "by_gap<1min": {
+  "pairs": 2877,
+  "hijack_j30": 0.592,
+  "recovery_j30": 0.4755,
+  "hijack_t90_p50": 90.0,
+  "recovery_t90_p50": 122.132913
+ },
+ "by_gap 1-15min": {
+  "pairs": 731,
+  "hijack_j30": 0.5179,
+  "recovery_j30": 0.555,
+  "hijack_t90_p50": 233.0,
+  "recovery_t90_p50": 163.27517
+ },
+ "by_gap>15min": {
+  "pairs": 1292,
+  "hijack_j30": 0.5834,
+  "recovery_j30": 0.7009,
+  "hijack_t90_p50": 191.2086895,
+  "recovery_t90_p50": 51.0
+ },
+ "chronologically_unmatched_links": [
+  {
+   "event_id": "20230629T234436_198.12.38.0-24_27988",
+   "hijack_id": "20230629T234414_198.12.38.0-24_23198",
+   "observed_gap_s": -0.516797
+  },
+  {
+   "event_id": "20230804T193307_198.12.38.0-24_27988",
+   "hijack_id": "20230804T193237_198.12.38.0-24_23198",
+   "observed_gap_s": -1.296614
+  },
+  {
+   "event_id": "20231230T153300_125.209.119.0-24_9260",
+   "hijack_id": "20231230T150309_125.209.119.0-24_3",
+   "observed_gap_s": -2.0
+  }
+ ],
+ "chronologically_unmatched_count": 3,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2023_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2023_recovery_first_transition/events.parquet"
+ }
+}

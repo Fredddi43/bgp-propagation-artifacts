@@ -7,6 +7,7 @@ sMAPE at 15/60/120 min, aggregated over events.
 from __future__ import annotations
 
 import json
+import datetime as dt
 from pathlib import Path
 
 import numpy as np
@@ -17,15 +18,44 @@ from .curve_baseline import chronos_forecast, naive_forecasts
 
 
 def _series(csv: Path, horizon_min: int = 120) -> np.ndarray:
-    df = pl.read_csv(csv).filter(pl.col("rel_s") >= 0)
-    N = np.zeros(horizon_min + 1)
-    for s, n in zip(df["rel_s"].to_list(), df["N"].to_list()):
-        m = int(s // 60)
-        if m <= horizon_min:
-            N[m] = max(N[m], n)
-    for i in range(1, len(N)):
-        N[i] = max(N[i], N[i - 1])
-    return N
+    """Sample a cumulative curve exactly at minute boundaries, without lookahead."""
+    df = pl.read_csv(csv).sort("rel_s")
+    grid = np.arange(horizon_min + 1) * 60
+    index = np.searchsorted(df["rel_s"].to_numpy(), grid, side="right") - 1
+    counts = np.zeros(horizon_min + 1, dtype=float)
+    if df.height:
+        counts[index >= 0] = df["N"].to_numpy()[index[index >= 0]]
+    return counts
+
+
+def event_series(directory: Path, onset: str | dt.datetime, curve: str = "asn", horizon_min: int = 120) -> np.ndarray | None:
+    """Onset-aligned count samples from timestamps, independent of legacy CSV clocks."""
+    t0 = dt.datetime.fromisoformat(onset) if isinstance(onset, str) else onset
+    if curve == "asn":
+        file = directory / "membership.parquet"
+        if not file.exists():
+            return None
+        firsts = pl.read_parquet(file, columns=["asn", "first_seen"]).group_by("asn").agg(first=pl.col("first_seen").min())
+    elif curve == "vp":
+        file = directory / "vp_first.parquet"
+        if file.exists():
+            firsts = pl.read_parquet(file)
+        elif (directory / "vp_changes.parquet").exists():
+            firsts = pl.read_parquet(directory / "vp_changes.parquet").group_by("collector", "peer_ip").agg(first=pl.col("change_ts").min())
+        elif (directory / "anomalous.parquet").exists():
+            firsts = pl.read_parquet(directory / "anomalous.parquet", columns=["collector", "peer_ip", "ts"]).group_by("collector", "peer_ip").agg(first=pl.col("ts").min())
+        else:
+            return None
+    else:
+        raise ValueError("curve must be asn or vp")
+    if not firsts.height:
+        return np.zeros(horizon_min + 1, dtype=float)
+    if firsts["first"].dtype.time_zone:
+        t0 = t0.replace(tzinfo=dt.UTC) if t0.tzinfo is None else t0
+    else:
+        t0 = t0.astimezone(dt.UTC).replace(tzinfo=None) if t0.tzinfo else t0
+    delays = firsts.select(((pl.col("first") - pl.lit(t0)).dt.total_microseconds() / 1e6).alias("seconds"))["seconds"].sort().to_numpy()
+    return np.searchsorted(delays, np.arange(horizon_min + 1) * 60, side="right").astype(float)
 
 
 def logistic_forecast(ctx: np.ndarray, horizons_min: list[int], delta_min: int) -> dict[int, float]:
@@ -64,11 +94,13 @@ def run(year: int = 2024, sample: int = 200, deltas=(1, 5, 15), use_chronos: boo
     horizons = {"T15m": 15, "T60m": 60, "T120m": 120}
     acc: dict[str, dict[str, list]] = {}
     n_used = 0
+    scored = []
+    errors = []
+    onsets = dict(test.select("event_id", "t0_obs").iter_rows())
     for eid in ids:
-        f = replay_root / eid / ("curve_asn.csv" if curve == "asn" else "curve_vp.csv")
-        if not f.exists():
+        N = event_series(replay_root / eid, onsets[eid], curve)
+        if N is None:
             continue
-        N = _series(f)
         n_used += 1
         for d in deltas:
             ctx, steps = N[: d + 1], 120 - d
@@ -84,6 +116,7 @@ def run(year: int = 2024, sample: int = 200, deltas=(1, 5, 15), use_chronos: boo
                     preds["chronos2_inc"] = ctx[-1] + np.cumsum(np.clip(ci["p50"], 0, None))
                 except Exception as e:  # noqa: BLE001
                     preds["chronos2_error"] = str(e)[:80]
+                    errors.append({"event_id": eid, "delta_min": d, "error": str(e)})
             for m, pred in preds.items():
                 if isinstance(pred, str):
                     continue
@@ -91,10 +124,16 @@ def run(year: int = 2024, sample: int = 200, deltas=(1, 5, 15), use_chronos: boo
                     if hm <= d:
                         continue
                     y, yhat = N[hm], pred[hm - d - 1]
-                    acc.setdefault(f"d{d}m", {}).setdefault(f"{m}:{hk}", []).append(2 * abs(y - yhat) / max(abs(y) + abs(yhat), 1e-9))
-    res = {"events_used": n_used, "growing_test_events": test.height}
+                    error = 2 * abs(y - yhat) / max(abs(y) + abs(yhat), 1e-9)
+                    acc.setdefault(f"d{d}m", {}).setdefault(f"{m}:{hk}", []).append(error)
+                    scored.append({"event_id": eid, "model": m, "delta_min": d, "horizon_min": hm, "truth": float(y), "observed_delta_count": float(N[d]), "prediction": float(yhat), "smape": float(error)})
+    res = {"events_used": n_used, "growing_test_events": test.height, "sampled_event_ids": ids,
+           "measurement_definition": "exact_minute_counts_from_membership_at_t0_obs_v1"}
     for dk, mm in acc.items():
         res[dk] = {k: round(float(np.mean(v)), 3) for k, v in sorted(mm.items())}
+    destination = config.DATA_ROOT / "eventset" / (f"{year}_{set_tag}" if set_tag else str(year))
+    pl.DataFrame(scored).write_parquet(destination / f"curve_baselines{suffix}_{curve}_predictions.parquet")
+    res["errors"] = errors
     res["set_tag"] = set_tag; res["min_asns"] = min_asns; res["curve"] = curve
     (config.DATA_ROOT / "eventset" / (f"{year}_{set_tag}" if set_tag else str(year)) / f"curve_baselines{suffix}_{curve}.json").write_text(json.dumps(res, indent=1))
     return res

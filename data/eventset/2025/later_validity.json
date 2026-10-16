@@ -6,29 +6,29 @@
  ],
  "by_population": {
   "catalogue": {
-   "n": 8774,
+   "n": 8818,
    "valid_7d": 0.094,
    "unknown_7d": 0.021,
    "no_data_7d": 0.0,
-   "valid_30d": 0.097,
-   "unknown_30d": 0.024,
+   "valid_30d": 0.098,
+   "unknown_30d": 0.023,
    "no_data_30d": 0.0,
    "valid_any": 0.105
   },
   "label-free stratum": {
-   "n": 2646,
-   "valid_7d": 0.28,
+   "n": 2630,
+   "valid_7d": 0.282,
    "unknown_7d": 0.05,
    "no_data_7d": 0.0,
-   "valid_30d": 0.238,
-   "unknown_30d": 0.06,
+   "valid_30d": 0.239,
+   "unknown_30d": 0.057,
    "no_data_30d": 0.0,
-   "valid_any": 0.291
+   "valid_any": 0.293
   },
   "stratified": {
    "n": 80,
    "valid_7d": 0.163,
-   "unknown_7d": 0.037,
+   "unknown_7d": 0.025,
    "no_data_7d": 0.0,
    "valid_30d": 0.15,
    "unknown_30d": 0.037,

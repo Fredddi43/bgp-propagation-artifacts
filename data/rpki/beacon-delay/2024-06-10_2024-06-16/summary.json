@@ -1,0 +1,28 @@
+{
+  "measurement_definition": "first_received_announcement_grouped_by_decoded_origin_cycle_v3",
+  "eligibility": "unambiguous first-arrival origin and announcement delay in [0,3600] seconds; withdrawal summaries use the same cycles",
+  "cycles": 955722,
+  "eligible_cycles": 926199,
+  "excluded_cycles": 29523,
+  "exclusion_counts_overlap": true,
+  "excluded_late_announcement": 27226,
+  "excluded_negative_delay": 0,
+  "excluded_missing_origin": 2297,
+  "ambiguous_first_origin_cycles": 0,
+  "first_arrival_in_different_cycle": 30,
+  "statistics": {
+    "announcement": {
+      "n": 926199,
+      "p50_s": 2.0,
+      "p90_s": 26.0,
+      "p99_s": 604.0
+    },
+    "withdrawal": {
+      "n": 883027,
+      "p50_s": 97.0,
+      "p90_s": 270.0,
+      "p99_s": 809.0
+    }
+  },
+  "row_grain": "prefix, decoded-origin cycle (arrival cycle if unknown), collector, peer address, peer ASN, origin-known stratum"
+}

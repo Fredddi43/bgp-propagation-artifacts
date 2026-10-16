@@ -1,0 +1,2093 @@
+{
+  "definition": "monthly median of collector-day session-count ratios; require observed numerator and positive valid-twin denominator",
+  "inputs_sha256": {
+    "rpki/beacon_reach.parquet": "62aa71e9fe189875e6a18513c5f164775c2f54874b8f4a2272876ad9dff0f14b",
+    "rpki/beacon_reach_scan/rrc00_2026.parquet": "5566d4031cd5a39ff783f2931622f222ba4cc08070cb4453cff4e2218edfe3bd",
+    "rpki/beacon_reach_scan/rrc12_2023.parquet": "67d99e85c96c46de5aec13c93d0600817669a8a840d0c27e1fbc6c22d861a074",
+    "rpki/beacon_reach_scan/route-views.linx_2022.parquet": "da5790c314c26772b023252f17224c69460016e5bb00a5574f29ed15b8bae4d1",
+    "rpki/beacon_reach_scan/rrc01_2025.parquet": "b415bfd9cd458bfb8cdf0a7909f0276a75eea70d09bb9df41c153b082c5bb043",
+    "rpki/beacon_reach_scan/route-views.linx_2026.parquet": "92968ef4672725d48d58b02dd2088b66c8bf75f050ca26716a315dfe315e73e8",
+    "rpki/beacon_reach_scan/route-views2_2022.parquet": "d4dfff750e15299e02e71c78f903e98d2e1c729ff0f1f7068591e95c8457c5f0",
+    "rpki/beacon_reach_scan/rrc15_2025.parquet": "3834649d3ff9453fbd913e827448784bf1cb1bd8c5dbf982b95911469a83812a",
+    "rpki/beacon_reach_scan/rrc25_2023.parquet": "6205d69b911be452c2ff92a4f7d4526003b55c02ed74abd612d5462bc89041a9",
+    "rpki/beacon_reach_scan/rrc03_2022.parquet": "7ca390e0873ffd5caf004ed9200001c63d3837b171f5dc6b5314104a587b0af9",
+    "rpki/beacon_reach_scan/rrc00_2025.parquet": "b398c20e0b40656e96ba87efc4ba61d5a254660bc4160735650ad84b49690185",
+    "rpki/beacon_reach_scan/rrc15_2022.parquet": "88c15693fe61f7ffe438b5d8d136a1797157b1cf28094c9b9fe9fab64b50907e",
+    "rpki/beacon_reach_scan/rrc12_2026.parquet": "e7784906df8c361aa1ca99b6a92b1bf377bc3b10917b218afad902823c2ee299",
+    "rpki/beacon_reach_scan/route-views.linx_2023.parquet": "f4a9c5cc1cfdbed47ca948275258136076cc5eb8d13d8cc4ba329b6b5ccec65f",
+    "rpki/beacon_reach_scan/rrc01_2026.parquet": "83e5abee8aaaa10a7a047096463ae7619e0224185126c329d7512181e42f08cd",
+    "rpki/beacon_reach_scan/rrc12_2022.parquet": "5159dcce181a583ff716be8ca8c42ab734d05b2d8025c0646fa70497c7f00ea6",
+    "rpki/beacon_reach_scan/route-views2_2023.parquet": "3a0a3bc003ebcc800c6ae938492cf3d9cb756964e0f57ba8846178537fb030b2",
+    "rpki/beacon_reach_scan/rrc00_2023.parquet": "f276c837324a77c276acbe83ef6eac775a7bce7ea629db98044615ac7ca36e4f",
+    "rpki/beacon_reach_scan/rrc15_2026.parquet": "350caf70d0931006e9d4315920a5fc50d0797efa8b4ef56b2c3f923bdcadd44d",
+    "rpki/beacon_reach_scan/route-views2_2026.parquet": "090332649cca6cc0f2774fa0eeb06619ea4b806cc71d279394bb3961612b340f",
+    "rpki/beacon_reach_scan/rrc12_2025.parquet": "6676024a81576f294b21e79fe0fbd4bfcf49d82ffb39d9aca96dd902166807fb",
+    "rpki/beacon_reach_scan/rrc20_2022.parquet": "b7ee6662044eaf0d743678bacef2ce920d0ae476f12ea8451f0ff7c7b7afc4a1",
+    "rpki/beacon_reach_scan/rrc00_2022.parquet": "3a242f9dfb24d09fbac0a6b4e050dae20b915db21418b47f2d8ef0114fb946a5",
+    "rpki/beacon_reach_scan/rrc03_2025.parquet": "72bd6f2b3f4c850261a3edfb12ebe556ce0e7549314142f6d30c5dc1f405d537",
+    "rpki/beacon_reach_scan/rrc20_2025.parquet": "6cbfc35c58d136a95b61adfe20531abaf59c0f90db4e895a7a265eeaa22ae3a7",
+    "rpki/beacon_reach_scan/rrc20_2023.parquet": "1cba06ddd179a228cfd8c241cc414a4e4b9f92deeba6d63a1f248a694942c0f3",
+    "rpki/beacon_reach_scan/route-views3_2022.parquet": "7171fd68be974300838463487e0f47d46aafa39f1953de1e101d3f6a9b843178",
+    "rpki/beacon_reach_scan/rrc25_2026.parquet": "0386f9409a43671a8ad5a61cbc95c02578c30d416d968890b732a727d9a33c7c",
+    "rpki/beacon_reach_scan/rrc03_2026.parquet": "d20cab2619a5fbada55a43ff1ddd29d8a46a8676e6162eedb0e7431ef0f409ce",
+    "rpki/beacon_reach_scan/rrc03_2023.parquet": "e0f0f5ff8651d2adfcd481f35f43bc881088394de3e019d5a5a70a204d729288",
+    "rpki/beacon_reach_scan/route-views3_2025.parquet": "4482c06fc6d55bc2542bc980d07f10b75b3316a7fe5c6eb8e39c01983db6258b",
+    "rpki/beacon_reach_scan/rrc01_2022.parquet": "098862e184233a65146825492a3dced28757508c3d46215675b6b5adabb7e11a",
+    "rpki/beacon_reach_scan/rrc20_2026.parquet": "2d11139ae122fd87a04dbf49038ade7805a133fbea547ee4e0468745953224e5",
+    "rpki/beacon_reach_scan/route-views2_2025.parquet": "b270af675e7828d9204fe800f9bfbe1ac9e10b1dae227ac6a0c730506a6d6735",
+    "rpki/beacon_reach_scan/rrc25_2022.parquet": "0230a4058623ebb271322f8248291b35ffac811bcffc8240dd10299b6f687d91",
+    "rpki/beacon_reach_scan/route-views3_2026.parquet": "934c59a30cd8ac0cbc174be3d77eb6dab874fb0a5f82b6aa397426c962c6fc2a",
+    "rpki/beacon_reach_scan/rrc25_2025.parquet": "c9a22de84f70213b4e81456e3b36d942719781ca8104b192f9e95f5cdfa7d2cb",
+    "rpki/beacon_reach_scan/rrc15_2023.parquet": "20adf20e30ebec696116547a6e99c6fe12c0bd4c3785f59a74be2487e846d7e1",
+    "rpki/beacon_reach_scan/route-views3_2023.parquet": "4f84081b1a27722f385d15d9f8cf22e5d110b45d9f435d0349697c3ddbf11e12",
+    "rpki/beacon_reach_scan/route-views.linx_2025.parquet": "d41c2b30ed5c9f711c7de6e6bdc24fac7616901fe16576747e6e57003acdf7ba",
+    "rpki/beacon_reach_scan/rrc01_2023.parquet": "34ecff9c6e1ae4ba75d6660ac48196fdcc30111f7191692598bd36a347a5eeee"
+  },
+  "sampling": {
+    "rule": "ten declared collectors, Monday snapshots only",
+    "collector_days_before_schedule_filter": 2434,
+    "off_schedule_collector_days": 23,
+    "collector_days": 2411
+  },
+  "monthly": [
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-01",
+      "ratio_to_valid_p50": 0.5527777777777778,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-02",
+      "ratio_to_valid_p50": 0.5512820512820513,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-03",
+      "ratio_to_valid_p50": 0.5616666666666668,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-04",
+      "ratio_to_valid_p50": 0.532563025210084,
+      "collector_snapshots": 38,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-05",
+      "ratio_to_valid_p50": 0.5283018867924528,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-06",
+      "ratio_to_valid_p50": 0.5049019607843137,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-07",
+      "ratio_to_valid_p50": 0.49324324324324326,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-08",
+      "ratio_to_valid_p50": 0.4857142857142857,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-09",
+      "ratio_to_valid_p50": 0.5067567567567568,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-10",
+      "ratio_to_valid_p50": 0.5,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-11",
+      "ratio_to_valid_p50": 0.4646825396825397,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2022-12",
+      "ratio_to_valid_p50": 0.43243243243243246,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-01",
+      "ratio_to_valid_p50": 0.4722222222222222,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-02",
+      "ratio_to_valid_p50": 0.4776785714285714,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-03",
+      "ratio_to_valid_p50": 0.47229326513213976,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-04",
+      "ratio_to_valid_p50": 0.47951505016722407,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-05",
+      "ratio_to_valid_p50": 0.43478260869565216,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-06",
+      "ratio_to_valid_p50": 0.4444444444444444,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-07",
+      "ratio_to_valid_p50": 0.4856676342525399,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-08",
+      "ratio_to_valid_p50": 0.4760348583877996,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-09",
+      "ratio_to_valid_p50": 0.47623367198838895,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-10",
+      "ratio_to_valid_p50": 0.4444444444444444,
+      "collector_snapshots": 48,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-11",
+      "ratio_to_valid_p50": 0.4381818181818182,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2023-12",
+      "ratio_to_valid_p50": 0.4376940133037694,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-01",
+      "ratio_to_valid_p50": 0.425,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-02",
+      "ratio_to_valid_p50": 0.375,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-03",
+      "ratio_to_valid_p50": 0.34205665024630544,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-04",
+      "ratio_to_valid_p50": 0.3090185676392573,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-05",
+      "ratio_to_valid_p50": 0.20689655172413793,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-06",
+      "ratio_to_valid_p50": 0.23076923076923078,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-07",
+      "ratio_to_valid_p50": 0.21748336358136722,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-08",
+      "ratio_to_valid_p50": 0.2576595744680851,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-09",
+      "ratio_to_valid_p50": 0.2153846153846154,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-10",
+      "ratio_to_valid_p50": 0.19897557131599686,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-11",
+      "ratio_to_valid_p50": 0.18518518518518517,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2024-12",
+      "ratio_to_valid_p50": 0.19230769230769232,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-01",
+      "ratio_to_valid_p50": 0.26556991774383076,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-02",
+      "ratio_to_valid_p50": 0.2150786308973173,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-03",
+      "ratio_to_valid_p50": 0.2128623188405797,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-04",
+      "ratio_to_valid_p50": 0.20942982456140352,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-05",
+      "ratio_to_valid_p50": 0.21052631578947367,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-06",
+      "ratio_to_valid_p50": 0.21052631578947367,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-07",
+      "ratio_to_valid_p50": 0.21052631578947367,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-08",
+      "ratio_to_valid_p50": 0.21739130434782608,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-09",
+      "ratio_to_valid_p50": 0.2150786308973173,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-10",
+      "ratio_to_valid_p50": 0.204209065679926,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-11",
+      "ratio_to_valid_p50": 0.2391304347826087,
+      "collector_snapshots": 39,
+      "excluded_snapshots": 1
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2025-12",
+      "ratio_to_valid_p50": 0.19375,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-01",
+      "ratio_to_valid_p50": 0.2048611111111111,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-02",
+      "ratio_to_valid_p50": 0.22077922077922077,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-03",
+      "ratio_to_valid_p50": 0.223421926910299,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-04",
+      "ratio_to_valid_p50": 0.21904761904761905,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-05",
+      "ratio_to_valid_p50": 0.20714285714285713,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-06",
+      "ratio_to_valid_p50": 0.2350498338870432,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-07",
+      "ratio_to_valid_p50": 0.2403846153846154,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-08",
+      "ratio_to_valid_p50": 0.2558139534883721,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 invalid",
+      "month": "2026-09",
+      "ratio_to_valid_p50": 0.19230769230769232,
+      "collector_snapshots": 18,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-01",
+      "ratio_to_valid_p50": 0.6428571428571429,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-02",
+      "ratio_to_valid_p50": 0.6216216216216216,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-03",
+      "ratio_to_valid_p50": 0.6039142590866728,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-04",
+      "ratio_to_valid_p50": 0.5862068965517241,
+      "collector_snapshots": 34,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-05",
+      "ratio_to_valid_p50": 0.5788177339901477,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-06",
+      "ratio_to_valid_p50": 0.5862068965517241,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-07",
+      "ratio_to_valid_p50": 0.5555102040816327,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-08",
+      "ratio_to_valid_p50": 0.555,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-09",
+      "ratio_to_valid_p50": 0.5171428571428571,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-10",
+      "ratio_to_valid_p50": 0.5346320346320346,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-11",
+      "ratio_to_valid_p50": 0.4444444444444444,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2022-12",
+      "ratio_to_valid_p50": 0.4117647058823529,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-01",
+      "ratio_to_valid_p50": 0.42857142857142855,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-02",
+      "ratio_to_valid_p50": 0.425531914893617,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-03",
+      "ratio_to_valid_p50": 0.4099639855942377,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-04",
+      "ratio_to_valid_p50": 0.4202037351443124,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-05",
+      "ratio_to_valid_p50": 0.4,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-06",
+      "ratio_to_valid_p50": 0.4693366708385482,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-07",
+      "ratio_to_valid_p50": 0.4642857142857143,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-08",
+      "ratio_to_valid_p50": 0.4553429027113237,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-09",
+      "ratio_to_valid_p50": 0.4418604651162791,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-10",
+      "ratio_to_valid_p50": 0.45454545454545453,
+      "collector_snapshots": 43,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-11",
+      "ratio_to_valid_p50": 0.40681818181818186,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2023-12",
+      "ratio_to_valid_p50": 0.42105263157894735,
+      "collector_snapshots": 32,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-01",
+      "ratio_to_valid_p50": 0.3902439024390244,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-02",
+      "ratio_to_valid_p50": 0.38278388278388276,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-03",
+      "ratio_to_valid_p50": 0.3902439024390244,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-04",
+      "ratio_to_valid_p50": 0.2857142857142857,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-05",
+      "ratio_to_valid_p50": 0.175,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-06",
+      "ratio_to_valid_p50": 0.20869565217391306,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-07",
+      "ratio_to_valid_p50": 0.1935483870967742,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-08",
+      "ratio_to_valid_p50": 0.34782608695652173,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-09",
+      "ratio_to_valid_p50": 0.358974358974359,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-10",
+      "ratio_to_valid_p50": 0.1794871794871795,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-11",
+      "ratio_to_valid_p50": 0.18184885290148448,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2024-12",
+      "ratio_to_valid_p50": 0.1794871794871795,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-01",
+      "ratio_to_valid_p50": 0.26556991774383076,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-02",
+      "ratio_to_valid_p50": 0.21825396825396826,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-03",
+      "ratio_to_valid_p50": 0.16666666666666666,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-04",
+      "ratio_to_valid_p50": 0.18019480519480519,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-05",
+      "ratio_to_valid_p50": 0.19090909090909092,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-06",
+      "ratio_to_valid_p50": 0.2,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-07",
+      "ratio_to_valid_p50": 0.23809523809523808,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-08",
+      "ratio_to_valid_p50": 0.16025641025641024,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-09",
+      "ratio_to_valid_p50": 0.16666666666666666,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-10",
+      "ratio_to_valid_p50": 0.15,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-11",
+      "ratio_to_valid_p50": 0.16666666666666666,
+      "collector_snapshots": 35,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2025-12",
+      "ratio_to_valid_p50": 0.10344827586206896,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-01",
+      "ratio_to_valid_p50": 0.12068965517241378,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-02",
+      "ratio_to_valid_p50": 0.1111111111111111,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-03",
+      "ratio_to_valid_p50": 0.1111111111111111,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-04",
+      "ratio_to_valid_p50": 0.1724137931034483,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-05",
+      "ratio_to_valid_p50": 0.125,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-06",
+      "ratio_to_valid_p50": 0.125,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-07",
+      "ratio_to_valid_p50": 0.14583333333333331,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 4
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-08",
+      "ratio_to_valid_p50": 0.25806451612903225,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 5
+    },
+    {
+      "beacon": "RIPE v6 invalid",
+      "month": "2026-09",
+      "ratio_to_valid_p50": 0.2096774193548387,
+      "collector_snapshots": 16,
+      "excluded_snapshots": 2
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-01",
+      "ratio_to_valid_p50": 0.5591954022988506,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-02",
+      "ratio_to_valid_p50": 0.5263157894736842,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-03",
+      "ratio_to_valid_p50": 0.55,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-04",
+      "ratio_to_valid_p50": 0.48647734956051386,
+      "collector_snapshots": 38,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-05",
+      "ratio_to_valid_p50": 0.4722222222222222,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-06",
+      "ratio_to_valid_p50": 0.4722222222222222,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-07",
+      "ratio_to_valid_p50": 0.47058823529411764,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-08",
+      "ratio_to_valid_p50": 0.4423076923076923,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-09",
+      "ratio_to_valid_p50": 0.42857142857142855,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-10",
+      "ratio_to_valid_p50": 0.43243243243243246,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-11",
+      "ratio_to_valid_p50": 0.42424242424242425,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2022-12",
+      "ratio_to_valid_p50": 0.4264069264069264,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-01",
+      "ratio_to_valid_p50": 0.4633064516129032,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-02",
+      "ratio_to_valid_p50": 0.4641025641025641,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-03",
+      "ratio_to_valid_p50": 0.46153846153846156,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-04",
+      "ratio_to_valid_p50": 0.43153846153846154,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-05",
+      "ratio_to_valid_p50": 0.4336477987421384,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-06",
+      "ratio_to_valid_p50": 0.37412587412587417,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-07",
+      "ratio_to_valid_p50": 0.3371212121212121,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-08",
+      "ratio_to_valid_p50": 0.3548951048951049,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-09",
+      "ratio_to_valid_p50": 0.3371212121212121,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-10",
+      "ratio_to_valid_p50": 0.3333333333333333,
+      "collector_snapshots": 48,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-11",
+      "ratio_to_valid_p50": 0.35294117647058826,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2023-12",
+      "ratio_to_valid_p50": 0.3448275862068966,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-01",
+      "ratio_to_valid_p50": 0.3301282051282051,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-02",
+      "ratio_to_valid_p50": 0.33647798742138363,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-03",
+      "ratio_to_valid_p50": 0.3170731707317073,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-04",
+      "ratio_to_valid_p50": 0.325,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-05",
+      "ratio_to_valid_p50": 0.32916666666666666,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-06",
+      "ratio_to_valid_p50": 0.275,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-07",
+      "ratio_to_valid_p50": 0.275,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-08",
+      "ratio_to_valid_p50": 0.2846393357550597,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-09",
+      "ratio_to_valid_p50": 0.2926829268292683,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-10",
+      "ratio_to_valid_p50": 0.29959204487506375,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-11",
+      "ratio_to_valid_p50": 0.2926829268292683,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2024-12",
+      "ratio_to_valid_p50": 0.3125,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-01",
+      "ratio_to_valid_p50": 0.29814814814814816,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-02",
+      "ratio_to_valid_p50": 0.31342062193126025,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-03",
+      "ratio_to_valid_p50": 0.30434782608695654,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-04",
+      "ratio_to_valid_p50": 0.29750566893424035,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-05",
+      "ratio_to_valid_p50": 0.2926829268292683,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-06",
+      "ratio_to_valid_p50": 0.28708791208791207,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-07",
+      "ratio_to_valid_p50": 0.2857142857142857,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-08",
+      "ratio_to_valid_p50": 0.2978723404255319,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-09",
+      "ratio_to_valid_p50": 0.3333333333333333,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-10",
+      "ratio_to_valid_p50": 0.3333333333333333,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-11",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 39,
+      "excluded_snapshots": 1
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2025-12",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-01",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-02",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-03",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-04",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-05",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-06",
+      "ratio_to_valid_p50": 0.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-07",
+      "ratio_to_valid_p50": 0.04,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-08",
+      "ratio_to_valid_p50": 0.25357142857142856,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Snijders v4 invalid",
+      "month": "2026-09",
+      "ratio_to_valid_p50": 0.25,
+      "collector_snapshots": 18,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-01",
+      "ratio_to_valid_p50": 0.6,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-02",
+      "ratio_to_valid_p50": 0.5843799058084772,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-03",
+      "ratio_to_valid_p50": 0.6190476190476191,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-04",
+      "ratio_to_valid_p50": 0.5769230769230769,
+      "collector_snapshots": 38,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-05",
+      "ratio_to_valid_p50": 0.5526315789473685,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-06",
+      "ratio_to_valid_p50": 0.5865704772475028,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-07",
+      "ratio_to_valid_p50": 0.6507056451612903,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-08",
+      "ratio_to_valid_p50": 0.6666666666666666,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-09",
+      "ratio_to_valid_p50": 0.6512474012474012,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-10",
+      "ratio_to_valid_p50": 0.6451612903225806,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-11",
+      "ratio_to_valid_p50": 0.6545454545454545,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2022-12",
+      "ratio_to_valid_p50": 0.6628787878787878,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-01",
+      "ratio_to_valid_p50": 0.65,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-02",
+      "ratio_to_valid_p50": 0.6554779806659505,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-03",
+      "ratio_to_valid_p50": 0.6666666666666666,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-04",
+      "ratio_to_valid_p50": 0.6666666666666666,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-05",
+      "ratio_to_valid_p50": 0.6578397212543554,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-06",
+      "ratio_to_valid_p50": 0.6538461538461539,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-07",
+      "ratio_to_valid_p50": 0.6756493506493506,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-08",
+      "ratio_to_valid_p50": 0.6541958041958043,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-09",
+      "ratio_to_valid_p50": 0.6363636363636364,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-10",
+      "ratio_to_valid_p50": 0.6224318658280923,
+      "collector_snapshots": 48,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-11",
+      "ratio_to_valid_p50": 0.6339712918660287,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2023-12",
+      "ratio_to_valid_p50": 0.6136363636363636,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-01",
+      "ratio_to_valid_p50": 0.6159003831417624,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-02",
+      "ratio_to_valid_p50": 0.6086956521739131,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-03",
+      "ratio_to_valid_p50": 0.5721544715447155,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-04",
+      "ratio_to_valid_p50": 0.5791666666666666,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-05",
+      "ratio_to_valid_p50": 0.5825757575757575,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-06",
+      "ratio_to_valid_p50": 0.5833333333333334,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-07",
+      "ratio_to_valid_p50": 0.5521778584392014,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-08",
+      "ratio_to_valid_p50": 0.5333333333333333,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-09",
+      "ratio_to_valid_p50": 0.513157894736842,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-10",
+      "ratio_to_valid_p50": 0.5615763546798029,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-11",
+      "ratio_to_valid_p50": 0.5657142857142857,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2024-12",
+      "ratio_to_valid_p50": 0.5847578347578347,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-01",
+      "ratio_to_valid_p50": 0.5962962962962963,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-02",
+      "ratio_to_valid_p50": 0.5716666666666668,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-03",
+      "ratio_to_valid_p50": 0.5677248677248676,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-04",
+      "ratio_to_valid_p50": 0.56,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-05",
+      "ratio_to_valid_p50": 0.5540372670807453,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-06",
+      "ratio_to_valid_p50": 0.6201923076923077,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-07",
+      "ratio_to_valid_p50": 0.6201923076923077,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-08",
+      "ratio_to_valid_p50": 0.6099033816425121,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-09",
+      "ratio_to_valid_p50": 0.6678321678321678,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-10",
+      "ratio_to_valid_p50": 0.6201923076923077,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-11",
+      "ratio_to_valid_p50": 0.6296296296296297,
+      "collector_snapshots": 39,
+      "excluded_snapshots": 1
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2025-12",
+      "ratio_to_valid_p50": 0.6302083333333333,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-01",
+      "ratio_to_valid_p50": 0.6335055986218776,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-02",
+      "ratio_to_valid_p50": 0.6312316715542522,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-03",
+      "ratio_to_valid_p50": 0.6296296296296295,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-04",
+      "ratio_to_valid_p50": 0.6018518518518519,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-05",
+      "ratio_to_valid_p50": 0.6203703703703705,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-06",
+      "ratio_to_valid_p50": 0.6383442265795207,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-07",
+      "ratio_to_valid_p50": 0.6435294117647059,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-08",
+      "ratio_to_valid_p50": 0.6538461538461539,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "Cloudflare v4 invalid_length",
+      "month": "2026-09",
+      "ratio_to_valid_p50": 0.6076923076923078,
+      "collector_snapshots": 18,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-01",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-02",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-03",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-04",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 38,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-05",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-06",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-07",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-08",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-09",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-10",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 45,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-11",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2022-12",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-01",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-02",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-03",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-04",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-05",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-06",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-07",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-08",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-09",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-10",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 48,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-11",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2023-12",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 36,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-01",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-02",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-03",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-04",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-05",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-06",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-07",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-08",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-09",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-10",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-11",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2024-12",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-01",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-02",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-03",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-04",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-05",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-06",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-07",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-08",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-09",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-10",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-11",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 39,
+      "excluded_snapshots": 1
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2025-12",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-01",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-02",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-03",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-04",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-05",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-06",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-07",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 40,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-08",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 50,
+      "excluded_snapshots": 0
+    },
+    {
+      "beacon": "RIPE v4 unknown",
+      "month": "2026-09",
+      "ratio_to_valid_p50": 1.0,
+      "collector_snapshots": 18,
+      "excluded_snapshots": 0
+    }
+  ],
+  "pre_anonymization_inputs_sha256": {
+    "rpki/beacon_reach.parquet": "021fc90a377dffcf17432ffe912b5b23718bb78b3ced19fd5c12aeeae1820353",
+    "rpki/beacon_reach_scan/rrc00_2026.parquet": "d5d9eb8266d66e96dca4dd75c2ea5ae6ec2fb4355cffb84ee895a5c5f6992fd7",
+    "rpki/beacon_reach_scan/rrc12_2023.parquet": "b86a4ca2c9326907d41364eacfa70a195dabb50ab953911a7b1217479f05066b",
+    "rpki/beacon_reach_scan/route-views.linx_2022.parquet": "e86173df38ef3636e7ac0afeb620e10dbb6b392651b7eb7db9cfcfdd4858c415",
+    "rpki/beacon_reach_scan/rrc01_2025.parquet": "cdec5af6ee5201b2dc8de24210f366ff05f7264b036d2451332f3b71cea922c3",
+    "rpki/beacon_reach_scan/route-views.linx_2026.parquet": "faa68c5f22f0f460466a815c185f48bb2a17cc47c2cea178e1cbe3614170e56a",
+    "rpki/beacon_reach_scan/route-views2_2022.parquet": "1110ce477f7f603dfdc93d020e512a9244363fb85a3f302fc45266f809370d55",
+    "rpki/beacon_reach_scan/rrc15_2025.parquet": "44533f0b15d7efa3a1d507dce85c8f1752504a6fe4f1a87470ed5b1789280119",
+    "rpki/beacon_reach_scan/rrc25_2023.parquet": "acc3b1b79d10419257224cb13a1327e59326f866ff2fb6dc38d4a74b7380058f",
+    "rpki/beacon_reach_scan/rrc03_2022.parquet": "cdf7fb30be99d801b3e9d4580518077fa5b904c4953716f392b3a6b3a1b15726",
+    "rpki/beacon_reach_scan/rrc00_2025.parquet": "4a429751bb4a9dbd127fe44e55dfed6e53b6e5275cc9cd99d6e3275d235fee49",
+    "rpki/beacon_reach_scan/rrc15_2022.parquet": "8df2c26b7f6f2e708c6ce22ca94fe927d0a930c161c7dfa643ccae899f30ac9e",
+    "rpki/beacon_reach_scan/rrc12_2026.parquet": "4aa33575ab6d8a675b6b82d7d1c7bb423fb77a4072ff07c77a5c3b54f39fb544",
+    "rpki/beacon_reach_scan/route-views.linx_2023.parquet": "f807f59cc69b468bc4e4ee866f754f5fc514863ae8276f994a94c18cd97ccad5",
+    "rpki/beacon_reach_scan/rrc01_2026.parquet": "cf50e44c42d59f5d701350d113318d5b3a4f2afa059f0fec57ed7251d615e137",
+    "rpki/beacon_reach_scan/rrc12_2022.parquet": "ed54e2b3cc71f855aa415d39688a5ce195fc73cfcef7f698855c33a382e55504",
+    "rpki/beacon_reach_scan/route-views2_2023.parquet": "14945e9792d928f0ae70b7501d3ad93482104efb089cda4f4ee70edf5901eade",
+    "rpki/beacon_reach_scan/rrc00_2023.parquet": "2359465124e601791728082ea2bbbf290e1ce50ba9c449cca382efaf181ab0f8",
+    "rpki/beacon_reach_scan/rrc15_2026.parquet": "ce62b6435fb6c39de0046e04bc4ab302a5df514a877f673310654a0f68f3c265",
+    "rpki/beacon_reach_scan/route-views2_2026.parquet": "b5cb1f7bbc86597a1d779a53b9fe4b2a04160042be897c7943267043698a127b",
+    "rpki/beacon_reach_scan/rrc12_2025.parquet": "5ca0efe2d95e8066d1d2bccc6e3e8efe059efee4dfc92cc7d275b226476f44a4",
+    "rpki/beacon_reach_scan/rrc20_2022.parquet": "3e19d70a07a27519252858cddce17d8da924b153f65ec2e45c7870cfe93fadc2",
+    "rpki/beacon_reach_scan/rrc00_2022.parquet": "4c64dbe1d0aa4eb90a69fb4deed023cf8766c9c67796c9e1b47de693bc92f43c",
+    "rpki/beacon_reach_scan/rrc03_2025.parquet": "9469292d4fae56730309518da0cb8f8f8221433475b78c5c12ca1777923533c1",
+    "rpki/beacon_reach_scan/rrc20_2025.parquet": "f8f17acf79905ff8156d034716ae9636b8c08b80ad0e39f4986ff0b82c540670",
+    "rpki/beacon_reach_scan/rrc20_2023.parquet": "54877b4f4551232fbf52751cefb2cd0bf66665de17e7babd06080ddf72c71959",
+    "rpki/beacon_reach_scan/route-views3_2022.parquet": "b4ba5325bc63877d6e8b701bc5270204f1d358740f39efac957d243217341e72",
+    "rpki/beacon_reach_scan/rrc25_2026.parquet": "20c29aedc50f5f0b6a32cd1a2339ca6377f53ef578cda0d5a073f7d6676e717c",
+    "rpki/beacon_reach_scan/rrc03_2026.parquet": "ef75f7e79bdbfe03e5778ba19dda61420ecbe414d1361dc7f20c119edcd347fe",
+    "rpki/beacon_reach_scan/rrc03_2023.parquet": "ce412339d5ec23d8cd5145a31cf015811306d2e92a4a1e08307276e23936ada8",
+    "rpki/beacon_reach_scan/route-views3_2025.parquet": "4ecd193244fbf2ac45cf91c0f79aefeaf9f73204966f026a3e7886c636b77de2",
+    "rpki/beacon_reach_scan/rrc01_2022.parquet": "3534393561a8757414a0f84cfba125ee138cca35f90f2dc75d09c74bf2ab2060",
+    "rpki/beacon_reach_scan/rrc20_2026.parquet": "d66c2630b695cbeb972929423fb0cb929d283d9f4b08e51d385dae615dd29d54",
+    "rpki/beacon_reach_scan/route-views2_2025.parquet": "78775c7be50a34fd3491d88d986b9ade973357e848968e74de3ebd9f35f72c73",
+    "rpki/beacon_reach_scan/rrc25_2022.parquet": "6e7daabae916b0891311d61af85e8071d6d99e76058b88e7097936e28373007f",
+    "rpki/beacon_reach_scan/route-views3_2026.parquet": "3841ed3378dc9abd83df37343229bf550d8231f41f922c309f2c21f8a07b4211",
+    "rpki/beacon_reach_scan/rrc25_2025.parquet": "b5b80aeb69843de3739553405ccf93b2a288118a45347021d007f11d3ebfdfb3",
+    "rpki/beacon_reach_scan/rrc15_2023.parquet": "f831fef858c834168740a445cb4aeb81f7ae7f3effaf573993f95f6b37dfb42a",
+    "rpki/beacon_reach_scan/route-views3_2023.parquet": "4d7a95055d0041016aada46e8ab592f2a377a7fe19bcb3953d8749e5d9bc49f9",
+    "rpki/beacon_reach_scan/route-views.linx_2025.parquet": "3e161d0958cca5ce13b65c8604e591b831d28007e41e4d93d43548420a1fb3e5",
+    "rpki/beacon_reach_scan/rrc01_2023.parquet": "6582e7e656de74361a3eb23e3e52e5823fb21c072545425e6f4378b034f48ae6"
+  },
+  "hash_scope": "inputs_sha256/source_sha256 bind released data bytes; pre_anonymization_* retain the original verified snapshot digests"
+}

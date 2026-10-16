@@ -1,0 +1,3150 @@
+{
+  "model_tables": [
+    "tgn/2024_leak200/d30s/_results/dyrep_test_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/gat_test_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/hist_avg_test_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/hist_avg_online_completed_test_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/sage_test_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/tgn_test_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/dyrep_test_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/gat_test_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/hist_avg_test_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/hist_avg_online_completed_test_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/sage_test_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/tgn_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d60s/_results/dyrep_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d60s/_results/gat_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d60s/_results/sage_full_test_per_event.csv",
+    "tgn/2024_rpkiinvalid/d60s/_results/tgn_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/gat_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/gat_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/hist_avg_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/sage_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/sage_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/tgn_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d30s/_results/tgn_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/gat_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/gat_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/hist_avg_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/sage_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/sage_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/tgn_full_test_per_event.csv",
+    "tgn/2024_rpkivalid/d60s/_results/tgn_z11-12-13-14-15_test_per_event.csv",
+    "tgn/2025_leak200/d300s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200/d300s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/dyrep_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/gat_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/gat_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/hist_avg_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/hist_avg_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/sage_focal2_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/tgn_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/dyrep_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/dyrep_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/gat_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/gat_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/hist_avg_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/hist_avg_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/sage_focal2_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024+2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024_to_2025_test_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/tgn_test_per_event.csv",
+    "tgn/2025_leak200/d900s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200/d900s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@k=1500/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@k=1500/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_z16-17_test_per_event.csv",
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_z16-17_test_per_event.csv",
+    "tgn/2025_leak200@k=6000/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@k=6000/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@legal=1/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@legal=1/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_logistic_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank0.3_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank1.0_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_sepenc_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_z18-19_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_logistic_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank0.3_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank1.0_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_sepenc_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_z18-19_test_per_event.csv",
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/sage_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/hist_avg_test_per_event.csv",
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/sage_test_per_event.csv"
+  ],
+  "model_targets": {
+    "tgn/2024_leak200/d30s/_results/dyrep_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d30s/_results/dyrep_test_probs.pt"
+    },
+    "tgn/2024_leak200/d30s/_results/gat_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d30s/_results/gat_test_probs.pt"
+    },
+    "tgn/2024_leak200/d30s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2024_leak"
+    },
+    "tgn/2024_leak200/d30s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2024_leak"
+    },
+    "tgn/2024_leak200/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d30s/_results/sage_test_probs.pt"
+    },
+    "tgn/2024_leak200/d30s/_results/tgn_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d30s/_results/tgn_test_probs.pt"
+    },
+    "tgn/2024_leak200/d60s/_results/dyrep_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d60s/_results/dyrep_test_probs.pt"
+    },
+    "tgn/2024_leak200/d60s/_results/gat_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d60s/_results/gat_test_probs.pt"
+    },
+    "tgn/2024_leak200/d60s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2024_leak"
+    },
+    "tgn/2024_leak200/d60s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2024_leak"
+    },
+    "tgn/2024_leak200/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d60s/_results/sage_test_probs.pt"
+    },
+    "tgn/2024_leak200/d60s/_results/tgn_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024_leak",
+      "probability_evidence": "tgn/2024_leak200/d60s/_results/tgn_test_probs.pt"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/dyrep_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/gat_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/sage_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/tgn_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/gat_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/gat_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/sage_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/sage_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/tgn_full_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/tgn_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/gat_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/gat_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/sage_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/sage_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/tgn_full_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/tgn_z11-12-13-14-15_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2024"
+    },
+    "tgn/2025_leak200/d300s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d5m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d300s/_results/sage_test_per_event.csv": {
+      "horizon": "d5m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/dyrep_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d30s/_results/dyrep_test_probs.pt"
+    },
+    "tgn/2025_leak200/d30s/_results/gat_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/gat_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d30s/_results/gat_test_probs.pt"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_focal2_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d30s/_results/sage_test_probs.pt"
+    },
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d30s/_results/tgn_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d30s/_results/tgn_test_probs.pt"
+    },
+    "tgn/2025_leak200/d60s/_results/dyrep_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/dyrep_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d60s/_results/dyrep_test_probs.pt"
+    },
+    "tgn/2025_leak200/d60s/_results/gat_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/gat_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d60s/_results/gat_test_probs.pt"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_focal2_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d60s/_results/sage_test_probs.pt"
+    },
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024+2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_tables": [
+        "2023_leak",
+        "2024_leak",
+        "2025_leak"
+      ]
+    },
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024_to_2025_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d60s/_results/tgn_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak",
+      "probability_evidence": "tgn/2025_leak200/d60s/_results/tgn_test_probs.pt"
+    },
+    "tgn/2025_leak200/d900s/_results/hist_avg_test_per_event.csv": {
+      "horizon": "d15m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200/d900s/_results/sage_test_per_event.csv": {
+      "horizon": "d15m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=1500/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=1500/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_z16-17_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_z16-17_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=6000/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@k=6000/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@legal=1/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@legal=1/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_logistic_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank0.3_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank1.0_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_sepenc_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_z18-19_test_per_event.csv": {
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_logistic_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank0.3_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank1.0_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_sepenc_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_z18-19_test_per_event.csv": {
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      },
+      "event_table": "2025_leak"
+    },
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/hist_avg_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-route-views2.parquet",
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      }
+    },
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/sage_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-route-views2.parquet",
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      }
+    },
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/hist_avg_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-route-views2.parquet",
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      }
+    },
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/sage_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-route-views2.parquet",
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/hist_avg_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc00.parquet",
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/sage_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc00.parquet",
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/hist_avg_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc00.parquet",
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/sage_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc00.parquet",
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/hist_avg_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc25.parquet",
+      "horizon": "d30s",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/sage_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc25.parquet",
+      "horizon": "d30s",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/hist_avg_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc25.parquet",
+      "horizon": "d1m",
+      "count_forecast": "final",
+      "membership_predictions": {
+        "hist": "predicted_asns_hist"
+      }
+    },
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/sage_test_per_event.csv": {
+      "target_table": "verification/collector-targets/leak-rrc25.parquet",
+      "horizon": "d1m",
+      "count_forecast": "curve",
+      "membership_predictions": {
+        "model": "predicted_asns_at05",
+        "model_tuned": "predicted_asns_tuned"
+      }
+    }
+  },
+  "model_checkpoints": [
+    "tgn/2024_leak200/d30s/_results/dyrep_model.pt",
+    "tgn/2024_leak200/d30s/_results/gat_model.pt",
+    "tgn/2024_leak200/d30s/_results/sage_model.pt",
+    "tgn/2024_leak200/d30s/_results/tgn_model.pt",
+    "tgn/2024_leak200/d60s/_results/dyrep_model.pt",
+    "tgn/2024_leak200/d60s/_results/gat_model.pt",
+    "tgn/2024_leak200/d60s/_results/sage_model.pt",
+    "tgn/2024_leak200/d60s/_results/tgn_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/gat_full_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/sage_full_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/gat_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/gat_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/sage_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/sage_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/tgn_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/gat_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/gat_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/sage_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/sage_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/tgn_z11-12-13-14-15_model.pt",
+    "tgn/2025_leak200/d300s/_results/sage_model.pt",
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/dyrep_model.pt",
+    "tgn/2025_leak200/d30s/_results/gat_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/gat_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_focal2_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_model.pt",
+    "tgn/2025_leak200/d60s/_results/dyrep_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/dyrep_model.pt",
+    "tgn/2025_leak200/d60s/_results/gat_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/gat_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_focal2_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_model.pt",
+    "tgn/2025_leak200/d900s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=1500/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=1500/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_z16-17_model.pt",
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_z16-17_model.pt",
+    "tgn/2025_leak200@k=6000/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=6000/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@legal=1/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@legal=1/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_logistic_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank0.3_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank1.0_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_sepenc_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_z18-19_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_logistic_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank0.3_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank1.0_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_sepenc_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_z18-19_model.pt",
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/sage_model.pt"
+  ],
+  "event_tables": [
+    "2022",
+    "2022_leak",
+    "2022_withdrawal",
+    "2022_hijack_first_transition",
+    "2022_recovery_first_transition",
+    "2023",
+    "2023_leak",
+    "2023_withdrawal",
+    "2023_hijack_first_transition",
+    "2023_recovery_first_transition",
+    "2024",
+    "2024_leak",
+    "2024_withdrawal",
+    "2024_hijack_first_transition",
+    "2024_recovery_first_transition",
+    "2025",
+    "2025_leak",
+    "2025_withdrawal",
+    "2025_hijack_first_transition",
+    "2025_recovery_first_transition",
+    "2026",
+    "2026_leak",
+    "2026_withdrawal",
+    "2026_hijack_first_transition",
+    "2026_recovery_first_transition",
+    "2024_leakpch",
+    "2024_pchorigin"
+  ],
+  "model_cohorts": {
+    "tgn/2024_leak200/d30s/_results/dyrep_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d30s/_results/gat_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d30s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d30s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d30s/_results/tgn_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d60s/_results/dyrep_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d60s/_results/gat_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d60s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d60s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_leak200/d60s/_results/tgn_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/dyrep_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/gat_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/sage_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkiinvalid/d60s/_results/tgn_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkiinvalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/gat_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/gat_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/sage_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/sage_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/tgn_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d30s/_results/tgn_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/gat_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/gat_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/sage_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/sage_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/tgn_full_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2024_rpkivalid/d60s/_results/tgn_z11-12-13-14-15_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2024_rpkivalid/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d300s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d300s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d300s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d300s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d30s/index.csv",
+        "tgn/2024_leak200/d30s/index.csv",
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d30s/_results/dyrep_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/gat_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d30s/_results/gat_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d30s/index.csv",
+        "tgn/2024_leak200/d30s/index.csv",
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d30s/index.csv",
+        "tgn/2024_leak200/d30s/index.csv",
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d30s/index.csv",
+        "tgn/2024_leak200/d30s/index.csv",
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_focal2_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d30s/index.csv",
+        "tgn/2024_leak200/d30s/index.csv",
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d30s/_results/tgn_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/dyrep_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d60s/_results/dyrep_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/gat_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d60s/_results/gat_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d60s/index.csv",
+        "tgn/2024_leak200/d60s/index.csv",
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d60s/index.csv",
+        "tgn/2024_leak200/d60s/index.csv",
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/hist_avg_online_completed_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d60s/index.csv",
+        "tgn/2024_leak200/d60s/index.csv",
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_focal2_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024+2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2023_leak200/d60s/index.csv",
+        "tgn/2024_leak200/d60s/index.csv",
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024_to_2025_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "all"
+    },
+    "tgn/2025_leak200/d60s/_results/tgn_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d900s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d900s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200/d900s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200/d900s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=1500/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=1500/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=1500/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=1500/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=3000/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_z16-17_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=3000/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=3000/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_z16-17_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=3000/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=6000/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=6000/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@k=6000/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@k=6000/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@legal=1/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@legal=1/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@legal=1/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@legal=1/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_logistic_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank0.3_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank1.0_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_sepenc_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d30s/_results/sage_z18-19_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_logistic_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank0.3_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank1.0_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_sepenc_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@v=3/d60s/_results/sage_z18-19_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@v=3/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=route-views2/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=route-views2/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=route-views2/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=route-views2/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc00/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc00/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc00/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc00/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc25/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc25/d30s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/hist_avg_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc25/d60s/index.csv"
+      ],
+      "split": "test"
+    },
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/sage_test_per_event.csv": {
+      "index_tables": [
+        "tgn/2025_leak200@vp=rrc25/d60s/index.csv"
+      ],
+      "split": "test"
+    }
+  },
+  "pair_tables": [
+    "eventset/2022_recovery_first_transition/pairs.parquet",
+    "eventset/2023_recovery_first_transition/pairs.parquet",
+    "eventset/2023_recovery_first_transition/pairs_labelled.parquet",
+    "eventset/2023_recovery_first_transition/pairs_stratum.parquet",
+    "eventset/2024_recovery_first_transition/pairs.parquet",
+    "eventset/2024_recovery_first_transition/pairs_labelled.parquet",
+    "eventset/2024_recovery_first_transition/pairs_stratum.parquet",
+    "eventset/2025_recovery_first_transition/pairs.parquet",
+    "eventset/2025_recovery_first_transition/pairs_labelled.parquet",
+    "eventset/2025_recovery_first_transition/pairs_stratum.parquet",
+    "eventset/2026_recovery_first_transition/pairs.parquet",
+    "eventset/2026_recovery_first_transition/pairs_labelled.parquet",
+    "eventset/2026_recovery_first_transition/pairs_stratum.parquet"
+  ],
+  "frontier_tables": [
+    "eventset/2022/rov_frontier.json",
+    "eventset/2023/rov_frontier.json",
+    "eventset/2023/rov_frontier_labelled.json",
+    "eventset/2023/rov_frontier_stratum.json",
+    "eventset/2024/rov_frontier.json",
+    "eventset/2024/rov_frontier_frozen2505.json",
+    "eventset/2024/rov_frontier_labelled.json",
+    "eventset/2024/rov_frontier_stratum.json",
+    "eventset/2024/rov_frontier_thr0.3.json",
+    "eventset/2024/rov_frontier_thr0.8.json",
+    "eventset/2025/rov_frontier.json",
+    "eventset/2025/rov_frontier_frozen2505.json",
+    "eventset/2025/rov_frontier_labelled_frozen2505.json",
+    "eventset/2025/rov_frontier_stratum_frozen2505.json",
+    "eventset/2026/rov_frontier.json",
+    "eventset/2026/rov_frontier_frozen2505.json",
+    "eventset/2026/rov_frontier_labelled_frozen2505.json",
+    "eventset/2026/rov_frontier_mintotal10.json",
+    "eventset/2026/rov_frontier_stratum_frozen2505.json"
+  ],
+  "event_selections": {
+    "2022": {
+      "file": "verification/frozen-event-ids/2022.parquet",
+      "key": "event_id"
+    },
+    "2022_leak": {
+      "file": "verification/frozen-event-ids/2022_leak.parquet",
+      "key": "event_id"
+    },
+    "2022_withdrawal": {
+      "file": "verification/frozen-event-ids/2022_withdrawal.parquet",
+      "key": "event_id"
+    },
+    "2022_hijack_first_transition": {
+      "file": "inventory/2022/recovery_replay_selection.parquet",
+      "key": "hijack_id"
+    },
+    "2022_recovery_first_transition": {
+      "file": "inventory/2022/recovery_replay_selection.parquet",
+      "key": "event_id"
+    },
+    "2023": {
+      "file": "verification/frozen-event-ids/2023.parquet",
+      "key": "event_id"
+    },
+    "2023_leak": {
+      "file": "verification/frozen-event-ids/2023_leak.parquet",
+      "key": "event_id"
+    },
+    "2023_withdrawal": {
+      "file": "verification/frozen-event-ids/2023_withdrawal.parquet",
+      "key": "event_id"
+    },
+    "2023_hijack_first_transition": {
+      "file": "inventory/2023/recovery_replay_selection.parquet",
+      "key": "hijack_id"
+    },
+    "2023_recovery_first_transition": {
+      "file": "inventory/2023/recovery_replay_selection.parquet",
+      "key": "event_id"
+    },
+    "2024": {
+      "file": "verification/frozen-event-ids/2024.parquet",
+      "key": "event_id"
+    },
+    "2024_leak": {
+      "file": "verification/frozen-event-ids/2024_leak.parquet",
+      "key": "event_id"
+    },
+    "2024_withdrawal": {
+      "file": "verification/frozen-event-ids/2024_withdrawal.parquet",
+      "key": "event_id"
+    },
+    "2024_hijack_first_transition": {
+      "file": "inventory/2024/recovery_replay_selection.parquet",
+      "key": "hijack_id"
+    },
+    "2024_recovery_first_transition": {
+      "file": "inventory/2024/recovery_replay_selection.parquet",
+      "key": "event_id"
+    },
+    "2025": {
+      "file": "verification/frozen-event-ids/2025.parquet",
+      "key": "event_id"
+    },
+    "2025_leak": {
+      "file": "verification/frozen-event-ids/2025_leak.parquet",
+      "key": "event_id"
+    },
+    "2025_withdrawal": {
+      "file": "verification/frozen-event-ids/2025_withdrawal.parquet",
+      "key": "event_id"
+    },
+    "2025_hijack_first_transition": {
+      "file": "inventory/2025/recovery_replay_selection.parquet",
+      "key": "hijack_id"
+    },
+    "2025_recovery_first_transition": {
+      "file": "inventory/2025/recovery_replay_selection.parquet",
+      "key": "event_id"
+    },
+    "2026": {
+      "file": "verification/frozen-event-ids/2026.parquet",
+      "key": "event_id"
+    },
+    "2026_leak": {
+      "file": "verification/frozen-event-ids/2026_leak.parquet",
+      "key": "event_id"
+    },
+    "2026_withdrawal": {
+      "file": "verification/frozen-event-ids/2026_withdrawal.parquet",
+      "key": "event_id"
+    },
+    "2026_hijack_first_transition": {
+      "file": "inventory/2026/recovery_replay_selection.parquet",
+      "key": "hijack_id"
+    },
+    "2026_recovery_first_transition": {
+      "file": "inventory/2026/recovery_replay_selection.parquet",
+      "key": "event_id"
+    },
+    "2024_leakpch": {
+      "file": "verification/frozen-event-ids/2024_leakpch.parquet",
+      "key": "event_id"
+    },
+    "2024_pchorigin": {
+      "file": "verification/frozen-event-ids/2024_pchorigin.parquet",
+      "key": "event_id"
+    }
+  },
+  "nongraph_tables": [
+    {
+      "kind": "cascade",
+      "event_table": "2024",
+      "summary": "analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.json",
+      "rows": "analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024",
+      "summary": "analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.json",
+      "rows": "analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024",
+      "summary": "analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.json",
+      "rows": "analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024",
+      "summary": "analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.json",
+      "rows": "analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024",
+      "summary": "analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.json",
+      "rows": "analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024",
+      "summary": "analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.json",
+      "rows": "analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.json",
+      "rows": "analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet"
+    },
+    {
+      "kind": "curve_naive",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/013_curve_naive/curve_baselines_leak_ge200_asn.json",
+      "rows": "analysis/nongraph/2024/013_curve_naive/curve_baselines_leak_ge200_asn_predictions.parquet",
+      "sample": 400
+    },
+    {
+      "kind": "tsfm",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/014_tsfm/summary.json",
+      "rows": "analysis/nongraph/2024/014_tsfm/summary.predictions.parquet",
+      "sample": 150
+    },
+    {
+      "kind": "prefix_floor",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/015_prefix_floor/prefix_floor_summary.json",
+      "rows": "analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet"
+    },
+    {
+      "kind": "prefix_model",
+      "event_table": "2024_leak",
+      "summary": "analysis/nongraph/2024/016_prefix_model/prefix_model_summary_d30s.json",
+      "rows": "analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet",
+      "predictions_dir": "analysis/nongraph/2024/016_prefix_model/prefix_predictions",
+      "prefix_floor": "analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.json",
+      "rows": "analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.json",
+      "rows": "analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.json",
+      "rows": "analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.json",
+      "rows": "analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+      "rows": "analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.json",
+      "rows": "analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.json",
+      "rows": "analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.json",
+      "rows": "analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet"
+    },
+    {
+      "kind": "cascade",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.json",
+      "rows": "analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet"
+    },
+    {
+      "kind": "curve_naive",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/060_curve_naive/curve_baselines_leak_ge200_asn.json",
+      "rows": "analysis/nongraph/2025/060_curve_naive/curve_baselines_leak_ge200_asn_predictions.parquet",
+      "sample": 400
+    },
+    {
+      "kind": "tsfm",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/061_tsfm/summary.json",
+      "rows": "analysis/nongraph/2025/061_tsfm/summary.predictions.parquet",
+      "sample": 150
+    },
+    {
+      "kind": "prefix_floor",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor_summary.json",
+      "rows": "analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor.parquet"
+    },
+    {
+      "kind": "prefix_model",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/063_prefix_model/prefix_model_summary_d30s.json",
+      "rows": "analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet",
+      "predictions_dir": "analysis/nongraph/2025/063_prefix_model/prefix_predictions",
+      "prefix_floor": "analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor.parquet"
+    },
+    {
+      "kind": "chronos_lora",
+      "event_table": "2025_leak",
+      "summary": "analysis/nongraph/2025/096_chronos_lora/summary.json",
+      "rows": "analysis/nongraph/2025/096_chronos_lora/summary.predictions.parquet",
+      "eligibility": "analysis/nongraph/2025/096_chronos_lora/curve_eligibility.parquet"
+    }
+  ],
+  "cascade_bootstrap": "analysis/nongraph-cascade-bootstrap.json",
+  "required_files": [
+    "analysis/boundary-input-bridge.json",
+    "analysis/boundary-input-verification.json",
+    "analysis/derived-count-fill-bridge.json",
+    "analysis/derived-count-fill-verification.json",
+    "analysis/expected-graph-auxiliary.json",
+    "analysis/frontier-source-verification.json",
+    "analysis/graph_auxiliary_verification.json",
+    "analysis/graph_paired_comparisons.json",
+    "analysis/nongraph-boundary-input-equivalence.json",
+    "analysis/nongraph-cascade-bootstrap.json",
+    "analysis/nongraph-plan.json",
+    "analysis/nongraph-release-complete.json",
+    "analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.json",
+    "analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet",
+    "analysis/nongraph/2024/000_cascade/complete.json",
+    "analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.json",
+    "analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet",
+    "analysis/nongraph/2024/001_cascade/complete.json",
+    "analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2024/002_cascade/complete.json",
+    "analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.json",
+    "analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet",
+    "analysis/nongraph/2024/003_cascade/complete.json",
+    "analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.json",
+    "analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet",
+    "analysis/nongraph/2024/004_cascade/complete.json",
+    "analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.json",
+    "analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet",
+    "analysis/nongraph/2024/005_cascade/complete.json",
+    "analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2024/006_cascade/complete.json",
+    "analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2024/007_cascade/complete.json",
+    "analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.json",
+    "analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet",
+    "analysis/nongraph/2024/008_cascade/complete.json",
+    "analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.json",
+    "analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet",
+    "analysis/nongraph/2024/009_cascade/complete.json",
+    "analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.json",
+    "analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet",
+    "analysis/nongraph/2024/010_cascade/complete.json",
+    "analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2024/011_cascade/complete.json",
+    "analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.json",
+    "analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet",
+    "analysis/nongraph/2024/012_cascade/complete.json",
+    "analysis/nongraph/2024/013_curve_naive/complete.json",
+    "analysis/nongraph/2024/013_curve_naive/curve_baselines_leak_ge200.json",
+    "analysis/nongraph/2024/013_curve_naive/curve_baselines_leak_ge200_asn.json",
+    "analysis/nongraph/2024/013_curve_naive/curve_baselines_leak_ge200_asn_predictions.parquet",
+    "analysis/nongraph/2024/013_curve_naive/curve_baselines_leak_ge200_vp.json",
+    "analysis/nongraph/2024/014_tsfm/complete.json",
+    "analysis/nongraph/2024/014_tsfm/summary.json",
+    "analysis/nongraph/2024/014_tsfm/summary.predictions.parquet",
+    "analysis/nongraph/2024/015_prefix_floor/complete.json",
+    "analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet",
+    "analysis/nongraph/2024/015_prefix_floor/prefix_floor_summary.json",
+    "analysis/nongraph/2024/016_prefix_model/complete.json",
+    "analysis/nongraph/2024/016_prefix_model/prefix_model.joblib",
+    "analysis/nongraph/2024/016_prefix_model/prefix_model_metadata.json",
+    "analysis/nongraph/2024/016_prefix_model/prefix_model_summary_d30s.json",
+    "analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240901T071343_leak_15964.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240901T084640_leak_44400.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240902T041008_leak_9198.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240902T130929_leak_52840.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240903T211757_leak_28546.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240904T072827_leak_7473.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240904T213501_leak_132768.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240906T175806_leak_267961.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240912T210856_leak_33771.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240913T043101_leak_61680.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240913T061801_leak_62382.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240916T232659_leak_151797.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240916T232659_leak_18464.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240917T041059_leak_28294.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240918T085644_leak_5511.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240918T153644_leak_135607.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240919T125328_leak_1828.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240920T060311_leak_45117.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240923T082909_leak_8551.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240925T030319_leak_13786.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240926T062839_leak_28910.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240926T131708_leak_53427.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240926T211508_leak_25215.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240927T040034_leak_52762.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240927T080442_leak_37305.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20240929T132932_leak_137557.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241001T081845_leak_15964.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241001T123056_leak_6789.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241002T090757_leak_206596.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241002T112914_leak_37063.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241002T121438_leak_29357.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241002T170002_leak_28546.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241002T225731_leak_8865.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241004T220306_leak_6821.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241008T120328_leak_6461.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241009T084042_leak_37721.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241010T095059_leak_45117.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241015T053258_leak_263456.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241015T134418_leak_22381.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241017T161954_leak_271253.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241017T161954_leak_272713.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241018T131026_leak_1031.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241018T132613_leak_7195.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241030T131625_leak_49981.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241101T004107_leak_267056.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241102T071814_leak_5585.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241102T133817_leak_8865.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241106T065349_leak_28546.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241111T124827_leak_37468.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241111T175858_leak_9304.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241112T181625_leak_53184.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241112T184145_leak_61727.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241113T063142_leak_7195.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241117T082830_leak_49666.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241118T201954_leak_263456.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241120T185650_leak_39120.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241120T192535_leak_151630.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241121T002703_leak_9304.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241124T134651_leak_31452.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241126T022432_leak_4775.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241127T071210_leak_131281.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241127T071210_leak_23855.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241127T071212_leak_24489.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241201T050853_leak_20459.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241201T105346_leak_20459.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241202T094616_leak_50084.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241202T122107_leak_14733.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241203T073215_leak_135817.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241204T024424_leak_9304.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241204T040103_leak_4186.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241204T131525_leak_52363.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241204T164817_leak_272713.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241205T121815_leak_28546.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241209T232754_leak_18001.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241211T052615_leak_28258.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241216T001458_leak_8167.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241219T132426_leak_58682.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241219T164553_leak_1828.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241222T132408_leak_202984.parquet",
+    "analysis/nongraph/2024/016_prefix_model/prefix_predictions/20241226T222706_leak_4755.parquet",
+    "analysis/nongraph/2024/017_prefix_features/complete.json",
+    "analysis/nongraph/2024/018_prefix_features/complete.json",
+    "analysis/nongraph/2024/019_prefix_features/complete.json",
+    "analysis/nongraph/2024/020_prefix_features/complete.json",
+    "analysis/nongraph/2024/021_prefix_features/complete.json",
+    "analysis/nongraph/2024/022_prefix_features/complete.json",
+    "analysis/nongraph/2024/023_prefix_features/complete.json",
+    "analysis/nongraph/2024/024_prefix_features/complete.json",
+    "analysis/nongraph/2024/025_prefix_features/complete.json",
+    "analysis/nongraph/2024/026_prefix_features/complete.json",
+    "analysis/nongraph/2024/027_prefix_features/complete.json",
+    "analysis/nongraph/2024/028_prefix_features/complete.json",
+    "analysis/nongraph/2024/029_prefix_features/complete.json",
+    "analysis/nongraph/2024/030_prefix_features/complete.json",
+    "analysis/nongraph/2024/031_prefix_features/complete.json",
+    "analysis/nongraph/2024/032_prefix_features/complete.json",
+    "analysis/nongraph/2024/033_prefix_features/complete.json",
+    "analysis/nongraph/2024/034_prefix_features/complete.json",
+    "analysis/nongraph/2024/035_prefix_features/complete.json",
+    "analysis/nongraph/2024/036_prefix_features/complete.json",
+    "analysis/nongraph/2024/037_prefix_features/complete.json",
+    "analysis/nongraph/2024/038_prefix_features/complete.json",
+    "analysis/nongraph/2024/039_prefix_features/complete.json",
+    "analysis/nongraph/2024/040_prefix_features/complete.json",
+    "analysis/nongraph/2024/041_prefix_features/complete.json",
+    "analysis/nongraph/2024/042_prefix_features/complete.json",
+    "analysis/nongraph/2024/043_prefix_features/complete.json",
+    "analysis/nongraph/2024/044_prefix_features/complete.json",
+    "analysis/nongraph/2024/045_prefix_features/complete.json",
+    "analysis/nongraph/2024/046_prefix_features/complete.json",
+    "analysis/nongraph/2024/047_prefix_features/complete.json",
+    "analysis/nongraph/2024/048_prefix_features/complete.json",
+    "analysis/nongraph/2024/097_radar_prefix_agreement/cloudflare_leaks_prefixes_reconstructed.json",
+    "analysis/nongraph/2024/097_radar_prefix_agreement/cloudflare_leaks_prefixes_reconstructed.parquet",
+    "analysis/nongraph/2024/097_radar_prefix_agreement/complete.json",
+    "analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2025/049_cascade/complete.json",
+    "analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.json",
+    "analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet",
+    "analysis/nongraph/2025/050_cascade/complete.json",
+    "analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.json",
+    "analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet",
+    "analysis/nongraph/2025/051_cascade/complete.json",
+    "analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.json",
+    "analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet",
+    "analysis/nongraph/2025/052_cascade/complete.json",
+    "analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.json",
+    "analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet",
+    "analysis/nongraph/2025/053_cascade/complete.json",
+    "analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2025/054_cascade/complete.json",
+    "analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.json",
+    "analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "analysis/nongraph/2025/055_cascade/complete.json",
+    "analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.json",
+    "analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet",
+    "analysis/nongraph/2025/056_cascade/complete.json",
+    "analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.json",
+    "analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet",
+    "analysis/nongraph/2025/057_cascade/complete.json",
+    "analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.json",
+    "analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet",
+    "analysis/nongraph/2025/058_cascade/complete.json",
+    "analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.json",
+    "analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet",
+    "analysis/nongraph/2025/059_cascade/complete.json",
+    "analysis/nongraph/2025/060_curve_naive/complete.json",
+    "analysis/nongraph/2025/060_curve_naive/curve_baselines_leak_ge200_asn.json",
+    "analysis/nongraph/2025/060_curve_naive/curve_baselines_leak_ge200_asn_predictions.parquet",
+    "analysis/nongraph/2025/061_tsfm/complete.json",
+    "analysis/nongraph/2025/061_tsfm/summary.json",
+    "analysis/nongraph/2025/061_tsfm/summary.predictions.parquet",
+    "analysis/nongraph/2025/062_prefix_floor/complete.json",
+    "analysis/nongraph/2025/062_prefix_floor_boundary_v2/complete.json",
+    "analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor.parquet",
+    "analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor_summary.json",
+    "analysis/nongraph/2025/063_prefix_model/complete.json",
+    "analysis/nongraph/2025/063_prefix_model/prefix_model.joblib",
+    "analysis/nongraph/2025/063_prefix_model/prefix_model_metadata.json",
+    "analysis/nongraph/2025/063_prefix_model/prefix_model_summary_d30s.json",
+    "analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250901T010621_leak_265491.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250901T041601_leak_216067.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250901T091557_leak_37662.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250901T150556_leak_37009.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250901T234516_leak_14522.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250902T033725_leak_38040.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250902T051645_leak_268941.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250902T172606_leak_271398.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250902T184324_leak_32473.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250902T224155_leak_263456.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250902T233133_leak_983.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250903T083345_leak_8048.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250903T155558_leak_27951.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250903T192716_leak_55081.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250903T194721_leak_328856.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250904T061506_leak_54579.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250904T090430_leak_55734.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250904T113251_leak_8717.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250904T164750_leak_21859.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250904T220240_leak_328055.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250905T203309_leak_262493.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250908T113716_leak_8285.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250908T180743_leak_63859.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250909T035848_leak_61761.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250909T065107_leak_262404.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250909T073019_leak_202279.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250909T154525_leak_267056.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250909T224331_leak_45700.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250910T022956_leak_35104.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250910T043058_leak_28669.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250910T050941_leak_263877.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250910T174732_leak_52468.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250910T223344_leak_264344.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250911T114250_leak_35104.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250911T154309_leak_271285.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250911T194643_leak_132167.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250912T103721_leak_135607.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250912T160543_leak_54994.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250912T181351_leak_266551.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250914T120936_leak_8095.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250914T161706_leak_42216.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250914T195641_leak_53153.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250915T130400_leak_26548.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250915T170620_leak_10075.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250915T174659_leak_265008.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250916T110829_leak_269804.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250916T210302_leak_149513.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250916T234357_leak_25145.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250917T182001_leak_142132.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250918T023037_leak_139648.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250919T082307_leak_37009.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250919T092621_leak_12488.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250919T130242_leak_396356.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250921T231841_leak_6718.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250922T231026_leak_34427.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250922T232559_leak_34427.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250923T071652_leak_135607.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250924T064209_leak_201746.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250924T170734_leak_262773.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250924T184643_leak_51088.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250924T195956_leak_13786.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250925T093555_leak_49367.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250925T141002_leak_3216.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250928T020614_leak_135300.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250929T001854_leak_263194.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250929T010004_leak_7552.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250929T025634_leak_60503.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250929T202543_leak_262761.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20250930T011601_leak_17617.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T020545_leak_136255.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T024934_leak_140443.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T033210_leak_9583.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T063442_leak_329263.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T065347_leak_328543.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T110646_leak_6802.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T111604_leak_55081.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T121122_leak_16637.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T145213_leak_134078.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T160244_leak_41475.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T173050_leak_267056.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T173830_leak_215162.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251001T181600_leak_348.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251002T022350_leak_38040.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251002T042044_leak_60733.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251002T051207_leak_393994.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251002T085314_leak_135300.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251002T095150_leak_39386.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251003T021815_leak_30372.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251003T023525_leak_26042.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251003T071650_leak_393994.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251003T142823_leak_263042.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251003T161409_leak_264500.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251004T062846_leak_202279.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251004T142537_leak_132641.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251004T210333_leak_265482.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251005T040633_leak_11342.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251006T041954_leak_136039.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251006T094215_leak_25549.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251006T174446_leak_264552.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251007T065819_leak_9829.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251008T080835_leak_6775.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251009T042426_leak_262907.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251009T192441_leak_263537.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251010T070310_leak_137831.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251010T192604_leak_263567.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251012T072002_leak_138106.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251012T105037_leak_62068.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251012T193822_leak_28120.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251013T071805_leak_18168.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251013T091838_leak_138995.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251013T103000_leak_7713.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251013T111043_leak_138995.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251014T200245_leak_9121.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251015T022316_leak_41881.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251015T034548_leak_54994.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251015T060435_leak_6775.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251015T230042_leak_48728.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251016T081053_leak_131219.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251016T092745_leak_197078.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251016T212109_leak_269194.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251016T213346_leak_49645.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251017T210100_leak_270427.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251018T063316_leak_5639.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251019T111742_leak_61049.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251019T204524_leak_11878.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251020T151052_leak_267304.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251021T135353_leak_152435.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251021T190648_leak_45312.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251022T061501_leak_201746.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251022T144853_leak_138818.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251022T183507_leak_135217.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251023T101106_leak_134922.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251023T193106_leak_153100.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251024T064019_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251024T200417_leak_266830.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251024T223152_leak_132116.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251025T161652_leak_132372.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251026T041510_leak_137409.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251026T051802_leak_215638.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251026T131228_leak_8095.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251027T081317_leak_138415.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251027T084724_leak_10075.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251029T191538_leak_150937.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T062523_leak_135139.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T083547_leak_33891.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T110116_leak_328605.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T111116_leak_39039.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T140337_leak_48978.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T190106_leak_7642.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T190329_leak_394625.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251030T200639_leak_45430.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251031T162854_leak_270777.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251101T042847_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251101T092936_leak_132116.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251101T125626_leak_1251.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251101T162816_leak_215162.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251101T180104_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251102T030317_leak_999.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251102T081352_leak_131429.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251102T085914_leak_131429.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251102T144117_leak_131429.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251103T033119_leak_45430.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251103T033258_leak_38040.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251103T142830_leak_9498.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251103T145446_leak_328055.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251104T050324_leak_262770.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251104T181243_leak_133385.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251105T174203_leak_50263.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251105T203047_leak_38757.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251105T221858_leak_52631.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T025515_leak_140227.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T061855_leak_22457.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T061949_leak_40731.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T065128_leak_7642.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T104915_leak_23033.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T124041_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T201101_leak_136374.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251106T235946_leak_266416.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251107T020809_leak_22356.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251107T081245_leak_138995.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251107T154546_leak_269089.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251109T003825_leak_151354.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251109T141558_leak_45558.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251110T144751_leak_265606.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251112T074529_leak_14842.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251113T090835_leak_51878.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251114T001748_leak_28890.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251114T214348_leak_399646.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251116T020406_leak_25145.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251116T110108_leak_19523.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251117T040944_leak_141704.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251117T135811_leak_268890.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251117T172003_leak_268214.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251118T152617_leak_5405.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251118T200425_leak_271019.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251119T050714_leak_577.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251120T101333_leak_50113.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251121T123313_leak_16735.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251121T152002_leak_15964.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251123T110900_leak_137491.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251123T225929_leak_262808.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251124T144221_leak_42216.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251125T143138_leak_48237.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251125T210748_leak_61649.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251126T064501_leak_17828.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251127T085500_leak_3300.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251127T140700_leak_52078.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251127T170942_leak_43735.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T000042_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T023508_leak_7713.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T041945_leak_268725.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T082805_leak_41475.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T091429_leak_61272.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T103947_leak_140684.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T143738_leak_22869.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251201T184452_leak_3758.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251202T011233_leak_262821.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251202T035419_leak_62553.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251202T101205_leak_8674.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251203T024757_leak_47589.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251203T060858_leak_9927.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251203T100504_leak_207168.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251203T100504_leak_42861.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251203T142500_leak_16276.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251204T091423_leak_264209.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251204T202608_leak_206075.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251204T235419_leak_37517.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251205T153927_leak_29075.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251210T015640_leak_273744.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251210T144147_leak_200924.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251211T015728_leak_23764.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251211T024455_leak_58511.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251211T094918_leak_47288.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251211T190523_leak_7713.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251211T202808_leak_22299.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251212T060422_leak_8393.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251212T095519_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251212T103602_leak_4775.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251213T002957_leak_4755.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251215T071058_leak_30990.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251215T160310_leak_47272.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251215T161534_leak_47272.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251216T203615_leak_8452.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251217T013135_leak_17828.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251218T011051_leak_37517.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251218T030751_leak_36137.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251219T231542_leak_47890.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251221T075401_leak_136255.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251222T120654_leak_6057.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251222T160940_leak_48314.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251222T193958_leak_273744.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251223T053542_leak_139370.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251223T144333_leak_136956.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251223T150114_leak_264014.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251223T162643_leak_139341.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251227T202650_leak_204457.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251230T102406_leak_6823.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251230T140259_leak_7473.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251231T062603_leak_138754.parquet",
+    "analysis/nongraph/2025/063_prefix_model/prefix_predictions/20251231T142145_leak_139076.parquet",
+    "analysis/nongraph/2025/064_prefix_features/complete.json",
+    "analysis/nongraph/2025/065_prefix_features/complete.json",
+    "analysis/nongraph/2025/066_prefix_features/complete.json",
+    "analysis/nongraph/2025/067_prefix_features/complete.json",
+    "analysis/nongraph/2025/068_prefix_features/complete.json",
+    "analysis/nongraph/2025/069_prefix_features/complete.json",
+    "analysis/nongraph/2025/070_prefix_features/complete.json",
+    "analysis/nongraph/2025/071_prefix_features/complete.json",
+    "analysis/nongraph/2025/072_prefix_features/complete.json",
+    "analysis/nongraph/2025/073_prefix_features/complete.json",
+    "analysis/nongraph/2025/074_prefix_features/complete.json",
+    "analysis/nongraph/2025/075_prefix_features/complete.json",
+    "analysis/nongraph/2025/076_prefix_features/complete.json",
+    "analysis/nongraph/2025/077_prefix_features/complete.json",
+    "analysis/nongraph/2025/078_prefix_features/complete.json",
+    "analysis/nongraph/2025/079_prefix_features/complete.json",
+    "analysis/nongraph/2025/080_prefix_features/complete.json",
+    "analysis/nongraph/2025/081_prefix_features/complete.json",
+    "analysis/nongraph/2025/082_prefix_features/complete.json",
+    "analysis/nongraph/2025/083_prefix_features/complete.json",
+    "analysis/nongraph/2025/084_prefix_features/complete.json",
+    "analysis/nongraph/2025/085_prefix_features/complete.json",
+    "analysis/nongraph/2025/086_prefix_features/complete.json",
+    "analysis/nongraph/2025/087_prefix_features/complete.json",
+    "analysis/nongraph/2025/088_prefix_features/complete.json",
+    "analysis/nongraph/2025/089_prefix_features/complete.json",
+    "analysis/nongraph/2025/090_prefix_features/complete.json",
+    "analysis/nongraph/2025/091_prefix_features/complete.json",
+    "analysis/nongraph/2025/092_prefix_features/complete.json",
+    "analysis/nongraph/2025/093_prefix_features/complete.json",
+    "analysis/nongraph/2025/094_prefix_features/complete.json",
+    "analysis/nongraph/2025/095_prefix_features/complete.json",
+    "analysis/nongraph/2025/096_chronos_lora/chronos2_lora_ckpt/finetuned-ckpt/adapter_config.json",
+    "analysis/nongraph/2025/096_chronos_lora/chronos2_lora_ckpt/finetuned-ckpt/adapter_model.safetensors",
+    "analysis/nongraph/2025/096_chronos_lora/chronos2_lora_final/adapter_config.json",
+    "analysis/nongraph/2025/096_chronos_lora/chronos2_lora_final/adapter_model.safetensors",
+    "analysis/nongraph/2025/096_chronos_lora/chronos2_lora_final/reproduction.json",
+    "analysis/nongraph/2025/096_chronos_lora/complete.json",
+    "analysis/nongraph/2025/096_chronos_lora/curve_eligibility.parquet",
+    "analysis/nongraph/2025/096_chronos_lora/curve_eligibility.verification.json",
+    "analysis/nongraph/2025/096_chronos_lora/summary.json",
+    "analysis/nongraph/2025/096_chronos_lora/summary.predictions.parquet",
+    "analysis/propagation-controls-verification.json",
+    "analysis/radar-agreement-verification.json",
+    "analysis/withdrawal-baseline-availability-audit.json",
+    "analysis/withdrawal-baseline-revision.json",
+    "analysis/withdrawal-baseline-verification.json",
+    "eventset/2022_withdrawal/durations.parquet",
+    "eventset/2022_withdrawal/events.parquet",
+    "eventset/2022_withdrawal/per_vp_duration.json",
+    "eventset/2022_withdrawal/persistence_by_duration_test.csv",
+    "eventset/2022_withdrawal/persistence_per_vp_test.csv",
+    "eventset/2022_withdrawal/persistence_test.csv",
+    "eventset/2022_withdrawal/persistence_train.csv",
+    "eventset/2022_withdrawal/summary.json",
+    "eventset/2023_leak/events.parquet",
+    "eventset/2023_withdrawal/durations.parquet",
+    "eventset/2023_withdrawal/events.parquet",
+    "eventset/2023_withdrawal/per_vp_duration.json",
+    "eventset/2023_withdrawal/persistence_by_duration_test.csv",
+    "eventset/2023_withdrawal/persistence_per_vp_test.csv",
+    "eventset/2023_withdrawal/persistence_test.csv",
+    "eventset/2023_withdrawal/persistence_train.csv",
+    "eventset/2023_withdrawal/summary.json",
+    "eventset/2024/events.parquet",
+    "eventset/2024_leak/events.parquet",
+    "eventset/2024_leak/prefix_floor.parquet",
+    "eventset/2024_withdrawal/durations.parquet",
+    "eventset/2024_withdrawal/events.parquet",
+    "eventset/2024_withdrawal/per_vp_duration.json",
+    "eventset/2024_withdrawal/persistence_by_duration_test.csv",
+    "eventset/2024_withdrawal/persistence_per_vp_test.csv",
+    "eventset/2024_withdrawal/persistence_test.csv",
+    "eventset/2024_withdrawal/persistence_train.csv",
+    "eventset/2024_withdrawal/summary.json",
+    "eventset/2025_leak/events.parquet",
+    "eventset/2025_leak/prefix_floor.parquet",
+    "eventset/2025_withdrawal/durations.parquet",
+    "eventset/2025_withdrawal/events.parquet",
+    "eventset/2025_withdrawal/per_vp_duration.json",
+    "eventset/2025_withdrawal/persistence_by_duration_test.csv",
+    "eventset/2025_withdrawal/persistence_per_vp_test.csv",
+    "eventset/2025_withdrawal/persistence_test.csv",
+    "eventset/2025_withdrawal/persistence_train.csv",
+    "eventset/2025_withdrawal/summary.json",
+    "eventset/2026_withdrawal/durations.parquet",
+    "eventset/2026_withdrawal/events.parquet",
+    "eventset/2026_withdrawal/per_vp_duration.json",
+    "eventset/2026_withdrawal/persistence_by_duration_test.csv",
+    "eventset/2026_withdrawal/persistence_per_vp_test.csv",
+    "eventset/2026_withdrawal/persistence_test.csv",
+    "eventset/2026_withdrawal/persistence_train.csv",
+    "eventset/2026_withdrawal/summary.json",
+    "rpki/beacon-delay/2024-06-10_2024-06-16/cycles.parquet",
+    "rpki/beacon-delay/2024-06-10_2024-06-16/per_vp_summary.parquet",
+    "rpki/beacon-delay/2024-06-10_2024-06-16/provenance.json",
+    "rpki/beacon-delay/2024-06-10_2024-06-16/summary.json",
+    "tgn/2024_leak200/d30s/_results/dyrep_model.pt",
+    "tgn/2024_leak200/d30s/_results/dyrep_per_vp.csv",
+    "tgn/2024_leak200/d30s/_results/dyrep_per_vp_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/dyrep_test_probs.pt",
+    "tgn/2024_leak200/d30s/_results/gat_model.pt",
+    "tgn/2024_leak200/d30s/_results/gat_per_vp.csv",
+    "tgn/2024_leak200/d30s/_results/gat_per_vp_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/gat_test_probs.pt",
+    "tgn/2024_leak200/d30s/_results/sage_model.pt",
+    "tgn/2024_leak200/d30s/_results/sage_per_vp.csv",
+    "tgn/2024_leak200/d30s/_results/sage_per_vp_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/sage_prf1.json",
+    "tgn/2024_leak200/d30s/_results/sage_prf1_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/sage_robustness.csv",
+    "tgn/2024_leak200/d30s/_results/sage_robustness.json",
+    "tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/sage_test_probs.pt",
+    "tgn/2024_leak200/d30s/_results/tgn_model.pt",
+    "tgn/2024_leak200/d30s/_results/tgn_per_vp.csv",
+    "tgn/2024_leak200/d30s/_results/tgn_per_vp_per_event.csv",
+    "tgn/2024_leak200/d30s/_results/tgn_test_probs.pt",
+    "tgn/2024_leak200/d60s/_results/dyrep_model.pt",
+    "tgn/2024_leak200/d60s/_results/dyrep_per_vp.csv",
+    "tgn/2024_leak200/d60s/_results/dyrep_per_vp_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/dyrep_test_probs.pt",
+    "tgn/2024_leak200/d60s/_results/gat_model.pt",
+    "tgn/2024_leak200/d60s/_results/gat_per_vp.csv",
+    "tgn/2024_leak200/d60s/_results/gat_per_vp_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/gat_test_probs.pt",
+    "tgn/2024_leak200/d60s/_results/sage_model.pt",
+    "tgn/2024_leak200/d60s/_results/sage_per_vp.csv",
+    "tgn/2024_leak200/d60s/_results/sage_per_vp_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/sage_prf1.json",
+    "tgn/2024_leak200/d60s/_results/sage_prf1_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/sage_robustness.csv",
+    "tgn/2024_leak200/d60s/_results/sage_robustness.json",
+    "tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/sage_test_probs.pt",
+    "tgn/2024_leak200/d60s/_results/tgn_model.pt",
+    "tgn/2024_leak200/d60s/_results/tgn_per_vp.csv",
+    "tgn/2024_leak200/d60s/_results/tgn_per_vp_per_event.csv",
+    "tgn/2024_leak200/d60s/_results/tgn_test_probs.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/dyrep_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/gat_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/sage_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkiinvalid/d30s/_results/tgn_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/gat_full_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/sage_full_model.pt",
+    "tgn/2024_rpkiinvalid/d60s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/dyrep_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/gat_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/gat_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/sage_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/sage_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkivalid/d30s/_results/tgn_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/dyrep_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/gat_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/gat_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/sage_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/sage_z11-12-13-14-15_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/tgn_full_model.pt",
+    "tgn/2024_rpkivalid/d60s/_results/tgn_z11-12-13-14-15_model.pt",
+    "tgn/2024_withdrawal/d30s/_results/cross_sage_leak2002024.json",
+    "tgn/2024_withdrawal/d30s/_results/cross_sage_leak2002024_per_event.csv",
+    "tgn/2024_withdrawal/d30s/index.csv",
+    "tgn/2024_withdrawal/d60s/_results/cross_sage_leak2002024.json",
+    "tgn/2024_withdrawal/d60s/_results/cross_sage_leak2002024_per_event.csv",
+    "tgn/2024_withdrawal/d60s/index.csv",
+    "tgn/2025_leak200/d300s/_results/sage_model.pt",
+    "tgn/2025_leak200/d30s/_results/cross_sage_leak2002025.json",
+    "tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/dyrep_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/dyrep_model.pt",
+    "tgn/2025_leak200/d30s/_results/dyrep_test_probs.pt",
+    "tgn/2025_leak200/d30s/_results/gat_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/gat_model.pt",
+    "tgn/2025_leak200/d30s/_results/gat_test_probs.pt",
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_focal2_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200/d30s/_results/sage_prf1.json",
+    "tgn/2025_leak200/d30s/_results/sage_prf1_per_event.csv",
+    "tgn/2025_leak200/d30s/_results/sage_test_probs.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_model.pt",
+    "tgn/2025_leak200/d30s/_results/tgn_test_probs.pt",
+    "tgn/2025_leak200/d30s/_results/trigger_error_common_cohort.json",
+    "tgn/2025_leak200/d60s/_results/dyrep_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/dyrep_model.pt",
+    "tgn/2025_leak200/d60s/_results/dyrep_test_probs.pt",
+    "tgn/2025_leak200/d60s/_results/gat_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/gat_model.pt",
+    "tgn/2025_leak200/d60s/_results/gat_test_probs.pt",
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_focal2_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200/d60s/_results/sage_prf1.json",
+    "tgn/2025_leak200/d60s/_results/sage_prf1_per_event.csv",
+    "tgn/2025_leak200/d60s/_results/sage_test_probs.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024+2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_2023+2024_to_2025_model.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_model.pt",
+    "tgn/2025_leak200/d60s/_results/tgn_test_probs.pt",
+    "tgn/2025_leak200/d900s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=1500/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=1500/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=3000/d30s/_results/sage_z16-17_model.pt",
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=3000/d60s/_results/sage_z16-17_model.pt",
+    "tgn/2025_leak200@k=6000/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@k=6000/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@legal=1/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@legal=1/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025.json",
+    "tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "tgn/2025_leak200@t0=-30/d30s/index.csv",
+    "tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025.json",
+    "tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "tgn/2025_leak200@t0=300/d30s/index.csv",
+    "tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025.json",
+    "tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "tgn/2025_leak200@t0=60/d30s/index.csv",
+    "tgn/2025_leak200@t0=900/d30s/_results/cross_sage_leak2002025.json",
+    "tgn/2025_leak200@t0=900/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "tgn/2025_leak200@t0=900/d30s/index.csv",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_logistic_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank0.3_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_rank1.0_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_sepenc_model.pt",
+    "tgn/2025_leak200@v=3/d30s/_results/sage_z18-19_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_logistic_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank0.3_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_rank1.0_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_sepenc_model.pt",
+    "tgn/2025_leak200@v=3/d60s/_results/sage_z18-19_model.pt",
+    "tgn/2025_leak200@vp=route-views2/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=route-views2/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc00/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc00/d60s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc25/d30s/_results/sage_model.pt",
+    "tgn/2025_leak200@vp=rrc25/d60s/_results/sage_model.pt",
+    "verification/collector-targets/leak-route-views2.parquet",
+    "verification/collector-targets/leak-rrc00.parquet",
+    "verification/collector-targets/leak-rrc25.parquet",
+    "verification/collector-targets/provenance.json",
+    "verification/derived-count-fill/2023_leak.parquet",
+    "verification/derived-count-fill/2024.parquet",
+    "verification/derived-count-fill/2024_leak.parquet",
+    "verification/derived-count-fill/2024_withdrawal.parquet",
+    "verification/derived-count-fill/2025_leak.parquet"
+  ],
+  "withdrawal_baseline": {
+    "revision": "analysis/withdrawal-baseline-revision.json",
+    "availability": "analysis/withdrawal-baseline-availability-audit.json",
+    "verification": "analysis/withdrawal-baseline-verification.json"
+  },
+  "boundary_input_bridge": {
+    "manifest": "analysis/boundary-input-bridge.json",
+    "verification": "analysis/boundary-input-verification.json",
+    "equivalence": "analysis/nongraph-boundary-input-equivalence.json"
+  },
+  "derived_count_bridge": {
+    "manifest": "analysis/derived-count-fill-bridge.json",
+    "verification": "analysis/derived-count-fill-verification.json"
+  },
+  "auxiliary_verification": "analysis/expected-graph-auxiliary.json",
+  "nongraph_release": "analysis/nongraph-release-complete.json",
+  "beacon_delay_tables": [
+    "rpki/beacon-delay/2024-06-10_2024-06-16/summary.json"
+  ],
+  "frontier_source_verification": "analysis/frontier-source-verification.json",
+  "propagation_controls_verification": "analysis/propagation-controls-verification.json",
+  "radar_agreement_verification": "analysis/radar-agreement-verification.json",
+  "file_sha256": {
+    "verification/collector-targets/leak-route-views2.parquet": "2d57105b29376f236195f4f214110aab6a3a59b349301401eec3f5fd6592e150",
+    "verification/collector-targets/leak-rrc00.parquet": "1867da70d8eb9a37f8a9e3504cc9bf86f76f855405b6167a6031c5255794299a",
+    "verification/collector-targets/leak-rrc25.parquet": "a2e0a47fcf90259d5239e0d3e2edf4e59beef9d6fe97cd20b6cba6408e982255",
+    "verification/collector-targets/provenance.json": "36d8d423a7199ede16a260797354c4fdec7c3d1558b0a502f0f1a4af782d3972"
+  }
+}

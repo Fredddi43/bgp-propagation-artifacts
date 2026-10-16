@@ -1,0 +1,35 @@
+{
+ "year": 2026,
+ "pairs": 3126,
+ "selected_pairs": 3126,
+ "zero_recovery_reach_pairs": 0,
+ "interpretation": "observed AS-path overlap; absence does not establish an AS routing state",
+ "recoverers_that_carried_hijack_mean": 0.5226,
+ "recoverers_never_carried_hijack_mean": 0.4774,
+ "recoverers_never_carried_hijack_p50": 0.4577,
+ "hijack_carriers_not_seen_recovering_mean": 0.2994,
+ "recovery_set_over_hijack_set_p50": 1.279,
+ "by_gap<1min": {
+  "pairs": 1838,
+  "recoverers_never_carried_hijack_mean": 0.4638,
+  "recovery_over_hijack_p50": 1.319
+ },
+ "by_gap 1-15min": {
+  "pairs": 479,
+  "recoverers_never_carried_hijack_mean": 0.4281,
+  "recovery_over_hijack_p50": 1.167
+ },
+ "by_gap>15min": {
+  "pairs": 809,
+  "recoverers_never_carried_hijack_mean": 0.5375,
+  "recovery_over_hijack_p50": 1.264
+ },
+ "chronologically_unmatched_links": [],
+ "chronologically_unmatched_count": 0,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2026_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2026_recovery_first_transition/events.parquet"
+ }
+}

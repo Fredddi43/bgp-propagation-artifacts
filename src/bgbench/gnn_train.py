@@ -1,7 +1,7 @@
 """ADR-0018 step 4 / ADR-0007 rung 5: static GNN on the per-event 2-hop graphs (the "generic graph model" baseline),
 before the temporal model. GraphSAGE over the typed CAIDA edges (relationship type as a learned embedding added to
 messages), node features from tgn_data, BCE with positive weighting; train on Jan–Aug events, test on Sep–Dec;
-scored per event (AUPRC, Jaccard at 0.5) against persistence (predict the seeds) on the same universe.
+scored against the full observed two-hour target; candidate-only metrics remain explicit diagnostics.
 """
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from . import config
+from .graph_metrics import membership_metrics, legacy_window_crosses_midnight
 
 
 def load_events(dir_: Path, split: str) -> list[dict]:
@@ -25,15 +26,42 @@ def load_splits(dir_: Path) -> dict[str, list[dict]]:
     """One pass over the .pt files (network filesystem) → {"train": [...], "test": [...]}."""
     out: dict[str, list[dict]] = {"train": [], "test": []}
     for f in sorted(dir_.glob("*.pt")):
-        d = torch.load(f, weights_only=False)
+        d = torch.load(f, weights_only=False, mmap=True)
         if d.get("split") in out:
             d["edge_index"] = d["edge_index"].long()      # tensors built before 2026-09-05 carry scipy's int32 indices
             out[d["split"]].append(d)
     return out
 
 
+def event_onsets(events, tag):
+    import datetime as dt
+    import polars as pl
+    from .tgn_data import replay_tag
+    family = replay_tag(tag)
+    onsets = {}
+    for year in sorted({d['event_id'][:4] for d in events}):
+        table = pl.read_parquet(config.DATA_ROOT / 'eventset' / (year + ('_' + family if family else '')) / 'events.parquet', columns=['event_id', 't0_obs'])
+        onsets.update({eid: dt.datetime.fromisoformat(t) if isinstance(t, str) else t for eid, t in zip(table['event_id'], table['t0_obs'])})
+    return onsets
+
+
+def prospective_training_events(training, testing, years, tag):
+    if ',' in str(years) and '>' not in str(years):
+        return training, {'protocol': 'retrospective_pooled_within_year_seasonal_split', 'dropped_training_ids': []}
+    from .graph_metrics import embargo_training_events
+    kept, metadata = embargo_training_events(training, testing, event_onsets(training + testing, tag))
+    metadata['protocol'] = 'prospective_cross_year' if '>' in str(years) else 'prospective_within_year'
+    return kept, metadata
+
+
 QUANTILES = (0.1, 0.5, 0.9)
-N_HORIZONS = 4            # extent.TARGETS_S: 5 min, 15 min, 60 min, 2 h
+CURVE_HORIZONS = (300, 900, 3600, 7200)
+N_HORIZONS = len(CURVE_HORIZONS)
+
+
+def curve_forecast_mask(event):
+    """Past and already-observed counts are not forecast targets."""
+    return np.asarray(CURVE_HORIZONS) > event.get("observation_cutoff_s", event.get("delta_s", 30))
 
 
 class TypedSAGE(nn.Module):
@@ -69,15 +97,16 @@ class TypedSAGE(nn.Module):
             h = F.dropout(F.relu(agg), self.dropout, self.training)
         return h
 
-    def forward(self, x, edge_index, edge_type, seed_mask):
+    def forward(self, x, edge_index, edge_type, seed_mask, n_seed=None):
         h = self._encode(self.convs, x, edge_index, edge_type)
         logits = self.out(torch.cat([h, x], dim=1)).squeeze(-1)
         seed = seed_mask.bool()
+        seed_count = seed.sum().float() if n_seed is None else torch.as_tensor(n_seed, dtype=x.dtype, device=x.device)
         hc = self._encode(self.convs_curve, x, edge_index, edge_type) if self.separate else h
         pooled = torch.cat([hc[seed].mean(0) if seed.any() else hc.mean(0), hc.mean(0),
-                            torch.log1p(seed.sum().float()).view(1), torch.log1p(torch.tensor(float(hc.shape[0]), device=hc.device)).view(1)])
+                            torch.log1p(seed_count).view(1), torch.log1p(torch.tensor(float(hc.shape[0]), device=hc.device)).view(1)])
         raw = self.curve(pooled)
-        n0 = torch.log1p(seed.sum().float())
+        n0 = torch.log1p(seed_count)
         if self.curve_head == "logistic":
             # parametric growth curve (plan's alternative head): log-count = n0 + K·σ(r·(t − t_mid)) at the four horizons; emitted as
             # a point curve replicated over the quantile slots so downstream code is unchanged (no interval)
@@ -135,8 +164,13 @@ def _jaccard(y: np.ndarray, pred: np.ndarray) -> float:
     return float(inter / union) if union else float("nan")
 
 
+def full_seed_count(d: dict):
+    return len(d['seed_asns']) if 'seed_asns' in d else d.get('n_seed_all', d['persistence_pred'].sum())
+
+
 def sage_forward(model, d: dict, device):
-    return model(d["x"].to(device), d["edge_index"].to(device), d["edge_type"].to(device), d["persistence_pred"].to(device))
+    return model(d["x"].to(device), d["edge_index"].to(device), d["edge_type"].to(device),
+                 d["persistence_pred"].to(device), n_seed=full_seed_count(d))
 
 
 THRESHOLDS = [round(0.05 * k, 2) for k in range(2, 20)]     # 0.10 … 0.95
@@ -159,39 +193,60 @@ def best_threshold(preds: list[tuple[dict, np.ndarray]]) -> float:
     for t in THRESHOLDS:
         js = []
         for d, p, _q in preds:
-            y = d["y"].numpy().astype(bool); seed = d["persistence_pred"].numpy().astype(bool)
-            js.append(_jaccard(y, seed | (p >= t)))
+            seed = d["persistence_pred"].numpy().astype(bool)
+            js.append(membership_metrics(d, seed | (p >= t))["jaccard"])
         j = float(np.nanmean(js)) if js else float("nan")
         if j > best_j:
             best, best_j = t, j
     return best
 
 
-def evaluate(model, events: list[dict], device, forward=sage_forward, threshold: float = 0.5) -> dict:
+def evaluate(model, events: list[dict], device, forward=sage_forward, threshold: float = 0.5, *, save_probabilities=False) -> dict:
     """Per-event scoring shared by every model. Seeds are known members; the model forecasts the *new* ones, so AUPRC is
     over non-seed nodes and the set metrics use seeds ∪ {p ≥ threshold}. Reported at 0.5 and at `threshold`."""
-    rows = []
+    rows, probabilities = [], {}
     for d, p, q in predict(model, events, device, forward):
-        y = d["y"].numpy(); yb = y.astype(bool); seed = d["persistence_pred"].numpy().astype(bool); mask = ~seed
+        if save_probabilities:
+            probabilities[d["event_id"]] = (d["asn"].numpy(), p)
+        y = d["y"].numpy(); seed = d["persistence_pred"].numpy().astype(bool); mask = ~seed
         pred5 = seed | (p >= 0.5); predt = seed | (p >= threshold)
-        row = {"event_id": d["event_id"], "n": len(y), "pos": int(y.sum()), "new_pos": int(y[mask].sum()),
+        m5 = membership_metrics(d, pred5); mt = membership_metrics(d, predt)
+        seeds_full = set(d["seed_asns"].tolist())
+        predicted05 = seeds_full | set(d["asn"].numpy()[pred5].tolist())
+        predicted_tuned = seeds_full | set(d["asn"].numpy()[predt].tolist())
+        row = {"event_id": d["event_id"], "legacy_window_crosses_midnight": legacy_window_crosses_midnight(d["event_id"]), "n": len(y), "pos": m5["true_size"], "true_size": m5["true_size"], "n_seed": full_seed_count(d), "new_pos": m5["new_true_size"],
                "auprc_new": _auprc(y[mask], p[mask]) if mask.sum() else float("nan"),
-               "jaccard_model": _jaccard(yb, pred5), "jaccard_model_tuned": _jaccard(yb, predt),
-               "jaccard_persist": _jaccard(yb, seed),
-               "recall_model": float(np.logical_and(yb, pred5).sum() / max(y.sum(), 1)),
-               "recall_model_tuned": float(np.logical_and(yb, predt).sum() / max(y.sum(), 1)),
-               "size_ratio_tuned": float(predt.sum() / max(y.sum(), 1))}
+               "predicted_asns_at05": json.dumps(sorted(predicted05)), "predicted_asns_tuned": json.dumps(sorted(predicted_tuned)),
+               "jaccard_model": m5["jaccard"], "jaccard_model_tuned": mt["jaccard"],
+               "jaccard_persist": m5["jaccard_persist"],
+               "recall_model": m5["recall"], "recall_model_tuned": mt["recall"],
+               "precision_model_tuned": mt["precision"], "size_ratio_tuned": mt["size_ratio"],
+               "candidate_target_coverage": mt["candidate_target_coverage"],
+               "true_outside_candidates": mt["true_outside_candidates"],
+               "candidate_jaccard_model": m5["candidate_jaccard"],
+               "candidate_jaccard_model_tuned": mt["candidate_jaccard"],
+               "candidate_jaccard_persist": mt["candidate_jaccard_persist"]}
         if "curve" in d:
-            truth = d["curve"].numpy(); n_seed = float(d.get("n_seed_all", d["n_seed"]))
+            truth = d["curve"].numpy(); n_seed = float(full_seed_count(d))
             med = np.expm1(q[:, 1]); lo = np.expm1(q[:, 0]); hi = np.expm1(q[:, 2])
             sm = lambda a, b: float(np.mean(2 * np.abs(a - b) / np.maximum(np.abs(a) + np.abs(b), 1e-9)))
-            row.update({"curve_smape_model": sm(med, truth), "curve_smape_persist": sm(np.full_like(truth, n_seed), truth),
-                        "curve_cover80": float(np.mean((truth >= lo) & (truth <= hi))),
+            future = curve_forecast_mask(d)
+            row.update({"observation_cutoff_s": float(d.get("observation_cutoff_s", d.get("delta_s", 30))),
+                        "curve_smape_model": sm(med[future], truth[future]), "curve_smape_persist": sm(np.full_like(truth[future], n_seed), truth[future]),
+                        "curve_cover80": float(np.mean(((truth >= lo) & (truth <= hi))[future])),
                         "curve_smape_2h_model": sm(med[-1:], truth[-1:]), "curve_smape_2h_persist": sm(np.full(1, n_seed), truth[-1:])})
+            for index in range(len(truth)):
+                row.update({f'curve_evaluated_{index}': bool(future[index]), f'curve_true_{index}': float(truth[index]), f'curve_pred_{index}': float(med[index]),
+                            f'curve_lo_{index}': float(lo[index]), f'curve_hi_{index}': float(hi[index])})
+            row.update(curve_true_2h=float(truth[-1]), curve_pred_2h=float(med[-1]))
         rows.append(row)
     import polars as pl
     df = pl.DataFrame(rows)
-    return {"events": df.height, "threshold": threshold, "auprc_new_mean": round(float(df["auprc_new"].drop_nans().mean()), 4),
+    return {"events": df.height, "threshold": threshold, "membership_target": "full_observed_2h",
+            "auprc_target": "non_seed_candidates",
+            "candidate_target_coverage_mean": float(df["candidate_target_coverage"].mean()),
+            "candidate_jaccard_model_tuned_mean": float(df["candidate_jaccard_model_tuned"].mean()),
+            "candidate_jaccard_persist_mean": float(df["candidate_jaccard_persist"].mean()), "auprc_new_mean": round(float(df["auprc_new"].drop_nans().mean()), 4),
             "jaccard_model_mean": round(float(df["jaccard_model"].mean()), 4),
             "jaccard_model_tuned_mean": round(float(df["jaccard_model_tuned"].mean()), 4),
             "jaccard_persist_mean": round(float(df["jaccard_persist"].mean()), 4),
@@ -203,7 +258,7 @@ def evaluate(model, events: list[dict], device, forward=sage_forward, threshold:
                 "curve_cover80": round(float(df["curve_cover80"].mean()), 4),
                 "curve_smape_2h_model": round(float(df["curve_smape_2h_model"].mean()), 4), "curve_smape_2h_persist": round(float(df["curve_smape_2h_persist"].mean()), 4)}
                if "curve_smape_model" in df.columns else {}),
-            "_rows": df}
+            **({"_probabilities": probabilities} if save_probabilities else {}), "_rows": df}
 
 
 def bootstrap_diff(rows, col_a: str, col_b: str, n: int = 2000, seed: int = 0) -> dict:
@@ -245,6 +300,11 @@ def fit(year, delta_s: int, model_factory, prefix: str, epochs: int, forward=sag
         dir_ = config.tgn_dir(years[-1], delta_s, tag)
     if not tr or not te:
         return {"error": f"train={len(tr)} test={len(te)} events"}
+    for event in tr + te:
+        event.setdefault("observation_cutoff_s", delta_s)
+    tr, split_protocol = prospective_training_events(tr, te, year, tag)
+    if not tr:
+        return {"error": "No training labels completed before first test onset"}
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     zero = [int(i) for i in os.environ.get("BGBENCH_ZERO_FEATURES", "").split(",") if i.strip()]   # ablation: blank feature columns
     if zero:
@@ -274,7 +334,8 @@ def fit(year, delta_s: int, model_factory, prefix: str, epochs: int, forward=sag
             loss = (focal_bce(logit[mask], y[mask], pw, focal_gamma) if focal_gamma > 0
                     else F.binary_cross_entropy_with_logits(logit[mask], y[mask], pos_weight=pw))
             if "curve" in d and curve_weight > 0:
-                loss = loss + curve_weight * pinball(q, torch.log1p(d["curve"].to(device)))
+                future = torch.as_tensor(curve_forecast_mask(d), device=device)
+                loss = loss + curve_weight * pinball(q[future], torch.log1p(d["curve"].to(device)[future]))
             if rank_weight > 0 and "first_s" in d:
                 fs = d["first_s"].to(device); fs = torch.where(mask, fs, torch.full_like(fs, -1.0))   # rank only non-seed joiners
                 loss = loss + rank_weight * rank_loss(logit, fs)
@@ -284,24 +345,30 @@ def fit(year, delta_s: int, model_factory, prefix: str, epochs: int, forward=sag
         ev = evaluate(model, te, device, forward)
         if post_step is not None:
             post_step(model)              # e.g. detach TGN memory after the eval-mode flush
+        print(json.dumps({"epoch": ep + 1, "epochs": epochs, "model": prefix, "elapsed_s": round(time.time() - t_start)}), flush=True)
         hist.append({"epoch": ep + 1, "loss": round(tot / max(len(tr), 1), 4), "test_auprc_new": ev["auprc_new_mean"],
                      "test_jaccard_model": ev["jaccard_model_mean"], "elapsed_s": round(time.time() - t_start)})
     thr = best_threshold(predict(model, tr, device, forward))            # operating point chosen on the training events
-    final = evaluate(model, te, device, forward, threshold=thr)
+    final = evaluate(model, te, device, forward, threshold=thr, save_probabilities=True)
     rows = final.pop("_rows")
-    probs = {d["event_id"]: (d["asn"].numpy(), p) for d, p, _q in predict(model, te, device, forward)}   # for per-VP scoring (ADR-0008 §2)
+    probs = final.pop("_probabilities")  # Exactly the same inference pass as the scored membership sets.
+    clean_rows = rows.filter(~rows["legacy_window_crosses_midnight"])
+    final["same_day_replay_sensitivity"] = {"events": clean_rows.height, "excluded": rows.height - clean_rows.height,
+        "jaccard_model_tuned_mean": clean_rows["jaccard_model_tuned"].mean(),
+        "jaccard_persist_mean": clean_rows["jaccard_persist"].mean(),
+        "diff_tuned_minus_persistence": bootstrap_diff(clean_rows, "jaccard_model_tuned", "jaccard_persist")}
     final["diff_tuned_minus_persistence"] = bootstrap_diff(rows, "jaccard_model_tuned", "jaccard_persist")
     final["diff_at05_minus_persistence"] = bootstrap_diff(rows, "jaccard_model", "jaccard_persist")
     out_dir = dir_ / "_results"; out_dir.mkdir(exist_ok=True)
     prefix = prefix if str(year).isdigit() else f"{prefix}_{str(year).replace(',', '+').replace('>', '_to_')}"
     rows.write_csv(out_dir / f"{prefix}_test_per_event.csv")
-    torch.save({"state_dict": model.state_dict(), "mu": mu, "sd": sd, "threshold": thr, "prefix": prefix, "tag": tag, "delta_s": delta_s, "n_types": n_edge_types(tr)},
+    torch.save({"state_dict": {k: v.detach().cpu() for k, v in model.state_dict().items()}, "mu": mu, "sd": sd, "threshold": thr, "prefix": prefix, "tag": tag, "delta_s": delta_s, "n_types": n_edge_types(tr + te), "curve_seed_floor": "all_observed_seeds", "curve_evaluation_rule": "target_strictly_after_observation_cutoff"},
                out_dir / f"{prefix}_model.pt")                      # for the robustness evaluations (ADR-0008 §4–5)
     torch.save(probs, out_dir / f"{prefix}_test_probs.pt")
     if "curve_smape_model" in rows.columns:
         final["diff_curve_smape_model_minus_persist"] = bootstrap_diff(rows, "curve_smape_model", "curve_smape_persist")
     res = {"model": prefix, "tag": tag, "years": str(year), "delta_s": delta_s, "train_events": len(tr), "test_events": len(te), "epochs": epochs, "lr": lr, "threshold_tuned_on_train": thr,
-           "focal_gamma": focal_gamma, "curve_weight": curve_weight, "rank_weight": rank_weight,
+           "split_protocol": split_protocol, "curve_seed_floor": "all_observed_seeds", "curve_horizons_seconds": list(CURVE_HORIZONS), "curve_evaluation_rule": "target_strictly_after_observation_cutoff", "seed": seed, "focal_gamma": focal_gamma, "curve_weight": curve_weight, "rank_weight": rank_weight,
            "pos_weight_cap": pos_weight_cap, "device": str(device), **(extra or {}), "final_test": final, "history": hist}
     (out_dir / f"{prefix}_summary.json").write_text(json.dumps(res, indent=1, default=str))
     return res
@@ -310,4 +377,4 @@ def fit(year, delta_s: int, model_factory, prefix: str, epochs: int, forward=sag
 def train(year="2024", delta_s: int = 30, epochs: int = 20, hid: int = 64, lr: float = 1e-3, pos_weight_cap: float = 20.0, seed: int = 0, tag: str = "",
           focal_gamma: float = 0.0, curve_weight: float = 1.0, rank_weight: float = 0.0, curve_head: str = "quantile", separate_encoders: bool = False) -> dict:
     return fit(year, delta_s, lambda in_dim, evs: TypedSAGE(in_dim, hid, n_types=n_edge_types(evs), curve_head=curve_head, separate_encoders=separate_encoders), "sage", epochs, lr=lr, pos_weight_cap=pos_weight_cap, rank_weight=rank_weight,
-               seed=seed, extra={"hid": hid}, tag=tag, focal_gamma=focal_gamma, curve_weight=curve_weight)
+               seed=seed, extra={"hid": hid, "curve_head": curve_head, "separate_encoders": separate_encoders}, tag=tag, focal_gamma=focal_gamma, curve_weight=curve_weight)

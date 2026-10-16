@@ -3,19 +3,25 @@
  "tag": "leak200",
  "delta_s": 30,
  "model": "sage",
- "threshold": 0.95,
- "events": 100,
+ "threshold": 0.85,
+ "membership_target": "full_observed_2h",
+ "events": 108,
  "new_members_only": {
-  "precision_mean": 0.5388,
-  "recall_mean": 0.6969,
-  "f1_mean": 0.5681,
-  "micro_precision": 0.5682,
-  "micro_recall": 0.7246,
-  "predicted_new_per_event_p50": 105.5,
-  "true_new_per_event_p50": 72.5
+  "undefined_event_policy": "omit undefined ratios from macro means; retain all events in micro totals",
+  "precision_defined_events": 108,
+  "recall_defined_events": 108,
+  "f1_defined_events": 108,
+  "zero_prediction_events": 0,
+  "precision_mean": 0.5003,
+  "recall_mean": 0.7072,
+  "f1_mean": 0.5467,
+  "micro_precision": 0.5308,
+  "micro_recall": 0.7006,
+  "predicted_new_per_event_p50": 143.0,
+  "true_new_per_event_p50": 91.0
  },
  "full_set_seeds_plus_predicted": {
-  "precision_mean": 0.827,
-  "recall_mean": 0.9094
+  "precision_mean": 0.7889,
+  "recall_mean": 0.8903
  }
 }

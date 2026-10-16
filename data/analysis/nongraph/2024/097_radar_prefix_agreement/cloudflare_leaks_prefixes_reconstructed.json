@@ -1,0 +1,1245 @@
+{
+ "measurement_definition": "nearest_identifier_match_complete_radar_window_observed_prefixes_v1",
+ "ambiguous_radar_ids": [
+  "222836",
+  "224168",
+  "224169",
+  "228526",
+  "228527",
+  "230161",
+  "230162",
+  "245530",
+  "246243",
+  "248478",
+  "248602",
+  "250805"
+ ],
+ "censored_matches": [
+  {
+   "radar_id": "218760",
+   "event_id": "20240101T000419_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "218851",
+   "event_id": "20240101T002544_leak_38753",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219069",
+   "event_id": "20240101T012420_leak_133073",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219099",
+   "event_id": "20240101T165116_leak_263500",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219115",
+   "event_id": "20240102T024003_leak_266152",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219159",
+   "event_id": "20240103T060710_leak_45305",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219179",
+   "event_id": "20240103T082020_leak_6306",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219317",
+   "event_id": "20240106T101719_leak_21826",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219496",
+   "event_id": "20240110T150848_leak_15806",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219537",
+   "event_id": "20240110T225634_leak_38753",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219547",
+   "event_id": "20240111T065529_leak_12348",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219652",
+   "event_id": "20240113T051326_leak_27855",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219663",
+   "event_id": "20240113T132301_leak_34376",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219664",
+   "event_id": "20240113T135517_leak_212088",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219681",
+   "event_id": "20240113T195717_leak_37183",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219764",
+   "event_id": "20240115T172339_leak_28258",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "219784",
+   "event_id": "20240116T013513_leak_12540",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220007",
+   "event_id": "20240119T111826_leak_5433",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220008",
+   "event_id": "20240119T112126_leak_19570",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220374",
+   "event_id": "20240125T125200_leak_37308",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220468",
+   "event_id": "20240126T210355_leak_262615",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220580",
+   "event_id": "20240129T034629_leak_45305",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220642",
+   "event_id": "20240129T194550_leak_262401",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220682",
+   "event_id": "20240130T091220_leak_43180",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220805",
+   "event_id": "20240201T003521_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220817",
+   "event_id": "20240201T040924_leak_136093",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220824",
+   "event_id": "20240201T060604_leak_27884",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220830",
+   "event_id": "20240201T074955_leak_19570",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220839",
+   "event_id": "20240201T115630_leak_12491",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220841",
+   "event_id": "20240201T120521_leak_7162",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220844",
+   "event_id": "20240201T120520_leak_28258",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220851",
+   "event_id": "20240201T140940_leak_206238",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220852",
+   "event_id": "20240201T141558_leak_133073",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220860",
+   "event_id": "20240201T163923_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220890",
+   "event_id": "20240201T183625_leak_28469",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "220980",
+   "event_id": "20240202T200014_leak_264169",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221222",
+   "event_id": "20240206T171257_leak_264521",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221306",
+   "event_id": "20240207T200452_leak_262456",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221340",
+   "event_id": "20240208T063846_leak_12348",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221422",
+   "event_id": "20240209T053729_leak_63375",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221582",
+   "event_id": "20240211T124201_leak_37645",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221617",
+   "event_id": "20240212T013350_leak_28509",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221618",
+   "event_id": "20240212T013350_leak_28509",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221636",
+   "event_id": "20240212T101153_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221852",
+   "event_id": "20240215T140703_leak_37645",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "221855",
+   "event_id": "20240215T143115_leak_199599",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222029",
+   "event_id": "20240217T051416_leak_37645",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222038",
+   "event_id": "20240217T070248_leak_4775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222057",
+   "event_id": "20240217T120844_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222213",
+   "event_id": "20240219T172809_leak_263151",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222342",
+   "event_id": "20240221T080952_leak_269153",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222483",
+   "event_id": "20240222T105850_leak_32030",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222805",
+   "event_id": "20240227T070823_leak_25145",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "222925",
+   "event_id": "20240228T143643_leak_264500",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223078",
+   "event_id": "20240301T022107_leak_17072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223085",
+   "event_id": "20240301T050308_leak_19570",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223086",
+   "event_id": "20240301T051828_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223103",
+   "event_id": "20240301T102617_leak_27715",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223105",
+   "event_id": "20240301T110833_leak_12348",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223106",
+   "event_id": "20240301T110833_leak_12348",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223126",
+   "event_id": "20240301T150211_leak_9304",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223137",
+   "event_id": "20240301T192924_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223204",
+   "event_id": "20240302T231441_leak_13157",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223307",
+   "event_id": "20240304T123013_leak_37714",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223349",
+   "event_id": "20240305T034153_leak_136093",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223448",
+   "event_id": "20240306T054942_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223673",
+   "event_id": "20240308T204634_leak_140443",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223677",
+   "event_id": "20240308T212829_leak_136093",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223706",
+   "event_id": "20240309T051412_leak_58823",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223718",
+   "event_id": "20240309T101839_leak_37645",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223719",
+   "event_id": "20240309T101839_leak_37645",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "223771",
+   "event_id": "20240310T121037_leak_6775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "224098",
+   "event_id": "20240313T225145_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "224133",
+   "event_id": "20240314T041307_leak_9304",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "224225",
+   "event_id": "20240315T031139_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "224643",
+   "event_id": "20240320T061332_leak_267484",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "224776",
+   "event_id": "20240321T191715_leak_20326",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "224816",
+   "event_id": "20240322T075242_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225094",
+   "event_id": "20240326T033118_leak_61884",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225284",
+   "event_id": "20240328T033041_leak_31452",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225296",
+   "event_id": "20240328T054237_leak_23671",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225522",
+   "event_id": "20240401T100036_leak_3920",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225526",
+   "event_id": "20240401T105500_leak_58823",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225564",
+   "event_id": "20240401T193125_leak_139982",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225568",
+   "event_id": "20240401T231507_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225575",
+   "event_id": "20240402T033530_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225605",
+   "event_id": "20240402T123640_leak_267484",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225701",
+   "event_id": "20240404T045515_leak_8048",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225834",
+   "event_id": "20240406T172915_leak_17072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225835",
+   "event_id": "20240406T172915_leak_17072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "225970",
+   "event_id": "20240409T040338_leak_6306",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "226008",
+   "event_id": "20240409T201854_leak_8038",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "226065",
+   "event_id": "20240410T090839_leak_202673",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "226074",
+   "event_id": "20240410T131303_leak_17072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "226075",
+   "event_id": "20240410T140120_leak_27855",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "226426",
+   "event_id": "20240415T215307_leak_212088",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227018",
+   "event_id": "20240425T033942_leak_7162",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227385",
+   "event_id": "20240501T031236_leak_52073",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227386",
+   "event_id": "20240501T034938_leak_36907",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227409",
+   "event_id": "20240501T143854_leak_45326",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227412",
+   "event_id": "20240501T160014_leak_28258",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227421",
+   "event_id": "20240501T190516_leak_28258",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227536",
+   "event_id": "20240503T064032_leak_37183",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "227556",
+   "event_id": "20240503T113210_leak_197477",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "228060",
+   "event_id": "20240512T020825_leak_28103",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "228263",
+   "event_id": "20240514T221118_leak_199599",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "228582",
+   "event_id": "20240519T222859_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "228710",
+   "event_id": "20240521T180530_leak_264197",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "228901",
+   "event_id": "20240523T201632_leak_264294",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229247",
+   "event_id": "20240529T030515_leak_25549",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229411",
+   "event_id": "20240531T071950_leak_37358",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229437",
+   "event_id": "20240601T004841_leak_45326",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229441",
+   "event_id": "20240601T020407_leak_38165",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229482",
+   "event_id": "20240602T001854_leak_58616",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229533",
+   "event_id": "20240603T113829_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229536",
+   "event_id": "20240603T113829_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229654",
+   "event_id": "20240605T034404_leak_11172",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229669",
+   "event_id": "20240605T090925_leak_9927",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "229678",
+   "event_id": "20240605T132722_leak_264294",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230001",
+   "event_id": "20240611T002252_leak_12540",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230085",
+   "event_id": "20240612T113620_leak_54035",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230189",
+   "event_id": "20240613T161507_leak_34362",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230771",
+   "event_id": "20240625T123848_leak_23671",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230776",
+   "event_id": "20240625T135619_leak_263151",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230806",
+   "event_id": "20240626T005029_leak_264500",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230912",
+   "event_id": "20240627T061045_leak_9304",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230949",
+   "event_id": "20240627T184858_leak_53072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230953",
+   "event_id": "20240627T193846_leak_53072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230960",
+   "event_id": "20240627T201138_leak_53072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230978",
+   "event_id": "20240627T230100_leak_199599",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "230991",
+   "event_id": "20240628T022101_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232483",
+   "event_id": "20240701T015844_leak_264294",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232486",
+   "event_id": "20240701T035200_leak_38193",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232488",
+   "event_id": "20240701T043400_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232492",
+   "event_id": "20240701T052253_leak_38193",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232508",
+   "event_id": "20240701T114058_leak_27715",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232585",
+   "event_id": "20240701T233335_leak_28666",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232600",
+   "event_id": "20240702T082342_leak_35761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232614",
+   "event_id": "20240702T131318_leak_52566",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232666",
+   "event_id": "20240703T055318_leak_8865",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232689",
+   "event_id": "20240703T091545_leak_133524",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232796",
+   "event_id": "20240704T180122_leak_35761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "232808",
+   "event_id": "20240704T204515_leak_29687",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233072",
+   "event_id": "20240709T041523_leak_262907",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233136",
+   "event_id": "20240709T225225_leak_12348",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233138",
+   "event_id": "20240709T225225_leak_12348",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233164",
+   "event_id": "20240710T065736_leak_30383",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233174",
+   "event_id": "20240710T082434_leak_58616",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233399",
+   "event_id": "20240712T183110_leak_264197",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233524",
+   "event_id": "20240715T084023_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "233858",
+   "event_id": "20240719T043622_leak_8866",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234018",
+   "event_id": "20240721T140931_leak_197235",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234552",
+   "event_id": "20240727T161747_leak_4775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234553",
+   "event_id": "20240727T161747_leak_4775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234555",
+   "event_id": "20240727T161747_leak_4775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234808",
+   "event_id": "20240731T015524_leak_132021",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234926",
+   "event_id": "20240801T070914_leak_266389",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234949",
+   "event_id": "20240801T085531_leak_16344",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234951",
+   "event_id": "20240801T085531_leak_8866",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234952",
+   "event_id": "20240801T085958_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "234964",
+   "event_id": "20240801T112746_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235267",
+   "event_id": "20240804T043440_leak_28103",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235388",
+   "event_id": "20240805T222716_leak_11172",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235683",
+   "event_id": "20240808T225923_leak_25467",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235788",
+   "event_id": "20240810T143711_leak_263903",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235798",
+   "event_id": "20240810T185942_leak_23671",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235800",
+   "event_id": "20240810T203942_leak_25145",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235803",
+   "event_id": "20240810T235834_leak_11172",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "235910",
+   "event_id": "20240812T103606_leak_37035",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237770",
+   "event_id": "20240831T053622_leak_52263",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237771",
+   "event_id": "20240831T053622_leak_52263",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237777",
+   "event_id": "20240831T072247_leak_11172",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237912",
+   "event_id": "20240901T051942_leak_27882",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237922",
+   "event_id": "20240901T071343_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237962",
+   "event_id": "20240901T124524_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "237992",
+   "event_id": "20240901T171854_leak_6306",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238010",
+   "event_id": "20240901T225434_leak_9927",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238111",
+   "event_id": "20240902T110516_leak_8866",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238113",
+   "event_id": "20240902T111004_leak_6775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238151",
+   "event_id": "20240902T174908_leak_37035",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238193",
+   "event_id": "20240903T005058_leak_11271",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238194",
+   "event_id": "20240903T012632_leak_9927",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238343",
+   "event_id": "20240903T211757_leak_28546",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238732",
+   "event_id": "20240905T190449_leak_30999",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "238921",
+   "event_id": "20240907T141232_leak_39125",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "239017",
+   "event_id": "20240908T064433_leak_4761",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "239247",
+   "event_id": "20240910T074831_leak_8860",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "239248",
+   "event_id": "20240910T074831_leak_8860",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "239249",
+   "event_id": "20240910T074831_leak_8860",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "240062",
+   "event_id": "20240916T150632_leak_18618",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "240474",
+   "event_id": "20240920T060311_leak_45117",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241129",
+   "event_id": "20240926T165006_leak_52363",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241173",
+   "event_id": "20240927T040034_leak_52762",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241206",
+   "event_id": "20240927T110306_leak_37105",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241229",
+   "event_id": "20240927T153701_leak_52263",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241547",
+   "event_id": "20241001T010205_leak_28509",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241559",
+   "event_id": "20241001T043730_leak_134739",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241571",
+   "event_id": "20241001T061508_leak_268355",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241576",
+   "event_id": "20241001T064528_leak_132021",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241582",
+   "event_id": "20241001T081845_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241589",
+   "event_id": "20241001T081845_leak_15964",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241607",
+   "event_id": "20241001T101348_leak_31452",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "241608",
+   "event_id": "20241001T104915_leak_132021",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "242054",
+   "event_id": "20241004T165107_leak_262785",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "242075",
+   "event_id": "20241004T210029_leak_17072",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "242253",
+   "event_id": "20241007T044046_leak_45305",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "242431",
+   "event_id": "20241008T125700_leak_60636",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "242591",
+   "event_id": "20241010T013842_leak_32030",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "242934",
+   "event_id": "20241012T214948_leak_23106",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243098",
+   "event_id": "20241014T104037_leak_28103",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243157",
+   "event_id": "20241014T174241_leak_2722",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243196",
+   "event_id": "20241015T071414_leak_37109",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243335",
+   "event_id": "20241016T084033_leak_12731",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243500",
+   "event_id": "20241017T132706_leak_264344",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243834",
+   "event_id": "20241021T184240_leak_28555",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "243836",
+   "event_id": "20241021T185615_leak_28555",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "244424",
+   "event_id": "20241025T001701_leak_267079",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245408",
+   "event_id": "20241101T031637_leak_45305",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245410",
+   "event_id": "20241101T031637_leak_45305",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245470",
+   "event_id": "20241101T210035_leak_134739",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245704",
+   "event_id": "20241104T052613_leak_47237",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245955",
+   "event_id": "20241106T030659_leak_8048",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245960",
+   "event_id": "20241106T050831_leak_9927",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245961",
+   "event_id": "20241106T050831_leak_9927",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "245975",
+   "event_id": "20241106T065349_leak_28546",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "246450",
+   "event_id": "20241111T160720_leak_11172",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "246454",
+   "event_id": "20241111T175858_leak_9304",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "246742",
+   "event_id": "20241114T113803_leak_9304",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "246819",
+   "event_id": "20241114T201612_leak_263936",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "247282",
+   "event_id": "20241120T204401_leak_4775",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "248330",
+   "event_id": "20241201T120803_leak_52617",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "248492",
+   "event_id": "20241203T084528_leak_8285",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "248602",
+   "event_id": "20241204T130938_leak_52363",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "248654",
+   "event_id": "20241205T015631_leak_6306",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "248694",
+   "event_id": "20241205T121815_leak_28546",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "249113",
+   "event_id": "20241210T113201_leak_268019",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "249385",
+   "event_id": "20241212T104541_leak_268019",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "249420",
+   "event_id": "20241212T202136_leak_50867",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "249473",
+   "event_id": "20241213T053139_leak_58616",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "249790",
+   "event_id": "20241216T034405_leak_12540",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "249849",
+   "event_id": "20241216T173422_leak_264197",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "250690",
+   "event_id": "20241225T015315_leak_264344",
+   "reason": "radar_window_outside_retained_replay"
+  },
+  {
+   "radar_id": "250808",
+   "event_id": "20241226T145740_leak_60636",
+   "reason": "radar_window_outside_retained_replay"
+  }
+ ],
+ "radar_leaks": 15514,
+ "matched_to_our_events": 1160,
+ "exact_count_match": 971,
+ "our_ge_radar": 1109,
+ "ratio_p10_p50_p90": [
+  1.0,
+  1.0,
+  1.4
+ ],
+ "radar_prefix_count_p50": 1.0,
+ "our_prefix_count_p50": 1.0
+}

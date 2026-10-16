@@ -1,0 +1,246 @@
+{
+  "status": "passed",
+  "mode": "private_source_audit",
+  "variants": [
+    {
+      "file": "eventset/2022/rov_frontier.json",
+      "rows": 4938
+    },
+    {
+      "file": "eventset/2023/rov_frontier.json",
+      "rows": 11065
+    },
+    {
+      "file": "eventset/2023/rov_frontier_labelled.json",
+      "rows": 8200
+    },
+    {
+      "file": "eventset/2023/rov_frontier_stratum.json",
+      "rows": 2865
+    },
+    {
+      "file": "eventset/2024/rov_frontier.json",
+      "rows": 20940
+    },
+    {
+      "file": "eventset/2024/rov_frontier_labelled.json",
+      "rows": 18350
+    },
+    {
+      "file": "eventset/2024/rov_frontier_stratum.json",
+      "rows": 2590
+    },
+    {
+      "file": "eventset/2024/rov_frontier_frozen2505.json",
+      "rows": 20940
+    },
+    {
+      "file": "eventset/2024/rov_frontier_thr0.3.json",
+      "rows": 20940
+    },
+    {
+      "file": "eventset/2024/rov_frontier_thr0.8.json",
+      "rows": 20940
+    },
+    {
+      "file": "eventset/2025/rov_frontier.json",
+      "rows": 25551
+    },
+    {
+      "file": "eventset/2025/rov_frontier_frozen2505.json",
+      "rows": 25551
+    },
+    {
+      "file": "eventset/2025/rov_frontier_labelled_frozen2505.json",
+      "rows": 22921
+    },
+    {
+      "file": "eventset/2025/rov_frontier_stratum_frozen2505.json",
+      "rows": 2630
+    },
+    {
+      "file": "eventset/2026/rov_frontier.json",
+      "rows": 17240
+    },
+    {
+      "file": "eventset/2026/rov_frontier_frozen2505.json",
+      "rows": 17240
+    },
+    {
+      "file": "eventset/2026/rov_frontier_labelled_frozen2505.json",
+      "rows": 14500
+    },
+    {
+      "file": "eventset/2026/rov_frontier_stratum_frozen2505.json",
+      "rows": 2740
+    },
+    {
+      "file": "eventset/2026/rov_frontier_mintotal10.json",
+      "rows": 17240
+    }
+  ],
+  "source_sha256": {
+    "eventset/2022/events.parquet": "a9d73383f60f43f0453db0065d9b492683011a2d2f5a454aa312a67947c4a44f",
+    "eventset/2022/rpki_validity.parquet": "c2a190b65f611dc11313ecbb9ac47b390f9dc191bd6e93d4aa99c17a68d59230",
+    "eventset/2023/events.parquet": "09635480e6b98a0a9331a3312e1e8ac5544d0cf579ab5f143d1d487e2e6d2be8",
+    "eventset/2023/rpki_validity.parquet": "241eabd3146f23f56cdc29c90a8b8e67425ae23cf789caf451ee09264c1c8730",
+    "eventset/2024/events.parquet": "75eaec9a599b706e53f22fa477463fb150aaf2cfd361f7f0c06e3cffd984409c",
+    "eventset/2024/rpki_validity.parquet": "cb785b00d6f77ce6db4f0b52420567b8b14a79a534e07b9b1f151196ac0231d6",
+    "eventset/2025/events.parquet": "96031f65daa558d1f73efd3427c6b7fd05104400bd696de6ca7f92760ce8862d",
+    "eventset/2025/rpki_validity.parquet": "b497df6f6d753d720bde1ce2fb9f7a0c0f1ca238eca8abd977ebb236307bd0e2",
+    "eventset/2026/events.parquet": "18373fef9235f01c1e39111cc817b96ae5f79601b1357ab631f58f6527e9035a",
+    "eventset/2026/rpki_validity.parquet": "ac8257b1c0101256894a7471a3a35740397ae2456ef7c8cde25b95f913f28c99"
+  },
+  "raw_source_sha256": {
+    "rpki/rovista/as_rov_series.parquet": "b16b66a02d347f8bb10ee1866263985a3d1d5bda0e169ab5e175752c226e9f55",
+    "graphs/20220101.rel.parquet": "8c84afa56edc4fe6630cd0fb2511b5f3a0af19c2b79ad1183d1aa4955c79ebff",
+    "graphs/20220201.rel.parquet": "48a4b4421940720253f4a066b47716bb7293498414393c63d562f3c3cd01f62f",
+    "graphs/20220301.rel.parquet": "1b26d18a4668b9ff97a9a4c281dc9ff215545e57d2f1bc53f4b7cc2051261abb",
+    "graphs/20220401.rel.parquet": "18b0edd1158e3a14a8b962ac55ad77c0a89e77e528a773c5e3c1f1b8e98384aa",
+    "graphs/20220501.rel.parquet": "29c2482ebfc1bc06667195119c1fc4c3eb3b8886552e4f2648893a03674532b4",
+    "graphs/20220601.rel.parquet": "2f8fb10c80ad04690e926d5c6bcbe98557c3aec7617b46393afb7589090eb9c3",
+    "graphs/20220701.rel.parquet": "0217c1860bd4e305ce6a18a6546245e053cfcd2eafb278e1abe795e3755fd87a",
+    "graphs/20220801.rel.parquet": "66ae75b6707efcf438df6a5643e767a4ca937494e7c305b387211848b8d9cd1d",
+    "graphs/20220901.rel.parquet": "63fbae0a3c081743e280144a6033c8a919e909bc320fbd140a1d8ea17b96a0c9",
+    "graphs/20221001.rel.parquet": "8395d2dc4b787eb3e752263e97194995d22ce0400577f6d385a8315e28014902",
+    "graphs/20221101.rel.parquet": "27582f0373b7d286ba95d846401c15b6ff33597fdf8bb2104a5bfe5e3b0f380c",
+    "graphs/20221201.rel.parquet": "42b019e57e1596557512865ddabe971e2b8a40c4aaa9f96f595451c60d3df871",
+    "graphs/20230101.rel.parquet": "a1509cc7f68f28bd3685c1e4fe3ab35aba15102a3439c20fd2772c0032c961e5",
+    "graphs/20230201.rel.parquet": "02bf980b33ea8e59ad6d9520bc1d6c71423beae6b2574bcb31b3bf40b0ad1d64",
+    "graphs/20230301.rel.parquet": "081bf2b2460c5f0760cbf929ba7ffa81fa7f52a0f62d4868da7b397e5267bde5",
+    "graphs/20230401.rel.parquet": "c5a3ed23ec9cb1847407c4b796e4b677d51a97da12864097848fbaac458090f3",
+    "graphs/20230501.rel.parquet": "5a88e8118922dafaf34f919151c63a9ded48474bc1dc6eebbff9cb9b433e5d84",
+    "graphs/20230601.rel.parquet": "01ad2af56b9dba9a0aabe5c5ad58ea8e551644bcdec2210ce02d58b739d65e7c",
+    "graphs/20230701.rel.parquet": "97293bb01494c90c6db9e28f75b48fdae52c0e4dad3b02d608cf352b6997d839",
+    "graphs/20230801.rel.parquet": "bb4e3423dfc0d222b61ad78468be5716e47e99b1f62826b851d2204ca5e646fd",
+    "graphs/20230901.rel.parquet": "5dd91b5047e0fa035ebac9d2011d861bdcb468ebe91fa3276b5e868a30be9f7c",
+    "graphs/20231001.rel.parquet": "b8152ffb8b9436d3bab1d63351d3e8702a6605aa5335691f5acd9cf04a8cfdce",
+    "graphs/20231101.rel.parquet": "cd34d6ddd5dba7b05556349ab5db9a7d9faf9e3124c3041697d5c4b080aebd4a",
+    "graphs/20231201.rel.parquet": "bcf922411080091401663c8e396b7098d41caef78135e8eaad66b1454ee26c58",
+    "graphs/20240101.rel.parquet": "7e5f616ce505c7d8433e6e0e33261c06cc362fb603c72c2a1d5fe4ebd697dbd3",
+    "graphs/20240201.rel.parquet": "34c5ae4c4095ba71fd57518a0055d0ad66822a30ff4c659c3c7e274697f6705c",
+    "graphs/20240301.rel.parquet": "3ac43ae93400b477cc9aac4ba939df8de99b3afc60489262f5776eedfb3b75ec",
+    "graphs/20240401.rel.parquet": "98a7e89dc05ab6613dcb29a4aad9481494ab0c056dc44a67f6c85a4b88299907",
+    "graphs/20240501.rel.parquet": "776e72b5dc94cadbd7fc4d68865b45702a3b551589b65d401dfbee99b93c2bf8",
+    "graphs/20240601.rel.parquet": "5b2b2d9a6f604229d9a311c01f56482649e96664e449d674882d1de1291fc587",
+    "graphs/20240701.rel.parquet": "8dd9263479be1309dfe5d1cce99b69b346c05e71e5382f5278a3f37c1e0d583d",
+    "graphs/20240801.rel.parquet": "6b97810ab114ea0598dd8a2fdc45408221bb4032ee62dd0ad4d1bddb7d8625ca",
+    "graphs/20240901.rel.parquet": "b1976e29c99fd5179e4cb6988295763366f159154ee5e60af5ed7777125f50c9",
+    "graphs/20241001.rel.parquet": "fa59cb5f4827da5a09a0981a7d93161800edebb0fac903d54f6d0f412a05e7be",
+    "graphs/20241101.rel.parquet": "b78db9c3b3601c690f61f2df931420d4bd2caba1082d42f6cf28a92b46cbffc5",
+    "graphs/20241201.rel.parquet": "c78394e70680315b465c6b147eaf84a7ebba5d8ca253a12049cb5ab0c7a7e231",
+    "graphs/20250101.rel.parquet": "f0d75a5b6e70a2c0a4aa4a6b0a1195132c309ccfc595ea7987cdeacbeb2e10f9",
+    "graphs/20250201.rel.parquet": "465cc4a5d3deeedc717e4ca34bd71d6ebfd22048dac8b64aadb31f5fda971639",
+    "graphs/20250301.rel.parquet": "db1a48bf6c446501f91fc70a2d378fdb9623259391fd92cd2e1b0b03e8ba022a",
+    "graphs/20250401.rel.parquet": "0d04145e7d0adca82ffa3e3f1f933c72bd092c72e095f709ece081249ec0df13",
+    "graphs/20250501.rel.parquet": "5bc2ee68fc19e1f5b70c730bd001013d5c5078839f51c42857d5d9b937d068d9",
+    "graphs/20250601.rel.parquet": "20b47dd1af5f3a9276645e904619c31dd1c35c16fc99f5ee202d8ecff8ebeaec",
+    "graphs/20250701.rel.parquet": "b6a0176204522a1a98d58f39a4becb65396c6e438ca5daa923329c2ea56d375b",
+    "graphs/20250801.rel.parquet": "1c388429bc626ab8cdecfa636b14092fd2ade2d3938ca7fa927ef7dfa413f073",
+    "graphs/20250901.rel.parquet": "043ac6405f6321664fe5e880c57729634e1604bffff7d1670c2269d5867938ac",
+    "graphs/20251001.rel.parquet": "98da405a4dba0de40c7578ef59bd08af7cbf83d9f7a3306aa1e9b6274aa15a29",
+    "graphs/20251101.rel.parquet": "22a7f4d3fad809e244ae662ad26f3c032bfb007d9756d885570b7b8b1163c145",
+    "graphs/20251201.rel.parquet": "135725bf3a81b68dbeedc79a68e4dde24a4187911321f2aad15f1220ff670b81",
+    "graphs/20260101.rel.parquet": "836ca07ee7a39e5d66c03182dcfe465b920005b30c867c7a48ab0bf03cdb667d",
+    "graphs/20260201.rel.parquet": "1e3250919d53a91ef831413f93b19a93a60955f4abf6495b716145f46f3d675e",
+    "graphs/20260301.rel.parquet": "cb1e0c9c42303d00781716dad3465910353b9e6cdd5bcc824e39e1c1359b646b",
+    "graphs/20260401.rel.parquet": "dd93e9706ba2327f3236e92853c6e9b148ca4baa859a96dad10a58d1b5b9957e",
+    "graphs/20260501.rel.parquet": "cc922717bd2f7f2c2d224cdb9bf9a47fd8f53ff4e8b4755a27c18089f16239cf",
+    "graphs/20260601.rel.parquet": "477b24e70551578a81db595912a22b78281ba515bdb890cf60da3b284aa2c233",
+    "graphs/20260701.rel.parquet": "b91f0bacbc357e1805927c7187eccb97899a0397eea9bddc4addc39406bb3849",
+    "graphs/20260801.rel.parquet": "7c892ab9f45c4502e4f009da20b58f3fac50092e662e67911f2920ec248387f9"
+  },
+  "evidence_sha256": {
+    "eventset/2022/rov_frontier.json": "406f741e48b6334f9a9f4fd008a157529f5a389d2bcea924ea7323f74f33ab29",
+    "eventset/2022/rov_frontier.parquet": "466fc9b8fe855450342a01515e3fbd9cd0a5e36925b662f2ffcb179599db01af",
+    "eventset/2023/rov_frontier.json": "6f98b95b179da6e0c6716ed449cdeff45b82625e861fb45466048824986d3710",
+    "eventset/2023/rov_frontier.parquet": "5d90d89c29e03d08bf35979a2b601a491a4270222022af6181f79403b593c1f4",
+    "eventset/2023/rov_frontier_labelled.json": "1aab67988c571d6f66b6cd9d15996424a481e416f7a6ef33fb1bbc43ed4a4997",
+    "eventset/2023/rov_frontier_labelled.parquet": "58b0f7ec7ab70c52345a6a035c2f47bbd43d2e639a32c32a00842ecac4349f02",
+    "eventset/2023/rov_frontier_stratum.json": "90b109b40c751bc41a11d1d578708e553e5d9f4a3978047a0c4ab4e4675e84ed",
+    "eventset/2023/rov_frontier_stratum.parquet": "b4a8ee6698ee9adcc70c83420b2329028e57e067ccba6df22cd7d8f2d5e41c10",
+    "eventset/2024/rov_frontier.json": "bbcd030291f5ae7242791f53b3f45024c871285ece34bbb9684ea69875df6473",
+    "eventset/2024/rov_frontier.parquet": "739a544f3e2d43b41705c68796837965da32a8bc727e0aa705fc35daac561fcf",
+    "eventset/2024/rov_frontier_labelled.json": "80856da0591e8c6f435a5ac035e13f2fb78f0bb202b6e875c40ad4c3dd61cffc",
+    "eventset/2024/rov_frontier_labelled.parquet": "31445a923ea4af96ec1f08a0df0c4b9aa29513f2b467cf6c2a7cb0a7f9a6f524",
+    "eventset/2024/rov_frontier_stratum.json": "2829b202e20cbe501e5d5e80d0e678fa451bfdbcd26868413b907c38a2dff263",
+    "eventset/2024/rov_frontier_stratum.parquet": "e13f128f99e384048ab1733fb550048eb06e9e305d18024fc124ddf3bbf61c15",
+    "eventset/2024/rov_frontier_frozen2505.json": "5c000ebe04e3e548083a8639e31978714ccc8c647196a5d869c36cd8b199a8dd",
+    "eventset/2024/rov_frontier_frozen2505.parquet": "739a544f3e2d43b41705c68796837965da32a8bc727e0aa705fc35daac561fcf",
+    "eventset/2024/rov_frontier_thr0.3.json": "d27ff9794ff83beeb56821a2a7684b2239fe9ee806d1ff3d4b5120c6496846c9",
+    "eventset/2024/rov_frontier_thr0.3.parquet": "416d1e7c80d1e5cd5ff32e110f294d623bf22c6c0147f57f3a888d3a21ec6644",
+    "eventset/2024/rov_frontier_thr0.8.json": "86bf4348c9474ac4dbfb3a354f5fa97840ce6e7b82b0053a8641596f72b836a3",
+    "eventset/2024/rov_frontier_thr0.8.parquet": "370e10d1b829ae80844ad7e52f13c861be75e33d0435fe15f1e1899fca6c4266",
+    "eventset/2025/rov_frontier.json": "980cab6475793fcdb7e511dd844514ef654b9aef663e134c5014fd556b4666cf",
+    "eventset/2025/rov_frontier.parquet": "0281b322fc4bad3321a5fae062e87167f6689b5ce1bab01f33ab7f168ac99ef4",
+    "eventset/2025/rov_frontier_frozen2505.json": "c07cd9296ef3169429b635bb24dd1f91eb563dc69ea3632ea161b9fd253efc7a",
+    "eventset/2025/rov_frontier_frozen2505.parquet": "8b10627b82b93c926252cd40d355d82a937b4de86c381083d948119b232eb020",
+    "eventset/2025/rov_frontier_labelled_frozen2505.json": "257a36471952e7a1856d5d9d540ebcafe109dfd897e9099666db1fc514920cdc",
+    "eventset/2025/rov_frontier_labelled_frozen2505.parquet": "1b94d7f50dcf3ece58ba8309964b7a8c6725c8df68c9b0e5ce59202131506439",
+    "eventset/2025/rov_frontier_stratum_frozen2505.json": "fed101f639dd266a59d7d19103a9aea57c5be9270e86775bef63d16f98c25017",
+    "eventset/2025/rov_frontier_stratum_frozen2505.parquet": "068a3125856fa10ca9eaa4028f86333ab55dc612da1e937796dcc275390111c2",
+    "eventset/2026/rov_frontier.json": "672e9709b692ce104d683793712bd9cde10c0cfac18e7936405df49912b9d327",
+    "eventset/2026/rov_frontier.parquet": "3c622a31db5f71510966de27635f16f10f375fd6c36fdec9a29f42cbafd29c54",
+    "eventset/2026/rov_frontier_frozen2505.json": "2df2851817632960008342f69469aab32d6e9736e4289f80ce09226c551ca2d7",
+    "eventset/2026/rov_frontier_frozen2505.parquet": "1a7d76587868d143768f0429dfaa24c6ee65919163c3d915c24755649b8e730d",
+    "eventset/2026/rov_frontier_labelled_frozen2505.json": "f43bce56686cbfd0bb2d4759675639f8af5ad6d85db7d209aa6d710c01ea119d",
+    "eventset/2026/rov_frontier_labelled_frozen2505.parquet": "0b4f847e9c4436e7ca18246698b6d5ccc280c4cdac04332a0b8116c005b985b0",
+    "eventset/2026/rov_frontier_stratum_frozen2505.json": "60fb79ddc0212cc7e16094de2c517cdec3156eba0271462fa781971b62254dd3",
+    "eventset/2026/rov_frontier_stratum_frozen2505.parquet": "ba35b735897f9ae88327a572f5281db72957ede63417c95c1e2add6461be41d6",
+    "eventset/2026/rov_frontier_mintotal10.json": "e9b48ac7c9b1a2c29a46759fc23842bcd3a1ca1e0a0fe3143c392dbbb347b327",
+    "eventset/2026/rov_frontier_mintotal10.parquet": "3e19c9dbaa40c3c9ab465a1efd0c520d6d82675772e8844b76ac7b1dcc3e2bc3"
+  },
+  "manifest_sha256": "1d2aa7f3e8f4e4a7c43a39bccc7f2fe23699784b24346be838ddf111a39bc932",
+  "pre_anonymization_source_sha256": {
+    "eventset/2022/events.parquet": "d244423d42007966b756a77c483cd2a2f7f7900cb9ded802864d114fcbf955ab",
+    "eventset/2022/rpki_validity.parquet": "e16fab64fab3a91a7e9f72770472c68dd9e7078d36a1875f0750cac082dcce1e",
+    "eventset/2023/events.parquet": "2204b1130859bad8d3bf31e3d313577ff4eb1d4d1d26eb85f8c48db2a8824901",
+    "eventset/2023/rpki_validity.parquet": "0dc6501cdd86fa709090da928799b603368f1d54505a3292a37e046db2c30e52",
+    "eventset/2024/events.parquet": "9024c1a7a5b989999d36b8c16dd85b50f75010ee21530b02635d138e89a82d35",
+    "eventset/2024/rpki_validity.parquet": "f1c9528ba8f7bbec901dcefa8273903d0fae414d738a36eff5ce2ca27a7c5f3f",
+    "eventset/2025/events.parquet": "61f0374010e4e2306e3ff086b1da88aae4de93c418c3edae32772578a5466c3d",
+    "eventset/2025/rpki_validity.parquet": "9435cdcb2e7b26b090224b05eb95a59df1593c44811b5d350a694589a0d08bec",
+    "eventset/2026/events.parquet": "ab33209ec808b35078742b2b753918fbb01bebffacaa9fe513534246643e24b4",
+    "eventset/2026/rpki_validity.parquet": "c39f379c7b683b94e008cd3cd78937d8b7f59f190a19688252d2ad1bdd2398b1"
+  },
+  "pre_anonymization_evidence_sha256": {
+    "eventset/2022/rov_frontier.json": "406f741e48b6334f9a9f4fd008a157529f5a389d2bcea924ea7323f74f33ab29",
+    "eventset/2022/rov_frontier.parquet": "25f937d53b5b91beadb2780104745bd84814573d5a00def26087092b86a82424",
+    "eventset/2023/rov_frontier.json": "6f98b95b179da6e0c6716ed449cdeff45b82625e861fb45466048824986d3710",
+    "eventset/2023/rov_frontier.parquet": "2f1250aa2df2901b6b3b5c9a11306d624ce6ea3b01d5f93db3377d64b9d8d1ce",
+    "eventset/2023/rov_frontier_labelled.json": "1aab67988c571d6f66b6cd9d15996424a481e416f7a6ef33fb1bbc43ed4a4997",
+    "eventset/2023/rov_frontier_labelled.parquet": "fe80a1d8d5c0ca1676200960be3369f79fc5ae6f38b5c2795ad0a06d453ca6e1",
+    "eventset/2023/rov_frontier_stratum.json": "90b109b40c751bc41a11d1d578708e553e5d9f4a3978047a0c4ab4e4675e84ed",
+    "eventset/2023/rov_frontier_stratum.parquet": "f2845fd35cc65d910e1cfa8300a98e7fe48f676d4a10a285945d08c78986c8e0",
+    "eventset/2024/rov_frontier.json": "bbcd030291f5ae7242791f53b3f45024c871285ece34bbb9684ea69875df6473",
+    "eventset/2024/rov_frontier.parquet": "6c62e7502b92b6b9a27063c88a129576285d15ddd529e520e6875ecbb669a2b2",
+    "eventset/2024/rov_frontier_labelled.json": "80856da0591e8c6f435a5ac035e13f2fb78f0bb202b6e875c40ad4c3dd61cffc",
+    "eventset/2024/rov_frontier_labelled.parquet": "b2886428e6d0f2acda39cdb6652ae2e0bfe5d44d2a7012b696992426dbd1e5a7",
+    "eventset/2024/rov_frontier_stratum.json": "2829b202e20cbe501e5d5e80d0e678fa451bfdbcd26868413b907c38a2dff263",
+    "eventset/2024/rov_frontier_stratum.parquet": "67bca6c867f3946f0441bec74e58452137523ff0aedc21fd565ea4d4372b3937",
+    "eventset/2024/rov_frontier_frozen2505.json": "5c000ebe04e3e548083a8639e31978714ccc8c647196a5d869c36cd8b199a8dd",
+    "eventset/2024/rov_frontier_frozen2505.parquet": "6c62e7502b92b6b9a27063c88a129576285d15ddd529e520e6875ecbb669a2b2",
+    "eventset/2024/rov_frontier_thr0.3.json": "d27ff9794ff83beeb56821a2a7684b2239fe9ee806d1ff3d4b5120c6496846c9",
+    "eventset/2024/rov_frontier_thr0.3.parquet": "1e8cfec1b974ba4315719fd1b891512c5fd2ad28ff845019d4e6cf750d1e22ea",
+    "eventset/2024/rov_frontier_thr0.8.json": "86bf4348c9474ac4dbfb3a354f5fa97840ce6e7b82b0053a8641596f72b836a3",
+    "eventset/2024/rov_frontier_thr0.8.parquet": "660d1a36aa3e935b3a9b00d6ef5f59b7f1256306a026f6f1b68ea7ab1773fdfd",
+    "eventset/2025/rov_frontier.json": "980cab6475793fcdb7e511dd844514ef654b9aef663e134c5014fd556b4666cf",
+    "eventset/2025/rov_frontier.parquet": "2c63af8a1027ea3298fde33e85463cf1797df01eba5db5b7b5550dd3256bd9e1",
+    "eventset/2025/rov_frontier_frozen2505.json": "c07cd9296ef3169429b635bb24dd1f91eb563dc69ea3632ea161b9fd253efc7a",
+    "eventset/2025/rov_frontier_frozen2505.parquet": "975210a665a52ec2894fd8942266b3ff348fc7b57d2b57784287465e26490598",
+    "eventset/2025/rov_frontier_labelled_frozen2505.json": "257a36471952e7a1856d5d9d540ebcafe109dfd897e9099666db1fc514920cdc",
+    "eventset/2025/rov_frontier_labelled_frozen2505.parquet": "ceb88c6e5343210b4c4689f6ba8adb5d0a8ff4334e1fc3f2385d97370750d22a",
+    "eventset/2025/rov_frontier_stratum_frozen2505.json": "fed101f639dd266a59d7d19103a9aea57c5be9270e86775bef63d16f98c25017",
+    "eventset/2025/rov_frontier_stratum_frozen2505.parquet": "67931ffa3278397d9f82225407da53e0072129bbaa0f600a0adabd718104aa48",
+    "eventset/2026/rov_frontier.json": "672e9709b692ce104d683793712bd9cde10c0cfac18e7936405df49912b9d327",
+    "eventset/2026/rov_frontier.parquet": "a81c6416a54441e5fb416161b4750233dbb4fbc5d81158e8f02e3686a03153c9",
+    "eventset/2026/rov_frontier_frozen2505.json": "2df2851817632960008342f69469aab32d6e9736e4289f80ce09226c551ca2d7",
+    "eventset/2026/rov_frontier_frozen2505.parquet": "d1f4048836f89986737e220114b27f7bc62128914fa9011da28f3e6a3eca2173",
+    "eventset/2026/rov_frontier_labelled_frozen2505.json": "f43bce56686cbfd0bb2d4759675639f8af5ad6d85db7d209aa6d710c01ea119d",
+    "eventset/2026/rov_frontier_labelled_frozen2505.parquet": "64cbe91b6944291fcd93cd6e18457b163135ee2828e1e704957574c42d87b933",
+    "eventset/2026/rov_frontier_stratum_frozen2505.json": "60fb79ddc0212cc7e16094de2c517cdec3156eba0271462fa781971b62254dd3",
+    "eventset/2026/rov_frontier_stratum_frozen2505.parquet": "5b82b672dd36907db6a19d6c651b45ead708f37fde80f09aa1e7a9e855bb1774",
+    "eventset/2026/rov_frontier_mintotal10.json": "e9b48ac7c9b1a2c29a46759fc23842bcd3a1ca1e0a0fe3143c392dbbb347b327",
+    "eventset/2026/rov_frontier_mintotal10.parquet": "f5c2ed8e033c7000c9e5bb91f105535edb27b263852172c6b6e385868cd9a633"
+  }
+}

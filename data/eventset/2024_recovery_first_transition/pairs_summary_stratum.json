@@ -1,0 +1,80 @@
+{
+ "year": 2024,
+ "pairs": 1272,
+ "only_reason": "rpki_invalid_sample",
+ "exclude_reason": null,
+ "j30_definition": "intersection/union, empty union scores zero",
+ "unique_recoveries": 1259,
+ "unique_hijacks": 1272,
+ "bootstrap_components": 1259,
+ "ci_method": "1000 connected-event cluster bootstrap resamples, seed 0; link-weighted mean",
+ "t90_definition": "continuous first-arrival 90% quantile; undefined for empty final set",
+ "timing_comparable_pairs": 1272,
+ "hijack_t90_observed": 1272,
+ "recovery_t90_observed": 1272,
+ "zero_hijack_reach": 0,
+ "zero_recovery_reach": 0,
+ "gap_s_p50": 717.0,
+ "hijack": {
+  "j30_mean": 0.6276,
+  "t90_s_p50": 79.0,
+  "t90_gt_5min_frac": 0.3066,
+  "reach_p50": 47.0
+ },
+ "recovery": {
+  "j30_mean": 0.6553,
+  "t90_s_p50": 56.509471,
+  "t90_gt_5min_frac": 0.2925,
+  "reach_p50": 29.0
+ },
+ "paired_j30_diff_recovery_minus_hijack": {
+  "mean": 0.0277,
+  "ci95": [
+   0.0051,
+   0.0487
+  ]
+ },
+ "recovery_slower_t90_frac": 0.4945,
+ "recovery_lower_j30_frac": 0.4827,
+ "recovery_reach_over_hijack_reach_p50": 1.025,
+ "by_gap<1min": {
+  "pairs": 475,
+  "hijack_j30": 0.5898,
+  "recovery_j30": 0.5153,
+  "hijack_t90_p50": 97.121686,
+  "recovery_t90_p50": 128.055818
+ },
+ "by_gap 1-15min": {
+  "pairs": 180,
+  "hijack_j30": 0.5831,
+  "recovery_j30": 0.7035,
+  "hijack_t90_p50": 125.9418585,
+  "recovery_t90_p50": 54.5072595
+ },
+ "by_gap>15min": {
+  "pairs": 617,
+  "hijack_j30": 0.6696,
+  "recovery_j30": 0.749,
+  "hijack_t90_p50": 56.0,
+  "recovery_t90_p50": 35.0
+ },
+ "chronologically_unmatched_links": [
+  {
+   "event_id": "20240619T142328_190.53.47.0-24_263201",
+   "hijack_id": "20240619T142328_190.53.47.0-24_18840",
+   "observed_gap_s": -0.206815
+  },
+  {
+   "event_id": "20240929T142417_193.31.117.0-24_207459",
+   "hijack_id": "20240929T142417_193.31.117.0-24_202505",
+   "observed_gap_s": -0.055742
+  }
+ ],
+ "chronologically_unmatched_count": 2,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2024_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2024_recovery_first_transition/events.parquet"
+ }
+}

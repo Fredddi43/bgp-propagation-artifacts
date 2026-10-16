@@ -1,0 +1,75 @@
+{
+ "year": 2025,
+ "pairs": 6684,
+ "only_reason": null,
+ "exclude_reason": "rpki_invalid_sample",
+ "j30_definition": "intersection/union, empty union scores zero",
+ "unique_recoveries": 6683,
+ "unique_hijacks": 6684,
+ "bootstrap_components": 6683,
+ "ci_method": "1000 connected-event cluster bootstrap resamples, seed 0; link-weighted mean",
+ "t90_definition": "continuous first-arrival 90% quantile; undefined for empty final set",
+ "timing_comparable_pairs": 6684,
+ "hijack_t90_observed": 6684,
+ "recovery_t90_observed": 6684,
+ "zero_hijack_reach": 0,
+ "zero_recovery_reach": 0,
+ "gap_s_p50": 26.0,
+ "hijack": {
+  "j30_mean": 0.6908,
+  "t90_s_p50": 63.144698,
+  "t90_gt_5min_frac": 0.294,
+  "reach_p50": 34.0
+ },
+ "recovery": {
+  "j30_mean": 0.5294,
+  "t90_s_p50": 73.635284,
+  "t90_gt_5min_frac": 0.2452,
+  "reach_p50": 53.0
+ },
+ "paired_j30_diff_recovery_minus_hijack": {
+  "mean": -0.1614,
+  "ci95": [
+   -0.1705,
+   -0.1523
+  ]
+ },
+ "recovery_slower_t90_frac": 0.5679,
+ "recovery_lower_j30_frac": 0.6753,
+ "recovery_reach_over_hijack_reach_p50": 1.544,
+ "by_gap<1min": {
+  "pairs": 4306,
+  "hijack_j30": 0.7209,
+  "recovery_j30": 0.4937,
+  "hijack_t90_p50": 44.0,
+  "recovery_t90_p50": 68.062059
+ },
+ "by_gap 1-15min": {
+  "pairs": 1486,
+  "hijack_j30": 0.6425,
+  "recovery_j30": 0.5197,
+  "hijack_t90_p50": 186.0,
+  "recovery_t90_p50": 84.0
+ },
+ "by_gap>15min": {
+  "pairs": 892,
+  "hijack_j30": 0.6258,
+  "recovery_j30": 0.7178,
+  "hijack_t90_p50": 122.0,
+  "recovery_t90_p50": 42.0249575
+ },
+ "chronologically_unmatched_links": [
+  {
+   "event_id": "20250902T162734_156.234.77.0-24_64013",
+   "hijack_id": "20250902T161136_156.234.77.0-24_136800",
+   "observed_gap_s": -600.0
+  }
+ ],
+ "chronologically_unmatched_count": 1,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2025_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2025_recovery_first_transition/events.parquet"
+ }
+}

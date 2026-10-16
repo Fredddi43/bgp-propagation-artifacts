@@ -1,0 +1,46 @@
+{
+ "year": 2026,
+ "pairs": 3126,
+ "rovista_ases": 32105,
+ "freeze_date": "2025-05-31",
+ "only_reason": null,
+ "exclude_reason": "rpki_invalid_sample",
+ "lookup_policy": "latest measurement at or before event date; missing history is unknown",
+ "enforcing_share": {
+  "R-H": {
+   "total_as_pair_observations": 78799,
+   "measured": 59485,
+   "unknown": 19314,
+   "future_only_excluded": 0,
+   "coverage": 0.7549,
+   "enforcing": 25452,
+   "share": 0.4279
+  },
+  "R&H": {
+   "total_as_pair_observations": 116964,
+   "measured": 82533,
+   "unknown": 34431,
+   "future_only_excluded": 0,
+   "coverage": 0.7056,
+   "enforcing": 14509,
+   "share": 0.1758
+  },
+  "H-R": {
+   "total_as_pair_observations": 44054,
+   "measured": 33617,
+   "unknown": 10437,
+   "future_only_excluded": 0,
+   "coverage": 0.7631,
+   "enforcing": 6613,
+   "share": 0.1967
+  }
+ },
+ "chronologically_unmatched_links": [],
+ "chronologically_unmatched_count": 0,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2026_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2026_recovery_first_transition/events.parquet"
+ }
+}

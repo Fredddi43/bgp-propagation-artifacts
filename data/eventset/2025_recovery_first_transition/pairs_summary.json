@@ -1,0 +1,75 @@
+{
+ "year": 2025,
+ "pairs": 8235,
+ "only_reason": null,
+ "exclude_reason": null,
+ "j30_definition": "intersection/union, empty union scores zero",
+ "unique_recoveries": 8213,
+ "unique_hijacks": 8235,
+ "bootstrap_components": 8211,
+ "ci_method": "1000 connected-event cluster bootstrap resamples, seed 0; link-weighted mean",
+ "t90_definition": "continuous first-arrival 90% quantile; undefined for empty final set",
+ "timing_comparable_pairs": 8235,
+ "hijack_t90_observed": 8235,
+ "recovery_t90_observed": 8235,
+ "zero_hijack_reach": 0,
+ "zero_recovery_reach": 0,
+ "gap_s_p50": 31.0,
+ "hijack": {
+  "j30_mean": 0.6731,
+  "t90_s_p50": 79.052509,
+  "t90_gt_5min_frac": 0.3178,
+  "reach_p50": 34.0
+ },
+ "recovery": {
+  "j30_mean": 0.5517,
+  "t90_s_p50": 72.281991,
+  "t90_gt_5min_frac": 0.2633,
+  "reach_p50": 47.0
+ },
+ "paired_j30_diff_recovery_minus_hijack": {
+  "mean": -0.1213,
+  "ci95": [
+   -0.1296,
+   -0.1127
+  ]
+ },
+ "recovery_slower_t90_frac": 0.546,
+ "recovery_lower_j30_frac": 0.6276,
+ "recovery_reach_over_hijack_reach_p50": 1.302,
+ "by_gap<1min": {
+  "pairs": 4819,
+  "hijack_j30": 0.7083,
+  "recovery_j30": 0.4957,
+  "hijack_t90_p50": 46.0,
+  "recovery_t90_p50": 70.506203
+ },
+ "by_gap 1-15min": {
+  "pairs": 1803,
+  "hijack_j30": 0.6224,
+  "recovery_j30": 0.5409,
+  "hijack_t90_p50": 186.0,
+  "recovery_t90_p50": 84.0
+ },
+ "by_gap>15min": {
+  "pairs": 1613,
+  "hijack_j30": 0.6244,
+  "recovery_j30": 0.7312,
+  "hijack_t90_p50": 151.0,
+  "recovery_t90_p50": 42.0
+ },
+ "chronologically_unmatched_links": [
+  {
+   "event_id": "20250902T162734_156.234.77.0-24_64013",
+   "hijack_id": "20250902T161136_156.234.77.0-24_136800",
+   "observed_gap_s": -600.0
+  }
+ ],
+ "chronologically_unmatched_count": 1,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2025_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2025_recovery_first_transition/events.parquet"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "eligibility": "usable_leak_events_with_observation_lag_s_null_or_at_least_minus60",
+ "year": 2025,
+ "events": 7880,
+ "test": 3344,
+ "prefixes_2h_p50_p90": [
+  1.0,
+  6.0
+ ],
+ "persistence_prefix_jaccard_test": {
+  "d30s": 0.9467,
+  "d1m": 0.9607,
+  "d5m": 0.9781,
+  "d15m": 0.9854
+ },
+ "still_growing_prefixes": {
+  "d30s": 0.1094,
+  "d1m": 0.0869,
+  "d5m": 0.0519,
+  "d15m": 0.0369
+ },
+ "large_leaks_ge200": {
+  "events": 1116,
+  "test": 423,
+  "prefixes_2h_p50": 2.0,
+  "persistence_prefix_jaccard_test": {
+   "d30s": 0.8695,
+   "d1m": 0.9042,
+   "d5m": 0.9516,
+   "d15m": 0.968
+  }
+ },
+ "multi_prefix_ge10": {
+  "events": 589,
+  "test": 260,
+  "persistence_prefix_jaccard_test": {
+   "d30s": 0.7243,
+   "d1m": 0.7981,
+   "d5m": 0.902,
+   "d15m": 0.9345
+  }
+ }
+}

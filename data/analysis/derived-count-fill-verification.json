@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "mode": "private_source_audit",
+  "transformation": "fill_missing_early_asn_counts_from_sets_v1",
+  "tables": [
+    {
+      "path": "eventset/2023_leak/events.parquet",
+      "rows": 396,
+      "before_content_sha256": "9607fd8fb3399dc87c702fd5c8a56af4dcb16ae63cde718efe076ac3c7cabfc5",
+      "after_content_sha256": "840989b4ffd2983909ca913db1465282adb965b9f4fe8ea66f1d9831ce0522a0",
+      "published_content_sha256": "3ec594343eed39e85c22bfe5cf23b1aa23b4813bd02774281e922c2853f12737",
+      "changed_counts": {
+        "asns_d30s": 203,
+        "asns_d1m": 203,
+        "asns_d5m": 203,
+        "asns_d15m": 203
+      }
+    },
+    {
+      "path": "eventset/2024_leak/events.parquet",
+      "rows": 1602,
+      "before_content_sha256": "02553d8060084c6f6427dc67ccbaa81774587c767a2a0bc20130b86cec43d4f6",
+      "after_content_sha256": "72ecb701769fb7ba02f909b0b447406bd7b40c0083fbc62ac30bc82df4b7e8c9",
+      "published_content_sha256": "72ecb701769fb7ba02f909b0b447406bd7b40c0083fbc62ac30bc82df4b7e8c9",
+      "changed_counts": {
+        "asns_d30s": 1224,
+        "asns_d1m": 1224,
+        "asns_d5m": 1224,
+        "asns_d15m": 1224
+      }
+    },
+    {
+      "path": "eventset/2025_leak/events.parquet",
+      "rows": 8437,
+      "before_content_sha256": "2397d2fe7e252733e63b8d536e44e38f4fcb3ed7647306c89fb269c74ed9e20c",
+      "after_content_sha256": "3022381426a90fa5594302c623ffd736f4a3b71addb78058f9fc8c7270cdbac5",
+      "published_content_sha256": "e8b6b0542f6537dd663f1b60436ef1d187b36a405f484bd6392aab9638cf448b",
+      "changed_counts": {
+        "asns_d30s": 7151,
+        "asns_d1m": 7151,
+        "asns_d5m": 7151,
+        "asns_d15m": 7151
+      }
+    },
+    {
+      "path": "eventset/2024/events.parquet",
+      "rows": 20959,
+      "before_content_sha256": "6e93d9b2b1a2a5ea02f5bdb0aeb2d1d01d03a7667a4318a3cd7cc530e7009428",
+      "after_content_sha256": "db9ec71b9f46836419263292b940501c31520bafb2b7db2e7b28c879e264d7a7",
+      "published_content_sha256": "db9ec71b9f46836419263292b940501c31520bafb2b7db2e7b28c879e264d7a7",
+      "changed_counts": {
+        "asns_d30s": 18495,
+        "asns_d1m": 18495,
+        "asns_d5m": 18495,
+        "asns_d15m": 18495
+      }
+    },
+    {
+      "path": "eventset/2024_withdrawal/events.parquet",
+      "rows": 50,
+      "before_content_sha256": "f6f77e067a150df6705ff7b409c73f402def3cb60bffbd974710875c5ecbdb6a",
+      "after_content_sha256": "227079a600d9645d89be3ac1555405458ba1e83df281129defb19593f7ef57cf",
+      "published_content_sha256": "ea19c2ef679b6c28cf5072a3938727baea3be5c6f57699e7b100f846492c647b",
+      "changed_counts": {
+        "asns_d30s": 42,
+        "asns_d1m": 42,
+        "asns_d5m": 42,
+        "asns_d15m": 42
+      }
+    }
+  ],
+  "source_sha256": {
+    "eventset/2023_leak/events.parquet": "ed1ec2db0ed761ab73a3a5a7a74f34d2aaca944ee2f9915e17190ff0d39a067d",
+    "verification/derived-count-fill/2023_leak.parquet": "0cf39439525a14f4d6800b5f12b463f2c69c5afcb422fc8f98d397f7a8ed4881",
+    "eventset/2024_leak/events.parquet": "8d2121732382ad7d3b26908ac1beb140cde6b576f7d0594538e32deed4e260f5",
+    "verification/derived-count-fill/2024_leak.parquet": "2c1458eb4bcc89b632ce840b88008c50c907a8f06cef0cbe4f7099d2f7121d98",
+    "eventset/2025_leak/events.parquet": "d2a430f65f7a0542d92c9725ff9c138f4414b210abc4658c02eeae7a9bd5b9c2",
+    "verification/derived-count-fill/2025_leak.parquet": "d7c2dfd3d0b280bacc884fcaf73e8a2a55e44510e116c5848e203e2754b8865a",
+    "eventset/2024/events.parquet": "75eaec9a599b706e53f22fa477463fb150aaf2cfd361f7f0c06e3cffd984409c",
+    "verification/derived-count-fill/2024.parquet": "958bbdc0ceaa33ae7bcfbae365590be9998827404335e04b3ca06c80d16fa4fc",
+    "eventset/2024_withdrawal/events.parquet": "2429f82ff7449f5026781a70477480ed0836eddf4251c809497d4a06d6addae6",
+    "verification/derived-count-fill/2024_withdrawal.parquet": "33a9da2e9ce5b5969ebcb26341d163d705567718c337514bd925b334b8bdf2fb"
+  },
+  "original_source_sha256": {
+    "nongraph-final-complete.json": "6664e412a1285f828611d271fa284d07307f3a7a30b31d3f8a27d805e683db18",
+    "source-before-derived-count-fill/eventset/2023_leak/events.parquet": "bcbf4acb70d4917f2caf99f596a0da853ffb550cd539504c8970eefbc6195192",
+    "source-before-derived-count-fill/eventset/2024_leak/events.parquet": "6ead2f2d0c484fb5e057b83c642936054c4e3fa3002f8b25753c0f4bac003def",
+    "source-before-derived-count-fill/eventset/2025_leak/events.parquet": "fa5fbfcb45d6658d015fcb855c6d558125e83af6b8185d1f9b8f3dc500abd0fb",
+    "source-before-derived-count-fill/eventset/2024/events.parquet": "f26852353e4ba52324626f479b3ba7743ba5a81bb13da940eb3e8a7fa050d1bb",
+    "source-before-derived-count-fill/eventset/2024_withdrawal/events.parquet": "d40eaf75b1f27db364dac981075f9807fb52e8c05ff3f65236369c0a7e4aa8f7"
+  },
+  "evidence_sha256": {
+    "analysis/derived-count-fill-bridge.json": "5ebac5565632f51c5f46881b059d941e02aaecf6661417c359a50b69895ba2d4"
+  },
+  "pre_anonymization_source_sha256": {
+    "eventset/2023_leak/events.parquet": "9f1e954f8fc65fc75b1ce119ab23c6d6a880b3056d120dc2cb9c77d758b91bba",
+    "verification/derived-count-fill/2023_leak.parquet": "6028613301c6becd1815f0cf50f7510885041a7cf4e7a44dfee856673f1461a9",
+    "eventset/2024_leak/events.parquet": "27b382c3494f4f7485a0e8aa03f0f2446ecc7c93f48f4a047f40dbfd137bf35b",
+    "verification/derived-count-fill/2024_leak.parquet": "6f1d6f2cd7b347a61c58b4a97b350fdc3fa547c2c9fbe1e77a666e86e5dd4315",
+    "eventset/2025_leak/events.parquet": "72e8b1357364b80f2be43f5ea3beed1155bc425b4a9df0c4506f56556c337163",
+    "verification/derived-count-fill/2025_leak.parquet": "e142557f1e0d384ce32c39aee52a21754e9ad9ded5c8a1a7a4b566687e868805",
+    "eventset/2024/events.parquet": "9024c1a7a5b989999d36b8c16dd85b50f75010ee21530b02635d138e89a82d35",
+    "verification/derived-count-fill/2024.parquet": "c34053d2cf2f0f719313375d638163f15828f74c4c5c7fa6dbd8b589fbe17fda",
+    "eventset/2024_withdrawal/events.parquet": "ec18b7ef198ab943701101e7bc8383c164b883533f7a3740650b80fa79c2b072",
+    "verification/derived-count-fill/2024_withdrawal.parquet": "095115896e7b0f73ff3985da22992ec2790fcf707fe391798c372c372fd2b01e"
+  },
+  "pre_anonymization_evidence_sha256": {
+    "analysis/derived-count-fill-bridge.json": "5ebac5565632f51c5f46881b059d941e02aaecf6661417c359a50b69895ba2d4"
+  }
+}

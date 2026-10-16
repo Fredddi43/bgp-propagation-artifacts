@@ -3,58 +3,67 @@
  "threshold": 0.5,
  "freeze_date": null,
  "min_total": 10,
+ "only_reason": null,
+ "exclude_reason": null,
+ "lookup_policy": "latest measurement at or before event date; missing history is unknown",
  "rovista_ases": 30716,
  "by_validity": {
-  "unknown": {
-   "events": 8862,
-   "carriers_measured_share": 0.691,
-   "frontier_measured_share": 0.425,
-   "enforcing_share_carriers": 0.4027,
-   "enforcing_share_frontier": 0.2533,
-   "log_odds_frontier_vs_carriers_mean": -0.51,
-   "log_odds_mean_ci95_bootstrap": [
-    -0.521,
-    -0.499
-   ],
-   "log_odds_per_event_p10_p90": [
-    -0.948,
-    0.081
-   ],
-   "events_with_both_measured": 8862
-  },
   "invalid": {
-   "events": 4653,
-   "carriers_measured_share": 0.692,
-   "frontier_measured_share": 0.49,
-   "enforcing_share_carriers": 0.1896,
-   "enforcing_share_frontier": 0.2274,
-   "log_odds_frontier_vs_carriers_mean": 0.401,
+   "events": 7476,
+   "future_only_carrier_observations_excluded": 0,
+   "future_only_frontier_observations_excluded": 0,
+   "carriers_measured_share": 0.689,
+   "frontier_measured_share": 0.47,
+   "enforcing_share_carriers": 0.2596,
+   "enforcing_share_frontier": 0.2329,
+   "log_odds_frontier_vs_carriers_mean": 0.323,
    "log_odds_mean_ci95_bootstrap": [
-    0.383,
-    0.419
+    0.306,
+    0.338
    ],
    "log_odds_per_event_p10_p90": [
-    -0.488,
-    1.091
+    -0.708,
+    1.099
    ],
-   "events_with_both_measured": 4653
+   "events_with_both_measured": 7476
+  },
+  "unknown": {
+   "events": 8779,
+   "future_only_carrier_observations_excluded": 0,
+   "future_only_frontier_observations_excluded": 0,
+   "carriers_measured_share": 0.691,
+   "frontier_measured_share": 0.421,
+   "enforcing_share_carriers": 0.3915,
+   "enforcing_share_frontier": 0.251,
+   "log_odds_frontier_vs_carriers_mean": -0.54,
+   "log_odds_mean_ci95_bootstrap": [
+    -0.549,
+    -0.533
+   ],
+   "log_odds_per_event_p10_p90": [
+    -0.89,
+    0.003
+   ],
+   "events_with_both_measured": 8779
   },
   "valid": {
-   "events": 984,
-   "carriers_measured_share": 0.686,
-   "frontier_measured_share": 0.428,
-   "enforcing_share_carriers": 0.4067,
-   "enforcing_share_frontier": 0.2591,
-   "log_odds_frontier_vs_carriers_mean": -0.669,
+   "events": 985,
+   "future_only_carrier_observations_excluded": 0,
+   "future_only_frontier_observations_excluded": 0,
+   "carriers_measured_share": 0.685,
+   "frontier_measured_share": 0.427,
+   "enforcing_share_carriers": 0.4046,
+   "enforcing_share_frontier": 0.2583,
+   "log_odds_frontier_vs_carriers_mean": -0.655,
    "log_odds_mean_ci95_bootstrap": [
-    -0.706,
-    -0.634
+    -0.69,
+    -0.622
    ],
    "log_odds_per_event_p10_p90": [
-    -1.313,
-    -0.028
+    -1.287,
+    -0.039
    ],
-   "events_with_both_measured": 983
+   "events_with_both_measured": 985
   }
  }
 }

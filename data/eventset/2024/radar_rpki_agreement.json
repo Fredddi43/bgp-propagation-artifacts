@@ -1,18 +1,29 @@
 {
+ "match_policy": "exclude conflicting RPKI tags; nearest timestamp then Radar ID among same-tag matches",
+ "matched_events_before_ambiguity_filter": 16744,
+ "multiple_match_events": 97,
+ "conflicting_tag_events_excluded": 5,
+ "conflicting_tag_event_ids": [
+  "20240427T171924_176.105.229.0-24_834",
+  "20240525T094450_102.219.96.0-22_29465",
+  "20240525T094450_102.219.97.0-24_29465",
+  "20240525T094450_102.219.98.0-24_29465",
+  "20240525T094450_102.219.99.0-24_29465"
+ ],
  "year": 2024,
  "radar_events": 44144,
  "radar_rpki_new_origin_tags": {
   "unknown": 19878,
   "invalid": 24266
  },
- "matched_events": 16434,
- "agreement": 0.9247,
+ "matched_events": 16739,
+ "agreement": 0.9295,
  "confusion_ours_vs_radar": {
-  "invalid|invalid": 8293,
-  "unknown|unknown": 6904,
-  "unknown|invalid": 971,
+  "invalid|invalid": 8656,
+  "unknown|unknown": 6903,
+  "unknown|invalid": 913,
   "valid|invalid": 182,
-  "invalid|unknown": 55,
+  "invalid|unknown": 56,
   "valid|unknown": 29
  }
 }

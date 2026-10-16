@@ -1,0 +1,14 @@
+{
+ "model": "sage:leak200:2025",
+ "eval": "leak200:2025",
+ "delta_s": 30,
+ "threshold": 0.95,
+ "events": 423,
+ "membership_target": "full_observed_2h",
+ "auprc_target": "non_seed_candidates",
+ "jaccard_thr": 0.7076,
+ "jaccard_05": 0.5689,
+ "jaccard_persist": 0.5094,
+ "auprc_new": 0.656,
+ "curve_smape_2h": 0.2063
+}

@@ -1,0 +1,46 @@
+{
+ "year": 2023,
+ "pairs": 3109,
+ "rovista_ases": 32105,
+ "freeze_date": null,
+ "only_reason": null,
+ "exclude_reason": "rpki_invalid_sample",
+ "lookup_policy": "latest measurement at or before event date; missing history is unknown",
+ "enforcing_share": {
+  "R-H": {
+   "total_as_pair_observations": 107667,
+   "measured": 75944,
+   "unknown": 31723,
+   "future_only_excluded": 8180,
+   "coverage": 0.7054,
+   "enforcing": 29066,
+   "share": 0.3827
+  },
+  "R&H": {
+   "total_as_pair_observations": 170069,
+   "measured": 105453,
+   "unknown": 64616,
+   "future_only_excluded": 20099,
+   "coverage": 0.6201,
+   "enforcing": 15530,
+   "share": 0.1473
+  },
+  "H-R": {
+   "total_as_pair_observations": 95273,
+   "measured": 62903,
+   "unknown": 32370,
+   "future_only_excluded": 9183,
+   "coverage": 0.6602,
+   "enforcing": 8769,
+   "share": 0.1394
+  }
+ },
+ "chronologically_unmatched_links": [],
+ "chronologically_unmatched_count": 0,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2023_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2023_recovery_first_transition/events.parquet"
+ }
+}

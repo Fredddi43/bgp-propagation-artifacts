@@ -21,14 +21,15 @@ class GATMember(nn.Module):
         self.curve = nn.Sequential(nn.Linear(2 * hid + 2, hid), nn.ReLU(), nn.Linear(hid, N_HORIZONS * len(QUANTILES)))
         self.dropout = dropout
 
-    def forward(self, x, edge_index, edge_type, seed_mask):
+    def forward(self, x, edge_index, edge_type, seed_mask, n_seed=None):
         h = F.dropout(F.elu(self.g1(x, edge_index)), self.dropout, self.training)
         h = F.dropout(F.elu(self.g2(h, edge_index)), self.dropout, self.training)
         logits = self.out(torch.cat([h, x], dim=1)).squeeze(-1)
         seed = seed_mask.bool()
+        seed_count = seed.sum().float() if n_seed is None else torch.as_tensor(n_seed, dtype=x.dtype, device=x.device)
         pooled = torch.cat([h[seed].mean(0) if seed.any() else h.mean(0), h.mean(0),
-                            torch.log1p(seed.sum().float()).view(1), torch.log1p(torch.tensor(float(h.shape[0]), device=h.device)).view(1)])
-        q = torch.cumsum(F.softplus(self.curve(pooled).view(N_HORIZONS, len(QUANTILES))), dim=1) + torch.log1p(seed.sum().float())
+                            torch.log1p(seed_count).view(1), torch.log1p(torch.tensor(float(h.shape[0]), device=h.device)).view(1)])
+        q = torch.cumsum(F.softplus(self.curve(pooled).view(N_HORIZONS, len(QUANTILES))), dim=1) + torch.log1p(seed_count)
         return logits, q
 
 

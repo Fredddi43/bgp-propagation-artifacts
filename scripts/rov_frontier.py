@@ -8,7 +8,6 @@ usage: rov_frontier.py <year> [--max-events N] [--threshold T] [--freeze-date D]
 from __future__ import annotations
 
 import argparse
-import bisect
 import json
 from collections import defaultdict
 
@@ -16,6 +15,7 @@ import numpy as np
 import polars as pl
 
 from bgbench import config
+from bgbench.rov_history import ratio_at as historical_ratio_at
 
 ap = argparse.ArgumentParser()
 ap.add_argument("year", type=int)
@@ -41,13 +41,7 @@ for asn, g in rov.group_by("asn", maintain_order=True):
 
 
 def ratio_at(asn: int, day: str):
-    s = series.get(asn)
-    if not s:
-        return None
-    i = bisect.bisect_right(s[0], day) - 1
-    if i < 0:
-        i = 0            # first measurement after the event: closest we have
-    return s[1][i]
+    return historical_ratio_at(series, asn, day)
 
 
 ev = pl.read_parquet(E / "events.parquet").filter(pl.col("error").is_null())
@@ -57,7 +51,9 @@ if a.exclude_reason:
     ev = ev.filter(pl.col("reason") != a.exclude_reason)
 ev = ev.select("event_id", "split", "set_final_2h", "asns_final_2h")
 val = pl.read_parquet(E / "rpki_validity.parquet").select("event_id", "validity")
-ev = ev.join(val, on="event_id").with_columns(pl.col("event_id").str.slice(0, 8).alias("day8"))
+ev = ev.join(val, on="event_id", how="left", validate="1:1").with_columns(pl.col("event_id").str.slice(0, 8).alias("day8"))
+if ev["validity"].null_count():
+    raise ValueError("Missing RPKI labels for frontier events")
 if a.max_events:
     ev = ev.sample(n=min(a.max_events, ev.height), seed=0)
 rel_cache: dict[str, dict[int, set]] = {}
@@ -75,9 +71,20 @@ def neighbours(month: str) -> dict[int, set]:
     return rel_cache[month]
 
 
-acc = defaultdict(lambda: {"events": 0, "carriers": 0, "carriers_measured": 0, "carriers_enforcing": 0, "frontier": 0, "frontier_measured": 0, "frontier_enforcing": 0, "odds": []})
+acc = defaultdict(lambda: {"events": 0, "carriers": 0, "carriers_measured": 0, "carriers_enforcing": 0, "frontier": 0, "frontier_measured": 0, "frontier_enforcing": 0, "carriers_future_only": 0, "frontier_future_only": 0, "odds": []})
+event_rows = []
+current_day = None
+measured_asns, enforcing_asns, future_asns = set(), set(), set()
 for r in ev.sort("day8").iter_rows(named=True):
     day = f"{r['day8'][:4]}-{r['day8'][4:6]}-{r['day8'][6:8]}"
+    if day != current_day:
+        # Each historical lookup depends only on the AS and day, not the event.
+        # Set intersections replace millions of repeated Python-level lookups.
+        ratios = {asn: ratio_at(asn, day) for asn in series}
+        measured_asns = {asn for asn, ratio in ratios.items() if ratio is not None}
+        enforcing_asns = {asn for asn, ratio in ratios.items() if ratio is not None and ratio >= a.threshold}
+        future_asns = {asn for asn, (dates, _) in series.items() if dates[0] > day}
+        current_day = day
     nb = neighbours(r["day8"][:6])
     carriers = set(int(x) for x in (r["set_final_2h"] or []))
     if not carriers:
@@ -85,24 +92,34 @@ for r in ev.sort("day8").iter_rows(named=True):
     frontier = set().union(*(nb.get(c, set()) for c in carriers)) - carriers
     A = acc[r["validity"]]
     A["events"] += 1
-    cm = [ratio_at(c, day) for c in carriers]; fm = [ratio_at(c, day) for c in frontier]
-    cm_ok = [x for x in cm if x is not None]; fm_ok = [x for x in fm if x is not None]
-    ce = sum(x >= a.threshold for x in cm_ok); fe = sum(x >= a.threshold for x in fm_ok)
-    A["carriers"] += len(carriers); A["carriers_measured"] += len(cm_ok); A["carriers_enforcing"] += ce
-    A["frontier"] += len(frontier); A["frontier_measured"] += len(fm_ok); A["frontier_enforcing"] += fe
-    if cm_ok and fm_ok:
-        pc, pf = (ce + 0.5) / (len(cm_ok) + 1), (fe + 0.5) / (len(fm_ok) + 1)
-        A["odds"].append(np.log((pf / (1 - pf)) / (pc / (1 - pc))))   # >0: frontier more enforcing than carriers
+    A["carriers_future_only"] += len(carriers & future_asns)
+    A["frontier_future_only"] += len(frontier & future_asns)
+    cm_count, fm_count = len(carriers & measured_asns), len(frontier & measured_asns)
+    ce, fe = len(carriers & enforcing_asns), len(frontier & enforcing_asns)
+    A["carriers"] += len(carriers); A["carriers_measured"] += cm_count; A["carriers_enforcing"] += ce
+    A["frontier"] += len(frontier); A["frontier_measured"] += fm_count; A["frontier_enforcing"] += fe
+    odds = None
+    if cm_count and fm_count:
+        pc, pf = (ce + 0.5) / (cm_count + 1), (fe + 0.5) / (fm_count + 1)
+        odds = float(np.log((pf / (1 - pf)) / (pc / (1 - pc))))
+        A["odds"].append(odds)   # >0: frontier more enforcing than carriers
+    event_rows.append({"event_id": r["event_id"], "split": r["split"], "validity": r["validity"],
+                       "carriers": len(carriers), "carriers_measured": cm_count, "carriers_enforcing": ce,
+                       "frontier": len(frontier), "frontier_measured": fm_count, "frontier_enforcing": fe,
+                       "log_odds": odds})
 
+pl.DataFrame(event_rows).write_parquet(E / f"rov_frontier{a.suffix}.parquet")
 out = {"year": a.year, "threshold": a.threshold, "freeze_date": a.freeze_date, "min_total": a.min_total, "only_reason": a.only_reason,
-       "exclude_reason": a.exclude_reason, "rovista_ases": len(series), "by_validity": {}}
+       "exclude_reason": a.exclude_reason, "lookup_policy": "latest measurement at or before event date; missing history is unknown", "rovista_ases": len(series), "by_validity": {}}
 rng = np.random.default_rng(0)
 for v, A in acc.items():
     out["by_validity"][v] = {
         "events": A["events"],
+        "future_only_carrier_observations_excluded": A["carriers_future_only"],
+        "future_only_frontier_observations_excluded": A["frontier_future_only"],
         "carriers_measured_share": round(A["carriers_measured"] / max(A["carriers"], 1), 3), "frontier_measured_share": round(A["frontier_measured"] / max(A["frontier"], 1), 3),
-        "enforcing_share_carriers": round(A["carriers_enforcing"] / max(A["carriers_measured"], 1), 4),
-        "enforcing_share_frontier": round(A["frontier_enforcing"] / max(A["frontier_measured"], 1), 4),
+        "enforcing_share_carriers": round(A["carriers_enforcing"] / A["carriers_measured"], 4) if A["carriers_measured"] else None,
+        "enforcing_share_frontier": round(A["frontier_enforcing"] / A["frontier_measured"], 4) if A["frontier_measured"] else None,
         "log_odds_frontier_vs_carriers_mean": round(float(np.mean(A["odds"])), 3) if A["odds"] else None,
         "log_odds_mean_ci95_bootstrap": [round(float(x), 3) for x in np.percentile([np.mean(rng.choice(A["odds"], size=len(A["odds"]))) for _ in range(1000)], (2.5, 97.5))] if len(A["odds"]) > 20 else None,
         "log_odds_per_event_p10_p90": [round(float(np.percentile(A["odds"], q)), 3) for q in (10, 90)] if len(A["odds"]) > 20 else None,

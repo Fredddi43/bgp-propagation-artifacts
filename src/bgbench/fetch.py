@@ -4,6 +4,7 @@ RIS ~9 MB/s; both scale near-linearly with streams up to 32+ (measured 2026-09-0
 from __future__ import annotations
 
 import socket
+import logging
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
@@ -20,6 +21,7 @@ class FetchResult:
     path: Path | None
     size: int
     error: str | None = None
+    transport_url: str | None = None
 
 
 BACKOFF_S = (2, 5, 15, 45, 90, 180, 300, 300, 300, 300, 300, 300)   # RouteViews drops connections under load, and on 2026-09-16 was
@@ -44,9 +46,10 @@ socket.getaddrinfo = _getaddrinfo_v4
 def _fetch_one(client: httpx.Client, item: BrokerItem, dest: Path, retries: int = len(BACKOFF_S)) -> FetchResult:
     path = dest / item.filename
     last = ""
+    url = item.url
     for attempt in range(retries):
         try:
-            with client.stream("GET", item.url) as r:
+            with client.stream("GET", url) as r:
                 if r.status_code == 404:
                     return FetchResult(item, None, 0, "404")
                 r.raise_for_status()
@@ -63,10 +66,16 @@ def _fetch_one(client: httpx.Client, item: BrokerItem, dest: Path, retries: int 
                 last = "empty file"
                 path.unlink(missing_ok=True)
                 continue
-            return FetchResult(item, path, size)
+            return FetchResult(item, path, size, transport_url=url)
         except (httpx.HTTPError, OSError) as e:
             last = f"{type(e).__name__}: {e}"
+            logging.getLogger(__name__).warning("MRT fetch retry %d/%d: %s: %s", attempt+1, retries, url, last)
             path.unlink(missing_ok=True)
+            if isinstance(e, (httpx.ConnectError, httpx.ConnectTimeout)) and url.startswith("http://archive.routeviews.org/"):
+                # The same archive is served over TLS; avoid repeatedly hitting
+                # an intermittently unreachable HTTP endpoint. Keep broker URL
+                # and actual transport URL separately in provenance.
+                url = "https://" + url.removeprefix("http://")
             time.sleep(BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)])
     return FetchResult(item, None, 0, last or "failed")
 

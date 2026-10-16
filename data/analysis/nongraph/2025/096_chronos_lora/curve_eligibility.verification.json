@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "mode": "private_raw_membership_audit",
+  "rows": 1116,
+  "eligibility_content_sha256": "47da9f0180589c9070031a5fd232485e0c62950bad7877ed03c3ba045319058c",
+  "source_event_table_sha256": "72e8b1357364b80f2be43f5ea3beed1155bc425b4a9df0c4506f56556c337163",
+  "hash_scope": "Canonical decoded eligibility rows sorted by event_id, JSON sorted keys and compact separators; unchanged by Parquet reencoding. Source hash records pre-anonymization input bytes."
+}

@@ -1,0 +1,40 @@
+{
+ "task": {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 7,
+  "shards": 32,
+  "index": 24
+ },
+ "result": {},
+ "correction_run": {
+  "inputs": {
+   "eventset/2024_leak/events.parquet": "6ead2f2d0c484fb5e057b83c642936054c4e3fa3002f8b25753c0f4bac003def",
+   "eventset/2024_leak/prefix_floor.parquet": "cfde859232f827ae2b77f80495943c85b0981ec19711040f452cc153d4e1bbf5"
+  },
+  "input_content_sha256": {
+   "eventset/2024_leak/events.parquet": "02553d8060084c6f6427dc67ccbaa81774587c767a2a0bc20130b86cec43d4f6",
+   "eventset/2024_leak/prefix_floor.parquet": "74987fbffdfbe79b4bd92ad5d97dae4af9638f648a1e7ba73d6ac411c2bc1fa6"
+  },
+  "code": {
+   "scripts/prefix_model.py": "c651fa3de0a90ea384a39bb6c3117ed34228dc184e6f99018809a17e787d0416",
+   "src/bgbench/prefix_metrics.py": "bfc7d9fb45fcc82ddadd97d5233362655c5f369c81a41bff1de0506d0a2b060d",
+   "scripts/rerun_nongraph.py": "2d2a59343f496af6863fc8d0632cef776c5480c02712244490d5dd5fa2a2aca0",
+   "jobs/nongraph_corrections.sh": "be819e94c367c4f09ae9fb6cd643f8b3824cc09c8b9134e3f476b505ffa4dcc8",
+   "src/bgbench/config.py": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab",
+   "src/bgbench/graph_metrics.py": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+  },
+  "plan_sha256": "567d5ea3e87498b6df487b41de0b45a30b1592c14d2d2e3aad09f0c1036c1013",
+  "inputs_after": {
+   "eventset/2024_leak/events.parquet": "6ead2f2d0c484fb5e057b83c642936054c4e3fa3002f8b25753c0f4bac003def",
+   "eventset/2024_leak/prefix_floor.parquet": "cfde859232f827ae2b77f80495943c85b0981ec19711040f452cc153d4e1bbf5"
+  },
+  "input_files_byte_identical": true,
+  "source_gate": "crossday-leak-2023-2025-complete.json",
+  "source_gate_sha256": "c16825c1c5685e6cda6b963b6c2fb5c71be76e8250d9f58be5d7141c110cfc94",
+  "started_utc": "2026-10-16T10:25:21.702592+00:00",
+  "finished_utc": "2026-10-16T10:30:51.579945+00:00",
+  "inputs_unchanged": true,
+  "code_unchanged": true
+ }
+}

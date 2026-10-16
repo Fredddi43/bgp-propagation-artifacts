@@ -1,12 +1,570 @@
 [
   {
+    "path": "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0000",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0001",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0002",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0003",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0004",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0005",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0006",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0007",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0008",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0009",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0010",
+      "data/analysis/nongraph/2024/000_cascade/cascade_vs_persistence_d1m_final_2h.parquet.part0011"
+    ],
+    "bytes": 82494555,
+    "sha256": "39b4cd6be39d05cf490e0f369b6df70f140105ba95eec7fe1b201d1101437f37"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0000",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0001",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0002",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0003",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0004",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0005",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0006",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0007",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0008",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0009",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0010",
+      "data/analysis/nongraph/2024/001_cascade/cascade_vs_persistence_d1m_final_2h_coaffection.parquet.part0011"
+    ],
+    "bytes": 79930910,
+    "sha256": "0d52d998b5af3ff61166022c7edfe2e3ca265d6eed4a948adbc0ecc174dbce95"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2024/002_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0004"
+    ],
+    "bytes": 31571581,
+    "sha256": "10d87ad171701e9ed0fd5815bf427e0740d0bfd837259ca78b3e0e6e0cf70d5b"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2024/003_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0004"
+    ],
+    "bytes": 32551242,
+    "sha256": "aa4b777920a259bc770c2e4cdab7954786b43cf455d5c797eeca5e6c4474c6e8"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0000",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0001",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0002",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0003",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0004",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0005",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0006",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0007",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0008",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0009",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0010",
+      "data/analysis/nongraph/2024/004_cascade/cascade_vs_persistence_d30s_final_2h.parquet.part0011"
+    ],
+    "bytes": 82225402,
+    "sha256": "3ea2aaa223102f5e903ab49fbbfdea50a4af8605469c0208b707bb42b019a4ce"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0000",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0001",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0002",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0003",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0004",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0005",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0006",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0007",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0008",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0009",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0010",
+      "data/analysis/nongraph/2024/005_cascade/cascade_vs_persistence_d30s_final_2h_coaffection.parquet.part0011"
+    ],
+    "bytes": 79675620,
+    "sha256": "685f19cb5eb6b4b0495651b6bbb72b3006c2e3ae14da72c1ef5eebc92b6c6f9f"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2024/006_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0004"
+    ],
+    "bytes": 32421963,
+    "sha256": "d467da192ed57d05ca6d44f7bda0a142f9ccc90e668b20bf76fc2795b20c1561"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2024/007_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0004"
+    ],
+    "bytes": 32729512,
+    "sha256": "f698e97af9505c8dc394d52c5cc79cca60abfb8fbe97cd76b635148948320746"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2024/008_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0004"
+    ],
+    "bytes": 33307159,
+    "sha256": "72869bcb7a824874bb4205da0a7efb3527f09303adeb2d2ee3bac0c676882761"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0000",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0001",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0002",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0003",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0004",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0005",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0006",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0007",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0008",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0009",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0010",
+      "data/analysis/nongraph/2024/009_cascade/cascade_vs_persistence_d5m_final_2h.parquet.part0011"
+    ],
+    "bytes": 82281361,
+    "sha256": "7a841bab523b31cee3ee6ffbc25497c9286f4e479b262e43e39e94b0f1b1f8c8"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0000",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0001",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0002",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0003",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0004",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0005",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0006",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0007",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0008",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0009",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0010",
+      "data/analysis/nongraph/2024/010_cascade/cascade_vs_persistence_d5m_final_2h_coaffection.parquet.part0011"
+    ],
+    "bytes": 79662892,
+    "sha256": "f736e819bd3f2e4321916dc736e7f688e13e8580e5591a31ea4002d12ca42506"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/011_cascade/cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200.parquet.part0003"
+    ],
+    "bytes": 25761929,
+    "sha256": "70d1f8f83ba9e81acb4e78a3eacc5d433cf607908299d05d2f7dc5f6732b420d"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2024/012_cascade/cascade_vs_persistence_d5m_final_2h_leak_ge200.parquet.part0003"
+    ],
+    "bytes": 26658046,
+    "sha256": "8ee9bb206ddfcfc33431614ab848bdbd94bc4667322396f4b52cdfa9bb41e572"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet.part0000",
+      "data/analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet.part0001",
+      "data/analysis/nongraph/2024/015_prefix_floor/prefix_floor.parquet.part0002"
+    ],
+    "bytes": 20586489,
+    "sha256": "568854a478b615dca0e60cbee86224a5c77ea6f0007a605ce6cc1b79b801c9cf"
+  },
+  {
+    "path": "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet",
+    "parts": [
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0000",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0001",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0002",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0003",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0004",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0005",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0006",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0007",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0008",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0009",
+      "data/analysis/nongraph/2024/016_prefix_model/prefix_model_test_d30s.parquet.part0010"
+    ],
+    "bytes": 74212291,
+    "sha256": "199f4a41760131c972e86913b75b296906f308883003879bd3d1b207609eab64"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0004",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0005",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0006",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0007",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0008",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0009",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0010",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0011",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0012",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0013",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0014",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0015",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0016",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0017",
+      "data/analysis/nongraph/2025/049_cascade/cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200.parquet.part0018"
+    ],
+    "bytes": 126162678,
+    "sha256": "270969cafb5ea2ea0b0675fd426d5bfd31bf2cbf87f70f625218da207cbf14ec"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0004",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0005",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0006",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0007",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0008",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0009",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0010",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0011",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0012",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0013",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0014",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0015",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0016",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0017",
+      "data/analysis/nongraph/2025/050_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200.parquet.part0018"
+    ],
+    "bytes": 129118815,
+    "sha256": "2047379443160869553a6cc8ffdc215c3c6b5508ab9ff0f10e3b8ff997ef2c20"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0000",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0001",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0002",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0003",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0004",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0005",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0006",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0007",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0008",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0009",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0010",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0011",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0012",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0013",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0014",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0015",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0016",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0017",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0018",
+      "data/analysis/nongraph/2025/051_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2.parquet.part0019"
+    ],
+    "bytes": 135066745,
+    "sha256": "eda042f275ed310b9207881f8717dbd9efd467686df36212ab056f08d1e8bff6"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0000",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0001",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0002",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0003",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0004",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0005",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0006",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0007",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0008",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0009",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0010",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0011",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0012",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0013",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0014",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0015",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0016",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0017",
+      "data/analysis/nongraph/2025/052_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5.parquet.part0018"
+    ],
+    "bytes": 131400294,
+    "sha256": "597925c380650138ca796d478671fee3a86c5e79294a8779db933e8e6f1276fc"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0000",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0001",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0002",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0003",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0004",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0005",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0006",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0007",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0008",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0009",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0010",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0011",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0012",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0013",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0014",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0015",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0016",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0017",
+      "data/analysis/nongraph/2025/053_cascade/cascade_vs_persistence_d1m_final_2h_leak_ge200_vf.parquet.part0018"
+    ],
+    "bytes": 128072471,
+    "sha256": "699e127bf3560402809a1a5d71ade682315a7e27c51ace9f3f7a523f07207a21"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0004",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0005",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0006",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0007",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0008",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0009",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0010",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0011",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0012",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0013",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0014",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0015",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0016",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0017",
+      "data/analysis/nongraph/2025/054_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0018"
+    ],
+    "bytes": 127352726,
+    "sha256": "59ff4962112016c9e53c9874cbfa0673f21a7c3d924f5a47f061c0b08fe791a7"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0004",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0005",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0006",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0007",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0008",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0009",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0010",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0011",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0012",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0013",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0014",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0015",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0016",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0017",
+      "data/analysis/nongraph/2025/055_cascade/cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200.parquet.part0018"
+    ],
+    "bytes": 126493339,
+    "sha256": "a1bb6a7550251cd05f69abcaa0884cf234a324f25b69a6552e7cd580f7ce6205"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0000",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0001",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0002",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0003",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0004",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0005",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0006",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0007",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0008",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0009",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0010",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0011",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0012",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0013",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0014",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0015",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0016",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0017",
+      "data/analysis/nongraph/2025/056_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200.parquet.part0018"
+    ],
+    "bytes": 129820191,
+    "sha256": "3c2df00f7731141be0f0af2400db9ad0a7834f7b7fde7eadd135adbebab2dd09"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0000",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0001",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0002",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0003",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0004",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0005",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0006",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0007",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0008",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0009",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0010",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0011",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0012",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0013",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0014",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0015",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0016",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0017",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0018",
+      "data/analysis/nongraph/2025/057_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2.parquet.part0019"
+    ],
+    "bytes": 135964604,
+    "sha256": "df6615b83e93d8303ff7e0e2522b67792930f83e2c272cb93f5cb4262314224f"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0000",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0001",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0002",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0003",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0004",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0005",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0006",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0007",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0008",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0009",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0010",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0011",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0012",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0013",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0014",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0015",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0016",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0017",
+      "data/analysis/nongraph/2025/058_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5.parquet.part0018"
+    ],
+    "bytes": 132321470,
+    "sha256": "e0c1e61b2165b7fb6ee558065a49d43c01c36712c65a0a050f3027662bf9accd"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0000",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0001",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0002",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0003",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0004",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0005",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0006",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0007",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0008",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0009",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0010",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0011",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0012",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0013",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0014",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0015",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0016",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0017",
+      "data/analysis/nongraph/2025/059_cascade/cascade_vs_persistence_d30s_final_2h_leak_ge200_vf.parquet.part0018"
+    ],
+    "bytes": 128643384,
+    "sha256": "8df4d1aec2c1e2acaa5d987faa65b4c6e0979079a5e230657f3558439d3b7d39"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor.parquet.part0000",
+      "data/analysis/nongraph/2025/062_prefix_floor_boundary_v2/prefix_floor.parquet.part0001"
+    ],
+    "bytes": 11640811,
+    "sha256": "12e4b09f53b36c413ec2062f044ec03239ea8bb978950c70b2d681adc45e34fb"
+  },
+  {
+    "path": "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet",
+    "parts": [
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0000",
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0001",
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0002",
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0003",
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0004",
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0005",
+      "data/analysis/nongraph/2025/063_prefix_model/prefix_model_test_d30s.parquet.part0006"
+    ],
+    "bytes": 46207344,
+    "sha256": "115ed441a5772060547eb5862cf60072b071cef811e501f96b55ae240251069c"
+  },
+  {
+    "path": "data/analysis/nongraph-boundary-input-equivalence.json",
+    "parts": [
+      "data/analysis/nongraph-boundary-input-equivalence.json.part0000",
+      "data/analysis/nongraph-boundary-input-equivalence.json.part0001"
+    ],
+    "bytes": 8256786,
+    "sha256": "4d8ced4608e853b24b6695e48edff6f591bb489b096e32d74fca56e95b7fd65e"
+  },
+  {
+    "path": "data/analysis/withdrawal-baseline-revision.json",
+    "parts": [
+      "data/analysis/withdrawal-baseline-revision.json.part0000",
+      "data/analysis/withdrawal-baseline-revision.json.part0001",
+      "data/analysis/withdrawal-baseline-revision.json.part0002",
+      "data/analysis/withdrawal-baseline-revision.json.part0003",
+      "data/analysis/withdrawal-baseline-revision.json.part0004",
+      "data/analysis/withdrawal-baseline-revision.json.part0005",
+      "data/analysis/withdrawal-baseline-revision.json.part0006"
+    ],
+    "bytes": 46313302,
+    "sha256": "8efd881e464be98dc4ab8e30a44f21ae70e5d569ef74f48f27d0a0e5cf1194bc"
+  },
+  {
     "path": "data/eventset/2023/events.parquet",
     "parts": [
       "data/eventset/2023/events.parquet.part0000",
       "data/eventset/2023/events.parquet.part0001"
     ],
-    "bytes": 12441833,
-    "sha256": "7236925afc2865ae0a75c12dd631fefd403f34aa38f3d33f64716a18b51f190e"
+    "bytes": 12906577,
+    "sha256": "09635480e6b98a0a9331a3312e1e8ac5544d0cf579ab5f143d1d487e2e6d2be8"
   },
   {
     "path": "data/eventset/2024/events.parquet",
@@ -16,17 +574,18 @@
       "data/eventset/2024/events.parquet.part0002",
       "data/eventset/2024/events.parquet.part0003"
     ],
-    "bytes": 24813676,
-    "sha256": "8bd5882bdd3135c3560d7189435cd063397254cf984a88e617a917cb8b8c3cd6"
+    "bytes": 25722621,
+    "sha256": "75eaec9a599b706e53f22fa477463fb150aaf2cfd361f7f0c06e3cffd984409c"
   },
   {
-    "path": "data/eventset/2024_recovery/events.parquet",
+    "path": "data/eventset/2024_leak/prefix_floor.parquet",
     "parts": [
-      "data/eventset/2024_recovery/events.parquet.part0000",
-      "data/eventset/2024_recovery/events.parquet.part0001"
+      "data/eventset/2024_leak/prefix_floor.parquet.part0000",
+      "data/eventset/2024_leak/prefix_floor.parquet.part0001",
+      "data/eventset/2024_leak/prefix_floor.parquet.part0002"
     ],
-    "bytes": 8099698,
-    "sha256": "e30def6b2942f7242d193e8db90d0be0bcdc4cd3fc9d16e779bbfcbc92fcefa7"
+    "bytes": 20586489,
+    "sha256": "568854a478b615dca0e60cbee86224a5c77ea6f0007a605ce6cc1b79b801c9cf"
   },
   {
     "path": "data/eventset/2025/events.parquet",
@@ -36,17 +595,26 @@
       "data/eventset/2025/events.parquet.part0002",
       "data/eventset/2025/events.parquet.part0003"
     ],
-    "bytes": 25060183,
-    "sha256": "555170a806396dd19a0e11d99bf3575a6057f438e52da7b18cebf63df24915f7"
+    "bytes": 26062560,
+    "sha256": "96031f65daa558d1f73efd3427c6b7fd05104400bd696de6ca7f92760ce8862d"
   },
   {
-    "path": "data/eventset/2025_recovery/events.parquet",
+    "path": "data/eventset/2025_leak/events.parquet",
     "parts": [
-      "data/eventset/2025_recovery/events.parquet.part0000",
-      "data/eventset/2025_recovery/events.parquet.part0001"
+      "data/eventset/2025_leak/events.parquet.part0000",
+      "data/eventset/2025_leak/events.parquet.part0001"
     ],
-    "bytes": 8733619,
-    "sha256": "e689f94583055bcd13fbc3540417d8c813a73d2c36c9a9a8d70dd8d232464551"
+    "bytes": 7151730,
+    "sha256": "d2a430f65f7a0542d92c9725ff9c138f4414b210abc4658c02eeae7a9bd5b9c2"
+  },
+  {
+    "path": "data/eventset/2025_leak/prefix_floor.parquet",
+    "parts": [
+      "data/eventset/2025_leak/prefix_floor.parquet.part0000",
+      "data/eventset/2025_leak/prefix_floor.parquet.part0001"
+    ],
+    "bytes": 11640811,
+    "sha256": "12e4b09f53b36c413ec2062f044ec03239ea8bb978950c70b2d681adc45e34fb"
   },
   {
     "path": "data/eventset/2026/events.parquet",
@@ -55,7 +623,199 @@
       "data/eventset/2026/events.parquet.part0001",
       "data/eventset/2026/events.parquet.part0002"
     ],
-    "bytes": 15108186,
-    "sha256": "cf4cd4e639af71f3bd7a31a2b3706e93f73486f8885a20ef30600ab79cd65f93"
+    "bytes": 14637126,
+    "sha256": "18373fef9235f01c1e39111cc817b96ae5f79601b1357ab631f58f6527e9035a"
+  },
+  {
+    "path": "data/rpki/beacon-delay/2024-06-10_2024-06-16/cycles.parquet",
+    "parts": [
+      "data/rpki/beacon-delay/2024-06-10_2024-06-16/cycles.parquet.part0000",
+      "data/rpki/beacon-delay/2024-06-10_2024-06-16/cycles.parquet.part0001"
+    ],
+    "bytes": 7061833,
+    "sha256": "98a377cca8ca6c0f8b5ded64a5286ae5bd3e70fa521bad0d630f2c28e09e7440"
+  },
+  {
+    "path": "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv",
+    "parts": [
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0000",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0001",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0002",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0003",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0004",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0005",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0006",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0007",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0008",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0009",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0010",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0011",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0012",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0013",
+      "data/tgn/2024_leak200/d30s/_results/sage_robustness_per_event.csv.part0014"
+    ],
+    "bytes": 99669589,
+    "sha256": "b6c0147f0c5e575cf3e23707d404627b56eb529f8f847cb4c5f3458798abf8a4"
+  },
+  {
+    "path": "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv",
+    "parts": [
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0000",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0001",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0002",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0003",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0004",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0005",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0006",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0007",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0008",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0009",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0010",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0011",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0012",
+      "data/tgn/2024_leak200/d60s/_results/sage_robustness_per_event.csv.part0013"
+    ],
+    "bytes": 96840499,
+    "sha256": "87e2a28756facf3398c6f8702e6600925d257b23b562af2470717a9510cedabc"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "parts": [
+      "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv.part0000",
+      "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv.part0001",
+      "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv.part0002",
+      "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv.part0003",
+      "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv.part0004",
+      "data/tgn/2025_leak200/d30s/_results/cross_sage_leak2002025_per_event.csv.part0005"
+    ],
+    "bytes": 40719890,
+    "sha256": "85248cd2de0a9560cbc8c71d46d9be47c47f0043ef1d34cd8711be94171a797c"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d30s/_results/dyrep_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d30s/_results/dyrep_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d30s/_results/dyrep_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d30s/_results/dyrep_test_probs.pt.part0002"
+    ],
+    "bytes": 18192483,
+    "sha256": "47817549eeaa76d32467f354a811d43097b1adbaa6b11b908a0f7a9824bb5b30"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d30s/_results/gat_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d30s/_results/gat_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d30s/_results/gat_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d30s/_results/gat_test_probs.pt.part0002"
+    ],
+    "bytes": 18238743,
+    "sha256": "7c0df4a33a4aa7a7ae26cec1188af061ae12b86bb4428f3442b20e87f58c8d8f"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d30s/_results/sage_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d30s/_results/sage_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d30s/_results/sage_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d30s/_results/sage_test_probs.pt.part0002"
+    ],
+    "bytes": 18197341,
+    "sha256": "54204cc04e4483398605bce61acf3198379b4e1c263f0c1f1493cf84667e443a"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d30s/_results/tgn_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d30s/_results/tgn_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d30s/_results/tgn_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d30s/_results/tgn_test_probs.pt.part0002"
+    ],
+    "bytes": 18198103,
+    "sha256": "15ca5f9f1aea1948afa559346bd19b4e3d7efdeca288b6cf9058220ef786b755"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d60s/_results/dyrep_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d60s/_results/dyrep_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d60s/_results/dyrep_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d60s/_results/dyrep_test_probs.pt.part0002"
+    ],
+    "bytes": 17898531,
+    "sha256": "8228904a0702596370bcf649943847aba569e7faf2caf7aa180d314f2461fee1"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d60s/_results/gat_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d60s/_results/gat_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d60s/_results/gat_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d60s/_results/gat_test_probs.pt.part0002"
+    ],
+    "bytes": 17906327,
+    "sha256": "15e037d0887f8786c7e54bb6c7a8e065dff5ccce3ee6ca86abbac1369af04b6d"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d60s/_results/sage_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d60s/_results/sage_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d60s/_results/sage_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d60s/_results/sage_test_probs.pt.part0002"
+    ],
+    "bytes": 17895389,
+    "sha256": "7b47b96984c5d49fca881f3b227b720acfc3f3b482dd5d5813a2aecbd20bdafb"
+  },
+  {
+    "path": "data/tgn/2025_leak200/d60s/_results/tgn_test_probs.pt",
+    "parts": [
+      "data/tgn/2025_leak200/d60s/_results/tgn_test_probs.pt.part0000",
+      "data/tgn/2025_leak200/d60s/_results/tgn_test_probs.pt.part0001",
+      "data/tgn/2025_leak200/d60s/_results/tgn_test_probs.pt.part0002"
+    ],
+    "bytes": 17894743,
+    "sha256": "7fe12b9ab1d1125e15541b42927530021e4175f4251494083999861dfed60b9f"
+  },
+  {
+    "path": "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "parts": [
+      "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv.part0000",
+      "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv.part0001",
+      "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv.part0002",
+      "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv.part0003",
+      "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv.part0004",
+      "data/tgn/2025_leak200@t0=-30/d30s/_results/cross_sage_leak2002025_per_event.csv.part0005"
+    ],
+    "bytes": 40049964,
+    "sha256": "52e5f1a33ee41a2c71b7c1b6292ebaff0889974182b29e93b8ca78bd2c45b936"
+  },
+  {
+    "path": "data/tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "parts": [
+      "data/tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025_per_event.csv.part0000",
+      "data/tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025_per_event.csv.part0001",
+      "data/tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025_per_event.csv.part0002",
+      "data/tgn/2025_leak200@t0=300/d30s/_results/cross_sage_leak2002025_per_event.csv.part0003"
+    ],
+    "bytes": 27681874,
+    "sha256": "7b11192ceda62e39d6d0ab9d5327971210da02c6833f9942df5b12bc375748b3"
+  },
+  {
+    "path": "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "parts": [
+      "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv.part0000",
+      "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv.part0001",
+      "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv.part0002",
+      "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv.part0003",
+      "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv.part0004",
+      "data/tgn/2025_leak200@t0=60/d30s/_results/cross_sage_leak2002025_per_event.csv.part0005"
+    ],
+    "bytes": 38590932,
+    "sha256": "cd33ff7c0768c9124970b825d682773a40b2c47d88876bcd945545269592c1fb"
+  },
+  {
+    "path": "data/tgn/2025_leak200@t0=900/d30s/_results/cross_sage_leak2002025_per_event.csv",
+    "parts": [
+      "data/tgn/2025_leak200@t0=900/d30s/_results/cross_sage_leak2002025_per_event.csv.part0000",
+      "data/tgn/2025_leak200@t0=900/d30s/_results/cross_sage_leak2002025_per_event.csv.part0001",
+      "data/tgn/2025_leak200@t0=900/d30s/_results/cross_sage_leak2002025_per_event.csv.part0002"
+    ],
+    "bytes": 18171425,
+    "sha256": "d034c597806b7fa2977ffff6adaacdcd6c1ba050c5b3dacd86a0269b6faab628"
   }
 ]

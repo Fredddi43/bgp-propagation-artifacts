@@ -1,0 +1,92 @@
+{
+ "events_scored": 423,
+ "growing_test_events_total": 423,
+ "sample_requested": 100000,
+ "sampling_seed": 7,
+ "delta": "d30s",
+ "target": "final_2h",
+ "params": {
+  "p_c2p": 0.05,
+  "p_p2c": 0.001,
+  "p_p2p": 0.002,
+  "max_steps": 12,
+  "rollouts": 50,
+  "seed": 0,
+  "rec": 1.0,
+  "valley_free": false
+ },
+ "training_embargo": {
+  "first_test_onset": "2025-09-01T02:55:40+00:00",
+  "label_horizon_seconds": 7200,
+  "dropped_training_ids": []
+ },
+ "excluded_events": [],
+ "auprc_scope": "two_hop_candidates_union_all_observed_seeds_union_full_truth",
+ "prediction_floor": "all_observed_seeds",
+ "coaffection": true,
+ "alpha": 20.0,
+ "rec": 1.0,
+ "valley_free": false,
+ "train_events_fit": 693,
+ "fit_stats": {
+  "202512": {
+   "events": 693,
+   "edges": 987624,
+   "edges_with_trials": 417167,
+   "edges_with_success": 59050,
+   "trials_total": 105122712,
+   "successes_total": 2150429,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.0353641124441402
+  },
+  "202510": {
+   "events": 693,
+   "edges": 978814,
+   "edges_with_trials": 413568,
+   "edges_with_success": 59758,
+   "trials_total": 104231937,
+   "successes_total": 2173333,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.03602813467509057
+  },
+  "202509": {
+   "events": 693,
+   "edges": 986700,
+   "edges_with_trials": 422870,
+   "edges_with_success": 61468,
+   "trials_total": 107479899,
+   "successes_total": 2229437,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.0361414287764874
+  },
+  "202511": {
+   "events": 693,
+   "edges": 989958,
+   "edges_with_trials": 414354,
+   "edges_with_success": 59669,
+   "trials_total": 104610010,
+   "successes_total": 2168652,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.03595110465002978
+  }
+ },
+ "set_tag": "leak",
+ "min_asns": 200,
+ "cascade_jaccard_mean": 0.5412,
+ "cascade_recall_mean": 0.9646,
+ "cascade_auprc_mean": 0.6474,
+ "persist_jaccard_mean": 0.5094,
+ "persist_recall_mean": 0.5094,
+ "cascade_size_smape_mean": 0.7496,
+ "persist_size_smape_mean": 0.7637,
+ "cascade_beats_persistence_frac": 0.5272,
+ "by_vis_bucket": [
+  {
+   "vis_bucket": "n/a",
+   "n": 423,
+   "cj": 0.5412167848699764,
+   "pj": 0.5093759486934263,
+   "auprc": 0.6473671394799054
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "tag": "withdrawal",
+ "events": 6,
+ "per_vp_test": [],
+ "per_vp_spread": [],
+ "duration_share_all": [
+  {
+   "bucket": "1-10 min",
+   "n": 5,
+   "frac": 0.8333333333333333
+  },
+  {
+   "bucket": "persistent >10 min",
+   "n": 1,
+   "frac": 0.16666666666666666
+  }
+ ],
+ "persistence_by_duration_test": []
+}

@@ -6,14 +6,18 @@ usage: paper_numbers.py [years...]  → docs/paper/five-year-numbers.md (redirec
 from __future__ import annotations
 
 import json
-import sys
+import argparse
 from pathlib import Path
 
 import polars as pl
 
 from bgbench import config
 
-YEARS = [int(y) for y in sys.argv[1:]] or [2022, 2023, 2024, 2025, 2026]
+_ap = argparse.ArgumentParser()
+_ap.add_argument("years", nargs="*", type=int)
+_ap.add_argument("--recovery-tag", default="recovery", help="eventset suffix containing the paired measurements")
+_a = _ap.parse_args()
+YEARS = _a.years or [2022, 2023, 2024, 2025, 2026]
 ES = config.DATA_ROOT / "eventset"
 
 
@@ -22,6 +26,11 @@ def j(path: Path):
         return json.loads(path.read_text())
     except Exception:
         return None
+
+
+def enforcement_cell(shares: dict, key: str) -> str:
+    value = shares.get(key, {}).get("share")
+    return "–" if value is None else f"{value:.2f}"
 
 
 def floors(d: Path, target="final_2h") -> dict[str, float]:
@@ -94,31 +103,34 @@ for y in YEARS:
     sh = allp.group_by("validity").agg(n=pl.len()).with_columns(share=(pl.col("n") / pl.col("n").sum()).round(3)).sort("validity")
     print(f"| {y} | paper | *shares of test events* | " + ", ".join(f"{r['validity']} {r['share']:.1%}" for r in sh.iter_rows(named=True)) + " | | | | | |")
 
-print("\n## Recovery pairs\n")
-print("| year | pairs | gap p50 | hijack J30 | recovery J30 | ΔJ30 [CI] | recovery slower | reach ratio p50 | silent recoverers | enforcing: silent / carried / hijack-only |\n|---|---|---|---|---|---|---|---|---|---|")
+print("\n## Recovery pairs, paper population (2022 full selection; 2023–2026 exclude invalid sampling stratum)\n")
+print("| year | pairs | gap p50 | hijack J30 | recovery J30 | ΔJ30 [CI] | recovery slower | reach ratio p50 | return-path ASes absent from hijack paths | enforcing: R−H / R∩H / H−R |\n|---|---|---|---|---|---|---|---|---|---|")
 for y in YEARS:
-    d = ES / f"{y}_recovery"
-    p, o, r = j(d / "pairs_summary.json"), j(d / "overlap_summary.json"), j(d / "rov_summary.json")
+    d = ES / f"{y}_{_a.recovery_tag}"
+    suffix = "" if y == 2022 else "_labelled"
+    p, o = j(d / f"pairs_summary{suffix}.json"), j(d / f"overlap_summary{suffix}.json")
+    r = j(d / f"rov_summary{suffix}_frozen2505.json") or j(d / f"rov_summary{suffix}.json")
     if not p:
         continue
     dj = p["paired_j30_diff_recovery_minus_hijack"]
+    dj["ci95"] = dj.get("ci95") or [float("nan"), float("nan")]
     es = r["enforcing_share"] if r else {}
     print(f"| {y} | {p['pairs']:,} | {p['gap_s_p50']:.0f} s | {p['hijack']['j30_mean']:.2f} | {p['recovery']['j30_mean']:.2f} | {dj['mean']:.2f} [{dj['ci95'][0]:.2f}, {dj['ci95'][1]:.2f}] | "
           f"{p['recovery_slower_t90_frac']:.0%} | {p['recovery_reach_over_hijack_reach_p50']:.2f}× | {o['recoverers_never_carried_hijack_mean']:.0%} | "
-          f"{es.get('R-H', {}).get('share', float('nan')):.2f} / {es.get('R&H', {}).get('share', float('nan')):.2f} / {es.get('H-R', {}).get('share', float('nan')):.2f} |" if o else "")
+          f"{enforcement_cell(es, 'R-H')} / {enforcement_cell(es, 'R&H')} / {enforcement_cell(es, 'H-R')} |" if o else "")
 
 print("\n## ROV frontier (mean log-odds frontier vs carriers, invalid / unknown / valid)\n")
 print("| year | file | invalid n | invalid | unknown | valid | enforcing carriers (invalid) |\n|---|---|---|---|---|---|---|")
 for y in YEARS:
     for f in sorted((ES / str(y)).glob("rov_frontier*.json")):
-        if f.name not in ("rov_frontier.json", "rov_frontier_frozen2505.json", "rov_frontier_labelled.json", "rov_frontier_stratum.json"):
+        if f.name not in ("rov_frontier.json", "rov_frontier_frozen2505.json", "rov_frontier_labelled.json", "rov_frontier_stratum.json", "rov_frontier_labelled_frozen2505.json", "rov_frontier_stratum_frozen2505.json"):
             continue
         r = j(f)
         if not r or "by_validity" not in r:
             continue
         b = r["by_validity"]
         def cell(v):
-            if v not in b:
+            if v not in b or b[v].get("log_odds_frontier_vs_carriers_mean") is None:
                 return "–"
             ci = b[v].get("log_odds_mean_ci95_bootstrap") or [float("nan"), float("nan")]
             return f"{b[v]['log_odds_frontier_vs_carriers_mean']:+.2f} [{ci[0]:+.2f}, {ci[1]:+.2f}]"
@@ -134,7 +146,6 @@ for y in YEARS:
     ev = pl.read_parquet(d / "events.parquet").filter(pl.col("error").is_null())
     ev = ev.join(pl.read_parquet(d / "rpki_validity.parquet").select("event_id", "validity", "prev_validity"), on="event_id", how="left")
     ev = ev.with_columns(pl.when(pl.col("reason") == "rpki_invalid_sample").then(pl.lit("label-free invalid stratum")).otherwise(pl.lit("paper")).alias("pop"),
-                         (~pl.col("reason").is_in(["stratified", "rpki_invalid_sample"])).alias("labelled"),
                          jac("set_d30s", "set_final_2h").alias("J30"), (pl.col("set_d30s").list.len() < pl.col("set_final_2h").list.len()).alias("growing"))
     for pop in ("paper", "stratified sample only", "label-free invalid stratum"):
         g = ev.filter(pl.col("reason") == "stratified") if pop == "stratified sample only" else ev.filter(pl.col("pop") == pop)
@@ -150,10 +161,10 @@ for y in YEARS:
     inv_inv = ev.filter((pl.col("pop") == "paper") & (pl.col("validity") == "invalid") & (pl.col("prev_validity") == "invalid")).height
     print(f"| {y} | paper | *invalid displacing valid / invalid* | {inv_valid:,} / {inv_inv:,} | | | | | |")
 
-print("\n## Recovery replay set\n")
-print("| year | recoveries replayed (ok) | train / test | gap p50 | ASes switching back p50 / p90 | t90 p50 / p90 | share t90 > 5 min | floors 30 s / 1 / 5 / 15 min | test median J30 |\n|---|---|---|---|---|---|---|---|---|")
+print("\n## Recovery measurements, all unique return events before pair filtering\n")
+print("| year | recoveries replayed (ok) | train / test | gap p50 | ASes in observed return paths p50 / p90 | t90 p50 / p90 | share t90 > 5 min | floors 30 s / 1 / 5 / 15 min | test median J30 |\n|---|---|---|---|---|---|---|---|---|")
 for y in YEARS:
-    d = ES / f"{y}_recovery"
+    d = ES / f"{y}_{_a.recovery_tag}"
     if not (d / "events.parquet").exists():
         continue
     s_ = j(d / "summary.json") or {}
@@ -164,22 +175,23 @@ for y in YEARS:
           f"{e['t90_s'].median():.0f} s / {e['t90_s'].quantile(0.9):.0f} s | {(e['t90_s'] > 300).mean():.0%} | {fl(floors(d))} | {te['J30'].median():.2f} |")
 
 print("\n## Recovery pairs by hijack population (files with suffix _labelled / _stratum where present)\n")
-print("| year | population | pairs | hijack J30 | recovery J30 | ΔJ30 [CI] | recovery slower | reach ratio p50 | silent recoverers | enforcing silent / carried / hijack-only (series) |\n|---|---|---|---|---|---|---|---|---|---|")
+print("| year | population | pairs | hijack J30 | recovery J30 | ΔJ30 [CI] | recovery slower | reach ratio p50 | return-path ASes absent from hijack paths | enforcing R−H / R∩H / H−R (series) |\n|---|---|---|---|---|---|---|---|---|---|")
 for y in YEARS:
-    d = ES / f"{y}_recovery"
+    d = ES / f"{y}_{_a.recovery_tag}"
     for suf, pop in (("_labelled", "catalogue + stratified"), ("_stratum", "label-free invalid stratum"), ("", "all")):
         p, o = j(d / f"pairs_summary{suf}.json"), j(d / f"overlap_summary{suf}.json")
         if not p:
             continue
-        r = j(d / f"rov_summary{suf}_frozen2505.json") or j(d / f"rov_summary_frozen2505.json") if suf == "" else j(d / f"rov_summary{suf}.json")
+        r = j(d / f"rov_summary{suf}_frozen2505.json") or j(d / f"rov_summary{suf}.json")
         series = "frozen 2025-05" if r and r.get("freeze_date") else "live"
         if not r:
             r = j(d / f"rov_summary{suf}.json"); series = "live"
         es = (r or {}).get("enforcing_share", {})
         dj = p["paired_j30_diff_recovery_minus_hijack"]
+        dj["ci95"] = dj.get("ci95") or [float("nan"), float("nan")]
         print(f"| {y} | {pop} | {p['pairs']:,} | {p['hijack']['j30_mean']:.2f} | {p['recovery']['j30_mean']:.2f} | {dj['mean']:.2f} [{dj['ci95'][0]:.2f}, {dj['ci95'][1]:.2f}] | "
               f"{p['recovery_slower_t90_frac']:.0%} | {p['recovery_reach_over_hijack_reach_p50']:.2f}× | {o['recoverers_never_carried_hijack_mean']:.0%} | "
-              f"{es.get('R-H', {}).get('share', float('nan')):.2f} / {es.get('R&H', {}).get('share', float('nan')):.2f} / {es.get('H-R', {}).get('share', float('nan')):.2f} ({series}) |")
+              f"{enforcement_cell(es, 'R-H')} / {enforcement_cell(es, 'R&H')} / {enforcement_cell(es, 'H-R')} ({series}) |")
 
 print("\n## Per-collector floors by class at 30 s (test split; per_vp_by_validity{_labelled}.json = paper population where present)\n")
 print("| year | file | class | VPs | mean J at 30 s: min–max (std) | ordering invalid > unknown > valid holds at |\n|---|---|---|---|---|---|")

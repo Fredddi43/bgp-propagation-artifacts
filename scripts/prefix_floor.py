@@ -14,14 +14,14 @@ from bgbench.replay_day import roots
 
 year = int(sys.argv[1])
 E = config.DATA_ROOT / "eventset" / f"{year}_leak"
-ev = pl.read_parquet(E / "events.parquet").filter(pl.col("error").is_null()).select("event_id", "split", "t0_obs", "asns_final_2h")
+ev = pl.read_parquet(E / "events.parquet").filter(pl.col("error").is_null() & (pl.col("observation_lag_s").is_null() | (pl.col("observation_lag_s") >= -60))).select("event_id", "split", "t0_obs", "asns_final_2h")
 root = roots("leak")[1]
 DELTAS = {"d30s": 30, "d1m": 60, "d5m": 300, "d15m": 900}
 rows = []
 for r in ev.iter_rows(named=True):
     f = root / r["event_id"] / "anomalous.parquet"
     if not f.exists():
-        continue
+        raise FileNotFoundError(f)
     a = pl.read_parquet(f, columns=["prefix", "ts"])
     if a["ts"].dtype.time_zone:
         a = a.with_columns(pl.col("ts").dt.replace_time_zone(None))
@@ -29,14 +29,15 @@ for r in ev.iter_rows(named=True):
     fin = set(a.filter(pl.col("ts") <= t0 + dt.timedelta(hours=2))["prefix"].to_list())
     if not fin:
         continue
-    row = {"event_id": r["event_id"], "split": r["split"], "prefixes_2h": len(fin), "asns_2h": r["asns_final_2h"]}
+    row = {"event_id": r["event_id"], "split": r["split"], "prefixes_2h": len(fin), "set_final_2h": sorted(fin), "asns_2h": r["asns_final_2h"]}
     for k, s in DELTAS.items():
         cur = set(a.filter(pl.col("ts") <= t0 + dt.timedelta(seconds=s))["prefix"].to_list())
+        row[f"set_{k}"] = sorted(cur)
         row[f"j_{k}"] = len(cur & fin) / len(cur | fin); row[f"grow_{k}"] = len(fin) > len(cur)
     rows.append(row)
 d = pl.DataFrame(rows); d.write_parquet(E / "prefix_floor.parquet")
 t = d.filter(pl.col("split") == "test")
-out = {"year": year, "events": d.height, "test": t.height, "prefixes_2h_p50_p90": [float(d["prefixes_2h"].quantile(q)) for q in (0.5, 0.9)],
+out = {"eligibility": "usable_leak_events_with_observation_lag_s_null_or_at_least_minus60", "year": year, "events": d.height, "test": t.height, "prefixes_2h_p50_p90": [float(d["prefixes_2h"].quantile(q)) for q in (0.5, 0.9)],
        "persistence_prefix_jaccard_test": {k: round(float(t[f"j_{k}"].mean()), 4) for k in DELTAS}, "still_growing_prefixes": {k: round(float(d[f"grow_{k}"].mean()), 4) for k in DELTAS}}
 big = d.filter(pl.col("asns_2h") >= 200); tb = big.filter(pl.col("split") == "test")
 if tb.height:

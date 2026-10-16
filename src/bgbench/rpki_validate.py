@@ -42,16 +42,35 @@ def validity(prefix: str, origin: int, tab) -> tuple[str, int, str]:
     covering = 0
     valid = False
     asn_match_too_long = False
-    floor = 8 if net.version == 4 else 16
-    for plen in range(net.prefixlen, floor - 1, -1):
+    # RFC 6811 section 2: coverage is prefix containment, independent of
+    # maxLength. A covered but too-specific announcement is Invalid, not
+    # NotFound. Include /0; there is no family-specific minimum ROA length.
+    for plen in range(net.prefixlen, -1, -1):
         sup = net if plen == net.prefixlen else net.supernet(new_prefix=plen)
         for ml, a in tab.get(str(sup), ()):
+            covering += 1
             if net.prefixlen <= ml:
-                covering += 1
-                if a == origin:
+                if a == origin and a != 0:
                     valid = True
             elif a == origin:
                 asn_match_too_long = True
     state = "valid" if valid else ("invalid" if covering else "unknown")
     reason = "" if state != "invalid" else ("invalid_length" if asn_match_too_long else "invalid_asn")
     return state, covering, reason
+
+
+def validate_day(task: tuple[str, list[dict]]) -> list[dict]:
+    """Process-pool worker: load one historical ROA snapshot for all day's events."""
+    day, events = task
+    tab = roas_for(day)
+    out = []
+    for event in events:
+        if tab is None:
+            state, count, reason, previous = "no_roa_data", 0, "", "no_roa_data"
+        else:
+            state, count, reason = validity(event["prefix"], int(event["new_origin"]), tab)
+            previous = (validity(event["prefix"], int(event["prev_origin"]), tab)[0]
+                        if event["prev_origin"] is not None else "unknown_prev")
+        out.append({"event_id": event["event_id"], "validity": state, "n_covering": count,
+                    "invalid_reason": reason, "prev_validity": previous, "split": event["split"]})
+    return out

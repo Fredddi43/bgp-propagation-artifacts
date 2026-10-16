@@ -1,0 +1,294 @@
+{
+ "tag": "withdrawal",
+ "events": 50,
+ "per_vp_test": [
+  {
+   "collector": "route-views.linx",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.996
+  },
+  {
+   "collector": "route-views2",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.989
+  },
+  {
+   "collector": "route-views3",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.994
+  },
+  {
+   "collector": "rrc00",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.996
+  },
+  {
+   "collector": "rrc01",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.995
+  },
+  {
+   "collector": "rrc03",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.99
+  },
+  {
+   "collector": "rrc12",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.993
+  },
+  {
+   "collector": "rrc15",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.995
+  },
+  {
+   "collector": "rrc20",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.996
+  },
+  {
+   "collector": "rrc25",
+   "delta": "d15m",
+   "n": 8,
+   "jaccard_mean": 0.991
+  },
+  {
+   "collector": "route-views.linx",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.734
+  },
+  {
+   "collector": "route-views2",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.617
+  },
+  {
+   "collector": "route-views3",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.748
+  },
+  {
+   "collector": "rrc00",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.815
+  },
+  {
+   "collector": "rrc01",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.786
+  },
+  {
+   "collector": "rrc03",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.738
+  },
+  {
+   "collector": "rrc12",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.774
+  },
+  {
+   "collector": "rrc15",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.74
+  },
+  {
+   "collector": "rrc20",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.782
+  },
+  {
+   "collector": "rrc25",
+   "delta": "d1m",
+   "n": 8,
+   "jaccard_mean": 0.789
+  },
+  {
+   "collector": "route-views.linx",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.652
+  },
+  {
+   "collector": "route-views2",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.48
+  },
+  {
+   "collector": "route-views3",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.633
+  },
+  {
+   "collector": "rrc00",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.729
+  },
+  {
+   "collector": "rrc01",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.712
+  },
+  {
+   "collector": "rrc03",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.656
+  },
+  {
+   "collector": "rrc12",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.712
+  },
+  {
+   "collector": "rrc15",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.662
+  },
+  {
+   "collector": "rrc20",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.695
+  },
+  {
+   "collector": "rrc25",
+   "delta": "d30s",
+   "n": 8,
+   "jaccard_mean": 0.739
+  },
+  {
+   "collector": "route-views.linx",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.971
+  },
+  {
+   "collector": "route-views2",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.917
+  },
+  {
+   "collector": "route-views3",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.968
+  },
+  {
+   "collector": "rrc00",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.974
+  },
+  {
+   "collector": "rrc01",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.964
+  },
+  {
+   "collector": "rrc03",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.964
+  },
+  {
+   "collector": "rrc12",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.968
+  },
+  {
+   "collector": "rrc15",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.952
+  },
+  {
+   "collector": "rrc20",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.97
+  },
+  {
+   "collector": "rrc25",
+   "delta": "d5m",
+   "n": 8,
+   "jaccard_mean": 0.966
+  }
+ ],
+ "per_vp_spread": [
+  {
+   "delta": "d15m",
+   "min": 0.989,
+   "max": 0.996,
+   "std": 0.003
+  },
+  {
+   "delta": "d1m",
+   "min": 0.617,
+   "max": 0.815,
+   "std": 0.055
+  },
+  {
+   "delta": "d30s",
+   "min": 0.48,
+   "max": 0.739,
+   "std": 0.075
+  },
+  {
+   "delta": "d5m",
+   "min": 0.917,
+   "max": 0.974,
+   "std": 0.017
+  }
+ ],
+ "duration_share_all": [
+  {
+   "bucket": "1-10 min",
+   "n": 49,
+   "frac": 0.98
+  },
+  {
+   "bucket": "persistent >10 min",
+   "n": 1,
+   "frac": 0.02
+  }
+ ],
+ "persistence_by_duration_test": [
+  {
+   "bucket": "1-10 min",
+   "n": 8,
+   "J_d30s": 0.765,
+   "J_d1m": 0.812,
+   "J_d5m": 0.97,
+   "J_d15m": 0.992
+  }
+ ]
+}

@@ -4,18 +4,24 @@
  "delta_s": 60,
  "model": "sage",
  "threshold": 0.95,
- "events": 389,
+ "membership_target": "full_observed_2h",
+ "events": 416,
  "new_members_only": {
-  "precision_mean": 0.5301,
-  "recall_mean": 0.4199,
-  "f1_mean": 0.448,
-  "micro_precision": 0.6533,
-  "micro_recall": 0.5939,
-  "predicted_new_per_event_p50": 44.0,
-  "true_new_per_event_p50": 66.0
+  "undefined_event_policy": "omit undefined ratios from macro means; retain all events in micro totals",
+  "precision_defined_events": 396,
+  "recall_defined_events": 416,
+  "f1_defined_events": 416,
+  "zero_prediction_events": 20,
+  "precision_mean": 0.5471,
+  "recall_mean": 0.3566,
+  "f1_mean": 0.3769,
+  "micro_precision": 0.6627,
+  "micro_recall": 0.5056,
+  "predicted_new_per_event_p50": 45.5,
+  "true_new_per_event_p50": 80.5
  },
  "full_set_seeds_plus_predicted": {
-  "precision_mean": 0.891,
-  "recall_mean": 0.8717
+  "precision_mean": 0.8934,
+  "recall_mean": 0.8242
  }
 }

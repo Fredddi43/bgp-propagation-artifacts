@@ -9,7 +9,7 @@ from __future__ import annotations
 import torch
 import torch.nn as nn
 
-from .gnn_train import n_edge_types, TypedSAGE, fit
+from .gnn_train import n_edge_types, TypedSAGE, fit, full_seed_count
 
 N_EDGE_TYPES = 3                      # class of the static edge (collector-side AS → origin-side AS) as tgn_data types it:
                                       # 0 = collector-side is a customer of origin-side, 1 = its provider, 2 = peer; +1 = no CAIDA edge
@@ -46,7 +46,7 @@ class TGNMember(nn.Module):
             for idx in torch.tensor_split(torch.arange(m, device=device), min(self.n_batches, m)):
                 self.memory.update_state(src[idx], dst[idx], t[idx], feat[idx])
         z, _ = self.memory(torch.arange(n, device=device))
-        return self.readout(torch.cat([z, x], dim=1), d["edge_index"].to(device), d["edge_type"].to(device), d["persistence_pred"].to(device))
+        return self.readout(torch.cat([z, x], dim=1), d["edge_index"].to(device), d["edge_type"].to(device), d["persistence_pred"].to(device), n_seed=full_seed_count(d))
 
 
 def prepare(delta_s: int):
@@ -67,9 +67,12 @@ def prepare(delta_s: int):
         keys = ei[0] * n + ei[1]
         order = torch.argsort(keys); keys_s, et_s = keys[order], et[order]
         q = d["msg_dst"] * n + d["msg_src"]
-        pos = torch.searchsorted(keys_s, q).clamp(max=max(len(keys_s) - 1, 0))
-        found = (len(keys_s) > 0) & (keys_s[pos] == q)
-        types = torch.where(found, et_s[pos], torch.full_like(pos, N_EDGE_TYPES))
+        if len(keys_s):
+            pos = torch.searchsorted(keys_s, q).clamp(max=len(keys_s) - 1)
+            found = keys_s[pos] == q
+            types = torch.where(found, et_s[pos] % N_EDGE_TYPES, torch.full_like(pos, N_EDGE_TYPES))
+        else:
+            types = torch.full_like(q, N_EDGE_TYPES)
         feat = torch.zeros((msgs.shape[0], MSG_DIM))
         feat[:, 0] = (msgs[:, 0].float() / float(delta_s)).clamp(0, 1)
         feat[torch.arange(msgs.shape[0]), 1 + types] = 1.0
@@ -81,7 +84,7 @@ def prepare(delta_s: int):
 def train(year="2024", delta_s: int = 30, epochs: int = 20, hid: int = 64, mem: int = 64, lr: float = 1e-3,
           pos_weight_cap: float = 20.0, seed: int = 0, tag: str = "", focal_gamma: float = 0.0, curve_weight: float = 1.0) -> dict:
     def factory(in_dim: int, events: list[dict]) -> nn.Module:
-        return TGNMember(in_dim, max(d["x"].shape[0] for d in events), mem, hid)
+        return TGNMember(in_dim, max(d["x"].shape[0] for d in events), mem, hid, n_types=n_edge_types(events))
 
     return fit(year, delta_s, factory, "tgn", epochs, forward=lambda m, d, dev: m(d, dev), prepare=prepare(delta_s),
                post_step=lambda m: m.memory.detach(), lr=lr, pos_weight_cap=pos_weight_cap, seed=seed,

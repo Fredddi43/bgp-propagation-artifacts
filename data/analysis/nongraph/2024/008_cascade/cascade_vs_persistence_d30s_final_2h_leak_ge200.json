@@ -1,0 +1,47 @@
+{
+ "events_scored": 108,
+ "growing_test_events_total": 108,
+ "sample_requested": 100000,
+ "sampling_seed": 7,
+ "delta": "d30s",
+ "target": "final_2h",
+ "params": {
+  "p_c2p": 0.05,
+  "p_p2c": 0.001,
+  "p_p2p": 0.002,
+  "max_steps": 12,
+  "rollouts": 50,
+  "seed": 0,
+  "rec": 1.0,
+  "valley_free": false
+ },
+ "training_embargo": {},
+ "excluded_events": [],
+ "auprc_scope": "two_hop_candidates_union_all_observed_seeds_union_full_truth",
+ "prediction_floor": "all_observed_seeds",
+ "coaffection": false,
+ "alpha": 5.0,
+ "rec": 1.0,
+ "valley_free": false,
+ "train_events_fit": 214,
+ "fit_stats": {},
+ "set_tag": "leak",
+ "min_asns": 200,
+ "cascade_jaccard_mean": 0.6044,
+ "cascade_recall_mean": 0.6839,
+ "cascade_auprc_mean": 0.7814,
+ "persist_jaccard_mean": 0.6207,
+ "persist_recall_mean": 0.6207,
+ "cascade_size_smape_mean": 0.8506,
+ "persist_size_smape_mean": 0.5504,
+ "cascade_beats_persistence_frac": 0.3981,
+ "by_vis_bucket": [
+  {
+   "vis_bucket": "n/a",
+   "n": 108,
+   "cj": 0.6043888888888889,
+   "pj": 0.6207442130651101,
+   "auprc": 0.7813749999999999
+  }
+ ]
+}

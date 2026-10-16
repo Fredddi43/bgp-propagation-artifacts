@@ -1,0 +1,57 @@
+{
+ "year": 2024,
+ "pairs": 1272,
+ "rovista_ases": 32105,
+ "freeze_date": null,
+ "only_reason": "rpki_invalid_sample",
+ "exclude_reason": null,
+ "lookup_policy": "latest measurement at or before event date; missing history is unknown",
+ "enforcing_share": {
+  "R-H": {
+   "total_as_pair_observations": 22703,
+   "measured": 17255,
+   "unknown": 5448,
+   "future_only_excluded": 313,
+   "coverage": 0.76,
+   "enforcing": 7662,
+   "share": 0.444
+  },
+  "R&H": {
+   "total_as_pair_observations": 39643,
+   "measured": 28406,
+   "unknown": 11237,
+   "future_only_excluded": 755,
+   "coverage": 0.7165,
+   "enforcing": 4368,
+   "share": 0.1538
+  },
+  "H-R": {
+   "total_as_pair_observations": 51188,
+   "measured": 36266,
+   "unknown": 14922,
+   "future_only_excluded": 952,
+   "coverage": 0.7085,
+   "enforcing": 9070,
+   "share": 0.2501
+  }
+ },
+ "chronologically_unmatched_links": [
+  {
+   "event_id": "20240619T142328_190.53.47.0-24_263201",
+   "hijack_id": "20240619T142328_190.53.47.0-24_18840",
+   "observed_gap_s": -0.206815
+  },
+  {
+   "event_id": "20240929T142417_193.31.117.0-24_207459",
+   "hijack_id": "20240929T142417_193.31.117.0-24_202505",
+   "observed_gap_s": -0.055742
+  }
+ ],
+ "chronologically_unmatched_count": 2,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2024_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2024_recovery_first_transition/events.parquet"
+ }
+}

@@ -1,0 +1,1034 @@
+[
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d1m_final_2h",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h"
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 0
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d1m_final_2h_coaffection",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 1
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 2
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d1m_final_2h_leak_ge200",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 3
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d30s_final_2h",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h"
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 4
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d30s_final_2h_coaffection",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 5
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 6
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200_alpha20",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 20.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 7
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d30s_final_2h_leak_ge200",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 8
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d5m_final_2h",
+  "args": {
+   "delta": "d5m",
+   "target": "final_2h"
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 9
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d5m_final_2h_coaffection",
+  "args": {
+   "delta": "d5m",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 10
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d5m_final_2h_coaffection_leak_ge200",
+  "args": {
+   "delta": "d5m",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 11
+ },
+ {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d5m_final_2h_leak_ge200",
+  "args": {
+   "delta": "d5m",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 12
+ },
+ {
+  "kind": "curve_naive",
+  "year": 2024,
+  "index": 13
+ },
+ {
+  "kind": "tsfm",
+  "year": 2024,
+  "index": 14
+ },
+ {
+  "kind": "prefix_floor",
+  "year": 2024,
+  "index": 15
+ },
+ {
+  "kind": "prefix_model",
+  "year": 2024,
+  "index": 16
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 0,
+  "shards": 32,
+  "index": 17
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 1,
+  "shards": 32,
+  "index": 18
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 2,
+  "shards": 32,
+  "index": 19
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 3,
+  "shards": 32,
+  "index": 20
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 4,
+  "shards": 32,
+  "index": 21
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 5,
+  "shards": 32,
+  "index": 22
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 6,
+  "shards": 32,
+  "index": 23
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 7,
+  "shards": 32,
+  "index": 24
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 8,
+  "shards": 32,
+  "index": 25
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 9,
+  "shards": 32,
+  "index": 26
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 10,
+  "shards": 32,
+  "index": 27
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 11,
+  "shards": 32,
+  "index": 28
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 12,
+  "shards": 32,
+  "index": 29
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 13,
+  "shards": 32,
+  "index": 30
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 14,
+  "shards": 32,
+  "index": 31
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 15,
+  "shards": 32,
+  "index": 32
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 16,
+  "shards": 32,
+  "index": 33
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 17,
+  "shards": 32,
+  "index": 34
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 18,
+  "shards": 32,
+  "index": 35
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 19,
+  "shards": 32,
+  "index": 36
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 20,
+  "shards": 32,
+  "index": 37
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 21,
+  "shards": 32,
+  "index": 38
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 22,
+  "shards": 32,
+  "index": 39
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 23,
+  "shards": 32,
+  "index": 40
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 24,
+  "shards": 32,
+  "index": 41
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 25,
+  "shards": 32,
+  "index": 42
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 26,
+  "shards": 32,
+  "index": 43
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 27,
+  "shards": 32,
+  "index": 44
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 28,
+  "shards": 32,
+  "index": 45
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 29,
+  "shards": 32,
+  "index": 46
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 30,
+  "shards": 32,
+  "index": 47
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2024,
+  "shard": 31,
+  "shards": 32,
+  "index": 48
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d1m_final_2h_coaffection_leak_ge200",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 20.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 49
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d1m_final_2h_leak_ge200",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 1.0,
+   "valley_free": false,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 1.0,
+   "valley_free": false
+  },
+  "index": 50
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.2",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 0.2,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 0.2
+  },
+  "index": 51
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d1m_final_2h_leak_ge200_sir0.5",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 0.5,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 0.5
+  },
+  "index": 52
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d1m_final_2h_leak_ge200_vf",
+  "args": {
+   "delta": "d1m",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 1.0,
+   "valley_free": true,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 1.0,
+   "valley_free": true
+  },
+  "index": 53
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 20.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 54
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d30s_final_2h_coaffection_leak_ge200_alpha5",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 55
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d30s_final_2h_leak_ge200",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 1.0,
+   "valley_free": false,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 1.0,
+   "valley_free": false
+  },
+  "index": 56
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.2",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 0.2,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 0.2
+  },
+  "index": 57
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d30s_final_2h_leak_ge200_sir0.5",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 0.5,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 0.5
+  },
+  "index": 58
+ },
+ {
+  "kind": "cascade",
+  "year": 2025,
+  "name": "cascade_vs_persistence_d30s_final_2h_leak_ge200_vf",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": false,
+   "alpha": 5.0,
+   "rec": 1.0,
+   "valley_free": true,
+   "set_tag": "leak",
+   "min_asns": 200
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 1.0,
+   "valley_free": true
+  },
+  "index": 59
+ },
+ {
+  "kind": "curve_naive",
+  "year": 2025,
+  "index": 60
+ },
+ {
+  "kind": "tsfm",
+  "year": 2025,
+  "index": 61
+ },
+ {
+  "kind": "prefix_floor",
+  "year": 2025,
+  "index": 62
+ },
+ {
+  "kind": "prefix_model",
+  "year": 2025,
+  "index": 63
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 0,
+  "shards": 32,
+  "index": 64
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 1,
+  "shards": 32,
+  "index": 65
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 2,
+  "shards": 32,
+  "index": 66
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 3,
+  "shards": 32,
+  "index": 67
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 4,
+  "shards": 32,
+  "index": 68
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 5,
+  "shards": 32,
+  "index": 69
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 6,
+  "shards": 32,
+  "index": 70
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 7,
+  "shards": 32,
+  "index": 71
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 8,
+  "shards": 32,
+  "index": 72
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 9,
+  "shards": 32,
+  "index": 73
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 10,
+  "shards": 32,
+  "index": 74
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 11,
+  "shards": 32,
+  "index": 75
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 12,
+  "shards": 32,
+  "index": 76
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 13,
+  "shards": 32,
+  "index": 77
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 14,
+  "shards": 32,
+  "index": 78
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 15,
+  "shards": 32,
+  "index": 79
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 16,
+  "shards": 32,
+  "index": 80
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 17,
+  "shards": 32,
+  "index": 81
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 18,
+  "shards": 32,
+  "index": 82
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 19,
+  "shards": 32,
+  "index": 83
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 20,
+  "shards": 32,
+  "index": 84
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 21,
+  "shards": 32,
+  "index": 85
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 22,
+  "shards": 32,
+  "index": 86
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 23,
+  "shards": 32,
+  "index": 87
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 24,
+  "shards": 32,
+  "index": 88
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 25,
+  "shards": 32,
+  "index": 89
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 26,
+  "shards": 32,
+  "index": 90
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 27,
+  "shards": 32,
+  "index": 91
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 28,
+  "shards": 32,
+  "index": 92
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 29,
+  "shards": 32,
+  "index": 93
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 30,
+  "shards": 32,
+  "index": 94
+ },
+ {
+  "kind": "prefix_features",
+  "year": 2025,
+  "shard": 31,
+  "shards": 32,
+  "index": 95
+ },
+ {
+  "kind": "chronos_lora",
+  "year": 2025,
+  "index": 96
+ },
+ {
+  "kind": "radar_prefix_agreement",
+  "year": 2024,
+  "index": 97
+ }
+]

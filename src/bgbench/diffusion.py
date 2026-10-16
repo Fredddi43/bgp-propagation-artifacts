@@ -207,17 +207,18 @@ def evaluate_membership(
     fn = int((~pred & df["y"]).sum())
     prec = tp / max(tp + fp, 1)
     rec = tp / max(tp + fn, 1)
-    # AUPRC by sorting
-    d = df.sort("p", descending=True)
-    y = d["y"].to_numpy().astype(int)
-    n_pos = y.sum()
-    if n_pos == 0:
-        auprc = float("nan")
+    # Average precision groups tied probabilities at each threshold; ordering
+    # ASNs within a Monte Carlo probability tie must not change the metric.
+    ranked = df.sort("p", descending=True)
+    y = ranked["y"].to_numpy().astype(int)
+    if y.sum():
+        scores = ranked["p"].to_numpy()
+        ends = np.r_[np.flatnonzero(np.diff(scores) != 0), len(scores)-1]
+        tp_at = np.cumsum(y)[ends]
+        new_positives = np.diff(np.r_[0, tp_at])
+        auprc = float(np.sum(new_positives * tp_at / (ends + 1)) / y.sum())
     else:
-        cum_tp = np.cumsum(y)
-        k = np.arange(1, len(y) + 1)
-        precision_at = cum_tp / k
-        auprc = float((precision_at * y).sum() / n_pos)
+        auprc = float("nan")
     return {
         "candidates": df.height,
         "positives": int(df["y"].sum()),

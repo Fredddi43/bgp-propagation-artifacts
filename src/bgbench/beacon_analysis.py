@@ -99,20 +99,31 @@ def first_observation_per_cycle(obs: pl.DataFrame) -> pl.DataFrame:
     that matters for forecasting (ADR-0012 t₀ = ground truth vs first observation)."""
     a = (
         obs.filter(pl.col("elem_type") == "A")
-        .group_by("prefix", "kind", "setup", "slot_ts", "collector", "peer_ip", "peer_asn")
+        # Decoded origination identifies the cycle. Arrival-time grouping can
+        # mix a late previous-cycle announcement with a new current-cycle wave.
+        .with_columns(arrival_slot_ts=pl.col("slot_ts"), origin_known=pl.col("orig_ts").is_not_null())
+        .with_columns(slot_ts=pl.when(pl.col("orig_ts").is_null()).then(pl.col("slot_ts"))
+            .when(pl.col("kind") == "fast").then(pl.col("orig_ts").dt.truncate("20m"))
+            .otherwise(pl.col("orig_ts").dt.truncate("4h")))
+        .sort("ts", "orig_ts", nulls_last=True)
+        .group_by("prefix", "kind", "setup", "slot_ts", "collector", "peer_ip", "peer_asn", "origin_known")
         .agg(
-            first_a_ts=pl.col("ts").min(),
-            orig_ts=pl.col("orig_ts").min(),
-            a_delay_s=pl.col("delay_s").min(),
+            first_a_ts=pl.col("ts").first(),
+            orig_ts=pl.col("orig_ts").first(),
+            first_a_arrival_slot_ts=pl.col("arrival_slot_ts").first(),
+            first_a_origin_ambiguous=pl.col("orig_ts").filter(pl.col("ts") == pl.col("ts").first()).drop_nulls().n_unique() > 1,
             n_a=pl.len(),
         )
+        .with_columns(a_delay_s=(pl.col("first_a_ts")-pl.col("orig_ts")).dt.total_microseconds()/1e6)
     )
     w = (
         obs.filter(pl.col("elem_type") == "W")
+        .sort("ts")
         .group_by("prefix", "slot_ts", "collector", "peer_ip")
-        .agg(first_w_ts=pl.col("ts").min(), w_delay_s=pl.col("delay_s").min(), n_w=pl.len())
+        .agg(first_w_ts=pl.col("ts").first(), sched_wd_ts=pl.col("sched_wd_ts").first(), n_w=pl.len())
+        .with_columns(w_delay_s=(pl.col("first_w_ts")-pl.col("sched_wd_ts")).dt.total_microseconds()/1e6)
     )
-    out = a.join(w, on=["prefix", "slot_ts", "collector", "peer_ip"], how="left")
+    out = a.join(w, on=["prefix", "slot_ts", "collector", "peer_ip"], how="left", validate="m:1")
     # A VP whose *first* announcement of the cycle arrives ~2 h after origination never saw the
     # propagation wave: it only learned the prefix through path exploration at withdrawal time.
     # Flag it so propagation-delay statistics exclude it (it is a visibility fact, not a delay).
@@ -120,8 +131,16 @@ def first_observation_per_cycle(obs: pl.DataFrame) -> pl.DataFrame:
     return out.sort("prefix", "slot_ts", "collector", "peer_ip")
 
 
+def timing_eligible_cycles(cycles: pl.DataFrame) -> pl.DataFrame:
+    """Known, unambiguous first-announcement clocks within the calibration window."""
+    cycles = cycles.filter(pl.col("a_delay_s").is_between(0,3600))
+    if "first_a_origin_ambiguous" in cycles.columns:
+        cycles = cycles.filter(~pl.col("first_a_origin_ambiguous"))
+    return cycles
+
+
 def per_vp_summary(cycles: pl.DataFrame) -> pl.DataFrame:
-    cycles = cycles.filter(~pl.col("exploration_only"))
+    cycles = timing_eligible_cycles(cycles)
     return (
         cycles.group_by("collector", "kind", "setup")
         .agg(
@@ -253,11 +272,7 @@ def full_feed_join(
 
 
 def per_vp_summary_by_feed(cycles: pl.DataFrame) -> pl.DataFrame:
-    c = (
-        cycles.filter(~pl.col("exploration_only"))
-        if "exploration_only" in cycles.columns
-        else cycles
-    )
+    c = timing_eligible_cycles(cycles)
     return (
         c.group_by("full_feed", "kind")
         .agg(

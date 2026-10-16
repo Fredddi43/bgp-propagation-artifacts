@@ -1,0 +1,70 @@
+{
+  "2022": {
+    "events": 4977,
+    "source_sha256": "11fd045b95af082c792efbecac9230492ac0f72bb7898cdfa32df05fdfc57b94"
+  },
+  "2022_leak": {
+    "events": 396,
+    "source_sha256": "fc63a61d4be7f52b08442f7ee290703c3bf9481c5f2472d9d9814f1928754e49"
+  },
+  "2022_withdrawal": {
+    "events": 46,
+    "source_sha256": "c7e1e187bee41ddcee2f439f24008c5a02e3c9e39719f66538c514bc458729dc"
+  },
+  "2023": {
+    "events": 11107,
+    "source_sha256": "34791e68b513a239571b3ba75dbb9aba0ae1cab0a87ddf58e584c6d4727fbde1"
+  },
+  "2023_leak": {
+    "events": 396,
+    "source_sha256": "e8f969938e314bafd05273edb8ec699fb23275bfbc94d0567f6c06634d07366c"
+  },
+  "2023_withdrawal": {
+    "events": 83,
+    "source_sha256": "ceeb097649d2e6d610a669f2edeaa8a09214665878d0eff85f384fbd2d597234"
+  },
+  "2024": {
+    "events": 20959,
+    "source_sha256": "96bbd50c8333dfc374d766e541319b5c32b88cd50a5bd1eb3b5aee6a6f1cb8f2"
+  },
+  "2024_leak": {
+    "events": 1602,
+    "source_sha256": "af758a0010beef4f092fbddc5f3b4ca90d61c095368c7828266caa0d7d074e85"
+  },
+  "2024_withdrawal": {
+    "events": 50,
+    "source_sha256": "12d27537164f70bdaf3d5ca3061ac30bec3f3199a150344a09c0cba931c30d98"
+  },
+  "2024_leakpch": {
+    "events": 1602,
+    "source_sha256": "c7b6625005b068e60c05c41a56aac5ca710c664b25e51776bdd58f14b8d021c6"
+  },
+  "2024_pchorigin": {
+    "events": 18367,
+    "source_sha256": "68fdb6e11bc46ebe28df284bdf9cbdf2017ff7e37ebc5d3103444ccbc8ad0162"
+  },
+  "2025": {
+    "events": 25579,
+    "source_sha256": "1c2bec1f742acc01c85ffa16fa4316e92ca2522fc418527b65f0418e134b709b"
+  },
+  "2025_leak": {
+    "events": 8437,
+    "source_sha256": "ab236979cb5831dcd4f74244fa9b687dc200aed5c94421a69d2161e2973f7ac5"
+  },
+  "2025_withdrawal": {
+    "events": 57,
+    "source_sha256": "9a844f02c464b2853bb719381efa2d22365c6c9da2255d126f8395ae03ebcdb3"
+  },
+  "2026": {
+    "events": 17248,
+    "source_sha256": "3404e9a1c2f0621dc6523686a56905f3f4c38400defff874358582c3dceecea7"
+  },
+  "2026_leak": {
+    "events": 6416,
+    "source_sha256": "b8a66b98742698392aabf6e01d207154292006781d2574f2cf77c7cade829cc8"
+  },
+  "2026_withdrawal": {
+    "events": 65,
+    "source_sha256": "7143f04a12e3a861dd6d73702741065950cc6368742b72f36dd2d6777d91cdbc"
+  }
+}

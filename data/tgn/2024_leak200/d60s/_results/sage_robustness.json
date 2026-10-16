@@ -2,71 +2,73 @@
  "model": "sage",
  "tag": "leak200",
  "delta_s": 60,
- "threshold": 0.95,
+ "threshold": 0.9,
+ "membership_target": "full_observed_2h",
+ "auprc_target": "non_seed_candidates",
  "table": [
   {
    "kind": "clean",
    "level": 0.0,
-   "n": 98,
-   "jaccard_model": 0.7957,
-   "jaccard_persist": 0.7392,
-   "auprc_new": 0.4952
+   "n": 105,
+   "jaccard_model": 0.7506,
+   "jaccard_persist": 0.7092,
+   "auprc_new": 0.5262
   },
   {
    "kind": "drop",
    "level": 0.3,
-   "n": 98,
-   "jaccard_model": 0.7968,
-   "jaccard_persist": 0.7392,
-   "auprc_new": 0.4954
+   "n": 105,
+   "jaccard_model": 0.7506,
+   "jaccard_persist": 0.7092,
+   "auprc_new": 0.5288
   },
   {
    "kind": "drop",
    "level": 0.6,
-   "n": 98,
-   "jaccard_model": 0.7958,
-   "jaccard_persist": 0.7392,
-   "auprc_new": 0.494
+   "n": 105,
+   "jaccard_model": 0.7492,
+   "jaccard_persist": 0.7092,
+   "auprc_new": 0.5279
   },
   {
    "kind": "drop",
    "level": 0.9,
-   "n": 98,
-   "jaccard_model": 0.7929,
-   "jaccard_persist": 0.7392,
-   "auprc_new": 0.4895
+   "n": 105,
+   "jaccard_model": 0.745,
+   "jaccard_persist": 0.7092,
+   "auprc_new": 0.5215
   },
   {
    "kind": "hide",
    "level": 1.0,
-   "n": 98,
-   "jaccard_model": 0.7903,
-   "jaccard_persist": 0.7392,
-   "auprc_new": 0.4751
+   "n": 105,
+   "jaccard_model": 0.7463,
+   "jaccard_persist": 0.7092,
+   "auprc_new": 0.5081
   },
   {
    "kind": "inject",
    "level": 0.25,
-   "n": 98,
-   "jaccard_model": 0.6828,
-   "jaccard_persist": 0.6195,
-   "auprc_new": 0.4964
+   "n": 105,
+   "jaccard_model": 0.6543,
+   "jaccard_persist": 0.5974,
+   "auprc_new": 0.5262
   },
   {
    "kind": "inject",
    "level": 0.5,
-   "n": 98,
-   "jaccard_model": 0.5995,
-   "jaccard_persist": 0.5337,
-   "auprc_new": 0.4945
+   "n": 105,
+   "jaccard_model": 0.5819,
+   "jaccard_persist": 0.5177,
+   "auprc_new": 0.5281
   },
   {
    "kind": "inject",
    "level": 1.0,
-   "n": 98,
-   "jaccard_model": 0.4885,
-   "jaccard_persist": 0.4228,
-   "auprc_new": 0.4978
+   "n": 105,
+   "jaccard_model": 0.4809,
+   "jaccard_persist": 0.4132,
+   "auprc_new": 0.517
   }
  ]
 }

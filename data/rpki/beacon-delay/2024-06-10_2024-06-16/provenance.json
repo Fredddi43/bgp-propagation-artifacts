@@ -1,0 +1,6 @@
+{
+  "source": "beacons/2024-06-10_2024-06-16/observations.parquet",
+  "source_sha256": "02685873b921f7f021acfe8ac3f54c3e04be3f230d8b5b9811f77034956e9903",
+  "source_rows": 10231562,
+  "aggregation_source_sha256": "5b9ee952008172182fe709a53cc98745f9140da685b99b69fb5f42760d9d5c39"
+}

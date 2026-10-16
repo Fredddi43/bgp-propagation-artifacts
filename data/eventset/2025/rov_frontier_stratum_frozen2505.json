@@ -5,24 +5,27 @@
  "min_total": 0,
  "only_reason": "rpki_invalid_sample",
  "exclude_reason": null,
+ "lookup_policy": "latest measurement at or before event date; missing history is unknown",
  "rovista_ases": 32105,
  "by_validity": {
   "invalid": {
-   "events": 2646,
-   "carriers_measured_share": 0.712,
-   "frontier_measured_share": 0.475,
-   "enforcing_share_carriers": 0.3363,
-   "enforcing_share_frontier": 0.2602,
-   "log_odds_frontier_vs_carriers_mean": 0.192,
+   "events": 2630,
+   "future_only_carrier_observations_excluded": 831,
+   "future_only_frontier_observations_excluded": 200954,
+   "carriers_measured_share": 0.708,
+   "frontier_measured_share": 0.471,
+   "enforcing_share_carriers": 0.3322,
+   "enforcing_share_frontier": 0.2534,
+   "log_odds_frontier_vs_carriers_mean": 0.187,
    "log_odds_mean_ci95_bootstrap": [
-    0.163,
-    0.225
+    0.157,
+    0.217
    ],
    "log_odds_per_event_p10_p90": [
-    -0.688,
+    -0.69,
     1.152
    ],
-   "events_with_both_measured": 2646
+   "events_with_both_measured": 2630
   }
  }
 }

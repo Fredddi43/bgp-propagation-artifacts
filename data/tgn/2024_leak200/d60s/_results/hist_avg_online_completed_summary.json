@@ -1,0 +1,51 @@
+{
+ "model": "hist_avg",
+ "membership_target": "full_observed_2h",
+ "tag": "leak200",
+ "delta_s": 60,
+ "k": 20,
+ "train_events": 210,
+ "test_events": 105,
+ "split_protocol": {
+  "first_test_onset": "2024-09-01T00:41:03.965186+00:00",
+  "label_horizon_seconds": 7200,
+  "dropped_training_ids": [],
+  "protocol": "prospective_within_year"
+ },
+ "library_protocol": "online_completed_train_and_test",
+ "onset_signature": [
+  "log1p_all_observed_seeds",
+  "visible_candidate_asns",
+  "log1p_candidate_path_hop_appearances",
+  "log1p_candidate_count"
+ ],
+ "membership_ranking": "global_library_participation",
+ "magnitude_prediction": "knn_mean_full_target_size_floored_at_observed_seeds",
+ "jaccard_hist_mean": 0.76,
+ "jaccard_persist_mean": 0.7092,
+ "diff_hist_minus_persistence": {
+  "mean": 0.0508,
+  "ci95": [
+   0.0139,
+   0.0861
+  ],
+  "n": 105
+ },
+ "smape_2h_hist": 0.1394,
+ "smape_2h_persist": 0.4055,
+ "same_day_replay_sensitivity": {
+  "events": 89,
+  "excluded": 16,
+  "jaccard_hist_mean": 0.7545897972363655,
+  "jaccard_persist_mean": 0.7082338460196026,
+  "diff_hist_minus_persistence": {
+   "mean": 0.0464,
+   "ci95": [
+    0.0085,
+    0.0843
+   ],
+   "n": 89
+  }
+ },
+ "years": "2024"
+}

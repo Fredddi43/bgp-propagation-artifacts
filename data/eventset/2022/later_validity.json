@@ -6,24 +6,24 @@
  ],
  "by_population": {
   "label-free stratum": {
-   "n": 2997,
+   "n": 2975,
    "valid_7d": 0.125,
-   "unknown_7d": 0.034,
+   "unknown_7d": 0.033,
    "no_data_7d": 0.0,
    "valid_30d": 0.133,
-   "unknown_30d": 0.036,
+   "unknown_30d": 0.035,
    "no_data_30d": 0.0,
    "valid_any": 0.141
   },
   "stratified": {
-   "n": 111,
-   "valid_7d": 0.036,
-   "unknown_7d": 0.036,
+   "n": 117,
+   "valid_7d": 0.034,
+   "unknown_7d": 0.034,
    "no_data_7d": 0.0,
-   "valid_30d": 0.063,
-   "unknown_30d": 0.045,
+   "valid_30d": 0.06,
+   "unknown_30d": 0.043,
    "no_data_30d": 0.0,
-   "valid_any": 0.063
+   "valid_any": 0.06
   }
  }
 }

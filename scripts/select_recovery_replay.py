@@ -30,6 +30,6 @@ out = rec.select("event_id", "prefix", "new_origin", "prev_origin", "first_ts", 
                  pl.col("h_split").alias("split"), (pl.col("first_ts") - pl.col("h_ts")).dt.total_seconds().alias("gap_s")).with_columns(
     reason=pl.lit("recovery"), vis_bucket=vis, dur_bucket=dur)
 out.write_parquet(INV / "recovery_replay_selection.parquet")
-out.select("event_id", "prefix", "new_origin", pl.col("first_ts").dt.replace_time_zone(None).dt.strftime("%Y-%m-%dT%H:%M:%S").alias("t0"), "split", "reason").write_csv(INV / "recovery_replay_manifest.tsv", separator="\t")
+out.select("event_id", "prefix", "new_origin", "prev_origin", pl.col("first_ts").dt.replace_time_zone(None).dt.strftime("%Y-%m-%dT%H:%M:%S").alias("t0"), "split", "reason").unique("event_id").write_csv(INV / "recovery_replay_manifest.tsv", separator="\t")
 print({"year": year, "hijacks_invalid_displacing_valid": hij.height, "recoveries_found": out.height, "gap_s_p50": float(out["gap_s"].median()) if out.height else None,
        "already_replayed": out.join(sel.select("event_id"), on="event_id", how="semi").height, "train": int((out["split"] == "train").sum()), "test": int((out["split"] == "test").sum())})

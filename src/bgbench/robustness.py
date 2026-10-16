@@ -16,6 +16,7 @@ import polars as pl
 import torch
 
 from . import config
+from .graph_metrics import membership_metrics
 from .gnn_train import TypedSAGE, _auprc, _jaccard, load_splits, sage_forward
 
 
@@ -31,6 +32,7 @@ def _perturb(d: dict, kind: str, level: float, rng: np.random.Generator) -> dict
         k = int(round(level * max(1, int(seed.sum()))))
         if cand.numel() and k:
             pick = cand[torch.from_numpy(rng.choice(cand.numel(), size=min(k, cand.numel()), replace=False))]
+            e["seed_asns"] = torch.unique(torch.cat([e["seed_asns"], e["asn"][pick]]))
             e["persistence_pred"][pick] = 1.0; e["x"][pick, 0] = 1.0; e["x"][pick, 6] = 1.0; e["x"][pick, 7] = np.log1p(1.0)
     elif kind == "hide":
         seed = e["persistence_pred"].bool()
@@ -40,7 +42,7 @@ def _perturb(d: dict, kind: str, level: float, rng: np.random.Generator) -> dict
 
 def run(year: int = 2024, delta_s: int = 30, tag: str = "", prefix: str = "sage", seed: int = 0) -> dict:
     dir_ = config.tgn_dir(year, delta_s, tag)
-    ck = torch.load(dir_ / "_results" / f"{prefix}_model.pt", weights_only=False)
+    ck = torch.load(dir_ / "_results" / f"{prefix}_model.pt", weights_only=False, map_location='cpu')
     te = load_splits(dir_)["test"]
     if not te:
         return {"error": "no test events"}
@@ -61,14 +63,20 @@ def run(year: int = 2024, delta_s: int = 30, tag: str = "", prefix: str = "sage"
                     logit, _ = sage_forward(model, e, "cpu")
                     p = torch.sigmoid(logit).numpy(); y = d["y"].numpy().astype(bool)
                     sd_ = e["persistence_pred"].numpy().astype(bool); mask = ~sd_
+                    full = membership_metrics(e, sd_ | (p >= thr))
                     rows.append({"kind": kind, "level": level, "event_id": d["event_id"],
-                                 "jaccard_model": _jaccard(y, sd_ | (p >= thr)), "jaccard_persist": _jaccard(y, sd_),
+                                 "target_asns": json.dumps(d['target_asns'].tolist()), "seed_asns": json.dumps(e['seed_asns'].tolist()),
+                                 "predicted_asns": json.dumps(sorted(set(e['seed_asns'].tolist()) | set(d['asn'].numpy()[p >= thr].tolist()))),
+                                 "candidate_asns": json.dumps(d['asn'].tolist()), "candidate_probabilities": json.dumps(p.tolist()),
+                                 "eligible_injection_asns": json.dumps(d["asn"][~d["persistence_pred"].bool() & (d["x"][:, 5] == 1)].tolist()),
+                                 "jaccard_model": full["jaccard"], "jaccard_persist": full["jaccard_persist"],
                                  "auprc_new": _auprc(y[mask], p[mask]) if mask.sum() and y[mask].sum() else float("nan")})
     df = pl.DataFrame(rows)
     summ = (df.group_by("kind", "level").agg(n=pl.len(), jaccard_model=pl.col("jaccard_model").mean().round(4), jaccard_persist=pl.col("jaccard_persist").mean().round(4),
                                              auprc_new=pl.col("auprc_new").drop_nans().mean().round(4)).sort("kind", "level"))
     out = dir_ / "_results"; df.write_csv(out / f"{prefix}_robustness_per_event.csv"); summ.write_csv(out / f"{prefix}_robustness.csv")
-    res = {"model": prefix, "tag": tag, "delta_s": delta_s, "threshold": thr, "table": summ.to_dicts()}
+    res = {"model": prefix, "tag": tag, "delta_s": delta_s, "threshold": thr,
+           "membership_target": "full_observed_2h", "auprc_target": "non_seed_candidates", "table": summ.to_dicts()}
     (out / f"{prefix}_robustness.json").write_text(json.dumps(res, indent=1, default=str))
     return res
 
@@ -77,8 +85,8 @@ def cross_eval(model_year: int, model_tag: str, eval_year: int, eval_tag: str, d
     """ADR-0008 §4 (signal loss / blind spot): evaluate a saved membership model trained on one family (e.g. large leaks)
     on another family's test events (e.g. withdrawal waves, where the input stream is withdrawals and the seeds are the
     ASes that already lost a path). Reports Jaccard at the saved threshold and at 0.5 against persistence, plus AUPRC."""
-    ck = torch.load(config.tgn_dir(model_year, delta_s, model_tag) / "_results" / f"{prefix}_model.pt", weights_only=False)
-    splits = load_splits(config.tgn_dir(eval_year, delta_s, eval_tag)); te = splits["test"] or splits["train"]
+    ck = torch.load(config.tgn_dir(model_year, delta_s, model_tag) / "_results" / f"{prefix}_model.pt", weights_only=False, map_location='cpu')
+    splits = load_splits(config.tgn_dir(eval_year, delta_s, eval_tag)); te = splits["test"]
     if not te:
         return {"error": "no events"}
     mu, sd, thr = ck["mu"], ck["sd"], ck["threshold"]
@@ -90,12 +98,19 @@ def cross_eval(model_year: int, model_tag: str, eval_year: int, eval_tag: str, d
             e = dict(d); e["x"] = (e["x"][:, :in_dim] - mu) / sd
             logit, q = sage_forward(model, e, "cpu"); p = torch.sigmoid(logit).numpy()
             y = d["y"].numpy().astype(bool); seed = d["persistence_pred"].numpy().astype(bool); mask = ~seed
-            rows.append({"event_id": d["event_id"], "n": len(y), "pos": int(y.sum()), "seeds": int(seed.sum()),
-                         "jaccard_thr": _jaccard(y, seed | (p >= thr)), "jaccard_05": _jaccard(y, seed | (p >= 0.5)), "jaccard_persist": _jaccard(y, seed),
+            full = membership_metrics(d, seed | (p >= thr))
+            at05 = membership_metrics(d, seed | (p >= 0.5))
+            rows.append({"event_id": d["event_id"], "n": len(y), "pos": full["true_size"], "seeds": len(d["seed_asns"]),
+                         "target_asns": json.dumps(d['target_asns'].tolist()), "seed_asns": json.dumps(d['seed_asns'].tolist()),
+                         "predicted_asns_tuned": json.dumps(sorted(set(d['seed_asns'].tolist()) | set(d['asn'].numpy()[p >= thr].tolist()))),
+                         "predicted_asns_at05": json.dumps(sorted(set(d['seed_asns'].tolist()) | set(d['asn'].numpy()[p >= .5].tolist()))),
+                         "candidate_asns": json.dumps(d['asn'].tolist()), "candidate_probabilities": json.dumps(p.tolist()),
+                         "jaccard_thr": full["jaccard"], "jaccard_05": at05["jaccard"], "jaccard_persist": full["jaccard_persist"],
                          "auprc_new": _auprc(y[mask], p[mask]) if mask.sum() and y[mask].sum() else float("nan"),
                          "curve_pred_2h": float(np.expm1(q[-1, 1].item())), "curve_true_2h": float(d["curve"][-1].item()) if "curve" in d else float(y.sum())})
     df = pl.DataFrame(rows)
     res = {"model": f"{prefix}:{model_tag}:{model_year}", "eval": f"{eval_tag}:{eval_year}", "delta_s": delta_s, "threshold": thr, "events": df.height,
+           "membership_target": "full_observed_2h", "auprc_target": "non_seed_candidates",
            "jaccard_thr": round(float(df["jaccard_thr"].mean()), 4), "jaccard_05": round(float(df["jaccard_05"].mean()), 4), "jaccard_persist": round(float(df["jaccard_persist"].mean()), 4),
            "auprc_new": round(float(df["auprc_new"].drop_nans().mean()), 4) if df["auprc_new"].drop_nans().len() else None,
            "curve_smape_2h": round(float((2 * (df["curve_pred_2h"] - df["curve_true_2h"]).abs() / (df["curve_pred_2h"].abs() + df["curve_true_2h"].abs()).clip(1e-9)).mean()), 4)}

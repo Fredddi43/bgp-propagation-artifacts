@@ -1,0 +1,51 @@
+{
+ "year": 2023,
+ "pairs": 4900,
+ "selected_pairs": 4900,
+ "zero_recovery_reach_pairs": 0,
+ "interpretation": "observed AS-path overlap; absence does not establish an AS routing state",
+ "recoverers_that_carried_hijack_mean": 0.5729,
+ "recoverers_never_carried_hijack_mean": 0.4271,
+ "recoverers_never_carried_hijack_p50": 0.364,
+ "hijack_carriers_not_seen_recovering_mean": 0.3732,
+ "recovery_set_over_hijack_set_p50": 1.081,
+ "by_gap<1min": {
+  "pairs": 2877,
+  "recoverers_never_carried_hijack_mean": 0.3959,
+  "recovery_over_hijack_p50": 1.123
+ },
+ "by_gap 1-15min": {
+  "pairs": 731,
+  "recoverers_never_carried_hijack_mean": 0.3871,
+  "recovery_over_hijack_p50": 1.071
+ },
+ "by_gap>15min": {
+  "pairs": 1292,
+  "recoverers_never_carried_hijack_mean": 0.5193,
+  "recovery_over_hijack_p50": 0.994
+ },
+ "chronologically_unmatched_links": [
+  {
+   "event_id": "20230629T234436_198.12.38.0-24_27988",
+   "hijack_id": "20230629T234414_198.12.38.0-24_23198",
+   "observed_gap_s": -0.516797
+  },
+  {
+   "event_id": "20230804T193307_198.12.38.0-24_27988",
+   "hijack_id": "20230804T193237_198.12.38.0-24_23198",
+   "observed_gap_s": -1.296614
+  },
+  {
+   "event_id": "20231230T153300_125.209.119.0-24_9260",
+   "hijack_id": "20231230T150309_125.209.119.0-24_3",
+   "observed_gap_s": -2.0
+  }
+ ],
+ "chronologically_unmatched_count": 3,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2023_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2023_recovery_first_transition/events.parquet"
+ }
+}

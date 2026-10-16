@@ -1,0 +1,35 @@
+{
+ "year": 2023,
+ "pairs": 3109,
+ "selected_pairs": 3109,
+ "zero_recovery_reach_pairs": 0,
+ "interpretation": "observed AS-path overlap; absence does not establish an AS routing state",
+ "recoverers_that_carried_hijack_mean": 0.5573,
+ "recoverers_never_carried_hijack_mean": 0.4427,
+ "recoverers_never_carried_hijack_p50": 0.3871,
+ "hijack_carriers_not_seen_recovering_mean": 0.3297,
+ "recovery_set_over_hijack_set_p50": 1.137,
+ "by_gap<1min": {
+  "pairs": 2006,
+  "recoverers_never_carried_hijack_mean": 0.4156,
+  "recovery_over_hijack_p50": 1.18
+ },
+ "by_gap 1-15min": {
+  "pairs": 414,
+  "recoverers_never_carried_hijack_mean": 0.4375,
+  "recovery_over_hijack_p50": 1.109
+ },
+ "by_gap>15min": {
+  "pairs": 689,
+  "recoverers_never_carried_hijack_mean": 0.5248,
+  "recovery_over_hijack_p50": 1.04
+ },
+ "chronologically_unmatched_links": [],
+ "chronologically_unmatched_count": 0,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2023_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2023_recovery_first_transition/events.parquet"
+ }
+}

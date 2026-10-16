@@ -10,7 +10,6 @@ usage: forged_path_candidates.py <year> [min_collectors]"""
 from __future__ import annotations
 
 import datetime as dt
-import ipaddress
 import json
 import sys
 from collections import defaultdict
@@ -19,6 +18,7 @@ import polars as pl
 
 from bgbench import config
 from bgbench.leakcheck import rel_parquet
+from bgbench.rpki_validate import validity as validate_origin
 
 year = int(sys.argv[1]); min_coll = int(sys.argv[2]) if len(sys.argv) > 2 else 2
 COLL = ["rrc25", "rrc00", "rrc12", "rrc01", "route-views3", "rrc03", "route-views2", "rrc20", "rrc15", "route-views.linx"]
@@ -50,16 +50,9 @@ def roas(day: str):
 
 def validity(prefix: str, origin: int, tab) -> str:
     try:
-        net = ipaddress.ip_network(prefix, strict=False)
+        return validate_origin(prefix, origin, tab)[0]
     except ValueError:
         return "unknown"
-    cov = 0; ok = False
-    for plen in range(net.prefixlen, (8 if net.version == 4 else 16) - 1, -1):
-        sup = net if plen == net.prefixlen else net.supernet(new_prefix=plen)
-        for ml, a in tab.get(str(sup), ()):
-            if net.prefixlen <= ml:
-                cov += 1; ok = ok or a == origin
-    return "valid" if ok else "invalid" if cov else "unknown"
 
 
 WINDOW = 14

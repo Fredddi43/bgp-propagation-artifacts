@@ -1,21 +1,51 @@
 {
  "model": "hist_avg",
+ "membership_target": "full_observed_2h",
  "tag": "leak200",
  "delta_s": 300,
  "k": 20,
- "train_events": 419,
- "test_events": 275,
- "jaccard_hist_mean": 0.8407,
- "jaccard_persist_mean": 0.8115,
- "diff_hist_minus_persistence": {
-  "mean": 0.0292,
-  "ci95": [
-   0.0087,
-   0.0506
-  ],
-  "n": 275
+ "train_events": 457,
+ "test_events": 290,
+ "split_protocol": {
+  "first_test_onset": "2025-09-01T02:55:40+00:00",
+  "label_horizon_seconds": 7200,
+  "dropped_training_ids": [],
+  "protocol": "prospective_within_year"
  },
- "smape_2h_hist": 0.0951,
- "smape_2h_persist": 0.2931,
+ "library_protocol": "fixed_training_library",
+ "onset_signature": [
+  "log1p_all_observed_seeds",
+  "visible_candidate_asns",
+  "log1p_candidate_path_hop_appearances",
+  "log1p_candidate_count"
+ ],
+ "membership_ranking": "global_library_participation",
+ "magnitude_prediction": "knn_mean_full_target_size_floored_at_observed_seeds",
+ "jaccard_hist_mean": 0.8177,
+ "jaccard_persist_mean": 0.7967,
+ "diff_hist_minus_persistence": {
+  "mean": 0.021,
+  "ci95": [
+   0.0028,
+   0.0406
+  ],
+  "n": 290
+ },
+ "smape_2h_hist": 0.0964,
+ "smape_2h_persist": 0.286,
+ "same_day_replay_sensitivity": {
+  "events": 262,
+  "excluded": 28,
+  "jaccard_hist_mean": 0.8181688355388568,
+  "jaccard_persist_mean": 0.8008996719357236,
+  "diff_hist_minus_persistence": {
+   "mean": 0.0173,
+   "ci95": [
+    -0.0012,
+    0.0372
+   ],
+   "n": 262
+  }
+ },
  "years": "2025"
 }

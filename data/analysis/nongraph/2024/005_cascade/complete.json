@@ -1,0 +1,155 @@
+{
+ "task": {
+  "kind": "cascade",
+  "year": 2024,
+  "name": "cascade_vs_persistence_d30s_final_2h_coaffection",
+  "args": {
+   "delta": "d30s",
+   "target": "final_2h",
+   "coaffection": true,
+   "alpha": 5.0
+  },
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0
+  },
+  "index": 5
+ },
+ "result": {
+  "events_scored": 300,
+  "growing_test_events_total": 6517,
+  "sample_requested": 300,
+  "sampling_seed": 7,
+  "delta": "d30s",
+  "target": "final_2h",
+  "params": {
+   "p_c2p": 0.05,
+   "p_p2c": 0.001,
+   "p_p2p": 0.002,
+   "max_steps": 12,
+   "rollouts": 50,
+   "seed": 0,
+   "rec": 1.0,
+   "valley_free": false
+  },
+  "training_embargo": {
+   "first_test_onset": "2024-09-01T01:19:01.993700+00:00",
+   "label_horizon_seconds": 7200,
+   "dropped_training_ids": []
+  },
+  "excluded_events": [],
+  "auprc_scope": "two_hop_candidates_union_all_observed_seeds_union_full_truth",
+  "prediction_floor": "all_observed_seeds",
+  "coaffection": true,
+  "alpha": 5.0,
+  "rec": 1.0,
+  "valley_free": false,
+  "train_events_fit": 12782,
+  "fit_stats": {
+   "202409": {
+    "events": 12782,
+    "edges": 986986,
+    "edges_with_trials": 509455,
+    "edges_with_success": 82786,
+    "trials_total": 1079859271,
+    "successes_total": 10664845,
+    "alpha": 5.0,
+    "p_mean_exercised": 0.029602834413629764
+   },
+   "202412": {
+    "events": 12782,
+    "edges": 1002946,
+    "edges_with_trials": 514450,
+    "edges_with_success": 82690,
+    "trials_total": 1084880643,
+    "successes_total": 10643289,
+    "alpha": 5.0,
+    "p_mean_exercised": 0.029321120373936
+   },
+   "202410": {
+    "events": 12782,
+    "edges": 980636,
+    "edges_with_trials": 503102,
+    "edges_with_success": 82403,
+    "trials_total": 1062930837,
+    "successes_total": 10625599,
+    "alpha": 5.0,
+    "p_mean_exercised": 0.029844697219996358
+   },
+   "202411": {
+    "events": 12782,
+    "edges": 983026,
+    "edges_with_trials": 504737,
+    "edges_with_success": 81950,
+    "trials_total": 1047405591,
+    "successes_total": 10647995,
+    "alpha": 5.0,
+    "p_mean_exercised": 0.02962490175528519
+   }
+  },
+  "set_tag": "",
+  "min_asns": 0,
+  "cascade_jaccard_mean": 0.2978,
+  "cascade_recall_mean": 0.9615,
+  "cascade_auprc_mean": 0.3575,
+  "persist_jaccard_mean": 0.5553,
+  "persist_recall_mean": 0.5553,
+  "cascade_size_smape_mean": 1.1431,
+  "persist_size_smape_mean": 0.7244,
+  "cascade_beats_persistence_frac": 0.2633,
+  "by_vis_bucket": [
+   {
+    "vis_bucket": "2-4",
+    "n": 33,
+    "cj": 0.08027272727272727,
+    "pj": 0.5761323118124783,
+    "auprc": 0.10011818181818181
+   },
+   {
+    "vis_bucket": "5-7",
+    "n": 36,
+    "cj": 0.15188333333333334,
+    "pj": 0.48791992709230964,
+    "auprc": 0.1841861111111111
+   },
+   {
+    "vis_bucket": "8-10",
+    "n": 231,
+    "cj": 0.3515597402597403,
+    "pj": 0.5628867433270346,
+    "auprc": 0.42123506493506496
+   }
+  ]
+ },
+ "correction_run": {
+  "inputs": {
+   "eventset/2024/events.parquet": "f26852353e4ba52324626f479b3ba7743ba5a81bb13da940eb3e8a7fa050d1bb"
+  },
+  "input_content_sha256": {
+   "eventset/2024/events.parquet": "6e93d9b2b1a2a5ea02f5bdb0aeb2d1d01d03a7667a4318a3cd7cc530e7009428"
+  },
+  "code": {
+   "src/bgbench/baselines_eventset.py": "94add4d390325694374ea2fb8f2c69c3471e7208a0d7a60e53b5c6a12ebea2de",
+   "src/bgbench/diffusion.py": "a38873478b0598954195ddc732d0db6fb493dbe217ca7eda6b23ff84d70f1c42",
+   "scripts/rerun_nongraph.py": "2d2a59343f496af6863fc8d0632cef776c5480c02712244490d5dd5fa2a2aca0",
+   "jobs/nongraph_corrections.sh": "be819e94c367c4f09ae9fb6cd643f8b3824cc09c8b9134e3f476b505ffa4dcc8",
+   "src/bgbench/config.py": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab",
+   "src/bgbench/graph_metrics.py": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+  },
+  "plan_sha256": "567d5ea3e87498b6df487b41de0b45a30b1592c14d2d2e3aad09f0c1036c1013",
+  "inputs_after": {
+   "eventset/2024/events.parquet": "f26852353e4ba52324626f479b3ba7743ba5a81bb13da940eb3e8a7fa050d1bb"
+  },
+  "input_files_byte_identical": true,
+  "source_gate": "forecast-origin-withdrawal-complete.json",
+  "source_gate_sha256": "1b0d75bc4e3af505c8d1615d550e1c5154a0e8c3cd8f429d97069000d94e01a8",
+  "started_utc": "2026-10-16T10:24:37.193030+00:00",
+  "finished_utc": "2026-10-16T10:37:58.783381+00:00",
+  "inputs_unchanged": true,
+  "code_unchanged": true
+ }
+}

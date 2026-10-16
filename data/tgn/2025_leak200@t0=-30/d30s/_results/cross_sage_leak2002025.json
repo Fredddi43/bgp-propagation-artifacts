@@ -2,11 +2,13 @@
  "model": "sage:leak200:2025",
  "eval": "leak200@t0=-30:2025",
  "delta_s": 30,
- "threshold": 0.9,
- "events": 393,
- "jaccard_thr": 0.6955,
- "jaccard_05": 0.6055,
- "jaccard_persist": 0.055,
- "auprc_new": 0.8485,
- "curve_smape_2h": 0.6485
+ "threshold": 0.95,
+ "events": 423,
+ "membership_target": "full_observed_2h",
+ "auprc_target": "non_seed_candidates",
+ "jaccard_thr": 0.5741,
+ "jaccard_05": 0.4949,
+ "jaccard_persist": 0.0449,
+ "auprc_new": 0.8486,
+ "curve_smape_2h": 0.6696
 }

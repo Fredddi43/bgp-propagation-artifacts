@@ -1,0 +1,35 @@
+{
+ "training_embargo": {
+  "first_test_onset": "2025-09-01T01:06:21+00:00",
+  "label_horizon_seconds": 7200,
+  "dropped_training_ids": []
+ },
+ "eligible_events": 589,
+ "events_with_features": 589,
+ "excluded_event_ids": [],
+ "feature_exclusions": [],
+ "measurement_definition": "full_truth_prefix_metric_pre_event_RIB_or_observed_seed_candidates_v2",
+ "threshold_calibration": "candidate-only training rows after negative sampling",
+ "year": 2025,
+ "delta_s": 30,
+ "events_train": 329,
+ "events_test": 260,
+ "threshold": 0.9000000000000002,
+ "candidates_per_event_p50": 200.5,
+ "leaked_per_event_p50": 36.0,
+ "jaccard_test_mean": {
+  "j_persist": 0.7243,
+  "j_rule_src": 0.6658,
+  "j_rule_nonprov": 0.5749,
+  "j_model": 0.7022
+ },
+ "model_minus_persist_ci95": [
+  -0.0411,
+  -0.0071
+ ],
+ "rule_src_minus_persist_ci95": [
+  -0.0859,
+  -0.0335
+ ],
+ "feature_importance_note": "gradient boosting; features seen_delta,plen,log_sess,share_src,share_cust,share_peer,share_prov,share_origin"
+}

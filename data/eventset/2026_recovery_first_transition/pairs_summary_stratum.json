@@ -1,0 +1,69 @@
+{
+ "year": 2026,
+ "pairs": 1460,
+ "only_reason": "rpki_invalid_sample",
+ "exclude_reason": null,
+ "j30_definition": "intersection/union, empty union scores zero",
+ "unique_recoveries": 1448,
+ "unique_hijacks": 1460,
+ "bootstrap_components": 1447,
+ "ci_method": "1000 connected-event cluster bootstrap resamples, seed 0; link-weighted mean",
+ "t90_definition": "continuous first-arrival 90% quantile; undefined for empty final set",
+ "timing_comparable_pairs": 1460,
+ "hijack_t90_observed": 1460,
+ "recovery_t90_observed": 1460,
+ "zero_hijack_reach": 0,
+ "zero_recovery_reach": 0,
+ "gap_s_p50": 462.0,
+ "hijack": {
+  "j30_mean": 0.601,
+  "t90_s_p50": 111.69812300000001,
+  "t90_gt_5min_frac": 0.3938,
+  "reach_p50": 33.0
+ },
+ "recovery": {
+  "j30_mean": 0.6743,
+  "t90_s_p50": 60.3643355,
+  "t90_gt_5min_frac": 0.2966,
+  "reach_p50": 26.0
+ },
+ "paired_j30_diff_recovery_minus_hijack": {
+  "mean": 0.0733,
+  "ci95": [
+   0.0551,
+   0.0926
+  ]
+ },
+ "recovery_slower_t90_frac": 0.4384,
+ "recovery_lower_j30_frac": 0.4267,
+ "recovery_reach_over_hijack_reach_p50": 1.035,
+ "by_gap<1min": {
+  "pairs": 543,
+  "hijack_j30": 0.6309,
+  "recovery_j30": 0.5542,
+  "hijack_t90_p50": 104.364395,
+  "recovery_t90_p50": 108.0
+ },
+ "by_gap 1-15min": {
+  "pairs": 269,
+  "hijack_j30": 0.4635,
+  "recovery_j30": 0.6708,
+  "hijack_t90_p50": 422.871658,
+  "recovery_t90_p50": 111.0
+ },
+ "by_gap>15min": {
+  "pairs": 648,
+  "hijack_j30": 0.6331,
+  "recovery_j30": 0.7764,
+  "hijack_t90_p50": 83.3377105,
+  "recovery_t90_p50": 33.577197999999996
+ },
+ "chronologically_unmatched_links": [],
+ "chronologically_unmatched_count": 0,
+ "pair_population": {
+  "require_valid_hijack": true,
+  "require_matched_definition": true,
+  "hijack_events": "data/eventset/2026_hijack_first_transition/events.parquet",
+  "recovery_events": "data/eventset/2026_recovery_first_transition/events.parquet"
+ }
+}

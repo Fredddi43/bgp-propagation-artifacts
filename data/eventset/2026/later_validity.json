@@ -6,34 +6,34 @@
  ],
  "by_population": {
   "catalogue": {
-   "n": 4560,
-   "valid_7d": 0.071,
-   "unknown_7d": 0.021,
+   "n": 4636,
+   "valid_7d": 0.074,
+   "unknown_7d": 0.019,
    "no_data_7d": 0.0,
-   "valid_30d": 0.075,
-   "unknown_30d": 0.024,
-   "no_data_30d": 0.023,
-   "valid_any": 0.082
+   "valid_30d": 0.078,
+   "unknown_30d": 0.022,
+   "no_data_30d": 0.028,
+   "valid_any": 0.084
   },
   "label-free stratum": {
-   "n": 2742,
+   "n": 2740,
    "valid_7d": 0.335,
-   "unknown_7d": 0.032,
+   "unknown_7d": 0.029,
    "no_data_7d": 0.0,
-   "valid_30d": 0.278,
-   "unknown_30d": 0.054,
+   "valid_30d": 0.277,
+   "unknown_30d": 0.03,
    "no_data_30d": 0.028,
    "valid_any": 0.357
   },
   "stratified": {
-   "n": 97,
-   "valid_7d": 0.113,
-   "unknown_7d": 0.031,
+   "n": 100,
+   "valid_7d": 0.12,
+   "unknown_7d": 0.03,
    "no_data_7d": 0.0,
-   "valid_30d": 0.186,
+   "valid_30d": 0.2,
    "unknown_30d": 0.01,
-   "no_data_30d": 0.041,
-   "valid_any": 0.186
+   "no_data_30d": 0.04,
+   "valid_any": 0.2
   }
  }
 }
