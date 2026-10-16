@@ -1,0 +1,53 @@
+{
+ "model": "sage",
+ "tag": "",
+ "delta_s": 60,
+ "train_events": 824,
+ "test_events": 441,
+ "epochs": 1,
+ "lr": 0.001,
+ "threshold_tuned_on_train": 0.95,
+ "focal_gamma": 0.0,
+ "curve_weight": 1.0,
+ "pos_weight_cap": 20.0,
+ "device": "cpu",
+ "hid": 64,
+ "final_test": {
+  "events": 441,
+  "threshold": 0.95,
+  "auprc_new_mean": 0.1741,
+  "jaccard_model_mean": 0.287,
+  "jaccard_model_tuned_mean": 0.6346,
+  "jaccard_persist_mean": 0.6343,
+  "model_beats_persistence_frac": 0.2268,
+  "tuned_beats_persistence_frac": 0.1202,
+  "recall_model_mean": 0.9354,
+  "recall_model_tuned_mean": 0.6367,
+  "size_ratio_tuned_p50": 0.8252,
+  "diff_tuned_minus_persistence": {
+   "mean": 0.0003,
+   "ci95": [
+    -0.0014,
+    0.002
+   ],
+   "n": 441
+  },
+  "diff_at05_minus_persistence": {
+   "mean": -0.3472,
+   "ci95": [
+    -0.3805,
+    -0.3107
+   ],
+   "n": 441
+  }
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.3681,
+   "test_auprc_new": 0.1741,
+   "test_jaccard_model": 0.287,
+   "elapsed_s": 161
+  }
+ ]
+}

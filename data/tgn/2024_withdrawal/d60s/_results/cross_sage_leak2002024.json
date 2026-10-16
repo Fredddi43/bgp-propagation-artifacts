@@ -1,0 +1,12 @@
+{
+ "model": "sage:leak200:2024",
+ "eval": "withdrawal:2024",
+ "delta_s": 60,
+ "threshold": 0.95,
+ "events": 8,
+ "jaccard_thr": 0.8902,
+ "jaccard_05": 0.7382,
+ "jaccard_persist": 0.8936,
+ "auprc_new": 0.2582,
+ "curve_smape_2h": 0.7329
+}

@@ -1,0 +1,48 @@
+{
+ "year": 2024,
+ "pairs": 5511,
+ "gap_s_p50": 28.0,
+ "hijack": {
+  "j30_mean": 0.697,
+  "t90_s_p50": 300.0,
+  "t90_gt_5min_frac": 0.3079,
+  "reach_p50": 82.0
+ },
+ "recovery": {
+  "j30_mean": 0.232,
+  "t90_s_p50": 3600.0,
+  "t90_gt_5min_frac": 0.828,
+  "reach_p50": 286.0
+ },
+ "paired_j30_diff_recovery_minus_hijack": {
+  "mean": -0.465,
+  "ci95": [
+   -0.4767,
+   -0.4531
+  ]
+ },
+ "recovery_slower_t90_frac": 0.7298,
+ "recovery_lower_j30_frac": 0.8579,
+ "recovery_reach_over_hijack_reach_p50": 2.65,
+ "by_gap<1min": {
+  "pairs": 3286,
+  "hijack_j30": 0.7386,
+  "recovery_j30": 0.1739,
+  "hijack_t90_p50": 60.0,
+  "recovery_t90_p50": 3600.0
+ },
+ "by_gap 1-15min": {
+  "pairs": 895,
+  "hijack_j30": 0.624,
+  "recovery_j30": 0.2181,
+  "hijack_t90_p50": 300.0,
+  "recovery_t90_p50": 3600.0
+ },
+ "by_gap>15min": {
+  "pairs": 1330,
+  "hijack_j30": 0.6436,
+  "recovery_j30": 0.385,
+  "hijack_t90_p50": 300.0,
+  "recovery_t90_p50": 3600.0
+ }
+}

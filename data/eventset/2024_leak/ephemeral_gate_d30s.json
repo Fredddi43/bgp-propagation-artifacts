@@ -1,0 +1,17 @@
+{
+ "year": 2024,
+ "delta_s": 30,
+ "train": 1046,
+ "test": 554,
+ "persistent_share_test": 0.157,
+ "auprc": 0.4033,
+ "auroc": 0.6892,
+ "f1_at_0.5": 0.3537,
+ "recall_persistent_at_0.5": 0.2989,
+ "precision_at_0.5": 0.4333,
+ "floor_j30_all_test": 0.6817,
+ "floor_j30_gated_through": 0.4221,
+ "gated_through_share": 0.1083,
+ "floor_j30_true_persistent": 0.2944,
+ "floor_j30_true_ephemeral": 0.7539
+}

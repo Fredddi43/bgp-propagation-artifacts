@@ -1,0 +1,12 @@
+executor: slurm
+jobs: 120   # RIPE throttling: 12 transient download failures in the first ~1,800 jobs at 150 concurrent (2026-09-05); clean at 100–120
+latency-wait: 60
+retries: 2
+printshellcmds: true
+rerun-incomplete: true
+default-resources:
+  slurm_extra: "'--exclude=cpu20-07,cpu20-01,cpu20-02'"   # cpu20-01, cpu20-02 added 2026-09-16: no route to RouteViews (Errno 113, connect timeouts) from these nodes that evening; 30 of 31 failures of the 2024 recovery replay
+  slurm_partition: cpu      # partition renamed from cpu20 during the 2026-09-07..09 maintenance (nodes are still cpu20-XX)
+  mem_mb: 64000
+  runtime: 120
+  cpus_per_task: 8

@@ -1,0 +1,28 @@
+{
+ "year": 2025,
+ "threshold": 0.5,
+ "freeze_date": "2025-05-31",
+ "min_total": 0,
+ "only_reason": "rpki_invalid_sample",
+ "exclude_reason": null,
+ "rovista_ases": 32105,
+ "by_validity": {
+  "invalid": {
+   "events": 2646,
+   "carriers_measured_share": 0.712,
+   "frontier_measured_share": 0.475,
+   "enforcing_share_carriers": 0.3363,
+   "enforcing_share_frontier": 0.2602,
+   "log_odds_frontier_vs_carriers_mean": 0.192,
+   "log_odds_mean_ci95_bootstrap": [
+    0.163,
+    0.225
+   ],
+   "log_odds_per_event_p10_p90": [
+    -0.688,
+    1.152
+   ],
+   "events_with_both_measured": 2646
+  }
+ }
+}

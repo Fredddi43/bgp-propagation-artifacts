@@ -1,0 +1,17 @@
+[package]
+name = "bgbench-parse"
+version = "0.1.0"
+edition = "2021"
+description = "MRT → Parquet writer for bgbench (same schema as src/bgbench/schema.py), Rust-side to skip the Python boundary"
+
+[dependencies]
+bgpkit-parser = "0.21"
+arrow = { version = "59", default-features = false }
+parquet = { version = "59", default-features = false, features = ["arrow", "zstd"] }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4

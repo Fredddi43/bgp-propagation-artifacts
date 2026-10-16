@@ -1,0 +1,22 @@
+{
+ "year": 2022,
+ "pairs": 2021,
+ "rovista_ases": 32105,
+ "enforcing_share": {
+  "R-H": {
+   "measured": 229738,
+   "enforcing": 92786,
+   "share": 0.4039
+  },
+  "R&H": {
+   "measured": 104555,
+   "enforcing": 14646,
+   "share": 0.1401
+  },
+  "H-R": {
+   "measured": 43580,
+   "enforcing": 7278,
+   "share": 0.167
+  }
+ }
+}

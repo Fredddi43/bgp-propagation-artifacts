@@ -1,0 +1,21 @@
+{
+ "model": "hist_avg",
+ "tag": "leak200",
+ "delta_s": 60,
+ "k": 20,
+ "train_events": 461,
+ "test_events": 1003,
+ "jaccard_hist_mean": 0.7409,
+ "jaccard_persist_mean": 0.6688,
+ "diff_hist_minus_persistence": {
+  "mean": 0.0721,
+  "ci95": [
+   0.0572,
+   0.085
+  ],
+  "n": 1003
+ },
+ "smape_2h_hist": 0.1371,
+ "smape_2h_persist": 0.5261,
+ "years": "2023,2024>2025"
+}

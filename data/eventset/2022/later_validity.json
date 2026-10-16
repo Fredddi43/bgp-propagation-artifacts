@@ -1,0 +1,29 @@
+{
+ "year": 2022,
+ "days": [
+  7,
+  30
+ ],
+ "by_population": {
+  "label-free stratum": {
+   "n": 2997,
+   "valid_7d": 0.125,
+   "unknown_7d": 0.034,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.133,
+   "unknown_30d": 0.036,
+   "no_data_30d": 0.0,
+   "valid_any": 0.141
+  },
+  "stratified": {
+   "n": 111,
+   "valid_7d": 0.036,
+   "unknown_7d": 0.036,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.063,
+   "unknown_30d": 0.045,
+   "no_data_30d": 0.0,
+   "valid_any": 0.063
+  }
+ }
+}

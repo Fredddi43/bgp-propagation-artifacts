@@ -1,0 +1,482 @@
+{
+ "year": 2025,
+ "events": 5466,
+ "per_vp_by_validity": [
+  {
+   "validity": "invalid",
+   "collector": "route-views.linx",
+   "delta": "d1m",
+   "n": 2107,
+   "jaccard_mean": 0.819
+  },
+  {
+   "validity": "invalid",
+   "collector": "route-views2",
+   "delta": "d1m",
+   "n": 1741,
+   "jaccard_mean": 0.766
+  },
+  {
+   "validity": "invalid",
+   "collector": "route-views3",
+   "delta": "d1m",
+   "n": 1808,
+   "jaccard_mean": 0.767
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc00",
+   "delta": "d1m",
+   "n": 1958,
+   "jaccard_mean": 0.77
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc01",
+   "delta": "d1m",
+   "n": 2027,
+   "jaccard_mean": 0.78
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc03",
+   "delta": "d1m",
+   "n": 2041,
+   "jaccard_mean": 0.804
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc12",
+   "delta": "d1m",
+   "n": 1896,
+   "jaccard_mean": 0.796
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc15",
+   "delta": "d1m",
+   "n": 1804,
+   "jaccard_mean": 0.72
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc20",
+   "delta": "d1m",
+   "n": 1983,
+   "jaccard_mean": 0.821
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc25",
+   "delta": "d1m",
+   "n": 2075,
+   "jaccard_mean": 0.751
+  },
+  {
+   "validity": "unknown",
+   "collector": "route-views.linx",
+   "delta": "d1m",
+   "n": 2498,
+   "jaccard_mean": 0.573
+  },
+  {
+   "validity": "unknown",
+   "collector": "route-views2",
+   "delta": "d1m",
+   "n": 2048,
+   "jaccard_mean": 0.575
+  },
+  {
+   "validity": "unknown",
+   "collector": "route-views3",
+   "delta": "d1m",
+   "n": 2267,
+   "jaccard_mean": 0.601
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc00",
+   "delta": "d1m",
+   "n": 2398,
+   "jaccard_mean": 0.568
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc01",
+   "delta": "d1m",
+   "n": 2283,
+   "jaccard_mean": 0.604
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc03",
+   "delta": "d1m",
+   "n": 2235,
+   "jaccard_mean": 0.584
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc12",
+   "delta": "d1m",
+   "n": 2291,
+   "jaccard_mean": 0.595
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc15",
+   "delta": "d1m",
+   "n": 2339,
+   "jaccard_mean": 0.553
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc20",
+   "delta": "d1m",
+   "n": 2209,
+   "jaccard_mean": 0.581
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc25",
+   "delta": "d1m",
+   "n": 2412,
+   "jaccard_mean": 0.542
+  },
+  {
+   "validity": "valid",
+   "collector": "route-views.linx",
+   "delta": "d1m",
+   "n": 209,
+   "jaccard_mean": 0.404
+  },
+  {
+   "validity": "valid",
+   "collector": "route-views2",
+   "delta": "d1m",
+   "n": 176,
+   "jaccard_mean": 0.339
+  },
+  {
+   "validity": "valid",
+   "collector": "route-views3",
+   "delta": "d1m",
+   "n": 212,
+   "jaccard_mean": 0.342
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc00",
+   "delta": "d1m",
+   "n": 257,
+   "jaccard_mean": 0.443
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc01",
+   "delta": "d1m",
+   "n": 247,
+   "jaccard_mean": 0.438
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc03",
+   "delta": "d1m",
+   "n": 203,
+   "jaccard_mean": 0.363
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc12",
+   "delta": "d1m",
+   "n": 243,
+   "jaccard_mean": 0.407
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc15",
+   "delta": "d1m",
+   "n": 204,
+   "jaccard_mean": 0.287
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc20",
+   "delta": "d1m",
+   "n": 197,
+   "jaccard_mean": 0.369
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc25",
+   "delta": "d1m",
+   "n": 255,
+   "jaccard_mean": 0.425
+  },
+  {
+   "validity": "invalid",
+   "collector": "route-views.linx",
+   "delta": "d30s",
+   "n": 2107,
+   "jaccard_mean": 0.774
+  },
+  {
+   "validity": "invalid",
+   "collector": "route-views2",
+   "delta": "d30s",
+   "n": 1741,
+   "jaccard_mean": 0.714
+  },
+  {
+   "validity": "invalid",
+   "collector": "route-views3",
+   "delta": "d30s",
+   "n": 1808,
+   "jaccard_mean": 0.674
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc00",
+   "delta": "d30s",
+   "n": 1958,
+   "jaccard_mean": 0.706
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc01",
+   "delta": "d30s",
+   "n": 2027,
+   "jaccard_mean": 0.724
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc03",
+   "delta": "d30s",
+   "n": 2041,
+   "jaccard_mean": 0.759
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc12",
+   "delta": "d30s",
+   "n": 1896,
+   "jaccard_mean": 0.744
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc15",
+   "delta": "d30s",
+   "n": 1804,
+   "jaccard_mean": 0.659
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc20",
+   "delta": "d30s",
+   "n": 1983,
+   "jaccard_mean": 0.781
+  },
+  {
+   "validity": "invalid",
+   "collector": "rrc25",
+   "delta": "d30s",
+   "n": 2075,
+   "jaccard_mean": 0.678
+  },
+  {
+   "validity": "unknown",
+   "collector": "route-views.linx",
+   "delta": "d30s",
+   "n": 2498,
+   "jaccard_mean": 0.506
+  },
+  {
+   "validity": "unknown",
+   "collector": "route-views2",
+   "delta": "d30s",
+   "n": 2048,
+   "jaccard_mean": 0.495
+  },
+  {
+   "validity": "unknown",
+   "collector": "route-views3",
+   "delta": "d30s",
+   "n": 2267,
+   "jaccard_mean": 0.523
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc00",
+   "delta": "d30s",
+   "n": 2398,
+   "jaccard_mean": 0.491
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc01",
+   "delta": "d30s",
+   "n": 2283,
+   "jaccard_mean": 0.535
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc03",
+   "delta": "d30s",
+   "n": 2235,
+   "jaccard_mean": 0.506
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc12",
+   "delta": "d30s",
+   "n": 2291,
+   "jaccard_mean": 0.523
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc15",
+   "delta": "d30s",
+   "n": 2339,
+   "jaccard_mean": 0.488
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc20",
+   "delta": "d30s",
+   "n": 2209,
+   "jaccard_mean": 0.515
+  },
+  {
+   "validity": "unknown",
+   "collector": "rrc25",
+   "delta": "d30s",
+   "n": 2412,
+   "jaccard_mean": 0.456
+  },
+  {
+   "validity": "valid",
+   "collector": "route-views.linx",
+   "delta": "d30s",
+   "n": 209,
+   "jaccard_mean": 0.373
+  },
+  {
+   "validity": "valid",
+   "collector": "route-views2",
+   "delta": "d30s",
+   "n": 176,
+   "jaccard_mean": 0.29
+  },
+  {
+   "validity": "valid",
+   "collector": "route-views3",
+   "delta": "d30s",
+   "n": 212,
+   "jaccard_mean": 0.31
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc00",
+   "delta": "d30s",
+   "n": 257,
+   "jaccard_mean": 0.396
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc01",
+   "delta": "d30s",
+   "n": 247,
+   "jaccard_mean": 0.397
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc03",
+   "delta": "d30s",
+   "n": 203,
+   "jaccard_mean": 0.305
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc12",
+   "delta": "d30s",
+   "n": 243,
+   "jaccard_mean": 0.374
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc15",
+   "delta": "d30s",
+   "n": 204,
+   "jaccard_mean": 0.25
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc20",
+   "delta": "d30s",
+   "n": 197,
+   "jaccard_mean": 0.325
+  },
+  {
+   "validity": "valid",
+   "collector": "rrc25",
+   "delta": "d30s",
+   "n": 255,
+   "jaccard_mean": 0.358
+  }
+ ],
+ "spread": [
+  {
+   "validity": "invalid",
+   "delta": "d1m",
+   "collectors": 10,
+   "min": 0.72,
+   "max": 0.821,
+   "std": 0.032
+  },
+  {
+   "validity": "unknown",
+   "delta": "d1m",
+   "collectors": 10,
+   "min": 0.542,
+   "max": 0.604,
+   "std": 0.02
+  },
+  {
+   "validity": "valid",
+   "delta": "d1m",
+   "collectors": 10,
+   "min": 0.287,
+   "max": 0.443,
+   "std": 0.05
+  },
+  {
+   "validity": "invalid",
+   "delta": "d30s",
+   "collectors": 10,
+   "min": 0.659,
+   "max": 0.781,
+   "std": 0.043
+  },
+  {
+   "validity": "unknown",
+   "delta": "d30s",
+   "collectors": 10,
+   "min": 0.456,
+   "max": 0.535,
+   "std": 0.023
+  },
+  {
+   "validity": "valid",
+   "delta": "d30s",
+   "collectors": 10,
+   "min": 0.25,
+   "max": 0.397,
+   "std": 0.049
+  }
+ ],
+ "ordering_at_30s": {
+  "d30s": {
+   "collectors_with_all_classes": 10,
+   "invalid>unknown>valid": 10
+  }
+ }
+}

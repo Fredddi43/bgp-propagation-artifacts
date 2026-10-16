@@ -1,0 +1,76 @@
+{
+ "events_scored": 389,
+ "growing_test_events_total": 389,
+ "delta": "d1m",
+ "target": "final_2h",
+ "params": {
+  "p_c2p": 0.05,
+  "p_p2c": 0.001,
+  "p_p2p": 0.002,
+  "max_steps": 12,
+  "rollouts": 50,
+  "seed": 0
+ },
+ "coaffection": true,
+ "alpha": 20.0,
+ "train_events_fit": 626,
+ "fit_stats": {
+  "202512": {
+   "events": 626,
+   "edges": 987624,
+   "edges_with_trials": 415615,
+   "edges_with_success": 56890,
+   "trials_total": 110436937,
+   "successes_total": 1717248,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.029656332547629116
+  },
+  "202510": {
+   "events": 626,
+   "edges": 978814,
+   "edges_with_trials": 412051,
+   "edges_with_success": 57620,
+   "trials_total": 109660521,
+   "successes_total": 1736726,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.030216105714496767
+  },
+  "202511": {
+   "events": 626,
+   "edges": 989958,
+   "edges_with_trials": 413542,
+   "edges_with_success": 57497,
+   "trials_total": 110006108,
+   "successes_total": 1731288,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.03009824157611123
+  },
+  "202509": {
+   "events": 626,
+   "edges": 986700,
+   "edges_with_trials": 421496,
+   "edges_with_success": 59262,
+   "trials_total": 113085503,
+   "successes_total": 1780774,
+   "alpha": 20.0,
+   "p_mean_exercised": 0.030280237362910453
+  }
+ },
+ "set_tag": "leak",
+ "min_asns": 200,
+ "cascade_jaccard_mean": 0.5516,
+ "cascade_recall_mean": 0.9747,
+ "cascade_auprc_mean": 0.6751,
+ "persist_jaccard_mean": 0.6356,
+ "persist_recall_mean": 0.6356,
+ "cascade_beats_persistence_frac": 0.3445,
+ "by_vis_bucket": [
+  {
+   "vis_bucket": "n/a",
+   "n": 389,
+   "cj": 0.5516190231362468,
+   "pj": 0.635627492413415,
+   "auprc": 0.6751498714652957
+  }
+ ]
+}

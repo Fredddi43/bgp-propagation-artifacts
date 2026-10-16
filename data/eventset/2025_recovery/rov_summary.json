@@ -1,0 +1,25 @@
+{
+ "year": 2025,
+ "pairs": 8284,
+ "rovista_ases": 32105,
+ "freeze_date": null,
+ "only_reason": null,
+ "exclude_reason": null,
+ "enforcing_share": {
+  "R-H": {
+   "measured": 787428,
+   "enforcing": 386220,
+   "share": 0.4905
+  },
+  "R&H": {
+   "measured": 316194,
+   "enforcing": 58988,
+   "share": 0.1866
+  },
+  "H-R": {
+   "measured": 118718,
+   "enforcing": 27615,
+   "share": 0.2326
+  }
+ }
+}

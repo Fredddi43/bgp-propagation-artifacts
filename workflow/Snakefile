@@ -1,0 +1,153 @@
+# bgbench ingest workflow (ADR-0016). Unit of work: collector × day → hourly Parquet + minute aggregates + manifest.
+# Run on the cluster:  snakemake --profile workflow/profiles/slurm --configfile workflow/config/<name>.yaml
+import datetime as dt
+
+configfile: "workflow/config/beacon-week.yaml"
+
+DATA_ROOT = config.get("data_root", "data")
+COLLECTORS = config["collectors"]
+START = dt.date.fromisoformat(config["start"])
+END = dt.date.fromisoformat(config["end"])          # inclusive
+DAYS = [(START + dt.timedelta(days=i)).isoformat() for i in range((END - START).days + 1)]
+
+rule all:
+    input:
+        expand(f"{DATA_ROOT}/manifests/{{collector}}/{{day}}.json", collector=COLLECTORS, day=DAYS)
+
+rule ingest_day:
+    output:
+        f"{DATA_ROOT}/manifests/{{collector}}/{{day}}.json"
+    threads: 8
+    resources:
+        slurm_partition="cpu",
+        # cpu20 nodes have ~2 TB RAM; 12 GB OOM'd on big collectors (rrc00/01/03/25). 32 GB for all, doubling on retry.
+        mem_mb=lambda wc, attempt: 64000 * attempt,
+        runtime=lambda wc, attempt: 120 * attempt,
+        # RouteViews drops connections above ~20-30 concurrent downloads; the driver passes --resources rv=<cap>
+        rv=lambda wc: 1 if wc.collector.startswith("route-views") else 0,
+    shell:
+        "bgbench ingest-day {wildcards.collector} {wildcards.day} --workers 32 --procs {threads} "
+        + ("--keep-parquet" if config.get("keep_parquet", True) else "--no-keep-parquet")
+
+# ---- event windows (week 2) ---------------------------------------------------------------------
+EVENTS = config.get("events", {})
+EVENT_COLLECTORS = config.get("event_collectors", config.get("collectors", []))
+
+rule events_all:
+    input:
+        expand(f"{DATA_ROOT}/events/{{event}}/{{collector}}/_manifest.json",
+               event=list(EVENTS), collector=EVENT_COLLECTORS)
+
+rule ingest_window:
+    output:
+        f"{DATA_ROOT}/events/{{event}}/{{collector}}/_manifest.json"
+    threads: 8
+    resources:
+        slurm_partition="cpu",
+        mem_mb=lambda wc, attempt: 64000 * attempt,
+        runtime=60,
+    params:
+        start=lambda wc: EVENTS[wc.event]["start"],
+        end=lambda wc: EVENTS[wc.event]["end"],
+    shell:
+        "bgbench ingest-window {wildcards.collector} {params.start} {params.end} --name {wildcards.event} --workers 32 --procs {threads}"
+
+# ---- pre-event RIBs for the event windows -------------------------------------------------------
+rule ribs_all:
+    input:
+        expand(f"{DATA_ROOT}/ribs/_done/{{event}}/{{collector}}.json", event=list(EVENTS), collector=EVENT_COLLECTORS)
+
+rule ingest_rib:
+    output:
+        f"{DATA_ROOT}/ribs/_done/{{event}}/{{collector}}.json"
+    threads: 2
+    resources:
+        slurm_partition="cpu", mem_mb=lambda wc, attempt: 64000 * attempt, runtime=60,
+    params:
+        at=lambda wc: EVENTS[wc.event]["start"],
+    shell:
+        "mkdir -p $(dirname {output}) && bgbench ingest-rib {wildcards.collector} --at {params.at} > {output}"
+
+# ---- sprint-2 replay: one job per selected event (ADR-0017) --------------------------------------------
+import csv as _csv
+REPLAY_TSV = config.get("replay_manifest")
+REPLAY = {}
+if REPLAY_TSV:
+    with open(REPLAY_TSV) as _f:
+        for row in _csv.DictReader(_f, delimiter="\t"):
+            REPLAY[row["event_id"]] = row
+
+rule replay_all:
+    input:
+        expand(f"{DATA_ROOT}/events_replay/{{event_id}}/summary.json", event_id=list(REPLAY))
+
+rule replay_event:
+    output:
+        f"{DATA_ROOT}/events_replay/{{event_id}}/summary.json"
+    threads: 4
+    resources:
+        slurm_partition="cpu", mem_mb=lambda wc, attempt: 32000 * attempt, runtime=30,
+    params:
+        prefix=lambda wc: REPLAY[wc.event_id]["prefix"],
+        origin=lambda wc: REPLAY[wc.event_id]["new_origin"],
+        t0=lambda wc: REPLAY[wc.event_id]["t0"],
+    shell:
+        "bgbench replay {wildcards.event_id} {params.prefix} {params.origin} {params.t0} --workers 16 --procs {threads}"
+
+# ---- weekly pre-event RIBs for the pass collectors (route-change / path-loss labels) --------------------
+WEEKLY = config.get("weekly_ribs")          # {"year": 2024, "collectors": [...]}
+if WEEKLY:
+    import datetime as _dt
+    _y = int(WEEKLY["year"]); _d0 = _dt.date(_y, 1, 1)
+    _d0 += _dt.timedelta(days=(7 - _d0.weekday()) % 7)      # first Monday
+    WEEKS = [(_d0 + _dt.timedelta(weeks=i)).isoformat() for i in range(53) if (_d0 + _dt.timedelta(weeks=i)).year == _y]
+else:
+    WEEKS = []
+
+rule ribs_weekly_all:
+    input:
+        expand(f"{DATA_ROOT}/ribs/_weekly/{{collector}}/{{monday}}.json", collector=WEEKLY["collectors"] if WEEKLY else [], monday=WEEKS)
+
+rule ingest_rib_weekly:
+    output:
+        f"{DATA_ROOT}/ribs/_weekly/{{collector}}/{{monday}}.json"
+    threads: 2
+    resources:
+        slurm_partition="cpu", mem_mb=lambda wc, attempt: 32000 * attempt, runtime=60,
+    shell:
+        "mkdir -p $(dirname {output}) && bgbench ingest-rib {wildcards.collector} --at {wildcards.monday}T00:00:00 > {output}"
+
+# ---- replay by collector-day (ADR-0017; replaces per-event replay) ----------------------------------------
+XDAY = config.get("xday")   # {"manifest": path, "collectors": [...], "tag": ""|"leak"}
+XDAYS = []
+XTAG = (XDAY or {}).get("tag", "")
+XPARTS = f"{DATA_ROOT}/events_replay_parts" + (f"_{XTAG}" if XTAG else "")
+if XDAY:
+    import csv as _csv2, datetime as _dt2
+    _days = set()
+    with open(XDAY["manifest"]) as _f:
+        for row in _csv2.DictReader(_f, delimiter="\t"):
+            t0 = _dt2.datetime.fromisoformat(row["t0"])
+            for h in (-1, 3):   # window may cross midnight
+                _days.add((t0 + _dt2.timedelta(hours=h)).date().isoformat())
+    XDAYS = sorted(_days)
+
+rule xday_all:
+    input:
+        expand(f"{XPARTS}/_done/{{collector}}/{{day}}.json", collector=XDAY["collectors"] if XDAY else [], day=XDAYS)
+
+rule extract_day:
+    output:
+        f"{XPARTS}/_done/{{collector}}/{{day}}.json"
+    threads: 8
+    params:
+        manifest=lambda wc: XDAY["manifest"], tag=lambda wc: XTAG,
+    resources:
+        slurm_partition="cpu", mem_mb=lambda wc, attempt: 64000 * attempt, runtime=lambda wc, attempt: 120 * attempt,
+        rv=lambda wc: 1 if wc.collector.startswith("route-views") else 0,
+        # heavy collector-days (rrc12 in August 2023) were OOM-killed at 64 and 125 GB with 8 parallel hours; the retry halves
+        # the parallelism as well as doubling the memory: 8 → 4 → 2 hours in flight (a resource, because params callables do not
+        # receive `attempt`)
+        procs=lambda wc, attempt: max(8 // (2 ** (attempt - 1)), 2),
+    shell:
+        "BGB_KEEP_COMMUNITIES=" + ("1" if config.get("keep_communities") else "") + " bgbench extract-day {wildcards.collector} {wildcards.day} --workers 32 --procs {resources.procs} --manifest {params.manifest} --tag '{params.tag}'"

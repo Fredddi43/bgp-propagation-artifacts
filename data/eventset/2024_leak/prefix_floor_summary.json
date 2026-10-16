@@ -1,0 +1,42 @@
+{
+ "year": 2024,
+ "events": 1600,
+ "test": 554,
+ "prefixes_2h_p50_p90": [
+  1.0,
+  286.0
+ ],
+ "persistence_prefix_jaccard_test": {
+  "d30s": 0.8405,
+  "d1m": 0.8562,
+  "d5m": 0.8887,
+  "d15m": 0.9137
+ },
+ "still_growing_prefixes": {
+  "d30s": 0.25,
+  "d1m": 0.2294,
+  "d5m": 0.1981,
+  "d15m": 0.1731
+ },
+ "large_leaks_ge200": {
+  "events": 468,
+  "test": 156,
+  "prefixes_2h_p50": 45.0,
+  "persistence_prefix_jaccard_test": {
+   "d30s": 0.6128,
+   "d1m": 0.6418,
+   "d5m": 0.7095,
+   "d15m": 0.7685
+  }
+ },
+ "multi_prefix_ge10": {
+  "events": 396,
+  "test": 132,
+  "persistence_prefix_jaccard_test": {
+   "d30s": 0.4797,
+   "d1m": 0.517,
+   "d5m": 0.617,
+   "d15m": 0.7046
+  }
+ }
+}

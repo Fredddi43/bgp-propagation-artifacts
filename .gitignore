@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+work/
+secrets/
+rust/*/target/
+/data/eventset/2023/events.parquet
+/data/eventset/2024/events.parquet
+/data/eventset/2024_recovery/events.parquet
+/data/eventset/2025/events.parquet
+/data/eventset/2025_recovery/events.parquet
+/data/eventset/2026/events.parquet

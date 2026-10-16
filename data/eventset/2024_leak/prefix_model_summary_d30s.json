@@ -1,0 +1,24 @@
+{
+ "year": 2024,
+ "delta_s": 30,
+ "events_train": 271,
+ "events_test": 134,
+ "threshold": 0.5000000000000001,
+ "candidates_per_event_p50": 1304.0,
+ "leaked_per_event_p50": 182.5,
+ "jaccard_test_mean": {
+  "j_persist": 0.485,
+  "j_rule_src": 0.4904,
+  "j_rule_nonprov": 0.3997,
+  "j_model": 0.6961
+ },
+ "model_minus_persist_ci95": [
+  0.1393,
+  0.2827
+ ],
+ "rule_src_minus_persist_ci95": [
+  -0.0607,
+  0.0684
+ ],
+ "feature_importance_note": "gradient boosting; features seen_delta,plen,log_sess,share_src,share_cust,share_peer,share_prov,share_origin"
+}

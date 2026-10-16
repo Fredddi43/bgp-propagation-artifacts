@@ -1,0 +1,5 @@
+# Sprint-1 week 1 (ADR-0016): one week of June 2024, all RIS collectors (beacons are RIS-only).
+start: "2024-06-10"
+end: "2024-06-16"
+collectors: [rrc00, rrc01, rrc03, rrc04, rrc05, rrc06, rrc07, rrc10, rrc11, rrc12, rrc13, rrc14,
+             rrc15, rrc16, rrc18, rrc19, rrc20, rrc21, rrc22, rrc23, rrc24, rrc25, rrc26]

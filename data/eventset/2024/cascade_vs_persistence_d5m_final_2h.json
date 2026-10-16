@@ -1,0 +1,43 @@
+{
+ "events_scored": 300,
+ "growing_test_events_total": 300,
+ "delta": "d5m",
+ "target": "final_2h",
+ "params": {
+  "p_c2p": 0.05,
+  "p_p2c": 0.001,
+  "p_p2p": 0.002,
+  "max_steps": 12,
+  "rollouts": 50,
+  "seed": 0
+ },
+ "cascade_jaccard_mean": 0.588,
+ "cascade_recall_mean": 0.8377,
+ "cascade_auprc_mean": 0.8008,
+ "persist_jaccard_mean": 0.8164,
+ "persist_recall_mean": 0.8164,
+ "cascade_beats_persistence_frac": 0.07,
+ "by_vis_bucket": [
+  {
+   "vis_bucket": "2-4",
+   "n": 32,
+   "cj": 0.514203125,
+   "pj": 0.7288068412665709,
+   "auprc": 0.749165625
+  },
+  {
+   "vis_bucket": "5-7",
+   "n": 44,
+   "cj": 0.5165204545454546,
+   "pj": 0.7648409692172025,
+   "auprc": 0.7527931818181819
+  },
+  {
+   "vis_bucket": "8-10",
+   "n": 224,
+   "cj": 0.6125348214285714,
+   "pj": 0.8390281000980818,
+   "auprc": 0.8176495535714287
+  }
+ ]
+}

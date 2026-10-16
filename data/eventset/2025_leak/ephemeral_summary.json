@@ -1,0 +1,42 @@
+{
+ "year": 2025,
+ "events": 8437,
+ "by_duration": {
+  ">10 min": {
+   "n": 75,
+   "share": 0.0089,
+   "radar_labelled_share": 0.2533,
+   "asns_final_2h_p50": 311.0,
+   "asns_final_2h_p90": 368.0,
+   "leaked_prefixes_p50": 2778.0,
+   "collectors_seeing_p50": 10.0,
+   "persist_j30_test_mean": 0.1869,
+   "n_test": 34,
+   "growing_at_30s_frac": 1.0
+  },
+  "<1 min": {
+   "n": 7379,
+   "share": 0.8746,
+   "radar_labelled_share": 0.974,
+   "asns_final_2h_p50": 35.0,
+   "asns_final_2h_p90": 222.0,
+   "leaked_prefixes_p50": 1.0,
+   "collectors_seeing_p50": 8.0,
+   "persist_j30_test_mean": 0.7591,
+   "n_test": 3127,
+   "growing_at_30s_frac": 0.7143
+  },
+  "1-10 min": {
+   "n": 983,
+   "share": 0.1165,
+   "radar_labelled_share": 0.8993,
+   "asns_final_2h_p50": 115.0,
+   "asns_final_2h_p90": 316.0,
+   "leaked_prefixes_p50": 2.0,
+   "collectors_seeing_p50": 10.0,
+   "persist_j30_test_mean": 0.3791,
+   "n_test": 415,
+   "growing_at_30s_frac": 0.9766
+  }
+ }
+}

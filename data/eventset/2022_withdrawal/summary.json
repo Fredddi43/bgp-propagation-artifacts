@@ -1,0 +1,25 @@
+{
+ "events": 46,
+ "errors": 0,
+ "train": 40,
+ "test": 6,
+ "observation_lag_s_p10_p50_p90": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "asns_final_p50_p90": [
+  0.0,
+  0.0
+ ],
+ "vp_final_p50_p90": [
+  0.0,
+  0.0
+ ],
+ "switch_fraction_p50": 0.0,
+ "persistence_test": [],
+ "persistence_train": [],
+ "clean_events": 46,
+ "persistence_test_clean": [],
+ "persistence_train_clean": []
+}

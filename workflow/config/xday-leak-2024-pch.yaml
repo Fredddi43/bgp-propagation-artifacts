@@ -1,0 +1,9 @@
+# IXP-side vantage points for the 2024 slow-regime (leak) set: the 17 PCH route collectors hosted at DE-CIX sites
+# (route-collector.decix-*.pch.net; one gzip'd MRT file per minute). Separate tag so the PCH view is scored as its
+# own vantage set and never mixed into the ten-collector truth in events_replay_leak.
+xday:
+  manifest: data/inventory/2024/leak_replay_manifest.tsv
+  tag: leakpch
+  collectors: [pch.decix-asean.kul2, pch.decix-bcn.mad, pch.decix-dus.fra, pch.decix-ham.fra, pch.decix-hyd, pch.decix-jhb.jhb,
+               pch.decix-jkt, pch.decix-lis.mad, pch.decix-muc.fra, pch.decix-my.kul2, pch.decix-my2.jhb, pch.decix-ny.lga,
+               pch.decix-ny, pch.decix-phx, pch.decix-ruhr.fra, pch.decix.bom2, pch.decix.ord]

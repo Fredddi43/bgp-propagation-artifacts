@@ -1,0 +1,72 @@
+{
+ "model": "sage",
+ "tag": "leak200",
+ "delta_s": 60,
+ "threshold": 0.95,
+ "table": [
+  {
+   "kind": "clean",
+   "level": 0.0,
+   "n": 98,
+   "jaccard_model": 0.7957,
+   "jaccard_persist": 0.7392,
+   "auprc_new": 0.4952
+  },
+  {
+   "kind": "drop",
+   "level": 0.3,
+   "n": 98,
+   "jaccard_model": 0.7968,
+   "jaccard_persist": 0.7392,
+   "auprc_new": 0.4954
+  },
+  {
+   "kind": "drop",
+   "level": 0.6,
+   "n": 98,
+   "jaccard_model": 0.7958,
+   "jaccard_persist": 0.7392,
+   "auprc_new": 0.494
+  },
+  {
+   "kind": "drop",
+   "level": 0.9,
+   "n": 98,
+   "jaccard_model": 0.7929,
+   "jaccard_persist": 0.7392,
+   "auprc_new": 0.4895
+  },
+  {
+   "kind": "hide",
+   "level": 1.0,
+   "n": 98,
+   "jaccard_model": 0.7903,
+   "jaccard_persist": 0.7392,
+   "auprc_new": 0.4751
+  },
+  {
+   "kind": "inject",
+   "level": 0.25,
+   "n": 98,
+   "jaccard_model": 0.6828,
+   "jaccard_persist": 0.6195,
+   "auprc_new": 0.4964
+  },
+  {
+   "kind": "inject",
+   "level": 0.5,
+   "n": 98,
+   "jaccard_model": 0.5995,
+   "jaccard_persist": 0.5337,
+   "auprc_new": 0.4945
+  },
+  {
+   "kind": "inject",
+   "level": 1.0,
+   "n": 98,
+   "jaccard_model": 0.4885,
+   "jaccard_persist": 0.4228,
+   "auprc_new": 0.4978
+  }
+ ]
+}

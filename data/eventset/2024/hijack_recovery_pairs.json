@@ -1,0 +1,67 @@
+{
+ "year": 2024,
+ "events": 18367,
+ "pairs": 562,
+ "by_hijack_validity": {
+  "unknown": {
+   "pairs": 518,
+   "gap_s_p50": 2.0,
+   "hijack": {
+    "reach_p50": 217.0,
+    "j30_mean": 0.5622,
+    "t90_s_p50": 300.0,
+    "t90_gt_5min_frac": 0.3147,
+    "labelled": 0.985
+   },
+   "recovery": {
+    "reach_p50": 229.0,
+    "j30_mean": 0.2985,
+    "t90_s_p50": 3600.0,
+    "t90_gt_5min_frac": 0.6448,
+    "labelled": 0.986
+   },
+   "recovery_slower_frac": 0.583,
+   "recovery_j30_lower_frac": 0.6834
+  },
+  "invalid": {
+   "pairs": 36,
+   "gap_s_p50": 2525.5,
+   "hijack": {
+    "reach_p50": 121.0,
+    "j30_mean": 0.554,
+    "t90_s_p50": 900.0,
+    "t90_gt_5min_frac": 0.5556,
+    "labelled": 1.0
+   },
+   "recovery": {
+    "reach_p50": 172.0,
+    "j30_mean": 0.156,
+    "t90_s_p50": 3600.0,
+    "t90_gt_5min_frac": 0.9444,
+    "labelled": 0.5
+   },
+   "recovery_slower_frac": 0.6389,
+   "recovery_j30_lower_frac": 0.8889
+  },
+  "valid": {
+   "pairs": 8,
+   "gap_s_p50": 317.0,
+   "hijack": {
+    "reach_p50": 208.5,
+    "j30_mean": 0.1437,
+    "t90_s_p50": 3600.0,
+    "t90_gt_5min_frac": 0.875,
+    "labelled": 0.375
+   },
+   "recovery": {
+    "reach_p50": 145.0,
+    "j30_mean": 0.3906,
+    "t90_s_p50": 2250.0,
+    "t90_gt_5min_frac": 0.75,
+    "labelled": 0.625
+   },
+   "recovery_slower_frac": 0.375,
+   "recovery_j30_lower_frac": 0.375
+  }
+ }
+}

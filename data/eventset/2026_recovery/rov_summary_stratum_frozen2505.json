@@ -1,0 +1,25 @@
+{
+ "year": 2026,
+ "pairs": 1567,
+ "rovista_ases": 32105,
+ "freeze_date": "2025-05-31",
+ "only_reason": "rpki_invalid_sample",
+ "exclude_reason": null,
+ "enforcing_share": {
+  "R-H": {
+   "measured": 125404,
+   "enforcing": 59140,
+   "share": 0.4716
+  },
+  "R&H": {
+   "measured": 49511,
+   "enforcing": 14705,
+   "share": 0.297
+  },
+  "H-R": {
+   "measured": 36700,
+   "enforcing": 12830,
+   "share": 0.3496
+  }
+ }
+}

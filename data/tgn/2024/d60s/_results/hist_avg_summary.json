@@ -1,0 +1,20 @@
+{
+ "model": "hist_avg",
+ "tag": "",
+ "delta_s": 60,
+ "k": 20,
+ "train_events": 824,
+ "test_events": 441,
+ "jaccard_hist_mean": 0.5662,
+ "jaccard_persist_mean": 0.6343,
+ "diff_hist_minus_persistence": {
+  "mean": -0.0681,
+  "ci95": [
+   -0.0918,
+   -0.0444
+  ],
+  "n": 441
+ },
+ "smape_2h_hist": 0.4198,
+ "smape_2h_persist": 0.5983
+}

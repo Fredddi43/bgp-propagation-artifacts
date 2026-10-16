@@ -1,0 +1,76 @@
+{
+ "events_scored": 98,
+ "growing_test_events_total": 98,
+ "delta": "d1m",
+ "target": "final_2h",
+ "params": {
+  "p_c2p": 0.05,
+  "p_p2c": 0.001,
+  "p_p2p": 0.002,
+  "max_steps": 12,
+  "rollouts": 50,
+  "seed": 0
+ },
+ "coaffection": true,
+ "alpha": 5.0,
+ "train_events_fit": 193,
+ "fit_stats": {
+  "202409": {
+   "events": 193,
+   "edges": 986986,
+   "edges_with_trials": 403396,
+   "edges_with_success": 51126,
+   "trials_total": 38639916,
+   "successes_total": 614410,
+   "alpha": 5.0,
+   "p_mean_exercised": 0.03683864387733213
+  },
+  "202410": {
+   "events": 193,
+   "edges": 980636,
+   "edges_with_trials": 398021,
+   "edges_with_success": 50854,
+   "trials_total": 38059296,
+   "successes_total": 613658,
+   "alpha": 5.0,
+   "p_mean_exercised": 0.03714989271276713
+  },
+  "202411": {
+   "events": 193,
+   "edges": 983026,
+   "edges_with_trials": 397173,
+   "edges_with_success": 50549,
+   "trials_total": 37678905,
+   "successes_total": 612507,
+   "alpha": 5.0,
+   "p_mean_exercised": 0.037135524146385566
+  },
+  "202412": {
+   "events": 193,
+   "edges": 1002946,
+   "edges_with_trials": 405282,
+   "edges_with_success": 50798,
+   "trials_total": 38726345,
+   "successes_total": 612817,
+   "alpha": 5.0,
+   "p_mean_exercised": 0.036403611558473305
+  }
+ },
+ "set_tag": "leak",
+ "min_asns": 200,
+ "cascade_jaccard_mean": 0.5774,
+ "cascade_recall_mean": 0.9774,
+ "cascade_auprc_mean": 0.6935,
+ "persist_jaccard_mean": 0.7153,
+ "persist_recall_mean": 0.7153,
+ "cascade_beats_persistence_frac": 0.2245,
+ "by_vis_bucket": [
+  {
+   "vis_bucket": "n/a",
+   "n": 98,
+   "cj": 0.5774030612244898,
+   "pj": 0.7152659644852846,
+   "auprc": 0.6934989795918368
+  }
+ ]
+}

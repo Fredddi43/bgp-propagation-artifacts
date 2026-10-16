@@ -1,0 +1,54 @@
+{
+ "model": "tgn",
+ "tag": "",
+ "delta_s": 60,
+ "train_events": 824,
+ "test_events": 441,
+ "epochs": 1,
+ "lr": 0.001,
+ "threshold_tuned_on_train": 0.95,
+ "focal_gamma": 0.0,
+ "curve_weight": 1.0,
+ "pos_weight_cap": 20.0,
+ "device": "cpu",
+ "hid": 64,
+ "mem": 64,
+ "final_test": {
+  "events": 441,
+  "threshold": 0.95,
+  "auprc_new_mean": 0.1684,
+  "jaccard_model_mean": 0.2835,
+  "jaccard_model_tuned_mean": 0.6349,
+  "jaccard_persist_mean": 0.6343,
+  "model_beats_persistence_frac": 0.2268,
+  "tuned_beats_persistence_frac": 0.0454,
+  "recall_model_mean": 0.9353,
+  "recall_model_tuned_mean": 0.6354,
+  "size_ratio_tuned_p50": 0.816,
+  "diff_tuned_minus_persistence": {
+   "mean": 0.0006,
+   "ci95": [
+    -0.0004,
+    0.0017
+   ],
+   "n": 441
+  },
+  "diff_at05_minus_persistence": {
+   "mean": -0.3508,
+   "ci95": [
+    -0.3847,
+    -0.3136
+   ],
+   "n": 441
+  }
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.3573,
+   "test_auprc_new": 0.1684,
+   "test_jaccard_model": 0.2835,
+   "elapsed_s": 310
+  }
+ ]
+}

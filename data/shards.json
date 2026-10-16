@@ -1,0 +1,61 @@
+[
+  {
+    "path": "data/eventset/2023/events.parquet",
+    "parts": [
+      "data/eventset/2023/events.parquet.part0000",
+      "data/eventset/2023/events.parquet.part0001"
+    ],
+    "bytes": 12441833,
+    "sha256": "7236925afc2865ae0a75c12dd631fefd403f34aa38f3d33f64716a18b51f190e"
+  },
+  {
+    "path": "data/eventset/2024/events.parquet",
+    "parts": [
+      "data/eventset/2024/events.parquet.part0000",
+      "data/eventset/2024/events.parquet.part0001",
+      "data/eventset/2024/events.parquet.part0002",
+      "data/eventset/2024/events.parquet.part0003"
+    ],
+    "bytes": 24813676,
+    "sha256": "8bd5882bdd3135c3560d7189435cd063397254cf984a88e617a917cb8b8c3cd6"
+  },
+  {
+    "path": "data/eventset/2024_recovery/events.parquet",
+    "parts": [
+      "data/eventset/2024_recovery/events.parquet.part0000",
+      "data/eventset/2024_recovery/events.parquet.part0001"
+    ],
+    "bytes": 8099698,
+    "sha256": "e30def6b2942f7242d193e8db90d0be0bcdc4cd3fc9d16e779bbfcbc92fcefa7"
+  },
+  {
+    "path": "data/eventset/2025/events.parquet",
+    "parts": [
+      "data/eventset/2025/events.parquet.part0000",
+      "data/eventset/2025/events.parquet.part0001",
+      "data/eventset/2025/events.parquet.part0002",
+      "data/eventset/2025/events.parquet.part0003"
+    ],
+    "bytes": 25060183,
+    "sha256": "555170a806396dd19a0e11d99bf3575a6057f438e52da7b18cebf63df24915f7"
+  },
+  {
+    "path": "data/eventset/2025_recovery/events.parquet",
+    "parts": [
+      "data/eventset/2025_recovery/events.parquet.part0000",
+      "data/eventset/2025_recovery/events.parquet.part0001"
+    ],
+    "bytes": 8733619,
+    "sha256": "e689f94583055bcd13fbc3540417d8c813a73d2c36c9a9a8d70dd8d232464551"
+  },
+  {
+    "path": "data/eventset/2026/events.parquet",
+    "parts": [
+      "data/eventset/2026/events.parquet.part0000",
+      "data/eventset/2026/events.parquet.part0001",
+      "data/eventset/2026/events.parquet.part0002"
+    ],
+    "bytes": 15108186,
+    "sha256": "cf4cd4e639af71f3bd7a31a2b3706e93f73486f8885a20ef30600ab79cd65f93"
+  }
+]

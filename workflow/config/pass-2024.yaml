@@ -1,0 +1,7 @@
+# ADR-0016 first full pass: calendar 2024, the 10 collectors picked by the ADR-0014 heuristic on 2024-06-15
+# peer-stats (docs/results/2026-09-04-vp-selection.md). Aggregates-only: hourly Parquet is computed for the
+# per-minute signals and then deleted (ADR-0011) — event windows are re-fetched on demand from the candidates.
+start: "2024-01-01"
+end: "2024-12-31"
+keep_parquet: false
+collectors: [rrc25, rrc00, rrc12, rrc01, route-views3, rrc03, route-views2, rrc20, rrc15, route-views.linx]

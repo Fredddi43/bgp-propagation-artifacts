@@ -1,0 +1,21 @@
+{
+ "model": "hist_avg",
+ "tag": "rpkivalid",
+ "delta_s": 60,
+ "k": 20,
+ "train_events": 442,
+ "test_events": 211,
+ "jaccard_hist_mean": 0.3373,
+ "jaccard_persist_mean": 0.3386,
+ "diff_hist_minus_persistence": {
+  "mean": -0.0013,
+  "ci95": [
+   -0.0476,
+   0.0442
+  ],
+  "n": 211
+ },
+ "smape_2h_hist": 0.8153,
+ "smape_2h_persist": 1.2052,
+ "years": "2024"
+}

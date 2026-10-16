@@ -1,0 +1,25 @@
+{
+ "year": 2024,
+ "events_in_both_sets": 1600,
+ "events_seen_at_pch": 563,
+ "share_seen_at_pch": 0.3519,
+ "pch_collectors_seeing_p50": 3.0,
+ "extent_pub_p50": 86.0,
+ "extent_pch_p50": 3.0,
+ "ases_only_pch_p50": 0.0,
+ "ases_only_pch_share_of_union_mean": 0.0019,
+ "ases_only_pub_share_of_union_mean": 0.9559,
+ "union_over_pub_p50": 1.0,
+ "persistence_j30_test": {
+  "public": 0.6817,
+  "pch": 0.9668,
+  "union": 0.6644
+ },
+ "large_leaks_ge200": {
+  "events": 225,
+  "ases_only_pch_p50": 0.0,
+  "union_over_pub_p50": 1.0,
+  "persistence_j30_public": 0.4328,
+  "persistence_j30_union": 0.4344
+ }
+}

@@ -1,0 +1,7 @@
+# ADR-0016 extension pass: calendar 2025, same 10 collectors as 2024 (ADR-0014). Aggregates-only.
+# Identifier v4 (per-path triples) is in ingest since 2026-09-05; Rust engine + side tables default. Profile: 120 jobs
+# (RIPE throttles above ~120–150 concurrent), 64 GB/job (×attempt on retry).
+start: "2025-01-01"
+end: "2025-12-31"
+keep_parquet: false
+collectors: [rrc25, rrc00, rrc12, rrc01, route-views3, rrc03, route-views2, rrc20, rrc15, route-views.linx]

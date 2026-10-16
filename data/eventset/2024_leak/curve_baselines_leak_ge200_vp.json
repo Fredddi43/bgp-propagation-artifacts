@@ -1,0 +1,53 @@
+{
+ "events_used": 68,
+ "growing_test_events": 68,
+ "d1m": {
+  "chronos2_inc:T120m": 1.777,
+  "chronos2_inc:T15m": 0.429,
+  "chronos2_inc:T60m": 1.591,
+  "chronos2_raw:T120m": 0.348,
+  "chronos2_raw:T15m": 0.231,
+  "chronos2_raw:T60m": 0.296,
+  "linear5:T120m": 0.982,
+  "linear5:T15m": 0.496,
+  "linear5:T60m": 0.825,
+  "logistic:T120m": 0.378,
+  "logistic:T15m": 0.284,
+  "logistic:T60m": 0.328,
+  "persistence:T120m": 0.286,
+  "persistence:T15m": 0.179,
+  "persistence:T60m": 0.239
+ },
+ "d5m": {
+  "chronos2_inc:T120m": 1.679,
+  "chronos2_inc:T15m": 0.448,
+  "chronos2_inc:T60m": 1.402,
+  "chronos2_raw:T120m": 0.271,
+  "chronos2_raw:T15m": 0.107,
+  "chronos2_raw:T60m": 0.159,
+  "linear5:T120m": 0.855,
+  "linear5:T15m": 0.257,
+  "linear5:T60m": 0.629,
+  "logistic:T120m": 0.211,
+  "logistic:T15m": 0.101,
+  "logistic:T60m": 0.164,
+  "persistence:T120m": 0.182,
+  "persistence:T15m": 0.074,
+  "persistence:T60m": 0.135
+ },
+ "d15m": {
+  "chronos2_inc:T120m": 0.638,
+  "chronos2_inc:T60m": 0.325,
+  "chronos2_raw:T120m": 0.175,
+  "chronos2_raw:T60m": 0.082,
+  "linear5:T120m": 0.225,
+  "linear5:T60m": 0.124,
+  "logistic:T120m": 0.162,
+  "logistic:T60m": 0.107,
+  "persistence:T120m": 0.109,
+  "persistence:T60m": 0.062
+ },
+ "set_tag": "leak",
+ "min_asns": 200,
+ "curve": "vp"
+}

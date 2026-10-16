@@ -1,0 +1,5 @@
+# RoVista coverage. Same 10 collectors, aggregates-only, no Parquet retained.
+start: "2026-01-01"
+end: "2026-08-31"
+keep_parquet: false
+collectors: [rrc25, rrc00, rrc12, rrc01, route-views3, rrc03, route-views2, rrc20, rrc15, route-views.linx]

@@ -1,0 +1,39 @@
+{
+ "year": 2023,
+ "days": [
+  7,
+  30
+ ],
+ "by_population": {
+  "catalogue": {
+   "n": 3901,
+   "valid_7d": 0.055,
+   "unknown_7d": 0.014,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.063,
+   "unknown_30d": 0.024,
+   "no_data_30d": 0.0,
+   "valid_any": 0.067
+  },
+  "label-free stratum": {
+   "n": 2867,
+   "valid_7d": 0.229,
+   "unknown_7d": 0.033,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.185,
+   "unknown_30d": 0.03,
+   "no_data_30d": 0.0,
+   "valid_any": 0.246
+  },
+  "stratified": {
+   "n": 159,
+   "valid_7d": 0.094,
+   "unknown_7d": 0.025,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.082,
+   "unknown_30d": 0.025,
+   "no_data_30d": 0.0,
+   "valid_any": 0.113
+  }
+ }
+}

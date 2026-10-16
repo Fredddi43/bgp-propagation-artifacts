@@ -1,0 +1,21 @@
+{
+ "year": 2025,
+ "tag": "leak200",
+ "delta_s": 30,
+ "model": "sage",
+ "threshold": 0.9,
+ "events": 393,
+ "new_members_only": {
+  "precision_mean": 0.5613,
+  "recall_mean": 0.7645,
+  "f1_mean": 0.6138,
+  "micro_precision": 0.6073,
+  "micro_recall": 0.8137,
+  "predicted_new_per_event_p50": 140.0,
+  "true_new_per_event_p50": 106.0
+ },
+ "full_set_seeds_plus_predicted": {
+  "precision_mean": 0.7958,
+  "recall_mean": 0.9218
+ }
+}

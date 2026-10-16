@@ -1,0 +1,39 @@
+{
+ "year": 2026,
+ "days": [
+  7,
+  30
+ ],
+ "by_population": {
+  "catalogue": {
+   "n": 4560,
+   "valid_7d": 0.071,
+   "unknown_7d": 0.021,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.075,
+   "unknown_30d": 0.024,
+   "no_data_30d": 0.023,
+   "valid_any": 0.082
+  },
+  "label-free stratum": {
+   "n": 2742,
+   "valid_7d": 0.335,
+   "unknown_7d": 0.032,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.278,
+   "unknown_30d": 0.054,
+   "no_data_30d": 0.028,
+   "valid_any": 0.357
+  },
+  "stratified": {
+   "n": 97,
+   "valid_7d": 0.113,
+   "unknown_7d": 0.031,
+   "no_data_7d": 0.0,
+   "valid_30d": 0.186,
+   "unknown_30d": 0.01,
+   "no_data_30d": 0.041,
+   "valid_any": 0.186
+  }
+ }
+}

@@ -1,0 +1,5 @@
+# recovery replay set: the events that put the legitimate origin back after an RPKI-invalid hijack (select_recovery_replay.py)
+xday:
+  manifest: data/inventory/2024/recovery_replay_manifest.tsv
+  tag: recovery
+  collectors: [rrc25, rrc00, rrc12, rrc01, route-views3, rrc03, route-views2, rrc20, rrc15, route-views.linx]

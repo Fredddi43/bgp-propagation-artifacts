@@ -1,0 +1,42 @@
+{
+ "events_used": 200,
+ "growing_test_events": 3538,
+ "d1m": {
+  "chronos2_inc:T120m": 1.767,
+  "chronos2_inc:T15m": 0.437,
+  "chronos2_inc:T60m": 1.566,
+  "chronos2_raw:T120m": 0.397,
+  "chronos2_raw:T15m": 0.252,
+  "chronos2_raw:T60m": 0.324,
+  "linear5:T120m": 1.014,
+  "linear5:T15m": 0.457,
+  "linear5:T60m": 0.782,
+  "persistence:T120m": 0.34,
+  "persistence:T15m": 0.193,
+  "persistence:T60m": 0.273
+ },
+ "d5m": {
+  "chronos2_inc:T120m": 1.643,
+  "chronos2_inc:T15m": 0.433,
+  "chronos2_inc:T60m": 1.333,
+  "chronos2_raw:T120m": 0.325,
+  "chronos2_raw:T15m": 0.144,
+  "chronos2_raw:T60m": 0.21,
+  "linear5:T120m": 0.807,
+  "linear5:T15m": 0.257,
+  "linear5:T60m": 0.574,
+  "persistence:T120m": 0.257,
+  "persistence:T15m": 0.108,
+  "persistence:T60m": 0.189
+ },
+ "d15m": {
+  "chronos2_inc:T120m": 0.599,
+  "chronos2_inc:T60m": 0.326,
+  "chronos2_raw:T120m": 0.244,
+  "chronos2_raw:T60m": 0.114,
+  "linear5:T120m": 0.31,
+  "linear5:T60m": 0.188,
+  "persistence:T120m": 0.155,
+  "persistence:T60m": 0.083
+ }
+}

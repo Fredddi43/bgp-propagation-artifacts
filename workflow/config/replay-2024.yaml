@@ -1,0 +1,2 @@
+# ADR-0017 replay set. Run: jobs/run_snakemake.sh workflow/config/replay-2024.yaml replay_all  (≈100 jobs concurrent)
+replay_manifest: data/inventory/2024/replay_manifest.tsv

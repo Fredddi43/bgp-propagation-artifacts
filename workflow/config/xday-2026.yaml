@@ -1,0 +1,4 @@
+# replay-by-day for the 2026 origin-change selection (ADR-0017 procedure)
+xday:
+  manifest: data/inventory/2026/replay_manifest.tsv
+  collectors: [rrc25, rrc00, rrc12, rrc01, route-views3, rrc03, route-views2, rrc20, rrc15, route-views.linx]

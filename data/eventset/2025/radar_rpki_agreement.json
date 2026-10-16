@@ -1,0 +1,18 @@
+{
+ "year": 2025,
+ "radar_events": 41495,
+ "radar_rpki_new_origin_tags": {
+  "invalid": 22697,
+  "unknown": 18798
+ },
+ "matched_events": 20976,
+ "agreement": 0.7744,
+ "confusion_ours_vs_radar": {
+  "invalid|invalid": 8727,
+  "unknown|unknown": 7516,
+  "unknown|invalid": 4401,
+  "valid|invalid": 253,
+  "invalid|unknown": 57,
+  "valid|unknown": 22
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "year": 2025,
+ "pairs": 1580,
+ "recoverers_that_carried_hijack_mean": 0.3175,
+ "recoverers_never_carried_hijack_mean": 0.6825,
+ "recoverers_never_carried_hijack_p50": 0.7577,
+ "hijack_carriers_not_seen_recovering_mean": 0.3983,
+ "recovery_set_over_hijack_set_p50": 2.098,
+ "by_gap<1min": {
+  "pairs": 523,
+  "recoverers_never_carried_hijack_mean": 0.7129,
+  "recovery_over_hijack_p50": 3.733
+ },
+ "by_gap 1-15min": {
+  "pairs": 321,
+  "recoverers_never_carried_hijack_mean": 0.654,
+  "recovery_over_hijack_p50": 2.68
+ },
+ "by_gap>15min": {
+  "pairs": 736,
+  "recoverers_never_carried_hijack_mean": 0.6733,
+  "recovery_over_hijack_p50": 1.413
+ }
+}

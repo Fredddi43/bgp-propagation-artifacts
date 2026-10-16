@@ -1,0 +1,19 @@
+# Sprint-1 week 2 (ADR-0016): the two slice events, t0-1h .. t0+3h, all RRCs + route-views2 + amsix.
+events:
+  cloudflare-2024-06-27:
+    start: "2024-06-27T17:50:00"
+    end:   "2024-06-27T21:55:00"
+    t0:    "2024-06-27T18:51:00"
+    victim_asns: [13335]
+    prefixes: ["1.1.1.1/32", "1.1.1.0/24", "1.0.0.1/32", "1.0.0.0/24"]
+    actors: {hijacker: 267613, leaker: 262504, amplifier: 1031}
+  angola-cables-2023-05-25:
+    start: "2023-05-25T10:20:00"
+    end:   "2023-05-25T14:25:00"
+    t0:    "2023-05-25T11:21:40"
+    victim_asns: [20940, 16509]
+    prefixes: ["2.16.0.0/13", "3.163.234.0/23"]
+    actors: {leaker: 37468}
+collectors: [rrc00, rrc01, rrc03, rrc04, rrc05, rrc06, rrc07, rrc10, rrc11, rrc12, rrc13, rrc14,
+             rrc15, rrc16, rrc18, rrc19, rrc20, rrc21, rrc22, rrc23, rrc24, rrc25, rrc26,
+             route-views2, route-views.amsix]

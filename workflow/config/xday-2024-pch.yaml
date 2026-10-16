@@ -1,0 +1,7 @@
+# IXP-side vantage points for the 2024 origin-change (ADR-0017) set: the 17 PCH route collectors at DE-CIX sites, tag pchorigin
+xday:
+  manifest: data/inventory/2024/replay_manifest.tsv
+  tag: pchorigin
+  collectors: [pch.decix-asean.kul2, pch.decix-bcn.mad, pch.decix-dus.fra, pch.decix-ham.fra, pch.decix-hyd, pch.decix-jhb.jhb,
+               pch.decix-jkt, pch.decix-lis.mad, pch.decix-muc.fra, pch.decix-my.kul2, pch.decix-my2.jhb, pch.decix-ny.lga,
+               pch.decix-ny, pch.decix-phx, pch.decix-ruhr.fra, pch.decix.bom2, pch.decix.ord]
