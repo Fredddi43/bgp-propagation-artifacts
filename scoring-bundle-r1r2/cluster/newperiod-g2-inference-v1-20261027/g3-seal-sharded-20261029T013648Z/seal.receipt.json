@@ -1,0 +1,15 @@
+{
+  "arms": 345,
+  "freeze": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/amended-freeze.json",
+  "freeze_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+  "kind": "g3_seal_receipt",
+  "labels_opened": false,
+  "retained_failures": 55,
+  "seal": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/seal.json",
+  "seal_sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f",
+  "verification": {
+    "groups": 22,
+    "mode": "sharded-memo",
+    "pid": 191642
+  }
+}

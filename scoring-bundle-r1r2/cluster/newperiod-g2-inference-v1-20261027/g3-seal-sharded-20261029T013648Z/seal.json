@@ -1,0 +1,2079 @@
+{
+  "spec_path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/amended-freeze.json",
+  "spec_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+  "sealed_at": "2026-10-29T05:21:46.289034+00:00",
+  "arms": [
+    {
+      "arm_id": "N-baseline-history-knn-mean-matched-frozen_2026_09_01-d30",
+      "commitment_sha256": "4c8cd82dc1ca1c95dbd6ea18fbe64b1b7d3d19b3194412fad2c99b1786cf8122",
+      "predictions_sha256": "1afbbca2643eb7aefa994b481cbccb38e43163f2f47edfa4a4d2179c6a9833c8",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-baseline-history-knn-mean-matched-frozen_2026_09_01-d60",
+      "commitment_sha256": "95e40f10a19406f8731a7ea367f139132670bf226f0cba2785a34f7fcbd2a242",
+      "predictions_sha256": "a85975d17aabe2e6e3f5895165372f098039be46198be4a876fe105d669143da",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-baseline-history-knn-median-native-online-d30",
+      "commitment_sha256": "ed67873d14d806276c8209480961c9888f3e5c4e1c8ffb329434205480e52840",
+      "predictions_sha256": "50118fccdb2d8e8593c0c22d6e275b4102996f387eaa1c595bfe4b34b8391cbd",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-baseline-history-knn-median-native-online-d60",
+      "commitment_sha256": "e2f6184004125a81c49053e0705dc177f8b0a6e38e7e9911f90851e882be6ed9",
+      "predictions_sha256": "c77b343b8de989d2af68ba21b44b1a186f5b4706a098b54805420f8dae21e409",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-baseline-topology-seed-adjacency-matched-online-d30",
+      "commitment_sha256": "d6a624d409a7a18113ccfb66ee88c0d5dbbf3b84c786e05dee7e7201a1af9d40",
+      "predictions_sha256": "a4e1fb312aeb58b0d451b00a35f4d898e04b6cb18fa9606db17b800abb76c1c1",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-baseline-topology-seed-adjacency-matched-online-d60",
+      "commitment_sha256": "095f657511d47f062d0788a8f2f922ad9a482adfea103baa0591fa5f5c3e7e33",
+      "predictions_sha256": "c225f2b53ed83b9424836d0a61df1d10d64842e4dff15911a930f2c9b469c77d",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d30-s1",
+      "commitment_sha256": "ba72c9b4e777d8dbc7683e7704cd3bf4c5695ef5be4e34942c7b276d23c6029c",
+      "predictions_sha256": "683d95fc7308ecf9185efefff52494f6d58e852088494c5af617225843530ecb",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d30-s2",
+      "commitment_sha256": "154b8f7ab32337df8e327655f65d23867ae4e0d5c23dcf1fe3af8683e495504e",
+      "predictions_sha256": "7499b8f1903ba516ccef0ef02011bc9aa1d636f9168550eca42575682ccb9133",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d30-s3",
+      "commitment_sha256": "326e5e3ccf4f8682be8f3f0c93888129ffb75e9b2f2a85843daba5eee2fd0c55",
+      "predictions_sha256": "695c2d63e3ff78f7299beb1a220274a39a72117865b0e053a63e000a98601db3",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d30-s4",
+      "commitment_sha256": "82f2ad7d9bd971ee0dcf15c3ac28f0239c54cf7de6f08e03c5757b47f3c4af38",
+      "predictions_sha256": "5aaf1511bda98115a3b0805679220978aeceac8905f8f6035290a902c5762b38",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d60-s0",
+      "commitment_sha256": "aeffdd82dd26d508f7a6c3c6a036b600005d4e84765c2073e4c1a64e3a064728",
+      "predictions_sha256": "3da62571f06b423b60f2b13837f8f60c5bae012203e36342a1bb971a6d35e2c9",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d60-s1",
+      "commitment_sha256": "aaf0c8d3fa0c2579656f42fe48e5a98eb4407e48f860062e16ba1177dbae6e40",
+      "predictions_sha256": "e28bc8777f2399b5c1e3c42fddf2448ee7fba2a93de4169bc837056231294ec5",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d60-s2",
+      "commitment_sha256": "0d9a40b86b45eee6eb803b6605413430f91c1d3a5e1c736cf4a70abb670cb5df",
+      "predictions_sha256": "326e5ac0c1ea801cef0764a4ccdbd654b495427f8fa0dfb4b29ea4e8ae56fa0e",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d60-s3",
+      "commitment_sha256": "92d366fee2e21371e0ca88f1a333c2daac0d1a5c4949b2b8ca88e486848048d6",
+      "predictions_sha256": "b885de7e02919bdcf4260fef691784f7f7fe3ae317ca141dbe6d476a77ee6468",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-frozen_2025-sage-history-on-d60-s4",
+      "commitment_sha256": "da2805574ec4f61f091269856f490618bb12bd1880165c8fe8e6941522a8b0ad",
+      "predictions_sha256": "e444429d106b31d266b336b16d69136323af0e09cc718a186c8cb360075f48e2",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-history-knn-mean-matched-online-d30",
+      "commitment_sha256": "ba6c79bf8ad42341f8f4261055ee46686fb1ae5095b80cacc3e157bb0b053755",
+      "predictions_sha256": "0002d47bed23bceabe13ef1371049de98696d8e3be4bd451b06b408468e59d9b",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-history-knn-mean-matched-online-d60",
+      "commitment_sha256": "229318cc9f10fa13fbb93d37d6be9b5917874d2da79e1d734b5ce0031afbbc57",
+      "predictions_sha256": "292abee26bd317509041a1558c617bc1421afef40751ad782916d15d5b1fdfdc",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-history-knn-mean-native-online-d30",
+      "commitment_sha256": "ba82af9f5990faa757c604ae8b93fb754c0f9150d715d1090fed21bc39896e25",
+      "predictions_sha256": "9d84616e589ec72f372a32313f999d153f49dee23cb990f6f5906d41d82be2e3",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-history-knn-mean-native-online-d60",
+      "commitment_sha256": "308ceebbd0e3c2002e9b4787b2c03a8aa2d2b1093c7314e6954a3df7b330f33d",
+      "predictions_sha256": "c3ebc039f867d72abc06e6abea14442e7c23c5631de65490759adb206baef408",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-history-knn-median-matched-online-d30",
+      "commitment_sha256": "5d78623197511274b7b7d2f77c431a7aa389c0b309490fc5210c5a6e52aa2190",
+      "predictions_sha256": "9dbc3602806881f6fc83abdf8a4ba40b98a067a91207a0c45cb545e2b1fef6b1",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-history-knn-median-matched-online-d60",
+      "commitment_sha256": "d4f7f196fb4b51d528eeff3e5b87b26ec46762e326a19976f7047f1fa0249c6c",
+      "predictions_sha256": "12922d1bc717b9e4ef4a795d749e810feb2f9c08a483913ec069d5423c8c92f4",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d30-s0",
+      "commitment_sha256": "69bb0284f8ff54b9382eee96ded8ec8ce99807faceeee747f456fb3e7a700426",
+      "predictions_sha256": "86a06804aefcbca514df146a7bf6c136ca12ea3283d64a7ded7370611e4df133",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d30-s1",
+      "commitment_sha256": "f800db21b796168c66466a10de4d53fe81c0232b437fb0c983ed2c5efa5eb02b",
+      "predictions_sha256": "865e8e5a948337fce2c6d98c0d137b44b720939ecb3a7c5c58c0d3f926be266e",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d30-s2",
+      "commitment_sha256": "1e1db354f9fd56a32d838ddb60be5d944fecfd2934658acc431f3dfc32fdb4c0",
+      "predictions_sha256": "a33c844b97a0cdc30fb4ead6c9ee84b04e7b4e4f1bba289691a4298b8acdb367",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d30-s3",
+      "commitment_sha256": "4b94dfdc4b1722f39c7ea187583830ded09a86dc44cc4054ffcb1684bfee57f8",
+      "predictions_sha256": "9505bc9da32673cb0226b2329cf23fa790f460a9c9ac2cd809153d54753ec331",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d30-s4",
+      "commitment_sha256": "e21a4ff403228938edeb5a50edf4e0789c009531ad8a6f2f9fae609e45c75e2d",
+      "predictions_sha256": "f3a25a620a5e65dd6fb1b6305616618dfe1146350a35c4a387ee20f2d1d49507",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d60-s0",
+      "commitment_sha256": "03cf039b88faadc3b0100cb5a91b1ebcb21deecb4ca968c41d42ccdd6afb767a",
+      "predictions_sha256": "46e206ac287297bb2546aaf3e2c548834855cc3801bc43db29780a585a9df376",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d60-s1",
+      "commitment_sha256": "7dee24825b83e913182a11193f69000c9d832f006f87603758b3f85d00a790d9",
+      "predictions_sha256": "f21e4c3dfeb750cc343fed6ab3d96449c0b992c26e95107126f2dd44fe92ee64",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d60-s2",
+      "commitment_sha256": "d83cbc5903d9b084fce59ceadf2fe5eac5fc9cc7f7e951c79a24599d3b4ae469",
+      "predictions_sha256": "7150093738d78d9e0f831f557ff88b054b70ffe7bcd8bca585ca76d048007087",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d60-s3",
+      "commitment_sha256": "4facc2de645f830b9add84560d7b73b373a545a40de5c226f6045cb0f6d14dfc",
+      "predictions_sha256": "73d9f017df3cffee15e46a1da85fcd90a28aa764220c0a3aaf44f6ce5a28a0c9",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-off-d60-s4",
+      "commitment_sha256": "aede71426ea1137caf9adc8feda3f98b790a837db883f91f40a8ce1277989fb5",
+      "predictions_sha256": "35ff668ac64464ff292772ee1c55efcc24cd369bd3fdfac5d6d8eb668c018128",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d30-s0",
+      "commitment_sha256": "21118b5412a32633f8dabad1fa1588d38774cca424ac05e751eabbacf6576ab1",
+      "predictions_sha256": "26feefba4d990acab4922ca9e1eba2606328fff2f40022420b2846512bdad580",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d30-s1",
+      "commitment_sha256": "2995f1c4e2629a817ef1ae72dad287c3f3c3e2c8b60e803f66eeefed126796f2",
+      "predictions_sha256": "f1cbae512d68ce044e25ac8ee433a2053a733c5452805f2ce8bcddb612e3359d",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d30-s2",
+      "commitment_sha256": "b803120169b8c0a39f5d36bde8c5d733539eb07ca74a388a98e2e849627eeeb4",
+      "predictions_sha256": "682825ca2649cca7127a22a09222aeb1b48365c2a687242b9524560c2866c8c0",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d30-s3",
+      "commitment_sha256": "9ae67041fbd224a946bd6d25f51522c37695aa8c474d21fbea4824f56a248fc2",
+      "predictions_sha256": "5901c47b75277b0754aebf9f909ff29ee808e541db74bbff5a7b7c3df596546c",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d30-s4",
+      "commitment_sha256": "3cf93e823246b3aac40ef5a41a5315ebf5cd9492a4721ced6c8ccc85f885adad",
+      "predictions_sha256": "8e0b1a0711e18f5ec068394eb785786a62181f58f5b0e773c8eab22bbb427e13",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d60-s0",
+      "commitment_sha256": "098374c0da6a87ea63de6fd3526f66ebc17dd96f3cbb27bdd16d3c5ed58679e7",
+      "predictions_sha256": "8b79188881422f8b5719ad93063c633f6c4d40089b44fb64deff56a470defce8",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d60-s1",
+      "commitment_sha256": "f7ae4a6cde4af0825f74500f7c71c8fbd1b2286ca65584a81a57404b805ed4a9",
+      "predictions_sha256": "07ccb02c373105081493666bf93670080435d5fc0f6b7496ffcbac8eaed48d65",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d60-s2",
+      "commitment_sha256": "fe0544c6566b34b6e06809ecc26ccd339b776bef08867966cf1d58b3822b5da8",
+      "predictions_sha256": "728019adefd2b4f8441d27e5118e84f0c6f29f95c93ef6e5d4148ee1ed66e921",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d60-s3",
+      "commitment_sha256": "276aa1fdf6e0b9375ee9312cf130fcf5f725d696634ac2ae57c80f5c9a1da25b",
+      "predictions_sha256": "3cc3f316ce19f4170c956b9948ffa51d110c892bb8971ab746b325a5d8bf0348",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-none-history-on-d60-s4",
+      "commitment_sha256": "8c81a82014d6db0f5d9e576ae6f436676aa9fcabb84aadf6efd1da03efd302dc",
+      "predictions_sha256": "b1858997bee51c6c103b6f59f738235f753f0a19f034f551296af129a4a2cc2f",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d30-s0",
+      "commitment_sha256": "577ac33f6211b30ff708db7718524131325e8603086837d048273efc551b26cd",
+      "predictions_sha256": "efafb4e3ada7477c9d5bec8686a62fdac21e0d8b60c43ad249f9774e14326bb8",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d30-s1",
+      "commitment_sha256": "29d4f70a75f0b72ac59d33999acf05e6475d03c4330efe2b31cc37ad762dc0df",
+      "predictions_sha256": "f5259b0ea161eb488125afe8cb5a7ab50aa48e31a344aee79ea7a1756ec38b4f",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d30-s2",
+      "commitment_sha256": "bd4cec51aa5767bcc84d2ac449011b34d31bbde100de519e8f22aa95e608f1da",
+      "predictions_sha256": "fb0b70320c2021a53bf6ee8a56a2ee93b30e6560320aeea62ea768e563dabe9c",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d30-s3",
+      "commitment_sha256": "d43069218da8a7ae40cb99bb3437435276ee43d59e7ac6e8166fcebec90dde85",
+      "predictions_sha256": "05990a42f730c89b03ab2f14aa33e7533aca050856a750ee9600be09f0d8072b",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d30-s4",
+      "commitment_sha256": "a46d0585937ac26bfdb3f0660c5a112b278a151be14a6b8c379928808ff4f2a9",
+      "predictions_sha256": "0e35184bce39f0ffd1be4e201a0d0a2d3cb4694ff3d3202da950b6768b3e5a03",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d60-s0",
+      "commitment_sha256": "ff5275fab86e0596effe65433ad329bf58f6426464037bd91de2a0ab59b30411",
+      "predictions_sha256": "e212d41c84396a9e555b66e2fd73f4c8424a2a6d13ef50082d274dde6df1b413",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d60-s1",
+      "commitment_sha256": "166bbc1043d63b854bdfe1af1a7d7849ea994478ac5bc84945ab182f68b10686",
+      "predictions_sha256": "e9fc65de3a81d56770902bf41a11369dba4c9723bb7818728105d46195324171",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d60-s2",
+      "commitment_sha256": "1654223e61687048abf85f774d968a11a666598df7d42efb551a7933673ec409",
+      "predictions_sha256": "9b4468feb3664db0b793da7c473ceb6439b07c02d1aaddc3b7612ff125c3cc9e",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d60-s3",
+      "commitment_sha256": "48f87f4c083a1b6e30744248d55a7356210294ac74b6a512aeae6537f0bf1b09",
+      "predictions_sha256": "5702c682196e23e1a4ba05810818b6d6e4f8e1fbc72d3fd4dc6dd3d766243a14",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-off-d60-s4",
+      "commitment_sha256": "36dfa234df04e6e269c97eeefed888aa4b149c1dc03c0704abd515aabb85986e",
+      "predictions_sha256": "08c8c1478b4797291d76dab92289a99cb1211589f29324d19d4880028db60e79",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d30-s0",
+      "commitment_sha256": "3d45ab524e432f2a499e4947ba74ec3b8f0ea24e002ca857841c242d780b6f25",
+      "predictions_sha256": "7ea2fc3d6507c01178d4f442f6193a502494110ddfe8e7691ded2b875a7df353",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d30-s1",
+      "commitment_sha256": "5a8011bbe4ff640c3fd085b554599e60737e1eb07c4af2211a50651c6dab86c7",
+      "predictions_sha256": "94d5b4bc6379d793121339a6f44c7b13eaa793114394f4af58f4d3891583a222",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d30-s2",
+      "commitment_sha256": "94fd5261c304ef8f5a0443af4e6012a47e31dbaaf560d2ae0434d7a011bade07",
+      "predictions_sha256": "802a68763784bf902cbdc097d468b75642f0da7d396690e191aef0c508eac4ed",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d30-s3",
+      "commitment_sha256": "34cfa1291e990670e034d80cfa649712aa921b09ce8bd154868eb11f57da9bcd",
+      "predictions_sha256": "af6c3d1ade448901637b0fbc08756324394fc90b063ddc5f946929bee07026e6",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d30-s4",
+      "commitment_sha256": "7144e7f8fc44260d905b5be2c13ce23216dd6f83bd9f3ba5001632b5dc780c9f",
+      "predictions_sha256": "b26204e6b2c23bc5123b65b9873bd2c5f6fd99aaaee1bd6e6655027b387b253f",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d60-s0",
+      "commitment_sha256": "e757e2c5617932f1384fedca4fc81e088f7dba807e857e9c00167a77562ecfc4",
+      "predictions_sha256": "0bd6277e4faea1d05e28d8a386484a4b13b2eab797ab4fee0b9cd48cb6e73fb8",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d60-s1",
+      "commitment_sha256": "2d545abd4b1895766567bfbf1edd2ddbe1c9441da7ff6fd5e46b33a237ae3528",
+      "predictions_sha256": "04b4f262228a1ab2ae6d8bac1a1e9aa2735f59bd2800d82b87c0ffef942f5b87",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d60-s2",
+      "commitment_sha256": "bbbdf5f29fa1e82a7f76bbeef7e9dc042648ebef41cdb9cc42f0ebfcfc36b500",
+      "predictions_sha256": "5608eb7dc8b8dc10ec5eb47dbeaea292531e61c2a0fa5c6f8ddc76c97ff57561",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d60-s3",
+      "commitment_sha256": "1af5c46d513cdf4ae6ad2581584186c67c2a1c983c7b6f7c707a597016a10a03",
+      "predictions_sha256": "ec9d8b53153be48cfba39da9aa5e66d26570f277f18b8df8b465a221b3fcf7e4",
+      "events": 1289
+    },
+    {
+      "arm_id": "N-primary-updated-sage-history-on-d60-s4",
+      "commitment_sha256": "5746ebf0f5dd090c940f93df285dbfd231f62d1f9e30963b2a0c612d13c4ddcb",
+      "predictions_sha256": "f12eb6d6ce1d23a716999379887fed27e39e2f3626a5bd8588762cb0709049c0",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d30-matched",
+      "commitment_sha256": "4dfa5f2e16bd740e6d67d429d0418741b8c39c475e7bf60b8349d856f85b7d5f",
+      "predictions_sha256": "1420c47e17ca810c84d1df98f7e629d99dff36a57d4503d722b6f76924e629d0",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d30-sage-s0",
+      "commitment_sha256": "2b053d965ec5f6a99240d01d6d97f64ebdc8f587a072f763d9b3dcf5e55b7a29",
+      "predictions_sha256": "3640f99dd08ae91e0adefb953bf496e9ab1c1b1f92a478db34658d4f38fa9e08",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d30-sage-s1",
+      "commitment_sha256": "9bd722e8e37f3912464b20999459a820163496f1e41ae89223e224d4f1e1e203",
+      "predictions_sha256": "758b91117143aa6f4c35c9a0e72085415fe3209c67a8205a7208ad43efc7282b",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d30-sage-s2",
+      "commitment_sha256": "39c7153937ca9f6ef02d143d599b6d6e4dd7deec92cbdbd177aebbb3ce9ee402",
+      "predictions_sha256": "1cc7445557e0898f38964fa7bdb2e76216ea898035da5ac7020b900a6814cfe2",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d30-sage-s3",
+      "commitment_sha256": "833074408edf863f535c0422f067d2f0112691f2d526bd7acb7408ac97c437cb",
+      "predictions_sha256": "1106a61ac7123c591e81ccb1514e7a9ceb09ef7566fb1ffaa3b42d19df0a655a",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d30-sage-s4",
+      "commitment_sha256": "b8b2c6b1d5f9aeebf7795d2a2caa3f6cb567a2605534a1b17a5974f45e0cc5a8",
+      "predictions_sha256": "6eda37d02b17fd34717d85ef5861791afa6e93efdd9b5dc53987834a05b44fd3",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d60-matched",
+      "commitment_sha256": "5d512f3080549d7a0c5908af3a641c5562a7f82993c7efa2397463cecae5d863",
+      "predictions_sha256": "79e9a2885ee2bec7bc06408ba84e056751785f0fecf94e7d2d74ac85be07d149",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d60-sage-s0",
+      "commitment_sha256": "fbc1887522355832e8bb1ac0c37e98df62384de21a728b9a558892d0ee147563",
+      "predictions_sha256": "cddd55d9b901dc35385d9a644a0ff4f4be8b504c064cd2b570d594af6973f911",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d60-sage-s1",
+      "commitment_sha256": "597e59bc7f4a568e4bf0621a9b85461b8dc506d8a9f97618db6457ea1208ac79",
+      "predictions_sha256": "31395c72b922b727d3217625c39b5fb82c8a7613ee58e430cbce433418fb887a",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d60-sage-s2",
+      "commitment_sha256": "ebaa3d747d471a8b3df862c9244af48fe0b6b1fb5bad7270280d771d6ca8fa80",
+      "predictions_sha256": "6b7be1b8f4d70f34b1436685b6a924e0c6104eaf165e8321f757465b0bcd0ca1",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d60-sage-s3",
+      "commitment_sha256": "2acb6f557c0e966b1e54ce3fe7914bba2c846d02562117170f15fdb7f3d2cac6",
+      "predictions_sha256": "4d8e043ccad1860beb809cc9bb094591238bb854ca95b3ab559f1fe2df2dfdfd",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay1800-d60-sage-s4",
+      "commitment_sha256": "a686efecd64252eee5c00ae2afbce31dfd2d46b89308f33fdbbec1611cd97159",
+      "predictions_sha256": "3a3dc30f6c6f459d06c63ad66afe08f859a9bdaa659f97ff1b7ff19213d3fcad",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d30-matched",
+      "commitment_sha256": "f2e7c4fd5406c70c6b7da126da679c3ad77f43aad9f041231eda202e10d32df8",
+      "predictions_sha256": "405e8b5fb069c038083718316a1a3cf3e667f854dac07418723fdc9f6872dd5d",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d30-sage-s0",
+      "commitment_sha256": "0f8774c577e82cc36cc06ca5965ff458aedf35d50111d98bff4d04db4199df45",
+      "predictions_sha256": "4cee687102b4e58b6e9e6df1cef8a9a91fd0d65ad65474e08ccf042bcade09dd",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d30-sage-s1",
+      "commitment_sha256": "4bdf8bc476df47b58fe5bbc28a711331bbd815cbf80e0a2509f4573d1e630f98",
+      "predictions_sha256": "d408dd89632adf9b885e67616b3312e9a0ddefbb38f30acf744ad54ece1da90f",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d30-sage-s2",
+      "commitment_sha256": "4bbabbc49dc289f39d481ebde44f2e3ef31845776c78d1785c12ff6711333341",
+      "predictions_sha256": "f01a2de88dc0c237f35227b38b6267d5b3587bc432990c738e1055bfa7be4fe7",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d30-sage-s3",
+      "commitment_sha256": "57c1f4ccf241794bd9d70f00c7b588b9d9cf86bab4a9f93f756c34994d119563",
+      "predictions_sha256": "b5ff526ffa93d9e832b82dbb17946ed73c4caa4e1b4735221a99f7c850abcfa7",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d30-sage-s4",
+      "commitment_sha256": "dc43e2a4522251701ba3b3030bedc248acf558ddfb5389279ce94b9f2bd669d2",
+      "predictions_sha256": "aae7fd63380956e50432e248c280fe03499eb4ac789d31ee3c89bbe7b43b0733",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d60-matched",
+      "commitment_sha256": "57bb5c86c074a901bbfc66164f05abc7756d465920ac11634eaf54a39d6472e0",
+      "predictions_sha256": "9fa20e855919aa61bb586b2562b76aec773c0d01b88746d9b2a305c08ef634c4",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d60-sage-s0",
+      "commitment_sha256": "4c01eaf1c405d82a031c1c6b8efb5d9eea732a7c2d414d8f9dbb1d983286a406",
+      "predictions_sha256": "9098f68cda1de9b3412c6cbea0b8a1279f89e1817bb289e1a3586bf760b20f24",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d60-sage-s1",
+      "commitment_sha256": "cddff13724a558297dbee38d44680a91e6addc8a0c1fe13575b614dc6ccf46ba",
+      "predictions_sha256": "bb0b041916a2b644f676e5a17eaf05a4d4fa5c9f69b5fa7017b0bbe995acdb3f",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d60-sage-s2",
+      "commitment_sha256": "d437dc0d00fd068df27c20f4dd61fe9d359e4f4ca97c08ee69d0a95878d129eb",
+      "predictions_sha256": "fe756cd32a4a41704105ce81fa7e77430e417966ed727b66a90b81afcf30a8ae",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d60-sage-s3",
+      "commitment_sha256": "369a819b610304ca1c7b6d5b4f93d15d44fd9b549f4ae7b9f1b277dade13a5aa",
+      "predictions_sha256": "54a842f662b11268b923679c66a7b8076f23ab9a03d73d6e2eccb6744a85510b",
+      "events": 1289
+    },
+    {
+      "arm_id": "delay900-d60-sage-s4",
+      "commitment_sha256": "fa08dade63cd69962c50d45e8bf452cc6651051c6fbac1aa4ca006db12192b96",
+      "predictions_sha256": "156e37600be4c1dc520b4a9818a044b353e5cec2bb7975941d755b086d06378a",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d30-s0",
+      "commitment_sha256": "a7989ed907749127f7fa2ba540675758fef97fe328594ba61c1d2ff709975c39",
+      "predictions_sha256": "5055ef355f80ad682e1a15b3eef33a366ab664477037d2a0836214484ab890d0",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d30-s1",
+      "commitment_sha256": "6fcafdb42a25ad0fe6d865f74f8f34e4d6e3eadc160df0457bfb82d9655907bf",
+      "predictions_sha256": "864aad7e7e0092960e3608b5c2402b87507993bc5517309e56fdc26543e24919",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d30-s2",
+      "commitment_sha256": "6969e3666f6b659e283c76633d8a66ee022d23ae7acdaf74f266a714a34801d8",
+      "predictions_sha256": "06e22e3add5fdd43ea12bd10dcdace86c49aee53e2773fa5de2569fa48bfff8c",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d30-s3",
+      "commitment_sha256": "b463d4c2267eb5b2a1aa3d8e9a32f3879da5151d02feb64fe90a951ce2b4a70c",
+      "predictions_sha256": "9c97cc336aa5f719ce3a94ef4cdd82be295975a6e6e614b8657e8d50ddf67049",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d30-s4",
+      "commitment_sha256": "6c985957046659fed02cdd8541f4927bccaf8d7cd706697f92b94fce1952136d",
+      "predictions_sha256": "5228ed958721cd49e264b2d999b2ee5110ff3e1441f4ccab81fe0d9ef62a76a6",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d60-s0",
+      "commitment_sha256": "b8633d3b64d3a6f56e77a306bd1d8d12d5acfbfbcaf7a822bd1c9e334fdd0d9d",
+      "predictions_sha256": "2490c6278e7804eb0a453fe8836ec3efa131a5a345e53a657e302f87016dc117",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d60-s1",
+      "commitment_sha256": "38d860a494da65d7d89b0a6461030bcc4faf874121f5e4415c73bb16d0bf3a00",
+      "predictions_sha256": "b546a47d645f8ddf90015f4f7461f9282a9498307120ca7710a6800b28eef9da",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d60-s2",
+      "commitment_sha256": "8f74a1f515d40952329fd2ae239f6b4e91ee1791f7f32587f17b75f7607c7ed2",
+      "predictions_sha256": "80ca1957fc0d480cb9776e1e56cff69ea797d46d251d4c6c7c16aee33ce02d06",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d60-s3",
+      "commitment_sha256": "15245e76e4a22cfef68625218781470e998a1ba68a5a690d7c529d81507f0598",
+      "predictions_sha256": "4801cf351b96b50a2ba082fa244df8d11e6b3a0c8c955445568af29cac867696",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-none-d60-s4",
+      "commitment_sha256": "6a98460a74b529d2c01a85042976ae4856695033e8cd4c7444e3b7926d3db43b",
+      "predictions_sha256": "e560cc799c736423edd542af062fe7e53327ca18879a796f0531cd1f4c59553e",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d30-s0",
+      "commitment_sha256": "dbc696751e066f270acfcbe0919025260fca94edb97523ba2f1934754d1e1765",
+      "predictions_sha256": "e68d1dda6a9e524dc5733e2b852e12543f43c0f4ab356f60b4b0a0057c6efbbc",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d30-s1",
+      "commitment_sha256": "b1db17de20fa3209f353fb71fb465bf9ba21d9afcb1d3ac816d910ae17deb525",
+      "predictions_sha256": "f91182337c7bb269fa6a3fcbf20bb716d2c93000a66303370e89d0208a00cbc9",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d30-s2",
+      "commitment_sha256": "e4b416b89abb3c45d8e453938ed8a83f0c856485456e286061a0179511c80107",
+      "predictions_sha256": "7188d3c12f032b4db46577cb58134f6b1e7ca487f3f2a7101ee47206c34e6466",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d30-s3",
+      "commitment_sha256": "f29edb55edffdb31c0552b5100a066231fdc5f60a9ebe6e396070c4c4efad5d5",
+      "predictions_sha256": "8d728e48c897a9cf319d161577fb8c76c9b5f148e61291018faf78bcf7ed36fe",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d30-s4",
+      "commitment_sha256": "53395b383985c41c28aa95469209407b536680047323a3d0120c6191996f5019",
+      "predictions_sha256": "a812faf86bbc6592c7d14ac58600af17044eaa280cbd2e78aaf3cccc2cb737a1",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d60-s0",
+      "commitment_sha256": "00ffabd09bc75c1657b2eb8971a736c6cdc84a14cb377f8bbc71198bec5b2570",
+      "predictions_sha256": "bd8056a03c5debb8985e7f6362d4645514ebcbde65954a924bb1b852490da926",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d60-s1",
+      "commitment_sha256": "5cdb4f8e8265456f3b45b7ccef352bf7624372ae6fbeb9223ef5566d1dd88777",
+      "predictions_sha256": "77c974657059d20902c1fa3787084420b4ecde78d0f5584b3270e2ceebd65e55",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d60-s2",
+      "commitment_sha256": "666e35d9a877794e5865499a97edffd83d13e43342241ca105c2e163c5e7f0ab",
+      "predictions_sha256": "ae7672c32f7612070b685f8342773eb56cd41d3e7c19ff16d49c6ec09ca1d1bd",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d60-s3",
+      "commitment_sha256": "2e5136258422b9b9a6ffa2de2c2a36c2530eb3a97ae1f18dd4541b00f427cfc4",
+      "predictions_sha256": "d21bff3b23280fa594ee6659a42c71b40610d3567f47e213808b01c4ab66879f",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-mixed7-sage-d60-s4",
+      "commitment_sha256": "2dd225ccfd6d190e86ba6f7bac0d9edefc35ce15902f1b7b41cac3a05f206ce8",
+      "predictions_sha256": "ba2ba1d22b05d65203e128634ecf971075b253c007dabd4b247ea02c0d619635",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d30-s0",
+      "commitment_sha256": "a6fdbb9e2d3ec8289dfc1958932b9818d432a93f51419fa3c8230efceaea9da8",
+      "predictions_sha256": "b7df927f15c475dfaef7e69c79b2c3d5b6250b5aba92e937fa9c9977aeaa89ec",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d30-s1",
+      "commitment_sha256": "cc7cfcaf092f5cb7b62189c0f372cdc146ba26769aec77a5e3b11d0f0aa6bc77",
+      "predictions_sha256": "463c986bf77a30bfe3a6c855c216656843dc64e6d4e1d8a012640a7e240b74fc",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d30-s2",
+      "commitment_sha256": "6d5c2b9645f47e8427d3cb919fee12f30e60b23dd8e08b7329beb14bdbde39af",
+      "predictions_sha256": "88de9d154bb8fff16603dcbb43d73bf73ae33126335ed4ece88927dc26fe896e",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d30-s3",
+      "commitment_sha256": "9ef9bd32f08f18153b5c4dcc1af15395d2aff4925777033d7b584ccc1f6963ef",
+      "predictions_sha256": "274e7c5689a8ac039fe1a00f5fcca7e89bb559c3b0e1fb04a4599861ada996b7",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d30-s4",
+      "commitment_sha256": "043abc535ead3eae5d638a6805b0b08c4e6c4a110458ce8d18fa299afb1214d2",
+      "predictions_sha256": "95689c3b5da2c09d07222c52f4f3161153ae2447cd4d560a0ee26f95bfb7f6b9",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d60-s0",
+      "commitment_sha256": "8cee2dc02889639f59d174cb6ad1d2988855b6ace6e0734591e84206ff001ea0",
+      "predictions_sha256": "476cf81b34a7b7ee9128694d7a03cb61ed9202ccc5317dc72b85798c9f7a0289",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d60-s1",
+      "commitment_sha256": "a8178663973883cf87006b7eff793dbd0a92c9d06ab4cfbf5608e3a9051e6fb2",
+      "predictions_sha256": "c25d5c4a29a332766dc47dc95ecf2936ad92bb66871e43cfedbaf18353b6bb72",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d60-s2",
+      "commitment_sha256": "5ad0366d69ccd170a5f16ec6de4049774c167433ee3a6d09db9be5e483024678",
+      "predictions_sha256": "79b9c79bfc5ffe402f614c50be18faa59df5165563cf03c73aa415845c83e2a3",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d60-s3",
+      "commitment_sha256": "99e4dab65e7c2c0d6a3fdf7b08ccd3c31fcb88326c7b4c834cc0955a17a38876",
+      "predictions_sha256": "888c917d1fbec669c43cb7820741a0b7b2e37db98debec43945fe8eb4414ebc4",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-none-d60-s4",
+      "commitment_sha256": "abdbd9f717d4433707213a8d05d88976d69f90ae159660fab1f6c87e1fcda2dd",
+      "predictions_sha256": "a64355175b80eb68bb607eff03b6491bebee729dac8867efa724f0901688ee42",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d30-s0",
+      "commitment_sha256": "ea60dec0ec92624d705ae060819a7eea5805085a459325ceea1ec8cc19894b53",
+      "predictions_sha256": "181562d24640f9fffc2c01d37b0c07104497e2db0b8e0a45b37292deca7e2fc6",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d30-s1",
+      "commitment_sha256": "4efc51e9ad8ee984fc54c5927e4f0bff5893f666098f3cfc29ff0b28c5c95437",
+      "predictions_sha256": "d1e31091f19dd97a24d2b0c13763ce7b43652dcb53f1c7c0ba39fb84a73de3ae",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d30-s2",
+      "commitment_sha256": "36cd3ad68375e129075d028dc490b871bce6e2d4e468168fb97390f88381d862",
+      "predictions_sha256": "0850891eb21804b5cd590c1c22d79b34adce401b8ea2d317e7e8c8c3c485acae",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d30-s3",
+      "commitment_sha256": "476d6dc49bff206a9fa061a56143448dd8ccde11d428540f125afb9bc14acff0",
+      "predictions_sha256": "c4cf429de0f56cfb051a2842c597d6a515a5d930b37b6fec0c3a6a5c3cc6140e",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d30-s4",
+      "commitment_sha256": "f9f80b0e54d5f5a5c6fa64c1f66c97dad5d7a80f88ae745f4444e43d89c8e456",
+      "predictions_sha256": "1d8896e74caa95f50591c7295c21b9151543e92030042ff30bdf7109c12df109",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d60-s0",
+      "commitment_sha256": "0291fe3b10a8ce229b39f8c446d63d335adcabd640390105dff581c7b248a4c8",
+      "predictions_sha256": "78ee2a3c4ee984846b0a3ed8f18608c4f6f448d72e72cb610d1976fd61711a1b",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d60-s1",
+      "commitment_sha256": "dc7016a97e97c0a55c66f0d8a3a74616d54b84756aa4d833d1aae3b4d1bc4bc2",
+      "predictions_sha256": "0baffc31b1f2a8ced7dc50a740d4180ccb6e1e7d987d47e28de5d09127c3105f",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d60-s2",
+      "commitment_sha256": "e17c87a16888e0e6c1dece015c5cccdbb2c2fe7ddbece463baf488b50f7fd181",
+      "predictions_sha256": "bf853da78dfa9ca29804a8debba32badb61cfd85fddb28029465843bc70c6cbe",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d60-s3",
+      "commitment_sha256": "986f084854ed15083017dfb2679c9d2d4947039fe8f454a6731d25a01af175c7",
+      "predictions_sha256": "d0644b6cab9cc7f0a0139f892da602d69c720162121dfc129eb4bce64ae1980d",
+      "events": 1289
+    },
+    {
+      "arm_id": "frozen-ris7-sage-d60-s4",
+      "commitment_sha256": "48e653d590d6be2bf277e82e31f5a5db36a9ed71f4f853aacbb72559b758927d",
+      "predictions_sha256": "b2a2c71dc385c17fbf6270e24bac37dbe6b775a70786044edf4a1a6874fd4fed",
+      "events": 1289
+    },
+    {
+      "arm_id": "gbdt_membership-d30-s0",
+      "commitment_sha256": "e6d2125b5fe47c19915b69a55edbbec1114502ae5c5cdbfe78efd427195e1097",
+      "predictions_sha256": "31c3e6f47c5f84d312dc2d3a5c89c45d6924603c5723023d8d0ad333addabede",
+      "events": 1289
+    },
+    {
+      "arm_id": "gbdt_membership-d60-s0",
+      "commitment_sha256": "1fa7bef21fab3543d7d15dcee7f581976ffbf04f5d46406f9e5a76d871bfbc38",
+      "predictions_sha256": "51867696f83c0b95717c3b6a59f36ae0f1384217dc09598b0937dd8b033842bb",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d30-s0",
+      "commitment_sha256": "7cb720aa6b368faf3e9c862cbf34b22d2e18b3e8cf3fdc51f809ebc7e0f876a0",
+      "predictions_sha256": "1dc699e3b236006fb281c6c5bfeb633a4665abc08fb7621d6e38b535ac3a9207",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d30-s1",
+      "commitment_sha256": "a707929aa59fc0418632b69d0a7e6843351b8f30d58e857fdc6a5fa9696bce52",
+      "predictions_sha256": "3445cd8964f4e908a5cc78487a308512b5f26e3c8bef3c0d867c9a9c7aa62a22",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d30-s2",
+      "commitment_sha256": "40106078325eb4e5473ce60e079b333209ac13216a7d5850fdafc5fe4dad8883",
+      "predictions_sha256": "479d7f2c1261eac21f2dcbea6a908ca34d1bf0220e4ac324b26c9dbc6c6dd391",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d30-s3",
+      "commitment_sha256": "36d31c78ddee97ed3a3139e3d6931719a7ab08290ff4a3519a6d27165447162b",
+      "predictions_sha256": "2a0fb1cc3844b490f77f303e7743321cb1590a2e360f9a09513d4bf4b0eeb52b",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d30-s4",
+      "commitment_sha256": "5762329069ee51e734a9af9ce63c50c7cce6fe9a033a6df204c53529d1bf60de",
+      "predictions_sha256": "bbd5eba1322e85bb619bc2bfd913e070f28c93a8b10b529141443b3b7a8349b6",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d60-s0",
+      "commitment_sha256": "4e02f9769ab8f6535374e21ad34eeccbfe771cbc02d27db03cf87da226bcc5eb",
+      "predictions_sha256": "5cedb0109cc57b9001dc081dde409e3a3abf66b9ecc58814e2ea4ee369defb86",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d60-s1",
+      "commitment_sha256": "a386ffb2e8913164e5e410ede5a433920a743846e916db3145e71bd4d5ea0c2d",
+      "predictions_sha256": "307460c9685a54a6a87ed5d9f76e2761f1a961f4512b5a6617683102d41278fb",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d60-s2",
+      "commitment_sha256": "e77618664ccd0fb48bc587bf169b174eaa1dfc9d842fed92688efbc1c1c86385",
+      "predictions_sha256": "2ed60a0feec1a07481e0a8c21d860a12d47184b4fc43affe4a6b1d03b9750e05",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d60-s3",
+      "commitment_sha256": "728b3867cd2b97523df365fe43a47f136122ee4fdf964ab51abdf9fd5f7d284d",
+      "predictions_sha256": "d46fc355149718dfd8b879ee0e7eca9b79b08c0b716a760c13c2a9ba1d2a9460",
+      "events": 1289
+    },
+    {
+      "arm_id": "gru-d60-s4",
+      "commitment_sha256": "e430f04a7a9d9f9ea0bba3c0908c834c746366f8b1f09e091f2265d4acde5645",
+      "predictions_sha256": "d1ea5dc7f093fdcb3077e762629288157b775eec76c8daa117a92d882ebd1805",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d30-s0",
+      "commitment_sha256": "ebdb24b59fd0f2e4f87b8362f10afaab929d8c663dc723c09ce42be0240df418",
+      "predictions_sha256": "55f9ba7a7667d07d6ed9315d032d9b499eb892a141fb8fb1071859789b46dab9",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d30-s1",
+      "commitment_sha256": "7caf463948787e9b2a7ef77957be1f316a8d43d870da497ebd1dcd8f70c8c145",
+      "predictions_sha256": "20144e57828d8ce68dde5e54c8054a85bcb34ddb60dcf9edc2f883852268edaf",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d30-s2",
+      "commitment_sha256": "2bd38943e6d4061bfbe1ea0f7f2cebb718748208ef80bf16382a65b5e9285f09",
+      "predictions_sha256": "296bdcf19571d4420de26a50a04ce9d8fb32730994dc467e55d6b9b076a61981",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d30-s3",
+      "commitment_sha256": "7f83580e95be6115721a16cb94896a3cc0ad97288df601253d17984f2a575f32",
+      "predictions_sha256": "14edd9145ee2c5e9c0e695bacc6b9ffb84802253b7b79d6ae702c97998cca49b",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d30-s4",
+      "commitment_sha256": "2977bae21dcfc60331138c39642111369be71b71ff493989614571d7f51c2a60",
+      "predictions_sha256": "22f1fbfdf2f5fe54e4c936e2c1c59823910cba163019c6084587cb2db457a654",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d60-s0",
+      "commitment_sha256": "8ef04ef2007cd9fd53535e2dac99e85e42637cb41d71448c39de27b2a941a773",
+      "predictions_sha256": "4a1b33a61dbd2dc9084651565ec58e073114f80329fabe4fc6139f8e2f95436e",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d60-s1",
+      "commitment_sha256": "ae52def84f37c9f598c4c91845603f5741ada94d8daf1391473270f6ccb33be7",
+      "predictions_sha256": "aa1543a6ebd2b6d041945d2ff243af898d62617584d86de8ce91c628762d0833",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d60-s2",
+      "commitment_sha256": "4625c1ce9faf3c4aac6f71bc1921d386ade8ce9da48d6fd193fe7c673acab896",
+      "predictions_sha256": "7208fd4452ccffa4887218c33508fce35407900b33c05f172ed860c8da452cf3",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d60-s3",
+      "commitment_sha256": "8102b28d684334669f417e97079b1fe3e9e851131d2c6f3481395f4b04e5e1a2",
+      "predictions_sha256": "c90f1e4777d5c8ac03f63461f20b9839d2070389f552b5ca671ba18b746ae993",
+      "events": 1289
+    },
+    {
+      "arm_id": "none-d60-s4",
+      "commitment_sha256": "ad18e3307dd34e16ba9152dda3f79863541e69be8d63d4742812e37b875d3d4a",
+      "predictions_sha256": "4199cfc9a27611c1adbbd86299ecd61f3a6695f130638aef21145f47b774d665",
+      "events": 1289
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d30-s0",
+      "commitment_sha256": "ebecb7f45e9b2e9ec7b29c20989e41342e60f9f48e28ea2687215b227f7dc30f",
+      "predictions_sha256": "47142d1bc0321a9879cf4275419c0cd0dc857925a80f531a4000202f2736f7dc",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d30-s1",
+      "commitment_sha256": "2457b4b00777328ba8526efa9dc6d86b99c0503bece4640ef5d6b240458d3f80",
+      "predictions_sha256": "f7882dfbf505ef1d83fba156528bea9d7d80da38d6d1878ec9550f6c8d94b6bb",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d30-s2",
+      "commitment_sha256": "82b1e16d642492452600e21468eb08ba41a8ab7daf5ca7b87c564203d31d1575",
+      "predictions_sha256": "55649ea5ad74587bcc750f43b16d8a5a4989ff21aa028e00c6c1dbae179c15ea",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d30-s3",
+      "commitment_sha256": "f0b0ea5ca28cda546503d1ae45989452613dfc773b18038099f1929a62c5209e",
+      "predictions_sha256": "509db40e78e255fed186d9e88c4c6d2c4ce8be27162eaeef3b367809805a9227",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d30-s4",
+      "commitment_sha256": "016eae3cc9e020f790b0e0a53530e6469f90e440b2ff66ed9cbda1774957c89d",
+      "predictions_sha256": "92fa5b6288faf484c3006727c0d0e2c1283fa192aa0c3d44a918fee3c68da49d",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d60-s0",
+      "commitment_sha256": "f14bbdb76a45b7603ad3f57e9cc4c52254f49fc83e391eb32bf3954e69349482",
+      "predictions_sha256": "be5b0964496de687cfe13dafbc0b6125908641d6928cb2db8f58b44231228749",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d60-s1",
+      "commitment_sha256": "663401325f29184ee0cb353dea8e2b78dc35b19fd6cb5d20f8bf37bf9728ec35",
+      "predictions_sha256": "28a51f903e737a294183f6eb3066657e7991f197c0231f3806e6ebf73105b168",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d60-s2",
+      "commitment_sha256": "a2ea7691d979217fc656709dc5f3c3d27a07526034af4bc74a43c23b113f5d65",
+      "predictions_sha256": "4fbddb3a843457e1dcfed6c1d2cd0afbf67d38be8e269fa926b4c17c3e06b2f2",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d60-s3",
+      "commitment_sha256": "2c4ca44208c1b990b296bf826d3dabc5f59ccbb6121d864531bb30522c53cf12",
+      "predictions_sha256": "b1ba43be273e333fd128e1c1f498108f4f903b60b2795e06f339c78f6e6758ed",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-none-d60-s4",
+      "commitment_sha256": "b8026083395d4195a5f1eede774b3d9016b58677ec22df706f862bad6e9d1ea4",
+      "predictions_sha256": "99a17cc967bf4354bd7130ac262f845bb3390d6478a6976b3b158513597a7887",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d30-s0",
+      "commitment_sha256": "e5100f677de8f13245067ee19439889d615fadc6112b390273fb843666fe8e0e",
+      "predictions_sha256": "402e618ca6a91d21f217d27d1ec2cccd5fbd52d99468bb278e0024e33e577068",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d30-s1",
+      "commitment_sha256": "79e807fad3e8575811f7260d4dc8d7f35f11dbaa9e6d9f9eb2b31955874ed8f5",
+      "predictions_sha256": "c985eeb710394a5a0b888b5fa086744f131a759925af33e9fe84ceb086b3a47e",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d30-s2",
+      "commitment_sha256": "35b1681d9fd522e2054d2ad17c62389da84a2294ebddcbb6169dabd114e9a2fd",
+      "predictions_sha256": "428660751267b37576c95b33cc74712732e1a434b36feea6026f0080ece5d577",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d30-s3",
+      "commitment_sha256": "e7b48f253a179fdd62905246db5a17bef75baac10fd14a802f390dbc4716e534",
+      "predictions_sha256": "40b294ae84af8595cd64770f4e01065f839269476bf12b829bee21392480dda8",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d30-s4",
+      "commitment_sha256": "f0470835174c979e145c4af2f5cb9423b4a8753b062055788db63a80e3c4a921",
+      "predictions_sha256": "1e49087166720ccb0a9d93b15b773a80b688f92493af19d17459e3aa40181834",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d60-s0",
+      "commitment_sha256": "58ead10c7416d12c3af93e0680a02eee700a75a91e3cb04d40840666bb12ca8c",
+      "predictions_sha256": "958683d1288fa737ec7659c9e4debcb02dd2d9b794e3446bb7751dd4a177b6ef",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d60-s1",
+      "commitment_sha256": "07ced4025b8f28c7c17a829ae62270f131c3e348e5bab3ab976681b1842976b1",
+      "predictions_sha256": "d2e5ff5737d095efa2e6854f3ea46dce4c6c9115457a483772c4642f55131293",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d60-s2",
+      "commitment_sha256": "4dc6457cfcf612dfa9f2afc008a2f81ff7b7b737829feb7865dbad18f1f22bfd",
+      "predictions_sha256": "dd8e5172b76978a1889f0d52ed0e1aa6a0d9bf408d28a8472be11a74b100851d",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d60-s3",
+      "commitment_sha256": "8a427e016d8f07ecb06d2b66e0eff97867acf9965640b8eae0451cab51659d67",
+      "predictions_sha256": "d5d82e70da3d2726ed33121f87b3802263c0ff62da320e16ebe2cf3e599a1aca",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_invalid-sage-d60-s4",
+      "commitment_sha256": "c1ca1617dbfb790b48c2cd237e36e2174a02f518a252f5413a0aee47c9e539da",
+      "predictions_sha256": "733eea9fb22c1aec8bf6879cb8a3c369a3de5a4d4ea62716ddd7874f756c24e3",
+      "events": 14004
+    },
+    {
+      "arm_id": "origin_change_valid-none-d30-s0",
+      "commitment_sha256": "67c71e6197097cee3f612d8acc7437799cf2207340ced35509947412c8acdd05",
+      "predictions_sha256": "164e162b160a8d806f98b2f2d5addcd575a28cc4d6e49f74990235119cd85cbc",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d30-s1",
+      "commitment_sha256": "3bf8d4299cc7dcba869d329e3a0408fd871ab23379d2b500c60ab2e91f3d2267",
+      "predictions_sha256": "3334a07ce89d2f69e1caa1be69d6ffb0e5a701dce6bd50f7c90b9d8291d2c0b3",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d30-s2",
+      "commitment_sha256": "fd0cf8a387263106965f4f7f6899061b931cc21940dfb900ef70c0aaf02613fb",
+      "predictions_sha256": "9a42017549b9e83bef6025cfb8f8b7dfd583005e534e986864634d72b1b09834",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d30-s3",
+      "commitment_sha256": "6f0801f0dc187f78d66689d02f53f365623fa95b313536ecdf6a616f8b3d144c",
+      "predictions_sha256": "6c8d205e8855a54c4b00b6e503be2f4e875d1efa1f1c67870681dc8545b64242",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d30-s4",
+      "commitment_sha256": "3db7ceaf443b2a431ecdd1a8a6be59c40bd50d3f998d450481533c6d7027923f",
+      "predictions_sha256": "24f4513bf8220805054f9cdca2ebd1f949537009b4bbb4d78f74ceb331bb96e0",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d60-s0",
+      "commitment_sha256": "9f04c665dfadffe207c20e288b3a776b546d55236a12920c96ea62bece7003e1",
+      "predictions_sha256": "44139f29187a48f71ad0feefd0e36be3c387a7981557504da6151985f223c20a",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d60-s1",
+      "commitment_sha256": "b34f1a88246845c058fa76bc7052f021c4c0b90863ce8d22dfc0904a60d772c6",
+      "predictions_sha256": "80c60c6f3f8951f0f525dc89d6159f57085b244437da80fda30a4c76366179e5",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d60-s2",
+      "commitment_sha256": "dda4d491013f28480731627667dbc1734934ae2668e745248c48ef014b55e6eb",
+      "predictions_sha256": "3517d0939f0ca6d1ec81a9461db742fa75824fbdf4eeb6c62596b2c182d03050",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d60-s3",
+      "commitment_sha256": "c66804c1606a4c7c2f23551d2c2f23644e6eb1d4e49c04569ff060ba7d6db07e",
+      "predictions_sha256": "2c035fcf00fe08f63e59ca7de0dd43933f2b04d180a19ff5b8edabcfdb1f87cc",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-none-d60-s4",
+      "commitment_sha256": "0dae315d6587509511f7f6b1804101b7b3241b19ae7598da9516ea7a2a3d69f8",
+      "predictions_sha256": "cbd451223e74f2a4c56c2b46760dacf49954980b0337ca3ed781bda1b16b12db",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d30-s0",
+      "commitment_sha256": "6b826deb9e4439b2028f9bc7371839a54c8c0a625907f4582ea072bb240e0864",
+      "predictions_sha256": "e9aadf94e7b85363c03352f65191dc5af6b80b63766e5bd63931ed4f159e306c",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d30-s1",
+      "commitment_sha256": "4a1455837f7a3449c306a631ab290c2702815129ec471bf6b64a86c75fc945b2",
+      "predictions_sha256": "9800c8bd7477296e734fe7b6acf765a44051422cf4091dbd1a5a99121f26d74b",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d30-s2",
+      "commitment_sha256": "b6a394c46c784c5ae81899fa9e635e986bf813a17c3358f726aac21fdb376215",
+      "predictions_sha256": "f6f3cde421f41821e34a997f4c8e45e5c91710e7679734082e1b4547b71b96e6",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d30-s3",
+      "commitment_sha256": "d7f1a42eb9e0a966ecf6918a63d6115f41eb00461404144832eac34f9c04fd94",
+      "predictions_sha256": "53bd188f937533ec7b3930218f8f9bdb273f00b843b4a82ff50103e45f1d98c3",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d30-s4",
+      "commitment_sha256": "3b0ec7c2522089a0c672038be55c5c2f389bb3bbeefe0d36b9afbc4a3c3f9111",
+      "predictions_sha256": "e55c32e879dd0011e5de0743ab2e2de3b99f22f92a096bde7378e96b4a9baa59",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d60-s0",
+      "commitment_sha256": "f074d2543c007d1ee1eb95fc504c5b543cc5bee1e0cf444631d14e06cb2ab77f",
+      "predictions_sha256": "58e5d6089189ccc3f0bfcb48d819bca750d20b65a986cb9bb3a28a8a86fcc2cb",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d60-s1",
+      "commitment_sha256": "e1331eb839d4a35824fbee39e81584c84ff67bb4b47ff0217af201fc756b15cd",
+      "predictions_sha256": "b00971a74d5b593c0990a431ffbee47acd5e64bdf7666a715dce01e65bc545e6",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d60-s2",
+      "commitment_sha256": "df58b8688219cfdda9821c8a545dc338ef067e5e35a30ccdd23b382dd5a2ca4a",
+      "predictions_sha256": "e2b8a2ce922e4b2d01a65f0be94960e2f5f39566dc4bb140d1bb1f1ad17b4ab7",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d60-s3",
+      "commitment_sha256": "9b1e8c7f481acab69cc3ec94d3f36b75e29d266826cb6840931b54f974c544c5",
+      "predictions_sha256": "3571a5cce1c2748e3cb00289aec729034181af4c033dfcc792ab5b7401cf2a9a",
+      "events": 135088
+    },
+    {
+      "arm_id": "origin_change_valid-sage-d60-s4",
+      "commitment_sha256": "940a5bb708c32e2afcb9fe7650168af7c1f20ab178e4e6f779050444b4815e12",
+      "predictions_sha256": "11abea43e4226739a70f3c875955ade14960da09cf22693e4e2857ee512cf376",
+      "events": 135088
+    },
+    {
+      "arm_id": "refit-mixed7-none-d30-s0",
+      "commitment_sha256": "772e9f025d0c7682fd0b1741498ee11f02f920ef969d13a72c0f89b31a35a872",
+      "predictions_sha256": "97a4982933b575a0d2c78572de8ab9214992b165ae73ce705f5f9e1bcdaea491",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d30-s1",
+      "commitment_sha256": "f78444498e0ea636bcb67e30a8b6a7c37d4b5df59da99f93de8f303333886052",
+      "predictions_sha256": "4492d47297b050f36c43681725cafa4293853a9968aba8353c2d3cd1d34020d6",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d30-s2",
+      "commitment_sha256": "3ee2daee240872ae573e7840b441e46e46755eb81c250fbf253292c4f0636038",
+      "predictions_sha256": "b151948d23744c815c5caefc783fd77a1b6ad2f2076a0a7ee4cc60222afb2cda",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d30-s3",
+      "commitment_sha256": "9e3e61523b7cfe6003a0ca0f4582943fa523c8fcdeba97001140e61ab2bfd6b4",
+      "predictions_sha256": "5e171d6936f661c814d385a3741975961c0acd377f384152c559fce37797be99",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d30-s4",
+      "commitment_sha256": "0481c384bd3a10d4e48f048eb0f5247ad81741df7dd0e625d710ea069abc178d",
+      "predictions_sha256": "899bddbfe9f871d185eca0a15b7e750a8ff7937fa58dcc7a840ef8fa235416b5",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d60-s0",
+      "commitment_sha256": "d18ae55836ba7ff11a66fbe5ba108efe7a338c0c5c411cfb72b8fb9b5752a5e7",
+      "predictions_sha256": "7b59ece8730b994247410823309087bb0a9b127abb3b6cfa63331cf177f8bc12",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d60-s1",
+      "commitment_sha256": "fabee9128ad931dc3368a68df28957982e75fd5fac9cd80cfbe1c468978f420c",
+      "predictions_sha256": "7b1512ab14786ebd3f01f8965c37a361557415cf9030f6ce65c6055039c31ec3",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d60-s2",
+      "commitment_sha256": "95f5529aee91e0997d4b8d74c416f1739d7e8c10e3d24e647c06a68f4b433332",
+      "predictions_sha256": "fe69e56e85018dac7ea0fd70a2826c59006eb2f8f6286cb636f4b1873114043b",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d60-s3",
+      "commitment_sha256": "631e62ed971202fcd08b3424ce21f9fb5c26bca2766242e1e405f1125995a1ac",
+      "predictions_sha256": "d3bd13f472f5aef8e2a3c8044ebd3e040aefac295843e96cfd24cee8b2475749",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-none-d60-s4",
+      "commitment_sha256": "ab0e271df99cdc8ff81bd94cc0ab877db3520a226b474a4e8a756eb969fd5431",
+      "predictions_sha256": "b841d8f524df1c1ba1a63e02f831a40e3906786a28f38efd869a107d93aafd35",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d30-s0",
+      "commitment_sha256": "42730f8435893d9a3a93695ffa0e9f9378c2c4437754a9009012d64941935277",
+      "predictions_sha256": "cedb72f3b84204eca972012f079315cedae7050a335471f88ac3fd794772ec7d",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d30-s1",
+      "commitment_sha256": "4e5353c0eff102c381ed84f07399eba88ef5563749fc451877d766edcbcce008",
+      "predictions_sha256": "208bd0ddb55dd04f68108ccc693bfe2dbdfb76b890d0b761984e3621faa99d89",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d30-s2",
+      "commitment_sha256": "de23d6fad87b4ad0e99db9f0530e3f9d89b792721e46d544ea0d29593c5e96ee",
+      "predictions_sha256": "860957adfcb30f9c8b04eeeff30cc99ee932908218edfca1f5dbf3b99c4ed09c",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d30-s3",
+      "commitment_sha256": "39d9cce2e4cb19b84429a013579e40a41b191a5568dad8b425c5f35bc14051b3",
+      "predictions_sha256": "7ef10e5fdbb397705c6c820fdc943e13b21964279812c2ef5fa5acfe7ec02b00",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d30-s4",
+      "commitment_sha256": "1d3ec0e765a871d882305fa9a0c260d4e56656ef29bf44b6199948db5d32076d",
+      "predictions_sha256": "20b68d3015bd2830232781791149845fc5a09d56f39f25a32b8d0a32ec908ea8",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d60-s0",
+      "commitment_sha256": "3cb6525a9755f1e976ccb213292fec36713fd0d32ae335ae03c48f7221325561",
+      "predictions_sha256": "60d1f4758d77d359c6ebe19b6fae718af4510cf067f00ca9854500b070d71f14",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d60-s1",
+      "commitment_sha256": "96daf4d0de4820d0d1acd8ef7fcddbcccdcfef4e47aa6be6925666347c28219a",
+      "predictions_sha256": "8653f9514246d03f3df9372d51d34c5c040c3f0aa0db1082a1e4c63e88714b2c",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d60-s2",
+      "commitment_sha256": "e2479c86889ef957c9bb72cdb3a47357c9a6e794f6f6657b9ea0bc687e9ad951",
+      "predictions_sha256": "11b32aecd670b2758cab420009690d27157dac748591ca2037d91991e408793f",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d60-s3",
+      "commitment_sha256": "737a86b722922f60cd4c1f1372ff98387ff1d8b32ab3a964c6443e2eaff3e4e9",
+      "predictions_sha256": "3341d624d83c962834ca3ebe77e35ea5bdca42c3ca716c4a2e9afffa8919256f",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-mixed7-sage-d60-s4",
+      "commitment_sha256": "daf555280eefd8bea8110b8ae1f20d7234335b20c26aed457ab392844e83de82",
+      "predictions_sha256": "ed1acd0f27ea76d425552b59b8180ee669a7b5ee243bba6a4447a02802f9fb48",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d30-s0",
+      "commitment_sha256": "7eda333f8e01ae8865b62f408287331e0ee56966fff01a331317991212a21802",
+      "predictions_sha256": "cc88ccda213ce54b8eef0d7814a43f00dd5e758e409159e293b9339588cbb050",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d30-s1",
+      "commitment_sha256": "3956e1c4b22b17b72698eed9f8955f0aa69336f8f6e6b949f26e3f590249d090",
+      "predictions_sha256": "bc88e3f67a3a24b2046e31a87365c22e8cbed49cd0b8cbe208183d35c07639b1",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d30-s2",
+      "commitment_sha256": "df6087ea138da1bec1cdf80859ebad7bb1dcada6d331c464ec40920152ca4c14",
+      "predictions_sha256": "9d69020b50bacf2f2b5d277aa0d54eb0948767879f804943c6db60bd19258904",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d30-s3",
+      "commitment_sha256": "3c3fac040801c8275b36d5b9258ffbd75ed7f887582329743fba531fc61b930c",
+      "predictions_sha256": "dd5da9c1c8355ec807630479456b74794f05106e9230e4791df2e2a7d7adcaf3",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d30-s4",
+      "commitment_sha256": "6b0ffa631520fabe193109b03dd6eae911d805d2c99e784f072f56f6d9fe13d5",
+      "predictions_sha256": "76ea35a5ef5a2d13921eb6c889ffb1ecaefe96dca771ea50bf3da7d579f7dfee",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d60-s0",
+      "commitment_sha256": "1156c59936a989665e9e46c3f0452606bb9237a136e104fa8bfdd18dcc0fcdd2",
+      "predictions_sha256": "016deaab2f8233582ffd6c4a43ab232a78267194bd192c54dedf44dbe36b5cdb",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d60-s1",
+      "commitment_sha256": "90bca72361d08c8647ecec700606fe897bd82b2773875d61ddb28a3112897c3f",
+      "predictions_sha256": "8427f38c1f518d0c120c9de3a9864996458d3a703f7f10c890313b1471e5b04d",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d60-s2",
+      "commitment_sha256": "4cf205e3a9e5d708e54338fc29e86520419048b4133e91b63d1bc14ce51d5b50",
+      "predictions_sha256": "2161c6f6780f779f4bcc6fa487453359fbb7f481eddbbe945b061f8d3f655a6c",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d60-s3",
+      "commitment_sha256": "4bd32c8f7835d42dcb3007156db55cff9b4ad1fd082176cfac7d8dc300ad75e9",
+      "predictions_sha256": "1946029bebd5b68001bb171754915245cfac3fe84e85f9fb8c834ef5ed2f2f8b",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-none-d60-s4",
+      "commitment_sha256": "d95bb6cd74637b621d70f260ab3839e3e4b10a1993bb6cddb2ccfaa16ff78c52",
+      "predictions_sha256": "ac5c7990859d1a8ad7b2392a3866aca702398f0e72033a0577c210dd11a6f793",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d30-s0",
+      "commitment_sha256": "ac05e515a6edf4701e8d53f13fdc983dc02f7ca8b8e3a8fc3b5b4ce807cdd306",
+      "predictions_sha256": "7f26171c0057de60d99590483d9c19657d29a37e267d8aa8c845e35b5fee0537",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d30-s1",
+      "commitment_sha256": "416fe639864e4e96d8f73b99179fa91091c0faed64473f0fb1f822693997c2cf",
+      "predictions_sha256": "d96189a90479f0c2d4029e88158eac9c488f69d2bd90d2eab2e5bd7ef82b27b6",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d30-s2",
+      "commitment_sha256": "51d3e71bc971d19a72a1d5335bc747b4ae9d50a72f440b1e9278ab9f3e5c4089",
+      "predictions_sha256": "81d5692dcab36fbbcc35f8816b5465d179eaa3681a1fc1a73ef4fc72143f7f79",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d30-s3",
+      "commitment_sha256": "0b528b5fda9c5770e78b68ed807305aeedcea24881127f266e126257719abb35",
+      "predictions_sha256": "96e7a00f37256358ffbfcbb9aaf10c38260a7a600451df5d115eaf54ca8de256",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d30-s4",
+      "commitment_sha256": "72e446ae585209dd722acd02ff39f1bddfdd92a9af280ba7e8b3abe6318d8efe",
+      "predictions_sha256": "440c373884580ecc9109b7aa94677b3c9de4b7711f50b7ecc1b1f14adbbfd361",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d60-s0",
+      "commitment_sha256": "7d1a9fce7f1f179cacb3e5c382d254957c3783fc1453233701b445d16c1bba72",
+      "predictions_sha256": "d131fc15068c5ee599fb8f69f41e2eb93a4ae20aa9c7c57d028d4bf72887afeb",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d60-s1",
+      "commitment_sha256": "a423c9f52d1b6d654add6bc04eb3ef676a59334cf856425521db6e755668f1f8",
+      "predictions_sha256": "9073283a07b260be57309f7d112745d1b16002d72584c86ffd69e7ccbaaac19b",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d60-s2",
+      "commitment_sha256": "77d65511c18d2854af8ba3b9e520996c64e060b216a06200f5ff909f177a3b6b",
+      "predictions_sha256": "31244f5da1428fdf79288186f6a8ecef840f2480be60c616e09c4ec0d9620d8a",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d60-s3",
+      "commitment_sha256": "ffeef75c8c3f014313a621bc709b0748e2a1bf2f1438d4f7d44cde8d812dfe9f",
+      "predictions_sha256": "7f92e89ad039a617d61b88f152e2cfc50a56a00a773de2a08bc8cf83f2d66fa4",
+      "events": 1289
+    },
+    {
+      "arm_id": "refit-ris7-sage-d60-s4",
+      "commitment_sha256": "4ec281bab1372344082af1f70d0a439c6b717c15af955ab3a11f568bb3634610",
+      "predictions_sha256": "2ff30d951678939ab9c941cac1058fc9a57eb7d7b653bb297f9ea914ebb6ba3a",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d30-s0",
+      "commitment_sha256": "09e1487188b604f1cde49571fcf1ff35d6954ffce35562f0944ca2d33c18e4c8",
+      "predictions_sha256": "71415ffccf8ce6819f1ca7b97a570c739fc49d4c91c8071b0545a615f4484731",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d30-s1",
+      "commitment_sha256": "e0e4762c629067c346ce18bb4839cad43faac2a65b5bb0830fb0a0b2159d82c6",
+      "predictions_sha256": "9dde90c832be1c857b4b4a6b3203725b3c1e60ee7dd71a94593daa8cb9fb7ba4",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d30-s2",
+      "commitment_sha256": "d58aed152b55371227061acb776364f35f8ee90d965ff2af0df733196636866f",
+      "predictions_sha256": "2093d6adf935de957e556ceb358e9b1d75eff07de87b98737e813c975b98d737",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d30-s3",
+      "commitment_sha256": "199a6dd5df9637f4938cf86ac5fb777360c6042dcacb3e208adfc3016a0aaf21",
+      "predictions_sha256": "96b786549a0e5d53e960430f6b15d3712f3d65131f7221a5bde0ea5cc36d2f86",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d30-s4",
+      "commitment_sha256": "13ff8b853ab52466042c22803c58069242edfa0c5f497e25ad4a60f98288ccf0",
+      "predictions_sha256": "b751c0a116e62a64d9b67e1d1091706d2306ac5a097e902e6dd5c4ac343406d4",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d60-s0",
+      "commitment_sha256": "768c4f1c85de94b67f80947d45cb64128c89586aa6234ec064db58fecbcef310",
+      "predictions_sha256": "39d167b1cfb66cfbc5f8f4954874254cdcd3ec9be025ef2058f7ff3ce45c966d",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d60-s1",
+      "commitment_sha256": "6f64de3874d77838c0a3bbab85a37c26c92468624be97b5d3bfc9b53658d7695",
+      "predictions_sha256": "4865f5c71e87f234a24aa4fa0a19b7456fc80f5dc75a6f3eb14b3e63f783d92e",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d60-s2",
+      "commitment_sha256": "e89c4e918e9c51382f556b3a847e652cec36116645bb8153b9b1434cb3919d05",
+      "predictions_sha256": "9b698e817ca0aec5392e2c5252dc76b6c6fe19f1a86fd0e98e2f6d2da4c217b5",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d60-s3",
+      "commitment_sha256": "7dd54ef56b7ac29fef93f026e26448107950ccadee22ed9f5c9204e98c55d33c",
+      "predictions_sha256": "992afaae5de0c68206196b0a397e327f32791083fcb55bcfdaeafbe827da1089",
+      "events": 1289
+    },
+    {
+      "arm_id": "sage-d60-s4",
+      "commitment_sha256": "5e850ddc4899ca3e31b633cd92b41198062a38a8551a480e1d38f6577716648a",
+      "predictions_sha256": "23a326e5244892d66b66be52bd8a2da2ba6aa95dd9230dcade0b92082e106998",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-history-knn-mean",
+      "commitment_sha256": "d9f72a970e905098f4ffc6a1f06587caeb5b46d82f7134a02c7cb6f16da46c35",
+      "predictions_sha256": "21c2f54ca829f97b8e9dd1ef5ccb7bee74e4adaa119731d9154b990973b2e7c7",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-none-s0",
+      "commitment_sha256": "2edc76c2a5c1d84540a9b2150874da99928b10bf859b6b348db1a8a9f025969f",
+      "predictions_sha256": "1c8acdba21d3fe788cf4d0d5d9ec035116fd03d9708af7054cba56e9f800ceac",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-none-s1",
+      "commitment_sha256": "4569dd371a256a3e34648c5c13509b888b5a012ee9639942909cd46be03a8e49",
+      "predictions_sha256": "f7f945830883cad4cbd8ab8a6539800a1c40cb55214cc18375c8a5857958200c",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-none-s2",
+      "commitment_sha256": "9d36954949ebd4d00fd827f12e78ab7149cbc0682631d9f1d8c7a1598c7cd2d1",
+      "predictions_sha256": "cf307e8c341e688d856bd048ac354c1302f65ae27d3b599ba5c0d098485ba292",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-none-s3",
+      "commitment_sha256": "afe440f900a52ffde70992bb637557416e19c877db166e66ff11185302849a80",
+      "predictions_sha256": "7c98b7469d1243f7384582c3b1279ce375dc23c6767a9d454677d073b86efe59",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-none-s4",
+      "commitment_sha256": "200349e8dbaf9b99673630a8258e7f0e6bc67efac9cfb1d1ff516be8dd7b9e1d",
+      "predictions_sha256": "6401cd214689c698d177e9dc93d80455726679766aef53b4d244d42d56f8aeae",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-persistence",
+      "commitment_sha256": "c503f9fd68555a318921fa9f118872b53c5801f902ad7fc59e145435adaa3b43",
+      "predictions_sha256": "2c4229cdc45a3b492af78b4a717f99cf2d67b07345f4563dfaf3f33154e801ba",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-sage-s0",
+      "commitment_sha256": "84113199c4c32ac30bf2bd3b43b1fedd5ee65cc782595957e1ca7a0131e61753",
+      "predictions_sha256": "2dd5bd7be3ba64ac56cf9241a24529773799f5ba3744cf1abdbffc2bbc4645e5",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-sage-s1",
+      "commitment_sha256": "1c51b697a9b6bc4475966c8166e427c0b0b8c85056b11c43f771b91ffa07eb05",
+      "predictions_sha256": "e916b8c1265adedaac13269bd5396aa854af1d8791562bd274bc128a6b94e73a",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-sage-s2",
+      "commitment_sha256": "3d601241ef060bf1b3eb0660bf1413ef76253a8092e3176ff2ad907c1b23641d",
+      "predictions_sha256": "0dc1c2b2a2bf69eed9ac10ab884113d403636d0e2185da2898cda06e920d6d5b",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-sage-s3",
+      "commitment_sha256": "998e6cb29cdf265b4b6fd454b77a8dcdfca4f15c543ffbdcc57c04b16f54ebc0",
+      "predictions_sha256": "ef4293a6f6e143041f7e2adafcdca5149ae047335a5883d33a940f186c757d99",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d30-sage-s4",
+      "commitment_sha256": "95fb4a103a0d19ae7b900201c996a4735e283d5d2bc6529776e144a3971325bb",
+      "predictions_sha256": "394e8d815b5eb689d6ffa05f64d18a38ed0a7c35b9c3d733276c9aff02a093b3",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-history-knn-mean",
+      "commitment_sha256": "e025530576a2e8333404f6a9e647ab8ef23d6529959b2778988c9b5e48a560bb",
+      "predictions_sha256": "4e0a9a6bda64ac33f70c4d172132390d24ced28a98aaf776b389a874802525fe",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-none-s0",
+      "commitment_sha256": "c8287e47fa34ccd82991b791c7f651dc280d526b3849bd9fd53c12afbe99c91b",
+      "predictions_sha256": "4b17190572a1defff6948d91968dfe6cad3a154184c4a4f0ac610d37ee7ef2a9",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-none-s1",
+      "commitment_sha256": "ddc29f13ece86369e49cecd8e65329fea3876d7458b7590bec329f436f54c178",
+      "predictions_sha256": "06cf2e86ff8a9409dfc591161d33e7ed30c013597b1b471cfc1462d230343d66",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-none-s2",
+      "commitment_sha256": "089d28aabfd0f634affa4055fe420c32009ab7fcfd7fe2e02b82f182dc18adca",
+      "predictions_sha256": "c181e6ba75495cd1916c9eb31a249bdccfb7345633b2e28d7266588dcc97a3e8",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-none-s3",
+      "commitment_sha256": "464894ebf11bb92eb2516f937f8fa22ef044afcf67d98a5e6b039e056f9b826f",
+      "predictions_sha256": "336af458b9a56e7d61a65cb3d918bc0c144d874a317690d651a4512b563c4488",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-none-s4",
+      "commitment_sha256": "31095a10cb66fa4d9c905c1c2d41b807d88010d08eda9f763ef8db2442ae455c",
+      "predictions_sha256": "3bbd4263cfb86199b1dcfd163917ced5ae02695664ef2abbd698045176bbd082",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-persistence",
+      "commitment_sha256": "b6ab6ed4eab9ffff51a1dacf4eb3a1780ec8b4e05ad24ad2bbafb44b15a3a9fd",
+      "predictions_sha256": "c88607169fde44183cde1b4dc239ecde9b735427e76c78d8b3d3edd5bf9ecc8f",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-sage-s0",
+      "commitment_sha256": "9f162cda670e9e8a695de68872bd9391fde7128a5e7e7c540afd8564c4d6422a",
+      "predictions_sha256": "6ce45e8d729bde31af0e8f697159fc0bf54a1648907a61c2bdd75e8c3d4835cf",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-sage-s1",
+      "commitment_sha256": "4d67d336bbb85786742eb21555535ea0acd9d4088d31925aa49ce1b21a1b5546",
+      "predictions_sha256": "7e309b111b0a36f6df4d02a568d0c75d0035c9ae730b8c36bd96073817cd0370",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-sage-s2",
+      "commitment_sha256": "015506156deebd1407cad250dff1e5a3128c80f01ccf86789084c6fce48b0cca",
+      "predictions_sha256": "b69eadcc5c4421cc8950c12b8bc478c95840c25f8c60c25bdba709845e57c532",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-sage-s3",
+      "commitment_sha256": "97059c55ec4fe2121dbbb67bd576ecbdd03f9b6c9aff57f7c1b495031b721658",
+      "predictions_sha256": "649b7752610f697b01b0a7ef1f6910b736a5e243b09b809bab912239ab19bb82",
+      "events": 1289
+    },
+    {
+      "arm_id": "stable-d60-sage-s4",
+      "commitment_sha256": "b530a6c350527c41137e24903c664a7ed0de8ab4c3c76f2185e8e4f758f18f69",
+      "predictions_sha256": "4b328e3270bf3f402ccd0865bfa3beb7c77d9fe53bc0629301b44abf36d0fef7",
+      "events": 1289
+    },
+    {
+      "arm_id": "timing-none-d10-s0",
+      "commitment_sha256": "4c7f8e08be2c213ae56b34c3284978cc6cbde16175c6452acb6b593a4b6a5405",
+      "predictions_sha256": "b23c9bba5411e404f61ddeafac04bb814aa0de176bd4608a1d4ad32971fbf838",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d10-s1",
+      "commitment_sha256": "6ae89c1688b8de7ca0bdee6d648669d56422877935534e1c0ff1f12831a138e1",
+      "predictions_sha256": "4e705cbbd08b61ec6de4d8e3cfcab9dae57f7b87801b53c73289df261312987e",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d10-s2",
+      "commitment_sha256": "622fcf881ea28b37f28f5fc8d1168396cfeda91d411190e1811d2fe74b051f24",
+      "predictions_sha256": "0bc1b5800a4108e6246e5654cc25fbfd4323f3d785178b316365dc49cef37b04",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d10-s3",
+      "commitment_sha256": "ef83cff17c3aa5ed1da471cc2d9b63ec6460000f6c5ed01f7e4b6b0bfd0061ab",
+      "predictions_sha256": "40b02af2d2def0151bd7632119bd1e5b4414164e91e2f70917af80cddc042abc",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d10-s4",
+      "commitment_sha256": "66dee4e7622628591748a1503e56a7044b43fa688dfa6ca9f08f770ccd1a634e",
+      "predictions_sha256": "e71cef65461a649b81552b3c5b2897009e2b023985b14d682c5f9025b53ca8d0",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d30-s0",
+      "commitment_sha256": "5d40aa2809c53f1e673d935bc47e61e0f5b70ce8782e5acc5e755ae30b3562ef",
+      "predictions_sha256": "6470b0870762fd57c11d44965a30cc6c613f78c6794bc5cdf7fe9f69f428e4fb",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d30-s1",
+      "commitment_sha256": "54d440c34275c881c54017556e8706769c3d6ed1225ca29a8499e978ee3b6550",
+      "predictions_sha256": "55886b20d1473d880d5079b5e62b4522c6937cd4c80517bc0c81e1298fac68ca",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d30-s2",
+      "commitment_sha256": "d4bd7ecf81b92769e6adf5e2428a609a8b3c33f8c7a1f077e3a1ef26550b6e51",
+      "predictions_sha256": "87436939c513cbc6d3e20e301542ceabab1f68119d6c28086656bd62bd53d28f",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d30-s3",
+      "commitment_sha256": "49fa23326b4bb8fa9b773d803128bb0b635a06c1329a05d2c00052b5189fd3b0",
+      "predictions_sha256": "5742f2eb8f23855d8d2a4e47ae496497bbb901aef2f9df4554f5d1dc87057aa5",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d30-s4",
+      "commitment_sha256": "c95f0171556c1a7e38ba1c3c7daf53ceb889daab176dcace13981ab1e12d8076",
+      "predictions_sha256": "9d9d4c7dfcf7345e7902e0953c136579434512a3b1a28867a15490d5c485d818",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d300-s0",
+      "commitment_sha256": "cc78d728d6e4966f1c1237c45a8a87de6804607743ed4275c6cc4417a0684d6f",
+      "predictions_sha256": "c2b4e8043f92676df01a20a460f7c4f8fc3a17676978573a894dd1ef4a7294b6",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d300-s1",
+      "commitment_sha256": "9caf3db95c61dbc4265464d702e59763ede126fac4110b75fa34af5222baaeff",
+      "predictions_sha256": "b023a372fa58284e4d71f5fe7a98c4c5dec6134f4aae0290c5b78a8babae55d2",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d300-s2",
+      "commitment_sha256": "529d1bd4bd39fb4947c5497bec228c5e9c576cef29a91cf8fe902628ef520acb",
+      "predictions_sha256": "7d884a3e710fb35c03a322d7c1d2e92039dfbb08cb5f23952700df54522f3257",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d300-s3",
+      "commitment_sha256": "992306302df39c2595a1dc953b2f795a079ccdbcf77e494cfac0e6bea982a242",
+      "predictions_sha256": "d98a8dd58eedf392ed25febd71f7b2827dd6f170a0dba4950d00fa6e52205863",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d300-s4",
+      "commitment_sha256": "0b8b29aaa7abb29de5797e14f4a46436df5b64f847fec9845133ce4872149c8e",
+      "predictions_sha256": "a635f228eccfe4266a147a895d4274eeb94ab7c39c12185b45380802768c72c9",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d5-s0",
+      "commitment_sha256": "82f8507fd78b8f9f251ca6acf73bf5da1418a6917ab5d8299cfe3b4d68e01aac",
+      "predictions_sha256": "b6a341a7473b5983e0b3f80342766109a37e50b2c1934e398fb2b1b41a029d2b",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d5-s1",
+      "commitment_sha256": "f470223d2341c1c6d272e6c3efeffb2331222a993ce1437ad4eca4d3f5d2b249",
+      "predictions_sha256": "ca61e78c756c881e252072638c28b64646d0b0bd283c0ad9b7dd776508da9fce",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d5-s2",
+      "commitment_sha256": "0ce71c576658563c141fd4de2091a10262dcf6ab02c8ca2cdae1ebb16880f799",
+      "predictions_sha256": "f4ce05e14ff1abf8f8ac76b92d3aa32661a5658f875fe2f45a9f922a024474f3",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d5-s3",
+      "commitment_sha256": "f015343657d66d7b6e52260eafa7443af7960ec4d7400f5cdfdd162ed679d746",
+      "predictions_sha256": "98de9073300afacb88ca9f644faefa2a2bcb5d3a7f5213b37f2de9db8bc76199",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d5-s4",
+      "commitment_sha256": "1983b6c69f05e7f29de1a3cafed35df8f24a8e859fd3d831b6061111b417f6fc",
+      "predictions_sha256": "42e165c6f8bdd447ea299ad3841718395815b5f5f87025efc9f8eba8a8915311",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d60-s0",
+      "commitment_sha256": "07c9cc45e3b5ffd2ee7318743dcb8925b309769075374006c63bf8c3c8f36cbd",
+      "predictions_sha256": "daa2822bed6b86eeb31ca13f3dbc9b2ec9e3e395fb6cc68d663c0f4637e63ff8",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d60-s1",
+      "commitment_sha256": "ac5d57bbd135987fab61b55d8e54a9afbdeb60dedbb36d5e6eae906a4329e7a7",
+      "predictions_sha256": "038e06f8cf81a065132060882b009630ece2f9aa14a111f34b8c12520e0e68f0",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d60-s2",
+      "commitment_sha256": "43720393e7ed2a7bc6ba9aed818a713c027ea3d117fec1e708a686216141225b",
+      "predictions_sha256": "c0bd18f30bdfee46d8bb8041f5c661d26b44d3b627b14e4e197469cf5070b0bf",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d60-s3",
+      "commitment_sha256": "49ff4b152cf6da860d52bbc99671bef3cc02972e864cee406801242dc250a61e",
+      "predictions_sha256": "091bbc3486d576f13c68e7e964c2f1fddb87b29f2ce752dd4ee69cc33318d7ab",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d60-s4",
+      "commitment_sha256": "a40d36236eded475edfe332c45a2fcd2c697fd8117cb300fad4bde1e5a3211c1",
+      "predictions_sha256": "e912d19e40210277025afdb757e9f8b9eb331fb6cb86ba22ef4b479dcc3e0f96",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d900-s0",
+      "commitment_sha256": "9319fc5f188ab0ef0ed025c41f35ef5902ab108d68dc2040bb9b57af72844aad",
+      "predictions_sha256": "bc5714c00427f4e44f99449db2978bee545a3e5f7acf0ab99f3f539124dcbf3a",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d900-s1",
+      "commitment_sha256": "9e3bfe637a4d52d2209a257e72ebc498d4a2b68fc6d3d89a24ca05c5f773b963",
+      "predictions_sha256": "984da093d752f4de870a940cda9cffdf9e91a3c86ad8f2b99be5834a59c52d1b",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d900-s2",
+      "commitment_sha256": "dad4484252d88f585aa0dcf508dfff51e2fd86047fc16546bdfc06db899e6c3b",
+      "predictions_sha256": "1eed0572fbe6f1978100cc6e719f37df9923723535a52bfcb9df47cd80972271",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d900-s3",
+      "commitment_sha256": "4b9c4a43a69d756ad845f9381878aea74b36aaac64ca31ae316b3699c925bb05",
+      "predictions_sha256": "f5995535ca9a338fe17dbd0580333f2d8687aa7a7825f3b1e2e9ff2f104e29f1",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-none-d900-s4",
+      "commitment_sha256": "630eba7ff7249f466cb5b1cf73689c9ab8c12812093a5a0777e8bb3668dcedfd",
+      "predictions_sha256": "740abc08cceff505fd36bd14007c513c3e29c08eb510ed6059cd2189319d7917",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d10-s0",
+      "commitment_sha256": "5351a0991a5cdde1b3d98824bf9e10dd1f443ce20a86fa64ae7d1f866a3c0402",
+      "predictions_sha256": "bdf8cb345ee20e32e9d0dfac675aafd3c4b8f5f1b3ee717836f9e695add738ca",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d10-s1",
+      "commitment_sha256": "6962be7d44848c29e030ed4406719fcf70acf011de0c6893687401647267e3b9",
+      "predictions_sha256": "6e8b20ee4182fad3f92c20336afe1643b5a1beb13e0b438480c54f4d43a60a5f",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d10-s2",
+      "commitment_sha256": "21dec00f26f84ac65101598f1af7ff026217513d854708e822421aa15e5e1212",
+      "predictions_sha256": "4d919effa1a6f32afc1d0e07c9673e7924ab861d49d93018468991a2006ddc88",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d10-s3",
+      "commitment_sha256": "053d5172b80878d2420169ff9f04fbc86a5b547b2abc54cb689fdf906616f2f1",
+      "predictions_sha256": "3f4798de48d7f24f0485180b04db9a88da262d6564d1c95fcea537080b8b3144",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d10-s4",
+      "commitment_sha256": "689528e65913459b03e8b0be48905a429241a94c02e6e9929aa82757ec74fd96",
+      "predictions_sha256": "2037ff1b462cef86838e6359337dcf846806fd3d03ffa670be6d6915d40471fb",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d30-s0",
+      "commitment_sha256": "866a66f161d7a8a1b18aa5cf4ade7767831a06179647c9669289581be9aa130f",
+      "predictions_sha256": "24927da105004c86e882f0ea55a94850b9bca4df260333c35b7b2680bec5cee3",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d30-s1",
+      "commitment_sha256": "ab60b564ca17950d59b6ca2798b8e61b5580f3bf2a5802c9a640d07a03b5fd1b",
+      "predictions_sha256": "a15dc22120efaaa40eb1dbef7eee0f60fba32b9941145249d6a5007de36317a6",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d30-s2",
+      "commitment_sha256": "fa654d0c7f346ee88c7b9eeb89c8be0415faf48a161d5f20a697485997cd7104",
+      "predictions_sha256": "2c3fb1c4abdb3621caf8c9da207dc76cf801e079af1d230ff8daf47a8417d70b",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d30-s3",
+      "commitment_sha256": "188a7c4bc8ed38f9454c1d8fc9c1c0e210b22817aac7f74537b33e4798ab7ed4",
+      "predictions_sha256": "fe21325fe7b5b1ec68f61f56c420d9ee403edc6a70bacaff743e390a3b6adebd",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d30-s4",
+      "commitment_sha256": "1f45cd148c5054a828298282b58c13b0790b400b620d1361d59b9690d83d2196",
+      "predictions_sha256": "61064284f1bc339c045b1a9673facd1ce567ec86521158555f0eaa5b07ef33ea",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d300-s0",
+      "commitment_sha256": "bbaada02b2c60df43dc5f3e261c7f95b02e4a61d187cd0714a436114bd616cad",
+      "predictions_sha256": "998abef705ec93419c3ee33c9410bacf4a36788b5ee5301c314191e6e2469938",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d300-s1",
+      "commitment_sha256": "5668f20d3d45074e9f1e7d453dc8ab2ffa223c7bd2825691494d8a01447392f1",
+      "predictions_sha256": "ebedda134f291b715183ffc965b1fa5df3f57b18ccd95cdd85c69f653b45dee8",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d300-s2",
+      "commitment_sha256": "695634078ba49044299b161df83e53e9163820caaac788c154bf498ebe53d44e",
+      "predictions_sha256": "5226e69ec12bd2b67c4415331ef0f35bcb923dfd3c3198c3b74c611405da784b",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d300-s3",
+      "commitment_sha256": "eece34fd04e7cd9f2c0ad34f85d9a3996aebeb680f9ef17257a4f73546e000ae",
+      "predictions_sha256": "306bfb026a6e6b5f90138bce8c2562061ecd917545f058e0e3a23dca80812220",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d300-s4",
+      "commitment_sha256": "a52993ed35c4d4abf472529e5eee366f9367bca6a7e6a73d7d39065dd876889e",
+      "predictions_sha256": "8f89b34914d4d027a742394b27553196b62f50ef133b3520b99041ee1e3b3ade",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d5-s0",
+      "commitment_sha256": "005d54b415904f985a63dde7841d48461f13eb7ffad63f84141914cd330d839c",
+      "predictions_sha256": "cf5aae97a7b5069b82baf04f4c07f52e556663aa812075dc3992567c2aa3f453",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d5-s1",
+      "commitment_sha256": "66f64c4f35389521acf1bb4f6f0f03614852a8951e0fbc25d00adccc9685f42f",
+      "predictions_sha256": "618382a27975cee324f4b7c5fd2640384c61888ca6bc29ed8a6a80624e352be8",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d5-s2",
+      "commitment_sha256": "a180cd4da270cc6c2012f24ce5a22c8af64e118e91913265b7d6b173324065e9",
+      "predictions_sha256": "d2932556c32a1af67e1808e2f0b9ad6ebbd878e19f97b84464d6257a474c2def",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d5-s3",
+      "commitment_sha256": "e9c88e443eeac890eefbbe6813d04c4ec319e43b6709518863c8d18f9d435425",
+      "predictions_sha256": "c76ae4e488c0512c07fb7fe7c710b0d23f4bcb1bd2eb2f2d6c7e9de2f1ffe54d",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d5-s4",
+      "commitment_sha256": "2d265a7549319f75d9ec8075cda1da7e055ebc324c0afe98fc7a8e213ac273af",
+      "predictions_sha256": "5ad9be49f9d259d9bbd867fbe67be8b94b086bd4e29187499450280d5aac9ffc",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d60-s0",
+      "commitment_sha256": "bb3d12e45f5f00323b623a23b2154d3305ff9d82f398df534f467391c0954578",
+      "predictions_sha256": "39e6c84a69ab794e1a3a2ab9d07e7899c9e5c9b564b899cbd95c6f2758a208c1",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d60-s1",
+      "commitment_sha256": "106dd3c1e4aac309dc574a76d9d528eceda7db0a57d048828b1c666ebb5522de",
+      "predictions_sha256": "7f0e495433fba9f24d783931ae53f8b9ed7a867a3b2decc92a98d11e88ac2966",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d60-s2",
+      "commitment_sha256": "9649b2b01c4e23d3895aa37775252b8539bbbce8976b9fb5af5d835824b46516",
+      "predictions_sha256": "02bbe41cedbdf106d017069bcda94ad5f2ba20e91bef2ae0d663b15815ca9f7f",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d60-s3",
+      "commitment_sha256": "c7eabfc93cb63f6b53aed98c6dbab00143d07e4efb863d771a3e955c5185b676",
+      "predictions_sha256": "b1d6b31407a0a93bab18815dbb2f6e738bfda077ff7a732f26d47ead66914931",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d60-s4",
+      "commitment_sha256": "b209232d9734320b6df27077358f7e7ab2757a3550e634d83775be5d2803f6cb",
+      "predictions_sha256": "d037a5881d0141757f1ae419822646929d52c84681b37f3a165053536ad5bfdc",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d900-s0",
+      "commitment_sha256": "e489b012902642a139937d1c31c05077d80796c0c9e1bf1e2203dea67dab296d",
+      "predictions_sha256": "31066b24bfa4f068a947f51aa0af1996024cf52b973b71dbd4c2056478477d1a",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d900-s1",
+      "commitment_sha256": "a5e2d8f273e0697000569d0441eb9df84a1ad0e67e35dea2a3995486ddfd0fb7",
+      "predictions_sha256": "19ea4205fc20b5a22bf90c39065745f80ac44d0976e634f88befaa0588745b00",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d900-s2",
+      "commitment_sha256": "92cd0540dfc91d3d69600b9b476cf7a51c280900475f4159ba06d1d1f29bea9c",
+      "predictions_sha256": "dfe84d9cf94917294c2766cb353208e3478ffdbd4858857b73c745218b48cfb6",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d900-s3",
+      "commitment_sha256": "e6785c766be6733c4f730881a8858c229a5647aac459cb00df44c3c7b29a039a",
+      "predictions_sha256": "eed5ba18090c39c98fae7444365ae77c919faa7a3c0d383c081400a9154c03b2",
+      "events": 1124
+    },
+    {
+      "arm_id": "timing-sage-d900-s4",
+      "commitment_sha256": "78da9c37331795816f64833aa6be2fede0badbd272b8d36756e8dbd106784869",
+      "predictions_sha256": "5336c9535de3f2cbf05c5d1c1aee99ff97f93b1af484210eaea611911313389c",
+      "events": 1124
+    },
+    {
+      "arm_id": "withhold-d30-matched",
+      "commitment_sha256": "70022856d7b0bf0b53e6e50eaa1d3aa6badada0caffda24beafde90f2f770208",
+      "predictions_sha256": "7ad8ad4334ee58e5d88377fecc8e0c3506a7107475ca409f2a2d40b90721b91e",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-native",
+      "commitment_sha256": "c58c0aaa11f4480478039c21db5964c7cec021636e904e52d95e10dc4a286599",
+      "predictions_sha256": "eb0003df8f44f6298a33808f6abdc309344f2f0f4b1622bcd470475d6790edf3",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-none-s0",
+      "commitment_sha256": "7c74d6e916d955f091dd024a35823a37533ae58501ce79821db7bb7095001772",
+      "predictions_sha256": "7fc3d63d3880d1642073397bdcafb625bcff1dbd35861e3d7e2d1f4f0df81426",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-none-s1",
+      "commitment_sha256": "5e94468a0832de1e6cb250deae82c8884877b1a402ce18dfb84a11ff8dd7ec1e",
+      "predictions_sha256": "0d689f740a6253d244abc7d0e7257e70fcf7349b8661c3a855144221b3c4e4c0",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-none-s2",
+      "commitment_sha256": "c7710e8f7952450d256a5404a9128dfe1a934a19437b0e668e7de1e11b103f16",
+      "predictions_sha256": "2db9cb244052a64de54b3df0a6f78ddb40895f91c308dc619cb75be5b449d83a",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-none-s3",
+      "commitment_sha256": "56d6b9084ff1edb7eb90664c6426942b47d85870c1846cf4e470123cbaf6550a",
+      "predictions_sha256": "e890ae73de24b0d87d7a2e35ce889d41315968760776cd866f3984e08b0e3571",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-none-s4",
+      "commitment_sha256": "7b195afc0f22067bf252ef43d33f36cc4eb9996e2fe7cf76f9d7a5caba477ff0",
+      "predictions_sha256": "a54e87996c7c27a9eecba6f3a0e15af093908bd32c0aa5373b65f640d7b7db1a",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-sage-s0",
+      "commitment_sha256": "ad75399c4d6f3f24266cfad4a5005c36e4aed7d7f3a73bca9343c646d3e04703",
+      "predictions_sha256": "b98f678cdcc0e42adb06b4b936f633e1014032d76f76e305f8810f777097d8b6",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-sage-s1",
+      "commitment_sha256": "76b9aeb1a6a3d1b4bd9911a2246c9feb55c5572d860fcabdf2437dfa06a1faee",
+      "predictions_sha256": "3ddf646b67fbf68b15f335176894d43c9c89f6dfe7f7caff6b427c9d2bc3d2db",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-sage-s2",
+      "commitment_sha256": "dceebdbd4c6c863801cd1e3e8da512d0f240463517e210ca0a567ec8699369df",
+      "predictions_sha256": "991fda9f9e7e4107ed31cc3e3bbd5838d104136c64473afaa42b9162191850d5",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-sage-s3",
+      "commitment_sha256": "b26b223f746372005297f955cb9ff06948221a42fec0eb656f1c133c4060c755",
+      "predictions_sha256": "da9674900ccc7541df6c3aa049424336c4dea7e5c7bbcf7bf471e353dbfd339a",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d30-sage-s4",
+      "commitment_sha256": "5fd954c3cb6e24dee65213f041aa5103d162cea74f1f2c775eb98f08aaac9e0a",
+      "predictions_sha256": "8c4a14fea9b5ae349cc3c807ef2da15d3497a6bc4da5dc2738f3fc2192eb92e3",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-matched",
+      "commitment_sha256": "cc73fd82ebee6318c27e4745e0aa5f27f58e3e0caa002cac8ffaa8df6112f855",
+      "predictions_sha256": "03dfee56541828ebad1b74f402fd9f220cf2ecefac1211cbdc72e8235c8521c1",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-native",
+      "commitment_sha256": "7518dd4a32d683230e4d8dee1f162b92b3fc17d014f8d9da5c69d88685e18266",
+      "predictions_sha256": "3e277191c47cd4f812b4ea947602ccd8d6e4d23e5cd762e81de80e530782500f",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-none-s0",
+      "commitment_sha256": "b26a9051f3bfd639e7bf7114d761580e39961dbcf3a6621c285fc8234015ffe4",
+      "predictions_sha256": "fbd9782df165880dfb7d659e7b4fc09ca302a28cc07ba67a3cb70a562218bb06",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-none-s1",
+      "commitment_sha256": "d4430ddc54c91e55a5eee11b5a3a8fd4826be0e717113248ac587dea1f12af1e",
+      "predictions_sha256": "8d1b1dfd223db99bcfc9162e920458a2dcca3cdcfbc0e0cc4401bb433485a335",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-none-s2",
+      "commitment_sha256": "375bcc5a1547c828f0f7b1b9e6ec8dffabf0cf5c02b0890a747c062285a18983",
+      "predictions_sha256": "a987764616f19a2ba70911143feb3ff9df4a5b39ae16540094409a08b5fbbe1f",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-none-s3",
+      "commitment_sha256": "4e185f60a43991341278ea0fbe1d35b94251ed79461acf1bcd5ea64a621669d0",
+      "predictions_sha256": "7bd59bb9a2c11b89cd732dae8032dcb08dfb410f4697998feab1f0a10078ae9f",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-none-s4",
+      "commitment_sha256": "3521fbe15aaeb1af6613a0759c60045516c4a87fe454681501687c04932a85f4",
+      "predictions_sha256": "2883ad1b75c74ca27bcd022fdc062406694b03a205c67508faaf83c5bad90ebc",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-sage-s0",
+      "commitment_sha256": "27f174abb4fc78fc63a7a0d5583002cab0d467c69fde95f9a233a4ede92f3299",
+      "predictions_sha256": "73f3a04c228d7915740a9d79aee4708ce8d0b476d1413d996e18e6b7bf5a0865",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-sage-s1",
+      "commitment_sha256": "3c38fdc8834bdc3d21ec157cfd71cdabcac875fdf86b5b38e2243228d4eb90a0",
+      "predictions_sha256": "b8b9bb0d832059ae9e90e1d961fad247fde22bc9ce71c4ed21d9ec61e3c368ee",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-sage-s2",
+      "commitment_sha256": "4f7e250f2d976e1fa65cfa594fa943b98e9c72a3a00ddfc1dd51e4a5fbf0c1c0",
+      "predictions_sha256": "2ca0d30839788b22fe3dbe95c5cf9c1b35c5ec69975c3ded2dc6d17890e1d7e2",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-sage-s3",
+      "commitment_sha256": "1a5fef3ca9083f4a92a222b081b0dae426c15e8beb414fb06cb0d8ac67e0ce9b",
+      "predictions_sha256": "4e7e347378d9292ccc803d1506fc2f5246d575cbbe75648e4a64b3bca24777f0",
+      "events": 1289
+    },
+    {
+      "arm_id": "withhold-d60-sage-s4",
+      "commitment_sha256": "4b9daeca37da6177701d167a15160fe522cc80b7ff7515557e1ce156bc88672b",
+      "predictions_sha256": "26f5f7b644a9591a29399a35be3864cc7529b8ab39cf36d2858e11dc47b1dbc5",
+      "events": 1289
+    }
+  ],
+  "all_retained_predictions_verified": true,
+  "outcome_files_opened": false
+}

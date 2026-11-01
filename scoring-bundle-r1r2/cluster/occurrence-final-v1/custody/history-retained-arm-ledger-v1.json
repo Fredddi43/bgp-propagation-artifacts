@@ -1,0 +1,56 @@
+{
+  "arms": [
+    {
+      "arm_id": "R-core"
+    },
+    {
+      "arm_id": "R-base"
+    },
+    {
+      "arm_id": "R-gbdt"
+    },
+    {
+      "arm_id": "R-transfer"
+    },
+    {
+      "arm_id": "R-panelfix"
+    },
+    {
+      "arm_id": "R-temporal"
+    },
+    {
+      "arm_id": "R-temporal-order"
+    },
+    {
+      "arm_id": "R-mean"
+    },
+    {
+      "arm_id": "R-tsfm"
+    },
+    {
+      "arm_id": "R-chronos-ad"
+    },
+    {
+      "arm_id": "R-counts"
+    },
+    {
+      "arm_id": "R-h1"
+    },
+    {
+      "arm_id": "R-h1-ood"
+    },
+    {
+      "arm_id": "R-h3"
+    },
+    {
+      "arm_id": "R-delay"
+    },
+    {
+      "arm_id": "R-withhold"
+    },
+    {
+      "arm_id": "R-stable"
+    }
+  ],
+  "kind": "r1_retained_arm_ledger"
+}

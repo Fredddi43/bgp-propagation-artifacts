@@ -1,0 +1,37 @@
+{
+  "input_only": true,
+  "masters": {
+    "origin_change_invalid": {
+      "30": {
+        "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/protected-origin-invalid-20261027/origin_change_invalid-d30/records/master-000/output/custodian-master.json",
+        "sha256": "9e9641232f29362d042abeb03004d4033552ba213dfa6e05612b4c4ed765b379"
+      },
+      "60": {
+        "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/protected-origin-invalid-20261027/origin_change_invalid-d60/records/master-000/output/custodian-master.json",
+        "sha256": "79e0ee1e4185784000e0d08f3a991ea274c8df31666d0b5ca167c2edc0251e80"
+      }
+    },
+    "origin_change_valid": {
+      "30": {
+        "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/protected-origin-valid-20261027/origin_change_valid-d30/records/master-000/output/custodian-master.json",
+        "sha256": "945b840abe95110894d209d619ac78e5f3564df008e8bd1e9c93b4f582dbfd52"
+      },
+      "60": {
+        "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/protected-origin-valid-20261027/origin_change_valid-d60/records/master-000/output/custodian-master.json",
+        "sha256": "829fda5badee54600a386aab9249a90060c40c2af3d3afbe8506376c2c250230"
+      }
+    }
+  },
+  "metadata_projection": {
+    "path": "<FORECAST_ROOT>/data-custodian/newperiod-origin-projection-v1/projection.json",
+    "sha256": "48a70fd06768f65941861f328f7f7d28cadb3ef5ed57d5a3c537dd2f35baeddf"
+  },
+  "sampling_rule": {
+    "path": "<FORECAST_ROOT>/data-custodian/origin-s0-staging-v1-20261027/control/sources/origin-family-prospective-acquisition-proposal.md",
+    "sha256": "a8fa51b0fbf137c7685e2a532e8abe981757876295f349a779b364e15c85dbb6"
+  },
+  "source_review": {
+    "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/g4-four-scope-preparation-20261029/family-source-cohort-review.json",
+    "sha256": "4facc5c51bb24fddb5037c2712536dded1ecb05f6aba5fd612739656ae8033c4"
+  }
+}

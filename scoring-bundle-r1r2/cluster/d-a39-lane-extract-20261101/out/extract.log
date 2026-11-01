@@ -1,0 +1,10 @@
+counts ok
+membership-h1 ok
+membership-h3 ok
+membership-timing ok
+membership-history ok
+membership-ordinary ok
+stable ok
+origin ok
+additional_baselines ok
+written <FORECAST_ROOT>/d-a39-lane-extract-20261101/out/extract-full.json

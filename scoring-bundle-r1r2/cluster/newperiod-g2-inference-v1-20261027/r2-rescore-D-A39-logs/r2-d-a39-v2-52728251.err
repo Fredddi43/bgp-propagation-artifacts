@@ -1,0 +1,49 @@
+{"d60_only_engaged": true}
+{"fast_authorize": true, "input_cache": true}
+{"input_projection_entries": 318035}
+Traceback (most recent call last):
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 567, in wrapped
+    out, status = function(*args, **kwargs), "scored"
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/newperiod-single-r2-persistence-20261024/components/composition/components/stable/consumer.py", line 135, in evaluate
+    and cell['role'].get('baseline')=='persistence' else m.score_cell(cell,e,stable_table))
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/newperiod-single-r2-persistence-20261024/components/composition/components/stable/reviewed_membership.py", line 247, in score_cell
+    rows=original.per_event_rows(cell['predictions'],cell['rows'],labels,baseline=cell['baseline'],inputs=cell['inputs'],
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_parallel_scoring.py", line 366, in per_event_rows
+    return parallel_per_event_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_parallel_scoring.py", line 283, in parallel_per_event_rows
+    return score_fn(
+           ^^^^^^^^^
+  File "<FORECAST_ROOT>/data-custodian/single-R2-v1/source/src/bgbench/forecast_custodian_eval.py", line 514, in per_event_rows
+    "metric_version": ranking["metric_version"], "jaccard": _jaccard(truth, predicted),
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<FORECAST_ROOT>/data-custodian/single-R2-v1/source/src/bgbench/forecast_custodian_eval.py", line 409, in _jaccard
+    raise ValueError("Empty target and prediction: Jaccard undefined on a scorable event")
+ValueError: Empty target and prediction: Jaccard undefined on a scorable event
+Traceback (most recent call last):
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 662, in execute
+    return d39_execute(runner, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 758, in d39_execute
+    return finish(runner, plan, reader, records, result, score_receipts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 1070, in finish
+    raise CompletionRefused("D-A39 completion refused: " + json.dumps(blocking, sort_keys=True, default=str)[:4000]
+CompletionRefused: D-A39 completion refused: {"families_failed": ["stable"]}; durable records under <FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39
+Traceback (most recent call last):
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 1199, in <module>
+    main()
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 1192, in main
+    r2_exec.main(["--spec", spec_ref["path"]])
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_exec.py", line 218, in main
+    result = module.run(pref, aref)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/agy-lanes-20261027/g2r2/chain-d39-v2/r2_rescore_secondary.py", line 1186, in run
+    return original_run(pref, aref)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RESULTS_ROOT>/nobackup/g2-chain-20261029T001120Z/repo/.agents/operations/newperiod-single-r2-persistence-20261024/runner.py", line 339, in run
+    raise R2Failure('Single R2 execution refused at '+stage)
+r2_persistence_runner.R2Failure: Single R2 execution refused at single_evaluation

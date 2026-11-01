@@ -1,0 +1,51 @@
+{"arms": 346, "bytes": 163473454, "check": "tierA:published_freeze", "frozen_d30": 5, "ok": true, "path": "<FORECAST_ROOT>/data-custodian/g1-freeze-20261028T184148Z/freeze.json", "retained_failures": 54, "sha256": "0164b1da3462affe180f..", "unique_ids": 400}
+{"arms": 345, "bytes": 163421765, "check": "tierA:amended_freeze", "frozen_d30": 5, "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/amended-freeze.json", "retained_failures": 55, "sha256": "921fc9bb06888e39b239..", "unique_ids": 400}
+{"bytes": 93612, "check": "tierA:seal", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/seal.json", "sha256": "8ede1a58a437559ea1fb.."}
+{"bytes": 4034, "check": "tierA:arm_spec", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/arm-spec.json", "sha256": "f8f30b3525bc602012b0.."}
+{"bytes": 719, "check": "tierA:marker", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/unblinded-8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f.json", "sha256": "882deb925bf72dc16d0d.."}
+{"bytes": 133902, "check": "tierA:primary", "ok": true, "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/attempt/primary.json", "sha256": "849e064518d1aa7e0b1c.."}
+{"bytes": 53912612, "check": "tierA:primary_scores", "ok": true, "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/attempt/primary-scores.json", "sha256": "af9656ac8e1961eccbda.."}
+{"check": "tierA:identity-arithmetic", "evaluated": 395, "excluded_frozen_d30": 5, "note": "395 evaluated + 5 retained/excluded frozen d30 = 400 original ids", "ok": true, "published": 400, "retained": 400}
+{"arms": 345, "check": "tierA:seal-content", "ok": true, "outcome_files_opened": false}
+{"check": "tierA:attempt-dir", "files": ["intent.json", "primary-scores.json", "primary.json"], "ok": true}
+{"arm_spec_sha256": "f8f30b3525bc6020..", "check": "tierA:marker-binding", "ok": true, "unblinded_utc": "2026-10-30T08:49:43.433430+00:00"}
+{"bytes": 644719739, "check": "tierA:labels-metadata-only", "mtime": "2026-10-29T08:04:25Z", "note": "label contents not read", "ok": true, "path": "<FORECAST_ROOT>/data-custodian/complete-label-preparation-v3-retained/arms/000/attempt/output/labels.json", "receipt": "size + regular-file identity + attempt-12 marker labels_sha256 binding"}
+{"check": "tierA:spec", "entries": 328874, "ok": true}
+{"bytes": 8715, "check": "tierA:template", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-run-20261030-a17/r2-template.json", "sha256": "2028cee31de5ad7b0237.."}
+{"access_log_budget": 4294967296, "check": "tierA:access-log", "informational": true, "log_bytes": 12048730156, "note": "launch admission only: final validity never depends on this; the completed run proved its own growth", "ok": null}
+{"check": "tierA:evidence-baseline", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-baseline.json"}
+{"check": "tierA:evidence-h1", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-h1.json"}
+{"check": "tierA:evidence-h3", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-h3.json"}
+{"check": "tierA:evidence-history", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-history.json"}
+{"check": "tierA:evidence-ordinary", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-ordinary.json"}
+{"check": "tierA:evidence-origin", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-origin.json"}
+{"check": "tierA:evidence-stable", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-stable.json"}
+{"check": "tierA:evidence-timing", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/evidence-timing.json"}
+{"check": "tierA:full-retention-review", "ok": true, "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-evidence-20261030T0440Z/full-retention-review.json"}
+{"check": "tierA:ckpt:baseline-ad753ced838eb812dcc44f64.pkl", "ok": true}
+{"check": "tierA:ckpt:counts-959aaa80fd4471fa978b3e43.pkl", "ok": true}
+{"check": "tierA:ckpt:members-125c784dc89ccc5380d85442.pkl", "ok": true}
+{"check": "tierA:ckpt:members-1dc1eba251a8c5065f29ebdd.pkl", "ok": true}
+{"check": "tierA:ckpt:members-41d7a100dc90759763379813.pkl", "ok": true}
+{"check": "tierA:ckpt:members-51e89096eddb87691d10b61f.pkl", "ok": true}
+{"check": "tierA:ckpt:members-84ddd286f969b77b98ef221e.pkl", "ok": true}
+{"check": "tierA:ckpt:stable-8b2ded7e985a2611c5bbe7e6.pkl", "ok": true}
+{"check": "tierA:r2_checkpoint-sha", "ok": true}
+{"check": "tierA:chain-code-present", "missing": [], "note": "presence only; the exact ready.code map is verified at its recorded paths in tierC:approval-binding", "ok": true}
+{"check": "tierA:dry-run-ready", "found": ["/r2-rescore-D-A39-dry-run-52725204/records-dry-run/ready.json"], "note": "presence only; the approval->ready->binding proof is tierC:approval-binding and tierC:stage-binding-chain", "ok": true}
+{"check": "tierC:fixed-artifacts", "missing": [], "ok": true, "other": []}
+{"approval_ref": true, "check": "tierC:intent", "deviation": "D-A39", "mode": "open", "ok": true}
+{"blocking_keys": ["families_failed"], "check": "tierC:completion", "errors": 0, "kind": "newperiod_secondary_rescore_completion_D-A39_v1", "label_reads": 1, "ok": false, "passed": false, "utc": "2026-10-31T21:53:11Z"}
+{"blocking": {"families_failed": ["stable"]}, "check": "tierC:completion-blocking", "note": "the driver's own durable verdict refused completion", "ok": false}
+{"check": "tierC:d39-marker", "ok": true, "sha256": "ec9dbeab39e4169b06b3.."}
+{"check": "tierC:header-parsed", "kind": "newperiod_secondary_rescore_D-A39_v1", "note": "only the header object was parsed; the secondary suffix was not decoded", "ok": true, "representation": "single file"}
+{"attempt12_marker": true, "check": "tierC:header-refs", "freeze": true, "intent_graph": true, "labels": true, "ok": true, "primary_of_record": true, "recomputed_primary": true, "seal": true}
+{"arm_spec_full_bound": true, "check": "tierC:marker-graph", "ok": true, "out": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/primary-recomputed-D-A39.json"}
+{"check": "tierC:primary-canonical", "note": "canonical value comparison of the actual files; the stored booleans are only a claim until matched here", "ok": true, "recomputed_primary_identical_except_marker": true, "recomputed_scores_identical_except_path": true}
+{"check": "tierC:decision-check", "float32_mismatch": 0, "members": 232, "ok": true}
+{"check": "tierC:release-flag", "label_reads_this_run": 1, "ok": true}
+{"check": "tierC:families", "entries": 9, "ok": false, "problems": {"duplicate": [], "failed": ["stable"], "missing": [], "not_persisted": [], "persist_error": [], "unexpected": []}, "why": ""}
+{"bytes": 6027451047, "check": "tierC:raw-result", "ok": true, "parts": 1}
+{"approval": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-approval/APPROVAL-D-A39.json", "bad_fields": [], "check": "tierC:approval-binding", "code_exact": true, "code_files": 11, "header_binding": true, "ok": true, "parallel_options_ok": true, "ready": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-dry-run-52725204/records-dry-run/ready.json"}
+{"check": "tierC:stage-binding-chain", "ok": false, "why": "Bad(\"every attempt-12 lane receipt must load from its attempt-12 checkpoint, violating receipts: ['baseline:c78b1cc51268:computed']\")"}
+{"checks": 50, "failed": ["tierC:completion", "tierC:completion-blocking", "tierC:families", "tierC:stage-binding-chain"], "mode": "explore", "pending": [], "summary": "FAIL"}

@@ -1,0 +1,16 @@
+{
+ "approval_record": "<AUTHOR> answered 'Yes, fix and rerun (Recommended)' (one disclosed third label read, stable-peer lane only) and 'Not scorable, exclude (Recommended)' (an event whose stable-peer target and forecast are both empty is excluded from the stable lane and counted) in Claude Code session <SESSION_ID> at 2026-10-31T23:24Z; bound to dry run 52748137 by the owner on 2026-11-01.",
+ "approved_by": "<AUTHOR>",
+ "deviation": "D-A40",
+ "dry_run_ready": {
+  "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A40-dry-run-52748137/records-dry-run/ready.json",
+  "sha256": "71b41e38edca6a303736d7bf01e85b445886ad89e0c2f79d496d3bb2df42bb53"
+ },
+ "freeze_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+ "labels_sha256": "20e3044fa439866512d618d540dcefad1516151bc3f63ac482ee480bb6303447",
+ "primary_json_sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+ "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+ "scope": "stable lane only",
+ "seal_sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f",
+ "third_label_read_authorized": true
+}

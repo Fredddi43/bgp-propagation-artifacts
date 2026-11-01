@@ -1,0 +1,114 @@
+{
+  "automatic_retry_authorized": false,
+  "code_source_manifest": {
+    "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/source-manifest.json",
+    "sha256": "0bdaf006994bc97aff3ecbe0bd5ea6b98685e7c5e1d7b789e79623dedf8940da"
+  },
+  "cohort_manifests": [
+    {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json",
+      "sha256": "45865cdf4a76884bd1b55e2da43bc9875bd7d62892a8117cc2c03539579dee1c"
+    },
+    {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json",
+      "sha256": "f885a805deb61a17e295d4d93b2a41d51eea842a038c5965efa0f66eeaf1754d"
+    }
+  ],
+  "completed_utc": "2026-10-24T04:48:09.455451+00:00",
+  "development_freeze": {
+    "actual_launch": {
+      "path": "<REPO>/.agents/operations/r1-parallel-execution-v11-20261024/execution-v1/launch-result.json",
+      "sha256": "85e92767cd9a78666a8d43ee63cf792c043e3af3c6a307b4a0b9b00a2e6bfa0d"
+    },
+    "authorization_lower_bound_utc": "2026-10-23T16:55:22.753222+00:00",
+    "basis": "Original reviewed execute verifies this exact approval before evaluation; authorization is a lower bound, not an observed start timestamp.",
+    "execution_approval": {
+      "path": "<REPO>/.agents/operations/r1-parallel-execution-v11-20261024/package-v1/control-v1/execution-approval.json",
+      "sha256": "4a57b284a60f162fe7184a2ac3c37cb046b475cb989bb1ef179cafd5d3c65c4a"
+    },
+    "exposure_ledger": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/evidence/docs/paper/forecasting-improvement-20261017/EXPOSURE-LEDGER-DRAFT.json",
+      "sha256": "ba323f55d727725ec2cfd29748a3108f542daafcaca2e5e328180e34a3a6e636"
+    },
+    "frozen_utc": "2026-10-23T16:51:57.756214+00:00",
+    "observed_start_time_claimed": false
+  },
+  "development_frozen": true,
+  "evaluation_manifest": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/custody/r1-access/r1-seal-134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887.json",
+    "sha256": "1cad501a3fab90abc3f2eb8cd0f2ffd29f193c435e77c4ded27bc447d41e2b5c"
+  },
+  "evaluation_release_complete": true,
+  "execution": {
+    "complete_sha256": "03d1c73ef8bfe07450392d31830342397c1fb30c0f265dd4780822a3ee1ac9cf",
+    "execution_spec_sha256": "2233750ea0847b1034e6a7bf25e569026a72320bde866bf32e136fc1a7a238c5",
+    "retained_cells": {
+      "committed": 1066,
+      "failed": 90
+    }
+  },
+  "integration_gate": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/manifests/training-integration-v6b-both.json",
+    "sha256": "7e48955b6dfb1336d55e8ad754318f522ee9b7f46e1d9e210ec076096ebded77"
+  },
+  "kind": "r1_retrospective_release_v1",
+  "passed": true,
+  "prediction_ledger": {
+    "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/evaluation/ledger.json",
+    "sha256": "5575ebb3ad13b117ce02de2f342da321c3fa4c7b836b04be3df39766960e70c6"
+  },
+  "released_window": {
+    "end": "2026-01-01T00:00:00+00:00",
+    "start": "2025-09-01T00:00:00+00:00"
+  },
+  "retained_arm_ledger": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/custody/history-retained-arm-ledger-v1.json",
+    "sha256": "0c137d44a03062df8009e6b81e6122bd07a438be3aa51aa37b6777a0729e1dc8"
+  },
+  "score_artifacts": {
+    "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+    "sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d"
+  },
+  "source_audit": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/source-audit-v5/source-audit.json",
+    "sha256": "0f9be4347834ddf9346cea5f027b3dee3aa26ea409ce55a9bf22ce40cd290db3"
+  },
+  "verification": {
+    "class_ab": {
+      "assessment": {
+        "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/independent-opus-review-v1/vrun-r2-actual-assessment.txt",
+        "sha256": "d04808e30af5cd2a75dc022ae747985c3890754b8891f5474edce7750e72c9fe"
+      },
+      "findings": {
+        "path": "<FORECAST_ROOT>/r1-posteval-vrun-v11-r2-20261024/out/verify-r1.json",
+        "sha256": "d2a18c6f240c42efd61013c482519a6d2f8f666aa4f7e10c384f7a8fbc200a93"
+      }
+    },
+    "class_d": {
+      "assessment": {
+        "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/independent-opus-review-v1/d2-actual-assessment-v1.json",
+        "sha256": "e40d2fcac6268aa1e549dd0a3aa1959869ef6f089f7b439762fa1ceed6d81a82"
+      },
+      "capture": {
+        "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/d2-fix-v5/evidence/capture-d2.json.gz",
+        "sha256": "52a9ab73a05d28cd8a8aafbc3988cd67348269d83eccee77d36e21764dc05c5a"
+      },
+      "completed_utc": "2026-10-24T04:48:09.455451+00:00",
+      "fetch": {
+        "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/d2-fix-v5/run-records/fetch-sha.json",
+        "sha256": "b3f23384a38a63dfc4e77b7c38d63e3f4cfe9ac4bfb2d38ec19dc6aae45a5ffd"
+      },
+      "findings": {
+        "30": {
+          "path": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/rescore-d30.json",
+          "sha256": "fc0e252a1fe063066ae03ca9ab8f07ba7f388f92086e8b811fbd37e591cf4f59"
+        },
+        "60": {
+          "path": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/rescore-d60.json",
+          "sha256": "d9ba07acb96cfee765e26f8acdbac3a99bbe9215f48bf8afb467eec7d3648d9c"
+        }
+      },
+      "no_per_event_file": []
+    }
+  }
+}

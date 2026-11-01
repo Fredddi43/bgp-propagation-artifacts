@@ -1,0 +1,11 @@
+{
+  "dry_run": true,
+  "label_reads": 0,
+  "labels_opened": false,
+  "outcome_release_authorized": false,
+  "passed": true,
+  "ready": {
+    "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-dry-run-52725204/records-dry-run/ready.json",
+    "sha256": "79d12cce461a014335737bb5b73077ed2bac1301f4e2eca07e37cc8d16c3a209"
+  }
+}

@@ -1,0 +1,1 @@
+D-A40 dry run: every label-free step up to the label opening; no label read is authorized or performed.

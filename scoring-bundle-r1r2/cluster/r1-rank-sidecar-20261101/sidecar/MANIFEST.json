@@ -1,0 +1,41 @@
+{
+  "build_script_sha256": [
+    "d3b2fdbe9df4904bd489df9af824ec843d98143c4ab89cc57e47df1681a2f5c3"
+  ],
+  "created_utc": "2026-11-01T05:00:56Z",
+  "files": {
+    "cells.parquet": {
+      "bytes": 134439,
+      "rows": 1066,
+      "sha256": "87b398a7f94b7a231c76291d1ac4b2d77070970e77c429750265634445d6638c"
+    },
+    "events.parquet": {
+      "bytes": 119552103,
+      "rows": 3437794,
+      "sha256": "fd8f216249a828d68823e29afa2a8214541bcd25e0b699f16407ced0343bdfcc"
+    },
+    "sets.parquet": {
+      "bytes": 1734858,
+      "rows": 27690,
+      "sha256": "11e5ff91e4dc706f0adba2ada8cab86eab3813edc23835f2ca58df10ccb8f623"
+    }
+  },
+  "forecast_ranking_sha256": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97",
+  "kind": "r1_rank_sidecar_v1",
+  "ledger_sha256": "5575ebb3ad13b117ce02de2f342da321c3fa4c7b836b04be3df39766960e70c6",
+  "merge_script_sha256": "48a16f83af32ff1f1d05438da86a57cb72a06352e16041e8cb93405c4950aa8d",
+  "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+  "seal_sha256": "1cad501a3fab90abc3f2eb8cd0f2ffd29f193c435e77c4ded27bc447d41e2b5c",
+  "source_event_table": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/eventset/2025_leak/events.parquet",
+    "sha256": "2862855d49683b464d3d4b9bd9679cec22c7cec4365ff4be7e19dd33638840f8"
+  },
+  "spec_sha256": "134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887",
+  "topology_sha256": "27c8424f1c5e0971cf506f7c52cbf78f0dc0f1f5c97316110bbd59f743fdb54b",
+  "verification_counts": {
+    "direct_fields_exact": 940,
+    "not_built_committed_forecast_missing": 24,
+    "not_rebuilt_inputs_missing": 34,
+    "replay_byte_exact": 68
+  }
+}

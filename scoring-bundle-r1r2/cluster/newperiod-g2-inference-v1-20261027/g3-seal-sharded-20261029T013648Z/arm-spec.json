@@ -1,0 +1,116 @@
+{
+  "alpha": 0.05,
+  "arms": {
+    "frozen_sage_on": {
+      "60": [
+        "N-primary-frozen_2025-sage-history-on-d60-s0",
+        "N-primary-frozen_2025-sage-history-on-d60-s1",
+        "N-primary-frozen_2025-sage-history-on-d60-s2",
+        "N-primary-frozen_2025-sage-history-on-d60-s3",
+        "N-primary-frozen_2025-sage-history-on-d60-s4"
+      ]
+    },
+    "history_median": {
+      "30": [
+        "N-primary-history-knn-median-matched-online-d30"
+      ],
+      "60": [
+        "N-primary-history-knn-median-matched-online-d60"
+      ]
+    },
+    "none_off": {
+      "30": [
+        "N-primary-updated-none-history-off-d30-s0",
+        "N-primary-updated-none-history-off-d30-s1",
+        "N-primary-updated-none-history-off-d30-s2",
+        "N-primary-updated-none-history-off-d30-s3",
+        "N-primary-updated-none-history-off-d30-s4"
+      ],
+      "60": [
+        "N-primary-updated-none-history-off-d60-s0",
+        "N-primary-updated-none-history-off-d60-s1",
+        "N-primary-updated-none-history-off-d60-s2",
+        "N-primary-updated-none-history-off-d60-s3",
+        "N-primary-updated-none-history-off-d60-s4"
+      ]
+    },
+    "none_on": {
+      "30": [
+        "N-primary-updated-none-history-on-d30-s0",
+        "N-primary-updated-none-history-on-d30-s1",
+        "N-primary-updated-none-history-on-d30-s2",
+        "N-primary-updated-none-history-on-d30-s3",
+        "N-primary-updated-none-history-on-d30-s4"
+      ],
+      "60": [
+        "N-primary-updated-none-history-on-d60-s0",
+        "N-primary-updated-none-history-on-d60-s1",
+        "N-primary-updated-none-history-on-d60-s2",
+        "N-primary-updated-none-history-on-d60-s3",
+        "N-primary-updated-none-history-on-d60-s4"
+      ]
+    },
+    "online_history": {
+      "30": [
+        "N-primary-history-knn-mean-matched-online-d30"
+      ],
+      "60": [
+        "N-primary-history-knn-mean-matched-online-d60"
+      ]
+    },
+    "online_history_native": {
+      "30": [
+        "N-primary-history-knn-mean-native-online-d30"
+      ],
+      "60": [
+        "N-primary-history-knn-mean-native-online-d60"
+      ]
+    },
+    "sage_off": {
+      "30": [
+        "N-primary-updated-sage-history-off-d30-s0",
+        "N-primary-updated-sage-history-off-d30-s1",
+        "N-primary-updated-sage-history-off-d30-s2",
+        "N-primary-updated-sage-history-off-d30-s3",
+        "N-primary-updated-sage-history-off-d30-s4"
+      ],
+      "60": [
+        "N-primary-updated-sage-history-off-d60-s0",
+        "N-primary-updated-sage-history-off-d60-s1",
+        "N-primary-updated-sage-history-off-d60-s2",
+        "N-primary-updated-sage-history-off-d60-s3",
+        "N-primary-updated-sage-history-off-d60-s4"
+      ]
+    },
+    "sage_on": {
+      "30": [
+        "N-primary-updated-sage-history-on-d30-s0",
+        "N-primary-updated-sage-history-on-d30-s1",
+        "N-primary-updated-sage-history-on-d30-s2",
+        "N-primary-updated-sage-history-on-d30-s3",
+        "N-primary-updated-sage-history-on-d30-s4"
+      ],
+      "60": [
+        "N-primary-updated-sage-history-on-d60-s0",
+        "N-primary-updated-sage-history-on-d60-s1",
+        "N-primary-updated-sage-history-on-d60-s2",
+        "N-primary-updated-sage-history-on-d60-s3",
+        "N-primary-updated-sage-history-on-d60-s4"
+      ]
+    }
+  },
+  "bootstrap_seed": 1701,
+  "custody_spec_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+  "evaluation_end_exclusive": "2026-10-16",
+  "extension_decision_sha256": "3f5bb81128769cb815ced7be05d83fba23be527d78f3f646696688d831d57dd7",
+  "issue_time_tables": {
+    "30": "db808870e891a8e15106294e14ffdf5a4eb1bd1b4cf4d1c46e6258de7fcdc0c8",
+    "60": "28dcadef4b1a99a64f28bd5fe2f11ac246cc5a9d27532be940576caf5f82beea"
+  },
+  "kind": "frozen_evaluation_arm_spec",
+  "online_history": "history-knn-mean/matched/online",
+  "population": "new_period",
+  "repetitions": 10000,
+  "seed_pairing": "training_seed",
+  "slice_rules_sha256": "0291d789ed0e2f9df87a7aac55414ca4c755ba0eaae545c0643bcf2a29759004"
+}

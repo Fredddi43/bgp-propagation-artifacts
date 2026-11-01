@@ -1,0 +1,12 @@
+{
+  "cells": 1156,
+  "kind": "r1_label_access",
+  "ledger_sha256": "5575ebb3ad13b117ce02de2f342da321c3fa4c7b836b04be3df39766960e70c6",
+  "out": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results",
+  "r1_authorization_sha256": "dd54f44f783eec99610ad735d00d1cfca7feb2e3cc74b3eec81f98ecca762bd6",
+  "reopen": "never",
+  "seal_sha256": "1cad501a3fab90abc3f2eb8cd0f2ffd29f193c435e77c4ded27bc447d41e2b5c",
+  "spec_sha256": "134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887",
+  "started_utc": "2026-10-23T21:20:05.963350+00:00",
+  "status": "label_access_started"
+}

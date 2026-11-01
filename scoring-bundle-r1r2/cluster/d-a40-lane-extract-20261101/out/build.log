@@ -1,0 +1,10 @@
+all_verified True totals {'roles': 344, 'scored': 290, 'not_scored': 54}
+Candidate expansion (H1) | 20 20 0 | SAGE $-$0.0006 to +0.0003 (30\,s), $-$0.0002 to +0.0002 (60\,s); no message passing $|\Delta|<0.0001$; 1{,}289 events
+Seven of ten collectors (H3) | 80 80 0 | SAGE, 30\,s / 60\,s: RIS only, same weights $-$0.079 to $-$0.078 / $-$0.093; RIS only, refitted $-$0.074 to $-$0.073 / $-$0.087 to $-$0.084; mixed, same weights $-$0.104 to $-$0.103 / $-$0.122; mixed, refitted $-$0.097 to $-$0.094 / $-$0.116 to $-$0.111; 1{,}289 events
+Stable peers | 24 24 0 | no contrast recorded; 1{,}286 (30\,s) and 1{,}286 (60\,s) events per role; 3 and 3 events with an empty stable-peer target and an empty forecast are not scorable (separate re-scoring)
+Input timing | 60 60 0 | SAGE minus the same seed at 30\,s: 5\,s $-$0.213 to $-$0.212, 10\,s $-$0.168 to $-$0.166, 60\,s +0.099, 300\,s +0.215, 900\,s +0.251; 1{,}124 events
+Origin changes | 40 40 0 | no contrast recorded; RPKI-invalid 14{,}004, valid 135{,}088 events per role
+History delay, withholding | 48 48 0 | all 48 contrasts $|\Delta|<0.0001$; 1{,}289 events
+Ordinary temporal models | 32 12 20 | no contrast declared; TGN and mean aggregation (20 roles) are retained R1 failures
+Count forecasts | 34 0 34 | not estimable: retained count and Chronos failures
+Additional baselines | 6 6 0 | no contrast recorded; 1{,}289 events per role

@@ -1,0 +1,27 @@
+{
+  "input_only": true,
+  "masters": {
+    "30": {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/protected-stable-direct-20261027/d30/records/master-000/output/custodian-master.json",
+      "sha256": "12ccafd742246f63643c019d31795d5a73b7f861715ad5d85f19ee7980cf8f88"
+    },
+    "60": {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/protected-stable-direct-20261027/d60/records/master-000/output/custodian-master.json",
+      "sha256": "6f8b8a0891804003930f3ba96a448554dee67f69058c25816a0f7acc6cc09b76"
+    }
+  },
+  "primary_masters": {
+    "30": {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/primary-export-chain-v2/d30/master/custodian-master.json",
+      "sha256": "72d1573887602f55f673f0b085d9bcd8c0a28a759cbb2caeae71ffe9621a24b4"
+    },
+    "60": {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/primary-export-chain-v2/d60/master/custodian-master.json",
+      "sha256": "aae109677c2ed7e63b1a9854fd879e14e6ab5b2ee9df32eea3130b44c9d656f7"
+    }
+  },
+  "stable_source": {
+    "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/stable-source-v6/assemble/attempt/output/staging-receipt.json",
+    "sha256": "04ccb8d51a225e41275db681d6b9ba2b20f59504475b141054b9661cb4d28f08"
+  }
+}

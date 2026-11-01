@@ -1,0 +1,657 @@
+{
+ "checkpoint": {
+  "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-ckpt/stable-8b2ded7e985a2611c5bbe7e6.pkl",
+  "bytes": 1479268630,
+  "sha256": "3b057211e6fd1aacad37050e1dcd085bb9340e08cc426579a5526e055ef29b42",
+  "header": {
+   "fingerprint": "8b2ded7e985a2611c5bbe7e6ea64a678df48ece0e6d4b3dbc994923ad27988d5",
+   "stage": "stable"
+  },
+  "trailing_bytes": 0,
+  "matches_run_log": true
+ },
+ "prepared_keys": [
+  "available",
+  "cells",
+  "evidence"
+ ],
+ "cells_in_scoring_order": [
+  {
+   "order": 0,
+   "arm_id": "stable-d30-history-knn-mean",
+   "status": "committed",
+   "role": {
+    "family": "baseline",
+    "message_passing": null,
+    "baseline": "history-knn-mean",
+    "horizon_seconds": 30,
+    "seed": null
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 29
+  },
+  {
+   "order": 1,
+   "arm_id": "stable-d30-none-s0",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 0
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 2,
+   "arm_id": "stable-d30-none-s1",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 1
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 3,
+   "arm_id": "stable-d30-none-s2",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 2
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 4,
+   "arm_id": "stable-d30-none-s3",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 3
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 5,
+   "arm_id": "stable-d30-none-s4",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 4
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 6,
+   "arm_id": "stable-d30-persistence",
+   "status": "committed",
+   "role": {
+    "family": "baseline",
+    "message_passing": null,
+    "baseline": "persistence",
+    "horizon_seconds": 30,
+    "seed": null
+   },
+   "path": "persistence()",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 7,
+   "arm_id": "stable-d30-sage-s0",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 0
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 8,
+   "arm_id": "stable-d30-sage-s1",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 1
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 9,
+   "arm_id": "stable-d30-sage-s2",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 2
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 10,
+   "arm_id": "stable-d30-sage-s3",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 3
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 11,
+   "arm_id": "stable-d30-sage-s4",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 30,
+    "seed": 4
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "empty_prediction_events": 29,
+   "empty_prediction_abstentions": 29,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 12,
+   "arm_id": "stable-d60-history-knn-mean",
+   "status": "committed",
+   "role": {
+    "family": "baseline",
+    "message_passing": null,
+    "baseline": "history-knn-mean",
+    "horizon_seconds": 60,
+    "seed": null
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 25
+  },
+  {
+   "order": 13,
+   "arm_id": "stable-d60-none-s0",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 0
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 14,
+   "arm_id": "stable-d60-none-s1",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 1
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 15,
+   "arm_id": "stable-d60-none-s2",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 2
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 16,
+   "arm_id": "stable-d60-none-s3",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 3
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 17,
+   "arm_id": "stable-d60-none-s4",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "none",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 4
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 18,
+   "arm_id": "stable-d60-persistence",
+   "status": "committed",
+   "role": {
+    "family": "baseline",
+    "message_passing": null,
+    "baseline": "persistence",
+    "horizon_seconds": 60,
+    "seed": null
+   },
+   "path": "persistence()",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 19,
+   "arm_id": "stable-d60-sage-s0",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 0
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 20,
+   "arm_id": "stable-d60-sage-s1",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 1
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 21,
+   "arm_id": "stable-d60-sage-s2",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 2
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 22,
+   "arm_id": "stable-d60-sage-s3",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 3
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  },
+  {
+   "order": 23,
+   "arm_id": "stable-d60-sage-s4",
+   "status": "committed",
+   "role": {
+    "family": "neural",
+    "message_passing": "sage",
+    "baseline": null,
+    "horizon_seconds": 60,
+    "seed": 4
+   },
+   "path": "m.score_cell",
+   "rows": 1289,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "empty_prediction_events": 25,
+   "empty_prediction_abstentions": 25,
+   "candidates_after_exclusion": 0
+  }
+ ],
+ "possible_failing_cells": [
+  {
+   "order": 0,
+   "arm_id": "stable-d30-history-knn-mean",
+   "role": {
+    "family": "baseline",
+    "message_passing": null,
+    "baseline": "history-knn-mean",
+    "horizon_seconds": 30,
+    "seed": null
+   },
+   "candidates": 29,
+   "candidates_in_scoring_order": [
+    "20260901T033052_leak_211181",
+    "20260901T033105_leak_212088",
+    "20260901T062147_leak_45250",
+    "20260901T100217_leak_36734",
+    "20260902T000546_leak_28323",
+    "20260905T021351_leak_45430",
+    "20260909T141207_leak_263656",
+    "20260911T130715_leak_45430",
+    "20260915T222054_leak_400587",
+    "20260915T225858_leak_48728",
+    "20260918T231501_leak_45430",
+    "20260928T134545_leak_38193",
+    "20261001T000000_leak_205996",
+    "20261001T001750_leak_327708",
+    "20261001T040038_leak_57043",
+    "20261001T060008_leak_45629",
+    "20261001T090156_leak_9304",
+    "20261001T135254_leak_6653",
+    "20261001T182223_leak_141607",
+    "20261001T193919_leak_28840",
+    "20261001T225125_leak_36874",
+    "20261004T235241_leak_38757",
+    "20261005T191403_leak_275808",
+    "20261007T181726_leak_47890",
+    "20261008T200305_leak_132372",
+    "20261009T165236_leak_136106",
+    "20261012T222115_leak_48728",
+    "20261014T130334_leak_37697",
+    "20261014T140259_leak_270814"
+   ]
+  },
+  {
+   "order": 12,
+   "arm_id": "stable-d60-history-knn-mean",
+   "role": {
+    "family": "baseline",
+    "message_passing": null,
+    "baseline": "history-knn-mean",
+    "horizon_seconds": 60,
+    "seed": null
+   },
+   "candidates": 25,
+   "candidates_in_scoring_order": [
+    "20260901T033052_leak_211181",
+    "20260901T033105_leak_212088",
+    "20260901T062147_leak_45250",
+    "20260901T100217_leak_36734",
+    "20260902T000546_leak_28323",
+    "20260905T021351_leak_45430",
+    "20260909T141207_leak_263656",
+    "20260911T130715_leak_45430",
+    "20260915T222054_leak_400587",
+    "20260915T225858_leak_48728",
+    "20260918T231501_leak_45430",
+    "20260928T134545_leak_38193",
+    "20261001T000000_leak_205996",
+    "20261001T040038_leak_57043",
+    "20261001T060008_leak_45629",
+    "20261001T090156_leak_9304",
+    "20261001T135254_leak_6653",
+    "20261001T182223_leak_141607",
+    "20261001T193919_leak_28840",
+    "20261001T225125_leak_36874",
+    "20261004T235241_leak_38757",
+    "20261007T181726_leak_47890",
+    "20261009T165236_leak_136106",
+    "20261012T222115_leak_48728",
+    "20261014T130334_leak_37697"
+   ]
+  }
+ ],
+ "first_possible_failing_cell": {
+  "order": 0,
+  "arm_id": "stable-d30-history-knn-mean",
+  "role": {
+   "family": "baseline",
+   "message_passing": null,
+   "baseline": "history-knn-mean",
+   "horizon_seconds": 30,
+   "seed": null
+  },
+  "candidates": 29,
+  "candidates_in_scoring_order": [
+   "20260901T033052_leak_211181",
+   "20260901T033105_leak_212088",
+   "20260901T062147_leak_45250",
+   "20260901T100217_leak_36734",
+   "20260902T000546_leak_28323",
+   "20260905T021351_leak_45430",
+   "20260909T141207_leak_263656",
+   "20260911T130715_leak_45430",
+   "20260915T222054_leak_400587",
+   "20260915T225858_leak_48728",
+   "20260918T231501_leak_45430",
+   "20260928T134545_leak_38193",
+   "20261001T000000_leak_205996",
+   "20261001T001750_leak_327708",
+   "20261001T040038_leak_57043",
+   "20261001T060008_leak_45629",
+   "20261001T090156_leak_9304",
+   "20261001T135254_leak_6653",
+   "20261001T182223_leak_141607",
+   "20261001T193919_leak_28840",
+   "20261001T225125_leak_36874",
+   "20261004T235241_leak_38757",
+   "20261005T191403_leak_275808",
+   "20261007T181726_leak_47890",
+   "20261008T200305_leak_132372",
+   "20261009T165236_leak_136106",
+   "20261012T222115_leak_48728",
+   "20261014T130334_leak_37697",
+   "20261014T140259_leak_270814"
+  ]
+ },
+ "abstention_sets_identical_across_cells_per_horizon": {
+  "30": true,
+  "60": true
+ },
+ "abstention_overlap_30_60": 25,
+ "note": "label-free bound only: the failing cell is the FIRST entry of possible_failing_cells whose candidate set holds an event with an empty scorable stable-peer target; without opening labels it cannot be pinned further"
+}

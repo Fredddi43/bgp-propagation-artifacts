@@ -1,0 +1,1930 @@
+{
+ "cell_status_counts": {
+  "scored": 24
+ },
+ "cells": [
+  {
+   "arm_id": "stable-d30-history-knn-mean",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "baseline": "history-knn-mean",
+    "candidates": "matched",
+    "family": "baseline",
+    "horizon_seconds": 30,
+    "library": "online",
+    "panel": "reference",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-none-s0",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 0,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-none-s1",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 1,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-none-s2",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 2,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-none-s3",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 3,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-none-s4",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 4,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-persistence",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "baseline": "persistence",
+    "candidates": "matched",
+    "family": "baseline",
+    "horizon_seconds": 30,
+    "library": "online",
+    "panel": "reference",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-sage-s0",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 0,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-sage-s1",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 1,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-sage-s2",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 2,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-sage-s3",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 3,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d30-sage-s4",
+   "censored_events": 0,
+   "input_available_rows_len": 1260,
+   "input_status_counts": {
+    "available": 1260,
+    "unavailable_no_input": 29
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 30,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 4,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-history-knn-mean",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "baseline": "history-knn-mean",
+    "candidates": "matched",
+    "family": "baseline",
+    "horizon_seconds": 60,
+    "library": "online",
+    "panel": "reference",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-none-s0",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 0,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-none-s1",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 1,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-none-s2",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 2,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-none-s3",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 3,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-none-s4",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "none",
+    "panel": "reference",
+    "seed": 4,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-persistence",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "baseline": "persistence",
+    "candidates": "matched",
+    "family": "baseline",
+    "horizon_seconds": 60,
+    "library": "online",
+    "panel": "reference",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-sage-s0",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 0,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-sage-s1",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 1,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-sage-s2",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 2,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-sage-s3",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 3,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  },
+  {
+   "arm_id": "stable-d60-sage-s4",
+   "censored_events": 0,
+   "input_available_rows_len": 1264,
+   "input_status_counts": {
+    "available": 1264,
+    "unavailable_no_input": 25
+   },
+   "keys": [
+    "censored_events",
+    "input_available_rows",
+    "input_status_counts",
+    "not_scorable_empty_target_and_forecast",
+    "reference_events",
+    "role",
+    "rows",
+    "scorable_events",
+    "status"
+   ],
+   "not_scorable": {
+    "count": 3,
+    "event_ids_len": 3,
+    "event_ids_sha256": "8cc1e3b495c8765d5fced6420d775f67e82a376667c420f444a6e192852e309f",
+    "input_status_counts": {
+     "unavailable_no_input": 3
+    },
+    "none_scored": true,
+    "population_identity": true,
+    "rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code"
+   },
+   "reference_events": 1289,
+   "role": {
+    "family": "neural",
+    "history": "on",
+    "horizon_seconds": 60,
+    "message_passing": "sage",
+    "panel": "reference",
+    "seed": 4,
+    "training": "updated",
+    "variant": "stable"
+   },
+   "rows_len": 1286,
+   "rows_len_matches_scorable": true,
+   "rows_unique": true,
+   "scorable_events": 1286,
+   "status": "scored"
+  }
+ ],
+ "declares_primary_finding": false,
+ "exclusion_set_identical_per_horizon": {
+  "30": true,
+  "60": true
+ },
+ "files": {
+  "completion.json": {
+   "bytes": 5409,
+   "content": {
+    "blocking": {},
+    "deviation": "D-A40",
+    "errors": [],
+    "job_id": "52750274",
+    "kind": "newperiod_stable_rescore_completion_D-A40_v1",
+    "label_reads": 1,
+    "not_in_scope": [
+     "counts",
+     "membership-h1",
+     "membership-h3",
+     "membership-timing",
+     "membership-history",
+     "membership-ordinary",
+     "origin",
+     "additional_baselines"
+    ],
+    "outcome_release_authorized": false,
+    "passed": true,
+    "raw_result": {
+     "bytes": 49026987,
+     "format": "pickle5",
+     "name": "stable-result-raw",
+     "parts": 1,
+     "sha256_of_concatenated_parts": "b0caf01072c12faece557d4f83161122d873d34def2283ea4fcbf975f8337306"
+    },
+    "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+    "scope": {
+     "prepared_not_scored": [
+      "additional_baselines",
+      "counts",
+      "membership-h1",
+      "membership-h3",
+      "membership-history",
+      "membership-ordinary",
+      "membership-timing",
+      "origin"
+     ],
+     "scored": [
+      "stable"
+     ],
+     "status_of_others": "not in D-A40 scope"
+    },
+    "stable_not_scorable": {
+     "stable-d30-history-knn-mean": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-persistence": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d60-history-knn-mean": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-persistence": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     }
+    },
+    "stable_result": {
+     "bytes": 217788274,
+     "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/stable-result.json",
+     "sha256": "ef597d981c37a5304028996ac3c47953f62f78b9785f2551f476bd4ae8999fc9"
+    },
+    "utc": "2026-11-01T03:29:53Z"
+   },
+   "sha256": "245782aef96d6999074f11a91ee095a4257d379dca3825382c03a852da6c6a0f"
+  },
+  "done.json": {
+   "bytes": 10474,
+   "content": {
+    "bytes_read": 49972445477,
+    "completion": {
+     "bytes": 5409,
+     "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/completion.json",
+     "sha256": "245782aef96d6999074f11a91ee095a4257d379dca3825382c03a852da6c6a0f"
+    },
+    "completion_gate": {
+     "blocking": {},
+     "composition": {
+      "covered_secondary_families": [],
+      "membership_families": [],
+      "missing_key": []
+     },
+     "errors": [],
+     "expected_families": [
+      "stable"
+     ],
+     "expected_not_in_scope": [
+      "additional_baselines",
+      "counts",
+      "membership-h1",
+      "membership-h3",
+      "membership-history",
+      "membership-ordinary",
+      "membership-timing",
+      "origin"
+     ],
+     "families": {
+      "duplicate": [],
+      "failed": [],
+      "missing": [],
+      "not_persisted": [],
+      "persist_error": [],
+      "unexpected": []
+     },
+     "not_in_scope": {
+      "duplicate": [],
+      "missing": [],
+      "unexpected": []
+     },
+     "primary_equality": {},
+     "stable_not_scorable": {
+      "inconsistent_accounting": [],
+      "missing_record": [],
+      "unpaired_horizons": [],
+      "wrapper_records": []
+     }
+    },
+    "deviation": "D-A40",
+    "errors": [],
+    "failed_families": [],
+    "families": [
+     {
+      "family": "stable",
+      "persisted": {
+       "bytes": 45531285,
+       "format": "pickle5",
+       "name": "stable",
+       "parts": 1,
+       "sha256_of_concatenated_parts": "fc56d64e4a41edce673641632c73abc11856a9babd08cd12c5bc523d58d52540"
+      },
+      "seconds": 424.9,
+      "status": "scored"
+     }
+    ],
+    "label_reads": 1,
+    "not_in_scope": [
+     "counts",
+     "membership-h1",
+     "membership-h3",
+     "membership-timing",
+     "membership-history",
+     "membership-ordinary",
+     "origin",
+     "additional_baselines"
+    ],
+    "outcome_release_authorized": false,
+    "passed": true,
+    "primary_recomputation_identical_except_marker": true,
+    "primary_scores_identical_except_path": true,
+    "raw_result": {
+     "bytes": 49026987,
+     "format": "pickle5",
+     "name": "stable-result-raw",
+     "parts": 1,
+     "sha256_of_concatenated_parts": "b0caf01072c12faece557d4f83161122d873d34def2283ea4fcbf975f8337306"
+    },
+    "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+    "stable_not_scorable": {
+     "stable-d30-history-knn-mean": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-none-s0": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-none-s1": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-none-s2": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-none-s3": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-none-s4": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-persistence": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-sage-s0": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-sage-s1": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-sage-s2": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-sage-s3": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d30-sage-s4": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-history-knn-mean": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-none-s0": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-none-s1": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-none-s2": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-none-s3": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-none-s4": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-persistence": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-sage-s0": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-sage-s1": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-sage-s2": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-sage-s3": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     },
+     "stable-d60-sage-s4": {
+      "censored_events": 0,
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3,
+      "reference_events": 1289,
+      "scorable_events": 1286
+     }
+    },
+    "stable_result": {
+     "bytes": 217788274,
+     "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/stable-result.json",
+     "sha256": "ef597d981c37a5304028996ac3c47953f62f78b9785f2551f476bd4ae8999fc9"
+    }
+   },
+   "sha256": "6fb123132a285ae1084b8ffbba4e614aca1bfdbd76f19ff1ea6a7917e7b9f2f0"
+  },
+  "intent.json": {
+   "bytes": 2606,
+   "content": {
+    "approval": {
+     "checkpoint_binding_sha256": "2eeaaaea98a1a16ad893e3afb424dce8728812b4a5b9dda248c19dda3e259e95",
+     "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A40-approval/APPROVAL-D-A40.json",
+     "sha256": "e62e5761e251ca4b0c9dd4be820e7b28816471e1881c98e236dd779307eb01da"
+    },
+    "attempt12_marker": {
+     "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/unblinded-8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f.json",
+     "sha256": "882deb925bf72dc16d0d5abcea066e7e32dc01bdd205e691d7bf2e817d9e1b13",
+     "size_bytes": 719
+    },
+    "automatic_retry_authorized": false,
+    "d39_marker": {
+     "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/second-label-read-D-A39.json",
+     "sha256": "ec9dbeab39e4169b06b31d262c2024740c457201eb758c030f74032f44d40f22",
+     "size_bytes": 752
+    },
+    "deviation": "D-A40",
+    "freeze": {
+     "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/amended-freeze.json",
+     "sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa"
+    },
+    "labels": {
+     "path": "<FORECAST_ROOT>/data-custodian/complete-label-preparation-v3-retained/arms/000/attempt/output/labels.json",
+     "sha256": "20e3044fa439866512d618d540dcefad1516151bc3f63ac482ee480bb6303447"
+    },
+    "mode": "open",
+    "primary_of_record": {
+     "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/attempt/primary.json",
+     "sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+     "size_bytes": 133902
+    },
+    "resources": {
+     "cpus": 64,
+     "job_id": 52750274,
+     "memory_mib": 1950000,
+     "wall_seconds": 86400
+    },
+    "scope": {
+     "prepared_not_scored": [
+      "additional_baselines",
+      "counts",
+      "membership-h1",
+      "membership-h3",
+      "membership-history",
+      "membership-ordinary",
+      "membership-timing",
+      "origin"
+     ],
+     "scored": [
+      "stable"
+     ],
+     "status_of_others": "not in D-A40 scope"
+    },
+    "seal": {
+     "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/seal.json",
+     "sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f"
+    }
+   },
+   "sha256": "2b54e28f647647b61098b8697d074a6ce7cb9e67a34858b30d9206eceb99760b"
+  },
+  "primary-scores.json": {
+   "bytes": 53912642,
+   "content": {
+    "top_keys": [
+     "additional_label_reads",
+     "arm_spec",
+     "arms",
+     "freeze",
+     "identities",
+     "kind",
+     "labels",
+     "metrics_recomputed",
+     "outcome_release_authorized",
+     "primary_report_path",
+     "rows",
+     "seal",
+     "source_closure"
+    ]
+   },
+   "sha256": "ee7d2a32f3c1dc4d468681925b0255bb7f1a50d00fcdf8bc89a95652e836ec5c"
+  },
+  "third-label-read-D-A40.json": {
+   "bytes": 749,
+   "content": {
+    "arm_spec_sha256": "f8f30b3525bc602012b0e0c76ebb0349890d42bed7f628bbba18fa315a1aa6ec",
+    "custody_spec_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+    "labels_sha256": "20e3044fa439866512d618d540dcefad1516151bc3f63ac482ee480bb6303447",
+    "out": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/primary-recomputed-D-A40.json",
+    "seal_path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/seal.json",
+    "seal_sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f",
+    "unblinded_utc": "2026-11-01T02:59:38.768596+00:00"
+   },
+   "sha256": "a8508a92111ce63f2a6e87fd53116ab48bc903a0e8be3afd5f3ed90317b695a0"
+  }
+ },
+ "fits": 0,
+ "formal_tests": false,
+ "input_available_cohort_sizes": {
+  "30": 1260,
+  "60": 1264
+ },
+ "intervals_computed": false,
+ "kind": "newperiod_stable_secondary_v1",
+ "model_input_distribution": "stable-filtered inputs, unchanged updated N-core weights",
+ "receipt": {
+  "bytes": 45531285,
+  "manifest": {
+   "bytes": 45531285,
+   "format": "pickle5",
+   "name": "stable",
+   "parts": 1,
+   "sha256_of_concatenated_parts": "fc56d64e4a41edce673641632c73abc11856a9babd08cd12c5bc523d58d52540"
+  },
+  "verified_sha256": "fc56d64e4a41edce673641632c73abc11856a9babd08cd12c5bc523d58d52540"
+ },
+ "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+ "status": "scored",
+ "target_scope": "stable_peer_only",
+ "top_keys": [
+  "cells",
+  "declares_primary_finding",
+  "fits",
+  "formal_tests",
+  "input_available_cohort",
+  "intervals_computed",
+  "kind",
+  "model_input_distribution",
+  "target_scope"
+ ]
+}

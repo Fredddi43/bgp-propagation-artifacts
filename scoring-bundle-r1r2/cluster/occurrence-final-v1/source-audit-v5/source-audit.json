@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "verifier_sha256": "56b3c553ac4b1f063da2ca4c923d64c8adef176e94821cc51f3ff63ccc3eb0a8",
+  "started_at": "2026-10-17T18:58:46.012660+00:00",
+  "finished_at": "2026-10-17T19:11:33.748968+00:00",
+  "event_table_sha256": {
+    "2023": "9f1e954f8fc65fc75b1ce119ab23c6d6a880b3056d120dc2cb9c77d758b91bba",
+    "2024": "27b382c3494f4f7485a0e8aa03f0f2446ecc7c93f48f4a047f40dbfd137bf35b",
+    "2025": "2862855d49683b464d3d4b9bd9679cec22c7cec4365ff4be7e19dd33638840f8"
+  },
+  "manifest_file_sha256": {
+    "30": "45865cdf4a76884bd1b55e2da43bc9875bd7d62892a8117cc2c03539579dee1c",
+    "60": "f885a805deb61a17e295d4d93b2a41d51eea842a038c5965efa0f66eeaf1754d"
+  },
+  "onset_verified_count": 10410,
+  "raw_seed_target_verified_count": 10410,
+  "graph_count": 16742,
+  "cone_checked_graphs": 16742,
+  "cone_months": {
+    "202412": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20241201.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20241201.ppdc-ases.txt.bz2",
+      "bytes": 1583985,
+      "mtime_ns": 1788707995842002584,
+      "sha256": "b099e4c5b89d22879f3d14a5f5809ac6a5f0e9b7b2c1ee9dc544d216a35df86f",
+      "usable_asn_count": 77495
+    },
+    "202501": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250101.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250101.ppdc-ases.txt.bz2",
+      "bytes": 1560253,
+      "mtime_ns": 1788958575316378831,
+      "sha256": "18369c18f76961e5bec91bc2f2fbb938c5a2555e6f9d930b41eca1d7a3d6804f",
+      "usable_asn_count": 77475
+    },
+    "202502": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250201.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250201.ppdc-ases.txt.bz2",
+      "bytes": 1580250,
+      "mtime_ns": 1788958578743473024,
+      "sha256": "c39bcea22fbd161303c55b2dcd06dd33f7e73292d9d4b5e4bb2b314bfbecaa2e",
+      "usable_asn_count": 77575
+    },
+    "202503": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250301.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250301.ppdc-ases.txt.bz2",
+      "bytes": 1588998,
+      "mtime_ns": 1788958582118565787,
+      "sha256": "60fceeb8040c08c207f76f842f0e9bd4da5d415e749b1d15ccc98ee1f3ef54c5",
+      "usable_asn_count": 77595
+    },
+    "202504": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250401.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250401.ppdc-ases.txt.bz2",
+      "bytes": 1592715,
+      "mtime_ns": 1788958585503658825,
+      "sha256": "702d469e81bf25c58414de91f917e6c2ae8fd5353661b2793bc1e43722118e4a",
+      "usable_asn_count": 77723
+    },
+    "202505": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250501.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250501.ppdc-ases.txt.bz2",
+      "bytes": 1574929,
+      "mtime_ns": 1788958588923752823,
+      "sha256": "1e7b30b49c7498a4ad160a1496890851debd768dbd166a981e0b40702b6aec98",
+      "usable_asn_count": 77787
+    },
+    "202506": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250601.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250601.ppdc-ases.txt.bz2",
+      "bytes": 1604310,
+      "mtime_ns": 1788958592312845973,
+      "sha256": "20200ee6aa5fe82ed21223d6892b566bcaf19bbb7e87fb3791d1c6b906a2bcf6",
+      "usable_asn_count": 78139
+    },
+    "202507": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250701.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250701.ppdc-ases.txt.bz2",
+      "bytes": 1607627,
+      "mtime_ns": 1788958595696938983,
+      "sha256": "04febf10da04ee6a4e1a57df2b7efbc3c3c7444d3afbfe419a4aec85512e254c",
+      "usable_asn_count": 78021
+    },
+    "202508": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250801.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250801.ppdc-ases.txt.bz2",
+      "bytes": 1607207,
+      "mtime_ns": 1788958599242036419,
+      "sha256": "161be6026cf3fde36187932020251b97369d4213e78ecfa669dead4968f5c44f",
+      "usable_asn_count": 78210
+    },
+    "202509": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20250901.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20250901.ppdc-ases.txt.bz2",
+      "bytes": 1629957,
+      "mtime_ns": 1788958602623129347,
+      "sha256": "80eb70217d2e39b476a8606f538bd1d01de104e5d670aa3796af5443d83e6a81",
+      "usable_asn_count": 78638
+    },
+    "202510": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20251001.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20251001.ppdc-ases.txt.bz2",
+      "bytes": 1616639,
+      "mtime_ns": 1788958606012222496,
+      "sha256": "dbd7b0d3e7e0e0491c6a90541f993b24d2d0a6301cdf11b93f8c2858dcb8354d",
+      "usable_asn_count": 78370
+    },
+    "202511": {
+      "path": "<FORECAST_ROOT>/occurrence-final-v1/development-data/graphs/20251101.ppdc-ases.txt.bz2",
+      "resolved": "<FORECAST_ROOT>/development-data/graphs/20251101.ppdc-ases.txt.bz2",
+      "bytes": 1628141,
+      "mtime_ns": 1788958609397315532,
+      "sha256": "4fb72e270272c0203149011804a09f467ec24bf625eacf816442e24bdf161ac9",
+      "usable_asn_count": 78491
+    }
+  },
+  "raw_files_receipt_sha256": "50aa3522536cf251044638f9d1c0c754d13e9c1ac360a3a19b99fa79db101e8f",
+  "raw_files_stable_after_build": true,
+  "graph_files_receipt_sha256": "f31c6d3a88e29825e0d20ff2f53a1ff709b873db55425170fd65b8e07553aef0",
+  "equivalence_basis": "2025 parent table exact except verified anomalous_msgs counts; older repaired memberships and onsets have external source proofs. All staged successful membership targets independently reproduced; graph seeds independently recomputed under the rule-A input cutoff. Staged table self-equality is not a separate parent-equivalence proof.",
+  "freeze_timing": "First raw-file hash pass during graph construction; second pass after both graph completion gates. Not a claim of hashing every raw file before construction started.",
+  "cone_fallback": false,
+  "outcome_period": "retrospective2023-2025_only",
+  "boundary_occurrence_completion": {
+    "path": "<FORECAST_ROOT>/data-custodian/boundary2-occurrence/final-v2/completion.json",
+    "sha256": "83fb97aa3db1c495b3a1df438876cf8d0ea0b7360953b5f6ab749737645586ca"
+  },
+  "canonical_input_version": "occurrence-final-20261017-v1",
+  "final_source_classification": {
+    "path": "<FORECAST_ROOT>/data-custodian/inventory/multiplicity-2025-final-classification.json",
+    "sha256": "f2b8feb3f9747e04e23e68ecea1bd4d4a94fdbb922544e98015cb2dca9336916"
+  },
+  "final_table_lineage": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/spec/table-lineage.json",
+    "sha256": "6b167b0166937c1d96e8d1c76a08e152c1a64fdf76fe49b83ccabd2d0747e0e5"
+  },
+  "history_source_scope": "membership_minima_and_onset_only",
+  "legacy_occurrence_closure": {
+    "path": "<FORECAST_ROOT>/data-custodian/legacy2025-occurrence-population-audit/final-closure-catalogue-anchor.json",
+    "sha256": "48e4a8a82e5a0702397c665c7cfdeb6cb68947d03f0cd4651fc2ac7af20e1d2e"
+  },
+  "occurrence_metadata_completion": {
+    "path": "<FORECAST_ROOT>/data-custodian/occurrence2025-metadata-v1/completion.json",
+    "sha256": "697e6439ca773ffd32e787bcf869296fe31ac34c8b3cb0a12fe2a2e9092c77d6"
+  },
+  "occurrence_preservation_scope": "2025_model_event_message_streams",
+  "occurrence_repair_shard_plan": {
+    "path": "<FORECAST_ROOT>/data-custodian/occurrence2025-restored-sharded-ca901/shard-plan.json",
+    "sha256": "bf917cf448bfa8426a90a2357d8c6eb7ddd6da8aba50434756d7d30cc12150b3"
+  },
+  "older_history_graph_message_inputs_eligible": false,
+  "source_input_inventory_path": "<FORECAST_ROOT>/occurrence-final-v1/source-audit-v4/source-input-inventory.json",
+  "source_input_inventory_sha256": "78fcf76995ce20a2e45ecd04c5bb2969ae2878081381e934707e96fa5639fc76",
+  "onset_month_verified_graphs": 16742,
+  "feature_sources_receipt_sha256": "efe2ade957c123628d13086dd1a1e1c6494c88d63b49db20eac1b066c4469c66",
+  "input_cutoff_rule": "availability_v1_whole_second_plus_1s",
+  "base_scientific_audit": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/source-audit-v5/base-scientific/source-audit.json",
+    "sha256": "b0420e4ec5135a27393a10cab422f89d241ffbd5f4c90725b1e096755744d493"
+  },
+  "whole_second_rebuild_audit": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/source-audit-v5/whole-second-rebuild-audit/summary.json",
+    "sha256": "e5c5b6375f6ab4c7526dd9b2deb60d359eadafa68b8882bd8e78c5998a01f18e"
+  },
+  "pregraph_source_verification": {
+    "path": "<FORECAST_ROOT>/occurrence-final-v1/source-audit-v4/pregraph-source-verification.json",
+    "sha256": "d2e6d3db47d598871d6ddf31c06b5c2e6574b790f2f868abca4eb55e01f9ecac"
+  },
+  "orchestrator_sha256": "ae3a6f8af50af9bdb9cc601360ca76149f00c25bc7e3d43a88876253616dcbc5",
+  "training_authorized": false
+}

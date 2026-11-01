@@ -1,0 +1,9 @@
+{
+  "automatic_retry_authorized": false,
+  "passed": true,
+  "report": {
+    "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+    "sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d"
+  },
+  "spec_sha256": "2233750ea0847b1034e6a7bf25e569026a72320bde866bf32e136fc1a7a238c5"
+}

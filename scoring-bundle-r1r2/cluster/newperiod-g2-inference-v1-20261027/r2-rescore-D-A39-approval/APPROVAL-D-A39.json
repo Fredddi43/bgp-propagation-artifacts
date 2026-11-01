@@ -1,0 +1,16 @@
+{
+ "approval_record": "<AUTHOR> answered 'Re-score lanes (Recommended)' to the D-A39 question (one disclosed second label read for the five secondary lanes only, primary.json stays the primary result) in Claude Code session <SESSION_ID> at 2026-10-30T11:28:07.645Z; bound to dry run 52725204 by the owner on 2026-10-31.",
+ "approved_by": "<AUTHOR>",
+ "deviation": "D-A39",
+ "dry_run_ready": {
+  "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-dry-run-52725204/records-dry-run/ready.json",
+  "sha256": "79d12cce461a014335737bb5b73077ed2bac1301f4e2eca07e37cc8d16c3a209"
+ },
+ "freeze_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+ "labels_sha256": "20e3044fa439866512d618d540dcefad1516151bc3f63ac482ee480bb6303447",
+ "primary_json_sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+ "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39",
+ "scope": "secondary lanes only",
+ "seal_sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f",
+ "second_label_read_authorized": true
+}

@@ -1,0 +1,33 @@
+{
+  "approval": {
+    "checkpoint_binding_sha256": "2eeaaaea98a1a16ad893e3afb424dce8728812b4a5b9dda248c19dda3e259e95",
+    "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-approval/APPROVAL-D-A39.json",
+    "sha256": "c107a99073db465400b58a188ff73a3529188f8cc98071c06ce9be505fd861fc"
+  },
+  "automatic_retry_authorized": false,
+  "deviation": "D-A39",
+  "freeze": {
+    "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/amend/amended-freeze.json",
+    "sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa"
+  },
+  "labels": {
+    "path": "<FORECAST_ROOT>/data-custodian/complete-label-preparation-v3-retained/arms/000/attempt/output/labels.json",
+    "sha256": "20e3044fa439866512d618d540dcefad1516151bc3f63ac482ee480bb6303447"
+  },
+  "mode": "open",
+  "primary_of_record": {
+    "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/attempt/primary.json",
+    "sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+    "size_bytes": 133902
+  },
+  "resources": {
+    "cpus": 64,
+    "job_id": 52728251,
+    "memory_mib": 1950000,
+    "wall_seconds": 86400
+  },
+  "seal": {
+    "path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/seal.json",
+    "sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f"
+  }
+}
