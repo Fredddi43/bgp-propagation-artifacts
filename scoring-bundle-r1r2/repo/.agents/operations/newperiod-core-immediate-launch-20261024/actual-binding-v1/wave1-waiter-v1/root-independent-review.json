@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:48:02.076119+00:00",
+  "ready_sha256": "cef9fa64b615394ecb89fa87eab114b27b7821bdedca5f872ec624761339ca18",
+  "files": {
+    "README.md": "905fd2ea3d6fc7ac0fc1719168e67818daa7c2e0ed4093e4bc9ff2774dfb1854",
+    "request.json": "f902b0cc49232586c4cdf7500b52976af552c420f0f0ae9f59c09748862804f9",
+    "test_wait.py": "112930b259a6644880b66e45b2cee62288d7b559efe646cb34435e5ebdfb8eeb",
+    "wait.py": "8b341f6ed731adde102c6bbeb8bdad3aff402bdbfd36b531ac384a981f415b41"
+  },
+  "scheduler_only_waiter_start_authorized": true,
+  "tests": "11passed; exact20actualplacement IDs independently reconciled",
+  "scope": "One identity-bound terminal-only rootwake; no science/retry/release authority."
+}

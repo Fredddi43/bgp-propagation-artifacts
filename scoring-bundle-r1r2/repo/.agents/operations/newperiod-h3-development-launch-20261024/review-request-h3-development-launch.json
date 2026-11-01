@@ -1,0 +1,5 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-h3-development-launch-20261024/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-h3-development-launch-20261024/review-ready.json","sha256":"ae1fd1335221bc227f522b2a2625bf4aa65b606692d45dfe1417e081cbc14269"}},
+ "asks":["Prospective CODE review only (after the H3 coverage/kernel/execution chain): H3 dev-construction package assembler mirroring native timing launch; audit template keys vs H3 audit metadata()."],
+ "priority":"low (next stage after publication)","utc":"2026-10-24T08:56:02Z"}

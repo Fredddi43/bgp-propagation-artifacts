@@ -1,0 +1,15 @@
+{
+  "assessment": "Only fixedrootv1\u2192v2 delta; unchanged exacttwo done/failed receipt projection, limits and no-follow behavior.",
+  "code_review_only": true,
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "fa56f2aba401c46eadf86808f3b3136d042bd2daf0da486623d609f1b914641d",
+    "test_capture.py": "68f68d9ce137aac08a0fcc9d8c356177d1482f7590df0bb9dc2782f4e05b1e4d"
+  },
+  "passed": true,
+  "pending": "Exact actualjob/plan/approval bound request and conditionalexecutionreview.",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "tests": "6PASS0.14s",
+  "utc": "2026-10-24T07:53:09.776735+00:00"
+}

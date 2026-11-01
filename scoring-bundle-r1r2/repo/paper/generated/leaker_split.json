@@ -1,0 +1,4047 @@
+{
+ "kind": "leaker_recurrence_revision_analysis",
+ "confirmatory": false,
+ "replaces_published_values": false,
+ "definitions": {
+  "leaker": "a of the leak event, parsed from event_id '<t0>_leak_<a>'; checked against column a of every released table row read",
+  "repeat": "the leaker is the a of at least one completed earlier library event: its onset + 7200 s <= this event's onset (history definition). Development definition: the same, counting only library events with onset before the test period",
+  "library": "successful (error null) leak events with t0_obs of the released event tables; R1: 2023-2025; R2: 2023-2026 (2026 table ends 2026-08-31) plus the scored R2 events (onset from the R2 rows)",
+  "contrast_statistic": "event-macro mean AP difference over the class's eligible events, then the training-seed mean (published estimand restricted to the class)",
+  "intervals": "day_blocks: training seeds then incident-day blocks rebuilt from the class's events (paired_bootstrap); leaker_x_day: paper_actor_bootstrap.two_way_bootstrap; repeat_minus_first_seen: one joint draw for both classes (blocks or leakers and days of all eligible events)",
+  "repetitions": 10000,
+  "rng_seed": 1701,
+  "p_values": "unadjusted, descriptive only"
+ },
+ "source_sha256": "85a22ffafea3d722aebef42adcb980ee1b80acec15da5abe6c8c47e8cc8be48f",
+ "R1": {
+  "provenance": {
+   "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+   "per_event_sha256": {
+    "core-gbdt/core-v6b--c3_none_history-off_d30_seed0": "f00352fa23c447fc59fb62aa3027612a06a12fc69c545ed3675b57e6d6ebb8f2",
+    "core-gbdt/core-v6b--c3_none_history-off_d30_seed1": "863f42c93101d7698c2eb10868a5f194a1cb032d64a34fd67401dded82cd610d",
+    "core-gbdt/core-v6b--c3_none_history-off_d30_seed2": "b60c7b24bdd7a6c88951961e34aa7144e23ab8665a66b886d776f07fff9ebe07",
+    "core-gbdt/core-v6b--c3_none_history-off_d30_seed3": "11993b9f4dae1ce86563447f9b7130b2aa5ff12e231e8086cbeb4272fd658980",
+    "core-gbdt/core-v6b--c3_none_history-off_d30_seed4": "94b0dccaba8f807a6bd0f8dbd0f623283e432bc92b620add97a7576c6b27ef7a",
+    "core-gbdt/core-v6b--c3_none_history-on_d30_seed0": "7cb6d41ee59b8707b5064457b925c7e18609145335abb5e05dc6e5dd696be31f",
+    "core-gbdt/core-v6b--c3_none_history-on_d30_seed1": "271908f8b37ad3ed3bfc72bdf021309f2947c635fc99e3cbf00ef688b6fdc7e3",
+    "core-gbdt/core-v6b--c3_none_history-on_d30_seed2": "c3f67277afedc3204124f232c8a01eaaa275f25b74a0131f0d00365f16808c01",
+    "core-gbdt/core-v6b--c3_none_history-on_d30_seed3": "eb42975122baff864bf3207b799eb727487d14088dd7c3cdae425ff9038f74d1",
+    "core-gbdt/core-v6b--c3_none_history-on_d30_seed4": "40440723d05bf4dcd4c2c3a758d0a3b6f967f75ee3a5be487c299a642b7bbec0",
+    "baseline-d30/history-knn-mean_matched_d30": "ff5de65e533dbfec835a94609d7ce391e9bed012d3f0df1052254c35e74e1f44",
+    "baseline-d30/history-knn-mean_native_d30": "347a7a98b7ebd423e535b94be89d63a065823aa746bec2e0580a5cac0af84a12",
+    "core-gbdt/core-v6b--c3_sage_history-off_d30_seed0": "237b1ce4dd4ca48d12b58748b5d6a27c35f9f7eda965c528f3d43e1d27cff336",
+    "core-gbdt/core-v6b--c3_sage_history-off_d30_seed1": "d393ea52e629e387af6be753cb23da0ae9b4d8cd1938036f0580bf711fdfbcc3",
+    "core-gbdt/core-v6b--c3_sage_history-off_d30_seed2": "452e56277bdf06fddb750299b119bc3cba823dee29223d9b918c1901bb51d95a",
+    "core-gbdt/core-v6b--c3_sage_history-off_d30_seed3": "cb16e900326bef085f70cc471f2852d48a5b0ff1b57ab8f4a19d519c20b6e3ac",
+    "core-gbdt/core-v6b--c3_sage_history-off_d30_seed4": "80ebe6a347e0274bba7e69513fa2e88e730ce2ff21fa274e735c687a7fc1ecbc",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed0": "b4794e1c3a20f7ffecb07075452ece2ce4a28e53c50aa3179ea2840510ea9888",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed1": "d96dd59fa1e5b072560da1971518c03f262c52e128c3c67ec954d21b71512b3c",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed2": "ce7f40ee32f68675294f90046356a3351f29f767ddb0d662e93f9248f97b19c8",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed3": "a82f7026555dec7f7c2c4b08f02321b603f2b5419e19c62682e63be6707f4202",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed4": "784dae17ebe32f981673f4343ab01072c8bc55cbef49755d7b2a685443697478",
+    "core-gbdt/core-v6b--c3_none_history-off_d60_seed0": "f780c46642a6d67c58a07edc476c7ea6942d2179254f3bb738b8e60814a38ef6",
+    "core-gbdt/core-v6b--c3_none_history-off_d60_seed1": "3624f314ac8a92d28a0c50602a8f0a628afa17debff627b16cbe81265c04aca8",
+    "core-gbdt/core-v6b--c3_none_history-off_d60_seed2": "869bb9fc5e4f026573d45e550aac3e61a594469fea1e3a6bd6cf563a0745a500",
+    "core-gbdt/core-v6b--c3_none_history-off_d60_seed3": "d9c60a9233b81bc4739b03d52534a95bc46f1cbea029a58aa98bc83b64d795b9",
+    "core-gbdt/core-v6b--c3_none_history-off_d60_seed4": "42496c601f17ef29b8d78b2d5710585b77396c13025c249959509ff6d0899b3a",
+    "core-gbdt/core-v6b--c3_none_history-on_d60_seed0": "f33c677c61d09d15a1aeb1639c9853578fe64e372fae1b74baf55360967c35cf",
+    "core-gbdt/core-v6b--c3_none_history-on_d60_seed1": "81e201324f151208c55dc539633c7e6c67cd69a8628c5fb16b45bcb39ac688c3",
+    "core-gbdt/core-v6b--c3_none_history-on_d60_seed2": "d5201d5ceae108133f39310716c9dbcde3182d5f0f90862eb8d18eaee23fcc36",
+    "core-gbdt/core-v6b--c3_none_history-on_d60_seed3": "7044b37fea6bc49a4181b1682816c30843c7eabc0a6478e74242271444725ab9",
+    "core-gbdt/core-v6b--c3_none_history-on_d60_seed4": "447b6e9e9f3942ca8b2f96f2225c61ad3d8bdd84e9c4d04e76b97cbd7d512f89",
+    "baseline-d60/history-knn-mean_matched_d60": "8af0b15b394b4886c2e8cc14b7654bdce53fd59df44bdd338c8e47ca24536b4f",
+    "baseline-d60/history-knn-mean_native_d60": "22c682213023a151e0becf9784e2fc77ac0e17721a5efb4a2d31ec7da0551b97",
+    "core-gbdt/core-v6b--c3_sage_history-off_d60_seed0": "5d2e5563696693ce4a08835f8c3b7dbe9b7ff201ded8144cff043c0895c2770d",
+    "core-gbdt/core-v6b--c3_sage_history-off_d60_seed1": "2a11a68b014479f56345e80889ad6d93e3f3486f0acab6e4657216345f06e4cb",
+    "core-gbdt/core-v6b--c3_sage_history-off_d60_seed2": "85797bd307b50d82aade858705095ff88749ef8fb342ae187c54614ae5d10fac",
+    "core-gbdt/core-v6b--c3_sage_history-off_d60_seed3": "5e0629f2fb7a36ca96694b0926f587ca2412ce1fc378a337d5e8087b4d25d365",
+    "core-gbdt/core-v6b--c3_sage_history-off_d60_seed4": "2e00f73e529bdeafa52edb1fb6da9342232d3b102838626f993a63c3cabc5dab",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed0": "60369490185f4ff22b3d3c5a44c5884c4fe54aab9380ec5efaa0306441ee0da0",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed1": "49776612bd5fb44dba554055879ec2e2c909a98ceb0f6444926c7786554529f0",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed2": "1779eebc9464cbda143ffca5ca2d73178216217de596e97c977b0bced2916933",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed3": "fd62d2c492fc9c190a27d53ade339d1681e786ac8f5e8ecbed212cab02efc501",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed4": "f233ac0becec37fff72f638e1c226cbe26c6c4535e13fe52f989b8368a56b53f"
+   },
+   "arm_spec_sha256": "9a6d36e81dce9817bbd0e722c62197c0c02bc4989962e944380721526c35c09f",
+   "manifest_30_sha256": "45865cdf4a76884bd1b55e2da43bc9875bd7d62892a8117cc2c03539579dee1c",
+   "manifest_60_sha256": "f885a805deb61a17e295d4d93b2a41d51eea842a038c5965efa0f66eeaf1754d",
+   "leaker_check": {
+    "events_checked": 3543,
+    "identifier_matches_event_table_a": true,
+    "event_table_sha256": "72e8b1357364b80f2be43f5ea3beed1155bc425b4a9df0c4506f56556c337163"
+   },
+   "library_tables": {
+    "2023": "9f1e954f8fc65fc75b1ce119ab23c6d6a880b3056d120dc2cb9c77d758b91bba",
+    "2023_rows": 396,
+    "2023_successful_rows": 396,
+    "2024": "27b382c3494f4f7485a0e8aa03f0f2446ecc7c93f48f4a047f40dbfd137bf35b",
+    "2024_rows": 1602,
+    "2024_successful_rows": 1602,
+    "2025": "72e8b1357364b80f2be43f5ea3beed1155bc425b4a9df0c4506f56556c337163",
+    "2025_rows": 8437,
+    "2025_successful_rows": 8412
+   },
+   "library_events": 10410
+  },
+  "familiarity": {
+   "30": {
+    "all_events": {
+     "0": 544,
+     "1": 382,
+     "2-4": 841,
+     "5-19": 1343,
+     ">=20": 433
+    },
+    "eligible_events": {
+     "0": 420,
+     "1": 282,
+     "2-4": 633,
+     "5-19": 1003,
+     ">=20": 323
+    },
+    "eligible_events_development": {
+     "0": 622,
+     "1": 305,
+     "2-4": 686,
+     "5-19": 814,
+     ">=20": 234
+    }
+   },
+   "60": {
+    "all_events": {
+     "0": 544,
+     "1": 382,
+     "2-4": 841,
+     "5-19": 1343,
+     ">=20": 433
+    },
+    "eligible_events": {
+     "0": 335,
+     "1": 227,
+     "2-4": 511,
+     "5-19": 800,
+     ">=20": 257
+    },
+    "eligible_events_development": {
+     "0": 489,
+     "1": 251,
+     "2-4": 561,
+     "5-19": 635,
+     ">=20": 194
+    }
+   }
+  },
+  "split": {
+   "C2@30": {
+    "left": "sage_on",
+    "right": "online_history",
+    "horizon_seconds": 30,
+    "published": {
+     "difference": 0.005436471532969183,
+     "ci95": [
+      -0.00027760075915052556,
+      0.010698683140348598
+     ],
+     "eligible_events": 2661,
+     "blocks": 121
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 420,
+      "repeat": 2241,
+      "repeat_share": 0.8421645997745209
+     },
+     "first_seen": {
+      "difference": 0.013051037757474421,
+      "day_blocks": {
+       "difference": 0.013051037757474421,
+       "ci95": [
+        0.005777089733612259,
+        0.020372955428554555
+       ],
+       "p_value": 0.0013998600139986002,
+       "blocks": 111
+      },
+      "leaker_x_day": {
+       "difference": 0.013051037757474421,
+       "ci95": [
+        0.002060968664001049,
+        0.024738155916958177
+       ],
+       "p_value": 0.0207979202079792,
+       "leakers": 413,
+       "days": 111
+      },
+      "events": 420,
+      "training_seeds": 5,
+      "distinct_leakers": 413,
+      "left_mean": 0.21181688441649066,
+      "right_mean": 0.1987658466590163
+     },
+     "repeat": {
+      "difference": 0.004009377461442097,
+      "day_blocks": {
+       "difference": 0.004009377461442097,
+       "ci95": [
+        -0.0018221812124432648,
+        0.009448820801511567
+       ],
+       "p_value": 0.1683831616838316,
+       "blocks": 121
+      },
+      "leaker_x_day": {
+       "difference": 0.004009377461442097,
+       "ci95": [
+        -0.0032701137729086983,
+        0.01148254864469316
+       ],
+       "p_value": 0.27857214278572145,
+       "leakers": 924,
+       "days": 121
+      },
+      "events": 2241,
+      "training_seeds": 5,
+      "distinct_leakers": 924,
+      "left_mean": 0.2120610296332805,
+      "right_mean": 0.20805165217183855
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.009041660296032324,
+       "ci95": [
+        -0.01531534699129081,
+        -0.0029387444479111466
+       ],
+       "p_value": 0.0045995400459954,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.009041660296032324,
+       "ci95": [
+        -0.020781543310294658,
+        0.002056460779008507
+       ],
+       "p_value": 0.11918808119188082,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 622,
+      "repeat": 2039,
+      "repeat_share": 0.7662532882375047
+     },
+     "first_seen": {
+      "difference": 0.012241132910898804,
+      "day_blocks": {
+       "difference": 0.012241132910898804,
+       "ci95": [
+        0.005318587555139572,
+        0.018910367023882005
+       ],
+       "p_value": 0.0007999200079992001,
+       "blocks": 112
+      },
+      "leaker_x_day": {
+       "difference": 0.012241132910898804,
+       "ci95": [
+        0.0024316141659143746,
+        0.02245557915815827
+       ],
+       "p_value": 0.013998600139986002,
+       "leakers": 435,
+       "days": 112
+      },
+      "events": 622,
+      "training_seeds": 5,
+      "distinct_leakers": 435,
+      "left_mean": 0.20371173135906756,
+      "right_mean": 0.19147059844816877
+     },
+     "repeat": {
+      "difference": 0.0033606994010063457,
+      "day_blocks": {
+       "difference": 0.0033606994010063457,
+       "ci95": [
+        -0.0025514773273798887,
+        0.008955136642648806
+       ],
+       "p_value": 0.253974602539746,
+       "blocks": 121
+      },
+      "leaker_x_day": {
+       "difference": 0.0033606994010063457,
+       "ci95": [
+        -0.004095286207296953,
+        0.011075427280886417
+       ],
+       "p_value": 0.3925607439256074,
+       "leakers": 791,
+       "days": 121
+      },
+      "events": 2039,
+      "training_seeds": 5,
+      "distinct_leakers": 791,
+      "left_mean": 0.2145577057173947,
+      "right_mean": 0.21119700631638844
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.008880433509892458,
+       "ci95": [
+        -0.01467492466014905,
+        -0.0033861642863454466
+       ],
+       "p_value": 0.0013998600139986002,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.008880433509892458,
+       "ci95": [
+        -0.01963799535658471,
+        0.0011852096914053778
+       ],
+       "p_value": 0.0867913208679132,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   },
+   "native@30": {
+    "left": "sage_on",
+    "right": "online_history_native",
+    "horizon_seconds": 30,
+    "published": {
+     "difference": -0.02366928190165425,
+     "ci95": [
+      -0.0307124508642919,
+      -0.01723561098522685
+     ],
+     "eligible_events": 2661,
+     "blocks": 121
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 420,
+      "repeat": 2241,
+      "repeat_share": 0.8421645997745209
+     },
+     "first_seen": {
+      "difference": -0.01118415721610583,
+      "day_blocks": {
+       "difference": -0.01118415721610583,
+       "ci95": [
+        -0.02072845738339042,
+        -0.0020977154290652894
+       ],
+       "p_value": 0.013598640135986401,
+       "blocks": 111
+      },
+      "leaker_x_day": {
+       "difference": -0.01118415721610583,
+       "ci95": [
+        -0.02672822840517054,
+        0.0037617920810782716
+       ],
+       "p_value": 0.140985901409859,
+       "leakers": 413,
+       "days": 111
+      },
+      "events": 420,
+      "training_seeds": 5,
+      "distinct_leakers": 413,
+      "left_mean": 0.21181688441649066,
+      "right_mean": 0.22300104163259654
+     },
+     "repeat": {
+      "difference": -0.02600919817471553,
+      "day_blocks": {
+       "difference": -0.02600919817471553,
+       "ci95": [
+        -0.03333604817291266,
+        -0.019210371169124406
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 121
+      },
+      "leaker_x_day": {
+       "difference": -0.02600919817471553,
+       "ci95": [
+        -0.035837052690348176,
+        -0.016384534224759124
+       ],
+       "p_value": 0.00019998000199980003,
+       "leakers": 924,
+       "days": 121
+      },
+      "events": 2241,
+      "training_seeds": 5,
+      "distinct_leakers": 924,
+      "left_mean": 0.2120610296332805,
+      "right_mean": 0.2380702278079962
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.014825040958609701,
+       "ci95": [
+        -0.02362076518795448,
+        -0.006225894803674492
+       ],
+       "p_value": 0.0011998800119988001,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.014825040958609701,
+       "ci95": [
+        -0.030887451464148084,
+        0.0008819207845528963
+       ],
+       "p_value": 0.06459354064593541,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 622,
+      "repeat": 2039,
+      "repeat_share": 0.7662532882375047
+     },
+     "first_seen": {
+      "difference": -0.01210870956136159,
+      "day_blocks": {
+       "difference": -0.01210870956136159,
+       "ci95": [
+        -0.020759794624298777,
+        -0.0038505156268088736
+       ],
+       "p_value": 0.003999600039996,
+       "blocks": 112
+      },
+      "leaker_x_day": {
+       "difference": -0.01210870956136159,
+       "ci95": [
+        -0.025117179241593887,
+        0.0006777837153241229
+       ],
+       "p_value": 0.06179382061793821,
+       "leakers": 435,
+       "days": 112
+      },
+      "events": 622,
+      "training_seeds": 5,
+      "distinct_leakers": 435,
+      "left_mean": 0.20371173135906756,
+      "right_mean": 0.21582044092042918
+     },
+     "repeat": {
+      "difference": -0.027195851786726358,
+      "day_blocks": {
+       "difference": -0.027195851786726358,
+       "ci95": [
+        -0.03480334037684111,
+        -0.020205655062930903
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 121
+      },
+      "leaker_x_day": {
+       "difference": -0.027195851786726358,
+       "ci95": [
+        -0.03758036266913325,
+        -0.01727742246674105
+       ],
+       "p_value": 0.00019998000199980003,
+       "leakers": 791,
+       "days": 121
+      },
+      "events": 2039,
+      "training_seeds": 5,
+      "distinct_leakers": 791,
+      "left_mean": 0.2145577057173947,
+      "right_mean": 0.24175355750412117
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.015087142225364768,
+       "ci95": [
+        -0.02329408639931246,
+        -0.007481387378653203
+       ],
+       "p_value": 0.00039996000399960006,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.015087142225364768,
+       "ci95": [
+        -0.029672140997570918,
+        -0.0010987128071171719
+       ],
+       "p_value": 0.038196180381961806,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   },
+   "C2@60": {
+    "left": "sage_on",
+    "right": "online_history",
+    "horizon_seconds": 60,
+    "published": {
+     "difference": 0.002233126482858575,
+     "ci95": [
+      -0.0033191505272987835,
+      0.007834725107108798
+     ],
+     "eligible_events": 2130,
+     "blocks": 121
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 335,
+      "repeat": 1795,
+      "repeat_share": 0.8427230046948356
+     },
+     "first_seen": {
+      "difference": 0.010855874353507,
+      "day_blocks": {
+       "difference": 0.010855874353507,
+       "ci95": [
+        0.0011563889008887349,
+        0.020709464728199775
+       ],
+       "p_value": 0.027597240275972403,
+       "blocks": 105
+      },
+      "leaker_x_day": {
+       "difference": 0.010855874353507,
+       "ci95": [
+        -0.00581648688993284,
+        0.027494136113475322
+       ],
+       "p_value": 0.19058094190580943,
+       "leakers": 332,
+       "days": 105
+      },
+      "events": 335,
+      "training_seeds": 5,
+      "distinct_leakers": 332,
+      "left_mean": 0.1945225064222366,
+      "right_mean": 0.1836666320687296
+     },
+     "repeat": {
+      "difference": 0.0006238671309548303,
+      "day_blocks": {
+       "difference": 0.0006238671309548303,
+       "ci95": [
+        -0.005210841040331715,
+        0.006574480570476658
+       ],
+       "p_value": 0.8285171482851715,
+       "blocks": 120
+      },
+      "leaker_x_day": {
+       "difference": 0.0006238671309548303,
+       "ci95": [
+        -0.008103080112641683,
+        0.009324199826109152
+       ],
+       "p_value": 0.8767123287671232,
+       "leakers": 826,
+       "days": 120
+      },
+      "events": 1795,
+      "training_seeds": 5,
+      "distinct_leakers": 826,
+      "left_mean": 0.20159455641623542,
+      "right_mean": 0.20097068928528075
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.010232007222552169,
+       "ci95": [
+        -0.020323140664755553,
+        -0.0005560124570378834
+       ],
+       "p_value": 0.03899610038996101,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.010232007222552169,
+       "ci95": [
+        -0.02821903600802367,
+        0.007428846171804294
+       ],
+       "p_value": 0.2535746425357464,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 489,
+      "repeat": 1641,
+      "repeat_share": 0.7704225352112676
+     },
+     "first_seen": {
+      "difference": 0.00892615906309769,
+      "day_blocks": {
+       "difference": 0.00892615906309769,
+       "ci95": [
+        0.0016485574427917654,
+        0.016765267267791557
+       ],
+       "p_value": 0.015198480151984802,
+       "blocks": 108
+      },
+      "leaker_x_day": {
+       "difference": 0.00892615906309769,
+       "ci95": [
+        -0.0034040861857084553,
+        0.0220283799767507
+       ],
+       "p_value": 0.15958404159584041,
+       "leakers": 367,
+       "days": 108
+      },
+      "events": 489,
+      "training_seeds": 5,
+      "distinct_leakers": 367,
+      "left_mean": 0.19086350700427315,
+      "right_mean": 0.18193734794117536
+     },
+     "repeat": {
+      "difference": 0.000238676189295549,
+      "day_blocks": {
+       "difference": 0.000238676189295549,
+       "ci95": [
+        -0.0060565149438853855,
+        0.006633207875336699
+       ],
+       "p_value": 0.9293070692930707,
+       "blocks": 120
+      },
+      "leaker_x_day": {
+       "difference": 0.000238676189295549,
+       "ci95": [
+        -0.009019333559777281,
+        0.009329967835388246
+       ],
+       "p_value": 0.9495050494950505,
+       "leakers": 718,
+       "days": 120
+      },
+      "events": 1641,
+      "training_seeds": 5,
+      "distinct_leakers": 718,
+      "left_mean": 0.2033485761691058,
+      "right_mean": 0.20310989997981027
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.008687482873802142,
+       "ci95": [
+        -0.017273072574520102,
+        -0.0008807908408272722
+       ],
+       "p_value": 0.0321967803219678,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.008687482873802142,
+       "ci95": [
+        -0.023832969527451103,
+        0.0060855907729171765
+       ],
+       "p_value": 0.23977602239776022,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   },
+   "native@60": {
+    "left": "sage_on",
+    "right": "online_history_native",
+    "horizon_seconds": 60,
+    "published": {
+     "difference": -0.02433295192882017,
+     "ci95": [
+      -0.031740379801215246,
+      -0.017213340900633176
+     ],
+     "eligible_events": 2130,
+     "blocks": 121
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 335,
+      "repeat": 1795,
+      "repeat_share": 0.8427230046948356
+     },
+     "first_seen": {
+      "difference": -0.009051709977222601,
+      "day_blocks": {
+       "difference": -0.009051709977222601,
+       "ci95": [
+        -0.02031026475820261,
+        0.0025474514882789416
+       ],
+       "p_value": 0.12298770122987701,
+       "blocks": 105
+      },
+      "leaker_x_day": {
+       "difference": -0.009051709977222601,
+       "ci95": [
+        -0.029276911134008817,
+        0.010837952932931431
+       ],
+       "p_value": 0.3621637836216378,
+       "leakers": 332,
+       "days": 105
+      },
+      "events": 335,
+      "training_seeds": 5,
+      "distinct_leakers": 332,
+      "left_mean": 0.1945225064222366,
+      "right_mean": 0.2035742163994592
+     },
+     "repeat": {
+      "difference": -0.027184882878004114,
+      "day_blocks": {
+       "difference": -0.027184882878004114,
+       "ci95": [
+        -0.035380891723456695,
+        -0.019344267542446298
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 120
+      },
+      "leaker_x_day": {
+       "difference": -0.027184882878004114,
+       "ci95": [
+        -0.038842950764279786,
+        -0.01607329303967224
+       ],
+       "p_value": 0.00019998000199980003,
+       "leakers": 826,
+       "days": 120
+      },
+      "events": 1795,
+      "training_seeds": 5,
+      "distinct_leakers": 826,
+      "left_mean": 0.20159455641623542,
+      "right_mean": 0.22877943929423966
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.018133172900781515,
+       "ci95": [
+        -0.030358918979887104,
+        -0.00613047265747472
+       ],
+       "p_value": 0.0031996800319968005,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.018133172900781515,
+       "ci95": [
+        -0.04040946271063911,
+        0.003992477108395282
+       ],
+       "p_value": 0.10598940105989402,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 489,
+      "repeat": 1641,
+      "repeat_share": 0.7704225352112676
+     },
+     "first_seen": {
+      "difference": -0.011841908616169588,
+      "day_blocks": {
+       "difference": -0.011841908616169588,
+       "ci95": [
+        -0.020574478567734693,
+        -0.0024010801982167684
+       ],
+       "p_value": 0.012798720127987202,
+       "blocks": 108
+      },
+      "leaker_x_day": {
+       "difference": -0.011841908616169588,
+       "ci95": [
+        -0.027054207671378273,
+        0.004129494080450961
+       ],
+       "p_value": 0.141985801419858,
+       "leakers": 367,
+       "days": 108
+      },
+      "events": 489,
+      "training_seeds": 5,
+      "distinct_leakers": 367,
+      "left_mean": 0.19086350700427315,
+      "right_mean": 0.20270541562044264
+     },
+     "repeat": {
+      "difference": -0.028055145822717873,
+      "day_blocks": {
+       "difference": -0.028055145822717873,
+       "ci95": [
+        -0.03682195409589755,
+        -0.019606311212552078
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 120
+      },
+      "leaker_x_day": {
+       "difference": -0.028055145822717873,
+       "ci95": [
+        -0.040462357947271405,
+        -0.0159093057028476
+       ],
+       "p_value": 0.00019998000199980003,
+       "leakers": 718,
+       "days": 120
+      },
+      "events": 1641,
+      "training_seeds": 5,
+      "distinct_leakers": 718,
+      "left_mean": 0.2033485761691058,
+      "right_mean": 0.23140372199182363
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.016213237206548284,
+       "ci95": [
+        -0.02681832470070889,
+        -0.006227231949157149
+       ],
+       "p_value": 0.0011998800119988001,
+       "blocks": 121,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.016213237206548284,
+       "ci95": [
+        -0.03575017529350109,
+        0.0024363055087393117
+       ],
+       "p_value": 0.08759124087591241,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   }
+  },
+  "same_leaker_baseline": {
+   "30": {
+    "input_gap": {
+     "events": 3543,
+     "events_by_gap": {
+      "0": 2748,
+      "1": 339,
+      "2": 191,
+      "3-4": 165,
+      "5-9": 84,
+      ">=10": 16
+     },
+     "max_gap": 55,
+     "published_eligible_events": 2661,
+     "eligible_under_released_inputs": 2635,
+     "published_eligible_without_new_members_under_released_inputs": 26,
+     "exact_input_eligible_events": 1866,
+     "exact_input_events_reproduced_1e-12": 1866,
+     "online_history_native_mean_ap": {
+      "published_all_eligible": 0.23569177677692968,
+      "published_released_cohort": 0.23721415231395337,
+      "reconstructed_released_cohort": 0.23360786408343215,
+      "published_exact_inputs": 0.2037493968199412,
+      "reconstructed_exact_inputs": 0.2037493968199412
+     }
+    },
+    "released_inputs": {
+     "population": "released_inputs",
+     "events": 2635,
+     "first_seen": 418,
+     "repeat": 2217,
+     "levels": {
+      "online_history_native": {
+       "all": {
+        "ap": 0.23360786408343215,
+        "p10": 0.2679127134724858
+       },
+       "first_seen": {
+        "ap": 0.21884780026983944,
+        "p10": 0.24246411483253588
+       },
+       "repeat": {
+        "ap": 0.2363907719201853,
+        "p10": 0.2727108705457826
+       }
+      },
+      "same_leaker": {
+       "all": {
+        "ap": 0.23551427361625984,
+        "p10": 0.26060765390537943
+       },
+       "first_seen": {
+        "ap": 0.01446211380433743,
+        "p10": 0.012384996443654272
+       },
+       "repeat": {
+        "ap": 0.27719212783429475,
+        "p10": 0.30740831733298474
+       }
+      },
+      "same_leaker_then_history": {
+       "all": {
+        "ap": 0.30654686094024997,
+        "p10": 0.31544592030360535
+       },
+       "first_seen": {
+        "ap": 0.21884780026983944,
+        "p10": 0.24246411483253588
+       },
+       "repeat": {
+        "ap": 0.3230819116214551,
+        "p10": 0.32920613441587726
+       }
+      }
+     },
+     "contrasts": {
+      "same_leaker_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": 0.001906409532827699,
+         "day_blocks": {
+          "difference": 0.001906409532827699,
+          "ci95": [
+           -0.011533758389351993,
+           0.014012025606093768
+          ],
+          "p_value": 0.7835216478352165,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.001906409532827699,
+          "ci95": [
+           -0.018777707148466157,
+           0.022395628697023127
+          ],
+          "p_value": 0.8867113288671132,
+          "leakers": 1222,
+          "days": 121
+         },
+         "events": 2635,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.20438568646550198,
+         "day_blocks": {
+          "difference": -0.20438568646550198,
+          "ci95": [
+           -0.22768399327848401,
+           -0.18206176641480482
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 111
+         },
+         "leaker_x_day": {
+          "difference": -0.20438568646550198,
+          "ci95": [
+           -0.24443794396495006,
+           -0.1680191639943325
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 411,
+          "days": 111
+         },
+         "events": 418,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.04080135591410953,
+         "day_blocks": {
+          "difference": 0.04080135591410953,
+          "ci95": [
+           0.027743370825154417,
+           0.05298021607618745
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.04080135591410953,
+          "ci95": [
+           0.020041487507581654,
+           0.062297667963004184
+          ],
+          "p_value": 0.0005999400059994001,
+          "leakers": 919,
+          "days": 121
+         },
+         "events": 2217,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": -0.007305059567106365,
+         "day_blocks": {
+          "difference": -0.007305059567106365,
+          "ci95": [
+           -0.020428060501366863,
+           0.004193105808433989
+          ],
+          "p_value": 0.22777722227777222,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": -0.007305059567106365,
+          "ci95": [
+           -0.027429314392734154,
+           0.011350661352951982
+          ],
+          "p_value": 0.43075692430756923,
+          "leakers": 1222,
+          "days": 121
+         },
+         "events": 2635,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.23007911838888162,
+         "day_blocks": {
+          "difference": -0.23007911838888162,
+          "ci95": [
+           -0.26084979997583646,
+           -0.20091446024938217
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 111
+         },
+         "leaker_x_day": {
+          "difference": -0.23007911838888162,
+          "ci95": [
+           -0.28185110804716407,
+           -0.18204905159918935
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 411,
+          "days": 111
+         },
+         "events": 418,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.03469744678720218,
+         "day_blocks": {
+          "difference": 0.03469744678720218,
+          "ci95": [
+           0.023128692245048786,
+           0.04513745334682423
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.03469744678720218,
+          "ci95": [
+           0.01592963250848708,
+           0.05307250626097969
+          ],
+          "p_value": 0.00039996000399960006,
+          "leakers": 919,
+          "days": 121
+         },
+         "events": 2217,
+         "training_seeds": 1
+        }
+       }
+      },
+      "same_leaker_then_history_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": 0.07293899685681789,
+         "day_blocks": {
+          "difference": 0.07293899685681789,
+          "ci95": [
+           0.06427513471631466,
+           0.08123715749820978
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.07293899685681789,
+          "ci95": [
+           0.05889515146993308,
+           0.08797361958848289
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 1222,
+          "days": 121
+         },
+         "events": 2635,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 111
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 411,
+          "days": 111
+         },
+         "events": 418,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.0866911397012698,
+         "day_blocks": {
+          "difference": 0.0866911397012698,
+          "ci95": [
+           0.0765887215281624,
+           0.09641791031089972
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.0866911397012698,
+          "ci95": [
+           0.07012686291472324,
+           0.10493566360259346
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 919,
+          "days": 121
+         },
+         "events": 2217,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.04753320683111954,
+         "day_blocks": {
+          "difference": 0.04753320683111954,
+          "ci95": [
+           0.03864409422482897,
+           0.05562503516504125
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.04753320683111954,
+          "ci95": [
+           0.03344034477651569,
+           0.061681118904254616
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 1222,
+          "days": 121
+         },
+         "events": 2635,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 111
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 411,
+          "days": 111
+         },
+         "events": 418,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.05649526387009472,
+         "day_blocks": {
+          "difference": 0.05649526387009472,
+          "ci95": [
+           0.04614628926422685,
+           0.06595552470976919
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.05649526387009472,
+          "ci95": [
+           0.03978155535145322,
+           0.07342899798761203
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 919,
+          "days": 121
+         },
+         "events": 2217,
+         "training_seeds": 1
+        }
+       }
+      }
+     }
+    },
+    "exact_inputs": {
+     "population": "exact_inputs",
+     "events": 1866,
+     "first_seen": 279,
+     "repeat": 1587,
+     "levels": {
+      "online_history_native": {
+       "all": {
+        "ap": 0.2037493968199412,
+        "p10": 0.2315112540192926
+       },
+       "first_seen": {
+        "ap": 0.1921744006714192,
+        "p10": 0.2057347670250896
+       },
+       "repeat": {
+        "ap": 0.2057843205284716,
+        "p10": 0.23604284814114684
+       }
+      },
+      "same_leaker": {
+       "all": {
+        "ap": 0.22868297201390858,
+        "p10": 0.23893245901069457
+       },
+       "first_seen": {
+        "ap": 0.013506640241958846,
+        "p10": 0.011440394406627708
+       },
+       "repeat": {
+        "ap": 0.2665117033084101,
+        "p10": 0.2789263380431676
+       }
+      },
+      "same_leaker_then_history": {
+       "all": {
+        "ap": 0.2866821510647902,
+        "p10": 0.28400321543408363
+       },
+       "first_seen": {
+        "ap": 0.1921744006714192,
+        "p10": 0.2057347670250896
+       },
+       "repeat": {
+        "ap": 0.30329693516041123,
+        "p10": 0.29776307498424703
+       }
+      },
+      "sage_on": {
+       "all": {
+        "ap": 0.18237840851497153,
+        "p10": 0.22583065380493078
+       },
+       "first_seen": {
+        "ap": 0.18186080723342316,
+        "p10": 0.23483870967741946
+       },
+       "repeat": {
+        "ap": 0.18246940458148192,
+        "p10": 0.22424700693131702
+       }
+      }
+     },
+     "contrasts": {
+      "same_leaker_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": 0.02493357519396737,
+         "day_blocks": {
+          "difference": 0.02493357519396737,
+          "ci95": [
+           0.009586140985114762,
+           0.03870823714698815
+          ],
+          "p_value": 0.0021997800219978004,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.02493357519396737,
+          "ci95": [
+           -4.401026727436116e-05,
+           0.04833509082461151
+          ],
+          "p_value": 0.05039496050394961,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.17866776042946034,
+         "day_blocks": {
+          "difference": -0.17866776042946034,
+          "ci95": [
+           -0.20903361876842608,
+           -0.151485353998019
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": -0.17866776042946034,
+          "ci95": [
+           -0.22979093625810934,
+           -0.1340280067008098
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.060727382779938596,
+         "day_blocks": {
+          "difference": 0.060727382779938596,
+          "ci95": [
+           0.04540325533360597,
+           0.07531246339771565
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.060727382779938596,
+          "ci95": [
+           0.035830066930753086,
+           0.08615410573831349
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.007421204991401981,
+         "day_blocks": {
+          "difference": 0.007421204991401981,
+          "ci95": [
+           -0.006274360867232432,
+           0.019794259298735524
+          ],
+          "p_value": 0.275972402759724,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.007421204991401981,
+          "ci95": [
+           -0.014740990233714463,
+           0.02724064905828853
+          ],
+          "p_value": 0.5071492850714928,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.1942943726184619,
+         "day_blocks": {
+          "difference": -0.1942943726184619,
+          "ci95": [
+           -0.23255297052961954,
+           -0.15949049256082848
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": -0.1942943726184619,
+          "ci95": [
+           -0.25840250820938787,
+           -0.13873890609324477
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.042883489902020774,
+         "day_blocks": {
+          "difference": 0.042883489902020774,
+          "ci95": [
+           0.030794037105230754,
+           0.05432923592666715
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.042883489902020774,
+          "ci95": [
+           0.023352890036099624,
+           0.062321827292292103
+          ],
+          "p_value": 0.00039996000399960006,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 1
+        }
+       }
+      },
+      "same_leaker_then_history_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": 0.08293275424484899,
+         "day_blocks": {
+          "difference": 0.08293275424484899,
+          "ci95": [
+           0.07230409146856358,
+           0.09332479831473955
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.08293275424484899,
+          "ci95": [
+           0.0649136848667962,
+           0.10190304399519778
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.09751261463193964,
+         "day_blocks": {
+          "difference": 0.09751261463193964,
+          "ci95": [
+           0.08518831653718176,
+           0.10973449331547012
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.09751261463193964,
+          "ci95": [
+           0.07686054248014856,
+           0.11948502185962122
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.05249196141479099,
+         "day_blocks": {
+          "difference": 0.05249196141479099,
+          "ci95": [
+           0.043253215185040605,
+           0.06103904926595144
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.05249196141479099,
+          "ci95": [
+           0.03706353705347887,
+           0.06795360673366041
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.06172022684310018,
+         "day_blocks": {
+          "difference": 0.06172022684310018,
+          "ci95": [
+           0.051004802937917114,
+           0.07174642264962529
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.06172022684310018,
+          "ci95": [
+           0.044367755004300576,
+           0.07964597434493521
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 1
+        }
+       }
+      },
+      "same_leaker_minus_sage_on": {
+       "ap": {
+        "all": {
+         "difference": 0.04630456349893704,
+         "day_blocks": {
+          "difference": 0.04630456349893704,
+          "ci95": [
+           0.032666303810838425,
+           0.05866239458690892
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.04630456349893704,
+          "ci95": [
+           0.023871841161554247,
+           0.06816745343976953
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.1683541669914643,
+         "day_blocks": {
+          "difference": -0.1683541669914643,
+          "ci95": [
+           -0.1928776787190845,
+           -0.14543122014378104
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": -0.1683541669914643,
+          "ci95": [
+           -0.20893579785711058,
+           -0.13199985244434176
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.08404229872692819,
+         "day_blocks": {
+          "difference": 0.08404229872692819,
+          "ci95": [
+           0.07045240951309632,
+           0.09725256137508166
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.08404229872692819,
+          "ci95": [
+           0.061259132498708305,
+           0.10783335809685596
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 5
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.013101805205764257,
+         "day_blocks": {
+          "difference": 0.013101805205764257,
+          "ci95": [
+           -0.0018553421918218384,
+           0.02629478613352032
+          ],
+          "p_value": 0.08359164083591641,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.013101805205764257,
+          "ci95": [
+           -0.00956353999098258,
+           0.03430188742844341
+          ],
+          "p_value": 0.24477552244775522,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.22339831527079165,
+         "day_blocks": {
+          "difference": -0.22339831527079165,
+          "ci95": [
+           -0.2595654477959193,
+           -0.19077330939377807
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": -0.22339831527079165,
+          "ci95": [
+           -0.28336635425724255,
+           -0.1699916552427199
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.054679331111850644,
+         "day_blocks": {
+          "difference": 0.054679331111850644,
+          "ci95": [
+           0.041704252532942944,
+           0.06706873342468765
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.054679331111850644,
+          "ci95": [
+           0.03445379534339755,
+           0.07451484710090804
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 5
+        }
+       }
+      },
+      "same_leaker_then_history_minus_sage_on": {
+       "ap": {
+        "all": {
+         "difference": 0.10430374254981864,
+         "day_blocks": {
+          "difference": 0.10430374254981864,
+          "ci95": [
+           0.09334783953724819,
+           0.11509401696407114
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.10430374254981864,
+          "ci95": [
+           0.08599006992116999,
+           0.12332989832629719
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": 0.010313593437996054,
+         "day_blocks": {
+          "difference": 0.010313593437996054,
+          "ci95": [
+           -0.00046710594986300763,
+           0.02076686990841178
+          ],
+          "p_value": 0.06059394060593941,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": 0.010313593437996054,
+          "ci95": [
+           -0.006995768568528781,
+           0.027950533913792
+          ],
+          "p_value": 0.24097590240975902,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.12082753057892923,
+         "day_blocks": {
+          "difference": 0.12082753057892923,
+          "ci95": [
+           0.1083837044857902,
+           0.1330468715952697
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.12082753057892923,
+          "ci95": [
+           0.10004137671936317,
+           0.1429366077954066
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 5
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.05817256162915327,
+         "day_blocks": {
+          "difference": 0.05817256162915327,
+          "ci95": [
+           0.04624158473105842,
+           0.06911669128069997
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.05817256162915327,
+          "ci95": [
+           0.040127052669079184,
+           0.07598994465817356
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.029103942652329746,
+         "day_blocks": {
+          "difference": -0.029103942652329746,
+          "ci95": [
+           -0.04581824966078698,
+           -0.013496047430830046
+          ],
+          "p_value": 0.0007999200079992001,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": -0.029103942652329746,
+          "ci95": [
+           -0.05629272727272727,
+           -0.001847312961011622
+          ],
+          "p_value": 0.0387961203879612,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.07351606805293005,
+         "day_blocks": {
+          "difference": 0.07351606805293005,
+          "ci95": [
+           0.06110809342834521,
+           0.08531409577993576
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.07351606805293005,
+          "ci95": [
+           0.054360278321442385,
+           0.0932498502249836
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 5
+        }
+       }
+      },
+      "online_history_native_minus_sage_on": {
+       "ap": {
+        "all": {
+         "difference": 0.02137098830496966,
+         "day_blocks": {
+          "difference": 0.02137098830496966,
+          "ci95": [
+           0.01437249188957058,
+           0.028768991416129937
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.02137098830496966,
+          "ci95": [
+           0.011231402524820465,
+           0.031931002566810314
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": 0.010313593437996054,
+         "day_blocks": {
+          "difference": 0.010313593437996054,
+          "ci95": [
+           -0.00046710594986300763,
+           0.02076686990841178
+          ],
+          "p_value": 0.06059394060593941,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": 0.010313593437996054,
+          "ci95": [
+           -0.006995768568528781,
+           0.027950533913792
+          ],
+          "p_value": 0.24097590240975902,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.023314915946989596,
+         "day_blocks": {
+          "difference": 0.023314915946989596,
+          "ci95": [
+           0.015843841208593907,
+           0.03131081991229148
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.023314915946989596,
+          "ci95": [
+           0.011909533634874847,
+           0.0348232658188647
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 5
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.005680600214362272,
+         "day_blocks": {
+          "difference": 0.005680600214362272,
+          "ci95": [
+           -0.0030876141552511416,
+           0.014239622080047603
+          ],
+          "p_value": 0.1977802219778022,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.005680600214362272,
+          "ci95": [
+           -0.006516358605458894,
+           0.01797506650711349
+          ],
+          "p_value": 0.37476252374762525,
+          "leakers": 995,
+          "days": 121
+         },
+         "events": 1866,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.029103942652329746,
+         "day_blocks": {
+          "difference": -0.029103942652329746,
+          "ci95": [
+           -0.04581824966078698,
+           -0.013496047430830046
+          ],
+          "p_value": 0.0007999200079992001,
+          "blocks": 100
+         },
+         "leaker_x_day": {
+          "difference": -0.029103942652329746,
+          "ci95": [
+           -0.05629272727272727,
+           -0.001847312961011622
+          ],
+          "p_value": 0.0387961203879612,
+          "leakers": 275,
+          "days": 100
+         },
+         "events": 279,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.011795841209829867,
+         "day_blocks": {
+          "difference": 0.011795841209829867,
+          "ci95": [
+           0.002905831631495349,
+           0.02060221317697563
+          ],
+          "p_value": 0.008399160083991601,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.011795841209829867,
+          "ci95": [
+           -0.0014442191045052548,
+           0.02483187828589317
+          ],
+          "p_value": 0.07939206079392061,
+          "leakers": 777,
+          "days": 121
+         },
+         "events": 1587,
+         "training_seeds": 5
+        }
+       }
+      }
+     }
+    }
+   },
+   "60": {
+    "input_gap": {
+     "events": 3543,
+     "events_by_gap": {
+      "0": 3227,
+      "1": 142,
+      "2": 87,
+      "3-4": 51,
+      "5-9": 29,
+      ">=10": 7
+     },
+     "max_gap": 34,
+     "published_eligible_events": 2130,
+     "eligible_under_released_inputs": 2109,
+     "published_eligible_without_new_members_under_released_inputs": 21,
+     "exact_input_eligible_events": 1814,
+     "exact_input_events_reproduced_1e-12": 1814,
+     "online_history_native_mean_ap": {
+      "published_all_eligible": 0.22481523757135166,
+      "published_released_cohort": 0.22690134154032787,
+      "reconstructed_released_cohort": 0.22516546715846208,
+      "published_exact_inputs": 0.21037732424009842,
+      "reconstructed_exact_inputs": 0.21037732424009842
+     }
+    },
+    "released_inputs": {
+     "population": "released_inputs",
+     "events": 2109,
+     "first_seen": 331,
+     "repeat": 1778,
+     "levels": {
+      "online_history_native": {
+       "all": {
+        "ap": 0.22516546715846208,
+        "p10": 0.2537221431958274
+       },
+       "first_seen": {
+        "ap": 0.20463958226003914,
+        "p10": 0.21102719033232625
+       },
+       "repeat": {
+        "ap": 0.2289866527047939,
+        "p10": 0.26167041619797526
+       }
+      },
+      "same_leaker": {
+       "all": {
+        "ap": 0.21580530908554188,
+        "p10": 0.23616817883158628
+       },
+       "first_seen": {
+        "ap": 0.013218683109279195,
+        "p10": 0.011131971644747857
+       },
+       "repeat": {
+        "ap": 0.25351969221160653,
+        "p10": 0.27806187094567153
+       }
+      },
+      "same_leaker_then_history": {
+       "all": {
+        "ap": 0.28618312246930416,
+        "p10": 0.2867235656709341
+       },
+       "first_seen": {
+        "ap": 0.20463958226003914,
+        "p10": 0.21102719033232625
+       },
+       "repeat": {
+        "ap": 0.3013636128007252,
+        "p10": 0.3008155230596175
+       }
+      }
+     },
+     "contrasts": {
+      "same_leaker_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": -0.009360158072920208,
+         "day_blocks": {
+          "difference": -0.009360158072920208,
+          "ci95": [
+           -0.023835168161560914,
+           0.003556595917545113
+          ],
+          "p_value": 0.16378362163783622,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": -0.009360158072920208,
+          "ci95": [
+           -0.031216590922571893,
+           0.012123332385905154
+          ],
+          "p_value": 0.3975602439756024,
+          "leakers": 1081,
+          "days": 121
+         },
+         "events": 2109,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.19142089915075997,
+         "day_blocks": {
+          "difference": -0.19142089915075997,
+          "ci95": [
+           -0.21581953631227727,
+           -0.16807503154922973
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 104
+         },
+         "leaker_x_day": {
+          "difference": -0.19142089915075997,
+          "ci95": [
+           -0.235020601410049,
+           -0.1521098828529618
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 328,
+          "days": 104
+         },
+         "events": 331,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.024533039506812616,
+         "day_blocks": {
+          "difference": 0.024533039506812616,
+          "ci95": [
+           0.00960681093469895,
+           0.038765384660596564
+          ],
+          "p_value": 0.0017998200179982,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.024533039506812616,
+          "ci95": [
+           0.001739469098571296,
+           0.04757754883082999
+          ],
+          "p_value": 0.0365963403659634,
+          "leakers": 824,
+          "days": 120
+         },
+         "events": 1778,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": -0.01755396436424109,
+         "day_blocks": {
+          "difference": -0.01755396436424109,
+          "ci95": [
+           -0.030402120025749945,
+           -0.006158390655454782
+          ],
+          "p_value": 0.0023997600239976003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": -0.01755396436424109,
+          "ci95": [
+           -0.03729041386268437,
+           0.0012599018247908382
+          ],
+          "p_value": 0.06319368063193681,
+          "leakers": 1081,
+          "days": 121
+         },
+         "events": 2109,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.19989521868757845,
+         "day_blocks": {
+          "difference": -0.19989521868757845,
+          "ci95": [
+           -0.2318444875962769,
+           -0.16978336862072038
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 104
+         },
+         "leaker_x_day": {
+          "difference": -0.19989521868757845,
+          "ci95": [
+           -0.2561946408230894,
+           -0.14920617863140706
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 328,
+          "days": 104
+         },
+         "events": 331,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.016391454747696283,
+         "day_blocks": {
+          "difference": 0.016391454747696283,
+          "ci95": [
+           0.004989677203232043,
+           0.026858614320267725
+          ],
+          "p_value": 0.0051994800519948,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.016391454747696283,
+          "ci95": [
+           -0.0012320882184049106,
+           0.034139694921028585
+          ],
+          "p_value": 0.0705929407059294,
+          "leakers": 824,
+          "days": 120
+         },
+         "events": 1778,
+         "training_seeds": 1
+        }
+       }
+      },
+      "same_leaker_then_history_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": 0.06101765531084207,
+         "day_blocks": {
+          "difference": 0.06101765531084207,
+          "ci95": [
+           0.05160290592143843,
+           0.07060942594693427
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.06101765531084207,
+          "ci95": [
+           0.04613369430195679,
+           0.07721476720357719
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 1081,
+          "days": 121
+         },
+         "events": 2109,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 104
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 328,
+          "days": 104
+         },
+         "events": 331,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.07237696009593134,
+         "day_blocks": {
+          "difference": 0.07237696009593134,
+          "ci95": [
+           0.06123114604661866,
+           0.08395960280143697
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.07237696009593134,
+          "ci95": [
+           0.0547838881014177,
+           0.09151886690097552
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 824,
+          "days": 120
+         },
+         "events": 1778,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.033001422475106686,
+         "day_blocks": {
+          "difference": 0.033001422475106686,
+          "ci95": [
+           0.024221390866221118,
+           0.041247020171149146
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 121
+         },
+         "leaker_x_day": {
+          "difference": 0.033001422475106686,
+          "ci95": [
+           0.01926407494461002,
+           0.046770654840363204
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 1081,
+          "days": 121
+         },
+         "events": 2109,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 104
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 328,
+          "days": 104
+         },
+         "events": 331,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.03914510686164229,
+         "day_blocks": {
+          "difference": 0.03914510686164229,
+          "ci95": [
+           0.029012158917621104,
+           0.04864822091577744
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.03914510686164229,
+          "ci95": [
+           0.023264830541918587,
+           0.0553357510295525
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 824,
+          "days": 120
+         },
+         "events": 1778,
+         "training_seeds": 1
+        }
+       }
+      }
+     }
+    },
+    "exact_inputs": {
+     "population": "exact_inputs",
+     "events": 1814,
+     "first_seen": 278,
+     "repeat": 1536,
+     "levels": {
+      "online_history_native": {
+       "all": {
+        "ap": 0.21037732424009842,
+        "p10": 0.2372932745314223
+       },
+       "first_seen": {
+        "ap": 0.19568355195325832,
+        "p10": 0.20089928057553957
+       },
+       "repeat": {
+        "ap": 0.2130367439638885,
+        "p10": 0.24388020833333335
+       }
+      },
+      "same_leaker": {
+       "all": {
+        "ap": 0.20996556294793048,
+        "p10": 0.22443398085533697
+       },
+       "first_seen": {
+        "ap": 0.012870174408027967,
+        "p10": 0.010785840712190456
+       },
+       "repeat": {
+        "ap": 0.24563777519668892,
+        "p10": 0.26310206871978664
+       }
+      },
+      "same_leaker_then_history": {
+       "all": {
+        "ap": 0.27564762829551925,
+        "p10": 0.2717750826901874
+       },
+       "first_seen": {
+        "ap": 0.19568355195325832,
+        "p10": 0.20089928057553957
+       },
+       "repeat": {
+        "ap": 0.2901202931543399,
+        "p10": 0.28460286458333334
+       }
+      },
+      "sage_on": {
+       "all": {
+        "ap": 0.18744072015177746,
+        "p10": 0.2283902976846754
+       },
+       "first_seen": {
+        "ap": 0.18640845346631313,
+        "p10": 0.22503597122302174
+       },
+       "repeat": {
+        "ap": 0.18762754966906842,
+        "p10": 0.22899739583333362
+       }
+      }
+     },
+     "contrasts": {
+      "same_leaker_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": -0.00041176129216792984,
+         "day_blocks": {
+          "difference": -0.00041176129216792984,
+          "ci95": [
+           -0.016519957621525853,
+           0.014370060637276574
+          ],
+          "p_value": 0.9519048095190481,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": -0.00041176129216792984,
+          "ci95": [
+           -0.024629897533706313,
+           0.023199965685568893
+          ],
+          "p_value": 0.9517048295170483,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.18281337754523033,
+         "day_blocks": {
+          "difference": -0.18281337754523033,
+          "ci95": [
+           -0.21030298166324377,
+           -0.15755810439553422
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": -0.18281337754523033,
+          "ci95": [
+           -0.23249075640083255,
+           -0.13866614961486923
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.0326010312328004,
+         "day_blocks": {
+          "difference": 0.0326010312328004,
+          "ci95": [
+           0.016048367001530405,
+           0.04826900742273464
+          ],
+          "p_value": 0.0007999200079992001,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.0326010312328004,
+          "ci95": [
+           0.007635551245472266,
+           0.05775425061833807
+          ],
+          "p_value": 0.008799120087991202,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": -0.012859293676085294,
+         "day_blocks": {
+          "difference": -0.012859293676085294,
+          "ci95": [
+           -0.02718522658977944,
+           -6.820096787793392e-05
+          ],
+          "p_value": 0.049595040495950406,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": -0.012859293676085294,
+          "ci95": [
+           -0.034324812884128426,
+           0.007717554564894533
+          ],
+          "p_value": 0.206979302069793,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": -0.19011343986334914,
+         "day_blocks": {
+          "difference": -0.19011343986334914,
+          "ci95": [
+           -0.2255898650645581,
+           -0.15712805912007385
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": -0.19011343986334914,
+          "ci95": [
+           -0.2531393615359101,
+           -0.13480992702868397
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.01922186038645334,
+         "day_blocks": {
+          "difference": 0.01922186038645334,
+          "ci95": [
+           0.006983331580007863,
+           0.03038332451453836
+          ],
+          "p_value": 0.0021997800219978004,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.01922186038645334,
+          "ci95": [
+           0.0002317067821637259,
+           0.03782046435522857
+          ],
+          "p_value": 0.0491950804919508,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 1
+        }
+       }
+      },
+      "same_leaker_then_history_minus_online_history_native": {
+       "ap": {
+        "all": {
+         "difference": 0.06527030405542082,
+         "day_blocks": {
+          "difference": 0.06527030405542082,
+          "ci95": [
+           0.0546523682444597,
+           0.076223626905686
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.06527030405542082,
+          "ci95": [
+           0.04849097995344897,
+           0.08311613734539543
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.07708354919045142,
+         "day_blocks": {
+          "difference": 0.07708354919045142,
+          "ci95": [
+           0.06472067828118715,
+           0.08961465602717832
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.07708354919045142,
+          "ci95": [
+           0.05786628701829462,
+           0.09762410435439031
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 1
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.034481808158765156,
+         "day_blocks": {
+          "difference": 0.034481808158765156,
+          "ci95": [
+           0.02526255007016201,
+           0.04322061653467545
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.034481808158765156,
+          "ci95": [
+           0.020135470148159012,
+           0.049085951045558025
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 1
+        },
+        "first_seen": {
+         "difference": 0.0,
+         "day_blocks": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": 0.0,
+          "ci95": [
+           0.0,
+           0.0
+          ],
+          "p_value": 1.0,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 1
+        },
+        "repeat": {
+         "difference": 0.040722656249999996,
+         "day_blocks": {
+          "difference": 0.040722656249999996,
+          "ci95": [
+           0.030078112366591202,
+           0.05080296746189776
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.040722656249999996,
+          "ci95": [
+           0.024078970954595727,
+           0.057512195390278346
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 1
+        }
+       }
+      },
+      "same_leaker_minus_sage_on": {
+       "ap": {
+        "all": {
+         "difference": 0.022524842796153095,
+         "day_blocks": {
+          "difference": 0.022524842796153095,
+          "ci95": [
+           0.008309711175550715,
+           0.03655054293973139
+          ],
+          "p_value": 0.0007999200079992001,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.022524842796153095,
+          "ci95": [
+           7.943160759360941e-05,
+           0.04487671794295211
+          ],
+          "p_value": 0.048995100489951,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.17353827905828517,
+         "day_blocks": {
+          "difference": -0.17353827905828517,
+          "ci95": [
+           -0.19599139390661094,
+           -0.15250659323080218
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": -0.17353827905828517,
+          "ci95": [
+           -0.2134102169187803,
+           -0.13730734233617792
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.05801022552762043,
+         "day_blocks": {
+          "difference": 0.05801022552762043,
+          "ci95": [
+           0.04365777735202089,
+           0.07257691676965544
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.05801022552762043,
+          "ci95": [
+           0.03524028294106906,
+           0.08201808893505899
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 5
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": -0.003956316829337776,
+         "day_blocks": {
+          "difference": -0.003956316829337776,
+          "ci95": [
+           -0.018354685001225796,
+           0.009432103505187339
+          ],
+          "p_value": 0.5585441455854414,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": -0.003956316829337776,
+          "ci95": [
+           -0.025642467337121753,
+           0.01622539778624655
+          ],
+          "p_value": 0.6957304269573042,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.21425013051083114,
+         "day_blocks": {
+          "difference": -0.21425013051083114,
+          "ci95": [
+           -0.2451994286415716,
+           -0.1855598038180947
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": -0.21425013051083114,
+          "ci95": [
+           -0.2704511915161855,
+           -0.1630078354293493
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.034104672886453344,
+         "day_blocks": {
+          "difference": 0.034104672886453344,
+          "ci95": [
+           0.021539945476181502,
+           0.046292839597856274
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.034104672886453344,
+          "ci95": [
+           0.01482382489184701,
+           0.05333802617789844
+          ],
+          "p_value": 0.0005999400059994001,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 5
+        }
+       }
+      },
+      "same_leaker_then_history_minus_sage_on": {
+       "ap": {
+        "all": {
+         "difference": 0.08820690814374184,
+         "day_blocks": {
+          "difference": 0.08820690814374184,
+          "ci95": [
+           0.07652510445140602,
+           0.10024772282228077
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.08820690814374184,
+          "ci95": [
+           0.07072082346259566,
+           0.10711250072876538
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": 0.009275098486945195,
+         "day_blocks": {
+          "difference": 0.009275098486945195,
+          "ci95": [
+           -0.0036033798746554673,
+           0.022292650886347225
+          ],
+          "p_value": 0.15858414158584141,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": 0.009275098486945195,
+          "ci95": [
+           -0.013324847101785537,
+           0.032011665967205734
+          ],
+          "p_value": 0.40755924407559246,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.10249274348527145,
+         "day_blocks": {
+          "difference": 0.10249274348527145,
+          "ci95": [
+           0.08969131731478962,
+           0.1156923987327644
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.10249274348527145,
+          "ci95": [
+           0.08243126917576676,
+           0.12371611570139708
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 5
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.043384785005512676,
+         "day_blocks": {
+          "difference": 0.043384785005512676,
+          "ci95": [
+           0.03145459838088053,
+           0.05481863636363636
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.043384785005512676,
+          "ci95": [
+           0.02632132165973186,
+           0.06044887274919523
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.024136690647482018,
+         "day_blocks": {
+          "difference": -0.024136690647482018,
+          "ci95": [
+           -0.042793806161745836,
+           -0.00618037379663057
+          ],
+          "p_value": 0.007999200079992,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": -0.024136690647482018,
+          "ci95": [
+           -0.05428939617083947,
+           0.005894804318488525
+          ],
+          "p_value": 0.10898910108989102,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.055605468750000005,
+         "day_blocks": {
+          "difference": 0.055605468750000005,
+          "ci95": [
+           0.04304162841212949,
+           0.06785177514167301
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.055605468750000005,
+          "ci95": [
+           0.037039292000882164,
+           0.07452073899434981
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 5
+        }
+       }
+      },
+      "online_history_native_minus_sage_on": {
+       "ap": {
+        "all": {
+         "difference": 0.02293660408832102,
+         "day_blocks": {
+          "difference": 0.02293660408832102,
+          "ci95": [
+           0.014677397012878924,
+           0.03139804793980504
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.02293660408832102,
+          "ci95": [
+           0.011637655635262225,
+           0.034544267969194645
+          ],
+          "p_value": 0.00039996000399960006,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": 0.009275098486945195,
+         "day_blocks": {
+          "difference": 0.009275098486945195,
+          "ci95": [
+           -0.0036033798746554673,
+           0.022292650886347225
+          ],
+          "p_value": 0.15858414158584141,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": 0.009275098486945195,
+          "ci95": [
+           -0.013324847101785537,
+           0.032011665967205734
+          ],
+          "p_value": 0.40755924407559246,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.025409194294820033,
+         "day_blocks": {
+          "difference": 0.025409194294820033,
+          "ci95": [
+           0.016629310325804687,
+           0.03461523958908611
+          ],
+          "p_value": 0.00019998000199980003,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.025409194294820033,
+          "ci95": [
+           0.013110050581595908,
+           0.03875750991665358
+          ],
+          "p_value": 0.00019998000199980003,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 5
+        }
+       },
+       "p10": {
+        "all": {
+         "difference": 0.008902976846747518,
+         "day_blocks": {
+          "difference": 0.008902976846747518,
+          "ci95": [
+           -0.00014148087948423775,
+           0.017350286977108668
+          ],
+          "p_value": 0.053394660533946606,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.008902976846747518,
+          "ci95": [
+           -0.00431058772808189,
+           0.021728117344106825
+          ],
+          "p_value": 0.1827817218278172,
+          "leakers": 985,
+          "days": 120
+         },
+         "events": 1814,
+         "training_seeds": 5
+        },
+        "first_seen": {
+         "difference": -0.024136690647482018,
+         "day_blocks": {
+          "difference": -0.024136690647482018,
+          "ci95": [
+           -0.042793806161745836,
+           -0.00618037379663057
+          ],
+          "p_value": 0.007999200079992,
+          "blocks": 94
+         },
+         "leaker_x_day": {
+          "difference": -0.024136690647482018,
+          "ci95": [
+           -0.05428939617083947,
+           0.005894804318488525
+          ],
+          "p_value": 0.10898910108989102,
+          "leakers": 277,
+          "days": 94
+         },
+         "events": 278,
+         "training_seeds": 5
+        },
+        "repeat": {
+         "difference": 0.014882812499999998,
+         "day_blocks": {
+          "difference": 0.014882812499999998,
+          "ci95": [
+           0.00554217119674978,
+           0.02376205140497808
+          ],
+          "p_value": 0.0027997200279972004,
+          "blocks": 120
+         },
+         "leaker_x_day": {
+          "difference": 0.014882812499999998,
+          "ci95": [
+           0.0007696680870150284,
+           0.028510072033392585
+          ],
+          "p_value": 0.039196080391960805,
+          "leakers": 763,
+          "days": 120
+         },
+         "events": 1536,
+         "training_seeds": 5
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "R2": {
+  "provenance": {
+   "primary_scores_sha256": "af9656ac8e1961eccbda75c590e5c8361a640229127dc122e79611d0365cef59",
+   "primary_report_sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+   "evaluation_window": {
+    "start": "2026-09-01T00:00:00+00:00",
+    "end_exclusive": "2026-10-16T00:00:00+00:00"
+   },
+   "library_tables": {
+    "2023": "9f1e954f8fc65fc75b1ce119ab23c6d6a880b3056d120dc2cb9c77d758b91bba",
+    "2023_rows": 396,
+    "2023_successful_rows": 396,
+    "2024": "27b382c3494f4f7485a0e8aa03f0f2446ecc7c93f48f4a047f40dbfd137bf35b",
+    "2024_rows": 1602,
+    "2024_successful_rows": 1602,
+    "2025": "72e8b1357364b80f2be43f5ea3beed1155bc425b4a9df0c4506f56556c337163",
+    "2025_rows": 8437,
+    "2025_successful_rows": 8412,
+    "2026": "065def6fb26da2f5c19a01653a99f2f48f2fc5a04b87741aa240423615157c58",
+    "2026_rows": 6416,
+    "2026_successful_rows": 6411
+   },
+   "library_events_local": 18110,
+   "scored_r2_events_in_library": 1289
+  },
+  "history_gap": "R2 identified 1,311 events (sections/08-forecast.tex); the 1,289 scored ones are local. The other 22 (onset outside the window) and their leakers are held only in the custodian event table, so a leaker whose only completed earlier event is one of them is classed first-seen here. The released 2026 table covers 1 January to 31 August 2026.",
+  "familiarity": {
+   "30": {
+    "all_events": {
+     "0": 143,
+     "1": 102,
+     "2-4": 203,
+     "5-19": 514,
+     ">=20": 327
+    },
+    "eligible_events": {
+     "0": 124,
+     "1": 78,
+     "2-4": 160,
+     "5-19": 389,
+     ">=20": 253
+    },
+    "eligible_events_development": {
+     "0": 140,
+     "1": 80,
+     "2-4": 159,
+     "5-19": 385,
+     ">=20": 240
+    }
+   },
+   "60": {
+    "all_events": {
+     "0": 143,
+     "1": 102,
+     "2-4": 203,
+     "5-19": 514,
+     ">=20": 327
+    },
+    "eligible_events": {
+     "0": 107,
+     "1": 68,
+     "2-4": 132,
+     "5-19": 325,
+     ">=20": 210
+    },
+    "eligible_events_development": {
+     "0": 122,
+     "1": 70,
+     "2-4": 128,
+     "5-19": 325,
+     ">=20": 197
+    }
+   }
+  },
+  "split": {
+   "C2@30": {
+    "left": "sage_on",
+    "right": "online_history",
+    "horizon_seconds": 30,
+    "published": {
+     "difference": 0.00027337806829306403,
+     "ci95": [
+      -0.007509839964711101,
+      0.00785915987095279
+     ],
+     "eligible_events": 1004,
+     "blocks": 45
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 124,
+      "repeat": 880,
+      "repeat_share": 0.8764940239043825
+     },
+     "first_seen": {
+      "difference": 0.008663298272763869,
+      "day_blocks": {
+       "difference": 0.008663298272763869,
+       "ci95": [
+        -0.005065010243765957,
+        0.025475709621562027
+       ],
+       "p_value": 0.24397560243975602,
+       "blocks": 37
+      },
+      "leaker_x_day": {
+       "difference": 0.008663298272763869,
+       "ci95": [
+        -0.012854511089137969,
+        0.03750189308480419
+       ],
+       "p_value": 0.46555344465553444,
+       "leakers": 123,
+       "days": 37
+      },
+      "events": 124,
+      "training_seeds": 5,
+      "distinct_leakers": 123,
+      "left_mean": 0.23671256374055732,
+      "right_mean": 0.22804926546779342
+     },
+     "repeat": {
+      "difference": -0.0009088379605187322,
+      "day_blocks": {
+       "difference": -0.0009088379605187322,
+       "ci95": [
+        -0.008907133446958572,
+        0.006944413298473067
+       ],
+       "p_value": 0.8233176682331766,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.0009088379605187322,
+       "ci95": [
+        -0.01139511151845654,
+        0.0104338242822899
+       ],
+       "p_value": 0.8455154484551545,
+       "leakers": 555,
+       "days": 45
+      },
+      "events": 880,
+      "training_seeds": 5,
+      "distinct_leakers": 555,
+      "left_mean": 0.21233186839280904,
+      "right_mean": 0.21324070635332787
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.0095721362332826,
+       "ci95": [
+        -0.02583960822327182,
+        0.004169506723346323
+       ],
+       "p_value": 0.1967803219678032,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.0095721362332826,
+       "ci95": [
+        -0.0393416093783921,
+        0.014009805169712062
+       ],
+       "p_value": 0.44455554444555545,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 140,
+      "repeat": 864,
+      "repeat_share": 0.8605577689243028
+     },
+     "first_seen": {
+      "difference": 0.00785816020611578,
+      "day_blocks": {
+       "difference": 0.00785816020611578,
+       "ci95": [
+        -0.004767098283363379,
+        0.02282022583433818
+       ],
+       "p_value": 0.23637636236376364,
+       "blocks": 38
+      },
+      "leaker_x_day": {
+       "difference": 0.00785816020611578,
+       "ci95": [
+        -0.011921752705666483,
+        0.033572992143496426
+       ],
+       "p_value": 0.49355064493550643,
+       "leakers": 124,
+       "days": 38
+      },
+      "events": 140,
+      "training_seeds": 5,
+      "distinct_leakers": 124,
+      "left_mean": 0.2362057667411354,
+      "right_mean": 0.22834760653501962
+     },
+     "repeat": {
+      "difference": -0.0009556375558911727,
+      "day_blocks": {
+       "difference": -0.0009556375558911727,
+       "ci95": [
+        -0.008982404194458204,
+        0.00694249159771018
+       ],
+       "p_value": 0.80991900809919,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.0009556375558911727,
+       "ci95": [
+        -0.011818433759560511,
+        0.010712553438535185
+       ],
+       "p_value": 0.8323167683231677,
+       "leakers": 542,
+       "days": 45
+      },
+      "events": 864,
+      "training_seeds": 5,
+      "distinct_leakers": 542,
+      "left_mean": 0.21196249391868296,
+      "right_mean": 0.2129181314745743
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.008813797762006952,
+       "ci95": [
+        -0.023078172984159196,
+        0.003576966140798236
+       ],
+       "p_value": 0.17998200179982002,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.008813797762006952,
+       "ci95": [
+        -0.035596844421422726,
+        0.012974423014700873
+       ],
+       "p_value": 0.44015598440155984,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   },
+   "native@30": {
+    "left": "sage_on",
+    "right": "online_history_native",
+    "horizon_seconds": 30,
+    "published": {
+     "difference": -0.029819501485530968,
+     "ci95": [
+      -0.040561559172351734,
+      -0.019728168223269758
+     ],
+     "eligible_events": 1004,
+     "blocks": 45
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 124,
+      "repeat": 880,
+      "repeat_share": 0.8764940239043825
+     },
+     "first_seen": {
+      "difference": -0.019908198769276755,
+      "day_blocks": {
+       "difference": -0.019908198769276755,
+       "ci95": [
+        -0.04110614476456627,
+        0.0031142798711821236
+       ],
+       "p_value": 0.08919108089191082,
+       "blocks": 37
+      },
+      "leaker_x_day": {
+       "difference": -0.019908198769276755,
+       "ci95": [
+        -0.05196643097072661,
+        0.016445004867359374
+       ],
+       "p_value": 0.23177682231776822,
+       "leakers": 123,
+       "days": 37
+      },
+      "events": 124,
+      "training_seeds": 5,
+      "distinct_leakers": 123,
+      "left_mean": 0.23671256374055732,
+      "right_mean": 0.25662076250983407
+     },
+     "repeat": {
+      "difference": -0.031216094141003157,
+      "day_blocks": {
+       "difference": -0.031216094141003157,
+       "ci95": [
+        -0.04168972719471502,
+        -0.021259601943043587
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.031216094141003157,
+       "ci95": [
+        -0.045343678956137244,
+        -0.016975305102564616
+       ],
+       "p_value": 0.00019998000199980003,
+       "leakers": 555,
+       "days": 45
+      },
+      "events": 880,
+      "training_seeds": 5,
+      "distinct_leakers": 555,
+      "left_mean": 0.21233186839280904,
+      "right_mean": 0.24354796253381233
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.011307895371726401,
+       "ci95": [
+        -0.032535001453659354,
+        0.007341474900110027
+       ],
+       "p_value": 0.2505749425057494,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.011307895371726401,
+       "ci95": [
+        -0.0475873485005582,
+        0.02066051420156406
+       ],
+       "p_value": 0.4901509849015098,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 140,
+      "repeat": 864,
+      "repeat_share": 0.8605577689243028
+     },
+     "first_seen": {
+      "difference": -0.020221914006806726,
+      "day_blocks": {
+       "difference": -0.020221914006806726,
+       "ci95": [
+        -0.039485200639328887,
+        -0.0002535913680976122
+       ],
+       "p_value": 0.047995200479952004,
+       "blocks": 38
+      },
+      "leaker_x_day": {
+       "difference": -0.020221914006806726,
+       "ci95": [
+        -0.04986195532160037,
+        0.011714651913829942
+       ],
+       "p_value": 0.18618138186181382,
+       "leakers": 124,
+       "days": 38
+      },
+      "events": 140,
+      "training_seeds": 5,
+      "distinct_leakers": 124,
+      "left_mean": 0.2362057667411354,
+      "right_mean": 0.25642768074794214
+     },
+     "repeat": {
+      "difference": -0.03137466612328721,
+      "day_blocks": {
+       "difference": -0.03137466612328721,
+       "ci95": [
+        -0.04185347116237379,
+        -0.021385149865337832
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.03137466612328721,
+       "ci95": [
+        -0.04589053220758392,
+        -0.016802247234090673
+       ],
+       "p_value": 0.00039996000399960006,
+       "leakers": 542,
+       "days": 45
+      },
+      "events": 864,
+      "training_seeds": 5,
+      "distinct_leakers": 542,
+      "left_mean": 0.21196249391868296,
+      "right_mean": 0.24333716004197029
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.011152752116480483,
+       "ci95": [
+        -0.028933663453276914,
+        0.005462197445542334
+       ],
+       "p_value": 0.19538046195380462,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.011152752116480483,
+       "ci95": [
+        -0.044101123132293016,
+        0.018621811235999177
+       ],
+       "p_value": 0.46355364463553644,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   },
+   "C2@60": {
+    "left": "sage_on",
+    "right": "online_history",
+    "horizon_seconds": 60,
+    "published": {
+     "difference": -0.004188837092601561,
+     "ci95": [
+      -0.011348739668364253,
+      0.003318297194261509
+     ],
+     "eligible_events": 842,
+     "blocks": 45
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 107,
+      "repeat": 735,
+      "repeat_share": 0.8729216152019003
+     },
+     "first_seen": {
+      "difference": 0.0011362057273606114,
+      "day_blocks": {
+       "difference": 0.0011362057273606114,
+       "ci95": [
+        -0.011783878765791797,
+        0.01379224252227034
+       ],
+       "p_value": 0.8367163283671633,
+       "blocks": 36
+      },
+      "leaker_x_day": {
+       "difference": 0.0011362057273606114,
+       "ci95": [
+        -0.020955397821894935,
+        0.021418247715449104
+       ],
+       "p_value": 0.8859114088591141,
+       "leakers": 106,
+       "days": 36
+      },
+      "events": 107,
+      "training_seeds": 5,
+      "distinct_leakers": 106,
+      "left_mean": 0.20495985496346852,
+      "right_mean": 0.20382364923610788
+     },
+     "repeat": {
+      "difference": -0.004964047407888571,
+      "day_blocks": {
+       "difference": -0.004964047407888571,
+       "ci95": [
+        -0.012722262423281302,
+        0.0032171412855603126
+       ],
+       "p_value": 0.22237776222377761,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.004964047407888571,
+       "ci95": [
+        -0.016299844009406955,
+        0.007378715958939339
+       ],
+       "p_value": 0.37976202379762025,
+       "leakers": 484,
+       "days": 45
+      },
+      "events": 735,
+      "training_seeds": 5,
+      "distinct_leakers": 484,
+      "left_mean": 0.19045138491020858,
+      "right_mean": 0.19541543231809708
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.0061002531352491824,
+       "ci95": [
+        -0.019956138746159365,
+        0.00857870327304134
+       ],
+       "p_value": 0.39236076392360764,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.0061002531352491824,
+       "ci95": [
+        -0.028316333805453592,
+        0.01896169271288157
+       ],
+       "p_value": 0.5853414658534146,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 122,
+      "repeat": 720,
+      "repeat_share": 0.8551068883610451
+     },
+     "first_seen": {
+      "difference": -0.0003889461697076118,
+      "day_blocks": {
+       "difference": -0.0003889461697076118,
+       "ci95": [
+        -0.012358489232994003,
+        0.011072983214808634
+       ],
+       "p_value": 0.9525047495250475,
+       "blocks": 37
+      },
+      "leaker_x_day": {
+       "difference": -0.0003889461697076118,
+       "ci95": [
+        -0.02200264636873943,
+        0.01881624549481542
+       ],
+       "p_value": 0.9895010498950105,
+       "leakers": 109,
+       "days": 37
+      },
+      "events": 122,
+      "training_seeds": 5,
+      "distinct_leakers": 109,
+      "left_mean": 0.20310545242783756,
+      "right_mean": 0.20349439859754517
+     },
+     "repeat": {
+      "difference": -0.004832707498980812,
+      "day_blocks": {
+       "difference": -0.004832707498980812,
+       "ci95": [
+        -0.012814470155386328,
+        0.0034117783604047263
+       ],
+       "p_value": 0.24737526247375263,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.004832707498980812,
+       "ci95": [
+        -0.01625363861362536,
+        0.007582338836277208
+       ],
+       "p_value": 0.40935906409359063,
+       "leakers": 471,
+       "days": 45
+      },
+      "events": 720,
+      "training_seeds": 5,
+      "distinct_leakers": 471,
+      "left_mean": 0.19046334332485865,
+      "right_mean": 0.1952960508238394
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.0044437613292732,
+       "ci95": [
+        -0.01744007103521788,
+        0.009252665510045294
+       ],
+       "p_value": 0.5015498450154985,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.0044437613292732,
+       "ci95": [
+        -0.026084548468393913,
+        0.019089948365735285
+       ],
+       "p_value": 0.6767323267673233,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   },
+   "native@60": {
+    "left": "sage_on",
+    "right": "online_history_native",
+    "horizon_seconds": 60,
+    "published": {
+     "difference": -0.028653598447505226,
+     "ci95": [
+      -0.03914352151089724,
+      -0.01800472505455037
+     ],
+     "eligible_events": 842,
+     "blocks": 45
+    },
+    "reproduced_exactly": true,
+    "history": {
+     "counts": {
+      "first_seen": 107,
+      "repeat": 735,
+      "repeat_share": 0.8729216152019003
+     },
+     "first_seen": {
+      "difference": -0.019338090934171152,
+      "day_blocks": {
+       "difference": -0.019338090934171152,
+       "ci95": [
+        -0.03858814490524876,
+        -0.000859748618525167
+       ],
+       "p_value": 0.03899610038996101,
+       "blocks": 36
+      },
+      "leaker_x_day": {
+       "difference": -0.019338090934171152,
+       "ci95": [
+        -0.04951529318165197,
+        0.00907126822081011
+       ],
+       "p_value": 0.18998100189981001,
+       "leakers": 106,
+       "days": 36
+      },
+      "events": 107,
+      "training_seeds": 5,
+      "distinct_leakers": 106,
+      "left_mean": 0.20495985496346852,
+      "right_mean": 0.22429794589763966
+     },
+     "repeat": {
+      "difference": -0.03000973355488856,
+      "day_blocks": {
+       "difference": -0.03000973355488856,
+       "ci95": [
+        -0.04097174351689245,
+        -0.018830888438334737
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.03000973355488856,
+       "ci95": [
+        -0.04564796046588584,
+        -0.014362310077186198
+       ],
+       "p_value": 0.000999900009999,
+       "leakers": 484,
+       "days": 45
+      },
+      "events": 735,
+      "training_seeds": 5,
+      "distinct_leakers": 484,
+      "left_mean": 0.19045138491020858,
+      "right_mean": 0.22046111846509706
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.010671642620717407,
+       "ci95": [
+        -0.02980165540837975,
+        0.008434489198039406
+       ],
+       "p_value": 0.27877212278772123,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.010671642620717407,
+       "ci95": [
+        -0.04169224687996911,
+        0.022244614130550715
+       ],
+       "p_value": 0.48675132486751327,
+       "degenerate_repetitions": 0
+      }
+     }
+    },
+    "development": {
+     "counts": {
+      "first_seen": 122,
+      "repeat": 720,
+      "repeat_share": 0.8551068883610451
+     },
+     "first_seen": {
+      "difference": -0.020947615449440408,
+      "day_blocks": {
+       "difference": -0.020947615449440408,
+       "ci95": [
+        -0.038573828568014334,
+        -0.004383568125443892
+       ],
+       "p_value": 0.010998900109989001,
+       "blocks": 37
+      },
+      "leaker_x_day": {
+       "difference": -0.020947615449440408,
+       "ci95": [
+        -0.05034802046453644,
+        0.005113006613833388
+       ],
+       "p_value": 0.12158784121587841,
+       "leakers": 109,
+       "days": 37
+      },
+      "events": 122,
+      "training_seeds": 5,
+      "distinct_leakers": 109,
+      "left_mean": 0.20310545242783756,
+      "right_mean": 0.22405306787727797
+     },
+     "repeat": {
+      "difference": -0.029959334455510654,
+      "day_blocks": {
+       "difference": -0.029959334455510654,
+       "ci95": [
+        -0.04111144414382741,
+        -0.018812790345989372
+       ],
+       "p_value": 0.00019998000199980003,
+       "blocks": 45
+      },
+      "leaker_x_day": {
+       "difference": -0.029959334455510654,
+       "ci95": [
+        -0.04618723597325997,
+        -0.014289751457116032
+       ],
+       "p_value": 0.00039996000399960006,
+       "leakers": 471,
+       "days": 45
+      },
+      "events": 720,
+      "training_seeds": 5,
+      "distinct_leakers": 471,
+      "left_mean": 0.19046334332485865,
+      "right_mean": 0.22042267778036925
+     },
+     "repeat_minus_first_seen": {
+      "day_blocks": {
+       "difference": -0.009011719006070246,
+       "ci95": [
+        -0.02626399284164152,
+        0.008651756427076279
+       ],
+       "p_value": 0.31616838316168383,
+       "blocks": 45,
+       "degenerate_repetitions": 0
+      },
+      "leaker_x_day": {
+       "difference": -0.009011719006070246,
+       "ci95": [
+        -0.03878200642859918,
+        0.022183695261097414
+       ],
+       "p_value": 0.5375462453754625,
+       "degenerate_repetitions": 0
+      }
+     }
+    }
+   }
+  },
+  "same_leaker_baseline": "not computed: R2 records name only the seeds, not the target or new members"
+ },
+ "same_leaker_baseline_scope": {
+  "candidates": "native candidates of online history (all ASes with positive participation in the available library, plus the seeds); the shared (graph) candidate identities are held only in the graph files, not in the per-event records, so the shared-candidate variant is not computed",
+  "availability": "library events with onset + 7200 s <= issue time (onset + Delta), as the history arm; the repeat class uses onset + 7200 s <= onset",
+  "ties": "exact expectation over random orders within ties (event_ranking_metrics)",
+  "input_gap": "the released seed sets count ASes by raw first-seen time, the forecast input by availability; on events with gap k > 0 the released set holds k ASes that were not yet input seeds, which cannot be identified from the released files (see the module docstring)",
+  "populations": {
+   "released_inputs": "published eligible events with a new member under the released seed sets; all three rankings on the released seed sets; no SAGE contrast",
+   "exact_inputs": "published eligible events with k = 0, where the reconstruction equals the published online history native record per event; SAGE contrasts here"
+  }
+ }
+}

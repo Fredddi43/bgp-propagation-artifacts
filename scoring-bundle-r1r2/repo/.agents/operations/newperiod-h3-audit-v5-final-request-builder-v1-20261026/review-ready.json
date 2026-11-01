@@ -1,0 +1,74 @@
+{
+  "author_authority_files_created": 0,
+  "author_role": "astra-h3t",
+  "builder_scope": "Local preparation only. Refuses missing prerequisites before creating output; canonical bytes written using real operator encoding. False once checked by actual operator and must refuse without consuming. Does not issue independent admission, reviewer binding, positive authority or full positive check.",
+  "dependency_pins": [
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-SHARD27-PROBE-V2-OUTCOME.json",
+      "sha256": "b4a06293a5bf820cfbf41ee5ecd4e7c6bbe4d39949423b83ce84f00b3ecef3df"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-SHARD27-ALLOCATION-PROBE-V3-PASS-session<SESSION_ID>.json",
+      "sha256": "8fa3199685fdd092805faa9dc931f19c2ad450e4a07a4b0d1c8dfb7b0ce4848c"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/AUTHOR-astra-v28-STATUS-QUEUE1505-V3-CLEANUP-V2-ROOT-BLOCKED.json",
+      "sha256": "fa1bc5ef78873d093bc7ddc31b48086871ffbc54575c5b807d97a494b86bb209"
+    }
+  ],
+  "empirical_admission_blockers": [
+    "No accepted successful allocation probe measurements exist. v2 consumed and failed before case writes; v3 and cleanup-v2 have source/operator approval but await distinct root authorities and actual acceptance. Do not duplicate astra-v28 work.",
+    "Measured model must explicitly transfer to H3 fixed JSON and direct scratch writer, delayed allocation, directories/files, full32 failure residues and margins. No alpha or overhead parameters invented.",
+    "Independent explicit disposition required for 4MiB scheduler log/file and 64MiB campaign custody allowances; they are operational assumptions, not hard writer caps."
+  ],
+  "execution_authorized": false,
+  "final_production_requests_created": false,
+  "kind": "AUTHOR_H3_FINAL_REQUEST_PREPARATION_READINESS",
+  "payload_reads": 0,
+  "remaining_capture_dependency": "Actual per-group released.json and independent actual acceptance cannot be generated prospectively.",
+  "remote_actions": 0,
+  "required_artifacts_in_order": [
+    "Independent accepted successful empirical observations and H3-specific measured model",
+    "Independent resource admission for exact proposal/current v35 with real allocation.admit arithmetic; science35GiB/control4GiB plus all operational assumptions",
+    "Reviewer-approved canonical actual execution binding for all8fresh held jobs and first mixed7-d30 only",
+    "Prepare release request + filled false once template using genuine resource/binding inputs; exact request-bound operator review, fresh owner-ack controls, root authority and full real check; root detached launch once",
+    "Independent actual release acceptance, then prepare capture request + filled false template using actual release receipt and acceptance; exact100file operator review and distinct root once; root detached capture",
+    "Independent full14787/all33 terminal/allocation acceptance before any next group"
+  ],
+  "resource_admitted": false,
+  "source_pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-final-request-builder-v1-20261026/prepare.py",
+      "sha256": "306dfa1a881d53e08a5ecb9bd734b4c60104cc0f47098cd7bfd79abeaac618b0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-final-request-builder-v1-20261026/test_prepare.py",
+      "sha256": "530d55dc0c73ff91c6a5583b94a40616a15e8753a16c8e87f3d020ba44845a66"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-final-request-builder-v1-20261026/author-tests.json",
+      "sha256": "7a690285353c2ed5e64813e61dd3785d16cde4a086e196a111e78ac9b30757cb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-group-release-v2-20261025/review-ready.json",
+      "sha256": "3097186355e2bd021ecb5fdc17ea4d238e01dfc62bb3e4b99a32f9463e9db212"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/review-ready.json",
+      "sha256": "a19c531124923eeccc952acdbc10e7ab49188b34fb3ed39c1ec66b9ecaf9823e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-group-release-v2-20261025/resource-proposal.json",
+      "sha256": "7f1a86361c808812271d946cac3a48e7be413a42e8e421de24aee0a4492cc3bd"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-RELEASE-V2-CAPTURE-V2-SOURCE-PASS-session<SESSION_ID>.json",
+      "sha256": "9d8b859e73f5de8897466fe2ca3479bde44939d741921805cbd0540357c621b7"
+    }
+  ],
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T15:18:39.934793+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "62b872ba7e8cf01f13102051bf4b740ac9f7aaebebb97550e94717382421153f",
+    "identify.py": "595dd3818e1539c80035fd98d2d1f3a5f4fa3f1ad53500c51a1e77f7938aa8d2",
+    "original_extract.py": "1f2ef511e81c2314926eafb26e1161bfdb702b00e472073cb7847da6b09a8f95",
+    "phases.py": "59cb41e34ae9d21c3a25ce4e3252d3991cf806fb21d4fe747afe7abc61a9a9e2",
+    "pins.json": "d271b6b073081603cddcab0f6702ef8fd49669ad1e78a0545406fd0e9050944b",
+    "replay.py": "344587a8ab8d43f59367f7016c5b0b349ddfcee1d1d4bad48637de5d5459ef60",
+    "stage.py": "826cf684418adfdc8097c494a11dd65bb46b49ae81c7114c9b6ff1b736c6fa4e",
+    "test_equivalence.py": "925f8d982c01651bf61d028e61b676a7cd6c22f9eb35284abd80b35c3dd385eb",
+    "test_replay.py": "a480c203e8bf0ca6d173778bf51301bccba73c6d673e041fd540c259d00114c5",
+    "tests.txt": "65105825353ac88ac5f75a724e905bf21a73289dbbea4318d73d3838e3177b9d"
+  },
+  "kind": "origin_replay_optimization_code_candidate_v2",
+  "tests": 24
+}

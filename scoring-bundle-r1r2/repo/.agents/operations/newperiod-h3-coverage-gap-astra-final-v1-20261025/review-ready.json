@@ -1,0 +1,37 @@
+{
+  "author": "astra-final",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/diagnostic.py",
+      "sha256": "bb33cc240d70758c1fcef5b3de9a8f7afcf7019b35b409a68813df2fe9eea832"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/test_diagnostic.py",
+      "sha256": "30de5d67fdc74fe4ab6ffde630698d5a9c391f7bc8c086f813f3cbf972adfe4d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/build_packet.py",
+      "sha256": "195086e498896687167c0fa2213ac71341e2bcaed1ac345f549baaeb0302f070"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/diagnostic-scope.json",
+      "sha256": "bc02817aac8bff9e68d1c1999ffcac4b147caf3d42749b4725e5bf60768ac0fb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/root-cause.json",
+      "sha256": "fb7c701a0275593d8b1d209d856b9d3c0d69994680f7986da8cbb9eeab80fcf9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/protected-construction-proposal.json",
+      "sha256": "6a715845d7570403be44e4970b401800cb84be0d5facd2d1e815c4456a27f11b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-gap-astra-final-v1-20261025/validation.json",
+      "sha256": "787b53ea428e6d91575a2b36878ff9830cd9edeb2bf0c3bfc09dca1149a87887"
+    }
+  ],
+  "kind": "h3_coverage_gap_source_scope_review_request_v1",
+  "review_scope": "Static original-producer boundary and current-binding diagnosis; pure aggregate diagnostic kernel/read scope; dependency-ordered protected construction proposal. Not an operational packet or permission to inspect protected inputs.",
+  "reviewer": "sol-final"
+}

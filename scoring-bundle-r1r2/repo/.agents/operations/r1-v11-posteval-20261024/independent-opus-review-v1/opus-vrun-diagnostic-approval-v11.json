@@ -1,0 +1,37 @@
+{
+ "argv": [
+  "ssh",
+  "-o",
+  "BatchMode=yes",
+  "-o",
+  "ConnectTimeout=20",
+  "<BATCH_HOST>",
+  "cd <FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out && stat -c '%n %s %a %Y' -- * ; echo ---LOGTAIL---; tail -c 16384 -- verify-r1-slurm-52473761.out"
+ ],
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "failed_job": "52473761",
+ "host_write_authorized": false,
+ "kind": "r1_v11_vrun_failure_diagnostic_capture_approval_v1",
+ "label_read_authorized": false,
+ "output": "<REPO>/.agents/operations/r1-v11-posteval-20261024/k2-v1/vrun-failure-diagnostic.txt",
+ "output_rules": [
+  "write stdout to the output file exclusively (xb) and record rc, stderr and the stdout sha256 in k2-v1/vrun-failure-diagnostic-result.json",
+  "route the sha to the reviewer before proposing any resolution"
+ ],
+ "passed": true,
+ "per_event_read_authorized": false,
+ "prediction_read_authorized": false,
+ "responds_to": {
+  "request": "review-request-vrun-failure.json 8167217e",
+  "supplement": "e022d869 local precheck"
+ },
+ "resubmit_authorized": false,
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "stat-only listing of DEST/out entries (name, size, mode, mtime) and the last 16 KiB of the Slurm log of job 52473761. No read of verify-r1.json content, no per-event, label, prediction or report content; no host writes; no job.",
+ "vrun_approval_sha256": "ca215b2756df8e9cd09eb3abcf00be869635cf81a3cae46a517643b2a51cbf18",
+ "vrun_approval_status": "CONSUMED (one submit); a resubmission needs a new reviewed resolution and approval"
+}

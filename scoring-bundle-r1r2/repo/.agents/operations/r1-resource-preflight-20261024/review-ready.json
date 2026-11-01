@@ -1,0 +1,13 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "5fec2e3b792bc7e1b9c24c3779ce07b92a4e87e518e8298a05ee96ea5dc5beee",
+    "build_request.py": "2df6d2d4568172426fdb416dc49bc871781c309eaf26ca06aaae7acf396cb856",
+    "capture.py": "6adf6ac1df10f290bcb688b9088d61829b1c9e3a9cd2a6f530503d819248ba4c",
+    "request.json": "6719b9335987314b409d1ea0a6b5c1ce08387d33fb0d72ced7ddff77477075d9",
+    "test_capture.py": "12cd388248223655268fbefeca58d1c1ee8295a158ecd5722a5047e396a30e83"
+  },
+  "kind": "r1_resource_preflight_readiness_v1",
+  "tests": "5 passed in1.03s, including actual original make_task envelope"
+}

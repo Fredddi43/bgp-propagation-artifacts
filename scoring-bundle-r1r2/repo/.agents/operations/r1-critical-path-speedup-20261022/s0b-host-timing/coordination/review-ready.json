@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "exact_command": "from the packet dir: <repo>/.venv/bin/python -B s0b.py run --approval <A> --approval-sha256 <sha> (once; no retry)",
+ "kind": "r1_s0b_host_timing_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/s0b-host-timing",
+ "pins_sha256": "c6e6259ec2cf7953e2b9a90e0197084db4fd8c416256dccdc2ff49e1d489bfa3",
+ "requests": [
+  "fresh code/containment review of s0b_program.py (torch-free; import refusal; hook before every third-party import; per-part lines) and s0b.py (partial-line records, completeness, R4 approval fields)",
+  "if acceptable: exact approval, scope r1-s0b-host-timing-v1, binding tool_sha256, program_sha256, host, remote_command, attempt_limit 1, retry false, data/remote-write/slurm/install false, host_venv_facts (CUDA torch, cuda.bindings/pathfinder, miniforge base), local_run_host_import_equivalent false"
+ ]
+}

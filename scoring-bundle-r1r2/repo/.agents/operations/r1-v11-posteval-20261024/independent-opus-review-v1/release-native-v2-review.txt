@@ -1,0 +1,55 @@
+INDEPENDENT REVIEW: release-native-v2
+Review-ready c8e8a676; author /root/remaining_work_audit. builder a615c588, tests 0da938c6,
+integration-gate.json.gz 0ef32652, d2-plan.json.gz 425b8549.
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Not an author of this packet.
+
+VERDICT: PASS_CODE_ONLY. No receipt is emitted or authorized. D2 (job 52475222) is pending.
+  - Tests: 22 passed in place.
+  - Release authority comes only from my final review of the exact inputs record and the emitted bytes, after
+    the actual D2 assessment.
+
+R1 (D2 binding): RESOLVED.
+  - fetch must be the actual d2-fix-v5/run-records/fetch-sha.json.
+  - submit-result is pinned: 2ccad25d = actual, job 52475222.
+  - sacct must show exactly 52475222_0 and _1 as COMPLETED|0:0 (6 fields = the queue_check format).
+  - Findings are taken from the hash-bound capture with sha equal to the fetch shas. Each requires:
+      * kind r1_class_d_rescore_v1;
+      * plan 6e18854b, report 049c7a9c, verifier pins 79cb199f (= the job's classd pins);
+      * failed == [] and checks > 0;
+      * cells == the exact 33 per horizon from the frozen plan.
+  - no_per_event_file must equal the plan's per-event-less cells. Each must be a seal "failed" cell or carry a
+    plan scoring_failed status that matches. The item shape matches Findings.check plus adapter.rescore_cell's
+    scoring_failed detail.
+  - The D2 assessment must be a JSON record in independent-opus-review-v1, of kind r1_d2_actual_assessment_v1,
+    binding the capture, the fetch and both findings refs, with reviewer /root/opus_review and 4ba6111c.
+  - The class a/b assessment is pinned at d04808e3 (= vrun-r2-actual-assessment.txt), with the verifier output
+    d2a18c6f all-pass.
+R2 (development_frozen): RESOLVED.
+  - Checked: labels_opened False, predictions_decoded False, cells_at_freeze 1156, and an exposure-ledger
+    reference of the right shape.
+  - frozen_utc 2026-10-23T16:51:57.756Z < execution approval authorized_utc 16:55:22.753Z. I verified:
+      * approval 4a57b284, spec 2233750e;
+      * launch-result 85e92767, rc 0, pid 788181.
+  - It is honestly labelled an authorization lower bound, not an observed start
+    (observed_start_time_claimed False).
+R3 (source_audit): RESOLVED.
+  - source_audit is taken from integration gate 7e48955b (I verified the decompressed bytes, 30,058,066 B).
+    It is source-audit-v5/source-audit.json 0f9be434, which equals the local copy
+    r1-target-resource-proof-20261020/source-audit.json.
+  - The extra keys are code_source_manifest 0bdaf006, integration_gate, and cohort_manifests d30 45865cdf and
+    d60 f885a805 from the gate.
+  - The d2-plan.json.gz decompression is 6e18854b and is byte-identical to the D0/D1 capture.
+  - completed_utc must equal the independent D2 assessment's completed_utc, and must be > frozen_utc and not in
+    the future.
+
+Non-blocking notes:
+  - independent_assessment() trusts any file in the reviewer directory. Authority comes from the final review
+    binding the exact inputs-record sha, as REVIEW.md states.
+  - The exposure ledger is checked for shape only; its sha is bound through spec 134d74fb.
+  - start-capture/probe is unexecuted and not requested. Nothing is approved for it.
+
+Reviewer obligation recorded: after D2 completes and is fetched, my actual D2 assessment will include a JSON
+record in this exact schema, alongside the prose assessment:
+  {kind: r1_d2_actual_assessment_v1, passed, completed_utc,
+   reviewer: {worker, session}, capture: {path, sha256}, fetch: {path, sha256},
+   findings: {"30": {path, sha256}, "60": {path, sha256}}}

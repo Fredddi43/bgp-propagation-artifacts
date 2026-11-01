@@ -1,0 +1,12 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "e2d73a29848665266b658a3e92c6021db2c5ed997fcb79ea77037e8de915dd35",
+    "capture.py": "7e477cfbfcc4c2a0b21e9d39cc50bd68fed8a05680254cc41cf7982593cd22e0",
+    "request.json": "5f8e4cec88538dcbdc554fbeb03da6367b261a7423ee7d09559dd6e451c5594f",
+    "test_capture.py": "0d71a5725206daa75eacf5d34c08d0d069974fea6aa72bfc1b75a1ed21a8979d"
+  },
+  "kind": "newperiod_variant_metadata_capture_review_v1",
+  "tests_passed": 6
+}

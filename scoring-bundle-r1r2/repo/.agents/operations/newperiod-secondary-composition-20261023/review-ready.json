@@ -1,0 +1,42 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author_model": "codex",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "README.md": "50cf4c629300321aeaaeae54217a2bfbfc3a60657906d0518cd458bc26435f57",
+    "components/count/evaluate.py": "52ad01ae9b7b1c0e3bf7fda4261672540dee282c91ebd18bae5c7ddf7a20c625",
+    "components/membership/consumer.py": "5cd8c4720675273f232940d39b3dfe7bbdc7a1a72d7c6b21b24f3823575fbfde",
+    "components/membership/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "compose.py": "90e285e15e3d7eea2eed91a4b634d68ef29a80acc4c4e321e964cfa8e26ca02f",
+    "test_compose.py": "3614ae89129b0b67f7e84b6694da705be42d4e3fdc476024d2f1516c30fc816f"
+  },
+  "kind": "newperiod_partial_secondary_composition_code_candidate_v1",
+  "reviewed_components": {
+    "count": {
+      "code_review_sha256": "9b4e9fcc1158ae4f1b080812d0496569097e0d527a40014f07b0a7b0285d8504",
+      "readiness_sha256": "a4f913e0b67b310d7cef032d3af54a4f1f2f84b5e2a24af06a5f63744323b2eb"
+    },
+    "membership": {
+      "code_review_sha256": "a4b6350346a33d5441bd597eb7b02c970e72a347011edd6ccaea28dc7455f0e8",
+      "readiness_sha256": "8981ee884fb32d02728b48265ffec0ad75e2cf8f6b5b443a329a7e094f8ffc40"
+    }
+  },
+  "scope": {
+    "bad_last_family_preflight_zero_label_reads": true,
+    "count_cells": 34,
+    "full_newperiod_coverage": false,
+    "genuine_original_custody_schema": true,
+    "h1_cells": 20,
+    "h3_cells": 80,
+    "history_cells": 48,
+    "one_original_label_opening": true,
+    "same_captured_object_all_five_secondary_consumers": true,
+    "timing_cells": 60
+  },
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q -p no:cacheprovider .agents/operations/newperiod-secondary-composition-20261023/test_compose.py",
+    "passed": 3,
+    "seconds": 25.91
+  }
+}

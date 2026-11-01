@@ -1,0 +1,94 @@
+{
+  "author": "astra-g1b",
+  "builder": {
+    "path": "<REPO>/.agents/operations/newperiod-g1b-family-packets-v1-20261026/prepare.py",
+    "sha256": "a10c798925b4ff7fd5f575342ba809fc87bb9c2ca096c62062264dc48152eae1"
+  },
+  "counts": {
+    "baseline": 6,
+    "count": 34,
+    "history": 48,
+    "ordinary": 32
+  },
+  "execution_authorized": false,
+  "files": {
+    "baseline-packet.PENDING.json": "d1257025583f491a4fa9cc8d7f651e5a0a23edd1541765faaa4ca1fc3379fd12",
+    "configs/N-baseline-history-knn-mean-matched-frozen_2026_09_01-d30.json": "100dd9781a2230a0971d637234188b3e3d914ab73a5d0f95b9315ff419f506b7",
+    "configs/N-baseline-history-knn-mean-matched-frozen_2026_09_01-d60.json": "6be708322c4895bcd2208c39800b6c44eddfd46006714bba2c56ae64f98fa685",
+    "configs/N-baseline-history-knn-median-native-online-d30.json": "18f26d125fb004831efc3ba6f40aeda40bccf08932575ff9266ebd67d8397366",
+    "configs/N-baseline-history-knn-median-native-online-d60.json": "1111ed53d408ff8ab7b44de58bb2ab1f3c22d7007108b376e358de31ad0de08c",
+    "configs/N-baseline-topology-seed-adjacency-matched-online-d30.json": "e6618c44749453068cf63452192f9b3edcf058648390b7c4c7c9692c81558606",
+    "configs/N-baseline-topology-seed-adjacency-matched-online-d60.json": "1b63a581632db0c4c1e43d0ec7b09117bbb2c69ec1133b6a0461ea05e8c086fe",
+    "configs/delay1800-d30-matched.json": "e733fbc4cffffa93472f3f50821d945940012fbb15defba750e85fe8be668047",
+    "configs/delay1800-d60-matched.json": "b808b7ff6baa62c0dcad7d6090f0958b85735ba9d7b27f191147a9334d79ffbe",
+    "configs/delay900-d30-matched.json": "414e64a5b430a089270d143dbe9649d5ed9c6304e240e1dec6715196ff522b80",
+    "configs/delay900-d60-matched.json": "aeeeb6f39c23041a5a9547549b4fc2172daea9158fd1174a97fda4c67e59f8f0",
+    "configs/withhold-d30-matched.json": "7dbcedf67123ea99d5449edadb2f67099213ae8c202a6921b678ef474b5e17af",
+    "configs/withhold-d30-native.json": "c4c1a6788abf7fdf1d96d9fec2a14d73b6c881e7f25ca9b5d776d2ed91617bcf",
+    "configs/withhold-d60-matched.json": "47714a2b5411aa6f062076de8610ac6100d04f64b4c14aa11d7b31b5643a7ec9",
+    "configs/withhold-d60-native.json": "080f14663e2a528b7f85f9bde3ffe1be6e755aaf1e474f969f7e54763518d0f3",
+    "count-packet.PENDING.json": "1f40d5ba7dc197bd2f0ebd9d198dc479caab456ebae0178cf720998d7e41b0cb",
+    "count-staging/count-rb-disposition.json": "0e537a99e93d5fdf929d735e8d1ead3ed6b6ae7bc89f14fc79fd661cecc64c0a",
+    "history-packet.PENDING.json": "d5a71b5c1062ec251e05f6572839ce94d986f2abd83e2bef82bf560e80625da7",
+    "ordinary-packet.PENDING.json": "676ada506b94a45263514fe7deaca02196139ba865be7b5776a5a3697a7c9d8e",
+    "review-templates/gbdt_membership-d30-s0.PENDING.json": "7585392f4d7b0f94359ce0cf2e48183a9b23bb70712a50ecd03233167131ad91",
+    "review-templates/gbdt_membership-d60-s0.PENDING.json": "efc4d77932398d4d192918474d7756f0891d1a985375b802505cdd04c468b81c",
+    "review-templates/gru-d30-s0.PENDING.json": "be9fb603dd2f2dd9b5a50436ab6dae103e923937723b4a098166f0e3f997b817",
+    "review-templates/gru-d30-s1.PENDING.json": "894d62ec1c0cbd0c68abc7974e766de91458ddaab7e9ea1dab786aef3af5c77c",
+    "review-templates/gru-d30-s2.PENDING.json": "2ae28d95693ebd1778c2b369636bd81517fb907297e8df674f39a5823a469d59",
+    "review-templates/gru-d30-s3.PENDING.json": "adca67b7f1396dadb981efe6d4333bf650812fbd062ade30d3875c70ad0d7c08",
+    "review-templates/gru-d30-s4.PENDING.json": "4bf8de8370f7dbfc439b6f0e15de845d49fce9aac7b07e4141a526d98d61cbf5",
+    "review-templates/gru-d60-s0.PENDING.json": "dac1c66ac30b120c5b2a509a2e4369358d5ca4c65c0c0216db939783fb4bf9e7",
+    "review-templates/gru-d60-s1.PENDING.json": "c1ed681357278c348f6017f901b4b14bd3d4f68557cdff56172186cf5ebefa5d",
+    "review-templates/gru-d60-s2.PENDING.json": "77dac9d725b31688709ac6f504310073f0281d69a9581a0da93fa349435512c0",
+    "review-templates/gru-d60-s3.PENDING.json": "37604b629073e801087f7ea8d762fe8835f08407e79c11040030f21e1bf35aa4",
+    "review-templates/gru-d60-s4.PENDING.json": "2b679d12123e79f379791c66918e43f12b82afba02d76bc0b1bfb5babdaf2b58"
+  },
+  "pending": "Preparation only: incomplete descriptors and missing authorizations remain explicit; no complete freeze or remote staging claim",
+  "source_contracts": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-complete-retention-20261024/retention.py",
+      "sha256": "20e885b3a0d7ddb4e9af32359cdb8517ebdee78d7c2d89965acf42d16f4f3baa"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-history-inference-20261023/history.py",
+      "sha256": "433d2d6356920f62f70b0ae5c338f9a1b003052c32db75fa32c2f0e4851e3f6e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-history-inference-20261023/runner.py",
+      "sha256": "06eefa377630f58b5085eff661bd6a8030e4ca294158c6d4d6ce28a6c28c5a24"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-ordinary-inference-20261023/kernel.py",
+      "sha256": "7cdadba60f9c7b363b2ffa121805e142acc759268e8bd5cc50dfc2b2c19b0b20"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-ordinary-inference-20261023/runner.py",
+      "sha256": "cd0b3cfee07a359c43b08abcd02214d7a178554d0715e325f5f51f1dc9453131"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-baseline-inference-20261023/baseline.py",
+      "sha256": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-baseline-secondary-20261023/consumer.py",
+      "sha256": "cd2a20467fbc8c77f981a6c3e0b4c5f5cd77b6b5cf38fa315d9ccabb2898aa71"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-baseline-custodian-runner-20261023/runner.py",
+      "sha256": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-baseline-transport-20261023/client.py",
+      "sha256": "c031c57d994167ddffa09f77fecef21ec9cf702352ae824d248eef1a3b145df9"
+    },
+    {
+      "path": "<REPO>/src/bgbench/forecast_history_variants.py",
+      "sha256": "37372d32cbf104ab07e0ce63e46f6d5ecad505378dbc410b9199f0d559e00c08"
+    },
+    {
+      "path": "<REPO>/scripts/forecast_campaign.py",
+      "sha256": "b3af97c46002abf58f913643bc118f76a226b9f0febcec953bc14eefade95069"
+    }
+  ]
+}

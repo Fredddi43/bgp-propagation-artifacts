@@ -1,0 +1,31 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "base": {
+  "prune-r3/consumer_probe.py": "74e49053a730e8de3decd0ca7a6432776d42e4b70163e0f30b525ab59679a2cc",
+  "prune-r3/execute.py": "f2dcbc0e1632de3e88d0f3ff7e50764adb9e10aabdc01a41a4c2af77d423a94b",
+  "prune-r3/prune.py": "163c86d7813ac7f431e3b018d12708182bcedc2dabd6f0b3ee56ffab29732616"
+ },
+ "diff_lines_vs_prune_r3": {
+  "consumer_probe.py": 22,
+  "execute.py": 87,
+  "prune.py": 40
+ },
+ "execution_authorized": false,
+ "files": {
+  "REVIEW.md": "e392ea05495eac4902809df3417dbcc20b2ffee241c54f7f15b628faddc068ac",
+  "consumer_probe.py": "c392b0f9291425ac149e139988896c4f73a87edd782c69f05c64f3b84e96d799",
+  "execute.py": "7fa6b9283c752c025fe7960e79b4bba4c06a66b4568b7df22fafba50319d2d51",
+  "prune.py": "adfea979b357323910dabc9dd91d15cc26595207d6b25fa92324737dc1a3f912",
+  "test_execute.py": "e3da8a1e493b1e0417ae4ccd16d2078a70f2971077591d2bd93d49016f4047c2",
+  "test_probe.py": "a713d1bb09177866a0ea25a734d70b8fc55f6dd00217365c28bb5e7d6ec8c838",
+  "test_prune.py": "0568762cfcdc1288e023619c94021f4b90687f0176ac13c34bffc79df65e75c9"
+ },
+ "kind": "prune25_v1_code_review_ready",
+ "request_frozen": false,
+ "restore_recipe_sha256": "3d990bfcf3c5b69bb47a556d7755f353e4e77fff13d055f68038842277ed91a2",
+ "tests": "25 passed",
+ "utc": "2026-10-24T08:27:51.008474+00:00"
+}

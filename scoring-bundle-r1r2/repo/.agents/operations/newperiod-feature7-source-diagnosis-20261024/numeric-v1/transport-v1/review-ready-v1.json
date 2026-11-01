@@ -1,0 +1,11 @@
+{
+  "actual_execution_authorized": false,
+  "files": {
+    "request.json": "e2f0f831380d4e1930268ee0185f8e81f6a10da07405b669d6289b4f3c7226e9",
+    "run.sh": "56c82ddcce6d1a9deed8d2c7ede6dfbeb1541e6e635549a7e433de5dded4461c",
+    "source.tar": "6227df51e053013815a7206bca7552dc5ee000a07b40fa9feeca3f12f477d362",
+    "stage.sh": "b6beb0d85672f46385d1d98b032876f54c939fe7ca36a11861f5316d88c5c58d",
+    "test_transport.py": "e8d768bdc3ec7993b59258df5e1e1c832aa3a77df96953278a6fcaa2e5ee6066"
+  },
+  "tests": "2 passed0.11s; actual tar stage+exclusive refusal/mutated source refusal"
+}

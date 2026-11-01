@@ -1,0 +1,27 @@
+{
+  "kind": "feature7_exact_reference_correction_v2",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "test_exact.py": "d642f6d53a9c7f97b6035de5019b6c4b1800f9764677e00ffb9043fd7f949354",
+    "verify_forecast_dynamic_features.py": "6171148ca7c5ee600b5a31e669ee126af6aa897ba4a587b3e8564a57efeb98cb",
+    "PROPOSAL.md": "45a486ff19f201cb70f87a94af2820d0762ff071014d399da9c36c71d7823d7c"
+  },
+  "original_dynamic": {
+    "path": "<REPO>/.agents/operations/newperiod-feature7-source-diagnosis-20261024/numeric-v1/original_dynamic.py",
+    "sha256": "3a634a394db99d6f6b590a806a0de1edc98b8a2909b0af7ba996f8094ce50934"
+  },
+  "unchanged_custodian": {
+    "path": "<REPO>/scripts/custodian_newperiod_inputs.py",
+    "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+  },
+  "independent_actual_assessment": {
+    "path": "<REPO>/.agents/operations/newperiod-feature7-source-diagnosis-20261024/numeric-v1/opus-review-v1/actual-result-assessment.txt",
+    "sha256": "6f9be67b595b4dc9d1da9eaa4541f4f38312d75388f62bbdba2e284943c1bd32"
+  },
+  "supersedes_unexecuted_candidate": {
+    "path": "<REPO>/.agents/operations/newperiod-feature7-source-diagnosis-20261024/comparison-candidate-v1/review-ready.json",
+    "sha256": "bde61490d863da7d3ac52afc001166cba3a95eba8ef5f128bff6a7dfea351403"
+  },
+  "tests": "8passed1.45s; original RuleA/repeated-hop/source parity and exact unchanged custodian loop rejects1ULP all5columns; original float32 countconversion kept above2^24"
+}

@@ -1,0 +1,33 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "11f38d3e5494274a6cb1e55b04cdf2c894f5cec163a6897cc4112a5081461b1f",
+    "build.py": "e547a0231ac1ce56022199443bae7ad9c99800529fb50a7ff6a8b41b4a30c569",
+    "ordinary-candidate/binding.json": "11cc44f35da6082570c6d9bf4d27e556f0655253ab6944e3b7d9298b963c48ab",
+    "ordinary-candidate/bootstrap.py": "8f577c419bd092fee70e38e8e923ebbbedfc3df3b2f0e0bb5598a91520c6b0d4",
+    "ordinary-candidate/client.py": "0a1e554b30fcf0b42b8c45f4867960ae75fffa6500ec9366115df9df370b95e2",
+    "ordinary-candidate/kernel.py": "7cdadba60f9c7b363b2ffa121805e142acc759268e8bd5cc50dfc2b2c19b0b20",
+    "ordinary-candidate/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "ordinary-candidate/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "ordinary-candidate/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "ordinary-candidate/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "ordinary-candidate/runner.py": "cd0b3cfee07a359c43b08abcd02214d7a178554d0715e325f5f51f1dc9453131",
+    "ordinary-candidate/scientific-pins.json": "53e23801edfe2a457b222e768e7ba348731a78ea6b97fdbc98f437c40fd78323",
+    "original_bootstrap.py": "281b3b608dcd826b2ac0b6b18c34d3756836d32c29c8b1421bb2318d6b8e5c13",
+    "original_client.py": "1eeeea1d7e08a332a26384049d2061bc2d2b6198bd3dd48999758e0faf4c28fc",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "test_build.py": "1c21c197a3709f7eb5dec072889bd4b162175e530ad449661ad1a2b146b71d9e"
+  },
+  "kind": "newperiod_ordinary_transport_code_candidate_v1",
+  "producer_review_ready": {
+    "path": "<REPO>/.agents/operations/newperiod-ordinary-inference-20261023/review-ready.json",
+    "sha256": "a17a2338da6f0e62883aa8a0090f81c2a35298ab3940da23973ea7236d8ccfc4"
+  },
+  "tests": {
+    "delta_seconds": 2.35,
+    "passed": 89,
+    "suite_seconds": 51.44
+  }
+}

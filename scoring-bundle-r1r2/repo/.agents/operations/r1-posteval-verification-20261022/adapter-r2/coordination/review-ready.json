@@ -1,0 +1,10 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_class_d_adapter_r2_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/adapter-r2",
+ "pins_sha256": "5eb25c1040f36b756bb4d3008d87481246a1329e3d6c323a105b703ba5c8014a",
+ "requests": [
+  "delta review of A1-A3 and the verifier-r2 re-pin"
+ ]
+}

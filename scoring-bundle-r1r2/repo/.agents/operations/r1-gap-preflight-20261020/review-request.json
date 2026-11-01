@@ -1,0 +1,27 @@
+{
+  "author": "/root",
+  "authors": [
+    "/root",
+    "/root/impact_consumer_review"
+  ],
+  "bindings": {
+    ".agents/operations/r1-gap-preflight-20261020/build.py": "01b449ca77f9795825d03c013d3371d45c8739c70e6395553321d8489487065b",
+    ".agents/operations/r1-gap-preflight-20261020/capture_readonly.py": "6eb64dbc61ed3f3ee361e299954ce784d1e0fee41a0b26fc39b867e08e1ac574",
+    ".agents/operations/r1-gap-preflight-20261020/families.json": "bbefabcc519a156afb7db06fbd9b70dd7e025f860a1eb950b125ced2a703ecad",
+    ".agents/operations/r1-gap-preflight-20261020/focused-tests.txt": "b159cc682960e9f764f7bd8f909a06bb2b9853f631471735d2731fbf1f7b6641",
+    ".agents/operations/r1-gap-preflight-20261020/h3-fit-receipts.json": "63890a4a15a39f597cb43a70f69b3e014af315f91a49e765d5064d3c9328a543",
+    ".agents/operations/r1-gap-preflight-20261020/launch.py": "5000a39769c78c6f9a3e8ce5fb40e2e42a1ebc8485af1b9d73897ffc880200c3",
+    ".agents/operations/r1-gap-preflight-20261020/predecessor-evidence.json": "c6f5c19280d797593be4ff5916f17210fcde6a887cfff603ed753672264071b8",
+    ".agents/operations/r1-gap-preflight-20261020/preflight.py": "b7ab6c58eb1b418595df410fed448135d7e752848300ed24131bfc8579f82829",
+    ".agents/operations/r1-gap-preflight-20261020/preflight.sbatch": "dd64113cbcdc668e2320baac7701851b7e0c7e85e226d2755be7f5024affe5fe",
+    ".agents/operations/r1-gap-preflight-20261020/readonly-proof.json": "40664e5882a82572da00e71284cc610ee92b25911635bd867f38649a829edfd1",
+    ".agents/operations/r1-gap-preflight-20261020/spec.json": "1521f6e18e531aa37b0625847b66c85e9f4bcf795892dc9c3a345bd7e1487561",
+    ".agents/operations/r1-gap-preflight-20261020/stable-dependencies.json": "1dcd9c1ae0c2966fb314c886d7f053705684593984012232da296b19aade8bc5",
+    ".agents/operations/r1-gap-preflight-20261020/test_preflight.py": "290cd838eab4bc67b63f3a7dd6b49a102d7413ff2f544a3f0ec55395fc007867"
+  },
+  "execution_authorized": false,
+  "kind": "r1_gap_family_preflight_review_request",
+  "scope": "One metadata/opaque-hash diagnostic each for TSFM review-spelling compatibility, H3 missing original-fit references, stable original-dependency binding. Preserve predecessor failures; no forecast generation/decoding/labels/scoring/fullcustody/seal/release/retry.",
+  "spec_sha256": "1521f6e18e531aa37b0625847b66c85e9f4bcf795892dc9c3a345bd7e1487561",
+  "tests": "54 tests PASS, top-level changed package Python Ruff PASS, bash syntax PASS. Full copied historical source tree retains existing lint findings; untouched."
+}

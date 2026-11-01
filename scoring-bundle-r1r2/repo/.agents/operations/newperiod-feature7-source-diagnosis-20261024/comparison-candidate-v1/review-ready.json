@@ -1,0 +1,25 @@
+{
+  "kind": "feature7_exact_log_evaluation_comparison_candidate_v1",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "original_custodian": {
+    "path": "<REPO>/scripts/custodian_newperiod_inputs.py",
+    "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+  },
+  "original_dynamic": {
+    "path": "<REPO>/.agents/operations/newperiod-feature7-source-diagnosis-20261024/numeric-v1/original_dynamic.py",
+    "sha256": "3a634a394db99d6f6b590a806a0de1edc98b8a2909b0af7ba996f8094ce50934"
+  },
+  "actual_numeric": {
+    "path": "<REPO>/.agents/operations/newperiod-feature7-source-diagnosis-20261024/numeric-v1/transport-v1/execution-v1/run.stdout",
+    "sha256": "c713f03add18e77eba7546fd95b724cd95d8cd9f51cd45c8f0ea987636cce4de"
+  },
+  "files": {
+    "custodian_newperiod_inputs.py": "2bf44047e52bf369c7005aba4ba4f7424525b4552809a75f066a0fa255f65634",
+    "verify_forecast_dynamic_features.py": "2795225f9162ce7a2d9ec36dbc1ba7d2fb5eaebf7029920ce7d3bd4ecb5fb271",
+    "PROPOSAL.md": "2e6d98871a5b2a4ae2b514857415b8d0627e47f8a841c78f48018d8c0d7503c3",
+    "test_comparison.py": "7d7d4646868de606ab4354e1a6f943fa2888c3034ab80537365798bcf833ace5"
+  },
+  "tests": "10 passed in2.06s; genuine original reconstruction/RuleA/duplicate hops, exact actual changed loop, arbitrary1ULP rejection, nonfinite/dtype/shape/count/>1ULP refusal",
+  "scope": "Feature7 only two exact specified evaluations of original source counts; no tolerance, tensor/input/builder/model/population changes. Source closure/exact prospective recovery approvals still required."
+}

@@ -1,0 +1,47 @@
+{
+ "kind": "review_request",
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_implementation"
+ },
+ "to": {
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_review"
+ },
+ "finalize_package": {
+  "plan_without_resource": {
+   "path": "<REPO>/.agents/operations/newperiod-h3-metadata-execution-20261024/actual-binding-v1/finalize-package-v1/plan-without-resource.json",
+   "sha256": "4e9c286034f61d47a1df1370bad399a2ccb429f706259cf590a4c6d209732d8e"
+  },
+  "resource_request": {
+   "path": "<REPO>/.agents/operations/newperiod-h3-metadata-execution-20261024/actual-binding-v1/finalize-package-v1/resource-request.json",
+   "sha256": "977d34d21e9f260d094315445575bb7d9e23387283960948b5c048ebc5ad0933"
+  },
+  "resource_binding_sha256": "5427c07994d6774cbfd2875946613d95d431febf71e91b52d250c8838e48b36c",
+  "files_identical_to_draft_package": true,
+  "draft_bound": {
+   "path": "<FORECAST_ROOT>/data-custodian/h3-metadata-publication-v1/draft/attempt/output/draft.json",
+   "sha256": "10de224450fba404285c2c4c41c7c290b694a78fe4113115d7a162f584407e9d"
+  },
+  "publication_review_bound": {
+   "path": "<FORECAST_ROOT>/data-custodian/h3-metadata-publication-v1/control-finalize/publication-review.json",
+   "sha256": "1f3c96a841ad2e6bbef58d2def1c79123b0a74e53cf5a92fd7a42dc97486c11a"
+  },
+  "read_inventory_entries": 21
+ },
+ "code": {
+  "assemble_finalize.py": "cfb77bd2f1ccfe4e8693855d412ac619aa4feab2989636ef561619a0a624ef6f",
+  "test_assemble_finalize.py": "5be5fbe874dbb58b64061726c01cae92858f89a8446edb244dec3158b845e567",
+  "transport_packet_finalize.py": "7fcc24b59a3da01e630814d77e555e94a0d827df69f826bc3ae54bbe2e4619a5",
+  "test_transport_packet_finalize.py": "e6bbf6644b75d401881f06400618ce8f9df8790328c5335f7180258b1e847272",
+  "stage_held_once.py": "3b57118a90a8a2fda16ff34bdc7c47492653f66d6b90a63a23d5e7ffc2079402",
+  "test_stage_held_once.py": "98741785a1bc89850bcd56e3ea9b16ee2c7b9372069bda15812cab2303a2359e"
+ },
+ "tests": "assemble_finalize 6 + transport (draft 5 + finalize 5) + stage_held 9 passed",
+ "asks": [
+  "Review finalize binding/code (finalize transport: existing root, fresh control-finalize + finalize dir; executor --finalize)",
+  "Issue finalize approval terms (+ issue_approval finalizer) like draft: operation finalize, gate_publication_authorized true, no fit/prediction/label/retry; after root admission is bound"
+ ],
+ "utc": "2026-10-24T10:28:48.191736+00:00"
+}

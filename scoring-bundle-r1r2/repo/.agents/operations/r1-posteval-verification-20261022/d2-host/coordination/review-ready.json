@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_classd_d2_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/d2-host",
+ "pins_sha256": "d52098ac585c8287c70495a515d4f29956f648b9007d9fca50043b3955850f35",
+ "requests": [
+  "code review of d2.py (46 tests, 14 mutations): 2-task per-horizon array, fixed 66-cell membership, census-derived memory",
+  "after classd D0/D1/F: author publishes `d2.py script` output; reviewer issues the exact run approval (scope r1-posteval-classd-d2-v1)"
+ ]
+}

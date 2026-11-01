@@ -1,0 +1,815 @@
+{
+  "author": "astra-final",
+  "author_session": "<SESSION_ID>",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/REVIEW.md",
+      "sha256": "82646bb1f18811fa149faa6459adc55a52e021ba26d1833aaf13720dd7ec7e5c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/accounting.json",
+      "sha256": "61c98683c488bd299e2a642f0a65281a10c8d70884985f306cd7805454052e9e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/allocation_policy.py",
+      "sha256": "bc53b4705ca744a6be61c1568c25de91f2bcb7b0b65febb845013b898ce7c239"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/bind_issued_phase.py",
+      "sha256": "b750744f23878521d8a8eaa5473ee9624946a2be8a8f822728aac393a4a8d727"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/bind_wave_request.py",
+      "sha256": "5f170e72c9891a3849ba17a19792a72e45e32b5303ea0b41838cbba2eb5055d8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/build_package.py",
+      "sha256": "eabc67ba38d82b8a5c907b62df2037b291ed19597ac458a641a9f83a4cd7a942"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/build_package.py.v1-to-v2.diff",
+      "sha256": "f419c5191137795217022bfc09fe963f0ed048fd88411ac949f5c5db4f901566"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/controller.py.diff",
+      "sha256": "9cfb7ab83d6dafd90bdc8dd4d97bc74bf0a43d9529392e7338eb73a77cede2e3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/finite_capture.py",
+      "sha256": "db9be8df5d3ecce5ea4dfc79f7a6e771418e2502e5c098c2e31ae9a6df0db3e9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/local-validation.json",
+      "sha256": "9384be339cacd090c629a60bf2a3c4ce29d7ce3c184d3d89b1beec698c36d562"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/allocation_policy.py",
+      "sha256": "bc53b4705ca744a6be61c1568c25de91f2bcb7b0b65febb845013b898ce7c239"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/client.py",
+      "sha256": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/common.py",
+      "sha256": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/job.py",
+      "sha256": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/runtime_verifier.py",
+      "sha256": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/scripts/custodian_access_log.py",
+      "sha256": "4e84e4c8f3ad3922bb7fd0dcd65d1ae1fe04d80acfe31ea98d98c6f63679e5b4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/scripts/custodian_newperiod_inputs.py",
+      "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/__init__.py",
+      "sha256": "58ea62cf6617a1065c6add8b8202ad0f43243ff3104ee5d3cc2754e1728ba113"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/aggregate.py",
+      "sha256": "53029727aedc1952eb10e5c62f772ce440dbbfcf5ffb1c806284e3631136f4f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/baselines_eventset.py",
+      "sha256": "94add4d390325694374ea2fb8f2c69c3471e7208a0d7a60e53b5c6a12ebea2de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/beacon_analysis.py",
+      "sha256": "5b9ee952008172182fe709a53cc98745f9140da685b99b69fb5f42760d9d5c39"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/beacons.py",
+      "sha256": "2f3c39fd8abdb7474c5049399066543405bf35dae8b93c01413eb98801c40031"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/broker.py",
+      "sha256": "a3419c58a4cf4966c0c5a438c4656b30861d507873684d15e55df0a9498e64e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/cli.py",
+      "sha256": "87b389dcba4f68fbd6b8cc4082df50f8ab28ec82909aaf28025db885c36a18f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/config.py",
+      "sha256": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/curve_baseline.py",
+      "sha256": "173695a9778e8f9dc7a25130f89d9a0903a82bbd6d38d355b7bbd6aa9c38fdae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/curve_eventset.py",
+      "sha256": "333edb31f6db6521126df099fadff8ffe783e8ab4116d224b480125bde46fd7b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/diffusion.py",
+      "sha256": "a38873478b0598954195ddc732d0db6fb493dbe217ca7eda6b23ff84d70f1c42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/dyrep_train.py",
+      "sha256": "2db3da8d8a0e64a9826f62d31e06c11b6d9ab643d81de426e902825fe1d153ad"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/eventset.py",
+      "sha256": "d1a8f11648aa41e5e2b2ed8c500b2af11ce319528b38bcdb51402920f1692439"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/extent.py",
+      "sha256": "09d616606a9fda99ff097f6b3cdd84f88e636fa5b0d6489cae386fbbfac42a04"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/fetch.py",
+      "sha256": "513b234987baf4b1b1c115bba45ec4834a27c97f8cbf3ba3caafc9d4baf3277e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_analysis.py",
+      "sha256": "1539b06701ec30d429ae1dbe2c5a6d966c12bd1dfe2708589649eb725a8146c9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_baseline.py",
+      "sha256": "097930bb8bf03d4b7d9b6234fdb3aa85541c5bf9ba940c92cba53dcef51d521f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_candidates.py",
+      "sha256": "13f7e2717e11b859df460e93246adff14fbd3315c7309664da3eec11a7b12bae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_counts.py",
+      "sha256": "57a0b86bbfce18e8789c845cff304864c44333069312368ad9ae8273c8cf90a3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_curve.py",
+      "sha256": "0e3432a543daf487b8da860cac7538b94924070fd61e922c9094524a7bf67d5f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_custodian_eval.py",
+      "sha256": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_custody.py",
+      "sha256": "bbda361fb36df0af60ff41a710779fc99a6f28703c53c48e9b143754a5bd9d9d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_development.py",
+      "sha256": "4061b531ca1c95ff12aa6edf0330f20d9159b3bde4b7ed9cad1d66276e270b3e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_evaluation.py",
+      "sha256": "5acbdbd7f510283ed43f4f7334c246bf7dcf1491068e7033b8db586e301fe21d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_h1_predictions.py",
+      "sha256": "23e15575be3d4fd4ae03a50597a3627e7792ac3cb223ef8a05bcf621b45a43a7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_h3_commitments.py",
+      "sha256": "d382885df6f43c0762d90bfe8cb9d1841564c859bdbeca95f67ba51461a5e777"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_history.py",
+      "sha256": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_history_families.py",
+      "sha256": "e52ce7d71ad78314daa2c485fb5ea8e8f51bbb8891f39f7a7eb617595032adb2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_history_sensitivity.py",
+      "sha256": "3af6b34dc6042f34c4efd2c61544247cb8dc916ec97aba51fe034673afc4b451"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_history_sensitivity_report.py",
+      "sha256": "543b8225cfffd7b59c42fc6e1acfbafb12f0f67b04a5523a1835815f880e5b73"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_history_variants.py",
+      "sha256": "37372d32cbf104ab07e0ce63e46f6d5ecad505378dbc410b9199f0d559e00c08"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_input_panel.py",
+      "sha256": "6ddaf8583b46ef4aaaffa1634e35df07b622da4d09ae993f64499622a4f9174e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_inputs.py",
+      "sha256": "deab11d87ea0940cdbde9bb0b2981f9e4d0059cf9eb7dc5b86ba6f7e6becf84f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_manifest.py",
+      "sha256": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_numeric.py",
+      "sha256": "478dd41883d8b7a5497f075911a397f9184ddb1d7623a494082190699d1947df"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_panel.py",
+      "sha256": "ac9468bceb62020da660993f2fdc80e4efbdca2297de4e7dcdfbfa348b876290"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_panel_reference.py",
+      "sha256": "4bdc7f2efc57407de0d23b4d6d06005832d22deec0149bfa651c99ff3a920ff5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_panel_scoring.py",
+      "sha256": "b7374f69c5c0d88d66ef3e8454fb4529f73ec7155be1791904b4c7aa27f168db"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_precision.py",
+      "sha256": "bbe5c65c4b9ad03a5516b548b90c284d81c16005ffda85092104cabe1a9a1ac6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_protocol.py",
+      "sha256": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_ranking.py",
+      "sha256": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_recipes.py",
+      "sha256": "04691c483a64c0e6c93fd058da8d41347eabdc0c31ba881f165746074ab50d6e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_release.py",
+      "sha256": "5b728f4624ecf211df1f165685506dc17aeda405050a0a25663d5796cac73c33"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_release_facts.py",
+      "sha256": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_retrospective_custody.py",
+      "sha256": "818497e430b9871cdb3761e44b554a8c84e87ccbc66fd44647d28fd2cf9ccbc7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_retrospective_scoring.py",
+      "sha256": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_sensitivity_gate.py",
+      "sha256": "590d9cf7e49561f4db506366745451e250da21058a5fc194d310035b57d6193f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_signals.py",
+      "sha256": "26ffabbb5dd0762224dd84c0c0c381da8f7d72b5d33e0b308f65f97d99bebd84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_stable_peer.py",
+      "sha256": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_temporal.py",
+      "sha256": "f218734eaaa07b222e70dd6145268d362f367e9c18106cca86a234984b118de1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_temporal_mean.py",
+      "sha256": "4e97fcfddf3fa2c104ad21f5a5f4faa1c15d6add3ed7d1f3400851c0833b25c7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_temporal_mean_predict.py",
+      "sha256": "a21524b7b517595c2a62feaaf3343d5a79a261932c051a552bd3b32ac3b14bd6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_temporal_mean_train.py",
+      "sha256": "fa29b754fb2806ed2aedab40ab41bf78a55d56627e067680347d4007534f843c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_temporal_predict.py",
+      "sha256": "711f36df7588ac95da25103852cbb555a6fca91bcc7612a883f557a0df2fbb10"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_temporal_train.py",
+      "sha256": "25cc9de6a62e56d432e8fb6af047e8699b962d1c2539991aa4401a91e82690a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_train.py",
+      "sha256": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/forecast_trigger.py",
+      "sha256": "15b96f850f8e6db2557250afb408fd5dc94f7bab41f0a67e71af4e1dd2e5c87e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/gat_train.py",
+      "sha256": "d2020057f3d14391d403dab1e168aae63bccea13e47b5136fb2fdbfdb0fc7910"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/gnn_train.py",
+      "sha256": "ca121f2f062d52d4fa9dcbbea0dd9d6cea9a2b7ebef3bd87fb7c0148b226b008"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/graph_metrics.py",
+      "sha256": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/hist_avg.py",
+      "sha256": "b9a3e9c1a472d8d440290e3c64edb4a5058ed6ce89b3709c5b6f16566494b5d1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/identifier.py",
+      "sha256": "bb677d637a490e204dfed5cbf8cb2dba20e8264546ff516669871f188f352c20"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/identifier2.py",
+      "sha256": "76131cc0da3c84555c678a1c5f0ca5335ac431b9e04592d90b9eefdf68f76600"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/labels.py",
+      "sha256": "032f4a38b05123c825e6a457f3a07b72a5047a3bc7cf464ce4ff902b0fd099a9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/leak_events.py",
+      "sha256": "337041389be35819d302bf420562b48959c1674c54fe51e3104c3cde3d201e84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/leakcheck.py",
+      "sha256": "20bf95721c69183882994f2a519340f1235fbacadc4cbac67d81a80703c8839c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/paired_analysis.py",
+      "sha256": "77e746156e2051a3a71cf9339f17bf61f93717976ed444dd88354b8d80151aba"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/parse.py",
+      "sha256": "e6afff8f01f9bbb1629c694f00210b00dbbe9709e444ff56471b82c12acd1559"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/plots.py",
+      "sha256": "a4011d17b919189ce9442ecc2dbc73d0ba50d3a4b0a2e14d6e5d9a40fed66727"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/prefix_events.py",
+      "sha256": "22d8c8aa8519f688acd14545568404b059a7c98631c85a1b23eb2fed260375c8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/prefix_metrics.py",
+      "sha256": "bfc7d9fb45fcc82ddadd97d5233362655c5f369c81a41bff1de0506d0a2b060d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/ranking.py",
+      "sha256": "5c450ad1e43b9b2f53a294252270a5d6eb774871e9df96caf63b9d52d4f1ec76"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/recovery.py",
+      "sha256": "881ecf04be36fa50f7091ba3fc2d897df899a801bb6858a5e0569f5a8483eb5c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/replay.py",
+      "sha256": "d0b805bb392f4f6d23e7457573f45d055fab3ac4f83cb8fea073a31a20601993"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/replay_day.py",
+      "sha256": "e4c124b0388fcfe7c3208985409158337909c717e8bd9e811ebc8aa6d301e7f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/replay_multipart.py",
+      "sha256": "5a859f127cb6231ba0462aa67c8e1046f16d78905f4b135b8e6e3a89371007a2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/ribs.py",
+      "sha256": "277b7bb82dbd98aed8a3560a7373898e688a912d501b2bd4e9079634611d8314"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/robustness.py",
+      "sha256": "4861651bfa0a5e697148894fd197590b34cb9954e094842d189b3781e04b10cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/rov_history.py",
+      "sha256": "eaea73613006ae423d61819246bdd216ed08f404996600eef708a0db94ac461f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/rpki_validate.py",
+      "sha256": "817f435fdaaf25031bf3e1b37e6e2a4f702bfb0e8c75eaba3a9f3a250261b342"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/schema.py",
+      "sha256": "45ccf2ac60c73226b049d78ddd245260e508261818df1692db266394c46ce0a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/select_leak_replay.py",
+      "sha256": "917330469029ead8fd74410ef4209011a255d2dd10198ccfb93b0906090849cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/select_replay.py",
+      "sha256": "664d56b601d7d802cf6369bb4d3c463607ebd2e3ca0085bfe6699f5cf7fec4f2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/select_withdrawal_replay.py",
+      "sha256": "0440ef64c8be464fe22e46ea8b539e05479fa670bfdc53ce241862cc5889c6bc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/tgn_data.py",
+      "sha256": "12dbc1c0543560d93d95ad5f72c46003f7703d9da5c7096f7353ea94e08af6b1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/tgn_train.py",
+      "sha256": "fe14080ebb4d91d6facd630b9241f3cfb271878ec78cc603525efeaa5219ca57"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/construction/source/src/bgbench/vp_select.py",
+      "sha256": "7905e070559ba1ab578365a2a1957cb50c1d8ef7bc2c5847fda79a1b979bd565"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/controller.py",
+      "sha256": "c5bb403b33b62ebbf514418f5cccb280cf2bc794e0c427f33eb669019e7e1d6c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/custody_scope.py",
+      "sha256": "f358466c2cafdeb59954bb804bffc0d0e29b49f7585e05dff6142e9a24505ce3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/file_limits.py",
+      "sha256": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d30-assemble.sh",
+      "sha256": "e690aecb46f7d999310b3d7bc508554f5cd81fe348efffb5b14b2e5bb6fb74fd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d30-audit.sh",
+      "sha256": "f75f75159612e2a97ee2eccc5712a09827070836c9fddfea66c25cc8be83fe90"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d30-build.sh",
+      "sha256": "bd9ec992d30857911abe95112daa06feecf8083722da42c3b39897633ed29188"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d30-export.sh",
+      "sha256": "091ad56b51c01613d0a746b0ae8e3192fa3da7cd7eb54f685d4d68ed3ca91951"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d30-manifest.sh",
+      "sha256": "ec7762e72ee80332d5668130b093b7a2b85fe31e5cc5b48fa9b27d9e010af20d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d30-master.sh",
+      "sha256": "0b62d47d350f224e4ac2c194a9b496a1849fee6ba26b3f547828759190047db0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d60-assemble.sh",
+      "sha256": "7c596c7d40e2646685046b7b564751e8828b8de1bc589bb6d68d331876c40d0b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d60-audit.sh",
+      "sha256": "98e8f53403eef98e0ec53b90537523d47275e69046300ec080a794bd8d918463"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d60-build.sh",
+      "sha256": "6f089b50a6cab7940ce2c00c9a5fbfbbed60557c19fea0bba787a3d1a991c085"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d60-export.sh",
+      "sha256": "0459a573f5e29c0060352e66e1013426c80c4c19fb56225083151dd5b6393807"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d60-manifest.sh",
+      "sha256": "9855a389ae4ecd664b82da4e4e29a107727696f98fbf9b389ae32373211264e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/mixed7-d60-master.sh",
+      "sha256": "d463320af40778db5e9aeabf78ef8cc9487bd708953830620589a25246aabd26"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d30-assemble.sh",
+      "sha256": "4285fbd71a9d8f0977c2aea7298476461763ec3fc49bd2a0661020dd0df549c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d30-audit.sh",
+      "sha256": "61718ba55547bcd63ea6ed9c458d800caf720cbc015bf9bca66cad4cb838c023"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d30-build.sh",
+      "sha256": "8ee0d0b7b5a7b79afa4cf478812190b8ff0c40f31006f9884f5cd0c27510154b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d30-export.sh",
+      "sha256": "f4c5ffdedc9905563a9ae787e36eecf07855c4f14cea65c0093dee5b1d63bbbd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d30-manifest.sh",
+      "sha256": "9f241431afc362b646584102d2dc8046a7e799df31f4572eb85d2f9b7090f68a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d30-master.sh",
+      "sha256": "3e735f78456bb89808e60cbe4e719b119ad309bff26e3edd7834e4b04ef7d940"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d60-assemble.sh",
+      "sha256": "dd43474722981fb00a0b18377250251d54c37bf70c95d5d1e7122e626cfa10a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d60-audit.sh",
+      "sha256": "335046f2614decbf3cf535b5ea152a9cc81ac7b042a1f9392ee339f7c1d4eaf6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d60-build.sh",
+      "sha256": "ac2ba3037924dffb519887d089b2ad9813076c4b7b1c61fd2c41553f2ea69e8c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d60-export.sh",
+      "sha256": "50e94a3a3948f717b1ab9efedd29b07e93d366957785d8539b04096b14213864"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d60-manifest.sh",
+      "sha256": "ff57cea4db99d3f7c5e835c6bd35bbec3c5aca60c5fe0a6370f956a7d81b6b6c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/jobs/ris7-d60-master.sh",
+      "sha256": "5f02c2bbbfcf6172a3cfa932f1fc60c3be8793af027f45126856054ebcbabdd2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/kernel/entry.py",
+      "sha256": "2fb0c3f384aba9b4382ed705bfb3b6066a08a89fb7f9e3d6861e26c30a1b22ec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/kernel/panel.py",
+      "sha256": "47b153e49679c6360cc8989417272b3ab4f099db8db02c33b97d581aa0ac22de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/kernel/verify_h3_panel_completeness.py",
+      "sha256": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/kernel/verify_h3_panel_features.py",
+      "sha256": "3529b9800016ec798b463683cdf768ffecad2a0a7b14630a78adeb6c00119f2f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/plan.json",
+      "sha256": "00a30cded19bfcbd4442e09a0b04c5801fb0139c4257086d84d3bb1141fea7ca"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/producer_budget.py",
+      "sha256": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/runner.py",
+      "sha256": "b47ae907c317b1c238795c035e7094716ae8d329073535d73a24eaa80513b5ca"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/source-receipt.json",
+      "sha256": "b25b40d10dca5bf8edc35b9cd2294b1ed753831e23df26a9de97d75eb243b60d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/wave_contract.py",
+      "sha256": "99b150b1280cc69f031594ec8d94f6448308709f3300935242f3cd021032495c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package/write_guard.py",
+      "sha256": "4ae7db38f04441d2b049fdd805dcb7c5dd51fdef7850a7e79c6b560e9d9d33c7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package-controller.py.v1-to-v2.diff",
+      "sha256": "7448a5e472a940f1544ca0ffd669ae0e760fc00a337e44ae5f98e3126e7c0eed"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/package-manifest.json",
+      "sha256": "de9829a035a1271e321b58b31bacf6d4bb5bd45be91b85163d4df72c001c6ae3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/preflight.py",
+      "sha256": "269490fd323574bbeb7c2b8d363c70bfafd2ced0ac340f37c65f70a46424329e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/prepare.py",
+      "sha256": "9ca5f181a39e909f5a05933a208a8e141693b09f44c54ca545fd78b4f44e08b8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/prospective-24-job-map.json",
+      "sha256": "d4906c4e446643faf185e2ea93a65cfddb2ee79c5692a3c6fa3d408fba40f81f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/release_once.py",
+      "sha256": "c1c0ed52368af08a4f54268cde9272d1a72df52bdf462445746d419e43b71d05"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/root-stage-once.TEMPLATE.json",
+      "sha256": "d75bbac5677edffbfe327334cd9e79b7b11c2a1072df081a585e87be984fe3a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/root-wave-once.TEMPLATE.json",
+      "sha256": "5e8ffa0b53127b24f963fb0cb5082a3d0d91c6554df7aefac19b5fa70e6532f1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/runner.py.diff",
+      "sha256": "ec529cddde52cc3409cb8e5ae6b39cf4f37ae488bacae37b7a098e9b9c367c06"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/scientific-source-approval.TEMPLATE.json",
+      "sha256": "2c404379227267caa7941f8e0ccf5af89e9dacd1bc4d8b949cc44350ce94f843"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/source-delta.json",
+      "sha256": "f916024d7c3ec98a9a96c3da1655638aa56175f23cd242e3d1243e67badef078"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/stage-independent-review.TEMPLATE.json",
+      "sha256": "04b151d6b62e87c6b28186328cbf9733ccfa7ac25c91955a6ed635ff9d38e65a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/stage-physical-profile.TEMPLATE.json",
+      "sha256": "6676befbede534d713061f16151e3f145d48311775ae8fb443bd1b878f5dcc72"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/stage-request.json",
+      "sha256": "229edd3b4f6633db6d918d7a04ae7e9d8d081b2c23eb679377c0ce4725881cbf"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/stage_once.py",
+      "sha256": "f5695f59223577afcc06005f1cb594902136d8ce527eb4421bcc99d52c242dfd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/stage_once.py.v1-to-v2.diff",
+      "sha256": "35eaceae98bc8818f819696c3555122375bb172b8d3b5b57485150ec3f055658"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/test_packets.py",
+      "sha256": "fe911dc223bad43f3d8fd9b65588c2a0582f498c2e2c372d9cbac32871ea77a0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/transport-source.json",
+      "sha256": "fd2c4c0df567c7f1dad214eb55536c6f9e1db795b11554ad2ba1ab6a0fc4b69b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/v1-successor-delta.json",
+      "sha256": "a0ed3f00a93340980b19f2967f9b30f9d6590cbd1a5a85e327b932889292c0c1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/wave-independent-review.TEMPLATE.json",
+      "sha256": "e6cb0c3721d42464bec855320e07ef3c18d586d656159114121273094b672bce"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/wave-inventory.json",
+      "sha256": "b0b273b75d07e9dc4c45fb94db3ad44a62e5b0af35bbd3757b55c271b7068c47"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/wave_contract.py.diff",
+      "sha256": "ff03097d2d8c5bc56d2adb4e8c7fa199d52e9bd091865b039d7dd4e984183f50"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/wave_once.py",
+      "sha256": "ada75251ad5b12bafc4d7c824a6e8eef88dca1c25f14c5442073520c9eaadf87"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/00-request.TEMPLATE.json",
+      "sha256": "6534316def4609760f72014e919821b5042c9b36174d187d2e5f03e9c74439c3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/01-request.TEMPLATE.json",
+      "sha256": "d90c2c1d7ae74d201d313856d25e12b2764957825fdc31f3f9cadf85edddee1c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/02-request.TEMPLATE.json",
+      "sha256": "d32230c09d80c78601f5e3fcd019d395fbc5d7c8ffb34dcce4f44dad9ea9f888"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/03-request.TEMPLATE.json",
+      "sha256": "2bccbd3a77b0748bc0414b5abb91807a510d332c96a46471b58b0a3ee02523b3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/04-request.TEMPLATE.json",
+      "sha256": "b64ab630c107f80638612dfddce55af3c91d0a2a0c1dbfd48cad1cd5197a60ec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/05-request.TEMPLATE.json",
+      "sha256": "6692b32bf5d1dc936ea667ec5179d4231cb5e548aa0bc24398a2dd1952fd89da"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/06-request.TEMPLATE.json",
+      "sha256": "bd70030edd36d80fb415cce1c17795ece323df1ffd0e7fc7e7c8f28e27b2c580"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/07-request.TEMPLATE.json",
+      "sha256": "6e25273cb172c601435287f8daa6aff9e97d920727ea02b0f2375c06ccdf2356"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/08-request.TEMPLATE.json",
+      "sha256": "2ec045fa3ddfd529978b39d06eb6325ace87aeb285f15f918f799abafd713300"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/09-request.TEMPLATE.json",
+      "sha256": "a558ff68879965162af989e1e6ef453281eadea579a9542ac9cfde18bdbd2611"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/10-request.TEMPLATE.json",
+      "sha256": "cc05ae256c6a79406bdd1446d1eb03d7a7656559888848f8805b6e12e404e558"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/11-request.TEMPLATE.json",
+      "sha256": "8ab91e1f66a0b70aead391b04ca4265abc6c4fdcedf993e19efab5f3876fc5da"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/12-request.TEMPLATE.json",
+      "sha256": "eb5b96a50ccca263057f047a45195f814214bc2a34a5b57980a86691762ad469"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/13-request.TEMPLATE.json",
+      "sha256": "17fad87cf6fabf786dbda2f9646092837e8fad3d013577df02c0e5bf793da96d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/14-request.TEMPLATE.json",
+      "sha256": "5106dd3aea16205350beb2f7c20ca13fdf9d0ed172d31b23c0902af1b7f8c50a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/15-request.TEMPLATE.json",
+      "sha256": "5cee5ac8c4934fbb43dd8372860ab88c15d1191a4126d21415812df003499dfb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/16-request.TEMPLATE.json",
+      "sha256": "66c33ca626a7fd2a41ef2f6a3893ed672c3669e205e9de6d0595886549157e0f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/17-request.TEMPLATE.json",
+      "sha256": "21221bee756e992ee5b82b4699c87d20222be0630c834fdc54d4f5bf19b0ee8e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/18-request.TEMPLATE.json",
+      "sha256": "2ca47fb24c601ced89c3deac78e01beeb4ae517cbd8127e0a60fbcbd165eaa7a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/19-request.TEMPLATE.json",
+      "sha256": "96ccbf07ce7e8fd36f1ef92b7df617d7b968a93345ad0367c07cd670f2d7fa80"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/20-request.TEMPLATE.json",
+      "sha256": "dbd57b8ac17fd1585ea3fc34a4158c5c63d99f5c188f9531f35162152cef5074"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/21-request.TEMPLATE.json",
+      "sha256": "b30e924c2a284cf4a1f09ce9c596a8f4a1c2aa9240360ecb02b1c8a5cb450856"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/22-request.TEMPLATE.json",
+      "sha256": "4d5ccb9b96be3b77c3ccfe49db737b643a8db1c149387d16625210c3c498027b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/23-request.TEMPLATE.json",
+      "sha256": "0e693dd0ce6dfc8e30955e02552de29d20038892bda0f3a2c7abb4bcbfb02212"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/24-request.TEMPLATE.json",
+      "sha256": "9bde5b8bdb11a15af7ba6d6c92362f8144817e4dd62155fa51f34a2946e7ec61"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/25-request.TEMPLATE.json",
+      "sha256": "075580c7e644e8dd7abc1f5bfe9647825a80d1bec1ff2b3619b7428bd009c4a2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/26-request.TEMPLATE.json",
+      "sha256": "f3026aefe2b6c22fa5e12c5cdf39d7dd4909c24e2e162a3ae4825239083cb81e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/27-request.TEMPLATE.json",
+      "sha256": "25dcc1ac45b5919d24bc29d0e71d0b94c35dd6aae7775ec9845d760b40940049"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/28-request.TEMPLATE.json",
+      "sha256": "98e4143ddf546645f4b6a80914f5158e586dac3b94ac316355922a1c3e37571e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/29-request.TEMPLATE.json",
+      "sha256": "ce54e110fad0cdbba6f71190d1661e117fbeb37b00b3f21b66a339f8cdace716"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/30-request.TEMPLATE.json",
+      "sha256": "6bc3bc6cfffe09fc57f07e44a63ab265643605cf73a9c88747d9900e5efd9433"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/31-request.TEMPLATE.json",
+      "sha256": "b68247b07c36650425bad70e8d4feef7f27a896d1b4004358b4846d8a46daa9c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/32-request.TEMPLATE.json",
+      "sha256": "71506ffd595f1380c3446d2d74bb31326ea2a4937a808792690cd3bc52dda1cf"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/33-request.TEMPLATE.json",
+      "sha256": "9b42230c2f6cbd45e2743669c3923b2fb8daefbe3f2ffdda09c57c9a0c4e186e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/34-request.TEMPLATE.json",
+      "sha256": "78c8c50df72372972f1c13d6f167fcceb27618734d7bea3e13220c39a88e93ba"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v2-20261025/waves/35-request.TEMPLATE.json",
+      "sha256": "77d9bdd2d998704a26969a5f4559907f83ff34c2d0cf06acd584751355459f79"
+    }
+  ],
+  "independent_review_required": true,
+  "kind": "AUTHOR_REVIEW_READY_SOURCE_MANIFEST",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-execution-astra-v1-20261025/review-ready.json",
+    "sha256": "49d66365c0eecd9804d71cb73c3ae6da00121665bb0fa1668d58ccfdae2a7723"
+  },
+  "protected_reads": 0,
+  "remote_actions": 0
+}

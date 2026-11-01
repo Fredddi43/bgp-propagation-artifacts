@@ -1,0 +1,75 @@
+{
+  "action": "admit",
+  "author_sessions": [
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "sonnet",
+    "sonnet-h3-refit40",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery",
+    "opus-h3"
+  ],
+  "bundle_manifest_sha256": "e3c41e1203bae32c30e1a20dc00208903f394626987884a8799171de16547adf",
+  "conditions": [
+    "Fresh root-only action=admit once, attempt_limit1/retryfalse, unused actual-admit; exact previous_actual729cd5ac and this signed predecessor acceptance; exact review-admit, adoption004, bundle and transport pins.",
+    "Root current control acknowledgment and final native --check-only; newest compatible phase must still match the reviewed v44/adoption004. Changed phase or other writer/runtime/floor premises require successor adoption/review.",
+    "Preserve all65 prior holds and the newly submitted52558223 hold without update/release. The new array is covered by this accepted --hold receipt and has zero training/custody growth while held; live state confirmation is the purpose of admit. Preserve84322856 B existing growth reserve, root closure attestations and scheduler-side compute-host census limitation.",
+    "Before each remote call: stat-only custody identity/no-shrink and EOF+remaining growth<2080374784 B; full fresh phase floors. Remote get(submitted) must match binding/job; record admission-intent exactly once.",
+    "Read only scontrol -o show job52558223 through <SUBMIT_HOST>. Require exact job/array owner<USER>, PENDING/JobHeldUser/priority0, full0-39 throttle40, n-h3, gpu-rtx8000,1node/1task/4CPUs/240GiB/1GPU,24h,no-requeue/restarts0, no dependencies or requested/excluded nodes, exact staged command/workdir/log paths. Frozen held_job parser decides acceptance.",
+    "Then remote preflight revalidates stage bytes, approvals, prerequisites and unused output namespace; persist admitted receipt with scheduler text hash. No release/capture/fit execution. Independent admit actual acceptance and separately reviewed root release authority required afterward; do not retry an uncertain admission."
+  ],
+  "execution_authorized": true,
+  "job_id": "52558223",
+  "operating_adoption": {
+    "path": "<REPO>/.agents/operations/ROOT-H3-REFIT40/operating-adoption-004.json",
+    "sha256": "817f4f7ba063d1cb1fc2dfb0f698478853f7e25d9f1386c6bedc728837a379bb"
+  },
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v44-20261026/root-joint-storage-phase-v44.json",
+    "sha256": "e5fab44a899b288627d28a67a536ed23535349ddbca43cb110ba75a0c2f2f302"
+  },
+  "pins": {
+    "client.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-client-r2-20261023/client.py",
+      "sha256": "ac0275b0808e3d85afc6bde2d8e1f2ccf66f4aec09e3ee08850ef0b09cbfe533"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/operate.py",
+      "sha256": "5e9a0c6fd4dd3a8705cf0d97cadd5ca9910b095e06426310efaa0b7a0d0f72ad"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/prepare.py",
+      "sha256": "d8b64bd83009a336b132f1c44d78d2876a09ff628ee2926aa38b935a2c9714a9"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/remote.py",
+      "sha256": "5d4753118005cf5435a5540b4b9cc13878cc6ea74a2886f23401befd4ac71b21"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    }
+  },
+  "previous_acceptance": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-submit-actual-admit-review-astra-final-20261026/submit-held-acceptance.json",
+    "sha256": "a838eb5a11df97e5b80bf569a7dc511f7f881293f648a737ff15b74404818443"
+  },
+  "previous_actual": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/actual-submit_held/result.json",
+    "sha256": "729cd5ac6da89cc2ec05f37b58c493438cf05cbd51eb9f316f3c8af5dee00233"
+  },
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "astra-final",
+  "scope": "Exactly one admission of held array52558223/full40fits. No submit, release, fit or capture authorization."
+}

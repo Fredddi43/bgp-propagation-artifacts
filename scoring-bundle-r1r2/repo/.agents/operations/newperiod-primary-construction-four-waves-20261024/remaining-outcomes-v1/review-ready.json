@@ -1,0 +1,11 @@
+{
+  "delta": "Same reviewed fixed completion projection; cumulative48 maps indices32..47 to d60 shards0..15; final adds remaining16build and exact2assembly receipts. No output refs followed; failures/missing retained.",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "59f4ccaf489a108501f1187a88654fa175ad62b04c68bb5ec6dfa6034eed23a8",
+    "cumulative48-request.json": "c7b6bbcf7ca801149a25ecf2d202c8484de2fe44d48cb0bc691f1d574872e4cb",
+    "final67-request.json": "afaee73c17bbaf73371263350df75cdf8ffb9214fc6b10296cf2812c44173a03",
+    "test_capture.py": "b0486658a5518b04350ac4dda1912dd9f8b24c3b95cc5731660e1299bb4e3c3c"
+  },
+  "tests_passed": 6
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "independent_full400_latex_review_v1",
+  "verdict": "PASS",
+  "reviewer": {
+    "worker": "/root",
+    "model": "Codex"
+  },
+  "author": "/root/deadline_audit",
+  "reviewed_utc": "2026-10-24T04:37:43.101319+00:00",
+  "ready_sha256": "97f3605afa79824202f24c06098f3fed4a3d2581783f3f45121a92575bd7f912",
+  "files": {
+    ".agents/operations/newperiod-paper-latex-20261024/README.md": "7e75a415709dc1e173936dc64593d4bc5ff567c87daaf352d74992175406f40c",
+    ".agents/operations/newperiod-paper-latex-20261024/test_latex.py": "00f317eb16530bd77ac4df0f69d40fd7009d8b5c599925bbc3c446cad0b0d10a",
+    "scripts/forecast_report_latex.py": "b69d0767abd2ef05f121e85453760d62f1c90c1681f24f4ec6c2ac3ad2dcd2b1",
+    "src/bgbench/forecast_report_latex.py": "b677c01751995377669e3ec9009c96b3396b1860c229ce31f698ee52cacff85f"
+  },
+  "tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q .agents/operations/newperiod-paper-latex-20261024/test_latex.py",
+    "passed": 7,
+    "seconds": 43.33
+  },
+  "findings": [],
+  "evidence": [
+    "Source independently read; every displayed field resolves to original report pointer or explicit missing field; no added statistics or selection.",
+    "Full 400 identities and existing failure statuses retained, external input SHA enforced and altered projection rejected.",
+    "Literal text escaping and nonzero tiny value formatting checked; exact values remain in provenance.",
+    "Actual acmart main PDF visually inspected: all three tables readable without clipped or overlapping content. Synthetic full supplement and main compile tests pass."
+  ],
+  "scope": "Presentation code only. No actual result read/release approval, manuscript integration, or model-level means invented. Actual numerical/report release and full-paper review remain required."
+}

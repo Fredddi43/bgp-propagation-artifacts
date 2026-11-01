@@ -1,0 +1,32 @@
+INDEPENDENT ASSESSMENT: actual R1 v11 K1 census (executed once by author f4d75bb1 under approval 50e5e337)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Metadata only; no result, report, manifest or
+marker content read.
+
+Records
+  - capture-records/census-intent.json: approval 50e5e337, tool 4229ec2c, automatic_retry false.
+  - capture-records/census-result.json: returncode 0, stderr empty, stdout_sha256 969d570b.
+  - evidence/census.json f7315faec9effd4b0dff410ca72041ab4a14b22882a6a630bbf0ca04c52d85ef, kind r1_posteval_census_v1,
+    with the same approval and tool shas.
+  - Exactly one attempt: one intent, one result.
+
+Validity
+  - Reviewed census.judge() applied to the recorded census document reproduces the recorded judgement exactly.
+  - root = .../r1-release-parallel-v11-20261024/control-v1; supervisor pid 788181, alive=false.
+  - execution-exit.json (55 B): {"automatic_retry_authorized": false, "returncode": 0}.
+  - marker_processes empty.
+  - Registry r1-access:
+      * r1-unblinding.json present (648 B) and r1-unblinding.complete.json present (183 B);
+      * r1-unblinding.failure.json ABSENT, so there is no stale failure marker to resolve.
+  - results/: listing complete (truncated false, 1068 entries); report.json 15,327,863 B; per_event 1066 files,
+    18,180,218,803 B, max 27,635,261 B, no non-file entries. 1066 files = the committed cell count.
+  - complete.json 395 B; manifests d30/d60 each 5,183,175 B, mode 0444.
+  - fits_f19 true: complete + report + manifests fit the reviewed 16 MiB/file and 256 MiB caps.
+
+JUDGEMENT: terminal_success TRUE, and the census is valid.
+  - The K1 approval 50e5e337 is CONSUMED; it is never repeated.
+
+Observation (not a blocker):
+  - The census proves only that the registry markers exist; it does not prove they belong to v11.
+  - Binding the release to v11 is done by the reviewed K2a check, requests.complete(): complete.json passed=true,
+    spec_sha256 == FINAL_SPEC_SHA 2233750e, report path/sha, exit rc 0.
+  - That K2 check must pass before any further step.

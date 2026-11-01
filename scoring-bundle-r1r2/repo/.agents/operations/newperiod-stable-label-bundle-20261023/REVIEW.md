@@ -1,0 +1,15 @@
+# Ordinary and stable own-target label bundle
+
+Code candidate only. No production authority, protected reads, or runtime admission is supplied. `run(plan_input, authority_input, expected_plan_sha256=..., expected_authority_sha256=...)` accepts already bound bytes and independently authenticated exact hashes. The enclosing custodian must bind the complete source/runtime closure, actual source manifests, byte/storage/memory budgets, output, and existing access-log configuration.
+
+The exact reviewed pooled reader is copied unchanged. `phase_reader` splits its `_run` at the uniquely identified final pending-membership loop. Every original metadata statement and both numerical statements remain unchanged; publication is deferred. Both ordinary and stable metadata phases run before either membership phase. The original read function is reused byte-for-byte for the two additional stage/selection reads, including durable access logging, O_NOFOLLOW, regular-file and exact size/hash checks. A conservative aggregate byte cap counts both sets of inputs, including repeated references. Failures retain no exception context/cause. Only the final ordinary output path is published exclusively.
+
+Stable targets come only from the committed stable stage's own exact canonical summary/membership/coverage bytes. No anomalous source or stable derivation is invoked. Stable stage selection and sensitivity are checked against the original fixed selection contract; dual masters retain primary event IDs, onset and incident, own history and stage provenance. Pooled selectors and the reviewed explicit collector-inventory obligations remain unchanged. The exact original target/count arithmetic supplies both scopes. Censored stable rows remain censored and contain no target arrays or counts.
+
+The ordinary artifact's existing kind, horizons and provenance remain unchanged. One named `stable` section has kind `custodian_stable_label_table`, own master/stage/selection provenance, stable target scope, and the frozen inner selection SHA on scorable rows. This is the exact reviewed stable consumer interface.
+
+Tests use invented data only. Eight reader tests prove original ordinary content parity, genuine stable canonical targets/four counts, pooled selectors, separate censored truth, one decode per scorable source event, and metadata failures in either family before any membership read. The paired composition r3 tests additionally run the actual original primary evaluator and custody seal/verify_arm, all 298 secondary cells, genuine bundle-produced pooled stable truth, and exact same captured nested object. They prove one label opening and zero label reads on late stable preflight refusal. Fixture selection hashes/peer count are explicitly patched to a one-peer invented selection; no claim of real 639-peer acquisition or actual cohort availability is made.
+
+Command: `.venv/bin/python -B -m pytest -q -p no:cacheprovider .agents/operations/newperiod-stable-label-bundle-20261023/test_bundle.py .agents/operations/newperiod-secondary-composition-r3-20261023/test_compose.py`
+
+Result: 10 passed, 28.67 seconds. No real scientific execution.

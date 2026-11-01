@@ -1,0 +1,19 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "8e4ccfd3f5b125b8455c132e1b12c2d1ecbf05b89fd704cf27e767ea21927200",
+    "original_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "output_budget.py": "9e122a6ff46e7d0566cea3e8868c7ce17f3e0a329decd56bb4316919fb2a0b51",
+    "test_budget.py": "51683866a5dd89c5bffe47e65713cedaaa47eb65ac84dd4b9bac5b976405e52a"
+  },
+  "kind": "newperiod_development_scratch_compatibility_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-development-construction-20261023/review-ready.json",
+    "sha256": "da230d340ea074dd2300f637990f293383693ff378fb00992c48754939830ce8"
+  },
+  "tests": {
+    "passed": 12,
+    "seconds": 3.77
+  }
+}

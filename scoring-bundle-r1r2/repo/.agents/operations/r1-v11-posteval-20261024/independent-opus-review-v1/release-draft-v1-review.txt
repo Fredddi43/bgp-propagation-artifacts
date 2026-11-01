@@ -1,0 +1,62 @@
+INDEPENDENT REVIEW: R1 release receipt draft (release-draft-v1, review-ready 5d7dce42)
+Tool build_release.py 074c7eca; tests 06c40099.
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+VERDICT: CHANGES_REQUIRED (code only).
+  - No release exists or is approved. D2 is still pending: D2 r5 approval 62219c76 is not yet executed.
+  - Tests: 6 passed in place.
+  - The consumer is right: the N path forecast_release.authorize:73 -> forecast_manifest.verify_release:200.
+    verify_release checks the three flags, the window, completed_utc and re-hashes the five {path, sha256} keys;
+    it does not check kind.
+  - verify_r1_authorization (kind r1_release_authorization) is the earlier pre-scoring gate and is not this
+    consumer.
+
+BLOCKING
+R1. The D2 gate is a free-form dict.
+    build() accepts any dict with assessment_passed True and truthy d30/d60/assessment, so a typed boolean could
+    "release" R1. Bind it concretely:
+      - The fetched D2 findings capture and the two findings files are each sha-bound to the actual fetch-sha.json
+        of the executed D2 (d2-fix-v5/run-records).
+      - Each findings file is parsed: kind r1_class_d_rescore_v1, plan_sha256 6e18854b, report_sha256 049c7a9c,
+        verifier_pins as the job, failed == [] and checks > 0.
+      - The union of cells == the 66 fixed cells, with the d30/d60 split as in the job script.
+      - no_per_event_file entries are listed explicitly and are accepted only when each matches a seal "failed"
+        cell or a scoring_failed status already in the release. Otherwise refuse.
+      - The independent D2 assessment file is named by path + sha256, inside independent-opus-review-v1
+        (not author-written).
+    Add the same path+sha binding for the class (a)/(b) assessment (vrun-r2-actual-assessment d04808e3), not just
+    is_file().
+R2. development_frozen is hard-coded True.
+    The docstring says it is "asserted from the spec's frozen_utc + exposure ledger", but nothing is checked: the
+    code only copies spec_frozen_utc. Make it a real check:
+      - spec.labels_opened is False, spec.predictions_decoded is False, spec.cells_at_freeze == 1156;
+      - spec.exposure_ledger is {path, sha256};
+      - spec.frozen_utc < the evaluation execution start recorded in the captured complete.json (K2a,
+        03d1c73e), or the nearest reviewed execution record that carries a start time.
+    Refuse otherwise. Fix the docstring to describe exactly what is checked.
+R3. source_audit mapping.
+    In this codebase "source audit" is the data source audit bound by the primary gate:
+    occurrence-final-v1/manifests/training-integration-v6b-both.json (7e48955b) -> source_audit_path
+    source-audit-v5/source-audit.json (0f9be434..., REVIEW-PACKET-ORCHESTRATION.md:173,253). It is not the code
+    source manifest.
+      - Map source_audit to that data source audit, at the sha the gate binds. Verify it against a local
+        byte-identical copy, or a captured hash.
+      - Keep the v11 code source manifest 0bdaf006 as an additional key, e.g. code_source_manifest.
+        verify_release ignores extra keys.
+    If you keep 0bdaf006, give a written rationale.
+
+DECISIONS ON THE OPEN POINTS
+  - evaluation_manifest = the R1 seal 1cad501a is acceptable. It is the sealed evaluation record with all 1156
+    statuses and the R1 population id-set sha.
+  - ADD the cohort manifests as extra evidence: d30 45865cdf, d60 f885a805, plus integration_gate 7e48955b.
+    That way a reader can reach the event manifests without changing the five consumer keys.
+  - completed_utc: use the utc of the final independent D2 assessment (or of the build), recorded deterministically
+    from an input rather than datetime.now() at an arbitrary moment. Keep the not-in-future check.
+  - The host write path and stage tool for the receipt are a separate packet with its own approval. The external
+    anchor (manifest/gate retrospective_release_sha256) must be set from the actual written bytes.
+  - Tests to add:
+      * a forged D2 dict refuses;
+      * a findings file with failed != [] refuses;
+      * a missing or extra cell refuses;
+      * a development-freeze violation refuses;
+      * a changed source audit refuses.

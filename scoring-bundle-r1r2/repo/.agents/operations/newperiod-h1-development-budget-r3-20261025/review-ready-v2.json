@@ -1,0 +1,35 @@
+{
+ "after_stage": "r3 initial-wave-binding (release-bound.json) AND an r3-job wave-waiter successor are built from the r3 held submission, as in r2; not part of this candidate",
+ "author_session": "<SESSION_ID>",
+ "author_worker": "/root/opus_implementation",
+ "builder": {
+  "build-result.json": "08300fca193f6f7f22ef02af9cdc876b765cfc7da9060df24478061651a3e30e",
+  "build_r3.py": "c62ee70603652f1292a9a3f34d24651980c48f0282f14ba010ffb1b67c9c5b5b",
+  "test_build_r3.py": "5cab2853070ce668e74ac8630a8097ee7fc42ce6a7d7b19b695b9df888be2ce8"
+ },
+ "delta_vs_r2": [
+  "package: namespace v2->v3 in controller, 4 job scripts, source-h1.json, audit template (+ its collector-inventory sha, unchanged bytes); plan.json namespace + recomputed shas; resources/grid/years/storage unchanged",
+  "waves.py: controller pin only",
+  "completion tools: BASE namespace only; tests identical",
+  "wave-waiter-v2/wait.py identical to r2 (pins r2 JOB 52499340; not usable for r3 until its post-submit successor); its test compares with r2 wave0-waiter-v1",
+  "stage proposal: r3 local paths/pins, r3 disposition of the preserved r2 campaign, minimum_free_bytes PENDING_ROOT"
+ ],
+ "errata_F1": "docstring-only fix in build_r3.py: wave-waiter-v2/wait.py pins r2 JOB 52499340 (fails closed); an r3-job successor follows the r3 submit-held. Generated outputs byte-unchanged (rebuilt and compared).",
+ "execution_authorized": false,
+ "key": {
+  "controller_sha256": "41cad5ec044bf02f1acdfdbb418224c1874cf358b7a06cb0dc243bedf86df321",
+  "plan_sha256": "643b2a31fbdb4288f5890b238b79148960625d4aa857536fca3c25b1ae9c605e",
+  "waves_sha256": "bbce2da6f4090a6493e8ae2beb4e4872b484f20225f9a79d89a7e15fc0a828ed"
+ },
+ "kind": "h1_r3_candidate_review_ready_v1",
+ "r2_disposition": "0994be833eebd294e4383f79b9582807c2d2cf10205c505e8725d4fb64e061a5",
+ "root_decision": "A (ROOT-RELEASE-WITNESSES-H3-AND-H1-DECISION, 2026-10-25T00:32Z)",
+ "root_needed": "fresh joint-phase admission: H1 contingency 198 GiB (64 x 3,314,059,827 B A2 bound = 197.53 GiB) + 128 GiB live-wave cap (+1 GiB control); stage/held approval for r3; F2: plan hard check at initial binding/release needs free >= 656,056,254,464 B (547+64 GiB) as well",
+ "stage_proposal": "09583b1a630fdcad24686b05c2d0a7370bc94a5afa84e1aea5cff8556a24b7d4",
+ "stage_proposal_r2_refs_kept": [
+  "accounting-proposal.json (r2 historical accounting)",
+  "review-ready.json (r2 base review, which this delta builds on)"
+ ],
+ "supersedes_review_ready": "5d43e301e801a07aeee2e3d48ad6d439f32760c9d4bde75ec5ec54573f191515",
+ "tests": "test_build_r3 3 + test_waves 17 + completion tools 15 + waiter 8 = 43 pass (-B, no pycache)"
+}

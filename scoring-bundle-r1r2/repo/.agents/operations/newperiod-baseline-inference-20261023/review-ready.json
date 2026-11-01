@@ -1,0 +1,22 @@
+{
+  "kind": "newperiod_baseline_pure_review_candidate",
+  "author": "/root",
+  "tests": {
+    "passed": 52,
+    "scope": "synthetic only"
+  },
+  "files": {
+    "baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+    "test_baseline.py": "c0b420fbd2eda6f85dc405ce4f687e6deb625018a27418d4a4b6586c636dd2d9",
+    "README.md": "580c1bf11a2e62f14fb315e2b6cee1fe7d338d468e217d42eb2d28f5082afa45"
+  },
+  "source_dependencies": {
+    "scripts/forecast_campaign.py": "b3af97c46002abf58f913643bc118f76a226b9f0febcec953bc14eefade95069",
+    "src/bgbench/forecast_history.py": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c",
+    "src/bgbench/forecast_inputs.py": "deab11d87ea0940cdbde9bb0b2981f9e4d0059cf9eb7dc5b86ba6f7e6becf84f",
+    "src/bgbench/forecast_ranking.py": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97",
+    "src/bgbench/forecast_manifest.py": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827"
+  },
+  "actual_execution_authorized": false,
+  "complete_execution_integration": false
+}

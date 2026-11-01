@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:48:02.076119+00:00",
+  "ready_sha256": "1eb7d232ed76ee2a27a9b06d5ec8ccc2a4a73935cfce68a4295e160e24e093a6",
+  "source_sha256": "e1ae2a6740da7ce2246a7babbddec170017c4b9f4e1b7389d4308b1fd48c4ee1",
+  "scope": "Only exact full-array assembly dependency normalization; all resources, original source, complete64 and release calls unchanged. Actual all3 captured held records and rejection cases verified.",
+  "tests": "16 passed in0.79s",
+  "scientific_retry_authorized": false
+}

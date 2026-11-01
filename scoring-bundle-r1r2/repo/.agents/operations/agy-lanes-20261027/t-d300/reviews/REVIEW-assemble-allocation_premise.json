@@ -1,0 +1,26 @@
+{
+  "kind": "INDEPENDENT_D300_ASSEMBLE_ALLOCATION_PREMISE_CONCURRENCE",
+  "reviewer": "claude-sonnet-5-5",
+  "reviewer_worker": "reviewer-claude-sonnet-5-5-alloc",
+  "reviewer_session": "session-root-assemble-allocation_premise",
+  "reviewer_model": "claude-sonnet-5-5",
+  "verdict": "PENDING_ROOT",
+  "passed": true,
+  "stage": "assemble",
+  "scope": "allocation_premise",
+  "claim": "orig_budget_model_with_post_hoc_allocated_census_not_backend_theorem",
+  "plan": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/sensitivity-parallel-timing-budget-v2/recovery/timing-d300-assemble-sonnet-v4/controls/plan.json",
+    "sha256": "892edfdc9965aba7cc44e499439582851a2497b117ad2aa89cfc8edcb0fc8ce7"
+  },
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v48-20261027/root-joint-storage-phase-v48.json",
+    "sha256": "913754c6c095bf1b0eb542a1d33d721318ccdc4934659bc4728a3d36f7b07baa"
+  },
+  "execution_authorized": true,
+  "checks": [
+    "V4 sources and plans verified for stage assemble with allocation_premise.",
+    "2 GiB per-file cap and NIL array parameters verified.",
+    "Phase V48 floors and storage margins confirmed."
+  ]
+}

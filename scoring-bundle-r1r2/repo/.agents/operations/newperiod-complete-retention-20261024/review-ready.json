@@ -1,0 +1,28 @@
+{
+  "actual_operation_binding_pending": true,
+  "actual_protected_reads": false,
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "358973fbb3ca81c6c4d2e8c3753643341c81dcf34ea5596710a26d962135b2d9",
+    "retention.py": "20e885b3a0d7ddb4e9af32359cdb8517ebdee78d7c2d89965acf42d16f4f3baa",
+    "role-grid.json": "93e5932c12468de7cabdf5407784e994901aa5e5c4c7743c8797f5e2537df45d",
+    "source-pins.json": "4bcb903cbd1dfeff21df248b234c063cb48bbee0c50a16ffcfca01bdf476271c",
+    "test_retention.py": "a3ee09214f5509e027efc7308075bae501db9fa4843491606b548b3bff35fdaa"
+  },
+  "kind": "newperiod_complete_retention_code_review_ready_v1",
+  "tests": {
+    "command": "python3 -B -m pytest -q .agents/operations/newperiod-complete-retention-20261024/test_retention.py",
+    "original_reader_boundaries": [
+      "count",
+      "h1",
+      "h3",
+      "history",
+      "ordinary",
+      "stable",
+      "origin",
+      "timing",
+      "primary via reviewed private_primary"
+    ],
+    "passed": 31
+  }
+}

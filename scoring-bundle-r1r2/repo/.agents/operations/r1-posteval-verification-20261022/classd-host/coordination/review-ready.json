@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_classd_host_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/classd-host",
+ "pins_sha256": "bffe254e3c6ef28e2b821135ffae96539b15366c20429cfc2db4ffe2e1089634",
+ "requests": [
+  "code review of transport + D0/D1 + fetch (31 tests, 11 mutations)",
+  "if CODEPASS: separate exact transport approval T (scope r1-posteval-classd-code-transport-v1, tool stage_code.py) and phase approval P (scope r1-posteval-classd-d0-d1-v1, tool phases.py, incl. fetch F), each conditional on adapter-r2 CODEPASS + R1 terminal success + K1/K2a executed",
+  "D2 is proposal only; reviewed later from the published D1 census"
+ ]
+}

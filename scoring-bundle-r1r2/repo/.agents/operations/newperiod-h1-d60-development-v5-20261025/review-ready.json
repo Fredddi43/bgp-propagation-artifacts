@@ -1,0 +1,38 @@
+{
+ "capacity_note": "d30 used the phased 4-wave admission against the joint storage phase; d60 needs the same (root). d60 graph sizes are unmeasured; per-shard cap stays 8 GiB, with the r3 growth-review rule.",
+ "deltas_vs_r3": "only: namespace sensitivity-parallel-h1-d60-v5 + control root controls/h1-d60 (controller BASE x2, source-h1.json root, plan paths, template paths); plan admitted [h1-d60], group h1-d60 = r3 h1-d30 group with horizon/manifest/gate/audit_plan/audit_callable/source refs moved, h1-d30 back to planned; audit-templates/h1-d60.json (base_manifest/base_gate -> 60 entries, construction_gate -> gate-h1-d60); wrapper = v4 corrective-A wrapper f34dda94 (bound_base); jobs/h1-d60-*.sh regenerated; waves.py controller pin + group literal. All other 258 package files byte-identical to r3 (tested). Resources, years, limits, storage reservation 587,336,777,728 B, runtime, release unchanged.",
+ "dir": "<REPO>/.agents/operations/newperiod-h1-d60-development-v5-20261025",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "execution_sequence": "as r3: P0 d60 once -> controller stage + submit-held (4 phases, all HELD) -> read-held -> waves.py releases (4 x 16 build waves, root capacity per wave) -> audit-chain release -> waiter/capture successors (r3 wave waiter, chain_wait/chain_capture with v5 namespace + actual job ids; built after submission and reviewed). Records outside the frozen dir.",
+ "files": {
+  "build-result.json": "e6aeead1936343d2b17d874918ad502bdac2155c6c914185d4f52ae141ed2869",
+  "build_d60.py": "0d0c9da9e3c565e6aae37812a0a2ac6292b2d9ef30545d366aefd07cce207a03",
+  "mutation-proof.txt": "3706c29cb3d471db84dc2af66c9186bcad7ae06be3cc51394a61cde72a0d1db7",
+  "preflight-p0-d60/build_p0_d60.py": "3a1f2ff550a636fa82e1a49a651e271295ba3aae0c748312908e61a586fc6d95",
+  "preflight-p0-d60/p0_d60.py": "4045c37a6b52ca4c9932a375fbe0ef143a9acd169fe66302c96f46f5ab68fb43",
+  "preflight-p0-d60/request.json": "bdee1cfdd6be71de034c4637976c131c05c1da7b0a317be4fb3591b9a4573417",
+  "test-run.txt": "11c804a6a953f4833c0950847234a6dbcbf4969bfff9fe8de4b3a6bd53b9a52c",
+  "test_d60.py": "91593192656c56dd3c0b6f2172f43ce3d271d09ad88586504b8a1121beb70758",
+  "waves.py": "0535c790dc8d269a7a063c8f4cb18f0f3d5e02f52a71f0cdeb38cb1b984c2f12"
+ },
+ "inputs": "d60 construction ce6642ac + gate c69deca5 from the root-accepted H1 metadata publication (job 52478614, assessment ca71f25a); reviewed local draft shows d60 = 14,787 events, years [2025, 2026], 0 excluded (same grid as d30). Sealed d60 base manifest 1dad255b / base gate 9a648b7a from the r3 template base_manifests/base_gates.",
+ "kind": "h1_d60_development_v5_review_ready_v1",
+ "p0_d60": "preflight-p0-d60/p0_d60.py 4045c37a = reviewed v4 P0 953a8b9a with only the manifest pin (+docstring) moved to 1dad255b; request bdee1cfd. Run once BEFORE any d60 stage, so the audit cannot repeat the r3 link failure.",
+ "package": {
+  "audit_template": "ad6d2b73e8b0835033642ca3f6c46924930a4065e10f30b28ac468281c3538fb",
+  "controller": "1fdf6dd371d73441ba9b8d447c4b0ff05905f8c1b6e2b0448c22b536682d2260",
+  "dir": "<REPO>/.agents/operations/newperiod-h1-d60-development-v5-20261025/package",
+  "files": 266,
+  "jobs": {
+   "jobs/h1-d60-assemble.sh": "671e67c5c8ce15ccf54695cb2be64c5c77e6d501393befc00094737355f80cac",
+   "jobs/h1-d60-audit-finalize.sh": "7c250174f8645eb7c1cf798b5205e6b5dccdf564631d1e59f02607e23aa66cf5",
+   "jobs/h1-d60-audit.sh": "90208f6f6d3c920e6e68d1cbc3a968bb7bda782be60b2d05e3fcd8a848189419",
+   "jobs/h1-d60-build.sh": "ffd759b1f957a5bb08281d932fb2d6fdb647ddacbc04e647ce523757dcfd19d7"
+  },
+  "plan_sha256": "bb487eca08f63f5f36076fa1d4c07ce507a4010aa9f68a6cffe71db04aeb8970",
+  "reservation_bytes": 587336777728,
+  "wrapper": "f34dda949a7248767e08eab983a73ef883331ca7cea8679757b185379ebf674d"
+ },
+ "tests": "6 pass; 3/3 mutations caught (mutation-proof.txt)"
+}

@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_assembly_r3_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/v8-assembly-r3",
+ "pins_sha256": "f9ee5fd0cd40b9b82af1837e2b378dd26866d5e56975d6f69f3a409f82318717",
+ "requests": [
+  "delta review of L1 (failed_v7 identity form), check_transition_v8, N1 inventory, propose_a3",
+  "if acceptable: exact scoped approvals usable only after v7 terminal failure + K1: (a) one f19d1066 capture of the six JSON records derived by propose_a3; (b) one identity_read (scope r1-a3-identity-read-v1)",
+  "delta review of v8-1-assembly-candidate (pins aa2273d2) as the O1-bound assembly"
+ ]
+}

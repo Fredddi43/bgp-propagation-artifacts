@@ -1,0 +1,47 @@
+{
+  "author": "astra-final",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/prepare.py",
+      "sha256": "d8e6aeef015ee2dc05b25fa7bfe7eeca321c9def0341830d7602d80a4cf90689"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/ordinary.subplan.PENDING.json",
+      "sha256": "6a00b7ef69069b8d27577deebe0f4030533411273007e18ae009fc304b043932"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/stable.subplan.PENDING.json",
+      "sha256": "4280ae0d36378fa3877c7a1c21a42e600afd2c70052c4f54020818dac131bb5b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/origin_change_invalid.subplan.PENDING.json",
+      "sha256": "47c39b142d10fe9fc2b0d256bc6e61b0f28645f9606930cf7aadb8b23fa4f436"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/origin_change_valid.subplan.PENDING.json",
+      "sha256": "d23304857e370529953c61e42dcd02f055036c1b41df5e76a2b7d4b3dc91ca9f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/four-scope-bindings.PENDING.json",
+      "sha256": "9616fab82144c52270d643b57422647e98ea957556e8e07b62199cbc44464117"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/masters.PENDING.json",
+      "sha256": "dbac2ff7344440a8bf1933e5da3ec38fcc749dff00645536796570a9f83845fe"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/inventories.PENDING.json",
+      "sha256": "9f3db0bcb6df3242c28d38fe1816a3a98356e552e8bc9fa07d92f3d319f9bee0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/handoff.json",
+      "sha256": "84137202c676ac5e1e226e2bece13b183f2caa69495928f93c43e56045eee116"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g4-four-scope-preparation-astra-v1-20261026/verification.json",
+      "sha256": "6cf95bf87d143899a57c16879b53f65a5b07fce485814ff3e6241511924cdbb3"
+    }
+  ],
+  "kind": "g4_four_scope_pending_preparation_review"
+}

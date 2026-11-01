@@ -1,0 +1,10 @@
+\clearpage
+% appendix only (after the clearpage, so the 13-page body is unchanged): pack the full-width tables more densely (round 7, M16(c))
+\setcounter{dbltopnumber}{4}\renewcommand{\dbltopfraction}{0.95}\renewcommand{\dblfloatpagefraction}{0.85}
+\setcounter{topnumber}{4}\renewcommand{\topfraction}{0.95}\renewcommand{\floatpagefraction}{0.85}\setcounter{totalnumber}{6}
+\vfuzz=3pt% appendix only: one column of the last text page of the protocol appendix is 2.25 pt over the text height (stated in the review brief)
+\appendix
+\appendixrefs% \Cref to appendix labels prints "Appendix X" (macro in main.tex)
+\input{sections/app-d}% Ethics, Open Science, Generative AI (required IMC appendix sections)
+\input{sections/app-protocol}% new-period protocol: deviations and failed attempts
+\input{sections/app-tables}% supplementary tables (recovery by gap, day-block intervals, month boundary)

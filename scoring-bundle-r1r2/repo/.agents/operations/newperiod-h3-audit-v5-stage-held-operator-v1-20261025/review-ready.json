@@ -1,0 +1,91 @@
+{
+  "actual_data_reads": 0,
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "kind": "h3_v5_stage_held_once_review_ready",
+  "phase_status": "v35 reviewed; not issued/bound. False templates only.",
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/operate_audits.py",
+      "sha256": "47c51a07e562900d81a6a09e1f53898d30c41228cbbd1326092efe8622ca6258"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/metadata_remote.py",
+      "sha256": "83d3bd91f3ef64d662144bcb428e5f0ccf86de8742053d3fcfddcaab36602c8f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/test_operator.py",
+      "sha256": "0e9604a5b3eec3b47c4f677763132b7ca4b08a1a75190bed7a7c23c3703c78a8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/tests-final.txt",
+      "sha256": "fdfaf540ef6c51a91f6491365d2fac292b5192ccb45fab08b822d442f210f8d9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/build_templates.py",
+      "sha256": "02f35eea02b7f823ec1344a50f077307e446a0cfdbd26019b8fa205b59c3af19"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/prepare_request.py",
+      "sha256": "edf9a985cd2e8075d9cc077da60135c6e4ad1c4df1ff87696e693d7c53fd16df"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/resource-proposal.json",
+      "sha256": "c9eb569e445ebd45dac54e5bce3248842fe34d920046b03d5244cb511eea5723"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/request.TEMPLATE.json",
+      "sha256": "ae6d1508023f426e7a303edd3eb5a418f0e58707b46e9019d1edf4ceb5a93aa1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/resource-review.FALSE-TEMPLATE.json",
+      "sha256": "238e29652beae12184b7b35ce6d4bdc130e187d6cc19833ac33f886ca5296047"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/operation-review.FALSE-TEMPLATE.json",
+      "sha256": "fe0f5a97a5e1b85b3349d322eb927fca4387076bfbb87a30fee565b2ee3065d3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/control-snapshot.FALSE-TEMPLATE.json",
+      "sha256": "9ad643a6e90c7998c651b99828cb4b5464c34006ef6d2fcc3e7458928c33e21d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/root-authority.FALSE-TEMPLATE.json",
+      "sha256": "366aa7654c66498b5846bd51cfd357991ec34fcb35d71e149e984c282dd3bb36"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/REVIEW.md",
+      "sha256": "b77523581b72d4af0475fab0d4744ca67da2c3dde827eee09ef1881272499beb"
+    }
+  ],
+  "prerequisite_reviews": [
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-AUDIT-V5-SOURCE-PLAN-PASS-session<SESSION_ID>.json",
+      "sha256": "0825d8bcff53bcda13c2d2194d213645a4ef7f123d078a60f52d3f4b4aa0c629"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t2-H3-AUDIT-SCRATCH-CORRECTION-V1-PASS-STATUS.json",
+      "sha256": "97788ba2235b20def2e72f5a5809183a5d87aaea7f203747c72048a6e9842f95"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-V35-H3-RETIREMENT-PASS-session<SESSION_ID>.json",
+      "sha256": "e3d78d538b4cf730f5dbb4bad95d11d56b6a704ef03aa77a265e069e069fa434"
+    }
+  ],
+  "production_authorities": 0,
+  "remote_actions": 0,
+  "review_requested": "Exact held-only resource envelope plus control-safe once operator; full scientific audit allocated admission remains explicitly separate/open.",
+  "tests": {
+    "evidence": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-stage-held-operator-v1-20261025/tests-final.txt",
+      "sha256": "fdfaf540ef6c51a91f6491365d2fac292b5192ccb45fab08b822d442f210f8d9"
+    },
+    "passed": 48,
+    "scope": "Isolated synthetic controls and mocked SSH only; zero actual remote calls."
+  },
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T14:18:05.235486+00:00"
+}

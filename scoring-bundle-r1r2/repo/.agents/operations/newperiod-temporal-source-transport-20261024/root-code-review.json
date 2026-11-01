@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:56:18.640715+00:00",
+  "ready_sha256": "8c67a2cfd81e91fc7e0c1ac2fa53940115d2c84edcd5af2c7343ff4f55b63921",
+  "files": {
+    "REVIEW.md": "315df9446d1314db2e44a3562acb6fed27da9f62dfcf5b2829d47aa8c90f7026",
+    "build.py": "8173dd492b835011fe21bb68cdef59875e518013cf12e2351f16f1713fb609f9",
+    "source-pins.json": "1d1e3bdd26393381f37e06bcac5a2a86c7a46ee676cbbce2292c2365f4810f50",
+    "test_build.py": "f4d644d002c7f5586a27df81246693102abfb52e6e4f168bb5525717d0bfcbc9"
+  },
+  "tests": "12passed0.87s",
+  "scope": "Localonly source/control exacttar+heldargv builder; original scientific closure,resources,approval predicate unchanged. No hostcalls or release. Exact actual externalapproval, transportreview and heldadmission stillrequired.",
+  "actual_execution_authorized": false
+}

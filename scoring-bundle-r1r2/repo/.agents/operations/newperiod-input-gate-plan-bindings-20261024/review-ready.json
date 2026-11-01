@@ -1,0 +1,10 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "ee0772b4090604909e08319e06f7ee48f14b62319aca5625cee7f9e8fc8d8834",
+    "bind.py": "f5d05febaf8ea458fc862cecde2a4560ae6afbc97cb00d2c0c254317f4fe240c",
+    "test_bind.py": "bdc38ab2092c89a09e2bfe9ab460ed7d194c87316e6f145b71957011e999c447"
+  },
+  "kind": "paired_primary_gate_metadata_binding_ready_v1",
+  "tests": "13 passed in 0.21s"
+}

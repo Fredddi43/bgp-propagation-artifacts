@@ -1,0 +1,23 @@
+{
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-custody-budget-storage2-v1-20261026/REVIEW.md",
+      "sha256": "a5408ff8a748d0bcee3ce753f5dacf67c0d5e6aa0fca9d5bc48b7c694174a3e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-custody-budget-storage2-v1-20261026/arithmetic.json",
+      "sha256": "7a02ed86d6c4f3d8b768ecab0e6ffcf3ccc417cc9448faee2ce70a66832e659e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-custody-budget-storage2-v1-20261026/proposal.FALSE.json",
+      "sha256": "335dc21d1ef7ea1ccd1189d2bfa3b48991c01c6f3b6acf5d47cd10e388c9232c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-custody-budget-storage2-v1-20261026/root-adoption.FALSE-TEMPLATE.json",
+      "sha256": "b0c95618eba0fd0cb6c205ae27b6552db0288b6c3a01b31a6acc32240aad0be8"
+    }
+  ],
+  "kind": "AUTHOR_REVIEW_READY",
+  "remote_actions": 0
+}

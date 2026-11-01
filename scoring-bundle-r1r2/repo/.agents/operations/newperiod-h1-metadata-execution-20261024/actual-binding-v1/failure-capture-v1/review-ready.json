@@ -1,0 +1,13 @@
+{
+  "delta": "Exact H1 root/job/three filenames and outcome kind only; same reviewed stable bounded reads, durable log, source-frame and class redaction",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "f47d33d1cb3028d37dc7761ae2de244ee2a3f7b079f65cff4300c988e9a35871",
+    "request.json": "d649c19249e1e81f16b9df480c3488f0104dc30eb9ffcb962816708608aa6956",
+    "test_capture.py": "a6e4e867487e459b1a4c6cea7754624b5daa2d152b7701aac90af857391f2f3d"
+  },
+  "source_predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-family-history-stage-20261024/failure-capture-v1/capture.py",
+    "sha256": "c72cd342e417d33c988483f26da5bf8d1cdaac06255b685d5801bd883037fe3e"
+  }
+}

@@ -1,0 +1,6 @@
+{"kind":"reviewer_response_v1","reviewer":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "responds_to":"review-request-vrun-fix-d0d1-fetch-d2.json",
+ "vrun_fix":{"verdict":"PASS_CODE_ONLY","transport_approval":{"path":"opus-vrun-r2-transport-approval-v11.json","sha256":"efde9bee1eae5852624111a61f6a44a5e79021d591e059e72c2cb80dfa4210eb"},"next":"route T1/T2 records + vrun_r2 job-script sha -> exact vrun_r2 approval"},
+ "d0d1_fetch":{"approval":{"path":"opus-d0d1-fetch-approval-v11-r2.json","sha256":"c7e1fab0d589999d6e78a6f2f0ad698f0045f3ef5a747d52768d80f4d4beeca8"},"request_file":"d0d1-fix-v1/fetch-request-d0d1.json 7d2643c7","output":"classd-host/evidence-d0d1.json.gz"},
+ "d2_fix":{"verdict":"PASS_CODE_ONLY","run":"after census capture + not_regular explanation + actual job script"},
+ "review":"vrun-fix-d2-fix-review.txt"}

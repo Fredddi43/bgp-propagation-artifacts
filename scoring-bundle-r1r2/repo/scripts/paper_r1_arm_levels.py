@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Arm-level mean average precision (AP) of the released retrospective R1 report, for the paper.
+
+Peer review 1 (docs/paper/camera-ready-20261030/PEER-REVIEW-1.md, item (b)4) asks for the AP level of every R1 arm, so
+that a reader can judge the size of the paired differences in Table "tab:r1-full-ap". The released report stores, for
+every arm, horizon and training seed, the mean AP and the mean candidate coverage of the new members in four strata of
+the number of new members. Their event-weighted mean is the arm's event-macro mean AP for that seed, because the strata
+partition the eligible events. This script projects those values; it computes no new statistic and no interval.
+
+Checks (the script stops on failure):
+* the report's SHA-256 equals the released R1 report hash in paper/generated/r1-provenance.json;
+* every stratum set covers exactly the eligible events of its horizon;
+* the seed-mean differences of the arms reproduce the reported C1 to C4 and native-candidate AP differences (1e-9).
+
+It also writes the transferred-model Jaccard contrast of the paper text rounded to 3 decimals (review item (a)14).
+
+Usage (repo root):
+    python3 -B scripts/paper_r1_arm_levels.py \
+        --report .agents/operations/r1-v11-posteval-20261024/evidence/released/report.json \
+        --comparisons paper/generated/r1-comparisons.json \
+        --out-json paper/generated/r1-arm-levels.json --out-tex paper/generated/r1-arm-levels.tex
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+RELEASED_SHA = "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d"
+ARMS = [
+    ("sage_on", "SAGE, history on"),
+    ("sage_off", "SAGE, history off"),
+    ("none_on", "No message passing, history on"),
+    ("none_off", "No message passing, history off"),
+    ("online_history", "Online history, matched candidates"),
+    ("online_history_native", "Online history, native candidates"),
+]
+
+
+def seed_means(entries: list[dict], eligible: int) -> list[tuple[float, float]]:
+    out = []
+    for e in entries:
+        strata = e["strata"].values()
+        n = sum(s["events"] for s in strata)
+        assert n == eligible == e["eligible_events"], (n, eligible)
+        ap = sum(s["events"] * s["mean_average_precision"] for s in strata) / n
+        cov = sum(s["events"] * s["mean_coverage_ceiling"] for s in strata) / n
+        out.append((ap, cov))
+    return out
+
+
+def main() -> None:
+    p = argparse.ArgumentParser()
+    p.add_argument("--report", type=Path, required=True)
+    p.add_argument("--comparisons", type=Path, required=True)
+    p.add_argument("--out-json", type=Path, required=True)
+    p.add_argument("--out-tex", type=Path, required=True)
+    a = p.parse_args()
+
+    raw = a.report.read_bytes()
+    sha = hashlib.sha256(raw).hexdigest()
+    assert sha == RELEASED_SHA, sha
+    rep = json.loads(raw)["analysis_ranking_v1_c1_c4"]
+    strat = rep["stratification_by_new_members"]
+
+    levels: dict[str, dict] = {}
+    for h in ("30", "60"):
+        eligible = rep["eligibility"][h]["eligible_events"]
+        for arm, _ in ARMS:
+            sm = seed_means(strat[arm][h], eligible)
+            aps = [x[0] for x in sm]
+            levels.setdefault(arm, {})[h] = {
+                "seeds": len(sm),
+                "mean_ap": sum(aps) / len(aps),
+                "seed_min_ap": min(aps),
+                "seed_max_ap": max(aps),
+                "mean_coverage_ceiling": sum(x[1] for x in sm) / len(sm),
+                "eligible_events": eligible,
+            }
+
+    checks = []
+    fams = rep["families"]
+    for fam in ("primary_ap", "whole_system_ap"):
+        for key, c in fams[fam]["contrasts"].items():
+            h = str(c["horizon_seconds"])
+            got = levels[c["left"]][h]["mean_ap"] - levels[c["right"]][h]["mean_ap"]
+            assert abs(got - c["difference"]) < 1e-9, (key, got, c["difference"])
+            checks.append({"contrast": key, "family": fam, "reported": c["difference"], "from_levels": got})
+
+    comp = json.loads(a.comparisons.read_text())
+    jac = {}
+    for c in comp["original_retrospective_14"]["contrasts"]:
+        if c["name"].startswith("transfer-message-passing@"):
+            u = c["uncertainty"]["incident_day"]
+            jac[c["name"]] = {
+                "difference": u["difference"], "ci95": u["ci95"],
+                "display_3dp": {"difference": f"{u['difference']:+.3f}", "ci95": [f"{x:+.3f}" for x in u["ci95"]]},
+            }
+
+    out = {
+        "script": "scripts/paper_r1_arm_levels.py",
+        "source_report": str(a.report), "source_report_sha256": sha,
+        "estimand": "event-macro mean AP over eligible events, then mean over training seeds (no interval)",
+        "levels": levels, "difference_checks": checks, "transfer_jaccard_rounded": jac,
+    }
+    a.out_json.write_text(json.dumps(out, indent=1) + "\n")
+
+    rows = [
+        "% Generated by scripts/paper_r1_arm_levels.py from the released R1 report; do not edit by hand.",
+        "\\begin{table*}",
+        "\\caption{R1 arm-level mean AP over eligible events (2{,}661 at 30\\,s, 2{,}130 at 60\\,s), mean over training seeds, "
+        "with the range over the five seeds. Coverage is the mean share of new members inside the candidate set, an upper "
+        "bound on AP. Projected from the released report; no intervals.}",
+        "\\label{tab:r1-arm-levels}",
+        "\\small",
+        "\\begin{tabular}{@{}lcccc@{}}",
+        "\\toprule",
+        " & \\multicolumn{2}{c}{30\\,s} & \\multicolumn{2}{c}{60\\,s} \\\\",
+        "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}",
+        "Arm & AP [seed range] & Cov. & AP [seed range] & Cov. \\\\",
+        "\\midrule",
+    ]
+    for arm, name in ARMS:
+        cells = []
+        for h in ("30", "60"):
+            L = levels[arm][h]
+            rng = f"[{L['seed_min_ap']:.3f}, {L['seed_max_ap']:.3f}]" if L["seeds"] > 1 else "(one run)"
+            cells.append(f"{L['mean_ap']:.3f} {rng} & {L['mean_coverage_ceiling']:.3f}")
+        rows.append(f"{name} & {cells[0]} & {cells[1]} \\\\")
+    rows += ["\\bottomrule", "\\end{tabular}", "\\end{table*}", ""]
+    a.out_tex.write_text("\n".join(rows))
+
+
+if __name__ == "__main__":
+    main()

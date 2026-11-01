@@ -1,0 +1,12 @@
+{
+  "accepted_planning_reserve_bytes": 17179869184,
+  "assessment": "GRU-only10originalfit maxima and accepted core scaling recomputed exactly.16GiB planning estimate retains original margin; actual capacity/inputaudit/operation plus fresh joint admission still required. No originalfitartifact contents read.",
+  "current_joint_storage_admitted": false,
+  "fit_execution_authorized": false,
+  "hard_upper_bound": false,
+  "passed": true,
+  "proposal_sha256": "f93669008874c491f64bacc3322fb3f10eadc790a7c7ea2ad1c51f070c6f948d",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root"
+}

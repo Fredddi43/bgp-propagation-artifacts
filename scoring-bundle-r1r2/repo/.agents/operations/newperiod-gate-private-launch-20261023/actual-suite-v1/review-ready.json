@@ -1,0 +1,15 @@
+{
+  "files": {
+    "NEXT.md": "87673566da4598c9c15d048fbc142c441124e3a5c478a2af2b62376c5e5769ac",
+    "bind.py": "9e69976e37e5e907a04668b0c5b2396ccf207122666d260be1122f98e5c85809",
+    "binding.json": "fadfe2b17e1cd199133da04d3386ea4a179279c1ed4576e162ee54eae1c568d5",
+    "gate-spec.draft.json": "be49ce706a09532f7d11b05b003030be1b5d7afdf5aaa3ff3c618b8f4eaa92c8",
+    "staging-plan.draft.json": "555adf17a17cd77230d9877b3ea09370faec37751905507ade12ab920948a986",
+    "test_binding.py": "6b0ef5ffcf93714e615db7c996a62ce752c1906179db95b5dd37cbf9f09e7ec5",
+    "witness-spec.draft.json": "3201449a405c8559ff4076290e057b63c8174b6909784cf61c88684c167bd4bb"
+  },
+  "host_actions": false,
+  "kind": "private_gate_actual_suite_binding_review_v1",
+  "scientific_authority": false,
+  "tests_passed": 4
+}

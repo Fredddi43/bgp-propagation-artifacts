@@ -1,0 +1,119 @@
+{
+ "development_manifests": {
+  "origin_change_invalid": {
+   "30": {
+    "path": "<FORECAST_ROOT>/origin-construction-v4-20261026-invalid-d30/output/assembly/development_manifest.json",
+    "sha256": "604125680f0ee9ca1f4de149b8eaf96b20d6d271da7328108d5b015b45443e98"
+   },
+   "60": {
+    "path": "<FORECAST_ROOT>/origin-construction-v4-20261026-invalid-d60/output/assembly/development_manifest.json",
+    "sha256": "d41e8deb9bdf1a665672c6b8795a7b2820faa1cad3283a5d0f2ebe58038b87e8"
+   }
+  },
+  "origin_change_valid": {
+   "30": {
+    "path": "<FORECAST_ROOT>/origin-construction-v4-20261026-valid-d30/output/assembly/development_manifest.json",
+    "sha256": "65de5fe318e2db20d53c9c29d29d7d91696898963cce8b872a641302c336309d"
+   },
+   "60": {
+    "path": "<FORECAST_ROOT>/origin-construction-v4-20261026-valid-d60/output/assembly/development_manifest.json",
+    "sha256": "8def9fff85ae635f972914599379d2c2df205f4aeb532b26c9590948c157daf7"
+   }
+  }
+ },
+ "kind": "newperiod_source_admission_review_v1",
+ "metadata_projection": {
+  "path": "<FORECAST_ROOT>/data-custodian/newperiod-origin-projection-v1/projection.json",
+  "sha256": "48a70fd06768f65941861f328f7f7d28cadb3ef5ed57d5a3c537dd2f35baeddf"
+ },
+ "note": "root-signed 2026-10-27T22:35:02Z: root accepts the staged origin source with the v2 staging receipt 905cd789 (S0 v2: Jan-Aug replays linked, measured signature digest f285a896), projection, sampling rule, development manifests and coverage as bound.",
+ "passed": true,
+ "reviewer_model": "claude-sonnet-5-5",
+ "reviewer_session": "/root/root-session",
+ "reviewer_worker": "/root/claude-sonnet-5-5-root",
+ "sampling_rule": {
+  "path": "<FORECAST_ROOT>/data-custodian/origin-s0-staging-v1-20261027/control/sources/origin-family-prospective-acquisition-proposal.md",
+  "sha256": "a8fa51b0fbf137c7685e2a532e8abe981757876295f349a779b364e15c85dbb6"
+ },
+ "scope": "newperiod-family-protected-source",
+ "source_coverage": {
+  "complete_acquisition": true,
+  "complete_rpki_at_onset": true,
+  "end_exclusive": "2026-10-16T00:00:00+00:00",
+  "metadata_only": true,
+  "passed": true,
+  "review": {
+   "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-opus-review-ORIGIN-WITNESS-BINDING-V1-PASS.json",
+   "sha256": "e3742d5a6a36776ea44cd5c99c7e1d53c5b041db5c129aa04abc43ccc12163f4"
+  },
+  "scope": "complete_acquisition = the fixed historical sample fully staged with 0 source failures (history-r3 L6) + all 770 declared prospective collector-days processed with the Aug10 route-views.linx qualification preserved; no raw-archive continuity or interval-wide dedup claim. complete_rpki_at_onset per accepted S-ROA: detection-day RFC 6811 with 7-day fallback, no_roa_data kept as unknown.",
+  "source_references": [
+   {
+    "path": "<REPO>/.agents/operations/newperiod-family-history-stage-r3-launch-20261024/opus-receipt-audit-v1/l6-audit.txt",
+    "sha256": "1c42ac60b58f3ba49243ff44a879b5513137569b0e457471d8f4f8e865076494"
+   },
+   {
+    "path": "<REPO>/.agents/operations/newperiod-family-history-stage-r3-launch-20261024/receipt-capture-v1/l6-summary.json",
+    "sha256": "45f6f45636ab04c47ab94f4c5a536d9701ec712a2c0f371226c1e4bdf94e3595"
+   },
+   {
+    "path": "<REPO>/.agents/operations/codex-takeover-20261023/origin-historical-identities-actual-review.json",
+    "sha256": "f41de51f2a26739b2928570a3ab288ac565e57a73ce98575134758f695f1623f"
+   },
+   {
+    "path": "<REPO>/.agents/operations/codex-takeover-20261023/origin-historical-table-identities-actual-review.json",
+    "sha256": "90ba0651c1f84d454b9dbe97b3af3c1b8d21207b4e8090ab850eae151a929db3"
+   },
+   {
+    "path": "<REPO>/.agents/operations/codex-takeover-20261023/origin-historical-feature-actual-capture-review.json",
+    "sha256": "fe3a5555c5d1cf384bebffd524a309f37bd9231b143b2f6c00fa463c0de05c80"
+   },
+   {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-ORIGIN-METADATA-ONCE-V1-ACTUAL-ACCEPTED.json",
+    "sha256": "c31e64e349f5a9f1c6600e57749ec5e222250fe2924a1d9db383de1e99be6bc6"
+   },
+   {
+    "path": "<REPO>/.agents/operations/codex-takeover-20261023/origin-identification-r3-actual-completion-review.json",
+    "sha256": "2d4ef357fa9d99462bccb16e594b987e8d8588ad9c51f466d951cf074f18eb3f"
+   },
+   {
+    "path": "<REPO>/.agents/operations/codex-takeover-20261023/origin-candidates-actual-completion-review.json",
+    "sha256": "9d5d06a430c693d77f00a112ee42634b3d87e02601334229998aefb3adc8f8e8"
+   },
+   {
+    "path": "<REPO>/.agents/operations/newperiod-family-replay-stage-20261024/actual-merge-v1/outcome-v1/root-actual-completion-assessment.json",
+    "sha256": "6ddd9e00995311d7fe0fed90f64c5a7e89e5d301ed9c211efcb32a5bcdb341a0"
+   },
+   {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/implementation/placement-recovery-and-cleanup-c1-20261024T193912Z/OPUS-REVIEWER-55EF-H1-WAVE2-RELEASE-AND-REPLAY-CAPTURE-ACCEPTED-20261025T0200.json",
+    "sha256": "cd1f3cb54b84ff2b9ff0271c5da2175fef5253f96e02e849ae1a3a550ff26ade"
+   },
+   {
+    "path": "<REPO>/.agents/operations/newperiod-family-replay-stage-20261024/finalize-r2/payload/kernel/replay.py",
+    "sha256": "a7de7aca6ade8da0481022013da1d982064c7ac5251861b264cdb15504ae1e13"
+   },
+   {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-opus-review-ORIGIN-ROA-DAY-POLICY-V1-PASS.json",
+    "sha256": "8de8a89c6f8aa5c967cf13207646996638db30879f2c9e30ac811f7103d7f143"
+   },
+   {
+    "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v3-20261026/origin/actual-once/stdout.json",
+    "sha256": "aca1863e72bc680548ef08c01c887c5585099773331086213d0f184847b60100"
+   },
+   {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-ORIGIN-SCIENTIFIC-AUDIT-V3-ACTUAL-ACCEPTED.json",
+    "sha256": "9e96888c709640d9822703c59a9c6d1dc5e9cd1ab16ae818a868795c88fbad05"
+   },
+   {
+    "path": "<REPO>/.agents/operations/newperiod-origin-witness-binding-opus-science-v1-20261026/witness-binding.json",
+    "sha256": "4b2d156ff8520ac0208c41c5cb8c3c9c6a49901c1597028038f83fda851e505f"
+   }
+  ],
+  "start_inclusive": "2025-01-01T00:00:00+00:00"
+ },
+ "staging": {
+  "path": "<FORECAST_ROOT>/data-custodian/origin-s0-staging-v2-20261027/staging-receipt.json",
+  "sha256": "905cd7893d8ee4ab97bd106f9256f1c9c1456a3ff40b6f54ab055a4df2e1c8ae"
+ },
+ "verdict": "PASS"
+}

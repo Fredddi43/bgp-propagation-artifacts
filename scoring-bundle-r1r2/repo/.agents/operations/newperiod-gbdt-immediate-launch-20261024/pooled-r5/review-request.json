@@ -1,0 +1,122 @@
+{
+  "adapter_spec": {
+    "path": "<FORECAST_ROOT>/newperiod-gbdt-transport-v1-20261020/adapter-spec.json",
+    "sha256": "79b25e0dc432744dc9f259f559b72c2777e04a77a61f53cbb51a70ad2c332f6f"
+  },
+  "author_sessions": [
+    "/root",
+    "/root/remaining_work_audit",
+    "/root/deadline_audit"
+  ],
+  "author_workers": [
+    "/root",
+    "/root/remaining_work_audit",
+    "/root/deadline_audit"
+  ],
+  "automatic_retry_authorized": false,
+  "cells": [
+    {
+      "configuration": 4,
+      "horizon_seconds": 30,
+      "seed": 0
+    },
+    {
+      "configuration": 4,
+      "horizon_seconds": 60,
+      "seed": 0
+    }
+  ],
+  "client_readiness": {
+    "path": "<REPO>/.agents/operations/newperiod-gbdt-client-r5-20261024/review-ready.json",
+    "sha256": "0acddc72d1e87dac107563cf3ef17c80500280160ec26850f38b91f399d615fc"
+  },
+  "current_status": "all actual inputs bound; eligible independent original operation/execution review pending",
+  "execution_authorized": false,
+  "full_bundle_schema": "<REPO>/.agents/operations/newperiod-gbdt-client-r5-20261024/client.py:validate_files",
+  "independent_evidence": {
+    "inventory_composition_source": {
+      "path": "<REPO>/.agents/operations/newperiod-fit-inventory-bindings-20261024/review-ready.json",
+      "sha256": "8ef8f3ad3496892ae65d8c9729b27c44f58cc00017576a548d9545a861df372c"
+    },
+    "inventory_config": {
+      "path": "<REPO>/.agents/operations/newperiod-fit-inventory-bindings-20261024/actual-v2/N-gbdt-config.json",
+      "sha256": "3c692546e2c4d0fca65b80286dfabaeb11fc924d0e5eaaf951b713aeb47200bc"
+    },
+    "r1_release_local": {
+      "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/release-actual-v1/r1-retrospective-release.json",
+      "sha256": "ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6"
+    },
+    "seals": {
+      "path": "<REPO>/.agents/operations/newperiod-core-sealed-metadata-20261024/execution-v1/independent-root-review.json",
+      "sha256": "cb27bf5b0c01aba2f2acfc943fd9cac86e143a8592cf588b027c0fe4df824d38"
+    }
+  },
+  "inventory": {
+    "path": "<REPO>/.agents/operations/newperiod-gbdt-immediate-launch-20261024/pooled-r5/actual-candidate/collector-inventory.json",
+    "sha256": "e0d3bc3b8f8686d7a16ea8ea7504d9875b2c038549ce960fd7ab8b1fdda8368a"
+  },
+  "kind": "newperiod_gbdt_actual_independent_review_request_v1",
+  "local_candidate": "<REPO>/.agents/operations/newperiod-gbdt-immediate-launch-20261024/pooled-r5/actual-candidate",
+  "original_authority_schema": "<REPO>/.agents/operations/newperiod-gbdt-immediate-launch-20261024/pooled-r5/actual-candidate/run_package.py:check_approval and <REPO>/.agents/operations/newperiod-gbdt-immediate-launch-20261024/pooled-r5/actual-candidate/forecast_newperiod_gbdt.py:approval",
+  "package": {
+    "path": "<FORECAST_ROOT>/newperiod-gbdt-transport-v1-20261020/package.json",
+    "sha256": "c865ca6d83f87ede5257dfe9f13f515873086a2df16ff19cffdf2483d6dd60de"
+  },
+  "request": [
+    "Review exact actual metadata bindings and original operation/execution scientific authority.",
+    "If valid issue operation-review.txt + operation-approval.json, then execution-review.txt + execution-approval.json directly into actual-candidate.",
+    "Use genuine reviewer identity/model and exact STAGE refs for review text and operation approval; local source runner check remains unchanged.",
+    "No host execution by reviewer; transport and held-job release are separate approvals after exact full bundle exists."
+  ],
+  "requirements": {
+    "collector_inventory": {
+      "path": "<FORECAST_ROOT>/newperiod-gbdt-transport-v1-20261020/collector-inventory.json",
+      "sha256": "e0d3bc3b8f8686d7a16ea8ea7504d9875b2c038549ce960fd7ab8b1fdda8368a",
+      "status": "bound"
+    },
+    "core_gate30": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1/operation-gate-newperiod-v1-d30.json",
+      "sha256": "141bfccb8841b9d262bb9682b0a2a0a0854cc3c92be528607b14fb2e9213aa1c",
+      "status": "bound"
+    },
+    "core_gate60": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1/operation-gate-newperiod-v1-d60.json",
+      "sha256": "9a648b7afaf45261f2ae48d7c6739fb967dac5097ada5231cc22191c9185bb0a",
+      "status": "bound"
+    },
+    "manifest30": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1/development-newperiod-v1-d30.json",
+      "sha256": "74ff724ead9eca4bc36a8015c223587484a3ac423efcff6ac95025189281e079",
+      "status": "bound"
+    },
+    "manifest60": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1/development-newperiod-v1-d60.json",
+      "sha256": "1dad255b832a0403f985d594b0da0d15202b380334871e79b326e358bf3d2e07",
+      "status": "bound"
+    },
+    "resource_readiness": {
+      "path": "<FORECAST_ROOT>/newperiod-gbdt-transport-v1-20261020/resource-readiness.json",
+      "sha256": "295a9587c4cc9753cd7e0a8ecaba2a479ebdce936ec1f32d90a50de1d7603bc5",
+      "status": "bound"
+    },
+    "retrospective_release": {
+      "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/release-native-v2/r1-release.json",
+      "sha256": "ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6",
+      "status": "bound"
+    }
+  },
+  "resource_readiness": {
+    "path": "<REPO>/.agents/operations/newperiod-gbdt-immediate-launch-20261024/pooled-r5/actual-candidate/resource-readiness.json",
+    "sha256": "295a9587c4cc9753cd7e0a8ecaba2a479ebdce936ec1f32d90a50de1d7603bc5"
+  },
+  "resources": {
+    "address_space_bytes": 240518168576,
+    "cpu_threads": 4,
+    "device": "cpu",
+    "free_floor_bytes": 107374182400,
+    "max_concurrent_fits": 1,
+    "memory_mib": 262144,
+    "walltime": "24:00:00"
+  },
+  "reviewer_must_be_separate_from_all_authors": true
+}

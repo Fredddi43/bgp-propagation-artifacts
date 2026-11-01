@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T07:04:15.187908+00:00",
+  "ready_sha256": "95a48a6034c92d823c854701dc074c2b7d759d50adef3757fd1eef8b3d59e4ae",
+  "files": {
+    "wait.py": "dfdd3859117433e456b7c90baefd73ddd9b799d9cb1f8804ccee7c4518ae3f6e",
+    "test_wait.py": "af2b3be9a4f075a1dca957815e65d844954b444f7b1fb90dcef20e7bc26bb42c",
+    "request.json": "54db55900c2c942a4d35222b9d3bae06c0fa7d5dbca8efb90408584d48df2206"
+  },
+  "tests": "10passed0.08s; exactdiff job/message only from approvedsingleton",
+  "waiter_once_authorized": true,
+  "scope": "Scheduleronly exact52477730 terminal identityboundwake, no subsequentinputaudit/fits/payload/retry. Startafter approvedactualrelease completes."
+}

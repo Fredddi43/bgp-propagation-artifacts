@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "d900 assemble 64 receipts: successor derived by text surgery from the d300 v4 packet worker (gen_stages.py); original kernel/audit callable and group selection unchanged.",
+    "Storage: 2 GiB per-file cap, NIL env, real logs; physical floor (models >= 867383093888 B) enforced by the worker at every task start; d900 row spec 64 GiB (root row-spec) is not a V48 row: funding-row check bypassed by design, root skim required.",
+    "Staged/bound by d300_chain.py/chain2.py with real job ids; upstream terminals verified before binding.",
+    "FLOOR CHANGE (root decision): writer floor 867383093888 -> 400 GB; only the two floor comparisons in successor.py changed; plan re-pinned 5ba72c5ca1e8 -> 5946f329a5bc."
+  ],
+  "claim": "orig_budget_model_with_post_hoc_allocated_census_not_backend_theorem",
+  "execution_authorized": true,
+  "kind": "INDEPENDENT_D900_ASSEMBLE_ALLOCATION_PREMISE_CONCURRENCE",
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v48-20261027/root-joint-storage-phase-v48.json",
+    "sha256": "913754c6c095bf1b0eb542a1d33d721318ccdc4934659bc4728a3d36f7b07baa"
+  },
+  "plan": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/sensitivity-parallel-timing-budget-v2/recovery/timing-d900-assemble-sonnet-v1/controls/plan.json",
+    "sha256": "5946f329a5bce245ef6f80466904cbd9e31960a2b1667f186b78eda49e2a7ba4"
+  },
+  "reviewer": "claude-sonnet-5-5",
+  "reviewer_model": "claude-sonnet-5-5",
+  "reviewer_session": "session-root-d900_assemble-allocation_premise",
+  "reviewer_worker": "reviewer-claude-sonnet-5-5-alloc",
+  "scope": "allocation_premise",
+  "stage": "d900_assemble",
+  "verdict": "PENDING_ROOT"
+}

@@ -1,0 +1,15 @@
+{
+  "execution_authorized": false,
+  "passed": true,
+  "proposal": {
+    "path": "<REPO>/.agents/operations/newperiod-core-output-size-probe-20261024/remaining-wave2-storage-proposal.json",
+    "sha256": "2c459039203a4531f5ac7b3e433459138af23c777ab08b1454bdda5621950508"
+  },
+  "qualification": "Empirical planning estimate, not rigorous bound or enforcedcap. Same full original perfit maximum scaling and multiplier for remaining20, plus ENTIRE original sharedlog slack rounded up. Original40fits/failures/timeouts unchanged. Completedwave1 artifacts preserved and alreadyincluded in freshdf; no free-byte credit.",
+  "remaining_fits": 20,
+  "remaining_reserve_bytes": 36507222016,
+  "retired_future_reserve_bytes": 32212254720,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root"
+}

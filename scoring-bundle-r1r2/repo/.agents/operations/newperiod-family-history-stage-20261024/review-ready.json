@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "REVIEW.md": "a10d956ae26072cfc326532e9f648eedb6d045f86f787e6978ba42eeedcc25ac",
+    "history_stage.py": "c497c18f87416501226311851a06bb0d5cb9af55c702c30d195f1aa377b79c98",
+    "original_stage.py": "84a31f3d0124b9602b0601cc24f0a4ef36c8e387ee1fd24bc28381357c5ab2a4",
+    "test_history.py": "3eb264260d888ec62973a5a779f45d2b286c3abc39e5ba7c8c98edcded7a4d09"
+  },
+  "kind": "origin_historical_source_stage_review_ready_v1",
+  "tests_passed": 10
+}

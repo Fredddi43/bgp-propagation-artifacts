@@ -1,0 +1,13 @@
+{
+  "kind": "pooled_label_preparation_code_candidate",
+  "author": "/root",
+  "tests_passed": 58,
+  "files": {
+    "prepare.py": "bb4afc4357af76c80afbd318ed0129049512883d130f4d78f0e725e005c25dfd",
+    "test_prepare.py": "8f2caa7ffd62176c1cf2358233dcac3af47ac585127466ee4be874210ac1b03a",
+    "test_pooled.py": "be3e148655529a3d19c794f4ce53ba3ee6fd4b61d4c764e514008d1f01b6845a",
+    "README.md": "5f0466b6ca39352e9d4332e72f63cf0057e4872797b5ab73775b5fc38437824c"
+  },
+  "original_prepare_sha256": "4176cee8a4481ac643f1b9f02be193d31548490732a360407a61afc393d53937",
+  "actual_execution_authorized": false
+}

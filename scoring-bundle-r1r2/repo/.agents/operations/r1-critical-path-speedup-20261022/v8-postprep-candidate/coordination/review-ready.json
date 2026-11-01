@@ -1,0 +1,21 @@
+{
+ "author_session": "<SESSION_ID>",
+ "authorizes_nothing": true,
+ "commands": [
+  "python3 -B build_post.py  (refuses: tools/ exists; regenerate in a copy)",
+  "python3 -B -m pytest -q -p no:cacheprovider test_post.py",
+  "cd tools/transition && python3 -B -m pytest -q -p no:cacheprovider test_transition.py",
+  "python3 -B mutation_controls.py"
+ ],
+ "kind": "review_ready",
+ "not_run": [
+  "capture A/B",
+  "U2 on a real seal",
+  "B8 staging",
+  "final_build",
+  "any host step"
+ ],
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/v8-postprep-candidate",
+ "pins_sha256": "67414ab7914b4ba9f9d7c2a89b6cfd31b658a3a682e3368c530040fd93feeaf9",
+ "requested": "independent code review (CODEPASS / CHANGES_REQUIRED) of the constants-only post-preparation re-pin, the rendered v8 evaluation package and the --resolve mechanism"
+}

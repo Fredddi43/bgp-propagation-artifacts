@@ -1,0 +1,32 @@
+{
+  "author": "/root/deadline_audit",
+  "checks": [
+    "Original accepted core must be30/60; sole changed validator pin matches previously reviewed private timing source.",
+    "Production prepare requires immutable recipe cohort+commitment and exact pooled selector; no fresh eligibility or cohort recomputation.",
+    "Preserves original source actor/onset/maturity/split and technical failure receipts; issue/incident clocks supplied by fixed cohort; original validator verifies clocks/boundary.",
+    "New boundary and source are candidates without passed, and manifest template must be resealed against actual independently published evidence. Core build verification explicitly inherited."
+  ],
+  "conditions": [
+    "Actual adopted cohort rows must still reconcile with current core seals, no fixture claim of actual coverage.",
+    "Actual bounded metadata caller/resource/logging/admission required.",
+    "Independent actual boundary/source publication and new graph audits before fits."
+  ],
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "c2706805b048e6745cc1c0531c6237a16707f0edb581491508838be6797ee502",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "core_metadata.py": "b3fb7a3b52bd8f0c5c7ecacafbe3ab091f1b746da8b781edd20b3f0228474eb1",
+    "test_timing.py": "3dd2f3b05fb517f956e9fa49ddfa3ac6d33c5112e5ef33862793387dcaf50c80",
+    "timing.py": "7a151a1a3a3bf1d755d2c88bbc9e24601a5a5ef8d0c3059f2d7556e1d8fd38a5"
+  },
+  "gate_publication_authorized": false,
+  "passed": true,
+  "request_sha256": "b0d11c1fcdcf100bf7526afb7a42b9417c26de6cc1d904b9fe19ed2eca2ce6f7",
+  "retry_authorized": false,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "tests": "4 isolated original builder cases PASS7.22s at5/10/300/900; fixedpopulation, identity, maturity, split, adoptedbinding and technicalfailure retention checks.",
+  "utc": "2026-10-24T07:23:08.746489+00:00",
+  "verdict": "CODE_ONLY"
+}

@@ -1,0 +1,28 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "09053e167c31f59380892b416cb89ae0db34b654f8aad04ba2302e04a50aef44",
+    "build_binding.py": "b19155639b1645e901903e123c5a44e83cffb021dc99b65a2f2911638cae8a69",
+    "controls-draft.json": "fb46256f728b7dcb32d8261f94f54ef6ee21f8b8a6f96f0b1e71cb179f77de0e",
+    "plan-draft.json": "bc07a3abc8fbb7711a02fcc8d54724b9961f025587e0d15d84ef14189643ce82",
+    "resource-request.json": "88e8556c91450f0824ee3827d9f8f1f285a3ac0e1d7154b89101602e2c515c7d",
+    "task-0.json": "a6a6e02a5b9cb9180c8e128904e31903049078b84a87d377b5902a057a1f55f8",
+    "test_binding.py": "8c1dc25a1a0c429aee399e774e39909f89651d4c7defa84d849f653011aaa862"
+  },
+  "host_actions_performed": false,
+  "kind": "history_r2_launch_binding_draft_review_ready_v1",
+  "predecessor_codepass": {
+    "review_ready_sha256": "13298dcfe1c3309539dfcc842fb033d1012b68218dc3c4f42bb12f07d9a60f4e",
+    "verdict": "newperiod-family-history-stage-r2-20261024/independent-opus-review-v1/verdict.json"
+  },
+  "requested_review": "Check the binding delta; if correct, an independent resource admission with fresh accounting (separate record) before plan/packet/approval.",
+  "tests": {
+    "passed": 4
+  }
+}

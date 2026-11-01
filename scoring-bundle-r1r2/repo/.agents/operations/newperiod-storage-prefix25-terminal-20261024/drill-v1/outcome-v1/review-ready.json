@@ -1,0 +1,9 @@
+{
+  "files": {
+    "capture.py": "2d02e56db32f54638d7d600a5e4d8b3c1ecb1ff03edb3372d1c9b9baa1dff700",
+    "test_capture.py": "40e9640a2357e14749670aa3e74d2d33714598c444b8573414b893203a9a5520",
+    "request.json": "21ea942e0fb1fdb5f0de4efd91a7d5c25c4caf51568562cf717d1246e52ac598"
+  },
+  "scope": "OperationaltwoJSONonly aftersuccessfulterminal; no scientificresults; no source/archive/memberreads",
+  "tests": "3passed"
+}

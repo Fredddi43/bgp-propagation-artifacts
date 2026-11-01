@@ -1,0 +1,12 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "NEXT.md": "85d9e97067f4d6360008641efb6cc04cbb4669a25990122e7f442d216e33a34f",
+    "commands.json": "2ba2929f4f501422956126158d6d7a13f802230e951c0972412a02d2a8d7ded3",
+    "known-bindings.json": "c575056ba10cd0af92586ceccbea2f24e246cca0f7e70a5401f9cd55e0500e7e",
+    "resource-proposal.json": "de154011a6481089c04dfee30b012207e6c399f30bdfdff0d652ed97b17a314d"
+  },
+  "kind": "newperiod_gbdt_actual_preparation_readiness_v1",
+  "new_executable_code": false
+}

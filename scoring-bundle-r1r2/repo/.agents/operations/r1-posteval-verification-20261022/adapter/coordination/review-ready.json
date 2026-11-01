@@ -1,0 +1,13 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "job_submitted": false,
+ "kind": "r1_class_d_adapter_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/adapter",
+ "pins_sha256": "a42c89189d4a0d1c354c6d7c063525e20e2efae093d1525d56fafeafab73411d",
+ "real_inputs_read": false,
+ "requests": [
+  "code review of adapter.py/run_adapter.py",
+  "assessment of the phased host request (D0 plan, D1 census, D2 rescore) incl. the planned code transport"
+ ]
+}

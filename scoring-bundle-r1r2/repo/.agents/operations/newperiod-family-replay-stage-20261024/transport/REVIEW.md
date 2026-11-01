@@ -1,0 +1,11 @@
+# Fixed original replay staging and held submission
+
+This local packet connects the already reviewed replay r2 runner to the existing fresh replay root. It does not execute replay, release jobs, acquire archives, issue approvals or retry failures. `prepare.py` accepts one actual bound phase plan, its exact task/resource documents and unchanged source package; it emits the source/phase file map, a nonoptimized private-Python job script and a request. Actual plans and resource admissions are not fabricated.
+
+`client.py` reuses the established exact byte staging and held Slurm admission pattern. The first candidates phase creates the fresh root. Subsequent fixed phases require the identical cached-bytecode-free scientific source before creating their own fresh phase directory and durable remote submission intent. Thus another local output directory cannot submit the same phase twice. Each byte is hash-checked and source/controls become read-only. Only the five original phase names are supported. All physical writes stay in the fixed replay namespace; active R1 paths remain outside it.
+
+Submission sanitizes the environment, requests CPU only without a node pin or requeue, and leaves the allocation held. Scheduler admission checks exact identity, owner, command, resources, logs, dependency and fixed task count/throttle. Equivalent documented memory/time/array representations are accepted. Job IDs must be strictly numeric; ambiguous outcomes retain stdout/stderr and stop. Release is a separate exact actual authority step: the job script requires the corresponding independently approved execution document and its SHA file, which this transport never installs.
+
+Fourteen focused tests pass, including real execution of the generated remote staging program in a temporary local root, fresh candidates then exact-source eight-lane extraction staging, remote duplicate refusal from a new local directory, source mutation refusal before sbatch, independent identity checks, resource/array normalization and changes, shell syntax, sanitized submit arguments and preserved ambiguous submission failure. No actual cluster actions were performed.
+
+Test: `.venv/bin/python -B -m pytest -q .agents/operations/newperiod-family-replay-stage-20261024/transport/test_transport.py`.

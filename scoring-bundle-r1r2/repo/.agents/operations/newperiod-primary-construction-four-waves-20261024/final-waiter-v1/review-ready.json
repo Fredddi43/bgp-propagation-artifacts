@@ -1,0 +1,10 @@
+{
+  "condition": "Only after exact final wave48..63 and dependent assembly release succeeds",
+  "delta": "Exact full67 accounting set and completion message; same owner/terminal/no-resend loop",
+  "files": {
+    "request.json": "35f147b1915770ebeb1c68caed3eaf96afa56926d7e23dcff4c7ec576f8ef0f5",
+    "test_wait.py": "b83b72dc573aa6fd8abffb7c0a690dde3f8a66d15d1d9014e9f7246ccf4acee8",
+    "wait.py": "2fa00ac8702c9cea979d822d8d1f8ee6ded230b6baeef546b19371d0ff70f5e9"
+  },
+  "start_authorized": false
+}

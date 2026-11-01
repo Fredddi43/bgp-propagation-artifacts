@@ -1,0 +1,29 @@
+{
+ "asked_by": "ROOT-WAVE2-POLICY-AND-REMAINING3-CLEANUP-PACKET (01:53Z)",
+ "author": "f4d75bb1 (claude-opus-5-5, /root/opus_implementation)",
+ "deltas": "see build_three.py docstring: CONTROL root three-v1, REMAINING 3 + ALREADY_PRUNED +rrc12/rrc15, indices 0-2, predecessor = verified concatenation of five-v2 batch0+batch1 stdout requiring {(rrc12,0),(rrc15,0)}, messages; consumer_probe byte-identical; unknown-process rule unchanged",
+ "execution_authorized": false,
+ "expected_free_gain_note": "logical 23.66 GB; five-v2 freed 9.91 GiB measured for 11.97 GB logical (rrc12+rrc15), so roughly 19-20 GiB expected; K3 credit only from the measured delta",
+ "files": {
+  "build-result.json": "649997fc1ee66f633714d0a678116b6c1270ec029cecb87644dd83d23e31bc33",
+  "build_tests.py": "0318d4f202ce923af867b652b81496cf44ac9e37db784e762ea1387567587962",
+  "build_three.py": "c82d1ed153b3d5a18fb0d5082c63e722d653e7f3f1d78e804ed06a051eed9a38",
+  "executable/consumer_probe.py": "c392b0f9291425ac149e139988896c4f73a87edd782c69f05c64f3b84e96d799",
+  "executable/execute.py": "be2181f42f134796880118fe12c821221a221367717c1bcba8fe5f3eaa972d7e",
+  "executable/prune.py": "def8133f7d0bc30f0043731f5541cc54a883787bd6c1f64a54d2f8349134ed07",
+  "executable/request.json": "41bb9ef830bd6551eba67fa9777d728fe4a6f800bd100846336bef14f8db5fa7",
+  "predecessor-five-v2-pruned.jsonl": "360e62ef74bf36686fb253ea6c14d7f5dc8e2aff9b388263077d396e46028dc5",
+  "test_execute.py": "4865a90f59abd8224488885cf87ae3faa4c0e4733a68f649af90a135c907b3be",
+  "test_prune.py": "1f1635795d9f4a31f0b43a2e6d16a09cb05ba342e30c5e183a66ebed32b071be"
+ },
+ "groups": [
+  "rrc25-2025",
+  "route-views3-2025",
+  "route-views.linx-2025"
+ ],
+ "kind": "cleanup_three_v1_review_ready",
+ "not_done": "no metadata capture, no baseline, no prune. Before any root authority: independent actual assessment of five-v2 execution-v1, fresh K4 + both-host consumer baseline (read-only probe c392b0f9) within 1 h, then root one-shot binding request 41bb9ef8",
+ "source_files": 4380,
+ "source_logical_bytes": 23655776927,
+ "tests": "26 pass (five-v2 tests adapted by closed substitutions; its two provenance tests replaced by relocation-vs-five-v2 and build-reproduction tests)"
+}

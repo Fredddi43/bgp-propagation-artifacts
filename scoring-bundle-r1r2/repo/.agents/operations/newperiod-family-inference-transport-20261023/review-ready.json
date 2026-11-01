@@ -1,0 +1,31 @@
+{
+  "kind": "newperiod_family_inference_transport_candidate_v1",
+  "author_worker": "/root/remaining_work_audit",
+  "author_model": "codex",
+  "files": {
+    "test_build.py": "5ffb853743ac33faad9c7c92e3b6f42328a33965beecbf9f0a70b3cd26e70e54",
+    "original_client.py": "1eeeea1d7e08a332a26384049d2061bc2d2b6198bd3dd48999758e0faf4c28fc",
+    "build.py": "6a6629e9469823452373ee67719792a38e8c56c1daeeb9359dbf29d5ca4b3cf2",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "original_bootstrap.py": "281b3b608dcd826b2ac0b6b18c34d3756836d32c29c8b1421bb2318d6b8e5c13",
+    "REVIEW.md": "32aa5d8eca71b29f8e072bacdda6ebf2080ed8508ecbcb972b3c0e765a7ffaab",
+    "candidate-v1/reviewed_baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+    "candidate-v1/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "candidate-v1/reviewed_family.py": "7234a558c8430c38252b93cf11f5ddbaad9be0cd99001eec7c75f835db921f4a",
+    "candidate-v1/binding.json": "6152904ad8af97dad3fd06ee3db53132526f4b6d0fe513d9d650b163016a45d5",
+    "candidate-v1/bootstrap.py": "ad538e430fece7afaf37bc8060e9c18787b8cd5550498bc16b9d8cdb676694b4",
+    "candidate-v1/runner.py": "af8c03eb979851a7fe5caa5207f13cae5d5222a48376363793f56962ee8bbd88",
+    "candidate-v1/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "candidate-v1/client.py": "a60a0ffea491470b2163a6ad4cc670e365f368b64a2464931390507b7a58c82f",
+    "candidate-v1/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "candidate-v1/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e"
+  },
+  "tests": {
+    "passed": 11,
+    "seconds": 8.46,
+    "command": "PYTHONPATH=src .venv/bin/python -B -m pytest -q <REPO>/.agents/operations/newperiod-family-inference-transport-20261023/test_build.py"
+  },
+  "execution_authorized": false,
+  "actual_protected_reads": false,
+  "host_mutations": false
+}

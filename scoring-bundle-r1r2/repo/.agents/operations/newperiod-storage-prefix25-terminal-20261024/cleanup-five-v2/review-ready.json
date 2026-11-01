@@ -1,0 +1,29 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_review"
+ },
+ "basis": {
+  "predecessor_assessment": "78a1d32f",
+  "reviewed_sources": "prune25-v1 (execute 7fa6b928, prune adfea979, probe c392b0f9)"
+ },
+ "execution_authorized": false,
+ "files": {
+  "REVIEW.md": "048cbced2c8758f72f4cc087b1e1d30e4d8d341914fc8818624693f5d0edcdf0",
+  "build_request.py": "2eabbe669008ce8c03e639cc9393bf2dbb0fae2d4799f4d87ce9556611143ca9",
+  "executable/consumer_probe.py": "c392b0f9291425ac149e139988896c4f73a87edd782c69f05c64f3b84e96d799",
+  "executable/execute.py": "43982ec1598478275877ea457ac607a130e52f5f60d3f418e3f596a783b64bf4",
+  "executable/prune.py": "8a5cf894a699207753deae05dde82ee5fcf26ee19f1590f3f6a45cbdca3c3095",
+  "executable/request.json": "4459f71f1b92c726cd124b24e1855f928af1a782e967f2f66e7b006de73265e7",
+  "test_execute.py": "17d08e31c47e2fae4013fe5b19c7293bde3edaa1abec679c3e7dc6c17b065c28",
+  "test_prune.py": "07be96bc222d4c79cff19f2aa54fe45b341d32d5d93fa745a15ac5bd3f06d035"
+ },
+ "kind": "cleanup_five_v2_review_ready_v1",
+ "prune_authorized": false,
+ "request_sha256": "4459f71f1b92c726cd124b24e1855f928af1a782e967f2f66e7b006de73265e7",
+ "required_independent_reviewer": "f4d75bb1 /root/opus_implementation (author excluded; no self-approval)",
+ "test_command": ".venv/bin/python -B -m pytest -q -p no:cacheprovider <REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/cleanup-five-v2/test_execute.py <REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/cleanup-five-v2/test_prune.py",
+ "tests": "25 passed; 2 negative controls fail as expected",
+ "utc": "2026-10-24T18:30:13.992044+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "automatic_retry_authorized": false,
+  "execution_authorized": true,
+  "files": {
+    "capture.py": "c7bb99cb137963e6de3dc2548d549b94182d238a035f2319e5f8e6412eee958b",
+    "request.json": "d73a37d2da6a76e2c892105e2349c0e2e2bda2c1ffae302f8bcdf874858e97f2",
+    "test_capture.py": "c9e3d0721e3eaf534ab80dcfc010e0d1789c3206c760f6bdadb955c68cdb08a6"
+  },
+  "passed": true,
+  "review_ready_sha256": "322d47502cbb4a8158d121cff2aa45ad98787994444cba8dda849447b635a34b",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Once only after exact52479040 independentlyreleased and terminal. Fixed2originalcompletionJSON,rawschema matches original pipeline emitter; no witness/output refs followed, no witness/gate execution.",
+  "tests_passed": 6
+}

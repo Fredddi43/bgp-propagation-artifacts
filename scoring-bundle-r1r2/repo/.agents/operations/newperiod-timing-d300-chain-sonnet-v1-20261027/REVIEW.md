@@ -1,0 +1,4 @@
+# d300 chain shared sources (no execution authority)
+
+`worker_common.py.in` + `worker_{build,assemble,audit}.py.in` + `worker_main.py.in` are composed by `compose.py` into each packet's `successor.py`; `remote.py.in` is the v9 remote with only the namespace substituted; `prepare.py`, `operate.py`, `transport.py`, `ssh_contract.py`, `test_chain.py`, `build_templates.py` are copied byte-identically; `build_packets.py` writes the four packets (never overwrites). `fixture-old-plan.json` is the original frozen plan (sha 06b4b953...) used only by tests; `real-scontrol-52515293.txt` is the real held-array readback and sacct shape. Review the four packet directories, not this one.
+Order of the chain: wave 1 (with replacement of the old array) -> accepted -> wave 2 -> accepted and credited -> assemble -> accepted -> audit -> accepted. Finalizer and d900 stay held.

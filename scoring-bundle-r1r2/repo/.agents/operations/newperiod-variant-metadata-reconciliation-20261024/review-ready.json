@@ -1,0 +1,15 @@
+{
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "820a9593f7400802006d200ea6a2f95835d53e5c1259ca389723e9ed086635d3",
+    "actual.json": "9a631f1f6c500e7a5fac6ca8f1e982d5edbb637ec1a1bcee9855566cf9a68c01",
+    "reconcile.py": "49833145d1cefa8ab8798fdf413eadb4e3e6a4a282684a0e8d5ab2ea703d2c61",
+    "test_reconcile.py": "a43b6f1396200553ab3ed45d8a72feebb0e3cd170026e9136b05a8a87ad0b847"
+  },
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q .agents/operations/newperiod-variant-metadata-reconciliation-20261024/test_reconcile.py",
+    "passed": 7
+  }
+}

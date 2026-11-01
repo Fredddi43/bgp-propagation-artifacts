@@ -1,0 +1,21 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "execution_authorized": false,
+ "files": {
+  "REVIEW.md": "c8411a1b0ee1330dc4b5be4aa172265de2f39011f3d92e0af632f05c4d9b0cd6",
+  "drill.py": "f4a9549114d66ce1668d3822fd4e3872a9f09b437672ddd49cb8048513a7fcce",
+  "job.sh": "b0f915828e81c12943cf65ac50ef1ca4b5584d9196452e776a0835c10f1aaab9",
+  "request.json": "948353184cd00701cd3b2a3684bde65bef229b1918919b329711e7f1e1574412",
+  "restore.py": "3d990bfcf3c5b69bb47a556d7755f353e4e77fff13d055f68038842277ed91a2",
+  "test_drill.py": "4d6f7059d8b0f19fd6ea4778f48b5b8e39287925d464c473529407a63638ff28",
+  "test_transport.py": "882ae3117647baf52656651fe9f1a53cbb9d5ae821e0963f96c89cb3a7f36dbd",
+  "transport.py": "2a749f4a2ba98e0bab67385e3776462f1760cd71e36e0eb146edc8a7803ce375"
+ },
+ "kind": "prefix25_restore_drill_review_ready_v1",
+ "request_sha256": "948353184cd00701cd3b2a3684bde65bef229b1918919b329711e7f1e1574412",
+ "tests": "21 passed",
+ "utc": "2026-10-24T08:29:58.645151+00:00"
+}

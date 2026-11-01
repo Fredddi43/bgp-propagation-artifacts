@@ -1,0 +1,8 @@
+{"kind":"review_request_supplement","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "supersedes":["H3 kernel ready bb63e0d7","coverage r2 7a478197 (r3 builds on it)"],
+ "packets":{"coverage_r3":{"path":"<REPO>/.agents/operations/newperiod-h3-coverage-reconciliation-20261024/r3/review-ready.json","sha256":"a69f40aea77faf17757a67fa2b119a9277da4aff8892b7e087666ec95be32e15"},
+   "kernel":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-publication-20261024/review-ready.json","sha256":"bdf5b437acbf60eba738c919be3b82c1afe5d40bb6cd1301507a4ba3583b1a22"}},
+ "finding":"Real-metadata local partial dry run: r2 refused real legacy receipt (reference10 in ip.H3_PANELS is the target, not an input panel). r3 restricts to ris7/mixed7. With r3: both horizons validated+guarded, 14787 events, parity 473678, 116 onsets changed, receipt 115198115 B <= 128MiB, extracts ~16.5MB.",
+ "asks":["Review coverage r3 (base + r2 + r3 deltas) and the updated kernel packet (coverage.py=r3, test fixture uses real two-panel legacy shape, actual-local-v1 prepare/kernel-plan/collector-inventory/dry-run)."],
+ "priority":"high","utc":"2026-10-24T08:44:26Z"}

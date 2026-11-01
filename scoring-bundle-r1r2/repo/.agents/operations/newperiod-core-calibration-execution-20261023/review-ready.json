@@ -1,0 +1,14 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "9e76c0b918e43921d9911eeb014faa1dab1e95fa533d9ff18bf978430747001d",
+    "execute.py": "e0c2247a0af669d26b9c77e8474b3c265b9b626b69ed269970651d85b31d033d",
+    "test_execute.py": "94d70aa9244c52c89f1158c33b32668a43ba18d09266e3b5953fa16819363436"
+  },
+  "kind": "newperiod_core_calibration_execution_code_candidate_v1",
+  "tests": {
+    "passed": 12,
+    "seconds": 23.53
+  }
+}

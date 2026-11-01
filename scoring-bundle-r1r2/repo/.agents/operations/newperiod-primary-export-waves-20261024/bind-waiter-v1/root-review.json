@@ -1,0 +1,15 @@
+{
+  "automatic_retry_authorized": false,
+  "condition": "Once only after exactindependentlyapprovedrelease, coordinatoridentity/no-duplicate check.",
+  "files": {
+    "request.json": "f6aa53f70f773f4e4bc80a570963da8c39d977c611253cb05e2e1612b08179c6",
+    "test_wait.py": "4fa50edc514082a500ba5964bfc8330be498229574b0d6f9c1b70c49584649a2",
+    "wait.py": "48e7848d5eef87b33d8454f8ef5ed39c5a3b29af45dfb2caffb98af20cd17471"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Onlyexactjob/message/deadline differfrom approvedexport2waiter. Three tests independentlypass. No witness/gate/scientificauthorization.",
+  "start_authorized": true
+}

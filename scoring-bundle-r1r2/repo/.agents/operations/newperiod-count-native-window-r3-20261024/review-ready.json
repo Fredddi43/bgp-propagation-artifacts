@@ -1,0 +1,46 @@
+{
+  "authors": [
+    "/root/deadline_audit"
+  ],
+  "captured_special_metadata_sha256": "db39754ff92200949a36096cd073d4d025da95598ccad564b9db7c2c734da6a5",
+  "coverage_admitted": false,
+  "files": {
+    "REVIEW.md": "7e67b8c44dcdd2badf52fb1011ef73a61e12f203690d535a8260554cb82eacbb",
+    "actual-v2/projection.json.gz": "4ec0f47fde969caa047deba970e85bad8b1b5cc2e3410933cb050fb91cb6e108",
+    "actual-v2/remaining-window-defects.json": "ff0e1752d28d1e088fb8a40a91b6c2c7d923a8bd6562943c3d2a86ae9e86e86c",
+    "actual-v2/summary.json": "9e77c49b935ccf30421eb20ffb92faa0148bfcc1848e15fc0b649d47dd163cf6",
+    "boundary.py": "32a2b06768a5f556948aac07e5dbc458dcd45bb1da88408ac6d76bf97b64f9c5",
+    "build_actual.py": "2ce12ed283eccbe48395648000296390991007def60c8e68eca4f1607eb0b0ce",
+    "legacy-schema-provenance.json": "63c809ae4b888e4289c87ff3e444be8e3eb0558f9cc5b66fd5de35c9fccd32cb",
+    "legacy_recover_parts_source.py": "222813f2b3e8abd920dbf1186aff5bcf91a3859731e3e8d509611480feaa273d",
+    "omitted.py": "457d711d0909ce0b485fea44106914c386c345bdaccbbb8e14fda3f79f66cdb8",
+    "original-source-pins.json": "42936a0b0f92a4469fbfe9b38b005d2033c9a02f9343135476724256909a511a",
+    "original.py": "88dc39889ab4d74e55222f16084d028bc9556d2b0e200791a8f57c52dc234ba9",
+    "recovered.py": "53da75889b0a27801280ce981158385b179b8e5674cc5774bf8c83686d4f6014",
+    "semantic-source-pins.json": "59dd0b572c78a4e265cba34aaa80da773f598db2bc7b2adb9cda9ce0a0cf051a",
+    "test_actual.py": "ec02a86bbdc0d44626b831eacfa48d5b6b14e203df87c59d4a0eb0a199b4a581",
+    "test_boundary.py": "9ab43d10c365f46d3517cd0ba50eebf41779bb3298ebbf3dc66def64ac32de20",
+    "test_omitted.py": "c68de47c253795e60429949ca1cd35ff3a1bb22546e623f92bb265d642ba5221",
+    "test_recovered.py": "b61fc38ecda85e15bea35b746a445140cdbbe21d91106dc130ce65b5c25e0aa2",
+    "test_window.py": "a7e4ff7234886950ec2e902ff0aa74789d1cb0377e1ad8bf387a6c478ec44b4a",
+    "window.py": "225159cffe4e4690b1267dd6fe55fb6067d5e1878a842d4a866dc3649e3bf239"
+  },
+  "kind": "native_count_window_composition_review_v3",
+  "new_host_reads": false,
+  "population": 14787,
+  "previous_window_rule_unchanged": true,
+  "scientific_execution_authorized": false,
+  "supported_required_windows": 14686,
+  "tests": {
+    "adapter_kernel_cases": 37,
+    "adapter_kernel_seconds": 8.83,
+    "added_legacy_contract_cases": 2,
+    "added_legacy_contract_seconds": 0.09,
+    "full_population_cases": 1,
+    "full_population_seconds": 16.08,
+    "passed": 40
+  },
+  "unsupported_required_windows": 101,
+  "upstream_kernel_review_sha256": "f9efa1712656fa28c85f4dd731dfe64a99214a3d0177aa068b2da4daf8479c1e",
+  "validation_target_coverage_question_unresolved": true
+}

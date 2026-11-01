@@ -1,0 +1,45 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "capture_authorized": true,
+ "census_sha256": "f7315faec9effd4b0dff410ca72041ab4a14b22882a6a630bbf0ca04c52d85ef",
+ "census_terminal_success": true,
+ "command": ".venv/bin/python -B .agents/operations/r1-prerequisite-evidence-20261021/capture_metadata.py .agents/operations/r1-v11-posteval-20261024/k2-v1/request-k2a.json .agents/operations/r1-v11-posteval-20261024/evidence/capture-k2a.json.gz",
+ "conditions": [
+  "exactly the 2 control files of request 3bfcbeb8; f19 caps apply",
+  "output claimed exclusively (xb); a failed/partial capture stays as evidence, no retry",
+  "after capture run requests.complete(): passed true, spec 2233750e, exit rc 0, report path/sha; any refusal stops",
+  "the superseded approval 91580118 must not be used; at most one K2a capture under either"
+ ],
+ "files": {
+  "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/complete.json": 395,
+  "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/execution-exit.json": 55
+ },
+ "host_write_authorized": false,
+ "kind": "r1_v11_k2a_capture_approval_v2",
+ "label_read_authorized": false,
+ "next_requests_sha256": "4d19dcc5bbdadcfbc44cdb954918ed486366a7c50dc7ee85b57cf2c51b52ecfd",
+ "not_authorized": "K2b (report.json/manifests) until its exact request derived from this capture is independently approved; K3, D0-D2, vrun, N",
+ "output": "<REPO>/.agents/operations/r1-v11-posteval-20261024/evidence/capture-k2a.json.gz",
+ "passed": true,
+ "prediction_read_authorized": false,
+ "request": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/k2-v1/request-k2a.json",
+  "sha256": "3bfcbeb85af4b5416013e26afc98e101a1b8b1c5cfcaae23240f4d28ea456fe6"
+ },
+ "result_payload_read_authorized": false,
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-capture-k2a-v1",
+ "supersedes": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/independent-opus-review-v1/opus-k2a-capture-approval-v11.json",
+  "reason": "output must be PACKET/evidence/capture-k2a.json.gz, the fixed path read by reviewed phases.py:41, vrun.py:54, d2.py:70; superseded approval was never executed (no capture file existed at 2026-10-24T02:5xZ)",
+  "sha256": "915801180c611304deb01ffe3d18d1a3c5ad1a8fdd5f8114f85e05145cfc1350"
+ },
+ "tool": {
+  "path": "<REPO>/.agents/operations/r1-prerequisite-evidence-20261021/capture_metadata.py",
+  "sha256": "f19d1066867ed82a1c6fd528d1374b741b7fcedcceefad5f262df1f642815e16"
+ }
+}

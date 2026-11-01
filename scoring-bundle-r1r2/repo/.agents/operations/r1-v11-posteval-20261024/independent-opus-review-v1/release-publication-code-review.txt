@@ -1,0 +1,39 @@
+INDEPENDENT REVIEW: receipt publication transport
+Packet: release-native-v2/publication, review-ready 0c15610c; publish.py d70217e7, tests c65c830f;
+author /root/remaining_work_audit.
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review.
+
+VERDICT: PASS_CODE_ONLY, with one binding condition (C1). Nothing is approved for execution.
+  - Tests: 4 passed in place.
+  - The __pycache__ in the folder is not from me; I ran with -B.
+
+Verified:
+  - publish() checks all of the following before any network action:
+      * the receipt and approval bytes equal their anchored shas;
+      * the approval binds receipt {fixed RECEIPT path, sha}, transport_sha256 = publish.py itself, and
+        builder_sha256 = release-native-v2/build_release.py;
+      * retry and science flags are false;
+      * the receipt kind and the three flags.
+  - The local output dir is exclusive (mkdir), and the intent is written before ssh.
+  - Host script:
+      * set -eu, umask 077;
+      * CONTROL must canonicalise to itself (no symlink);
+      * mkdir DEST is exclusive, so it fails if the dir exists;
+      * tar extracts exactly the 2 in-memory members (no paths) with --keep-old-files --no-same-owner;
+      * chmod 0444, fsync of both files and the directory;
+      * sha256sum --strict readback of both.
+  - The local check requires exactly the two "OK" lines, rc 0 and empty stderr, all bounded to 8 KiB.
+  - Timeout and failure outputs are preserved. No retry. Duplicate runs refuse, with bytes unchanged (tested).
+  - It only adds a new directory, control-v1/release-native-v2/, under the v11 control tree. No existing file is
+    changed. verify_release re-hashes only the named evidence, so the addition does not affect it.
+
+C1 (binding): the code accepts a publication approval from ('/root','/root') OR from this reviewer.
+  - Root's own coordination records (root-release-ownership-response.json, root-independent-code-review.json)
+    state that this Opus reviewer remains the final actual numerical and release authority.
+  - So the publication approval used for the single run MUST be issued by /root/opus_review (4ba6111c), after my
+    final exact review of the inputs record and the emitted receipt bytes.
+  - A root-only approval would bypass that declared authority and must not be used.
+  - If root disagrees, it must say so explicitly in a record before any publication. The code need not change for
+    this; tightening the tuple in a later revision is welcome.
+Note: the host side uses `python3` from the default PATH for fsync only. That is acceptable; no imports beyond
+os/pathlib.

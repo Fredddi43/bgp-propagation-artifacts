@@ -1,0 +1,27 @@
+{
+  "author": "/root/temporal_guard_recovery",
+  "author_approval": false,
+  "kind": "newperiod_custodian_preparation_code_review_request_v1",
+  "pins_sha256": "c16b210bfed5f7478c2746f035b4095795e44ac79bf23e53485f6f97f17f09a6",
+  "required_verdict": {
+    "custody_freeze_authorized": false,
+    "custody_seal_authorized": false,
+    "execution_authorized": false,
+    "fits_authorized": false,
+    "label_generation_authorized": false,
+    "n_unseal_authorized": false,
+    "passed": "independent reviewer verdict",
+    "pins_sha256": "c16b210bfed5f7478c2746f035b4095795e44ac79bf23e53485f6f97f17f09a6",
+    "prediction_authorized": false,
+    "protected_reads_authorized": false,
+    "r1_release_authorized": false,
+    "retry_authorized": false,
+    "reviewer_agent": "actual separate agent",
+    "reviewer_model": "actual model",
+    "scoring_authorized": false,
+    "staging_authorized": false,
+    "submission_authorized": false
+  },
+  "scope": "Pure producer code and synthetic fixtures only; no production access or execution authority",
+  "source_bindings_sha256": "0217ff09e49404424cf9082da470a3413a64e8590d319f87f66f85b938fd7ca3"
+}

@@ -1,0 +1,40 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "28b2267396cfdcd5a5dbe5b9316378b2beb95cd8ef70193f792ce528e7bd23d4",
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "runner.py": "ccc0d1b142ad16fbeb526b3e266793833dc8e3d5e8fcb620ac1e4f929a67dfbd",
+    "test_runner.py": "730ce76eb7ab983c299c6180e96cca7cf17ab5394298f015a2f547e8b4e95768"
+  },
+  "kind": "newperiod_timing_inference_prospective_code_v1",
+  "scientific_grid": {
+    "history": "on",
+    "models": [
+      "sage",
+      "none"
+    ],
+    "new_horizons": [
+      5,
+      10,
+      300,
+      900
+    ],
+    "new_predictions": 40,
+    "reused_core_predictions": 20,
+    "reused_horizons": [
+      30,
+      60
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "tests_passed": 44
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:50:57.048908+00:00",
+  "review_ready_sha256": "d46c97c28f95224333e9f56ab384fef332335d5683e5a939b892be99f853263d",
+  "request_sha256": "603c9e40325ff56aa183f93be275f3a26fc644aa7340d2c4fe51f1faae00d162",
+  "source_sha256": "633444b1498c398eaa05b9725a4e6f0e36fd1171ce4551fb190568a150091488",
+  "capture_once_authorized": true,
+  "automatic_retry_authorized": false,
+  "conditions": [
+    "Exact52477317manifest and52477319indices0..31 must all be terminal beforecapture.",
+    "Capture only66original done/failed metadata paths, nofollow. Preserve missing/failure and no retry.",
+    "Does not authorize nextwave, which needs all33success/independentactualreview/freshjointadmission."
+  ],
+  "tests": "4testsPASS, original job.py done/failed schemas and exact firsthorizon paths checked."
+}

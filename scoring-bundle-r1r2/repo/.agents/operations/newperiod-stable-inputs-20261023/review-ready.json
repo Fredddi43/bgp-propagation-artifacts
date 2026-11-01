@@ -1,0 +1,20 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "1a6e90e35fb3ced100285648f3f33a2b980701af0dc83375b69453cbb0055192",
+    "build.py": "d25e9737a666975705d73795567baf7fe668addbbf985afb1691a1f3cfbc0156",
+    "derive.py": "165d94308f70741a437f20f1bca9f8b9c265788d1ae9e6fb3a58a9d0be81791d",
+    "entry.py": "33495d99b3f2fd0fd77ceca53a10e0263cf92d26ecb64bbc997d29f1a39394f6",
+    "graph_controller.py": "34e3e9d3839cf8ae3cd80e9ec9055d6635f2bf21cce5088d85e5ab21d428a380",
+    "graph_runner.py": "b5229c123af97f379d2971547e0d6f287c4377a954a2a1e42fb321168dacb575",
+    "original_stage.py": "0ef0431f38692da836dc6aead4ecc43533a15a933ce777972fad4aa122b2d85d",
+    "source_runner.py": "3ff9d243a9c792235bc10e5b381f26b895518b6e52738b3473b46a8b3c52763e",
+    "stage.py": "5c58c1a4b861ec079dfd98bcc316f51e089dbfb5607861d534548d38a1165358",
+    "test_graph.py": "6ea2c0f3e54cacc543d584c5b3384a83e840e8bb8b6e1fcf45413d0bc217df72",
+    "test_runtime.py": "bb8d13927deb0b443a4fc3b15921d108dba09fe05286473486604fa207905b6e",
+    "test_stage.py": "72bf21d7fda928be1a152cc42bbfe25fd6363aef1703602191572af2886e88cd"
+  },
+  "kind": "stable_inputs_review_ready_v1",
+  "tests": "36 passed; genuine original source/history and graph/export + installed cumulative budget subprocesses"
+}

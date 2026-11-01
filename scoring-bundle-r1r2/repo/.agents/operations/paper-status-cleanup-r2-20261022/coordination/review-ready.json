@@ -1,0 +1,7 @@
+{
+ "authorizes_nothing": true,
+ "kind": "review_ready",
+ "packet": ".agents/operations/paper-status-cleanup-r2-20261022",
+ "pins_sha256": "6bb20e6fb0d4c36196cecc26fcf128f9a33049e600986787a9b94e7494eb72a9",
+ "requested": "delta check of the C1/C2/C3/W1 lines only (delta-r1-to-r2.diff) against review a2c90aa2"
+}

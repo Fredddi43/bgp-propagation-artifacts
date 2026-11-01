@@ -1,0 +1,25 @@
+{
+  "kind": "origin_fullblock_identification_runner_review_ready_v2",
+  "author_worker": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    "PAPER-LIMITATION.md": "bea755337e22ec6a2319a8f4c314b025fecae529ccece1498ba8574744e4e78b",
+    "REVIEW.md": "d55bd039a4da9e4ed3898bb4245016a2ba8e71f0bf3c457d119a8db1641c2415",
+    "identify.py": "595dd3818e1539c80035fd98d2d1f3a5f4fa3f1ad53500c51a1e77f7938aa8d2",
+    "inputs.py": "c63c50eef72bed64eb3d8e71f86d7592de9004c2f46d6014d977f8cf842e20da",
+    "pins.json": "676005e722fe2b35a940d4b3145a1dec86fcedabc71e439622c8acb96bcdb0b0",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "reviewed_supervisor.py": "dd8ff4b1f3f7d0973cbf699a4c5cd3efedc75734693f81ca2d3d08d1a3d91d7c",
+    "run.py": "5522662789c1098ad8555058ce254eeec641be224c124a8c43942431f5421dba",
+    "source/bgbench/__init__.py": "58ea62cf6617a1065c6add8b8202ad0f43243ff3104ee5d3cc2754e1728ba113",
+    "source/bgbench/config.py": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab",
+    "source/bgbench/identifier2.py": "76131cc0da3c84555c678a1c5f0ca5335ac431b9e04592d90b9eefdf68f76600",
+    "test_inputs.py": "d7ff29252b5bcc64f72f471d07c34a11f9444852acd739c6c8ee3e735b322cef",
+    "test_qualification.py": "e5562701cb111345c32232b3b18d422d6f662228dddd1af79791c6a0e998016d"
+  },
+  "tests": {
+    "passed": 22,
+    "seconds": 29.55
+  },
+  "actual_execution_authorized": false
+}

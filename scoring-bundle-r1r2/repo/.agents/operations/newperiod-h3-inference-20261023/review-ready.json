@@ -1,0 +1,21 @@
+{
+  "execution_authorized": false,
+  "files": {
+    ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47",
+    "REVIEW.md": "20591d434e7a4ed224fac887714f0d6cd32461ba623dba89f1582593e616ab89",
+    "originals.json": "21c6d4b970bac5e28b1823a958295c875ffdf10925ecf65c6c12be2ce1edcf13",
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "predict.py": "86e3731778b99cca49117a331a5f73c970d5515fae2ab84b3b5cfb767e46b9d8",
+    "reviewed_h3_fit.py": "d2b88c413f9e895f539a9d084283f9822c87b1f0931a8902a766cad77bafc3a3",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "test_execution.py": "675425a61275117deaf2d8472eb21862fba2fd782179e640d1f42c7ffaa51198",
+    "test_predict.py": "a2266e2200cd5639b1f99c9a522fe941eaa162d51e394c82941dd434eb0f2e0e",
+    "test_refit.py": "277f98f878a48add1139e3a15587c22b8a18fb9375edcaed113eb28c6d2f5ad2"
+  },
+  "kind": "newperiod_h3_inference_code_review_candidate_v1",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q .agents/operations/newperiod-h3-inference-20261023",
+    "passed": 31
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "newperiod_family_protected_inputs_candidate_v1",
+  "author_worker": "/root/remaining_work_audit",
+  "author_model": "codex",
+  "files": {
+    "kernel.py": "ac278d6c38db8dce68a29e58cccc5585af7400b247c8cf39c830ef2f026b5eb5",
+    "entry.py": "bd272cc988155b3db4ef4500e44d70d9b9cd0c13150835c964dbd265b67dfdb6",
+    "test_kernel.py": "d2a7606ef708b331306b46e21c41153aab02561b6a84e1ab4a18ac92ecc195f0",
+    "REVIEW.md": "677995d03bea5958735cb03cdb092e01d73fc92492377af3d170b2ffe2f7ee4d"
+  },
+  "tests": {
+    "passed": 20,
+    "command": "PYTHONPATH=src .venv/bin/python -B -m pytest -q .agents/operations/newperiod-family-protected-inputs-20261023/test_kernel.py"
+  },
+  "execution_authorized": false,
+  "actual_protected_reads": false
+}

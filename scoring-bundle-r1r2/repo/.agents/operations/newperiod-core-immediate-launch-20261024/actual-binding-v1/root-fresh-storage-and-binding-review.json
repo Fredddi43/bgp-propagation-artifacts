@@ -1,0 +1,31 @@
+{
+  "kind": "root_fresh_core_submit_joint_storage_admission_v1",
+  "passed": true,
+  "reviewer_worker": "/root",
+  "author_worker": "/root/deadline_audit",
+  "reviewed_utc": "2026-10-24T05:37:15.858163+00:00",
+  "ready_sha256": "b79ed5cf47acee877bcd7b0e6b433cb329c0a09b6873cce8f9002f047520d008",
+  "binding_facts_sha256": "1cd860d1349062da07012b2b7bd811b57a9779e886831a2058308fbc72e9c5d6",
+  "commands_sha256": "7fb5b1a092048caa98c540a937ebe01b321ae935424ff2dd9780f2a8e0a4d372",
+  "original_execution_approval_sha256": "d80b08f00981be7fe237da7982c6de996c24a813893d442f807bbe9478b264a5",
+  "actual_release_sha256": "ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6",
+  "fresh_df_sha256": "d0e66e350d77d3da88e5e1b5c5b5eb1b67b243ed565ae0f40f8d316ec6973a1e",
+  "models_free_bytes": 585753427968,
+  "required_bytes": 279172874240,
+  "phase_gib": {
+    "replay": 130,
+    "core": 64,
+    "history": 1,
+    "posteval": 1,
+    "shared_floor": 64
+  },
+  "core_bound_qualification": "64GiB empirical3.069x estimate, not rigorous hardbound; unchanged reviewed admission",
+  "submit_once_authorized_under_existing_execution_approval": true,
+  "automatic_retry_authorized": false,
+  "primary_construction_or_export_admitted": false,
+  "conditions": [
+    "Execute exact commands.json submit once promptly; original runner still checks fresh namespaces and all inputs.",
+    "Refresh joint storage before each20-fit wave, preserve original200GiB wave1 RSS gate.",
+    "No final test inputs, predictions, score or result read authorized."
+  ]
+}

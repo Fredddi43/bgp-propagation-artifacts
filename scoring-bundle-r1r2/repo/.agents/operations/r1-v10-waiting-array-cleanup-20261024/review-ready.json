@@ -1,0 +1,13 @@
+{
+  "author": "/root/deadline_audit",
+  "condition": "Only after actual source decision rules out existing waiting array reuse and an independent exact cleanup approval.",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "ecd6296d73ebd8c4e2aadb3374951f67a252152c14900a2e2e17ede556d60fc0",
+    "cancel_waiting_array.py": "0fc29582ec079a90bc91cb668217d17dc127447cb775eaff015bf82a4e16315a",
+    "capture.py": "b765c85e2408bb9660750ddee77fcf71ad1fbe04b94efe89f5978910787cf977",
+    "test_cleanup.py": "8053cb5559fdfd61a1e5030ae48ad8ae42970442730d132ce87deee00e5116e4"
+  },
+  "kind": "r1_v10_conditional_cleanup_candidate_v1",
+  "tests": "6 passed in0.07s"
+}

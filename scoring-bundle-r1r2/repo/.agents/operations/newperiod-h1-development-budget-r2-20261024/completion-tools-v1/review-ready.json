@@ -1,0 +1,19 @@
+{
+  "actual_execution_authorized": false,
+  "actual_request_pending": "Genuine newlyheld job/plan binding and each independentlyreleased wave terminal; never use oldfailed job identity",
+  "bounds": {
+    "outcome_metadata_bytes": 67108864,
+    "outcome_stdout_bytes": 4194304,
+    "size_entries_per_root": 4096,
+    "size_maximum_depth": 2,
+    "size_stdout_bytes": 131072,
+    "timeout_seconds": 120
+  },
+  "files": {
+    "outcome_capture.py": "2ad8df3a9c2ee3831b2c428ecee0708016d74cb155daa28d7d64af625fcc6c15",
+    "size_capture.py": "449076ed31bbde8f5a55af04f0186d2d4877165fca835966a560df6736c2da4a",
+    "test_outcome_capture.py": "24c9cea5c2c251b1493b56077c1b4a3033c8af3cfe7567b5fd2434dab7062269",
+    "test_size_capture.py": "d42a323cf3287c827edb87971589dbde193a5504c1381827624915d01b4b7786"
+  },
+  "tests": "15 passed; exact cumulative16/32/48/64 and no payload reads"
+}

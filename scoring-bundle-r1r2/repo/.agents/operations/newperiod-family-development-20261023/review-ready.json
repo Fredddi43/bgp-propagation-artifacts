@@ -1,0 +1,29 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "e52c956425fe7551454a64ec4fd748dde19bdfaf32ff47b1c5798e7fec0882c0",
+    "family.py": "03dffff6fb93015ec8e76b71ed31df2134a3f3b4e3a483998a9876096e284433",
+    "reviewed_build.py": "32c5b92ae21c59f564a7d896dc46060302c5416c66232e141c17ad66ae0cd59e",
+    "scientific-pins.json": "3f508a15c55603fb1afca6eb0867f0a6e707ca40e2c1622ea43d76f1c083c75f",
+    "test_family.py": "1268cec034e720ceb9ec74ef4a7dde7a9f90913dc0f4fb454590fe73082a43a4"
+  },
+  "kind": "newperiod_origin_family_development_callbacks_v1",
+  "protected_reads_performed": false,
+  "remaining": [
+    "actual acquisition/source coverage",
+    "retrospective family precision",
+    "original R1 release and actual gates",
+    "shared source/runtime/resource operation binding"
+  ],
+  "retention": {
+    "fixed_total": 40,
+    "invalid": 20,
+    "valid_conditional": 20
+  },
+  "tests": {
+    "passed": 22,
+    "seconds": 4.57
+  }
+}

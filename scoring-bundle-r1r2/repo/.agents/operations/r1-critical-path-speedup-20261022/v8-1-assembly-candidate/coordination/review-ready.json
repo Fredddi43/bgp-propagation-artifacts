@@ -1,0 +1,10 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_1_assembly_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/v8-1-assembly-candidate",
+ "pins_sha256": "aa2273d283ccd2b81366c773b009d1627359e3c21978a3d0b378c29484bec6aa",
+ "requests": [
+  "after (only if) O1 CODEPASS: verify the exact O1-vs-D1 binding delta (delta-vs-d1.json) and issue the reviewer records against these bytes"
+ ]
+}

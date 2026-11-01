@@ -1,0 +1,29 @@
+{
+  "author": "gpt-6-astra",
+  "author_worker": "/root/impact_consumer_review",
+  "automatic_retry_authorized": false,
+  "baseline_driver_sha256": "1d3ffbb49328da2aab98d7728884fae4d6bc9dd3312dbec0701cbe2ebb38335f",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW-PACKET.md": "c560989dfe00b30ede3397c14e9c997b209635b229f1c9207dc671624c428d6b",
+    "forecast_retrospective_release.py": "8968b97f2eb5aec2ed0820dc6f353c58cb88fb43a175e7f91fd7f1b4a6781586",
+    "inherited-tests.txt": "8ca6ead43a834fb945a5b58fe6b1ef3196a596d426b0680edf5816643858dba4",
+    "label-bound-TEMPLATE.json": "f50d22c9b3058059e2b1f0795593da14e48bdf6644ff912875caed7348a921b8",
+    "resource-contract-TEMPLATE.json": "dc0b8f3a287b5aee53e77f52ef593748b6d7388b047c44cfd6a107c1bc645a80",
+    "run_inherited_tests.py": "1b7c36bad6fb07059a1cc3b1a951bc58537dd71389b14874937ff7f49fe2e978",
+    "runtime-admission-TEMPLATE.json": "4ac21029bb5739b15f586292002c91a9ee74e77c7d2093411277dd143d042ea3",
+    "test_resources.py": "f430f7ae93eb651435dc27bcb751c2b6a6451b28372825cf868b3c6684a820f2"
+  },
+  "focused_tests_passed": 28,
+  "freeze_authorized": false,
+  "header_audit_authorized": false,
+  "inherited_and_integration_tests_passed": 77,
+  "kind": "r1_release_resource_gate_code_review_v2",
+  "labels_authorized": false,
+  "newperiod_authorized": false,
+  "production_memory_sufficiency_proven": false,
+  "protected2026_authorized": false,
+  "r1_authorized": false,
+  "scoring_authorized": false,
+  "seal_authorized": false
+}

@@ -1,0 +1,39 @@
+{
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "frozen": "no edits while under review; findings go to a separate revision",
+ "kind": "newperiod_input_gate_revision_v5_review_ready",
+ "package": {
+  "REVIEW.md": "681f6be2ce7d24d5d06b88eb2c4d9332e836ee4ffc885e19e72ac64dd6767314",
+  "audit_witness.py": "3c0d17b44b51293b7c9a9dcbe1b28125fb81cc1dd5f618b12aa7d31857b28505",
+  "boundary.py": "e0afe503e7420d7eddc700c8613518d02f19b51efa56bfc8c3cbc5987b48d234",
+  "diff-v4-v5.diff": "bcd3952d54393a8cec24d4d9124ceba95fd3e6b43884fc30a8d204f87bb2ee66",
+  "evidence-local/mutations.txt": "d1c5c14b94e117572391b0c4ac50bdd5468567215dd50fef1d567de79b5388bc",
+  "evidence-local/pytest-hostversions.txt": "a17c29e4c7adfc789315fa787a5ac001b2691006a203c9e1ac183fb86345fe12",
+  "evidence-local/pytest.txt": "368fdf6d52d2e7831ec4911c3f3d237c2fdd86b97a652254c5029ac03c2825a3",
+  "evidence-local/v3-hostversions.log": "12ddc8eb923a56352b033e5947f88a130c310533c5c45ea6bf19ec3ee3253269",
+  "evidence-local/v4-hostversions.log": "3c7c722d5d780e57865a6180d0cca89cb7ed405cbf944bed38f7056eaf9ded05",
+  "input_gate.py": "93c343b6e0234cdc84780b4f1ba7dcf2113be9c312423a393b5ec1357c7bd032",
+  "label_handoff.py": "18061e3f8cc6c541e47035a7dd2cd89651a365ada8ba88ab3d8df2890e52d293",
+  "mutation_controls.py": "98c92dc5714ee9c4a27105f773305fa09a665b61c626269d1c1b097d816f263d",
+  "synthetic_world.py": "13ca831dbc9d5658c5a47adab2dd1ec65e8df6f8eddf0743201bf83bd1365acf",
+  "syscall_trace.py": "cdc7937bc15e5bc1250cd09733d8e34b03832ad901bff3e86808ddde630e911c",
+  "test_gate.py": "3759fa69deae268a7f23af049ccec62265d5294015a8e635a2a5178fecab5808"
+ },
+ "pins_path": ".agents/operations/newperiod-input-gate-20261021/revision-v5/pins.json",
+ "pins_sha256": "ff4a953562f3a8fcc2677931bb75423f77483543e72a4d077fd8bd499b7d1423",
+ "repo_head_at_freeze": "3ad7e98",
+ "reviewer_model": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker_label": "/root/opus_review",
+ "scope": "test-only delta on revision-v4 (two environment-dependent expectations, one parser sanity test); gate code identical to v4",
+ "verification": {
+  "dev_venv": "169 passed",
+  "host_version_venv": "169 passed",
+  "mutation_controls": "26/26 detected",
+  "ruff_check": "All checks passed",
+  "v4_host_version_venv": "166 passed, 2 failed"
+ }
+}

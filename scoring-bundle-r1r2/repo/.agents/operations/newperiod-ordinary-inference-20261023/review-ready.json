@@ -1,0 +1,28 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "91b7a520a52b702df12e2eac44e246eed454b22543ea99fab1bdf384f3f930f8",
+    "kernel.py": "7cdadba60f9c7b363b2ffa121805e142acc759268e8bd5cc50dfc2b2c19b0b20",
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "runner.py": "cd0b3cfee07a359c43b08abcd02214d7a178554d0715e325f5f51f1dc9453131",
+    "scientific-pins.json": "53e23801edfe2a457b222e768e7ba348731a78ea6b97fdbc98f437c40fd78323",
+    "test_runner.py": "801bbee0cca6ffefcf8b1dbad46a2874b3101c13c8eb13babd89b226c94b6b2d"
+  },
+  "kind": "newperiod_ordinary_inference_code_candidate_v1",
+  "label_reads_performed": false,
+  "protected_reads_performed": false,
+  "retention": {
+    "gbdt_selected": 2,
+    "gru_selected": 10,
+    "tgn_mean_original_failed_selections": 20,
+    "total": 32
+  },
+  "tests": {
+    "passed": 26,
+    "seconds": 30.1
+  }
+}

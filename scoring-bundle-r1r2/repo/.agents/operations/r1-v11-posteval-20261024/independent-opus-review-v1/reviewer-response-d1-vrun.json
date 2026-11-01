@@ -1,0 +1,5 @@
+{"kind":"reviewer_response_v1","reviewer":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "vrun_failure":{"finding":"vrun-failure-finding.txt 46cc418a","cause":"verify_r1.integrity B4 KeyError population_sha256 on 22 TSFM curve_npz seal cells (custody commits population_events=3543 without population_sha256)","resolution":"author implements R1-R4 in the finding; reviewer reviews; no resubmission under ca215b27"},
+ "d0_readback_d1":{"assessment":"d0d1-actual-assessment.txt","plan_sha256":"6e18854b","census_sha256":"7b746087","status":"VALID; b96c4c6f consumed"},
+ "d1_alert":"census not_regular list is non-empty (graph tensors under graphs/2025-v6/d60s); capture census.json and explain before any D2 request",
+ "d0d1_fetch_approval":{"path":"opus-d0d1-fetch-approval-v11.json","sha256":"4a2fd4e92ad454556eb4a6b323ba426707de01deceda7469874fd4cd15c920c1","request_bytes_sha256":"7d2643c72e89db763b71aa5d254e2f37212d17dcef0eaa4f4c74a2e43a2bfee4","output":"classd-host/evidence-d0d1.json.gz","void_draft":"3f8addba"}}

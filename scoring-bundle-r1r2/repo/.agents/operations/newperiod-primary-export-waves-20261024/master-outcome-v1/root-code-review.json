@@ -1,0 +1,14 @@
+{
+  "automatic_retry_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "04935a7d2123dfa445a4400f257923d2f56de2a7bcd6367e6ddc0446daa1ec3f",
+    "test_capture.py": "6b4ff7bc7250622e60287494b1208a1a278b7b8636b80ff617cab901f92c6212"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Exactly four fixed master done/failed receipt paths; one durable log before any receipt reads; no emitted master/inventory references followed; actual terminal prerequisite before once capture.",
+  "tests_passed": 7
+}

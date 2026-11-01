@@ -1,0 +1,30 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_session": "/root/metadata_check_review",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "README.md": "9382f9040d8591dac213cfd19047efc63f5f3bdb22e4f3adb3c58e5c566c97ca",
+    "components/count/evaluate.py": "52ad01ae9b7b1c0e3bf7fda4261672540dee282c91ebd18bae5c7ddf7a20c625",
+    "components/membership/consumer.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+    "components/membership/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "components/stable/consumer.py": "deb124b1931cfa36f0dff0fdc3a2a4d592edbd2147c0d662e44986c09aabb712",
+    "components/stable/reviewed_membership.py": "5cd8c4720675273f232940d39b3dfe7bbdc7a1a72d7c6b21b24f3823575fbfde",
+    "components/stable/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "compose.py": "b4952f08025194700f8612771561aada3c37fe25feefa18e534154e8e59bebfe",
+    "test_compose.py": "84f5b238acc8fb098cd5c380ccfe2dae535bf784e8891280aaf259bb36deb6c1"
+  },
+  "kind": "newperiod_secondary_composition_r3_code_candidate",
+  "protected_reads_performed": false,
+  "retained_secondary_cells": 298,
+  "scientific_dependencies": {
+    ".agents/operations/newperiod-custodian-count-truth-20261023/prepare.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "docs/paper/forecasting-improvement-20261017/ALL-RECIPES-DRAFT.json": "6d851282e4036a6323a24ef41740207c75b839a72a960604cb1404d593ae0917",
+    "scripts/custodian_access_log.py": "4e84e4c8f3ad3922bb7fd0dcd65d1ae1fe04d80acfe31ea98d98c6f63679e5b4",
+    "src/bgbench/forecast_stable_peer.py": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+  },
+  "tests": {
+    "combined_passed": 10,
+    "seconds": 28.67
+  }
+}

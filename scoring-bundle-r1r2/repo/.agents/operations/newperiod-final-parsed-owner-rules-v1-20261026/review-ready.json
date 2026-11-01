@@ -1,0 +1,23 @@
+{
+  "answer": {
+    "path": "<REPO>/.agents/operations/newperiod-final-parsed-owner-rules-v1-20261026/answer.json",
+    "sha256": "e34fbb3bd555d69c6f865fc00e0a25ef3ae6db907d4f7e7abfed1a548882c3db"
+  },
+  "execution_authorized": false,
+  "generator": {
+    "path": "<REPO>/.agents/operations/newperiod-final-parsed-owner-rules-v1-20261026/prepare.py",
+    "sha256": "67811d43854c3fe5a623e18695bcca64bdb18a9ee721f5ef84f56924bf135eb5"
+  },
+  "owner_route_adoption": {
+    "path": "<REPO>/.agents/operations/newperiod-final-parsed-owner-rules-v1-20261026/owner-route-adoption.json",
+    "sha256": "8bd333311d3b61fcc5df36046ee154b53012db8c83597f4f6992f5de2da54954"
+  },
+  "reviewers": [
+    "sol-storage",
+    "sol-final"
+  ],
+  "source_catalog": {
+    "path": "<REPO>/.agents/operations/newperiod-final-parsed-owner-rules-v1-20261026/source-callsite-catalog.json",
+    "sha256": "6132675e4fb09a88801be0ace6a4a58d520ca3a9e8011609700779dfb6559216"
+  }
+}

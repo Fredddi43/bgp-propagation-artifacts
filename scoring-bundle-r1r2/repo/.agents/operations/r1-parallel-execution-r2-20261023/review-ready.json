@@ -1,0 +1,20 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "74969fb71c52bcf0deea2151579eee3dc19d013de13311cedf7aa4e3b1a7201a",
+    "build_packet.py": "8ac84a3a84dcfa66ce7af8b26f6a0627fbda7f7748741f0d319cf87e568f1aa5",
+    "controller.py": "19874e7272366dbc400fef458592ad21d06b386b61119006f73702b64631549e",
+    "derive_metadata.py": "a0905c993ddec0511b4d0f309f30b0f936313fd11cb8e0f4f80ea36b97ec72c7",
+    "execute.py": "d98c2a7322ff5f11614a6edc4089467d38e386a9b968acedc57b67decc018b7e",
+    "run.sh": "cd7925059a9bb9dc8c567466229d75894e21c9792bd2d98d32c08617e520d4a6",
+    "supervise.py": "7845800f7da916c8d1d58cdc2a6f572989596f3a88a6a58749752987fe66944f",
+    "test_controller.py": "5111a79b3a23bacd8dbb77e3df92e72b9f969a25fab4543e1e1e5eac225c3136",
+    "test_execution.py": "635ade919b449b8272c590d40c1169921e46d1ebec92f41466460b73acd24691",
+    "test_successor.py": "7bda24db23a04b7b70b562956c7cd9a3776111b95e5d5db2576f1390ada42cb5"
+  },
+  "kind": "r1_parallel_control_v2_code_candidate",
+  "scientific_source_changed": false,
+  "tests_passed": 43
+}

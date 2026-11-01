@@ -1,0 +1,45 @@
+{
+ "actual_launch_result_sha256": "85e92767cd9a78666a8d43ee63cf792c043e3af3c6a307b4a0b9b00a2e6bfa0d",
+ "actual_terminal_observation_sha256": "c4ac734ac3d1c5053c52dd6eea869583cbeab4144cbadc79fbb297ab375aad82",
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "census_authorized": true,
+ "command": ".venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/census.py census --approval <this file> --approval-sha256 <its sha256>",
+ "conditions": [
+  "one attempt; on non-zero or uncertain remote result preserve records, stop, no retry",
+  "terminal_success false (e.g. shared-registry failure marker) stops K2; reviewed resolution, no workaround",
+  "stat-only; no results/manifest/marker content read; outputs only capture-records/census-* and evidence/census.json"
+ ],
+ "content_read_authorized": false,
+ "execution_approval_sha256": "4a57b284a60f162fe7184a2ac3c37cb046b475cb989bb1ef179cafd5d3c65c4a",
+ "execution_spec_sha256": "2233750ea0847b1034e6a7bf25e569026a72320bde866bf32e136fc1a7a238c5",
+ "host_write_authorized": false,
+ "k1_request_sha256": "eb151faa77d5764e27642765be505be04cee8bbb03d5cd8bbddbe86012e06dc4",
+ "kind": "r1_v11_k1_census_approval_v1",
+ "label_read_authorized": false,
+ "not_authorized": "K2/K3 captures, class-(d) transport, D0-D2, verifier job, result/label/prediction/score reads, retry, N admission",
+ "passed": true,
+ "payload": {
+  "entry_cap": 5000,
+  "manifests": {
+   "d30": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json",
+   "d60": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json"
+  },
+  "process_markers": [
+   "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/execute.py",
+   "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/run.sh",
+   "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/supervise.py"
+  ],
+  "registry": "<FORECAST_ROOT>/occurrence-final-v1/custody/r1-access",
+  "root": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1",
+  "supervisor_pid": 788181
+ },
+ "prediction_read_authorized": false,
+ "review_ready_sha256": "955199fefe7e011fe844fff2e49d614bd46e75b72231cd1a8c1d552de690c67b",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-census-v1",
+ "tool_sha256": "4229ec2cb74468497b1f17fd46668f42b393b5f1c9ca75b75ab9596d2e3a56e5"
+}

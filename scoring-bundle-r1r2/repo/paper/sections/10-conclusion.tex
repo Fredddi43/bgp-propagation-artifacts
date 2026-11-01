@@ -1,0 +1,86 @@
+\section{Conclusion}\label{sec:conclusion}
+
+We replayed ten public collectors from January 2022 to August 2026 and followed origin changes and route leaks for two hours.
+From the first observation of the new origin, invalid-origin events show the largest share of their final AS set within 30\,s.
+This gap is sensitive to the event definition, because valid and unknown origins were often visible long before the identified change.
+For events first observed near the change, the class differences in 2023--2026 are smaller, but this rule keeps far fewer valid than invalid events.
+In 2023--2025, catalogue selection also raises the \floor of invalid events.
+
+For gaps of at least 15 minutes between the identifiers, the return shows more of its final set early.
+Day-block intervals exclude zero in three of five years.
+Most matched pairs are flips of less than a minute, in which the observed return set is larger, for reasons that we did not test.
+The relative reach of a controlled invalid beacon fell by about half in early 2024, and two upstream changes coincide with its April steps.
+
+For forecasts of the ASes that join a leak, a history of past events is the reference to beat.
+In exploratory tests on large leaks selected by final size, graph models gain up to $+0.20$ Jaccard over persistence, and history recovers most of it.
+The retrospective evaluation R1 has no size threshold, but it also differs in training and calibration.
+There, the set forecast of SAGE with history equals persistence for 95\,\% of events at 30\,s and 99.6\,\% at 60\,s.
+In a prespecified replication on autumn 2026 (R2), at most 94\,\% and 97\,\% of these set forecasts add nothing.
+% src (round 4, NEW-3): paper/generated/set_errors_r2.json results.R2.{30,60}.arms.sage_on.set.jaccard_equals_persistence_share.mean 0.937005 /
+%   0.972382. The R2 records hold no forecast sets, so this Jaccard-equality share (an upper bound on the share of forecasts that add nothing,
+%   derivations.jaccard_equals_persistence_share) is the R2 counterpart; in R1 the two shares are equal (0.946 / 0.996, sections/app-protocol.tex).
+On shared candidates, neither period detects an AP difference between SAGE with history and online history.
+% layout (round 4, page limit; second reviewer section 6 "reduce repeated contrast reporting"): the sentence "In R2, the 95 % interval of this difference is
+%   -0.0075 to +0.0079 AP, and -0.0099 to +0.0111 if we also resample leakers" left the conclusion; both intervals stay in sections/08-forecast.tex,
+%   tab:r2 and tab:actor-bootstrap. The 54--69 % sentence (src below) also left the conclusion for the page limit; it stays in sections/app-protocol.tex "Revision analyses" (it left sections/08-forecast.tex in round 6).
+
+In R2, six prespecified rejections favour online history in AP or precision at ten, and six favour SAGE in Jaccard against history's size rule.
+Online history with its own, nearly complete candidate set reaches 0.02--0.03 more AP, in a comparison of complete systems.
+In a post hoc R1 analysis on reconstructed inputs, online history gains 0.073 [0.059, 0.088] AP with the same-leaker-first ranking.
+We did not test this ranking in R2.
+% round 6 (panel-r6 M3 residual, T4; NEW-14 one name): leaker_split.json R1.same_leaker_baseline["30"].released_inputs.contrasts
+%   .same_leaker_then_history_minus_online_history_native.ap.all 0.072939, leaker_x_day [0.058895, 0.087974] (day blocks [0.064275, 0.081237]).
+%   The two-way interval is printed, as in sections/08-forecast.tex "Repeat leakers".
+% src (round 4, NEW-5): paper/generated/set_errors_r2.json p_at_10_native_contrasts online_history_native_minus_online_history at 30 s:
+%   R1 -0.0002 [-0.0013, +0.0011], R2 -0.0041 [-0.0070, -0.0012]; the native list is not more precise at ten than the shared one in either
+%   period, so its AP gain over the shared candidates lies below rank ten (sections/08-forecast.tex "Secondary metrics").
+% layout and balance (round 4, page limit; panel-r4 NEW-1): the post hoc R1 estimate without first-of-month leaks (+0.007 AP,
+%   month_boundary.json R1 C2@30 no_day1 +0.0066 [+0.0008, +0.0118], unadjusted, day blocks only; R2 does not repeat it) left the conclusion as it
+%   left the abstract and the intro; it stays in sections/app-protocol.tex "Month boundary" (moved from sections/08-forecast.tex in round 6), with its leaker x day interval [-0.0005, +0.0136]
+%   (month_boundary_actor.json), which includes zero.
+
+The clock decides the class lead: the ordering holds at every collector but shrinks under a near-onset rule.
+SAGE gains on leaks selected by final size, but on leaks selected at issue time its sets match persistence.
+With seven of ten collectors, the R2 forecasts lose 0.07 to 0.12 Jaccard against the fixed target.
+% round 7 (panel-r7 DA #10, EIC M14): the thesis states what was tested and where it held or failed. src: 05-propagation.tex
+%   (ordering at each collector; near-onset lead 0.10 / 0.24, intervals including zero in 2025-2026); 08-forecast.tex slow regime
+%   (selected by final size) and slice_vs_persistence.json (|SAGE - persistence| < 0.001); newperiod-lanes.json H3 (-0.073..-0.122,
+%   SAGE and no message passing).
+% layout (round 5, page limit): "Our forecasts vary the selection but not the clock, because they all start at the observed onset" left;
+%   sections/09-discussion.tex keeps the oracle trigger ("Every forecast uses an oracle trigger, the observed onset").
+Future BGP forecasts should report a history baseline next to persistence, and test whether the leaker's own past events help.
+They should also score the ASes that join after the issue time.
+% src: sections/app-protocol.tex "Month boundary" (moved from sections/08-forecast.tex in round 6) (paper/generated/month_boundary.json: R1 C2@30 no_day1 +0.0066 [+0.0008, +0.0118]; R2 C2 no_day1 intervals
+%   include zero at both horizons; native shrink 16--25 %) and "Secondary metrics" (C1/C3/C4 Jaccard < 0.0003; median history: lead 0.29--0.32 falls to 0.07--0.12,
+%   tab:history-size). The former sentence "As set forecasts, no learned model beats persistence on these leaks" had no R1/R2 number (round-3 review NEW-3).
+%   Thesis sentence: sections/01-intro.tex (round-3 review M10).
+% src: leaker resampling: paper/generated/actor_bootstrap.json R2 C2@30 leaker_x_day ci95 [-0.0099, +0.0111] (day blocks [-0.0075, +0.0079]).
+%   Set forecasts: paper/generated/set_errors.json R1 sage_on adds_nothing_share 0.946 (30 s), 0.996 (60 s); online_history minus_persistence
+%   -0.319 vs SAGE lead 0.319 (sections/08-forecast.tex "Secondary metrics"). Replaces "The learned set forecasts hardly differ, and much of their
+%   lead over online history comes from its size estimate" (2026-10-31).
+% src (round 4, 2026-10-31; panel-r4 T2 / NEW-1, NEW-2, NEW-12, X6; review-r4 section 5 "horizon qualifier", W5 "overlength sentence"):
+%   gap >= 15 min: day-block intervals above zero in 2022, 2023 and 2025 (recovery_dayblock.tex), so "three of five years" replaces "most years".
+%   95 % / 99.6 %: set_errors.json R1.{30,60}.sage_on.adds_nothing_share 0.9463 / 0.996. 54--69 %: share of the persistence-minus-online-history
+%   (mean) Jaccard gap carried by events without new members, 0.1718 of 0.3186 (30 s) and 0.2231 of 0.3233 (60 s); read-only recomputation from
+%   the hash-pinned R1 per-event files of set_errors.json provenance.R1 (sections/08-forecast.tex "Secondary metrics"; not yet in a generated file).
+%   R2 prespecified tests: facts.json p_at_10 C2@30 -0.0239 Holm 0.0024; C5@60 -0.0126 Holm 0.0024 (tab:secondary, tab:r2).
+%   The former 31-33-word sentence "Without the leaks ... SAGE with history ranks better by +0.007 [+0.001, +0.012] AP in R1, an interval over day
+%   blocks only that ignores repeated leakers" is replaced: "ranks better" is reserved for Holm rejections, and the estimate is post hoc and
+%   unadjusted (month_boundary.json method.p_values; R2 C2@30 no-d1 +0.0013 [-0.0065, +0.0091]). "Ranks better by 0.02--0.03" for the native
+%   comparison became "reaches 0.02--0.03 more AP" (round-4 NEW-5).
+% Round 5 (2026-11-01; panel-r5 T2 / NEW-1, T3 / NEW-2, NEW-3, T4 / NEW-4(d, e); review-r5 items 2, 3):
+%   Return: "the return reaches more ASes" -> "the observed return set is larger, for reasons that we did not test" (descriptive; the three
+%   hypotheses are in sections/06-recovery.tex). "Without this selection" -> "R1 has no size threshold, but it also differs in training and
+%   calibration" (review-r5 W2: not an isolated selection effect).
+% src: "at most 94 % and 97 %": set_errors_r2.json results.R2.{30,60}.arms.sage_on.set.jaccard_equals_persistence_share 0.937005 / 0.972382,
+%   an upper bound on the share of forecasts that add nothing (derivations.jaccard_equals_persistence_share; sections/app-protocol.tex).
+% src: R2 rejections by direction: sections/00-abstract.tex round-5 src comment (facts.json holm_rejects).
+% src: "do not raise its precision at ten": set_errors_r2.json p_at_10_native_contrasts at 30 s, R1 -0.0002 [-0.0013, +0.0011], R2 -0.0041
+%   [-0.0070, -0.0012]. The former "These candidates add AP only below rank ten" is removed: equal or lower P@10 does not locate an AP gain
+%   (review-r5 W2, item 3; no AP decomposition by rank exists).
+% src: same-leaker ranking: paper/generated/leaker_split.json R1.same_leaker_baseline["30"].released_inputs.contrasts
+%   .same_leaker_then_history_minus_online_history_native.ap.all 0.072939, day blocks [0.0643, 0.0812], leaker x day [0.0589, 0.0880],
+%   2,635 events on the released (reconstructed) seed sets; post hoc (designed in review round 4 after the R1 results), R1 only
+%   (R2.same_leaker_baseline "not computed"). Labelled post hoc and kept out of the abstract (panel-r5 NEW-1).
+% The former sentence "Without the first-of-month leaks, this advantage shrinks by 16--25 %" (post hoc, unlabelled; round-5 NEW-4(d)) left the
+%   conclusion for the page limit; sections/app-protocol.tex "Month boundary" (moved from sections/08-forecast.tex in round 6) keeps it with both cuts, labelled as a revision analysis.

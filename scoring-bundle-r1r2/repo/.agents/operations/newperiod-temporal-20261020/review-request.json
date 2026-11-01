@@ -1,0 +1,27 @@
+{
+  "author": "/root/temporal_guard_recovery",
+  "author_model": "gpt-6-astra",
+  "kind": "newperiod_temporal_code_review_request_v1",
+  "package": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-20261020/package.json",
+    "sha256": "023603119aa338001f5203f2cce5c0e35a5b7320e44e72563cde88cc2fb2c396"
+  },
+  "pins": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-20261020/pins.json",
+    "sha256": "b5d2368e155d41be95230f060fbe6e412bc51a805d4a8afd0f1d087f8f863723"
+  },
+  "requested_authorities": {
+    "development_fit_authorized": false,
+    "execution_authorized": false,
+    "n_unseal_authorized": false,
+    "prediction_authorized": false,
+    "protected2026_authorized": false,
+    "r1_release_authorized": false,
+    "retry_authorized": false,
+    "test_inputs_authorized": false,
+    "test_scoring_authorized": false
+  },
+  "requested_verdict_kind": "newperiod_temporal_code_review_verdict_v1",
+  "required_independent_reviewer": true,
+  "scope": "code-only exact ten GRU fits plus twenty non-executable dispositions; no actual inputs or execution"
+}

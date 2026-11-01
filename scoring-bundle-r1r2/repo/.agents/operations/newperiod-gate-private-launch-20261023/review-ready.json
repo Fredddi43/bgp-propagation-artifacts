@@ -1,0 +1,25 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "0aea3c8ecad6653945fb8560f087e09937d497e703e2d83739e093f925b961bf",
+    "build_candidate.py": "a36ba8612c7937e38222ffe86eff76c2f41ce8e6f647ecf4eb318eceb111a729",
+    "draft.py": "b89d470629a12b6880c2693330b69b901d7fe762cb8f98045905d3bf89ca177f",
+    "gate-spec.draft.json": "60c5c4613c12950cf3dfde6ec661707d24eaef45bce2bf725c9b61c6fc7886c9",
+    "gate_execute.py": "20de55b7a14202287dab5ef615f4780603b13f2bdf6b84458d95fe7822d598fd",
+    "independent.txt": "05cd663d13221593c4788b407143327080059ce198a3b3805b61bbd18f3abfde",
+    "launch.py": "db8b5e23d3564bccc29d6969a609887bc4ead60064c89375c8ddd06902ba09ce",
+    "private_runtime.txt": "9c3839211dc3dcabff43af3409ebd063fc2918d6cf0343eebdc4f27336eb6fdd",
+    "run.sh": "54f051b2a2be823b0cb7161abd76610980d03531dc4069b028729eb19b9c7657",
+    "supervise.py": "1cd7fd66e587c31bfe5f091b3f1bd91235c4bca05b534e791bf78830fb4d90e4",
+    "test_private_launch.py": "22ba8baf531041b68b2a58571a608b602e7181eda4d01214a43f14e6bdd8c8e3",
+    "witness-spec.draft.json": "73be93923c47299afc782cf1215ec4ed37898ddc5f0649f111f74623d7635b89"
+  },
+  "kind": "newperiod_private_gate_launcher_code_review_v1",
+  "scientific_inputs_read": false,
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q .agents/operations/newperiod-gate-private-launch-20261023/test_private_launch.py",
+    "passed": 45
+  }
+}

@@ -1,0 +1,413 @@
+\section{Forecasting the reach of a leak}\label{sec:forecast}
+
+Given the first seconds of an event, which ASes will be on its collector-visible paths two hours after onset?
+\Cref{sec:prop} shows that leaks and invalid-origin changes show a large share of this set within 30\,s on average.
+The events that keep spreading are the open problem, and we forecast leaks, the largest group of them.
+The slow-regime experiments score the forecast set against persistence, the forecast that no AS joins after the issue time, the onset plus 30 or 60\,s.
+R1 and R2 score the ranking of the ASes that join, where persistence has no ranking and history is the reference.
+
+We use three setups (\Cref{tab:forecast-setups}).
+The slow-regime experiments came first and select leaks by their final size, which is unknown at issue time, so they are exploratory.
+R1 is descriptive, because its period was open while we developed the methods, and R2 is a prespecified replication of R1.
+The slow regime also differs from R1 and R2 in training population and threshold calibration.
+
+\begin{table}[t]
+\caption{The three forecast setups, each with training and validation data before the test window. R1 and R2 use identified leaks with a Radar match (R1: \num{3444}) or among the 50 per month with most collectors and messages (R1: 99).}
+\label{tab:forecast-setups}
+% src: R1 selection composition: paper/generated/month_boundary.json R1.composition.30.by_selection (radar_match 3,444, volume 99);
+%   R2: month_boundary.json R2.composition_note (selection reason not in the released R2 per-event scores, not read).
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth}>{\raggedright\arraybackslash}p{0.29\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}@{}}
+\toprule
+Setup & Test events & Metric & Status \\
+\midrule
+Slow regime (\S\ref{sec:forecast-legacy}) & Leaks with ${\geq}\,200$ ASes at 2\,h, Sep--Dec 2025: 423 & Jaccard; event bootstrap, one fit & Exploratory \\
+R1 (\S\ref{sec:forecast-r1}) & Identified leaks, Sep--Dec 2025: \num{3543} & AP over new members; 5 seeds, day blocks & Descriptive \\
+R2 (\S\ref{sec:forecast-newperiod}) & Identified leaks, 1 Sep--16 Oct 2026: \num{1289} & AP over new members; 5 seeds, day blocks & Prespecified replication \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Slow-regime experiments}\label{sec:forecast-legacy}
+
+\paragraph{Task and candidates.}
+The slow regime holds the leaks that still grow at the issue time and reach at least 200 ASes by two hours.
+After the onset rule of \Cref{sec:prop}, 2025 has 693 training and 423 test events, and one training event has no 30-s input.
+% round 7 (review-r6 W5, 1,115 / 1,116): 693 + 423 = 1,116 = the population of sections/09-discussion.tex; 692 training events at 30 s
+%   (forecast-facts.json) because one has no 30-s input (09-discussion.tex src comment, lines 32--33 and 72--73).
+Models rank candidate ASes in the two-hop neighbourhood of the seed ASes, the ASes observed by issue time, in the CAIDA relationship graph~\cite{luckie2013relationships}.
+We cap this neighbourhood at \num{3000} ASes, and it holds 92\,\% of the target on average.
+We score the full forecast set, seeds included, by Jaccard against $\set{2h}$, and report the gain over persistence.
+Intervals are paired event-bootstrap 95\,\% intervals within one fit.
+% src: paper/generated/forecast-facts.json (692 / 423; target coverage 0.919 at 30 s)
+
+\paragraph{Methods.}
+We compare a ladder of methods of increasing complexity.
+The \emph{historical baseline} forecasts the final size from the $k$ nearest past onsets and ranks candidates by how often they joined completed training events.
+Its \emph{online} variant also adds completed test events as they end.
+The \emph{independent cascade}~\cite{kempe2003influence} spreads the route over the CAIDA graph with probabilities by relationship type.
+Time-series foundation models forecast the AS count only: Chronos-2~\cite{ansari2025chronos2} zero-shot and with LoRA~\cite{hu2022lora}, Moirai~\cite{woo2024moirai} and TimesFM~\cite{das2023timesfm}.
+
+The graph models are a GraphSAGE (SAGE)~\cite{hamilton2017graphsage} with an aggregation per relationship type, a GAT~\cite{velickovic2018gat}, and the temporal TGN~\cite{rossi2020tgn} and DyRep~\cite{trivedi2019dyrep}.
+They share node features: degree, customer cone, onset visibility, valley counts and participation in completed past events.
+They share a membership head and a threshold tuned on training data.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/ladder-2025/ladder_leak200}
+\caption{Slow-regime ladder in 2024 (a, b) and 2025 (c, d), leaks selected by a final size of at least 200 ASes. (a, c) Jaccard gain over persistence at $\Dl=30$\,s (filled) and 60\,s (open), with paired event-bootstrap 95\,\% intervals. (b, d) sMAPE of the two-hour extent at 30\,s. History reaches almost the gain of the graph models, and the cascade falls below persistence. We scored at least 13 SAGE variants on the 2025 test split, so the best gain there is optimistic.}
+\Description{Two forecast ladders. In both years history, SAGE, GAT, TGN and DyRep-style gain over persistence with overlapping intervals, and the cascade loses; the extent error of persistence and cascade is far above that of history and the graph models.}
+\label{fig:ladder}
+\end{figure*}
+
+\paragraph{History reaches most of the graph-model gain.}
+At 30\,s, SAGE raises Jaccard from 0.509 to 0.708, a gain of $+0.198$ [$+0.178$, $+0.219$] (\Cref{fig:ladder}).
+The historical baseline reaches 0.698, and GAT, TGN and DyRep-style reach 0.686--0.696, just below it.
+The paired difference of SAGE over the historical baseline is only $+0.010$ [$+0.007$, $+0.013$], and over online history $+0.002$ [$-0.001$, $+0.005$].
+When we train on 2023 and 2024 and test on 2025, online history exceeds SAGE by $+0.017$ at 30\,s and $+0.019$ at 60\,s.
+If we resample UTC days instead of events, no interval end moves by more than 0.002.
+The independent cascade falls below persistence, and the count-only foundation models match its count error (\Cref{app:protocol}).
+% layout (2026-10-31, page limit): the sentence "We scored several SAGE variants on this test split, so the best gain is optimistic." left the body
+%   text; the caption of fig:ladder, which this paragraph cites, keeps it ("We scored several SAGE variants on the 2025 test split, so the best
+%   gain there is optimistic"), and the abstract keeps "an optimistic best of several variants".
+% src: paper/generated/forecast-facts.json; paper/generated/slow-regime-dayblock.json
+
+\paragraph{The gain lies in what is known at onset.}
+The gain over persistence falls with the horizon: $+0.198$, $+0.121$, $+0.047$ and $+0.016$ at 30\,s, 1, 5 and 15\,min.
+To test what the model knows at onset, we shift its trigger by $-30$\,s, so that it sees only the onset observations.
+It still reaches Jaccard 0.574, against 0.045 for persistence.
+Most of the Jaccard gain therefore comes from what the model knows at onset, not from the early spread of the event.
+It knows the seed ASes, the actor and the topology, and training on large leaks only gives it their typical final size.
+This finding shaped R1 and R2: they score only the ranking of new members, the ASes that join after issue time.
+% round 6 (panel-r6 NEW-4(a), T4; DA #1): the former "This information [present at onset] includes ... the selection by final size"
+%   called the final size onset information. The final size is unknown at onset (paragraph "Task and candidates" and sec:forecast); the model
+%   learns it only through its training split, which holds leaks of at least 200 ASes at 2 h (forecast-facts.json, 692 training events).
+% Round 5 (panel-r5 V2 residual, NEW-5; review-r5 W2): "and the selection by final size" added; the slow regime tunes its threshold on
+%   the training split of large leaks ("Methods" above), R1 and R2 on the mean validation Jaccard over all events (tab:recipe), so the contrast
+%   of the two setups does not isolate the selection.
+%   The issue-time slice (panel-r5 A-R2) is reported under "Secondary metrics" below (tab:slice-persistence), because this paragraph
+%   holds six sentences.
+% src: paper/generated/forecast-facts.json (delta table; trigger shift)
+
+% layout (round 5, page limit): the one-sentence paragraph "Other models" is now the last sentence of "History reaches most of the graph-model gain".
+% layout (round 4, page limit): the paragraph "Other models and regimes" moved unchanged to sections/app-protocol.tex "Other slow-regime models".
+
+\subsection{Retrospective evaluation (R1)}\label{sec:forecast-r1}
+
+\paragraph{Task and metric.}
+R1 forecasts the selected leak candidates of 2025 (\Cref{tab:forecast-setups}).
+Both rules use quantities known only after the event, and R1 has no size threshold.
+Training runs from January to June 2025, validation to August, and the test split holds the \num{3543} events of September to December.
+Events of one actor with consecutive onsets at most 300\,s apart form incidents, and we remove incidents that cross a split boundary.
+The seed ASes are those observed by issue time, and the \emph{new members} are target ASes outside the seeds.
+
+The primary metric is the average precision (AP) of the ranking of candidates over the new members, averaged over events.
+Its denominator includes new members outside the candidate set, which therefore count as never retrieved.
+% layout (round 5, page limit): "Tied scores form an unordered group, and AP is the exact expectation over random orders within each group"
+%   left the body; sections/app-protocol.tex "Metrics" keeps the tie rule.
+AP exists for the \num{2661} events with new members at 30\,s and the \num{2130} at 60\,s.
+\Cref{app:protocol} defines the metrics and gives the configuration, loss, thresholds and history timing (\Cref{tab:recipe}).
+% src: paper/generated/r1-comparisons.json analysis_metadata.eligibility
+% src: incident purge: docs/paper/forecasting-improvement-20261017/MANUSCRIPT-DRAFT-METHODS.md §3.2 "Retrospective 2025 split" (src/bgbench/forecast_protocol.py incident_gap_s = 300, incident_crosses_split_boundary)
+
+\paragraph{Arms and tests.}
+The core is a two-by-two design.
+One factor is message passing over the AS graph, SAGE or none.
+The other is the history feature, on or off.
+All four arms share candidates, features, loss, configuration and selection rule, and each has five training seeds.
+
+Online history, the online variant of the historical baseline, ranks candidates by their participation in completed past events.
+It uses the shared candidates or its native ones, every AS with such participation, and we call the second variant native history.
+% round 6 (panel-r6 S9 / T6, panel-r5 NEW-14): gloss of "native history" (tab:r1 row, sections/09-discussion.tex, "Secondary metrics").
+Ordinary intervals resample training seeds and then UTC-day blocks (121 days), and Holm's procedure~\cite{holm1979} corrects each family.
+R1 counts its 90 failed cells, all of TGN arms, as failures (\Cref{app:protocol}).
+% layout (round 4, page limit): the former sentence "R1 keeps all 1,156 declared cells and counts the 90 failed ones, all TGN cells or their
+%   history sensitivities, as failures" is shortened; sections/app-protocol.tex "Failed arms" keeps the full account (1,156 declared, 90 failed).
+% src: paper/generated/r1-comparisons.json failed_cells (90: R-temporal 10, R-mean 10, R-temporal-order 10, R-delay 40 and R-withhold 20 with parent_arm R-temporal or R-mean)
+
+\begin{table*}[t]
+\caption{R1 results on the selected leak candidates of September--December 2025. Upper: mean AP over eligible events (\num{2661} at 30\,s, \num{2130} at 60\,s), mean over five seeds; coverage (cov.) is the event-macro mean share of new members inside the candidate set, an upper limit of AP. Lower: paired AP differences with ordinary 95\,\% intervals over seeds and day blocks, not simultaneous and not Holm-adjusted, and Holm-adjusted $p$ (C1--C4: family of eight; native: family of two). ${\leq}$: Holm $p$ at the smallest value the bootstrap can give.}
+\label{tab:r1}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}[t]{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{30\,s} & \multicolumn{2}{c}{60\,s} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Arm & AP & cov. & AP & cov. \\
+\midrule
+SAGE, history & 0.212 & 0.834 & 0.200 & 0.844 \\
+SAGE, no history & 0.198 & 0.834 & 0.188 & 0.844 \\
+No message passing (MP), history & 0.194 & 0.834 & 0.184 & 0.844 \\
+No MP, no history & 0.130 & 0.834 & 0.124 & 0.844 \\
+Online history, shared candidates & 0.207 & 0.834 & 0.198 & 0.844 \\
+Online history, native candidates & 0.236 & 1.000 & 0.225 & 0.999 \\
+\bottomrule
+\end{tabular}\hfill
+\begin{tabular}[t]{@{}lcc@{}}
+\toprule
+Contrast (first minus second) & 30\,s: diff.\ [95\,\% CI] ($p$) & 60\,s: diff.\ [95\,\% CI] ($p$) \\
+\midrule
+C1 SAGE vs no MP, both with history & $+0.018$ [$+0.011$, $+0.025$] (${\leq}$.0016) & $+0.017$ [$+0.012$, $+0.022$] (${\leq}$.0016) \\
+C2 SAGE with history vs online history & $+0.005$ [$-0.000$, $+0.011$] (.13) & $+0.002$ [$-0.003$, $+0.008$] (.43) \\
+C3 SAGE: history vs none & $+0.014$ [$+0.008$, $+0.018$] (${\leq}$.0016) & $+0.013$ [$+0.007$, $+0.019$] (${\leq}$.0016) \\
+C4 no MP: history vs none & $+0.063$ [$+0.057$, $+0.070$] (${\leq}$.0016) & $+0.059$ [$+0.053$, $+0.065$] (${\leq}$.0016) \\
+SAGE with history vs native history & $-0.024$ [$-0.031$, $-0.017$] (${\leq}$.0004) & $-0.024$ [$-0.032$, $-0.017$] (${\leq}$.0004) \\
+\bottomrule
+\end{tabular}
+\end{table*}
+% src: paper/generated/r1-arm-levels.json; paper/generated/r1-comparisons.json (C1--C4: Holm over eight, p 0.0016 / 0.1272 / 0.4266;
+%   0.0016 = 8 x 0.0002, the Holm floor of a family of eight, so C1, C3 and C4 print as <= .0016 (round-3 review X5);
+%   native: separate family of two, Holm p <= 0.0004, the bootstrap floor). C2 30 s interval [-0.0003, 0.0107] prints as [-0.000, +0.011].
+
+\paragraph{Message passing and history each add AP}
+SAGE with history reaches a mean AP of 0.212 at 30\,s, and the arm with neither component 0.130 (\Cref{tab:r1}).
+On its own, message passing adds 0.068 at 30\,s, and history adds 0.063 (C4).
+Given the other component, message passing adds 0.018 (C1) and history 0.014 (C3).
+The two components therefore overlap in what they add, and the values at 60\,s are similar.
+The candidates hold 83\,\% of the new members, which caps AP\@.
+% src: r1-arm-levels.json 30 s: sage_off 0.19836 - none_off 0.13046 = 0.0679 (message passing without history; = C1 + C4 - C3 in r1-comparisons.json);
+%   60 s: 0.0635 (MP alone), C4 0.0591, C1 0.0169, C3 0.0126. Round-3 reviews NEW-2 and second reviewer W4: "history helps more" removed.
+
+\paragraph{On the same candidates, we detect no difference.}
+SAGE with history minus online history on the same candidates is $+0.005$ [$-0.000$, $+0.011$] AP at 30\,s and $+0.002$ [$-0.003$, $+0.008$] at 60\,s.
+Holm rejects neither difference, and a non-rejection does not show equivalence.
+
+Online history on its native candidates reaches 0.024 AP more than SAGE with history (Holm $p \leq 0.0004$).
+This compares complete systems, because the primary analysis does not score SAGE on them.
+The two history arms use the same score, and the native one reaches 0.029 [0.026, 0.032] AP more than the shared one (revision analysis).
+% src (round 7, criterion M23(g)): paper/generated/native_vs_shared.json (scripts/paper_native_vs_shared.py; revision analysis,
+%   paired seed and day-block interval, unadjusted) R1 30 s +0.0291 [+0.0263, +0.0325] (printed [0.026, 0.032] from +0.032473); 60 s +0.0266 [+0.0232, +0.0305];
+%   R2 30 s +0.0301 [+0.0253, +0.0353], 60 s +0.0245 [+0.0190, +0.0302].
+Its candidates hold nearly all new members, 0.9996 and 0.9994 in the event-macro mean, against 0.83 and 0.84 for the shared ones.
+They are every AS of an earlier leak, a median of \num{3690} per R1 event at 30\,s against \num{2981} shared candidates.
+This advantage may also reflect a broad library.
+% src (round 5, panel-r5 NEW-12 / R1 B5; review-r5 item 4): median of the per-event field `ranked` in the hash-pinned R1 per-event files
+%   baseline-d30/history-knn-mean_native_d30 (sha256 347a7a98..., pinned in generated/leaker_split.json) and baseline-d30/history-knn-mean_matched_d30
+%   (ff5de65e..., pinned in generated/set_errors.json): native median 3,690 (p10--p90 3,457--3,981), shared 2,981 (2,872--2,996), all 3,543 test
+%   events; at 60 s 3,680 and 2,976. Read-only recomputation on 2026-11-01 (scratchpad analyses/r1/per_event, hashes checked); not yet in a
+%   generated file. Same values as the round-5 reviewer recomputation (panel-r5 NEW-12). R2 records hold no `ranked` field.
+% round 4 (panel-r4 NEW-6): no generated file reports the size of the native candidate set (leaker_split.json, set_errors_r2.json and
+%   r1-arm-levels.json checked 2026-10-31), so "thus" is dropped and the broad-library reading is stated instead. Native candidates:
+%   leaker_split.json same_leaker_baseline_scope.candidates ("all ASes with positive participation in the available library, plus the seeds").
+% src: r1-arm-levels.json online history, native candidates: coverage 1.000 (30 s) / 0.999 (60 s); R2 primary.json strata coverage 1.0
+% src: r1-arm-levels.json online history, native candidates: mean_coverage_ceiling 0.99957 (30 s) / 0.99944 (60 s); shared 0.834 / 0.844;
+%   AP native 0.2357 / shared 0.2066 at 30 s (difference 0.029). r1-comparisons.json C2@30 [-0.0003, 0.0107], C2@60 as in tab:r1.
+
+\paragraph{Repeat leakers (post hoc).}
+In a post hoc analysis, we split the R1 and R2 events by their leaker, the AS that leaks the route (\Cref{app:protocol}).
+A repeat leaker led a completed earlier event of the selected tables, and such leakers hold 84\,\% of the eligible R1 events at 30\,s.
+C2 is $+0.013$ for first-seen and $+0.004$ for repeat leakers, but repeat leakers carry 62\,\% of the C2 of all events.
+The native advantage of history is 0.011 and 0.026.
+Both class differences include zero if we draw leakers and days together, and in R2 even with day blocks.
+% src (round 5, panel-r5 NEW-4(a, b), X4 / R1 B1; review-r5 W2 "reconstructed inputs"): leaker_split.json R1.split["C2@30"]: published
+%   C2 0.005436 = 420 x 0.013051 / 2,661 (0.00206, first-seen) + 2,241 x 0.004009 / 2,661 (0.00338, repeat); repeat share 0.00338 / 0.00544 = 62 %.
+%   repeat_minus_first_seen leaker_x_day: C2@30 [-0.0208, +0.0021], native@30 [-0.0309, +0.0009] (both include zero); every R2 class difference
+%   includes zero under day blocks and leaker x day (tab:leaker-split). The former "the other, first-seen leakers" and the unlabelled point
+%   estimates are replaced. Same-leaker ranking: R1.same_leaker_baseline["30"].released_inputs ... .ap.all 0.072939, leaker_x_day ci95
+%   [0.058895, 0.087974], 2,635 events on the released (reconstructed) seed sets; day blocks [0.0643, 0.0812]. "Selected tables": the library is
+%   the released replay selections (leaker_split.json definitions.library; sections/03-data.tex "Replay selections").
+
+On the reconstructed inputs of \num{2635} R1 events, the same-leaker-first ranking orders the native candidates by same-leaker participation and breaks ties by all earlier events.
+At 30\,s, this ranking adds 0.073 AP to online history, with the interval [0.059, 0.088] if we draw leakers and days together.
+% src: paper/generated/leaker_split.json (scripts/paper_leaker_split.py; confirmatory false): R1.split["C2@30"].history.counts repeat 2,241 of 2,661
+%   (repeat_share 0.8422); C2@30 first_seen 0.013051, repeat 0.004009; native@30 first_seen -0.011184, repeat -0.026009 (tab:leaker-split);
+%   R1.same_leaker_baseline["30"].released_inputs.contrasts.same_leaker_then_history_minus_online_history_native.ap.all 0.072939
+%   [0.064275, 0.081237] (2,635 events, day blocks). Post hoc (designed after the R1 results, round-4 review A2), outside the R1 families,
+%   R1 only (R2.same_leaker_baseline "not computed"); full account and the selected exact-input subset in sections/app-protocol.tex.
+
+\subsection{Prespecified replication (R2)}\label{sec:forecast-newperiod}
+% round 6 (panel-r6 S9 / T6, panel-r5 NEW-14; review-r6 NEW-14): one name for R2, "prespecified replication" (tab:forecast-setups
+%   status, abstract, intro, conclusion); "new period" names only the period and its labels. Former heading "New-period evaluation (R2)".
+\IfFileExists{generated/newperiod-table.tex}{\input{generated/newperiod-table}}{}% float tab:r2
+
+R2 repeats the R1 design on a later period, after we had fitted every model.
+We fixed its arms, tests and outcome wording before the evaluator joined labels to forecasts (\Cref{tab:chronology}).
+
+\paragraph{Data.}
+We split by observed onset in UTC.
+Training covers 1 January 2025 to 1 April 2026, calibration 1 April to 1 September 2026, and evaluation 1 September to 16 October 2026.
+The cohort uses the rules of R1 and holds \num{1311} identified events.
+The \num{1289} events with their observed onset inside the window form the test set, and none of them is censored.
+An earlier baseline run used a May 2026 split, so R2 is no pristine holdout.
+% src: docs/paper/forecasting-improvement-20261017/MANUSCRIPT-DRAFT-METHODS.md; REVIEW-PACKET-NEWPERIOD-INPUTS.md section 1; primary.json censoring (1,289 reference, 0 censored)
+
+\paragraph{Arms and hypotheses.}
+R2 keeps the two-by-two core of R1 at both horizons, with five training seeds, and adds the frozen SAGE model of R1 with history.
+Six contrasts per horizon form the primary Holm family of twelve at family-wise level 0.05.
+C1 to C4 are those of R1, C5 compares the frozen model with online history, and C6 with the refitted model.
+A separate family compares both SAGE models with online history on its native candidates.
+One seed of the frozen model fails at 30\,s, so C5 and C6 at 30\,s enter the family with $p=1$ (\Cref{app:protocol}).
+
+\paragraph{Outcome wording.}
+We named C2 at 30\,s the headline contrast before the label join.
+We call a contrast \emph{resolved} if the half-width of its 95\,\% interval is at most 0.01 AP, a planning target for precision.
+A Holm rejection means that one arm ranks new members better.
+\Cref{tab:r2} calls a resolved non-rejection \emph{bounded}, which means only that its interval is narrow, not that the arms are equivalent.
+
+\paragraph{Protected labels.}
+A custodian computed the R2 labels, and a freeze and a seal fixed every model, threshold, input and forecast by hash.
+The evaluator then joined the labels once for the primary result, and the secondary lanes needed two further disclosed reads (\Cref{app:protocol}).
+% ledger ID of the second read: D-A39 (DEVIATIONS-LEDGER.md; not released, so the ID is no longer printed: round-3 review NEW-9).
+
+\paragraph{Limits of the record.}
+The controls are procedural, and we operated them ourselves.
+The custodian shares the user account of the project, so it is an audited software boundary, not enforced secrecy.
+No third party timestamped the freeze or the seal, and anyone can recompute the labels from public archives.
+The label file existed before we committed the outcome wording, and four failed runs that built it read label records.
+Nobody inspected an outcome, but no external record shows this.
+From 27 October, one AI session approved each step and took scientific decisions together with the authors (\Cref{sec:genai}).
+% src: MASTER-PLAN.md 2026-10-29 08:06Z "G4 LABELS DONE" (labels.json sha 20e3044f...); docs/paper/camera-ready-20261030 (19 % corrupt access-log lines)
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/forecast/r1_r2_contrasts}
+\caption{Paired AP differences, first arm minus second, with ordinary 95\,\% intervals over training seeds and day blocks, in the retrospective evaluation R1 (2025, circles) and the prespecified replication R2 (2026, diamonds), at 30\,s (a) and 60\,s (b). C2-native: SAGE with history minus online history on its native candidates. Filled: Holm rejection within the family of the comparison; open: no rejection.}
+\Description{Forest plot. Every contrast that R1 and R2 share has the same Holm decision in both: message passing and history add AP, SAGE with history and online history on the same candidates show no detected difference, and online history on its native candidates is better. C2 at 60 s changes sign between R1 and R2, from +0.002 to -0.004.}
+\label{fig:r1r2}
+\end{figure}
+
+\paragraph{Primary results.}
+AP exists for the \num{1004} of \num{1289} test events with new members at 30\,s and the 842 at 60\,s.
+Intervals resample training seeds and 45 UTC-day blocks.
+They are ordinary 95\,\% intervals, not simultaneous and not Holm-adjusted, so an interval can exclude zero without a Holm rejection (C6).
+
+For the common AP contrasts, R2 repeats every Holm rejection and every non-rejection of R1, but C2 at 60\,s changes sign (\Cref{tab:r2}, \Cref{fig:r1r2}).
+Estimates agree less: R2 values of C3 at both horizons and of C2 at 60\,s lie outside the R1 intervals.
+
+The headline contrast, C2 at 30\,s, is resolved without a rejection, with $+0.0003$ [$-0.0075$, $+0.0079$].
+We therefore detect no AP difference between SAGE with history and online history on the same candidates, which does not show equivalence.
+At 60\,s, C2 is also resolved without a rejection.
+
+Day blocks do not capture a leaker that recurs on several days.
+A revision analysis also resamples leakers, and no interval of C2 or of the native contrast then changes whether it includes zero (\Cref{tab:actor-bootstrap}).
+Under the conservative two-way draw of leakers and days, C2 in R2 has half-widths of 0.0105 and 0.0108, above the planned 0.01.
+% layout (round 6, page limit): "Leaker blocks alone do not widen the intervals of C2" left the body; tab:actor-bootstrap shows it (half_width_ratio_to_day
+%   .leaker_blocks below). The two-way draw is "mildly conservative" (docstring below).
+% src: paper/generated/actor_bootstrap.json (scripts/paper_actor_bootstrap.py; revision analysis, confirmatory false, p unadjusted):
+%   zero inside / outside unchanged for day_blocks, leaker_blocks and leaker_x_day in every cell (C2 and native, R1 and R2, 30 and 60 s);
+%   R2 C2 half_width.leaker_x_day 0.010517 (30 s) / 0.010808 (60 s); R2 C2@30 leaker_x_day ci95 [-0.0099, +0.0111];
+%   half_width_ratio_to_day.leaker_x_day 1.27--1.47 over all eight cells. Only C2 and the native contrast were re-drawn.
+% src (round 4, panel-r4 NEW-4; second reviewer section 6 "reduce repeated contrast reporting"): actor_bootstrap.json
+%   half_width_ratio_to_day.leaker_blocks C2 1.006 / 1.001 (R1 30 / 60 s), 1.004 / 0.916 (R2), native 0.94 / 0.92 / 0.85 / 0.78;
+%   scripts/paper_actor_bootstrap.py docstring: the two-way (pigeonhole) bootstrap "is known to be mildly conservative".
+%   The R2 C2@60 value -0.0042 [-0.0113, +0.0033] stays in tab:r2 and fig:r1r2 and left this paragraph.
+
+C1, C3 and C4 reject after the Holm correction at both horizons.
+Given the other component, message passing and history again each add 0.01--0.03 AP (C1, C3).
+Online history on its native candidates reaches 0.030 AP more than SAGE with history at 30\,s and 0.029 at 60\,s (Holm $p \leq 0.0008$).
+As in R1, this compares complete systems, and the half-widths of 0.0104 and 0.0106 just miss the planned precision of 0.01.
+% src: R2 vs R1 estimates: facts.json primary_ap vs r1-comparisons.json primary_ap: R2 C3@30 +0.0267 outside R1 [+0.0079, +0.0180], C3@60 +0.0203
+%   outside [+0.0067, +0.0187], C2@60 -0.0042 outside [-0.0033, +0.0078]; C1 and C4 at both horizons and C2@30 inside (round-3 review NEW-11).
+%   R2 C1 +0.0246 / +0.0145, C3 +0.0267 / +0.0203, C4 +0.0660 / +0.0645 (tab:r2; repeated values removed from the prose, second reviewer round 3 item 6).
+%   actor dependence: round-3 review NEW-10 / S2; leaker-block and leaker x day intervals in paper/generated/actor_bootstrap.json (tab:actor-bootstrap).
+% src: docs/paper/newperiod-final-20261030/facts/facts.json (sha 7a8577cf...) from primary.json (sha 849e0645...) via r2_primary_facts.py; paper/generated/newperiod-table.tex
+% src: facts.json primary_projection.comparisons[*].result.blocks = 45, interval "paired_training_seed_and_block_percentile_ordinary_95";
+%   C6@60 ci95 [-0.0149, -0.0011] with holm_p_value 0.122 (not rejected); R1 C2@60 +0.002233 (r1-comparisons.json) vs R2 -0.004189.
+
+% layout (round 6, page limit): the paragraph "Month boundary" (two paragraphs and their src comments) moved to sections/app-protocol.tex,
+%   before "Revision analyses", without its leaker x day sentence, which the second revision analysis there prints; sections/09-discussion.tex points to it.
+
+% layout (round 5, page limit): the paragraph "Magnitudes" (R2 AP levels 0.215 / 0.245 at 30 s and the small/large-event reading) moved
+%   to sections/app-protocol.tex "R2 AP by number of new members", with "In R2" named (panel-r5 NEW-16 / EIC B11).
+% layout (round 4, page limit): the stratum values moved unchanged to sections/app-protocol.tex "R2 AP by number of new members".
+
+\paragraph{Secondary metrics.}
+Precision at ten favours online history over SAGE with history by 0.024 [0.012, 0.036] at 30\,s in R2 (Holm $p=0.0024$), but not in R1 (\Cref{tab:secondary}).
+In a revision analysis at 30\,s, SAGE with history, shared and native history reach a precision at ten of 0.271, 0.270 and 0.270 in R1.
+In R2, they reach 0.271, 0.295 and 0.291.
+The native candidates thus raise AP but not precision at ten.
+% round 5 (review-r5 W2, item 3): "add AP only below rank ten" is removed; equal or lower P@10 does not locate an AP gain, and no AP
+%   decomposition by rank exists.
+Jaccard, on the full target and in the issue-time slice, favours SAGE with history in both periods.
+% src (round 5, panel-r5 NEW-2, EIC B10): generated/secondary-families.tex C2 full target R1 +0.319* / +0.323*, R2 +0.290* / +0.292*;
+%   slice R1 +0.098* / +0.073*, R2 +0.094* / +0.084* (Holm rejections); R2 C5@60 +0.292* and +0.084* as well.
+For Jaccard, learned arms add every candidate above a validation-calibrated threshold, and online history adds its top candidates up to a size estimate (\Cref{tab:recipe}).
+% layout (round 5, page limit): "In C1, C3 and C4, the learned arms differ by less than 0.0003 Jaccard" left the body; tab:secondary shows
+%   these differences (+0.000 and -0.000 in every Jaccard cell of C1, C3 and C4).
+% layout (round 4, page limit): the topic sentence "The prespecified secondary families give a different view (tab:secondary)" is folded into the
+%   P@10 sentence. Absolute P@10 (round-4 NEW-5): paper/generated/set_errors_r2.json results.{R1,R2}.30.arms.{sage_on, online_history,
+%   online_history_native}.ranking.precision_at.10.mean: R1 0.271214 / 0.270425 / 0.270256, R2 0.270677 / 0.294622 / 0.290538 (tab:set-errors-r2).
+%   Native minus shared P@10 (descriptive, p_at_10_native_contrasts): R1 30 s -0.000169 [-0.001348, +0.001066], R2 30 s -0.004084 [-0.007011,
+%   -0.001210]; 60 s -0.000235 / -0.004276. Native minus shared AP +0.029 (R1, r1-arm-levels.json) and +0.030 (R2, 0.2452 - 0.2151,
+%   set_errors_r2.json ranking.average_precision). The native list is not more precise at ten in either period (in R2 it is 0.004 less precise),
+%   so "equally precise" (round-4 wording) is written as "lies below rank ten" only.
+
+In a revision analysis, the set forecast of SAGE with history equals persistence in 94.6\,\% of R1 events at 30\,s and 99.6\,\% at 60\,s (\Cref{tab:set-errors}).
+In R1 and R2, its Jaccard is within 0.0003 of that of persistence, and on the slice its intervals lie between $-0.0028$ and $+0.0014$ (\Cref{tab:set-errors-r2,tab:slice-persistence}).
+% round 6 (panel-r6 NEW-4(b) / X5; review-r6 "within 0.001 is correct for the slice point estimates"): the former "within 0.001 on the
+%   slice" stated point estimates as near-equivalence. slice_vs_persistence.json results.*.*.arms.sage_on.minus_persistence.ci95: lowest end R2 30 s
+%   -0.002793, highest end R1 30 s +0.001387 (that interval, [+0.000255, +0.001387], excludes zero); point estimates |x| <= 0.000837; frozen R2
+%   60 s [-0.000293, +0.000115].
+With the mean size, online history is 0.29--0.32 Jaccard below persistence, and 0.07--0.10 on the slice, about the lead of SAGE with history.
+% src (round 5, panel-r5 A-R2; revision analysis, confirmatory false, not prespecified as a contrast): paper/generated/slice_vs_persistence.json
+%   (scripts/paper_slice_vs_persistence.py, first commit b644cf6b 2026-10-31 17:47 UTC) results.{R1,R2}.{30,60}.arms: sage_on.minus_persistence
+%   R1 +0.000828 [+0.000255, +0.001387] / +0.0000387 [-0.0000922, +0.000170], R2 -0.000837 [-0.002793, +0.000727] / -0.0000119 [-0.000139, +0.0000840];
+%   online_history.minus_persistence R1 -0.0968 / -0.0733, R2 -0.0953 / -0.0837 (0.07--0.10). Published slice C2 (reproduced to 1e-12):
+%   R1 +0.0976 / +0.0733, R2 +0.0944 / +0.0837, so the slice gain of SAGE with history is online history falling below persistence.
+%   "Of its 20 nearest past events" left this sentence for the page limit; sections/app-protocol.tex "Terms" and tab:recipe define the size estimate.
+With the median size, it is 0.07--0.12 below.
+With the mean size, it makes false additions on every event without new members at 30\,s, 48.76 per event in R1 and 52.56 in R2.
+% layout (round 6, page limit): "These events carry 54--69 % of its gap to persistence in R1 and 55--67 % in R2" left the body; sections/app-protocol.tex
+%   "Revision analyses" keeps both values ("Events without new members carry 55 % ... In R1, they carry 54 % and 69 %").
+% src (2026-10-31, round-4 NEW-3; paper/generated/set_errors_r2.json, scripts/paper_set_errors_r2.py): results.{R1,R2}.{30,60}.arms.sage_on.set.
+%   minus_persistence: R1 +0.000177 / +0.0000083, R2 -0.000210 / -0.000082 (all |x| < 0.0003); online_history minus_persistence R1 -0.3186 /
+%   -0.3233, R2 -0.2900 / -0.2919 (0.29--0.32); history_median R1 -0.1160 / -0.0721, R2 -0.1020 / -0.0693 (0.07--0.12); online_history
+%   no_growth_any_share 1.000 at 30 s in R1 (882 events) and R2 (285 events), no_growth_false_mean 48.7596 / 52.5579; gap_decomposition
+%   no_growth_share_of_gap R1 0.5392 / 0.6900, R2 0.5478 / 0.6694. Lead of SAGE with history over online history (mean): C2 full_target_jaccard
+%   0.29--0.32 (facts.json, r1-comparisons.json; tab:history-size). Removed for the page limit, values kept in tab:set-errors and tab:set-errors-r2:
+%   "adds 0.34 ASes per event", "+0.0002 [+0.0001, +0.0003]", "adds 56.75 ASes per event", "0.319 below ... 0.116 below". The R2 values with
+%   intervals are in sections/app-protocol.tex "Revision analyses".
+% src: paper/generated/secondary-families.tex (scripts/paper_secondary_table.py); facts.json p_at_10 C2@30 -0.0239 [-0.0363, -0.0124] Holm 0.0024;
+%   full_target_jaccard C2@30 +0.2898 (R2), +0.319 (R1); C1/C3/C4 within 0.0002 of zero; eligibility 30: events_without_new_members 285.
+% src: set rules: src/bgbench/forecast_train.py calibrate_threshold (validation macro full-target Jaccard, grid 0.01..1.00 plus 1.01, highest threshold on ties);
+%   src/bgbench/forecast_history.py predict_history (k = 20, extent = mean or median final size of the nearest events, seeds plus top-ranked candidates);
+%   PRIMARY-METRIC-REVISION.md §4.3 ("the mean over-adds on small events"; median variant pre-registered, descriptive).
+% src: facts.json primary_projection.analysis_metadata.history_median_vs_mean_jaccard horizons.30: mean_extent_jaccard 0.3814,
+%   median_extent_jaccard 0.5694, C2@30 against median history +0.1018 [0.0886, 0.1155], descriptive_only true;
+%   r1-comparisons.json analysis_metadata.history_median_vs_mean_jaccard horizons.30: 0.3837, 0.5863, C2@30 +0.1162 [0.1087, 0.1234].
+% src: SAGE with history full-target Jaccard, derived (no file holds arm levels for Jaccard): online-history mean-size level + C2 full_target_jaccard:
+%   R1 30 s 0.3837 + 0.3188 = 0.7025, R2 30 s 0.3814 + 0.2898 = 0.6712; cross-check: median level + C2 against median history
+%   (R1 0.5863 + 0.1162 = 0.7025, R2 0.5694 + 0.1018 = 0.6712). Online history has one deterministic seed, so the arm level is exact.
+% src: C1/C3/C4 full_target_jaccard |difference| <= 0.00021 in R1 and R2 (r1-comparisons.json ranking_comparisons; facts.json primary_projection.comparisons).
+%   No R1 or R2 facts file holds a contrast or level of persistence (facts.json and r1-comparisons.json persistence_note: "the comparator only for Jaccard
+%   secondaries", but the families hold C1--C6 only); the R1 level and contrast now come from the per-event files via set_errors.json (below). Development: docs/paper/forecasting-improvement-20261017/PRIMARY-METRIC-REVISION.md §3
+%   ("every arm is within 2e-4 of persistence"); DEGENERATE-FITS-DIAGNOSIS.md (global threshold: 0 to +0.0002). The former sentence
+%   "no learned arm beats persistence as a set forecast on these leaks" had no R1/R2 number and was replaced (round-3 review NEW-3).
+% src: set errors (revision analysis, round-3 review M8; second reviewer W5): paper/generated/set_errors.json (scripts/paper_set_errors.py), R1 at 30 s:
+%   sage_on adds_nothing_share 0.9463 (per seed 0.932--0.967), added_mean 0.339, jaccard 0.70246 vs persistence_jaccard 0.70228,
+%   minus_persistence +0.000177 [+0.0000605, +0.000301]; online_history added_mean 56.75, no_growth_any_share 1.000 of 882 no-growth
+%   events (43,006 false additions), minus_persistence -0.3186 [-0.3323, -0.3034]; history_median minus_persistence -0.1160 [-0.1233, -0.1085].
+%   Lead of SAGE over online history (mean) 0.3188 vs persistence minus online history 0.3186, hence "nearly all".
+%   R2 per-event records hold Jaccard only (no added sets, no persistence Jaccard; set_errors.json r2_missing_fields).
+% src (round 4, 2026-10-31; panel-r4 NEW-3 / X3, X4, X6; review-r4 section 5): 99.6 % = set_errors.json R1.60.sage_on.adds_nothing_share 0.996.
+%   0.116 below persistence: set_errors.json R1.30.history_median.minus_persistence -0.1160 (tab:set-errors caption), not tab:history-size,
+%   whose +0.116 is SAGE minus median history. 54 % / 69 %: share of the persistence-minus-online-history (mean) Jaccard gap carried by events
+%   without new members, 0.1718 of 0.3186 at 30 s and 0.2231 of 0.3233 at 60 s (median size: 52 % / 64 %). Read-only recomputation on
+%   2026-10-31 from the R1 per-event files whose SHA-256 match set_errors.json provenance.R1.per_event_sha256 (baseline-d30 and baseline-d60
+%   history-knn-mean/median_matched; sum over events of jaccard_persist - jaccard, split by new_members == 0, divided by 3,543); the same values
+%   as the round-4 reviewer recomputation (panel-r4 X4). Not yet written by scripts/paper_set_errors.py. "Nearly all of the Jaccard lead
+%   ... comes from these false additions" was too strong and is replaced. Lead of SAGE over online history (mean): C2 full_target_jaccard
+%   0.3188 (30 s) / 0.3234 (60 s) against the gap 0.3186 / 0.3233 (set_errors.json published_reproduced, minus_persistence).
+%   The former sentences "The mean over-adds on small events", "With the median, online history reaches 0.569 instead of 0.381 at 30 s in R2",
+%   "The descriptive lead ... falls to 0.102 [0.089, 0.115]", "SAGE with history itself reaches 0.70 in R1 and 0.67 in R2" and "R1 and R2 hold no
+%   contrast against persistence ..." were replaced by the measured set errors (2026-10-31); those values stay in tab:history-size and tab:set-errors.
+
+\paragraph{The frozen model.}
+At 60\,s, the SAGE model frozen on 2025 minus online history is $-0.013$ AP [$-0.019$, $-0.006$] (C5, Holm $p=0.0024$).
+The frozen minus the refitted SAGE with history is $-0.008$ [$-0.015$, $-0.001$] with Holm $p=0.12$ (C6), resolved without a rejection.
+
+\paragraph{Secondary lanes.}
+Five secondary lanes expand the candidates, use seven of the ten collectors, fix stable peers, shift the input timing, or forecast origin changes.
+Two disclosed re-scorings scored 290 of the 344 secondary roles, without intervals or tests, and each recomputed the primary result identically (\Cref{app:protocol,tab:r2-lanes}).
+Seven of ten collectors lower the recorded full-target Jaccard of SAGE by 0.07 to 0.12 against the fixed ten-collector target.
+The arm without message passing moves by about as much, so this lane measures input sensitivity, not forecast skill or global visibility.
+% src (round 7, criteria M3(b), (c), M14): newperiod-lanes.json reduced_collectors groups (full_reference): SAGE -0.0731..-0.1220, none
+%   -0.0791..-0.1218 (frozen and refit, ris7 and mixed7, 30 and 60 s); timing lane: none and SAGE within 0.003 at every horizon.
+% src: paper/generated/newperiod-lanes.json (D-A39 + D-A40; roles 344 / scored 290 / not scored 54 retained failures; stable 24 of 24 with 3
+%   not-scorable events per horizon; H3 -0.073..-0.122; H1 -0.0006..+0.0003; history |d| < 0.0001); both recomputed primaries identical except
+%   the marker path (primary-recomputed-D-A39.json; D-A40 done.json primary_recomputation_identical_except_marker true);
+%   primary-recomputed-D-A39.json canonically identical to attempt-12 primary.json except the marker path (ledger D-A39 outcome); independent review
+%   (independent reviewer) of the extraction after fixes. Timing-lane horizons are separate fits (table caption).
+% ledger ID of the re-scoring: D-A39 (not printed; round-4 review NEW-7).

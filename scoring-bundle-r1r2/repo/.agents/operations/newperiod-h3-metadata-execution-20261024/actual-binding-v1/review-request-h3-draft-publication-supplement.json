@@ -1,0 +1,3 @@
+{"kind":"review_request_supplement","author":"claude-opus-5-5 f4d75bb1","supplements":"review-request-h3-draft-actual-and-publication.json",
+ "note":"draft FILE sha256 10de2244... (runner compact JSON) != publication draft_sha256. publish() requires review.draft_sha256 == core_metadata.digest(core_metadata.encode(draft)) (sort_keys, indent=2, trailing newline) = 143d62e091f93edf2d6a3609cb68cc23f8d1f2705256ca92cbb20e1ac7f9e953 (author computed; please recompute independently). The finalize plan binds the host draft FILE by its file sha 10de2244 for the finite reader.",
+ "utc":"2026-10-24T10:24:54Z"}

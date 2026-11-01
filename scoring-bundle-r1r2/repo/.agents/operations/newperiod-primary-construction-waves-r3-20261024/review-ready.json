@@ -1,0 +1,18 @@
+{
+  "actual_failure_evidence": {
+    ".agents/operations/newperiod-primary-construction-waves-20261024/actual-binding-v1/actual-seals-v1/wave0-release-execution-v1/intent.json": "ad826454408f51943c56c4035ccbe4dee56f7d6e4ae657130b6fd6a3b4f9fb8b",
+    ".agents/operations/newperiod-primary-construction-waves-20261024/actual-binding-v1/actual-seals-v1/wave0-release-execution-v1/manifest-held.json": "6859b5097f6503906cb4158643e341cc8a196ddbcc98c5eb49e176ff03d84896",
+    ".agents/operations/newperiod-primary-construction-waves-20261024/actual-binding-v1/actual-seals-v1/wave0-release-execution-v1/manifest-held.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".agents/operations/newperiod-primary-construction-waves-20261024/actual-binding-v1/actual-seals-v1/wave0-release-execution-v1/manifest-held.stdout": "a4f763d4b3fb18b6b053a28795fc878f3d9ba740b635af7b86ec0897a5b79c8b"
+  },
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "test_delta.py": "c25827d520c62f28321ffaea34f17a2eef2237cfead2e1bae8a76759635ff5d6",
+    "waves.py": "48f63ad60172e6c91a9a76c8e419bcada7a375824965ba10d54be8434d66b5f5"
+  },
+  "kind": "primary_wave_transport_multiline_scheduler_fix_v1",
+  "predecessor_sha256": "ded90950f8a800d6f182e7de77092e13044a621d11f71b938f5ac596e8f9c273",
+  "scope": "Only physical-line versus anchored JobId scheduler record splitting; original resources, readbacks, batch scripts, fresh space, full64 campaign and release calls unchanged. Prior attempt only manifest-held read; no release-intent or release outputs. Actual recovery requires independent exact approval.",
+  "tests": "8 passed in 0.18s"
+}

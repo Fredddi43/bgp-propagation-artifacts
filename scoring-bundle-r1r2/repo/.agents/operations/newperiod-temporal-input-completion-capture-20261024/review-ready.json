@@ -1,0 +1,14 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "dbd5b59aa7424774a626f0b901b38c4f7bb1f7b5413dc810603e31cd0041cd60",
+    "capture.py": "ed7293cd6f05c68eabda0923323bbf93d4ac56330da30d36c80069ace72dea91",
+    "test_capture.py": "ac445eb387136f8d2c00f34095e9baa22bce5c4c83b34043b0b8536d1045d210"
+  },
+  "original_producer": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-input-audit-pooled-r2-20261024/producer.py",
+    "sha256": "cad788525629591ee67e76376364fb5b32c0c29a5a39621b7a1600397fa492ae"
+  },
+  "tests_passed": 10
+}

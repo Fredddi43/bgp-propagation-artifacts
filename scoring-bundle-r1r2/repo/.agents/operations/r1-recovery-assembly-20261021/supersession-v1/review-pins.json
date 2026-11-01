@@ -1,0 +1,12 @@
+{
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/REVIEW.md": "bbe928ea3f3afcec4a37f62596da866d6a289109ca47f60e53a31e55bd3c2ad2",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/capture_identity.py": "a5b14d3695891bd7f7ed3fa5a20e77b8218cfdf35bca783c9a5fbf630718d0b2",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/launch.py": "23e22de3c9991622f327c580286b3d1ef4ca12f1da2a62fcd45258805756a2c3",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/package/identity.json": "3972de0c6b57ae351e9ea25c08884130efe1117c1d8d21bb5ede053591eba039",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/package/launch.py": "23e22de3c9991622f327c580286b3d1ef4ca12f1da2a62fcd45258805756a2c3",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/package/spec.json": "3bcc66308fba5eaf8aec3d3ba6b7fca634d7a840d1c67263ce1171dfb407c3eb",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/package/stop.py": "22d6479788d99ed6d785722d65b606e6d47b735c2564eac3906d308a39d5b3ba",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/process-identity.json": "3972de0c6b57ae351e9ea25c08884130efe1117c1d8d21bb5ede053591eba039",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/stop.py": "22d6479788d99ed6d785722d65b606e6d47b735c2564eac3906d308a39d5b3ba",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/test_stop.py": "f69a1a4ace007719a4e41e5ed57abcbb22d2e0d8c91d2a65c09448374751b9d7"
+}

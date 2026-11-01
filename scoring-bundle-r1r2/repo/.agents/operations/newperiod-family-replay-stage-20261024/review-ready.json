@@ -1,0 +1,20 @@
+{
+  "actual_scientific_execution_performed": false,
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "REVIEW.md": "c35d297b243691468e5a873b446d826c3645d6b03d1f65b1cd49b16ed4411310",
+    "identify.py": "595dd3818e1539c80035fd98d2d1f3a5f4fa3f1ad53500c51a1e77f7938aa8d2",
+    "original_extract.py": "1f2ef511e81c2314926eafb26e1161bfdb702b00e472073cb7847da6b09a8f95",
+    "pins.json": "d271b6b073081603cddcab0f6702ef8fd49669ad1e78a0545406fd0e9050944b",
+    "replay.py": "0f2984a3ca959e3b355429c8f4aea85f7dee14188548edc599ff593c0f6b7c43",
+    "scientific-pins.json": "b375dca460e6dc6cd5579a1769881ba60d407b2e3aead54fa3600d011aa918e8",
+    "stage.py": "826cf684418adfdc8097c494a11dd65bb46b49ae81c7114c9b6ff1b736c6fa4e",
+    "test_replay.py": "5e7627938db477039a93a9f1adaab98b0dd493545afd799ee1d9e08e959d8efd",
+    "test_stage.py": "9b7397d8d03925a3df02ecb1cd20df0a9018545e5dd04affc4533a9539f9686b"
+  },
+  "kind": "origin_replay_stage_kernel_review_ready_v1",
+  "tests": {
+    "passed": 12,
+    "seconds": 1.24
+  }
+}

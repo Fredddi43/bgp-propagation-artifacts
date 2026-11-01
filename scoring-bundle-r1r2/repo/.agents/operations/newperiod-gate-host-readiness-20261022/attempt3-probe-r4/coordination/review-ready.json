@@ -1,0 +1,8 @@
+{
+ "authorizes_nothing": true,
+ "kind": "review_ready",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt3-probe-r4",
+ "pins_sha256": "71f776c8daef064bfa26606cd83e13657235c2f5cbd5aeec97a70d67bdaa74eb",
+ "requested": "review of the r3 run outcome (d7046ab9) and the r4 delta (post-mkdir check inside cleanup with permission bits; scratch v2); separately, a decision on removing the empty v1 leftover",
+ "scratch_path": "<RESULTS_ROOT>/nobackup/<PROJECT>/newperiod-probe-scratch-v2"
+}

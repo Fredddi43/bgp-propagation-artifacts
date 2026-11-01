@@ -1,0 +1,13 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "build.py": "2bb9c5057912716fa8cf8f62e1d4a15624572fef528279a1a734ab435feb74a5",
+    "execution-v1/request.json": "577b0d8169989e812080f1fb188134da363895b97d7ac983cc6f14f3b59db42c",
+    "execution-v1/source.tar": "e442e850deb6232da24fb626d849f9d213c6064f65647e5a5c82edfe5e8e9380",
+    "execution-v1/stage-command.sh": "15c6f4c0b802a6394e20d0d3f2e757a9ced16a611d5d71e95e345cc303ffd045",
+    "test_build.py": "28ba4982aa7fcdfba166b20a6cbdaa6b5a8dce8fe82b385f5730c8127f109eff"
+  },
+  "scope": "Exact source-only fresh transfer, no runtime mutation or scientific input access",
+  "tests_passed": 3
+}

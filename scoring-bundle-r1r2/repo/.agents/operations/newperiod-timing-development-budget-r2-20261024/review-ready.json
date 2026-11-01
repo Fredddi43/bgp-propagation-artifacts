@@ -1,0 +1,45 @@
+{
+ "actual_execution_authorized": false,
+ "author": {
+  "model": "claude-opus-5-5",
+  "role": "timing implementation author (root assignment)",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_review"
+ },
+ "files": {
+  "REVIEW.md": "721b6fc8c882aa05bdcc44128d371dae0c519fa80de97f505f4c122e9b48fbd2",
+  "assemble.py": "180a074bdc274d00601bed3a5defb136bdf20226b81a296a474f6295e7687004",
+  "assembly.json": "4ee4474f5d5b7e8ed6e7dc2378080088b9f47724bb57a58148fa872c67f43211",
+  "completion-tools-v1/outcome_capture.py": "30ca6377c83a527070933261152fdf502e8d6667d0a9576c0ba7fa9846c2b955",
+  "completion-tools-v1/size_capture.py": "f63c564e6076e9d62ef4414b02a222ed98a626358c975ae2ce1201cc4e9e1875",
+  "completion-tools-v1/test_outcome_capture.py": "b6f14a1cd857741612287afe6040ffe88ecf55bd5f2427781dbe3cc2e8af6032",
+  "completion-tools-v1/test_size_capture.py": "39021b1d1d30c7761d08f25033e5df252fa45b553252203098ef5a4cc1248b16",
+  "old-campaign-disposition.json": "ce24cd476f0c07c01c30fc69c4da7ced50419834f781a03e82cf8a207fe8474c",
+  "resource-proposal.json": "5b77b0f9b33c463da9704ab8e1a62d4803c828934b7577cbacde58e472d7a3e6",
+  "test_assemble.py": "05a465b4386ea1dd2d7b72c701629f3e4bfdadff43994fb712527965a903974a",
+  "test_waves.py": "c66cd98dded7ddb7f426ab7e14f582b32a03a1a11f6899e1cecba9e02c69742c",
+  "waves.py": "78e816557a53bc66e9605e67558b7b93b6ce82e97b5cac5b9546a92b26ab9b86"
+ },
+ "kind": "timing_budget_r2_review_ready_v1",
+ "package_files": 281,
+ "plan_sha256": "06b4b953477f36e0c0f2b66c916a6d8280ddb4d259d8f5028798d66ede4aeddd",
+ "reference_reviews": {
+  "h1_r2_growth_delta": "0d35613f",
+  "h1_r2_package": "99e95118",
+  "timing_frames_assessment": "a62c8d24",
+  "timing_outcome_size_assessment": "393a805f"
+ },
+ "required_independent_reviewer": {
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_implementation"
+ },
+ "review_asks": [
+  "assemble.py relocation/writer-only delta and byte parity",
+  "waves.py delta vs timing waves (and H1 r2 gate port with group binding)",
+  "completion tools delta vs H1 r2 8e1c6d09",
+  "resource proposal sizing/evidence and joint-accounting options",
+  "old campaign disposition"
+ ],
+ "self_review_forbidden": true,
+ "tests": "38 passed (22 waves/assemble + 16 completion tools)"
+}

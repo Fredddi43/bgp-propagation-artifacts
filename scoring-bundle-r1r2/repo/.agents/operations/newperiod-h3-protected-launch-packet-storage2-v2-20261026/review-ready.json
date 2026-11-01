@@ -1,0 +1,49 @@
+{
+  "actual_controls_signed": false,
+  "author_worker": "astra-storage2",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/launch-sequence.json",
+      "sha256": "76879cd96a333cf7e62eae9859dc222430d121da167b8c6c3611bfef8c1f9859"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/root-operating-adoption.DRAFT.json",
+      "sha256": "53aa3a79900ad1ae98dc9c7710034f1146d1b2fba06835db1c48546801dc20b1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/root-stage-once.FALSE-TEMPLATE.json",
+      "sha256": "721fe52bda14a433d74bf2b27784a5bb3e0647a2c36f12e686e01aa24ff09bab"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/scientific-source-approval.FALSE-TEMPLATE.json",
+      "sha256": "e3831f86ae339eb0225a7bfae3b63ec0f9472bce19813c86ba51f6fa5b5f8a6f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/stage-independent-review.FALSE-TEMPLATE.json",
+      "sha256": "d5e76b43d24a3a731b7cab680cc0e880d3ab4a3ac51e9e825663a2fe2bdcb2ef"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/stage-physical-profile.DRAFT.json",
+      "sha256": "f10bf3dc0aafe26bd1905cfa208cb8b3c37b93b4b56a9f6e1c469130fcdead9b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v2-20261026/writer-reconciliation.DRAFT.json",
+      "sha256": "e8091d6dd04fee3c8000a09288db1e851f6ae8fb321a3419283431a3f65fe152"
+    }
+  ],
+  "kind": "AUTHOR_PROTECTED_H3_STAGE_V5_REBOUND_PACKET_REVIEW_READY",
+  "predecessor_packet": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/review-ready.json",
+    "sha256": "b7a061b3d3412c81bc1730fb6d4f3bd532bed6de4e918857b5c3b9a5b28a24aa"
+  },
+  "proof": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/proof.json",
+    "sha256": "85a41292959a8873fa617b0b22b3f2c305f8fad5dd2c3515cfa174c5d7342738"
+  },
+  "reviewer_requested": "sol-h3t2",
+  "stage_successor": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/review-ready.json",
+    "sha256": "d3f5e5e00d2b8500fbf72e83f505eae1f6c4dae6347faba1be35944dc5e62948"
+  }
+}

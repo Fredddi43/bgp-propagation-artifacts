@@ -1,0 +1,41 @@
+ACTUAL ASSESSMENT: vrun_r2 verifier run (approval ab2cc47a)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+Execution chain: VALID.
+  - submit-intent: script 657d47fa (= the approved script), retry false.
+  - submit-result: rc 0, job 52474361.
+  - fetch-sha: sacct "52474361|COMPLETED|0:0|00:08:32||<COMPUTE_NODE>"; host sha256 d2a18c6f.
+  - fetch-request-vrun.json 07317327 names exactly DEST2/out/verify-r1.json at d2a18c6f, tool f19d1066.
+  - Capture: capture-verify-r1.json.gz 38f2fa78 (1676 B, 1 file). The embedded raw re-hashes to d2a18c6f and is
+    byte-identical to evidence/verify-r1.json (2715 B).
+  - One submit, one fetch. No retry. The failed v1 job 52473761 stays preserved.
+
+Findings (verify-r1.json d2a18c6f, kind r1_independent_numerical_verification_v1):
+  - Inputs match the bound anchors:
+      * seal 1cad501a;
+      * ledger 5575ebb3;
+      * spec 134d74fb;
+      * report 049c7a9c;
+      * manifests d30 45865cdf and d60 f885a805;
+      * slice-rules 0291d789;
+      * arm-spec 9a6d36e8.
+  - Rule V1: atol 1e-12, rtol 1e-10. numpy 2.5.2, sample_sum numpy_pairwise. scoring_failures 0.
+  - integrity_exact: 329,615 checks, 0 failed.
+  - independent_recompute: 681 checks, 0 failed (status "run").
+  - population_from_seal_r1: exactly the 22 keyless retro_finals_v1 TSFM cells I enumerated on the real seal
+    (12 tsfm-zeroshot-test-v6b, 10 chronos-adapted-test-v6b). Nothing else is mapped. B4 passed with the
+    resolution rule from finding 46cc418a.
+  - projection_lossless: 0 checks. Structural: verify_r1.py (5ed5229f) declares the kind but has no emitting check
+    (it appears only at lines 16 and 30). This is not a skipped or failed check. It is disclosed, not counted as
+    evidence.
+  - rescored_from_labels: 0 checks, "not performed by this CLI". Class (d) is the separate D-path (adapter rescore,
+    D2).
+  - The output carries only counts, ids and hashes. No label, prediction or per-event value was exported.
+
+VERDICT:
+  - The class (a)/(b) numerical verification of the v11 release (report 049c7a9c) PASSES with 0 failures.
+  - It is independent evidence of integrity and of the recomputed statistics.
+  - R1 is NOT yet a verified release: class (d) label rescoring (D2) is outstanding and blocked on the link census
+    (approval ded3cf10).
+  - No release, no N admission, no manuscript use and no new result claims follow from this assessment alone.
+  - All 1156 statuses and science are unchanged.

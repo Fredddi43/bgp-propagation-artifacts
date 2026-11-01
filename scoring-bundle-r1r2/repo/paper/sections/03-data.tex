@@ -1,0 +1,169 @@
+\section{Data, events and targets}\label{sec:data}
+
+\paragraph{Collectors and archives.}
+We use the same ten public route collectors in every year.
+Seven are RIPE RIS collectors~\cite{ripe_ris}: rrc00 and rrc25 (multihop), rrc01 (London), rrc03 (Amsterdam), rrc12 (Frankfurt), rrc15 (S\~ao Paulo) and rrc20 (Zurich).
+Three are RouteViews collectors~\cite{routeviews}: route-views2, route-views3 and route-views.linx.
+We chose them with a greedy heuristic over the BGPKIT peer statistics of 2024-06-15~\cite{bgpkit}.
+Each step adds the collector with the most full-feed peer ASes not yet covered, 235 in total.
+
+We stream all available update archives from January 2022 to August 2026, 2.8--3.9\,TB per year.
+The R2 forecasts use the same collectors from 1 September to 16 October 2026, and the beacons run to September 2026.
+% src (round 7, criterion M17): R2 window tab:month-boundary header (1 Sep--16 Oct 2026); beacon period sections/07-beacons.tex and
+%   "all 57 months, January 2022 to September 2026" (sections/07-beacons.tex, Trend 2022--2026).
+We keep per-prefix origin changes, new AS adjacencies and path triples.
+% round 6 (panel-r6 S9 / T6, panel-r5 NEW-14): "first-seen" now names only the leaker class of sections/08-forecast.tex.
+% src: docs/paper/corrections-2026-10-16/vp-selection-verification.json; ingestion-manifest-verification.json
+In 2024, a wider RIS pass also found 317 selected origin changes at 11 to 24 collectors, but every replay uses ten.
+% layout (round 5, allowlist revision): this sentence moved here from "Event identification", which now holds the allowlist thresholds (six sentences at most).
+% src (round 5, review-r5 W4.2 / item 4, panel-r5 W6(b) / X9): docs/paper/corrections-2026-10-16/discovery-collector-scope.json
+%   years.2024: stratified 18 + labelled 248 + rpki_invalid_sample 51 = 317 discovered_at_more_than_ten_collectors, max_collectors 24;
+%   every other year 0 and max 10. docs/paper/corrections-2026-10-16/README.md: "The 2024 discovery inventory also includes the wider RIS
+%   beacon-week pass ... All replay footprints use the declared ten collectors." The origin recall comes from the ten pass collectors
+%   (docs/results/2026-09-04-inventory-2024.md, identifier v2 "on the per-prefix tables of the 10 pass collectors").
+
+\paragraph{Event identification.}
+We identify events without human labels.
+An \emph{origin change} starts when the observed origin AS of a prefix changes at two or more collectors within a five-minute bin.
+A retrospective allowlist removes pairs of prefix and new origin that change in many five-minute bins of their calendar month.
+% src (round 4, panel-r4 Q19 / review-r4 W5 "allowlist window"): src/bgbench/identifier2.py dedupe_origin_events (pairs with >= f bins in
+%   the analysis window are whitelisted) and run_events (window = start..end of the call); jobs/inventory_year.sh (one call per calendar month,
+%   --flapper-bins 50); docs/results/2026-09-04-inventory-2024.md ("same-window flapper whitelist F = 50 bins ... month by month"; 7,827 labelled
+%   hijacks whitelisted away in 2024); its monthly recall table equals docs/paper/corrections-2026-10-16/identifier-summary-verification.json
+%   (e.g. January 10--49 peers 0.690, 50+ 0.81 of 177), the source of the printed 2024 recall. docs/paper/corrections-2026-10-16/README.md:
+%   "The origin-change whitelist is computed over the analysis window, rather than being an online rolling detector."
+%   The threshold of the 2022, 2023, 2025 and 2026 runs, "not established" in round 4, is now established (round 5, next src comment).
+A revision analysis finds a threshold of 50 bins in 2024, but 200--221 per month, or 50 per week, in the other years.
+A flat 50 would remove 22.5, 18.4, 9.8 and 14.3\,\% of the selected origin changes of 2022, 2023, 2025 and 2026.
+% src (round 5, panel-r5 NEW-9 / X10, A-R1(a), domain B2; review-r5 W4, item 4): paper/generated/allowlist_by_year.json
+%   (scripts/paper_allowlist_by_year.py, first commit b644cf6b 2026-10-31 17:47 UTC): by_year.2024 {rule flat, thresholds_bins [50]},
+%   by_year.{2022,2023,2025,2026} {rule per_week_scaled, thresholds_bins [200, 214, 221]}, confidence "established" in every year; method
+%   "max over kept pairs of sum(n_bins) < T <= min(bins) of flapper_whitelist.parquet"; years.Y.monthly[*].threshold_bins_applied; run
+%   provenance years.Y.run_notes / run_commits_contain_86b9b4b2 (2024 written 16--24 min before 86b9b4b2, the other years after it).
+%   Flat 50: years.Y.downstream.replay_selected_in_pairs_bins_ge_F_lt_scaled / replay_selection_rows (= eventset_rows = release_eventset_rows):
+%   2022 1,120 / 4,977 = 22.5 %, 2023 2,044 / 11,107 = 18.4 %, 2025 2,496 / 25,579 = 9.8 %, 2026 2,465 / 17,248 = 14.3 %; 2024 0 / 20,959.
+%   The replay selection = catalogue population + label-free stratum (tab:selection: 2022 1,980 + 2,997 = 4,977).
+%   Not printed: the same-run recall at 10--49 peers of the scaled years (validation_threshold_note: 2023 0.78--0.86 over 9 months,
+%   2026 0.81--0.88 over 8 months, none for 2022 and 2025), "not a controlled comparison: label coverage and year differ".
+Monthly recall of the stricter 2024 identifier is 0.66--0.73 against Cloudflare Radar's hijack catalogue~\cite{cloudflare2023hijack,cloudflare_radar_bgp} for events that ten or more of its peers saw.
+% src (round 5): allowlist_by_year.json paper_2024_recall_provenance (recall_10_49_range_2024 [0.662, 0.727]; 12 of 12 pinned evaluation files equal
+%   the flat F = 50 outputs) and validation_threshold_note.same_threshold_as_other_years false: the 2024 recall scores the stricter identifier.
+
+A \emph{route leak} candidate is a path triple $(x, a, b)$ that is new in the current month.
+It must violate valley-freeness under CAIDA's AS relationships~\cite{luckie2013relationships,caida_asrel}, where AS $a$ learns the route from $b$ and exports it to $x$.
+New triples that violate valley-freeness match 8--11\,\% of the Radar leak labels per month in 2024.
+All new triples match 17--22\,\%, in checks at 26 collectors.
+% src (round 5): docs/paper/corrections-2026-10-16/identifier-summary-verification.json months[*].leak.collectors = 26 in all 12 months of 2024.
+The identifier thus misses leaks on reused triples.
+
+We do not analyse withdrawal waves, because only 56 of 301 have the recent reference RIB at all ten collectors that their path loss needs.
+% src: docs/paper/corrections-2026-10-16/identifier-summary-verification.json; withdrawal/withdrawal-baseline-verification.json (50 waves 2024 + 6 in 2025 supported of 301)
+
+\paragraph{Replay selections.}
+The \emph{catalogue population} joins two parts (\Cref{tab:selection}).
+The first holds the identified origin changes that match a Radar label visible at ten or more peers.
+The second is a stratified sample of all identified origin changes.
+Radar labels begin in 2023, so the 2022 set holds the stratified sample only.
+A separate \emph{label-free invalid stratum} holds RPKI-invalid origin changes seen at ten or more peers and three or more collectors, selected without any catalogue label.
+It tests how much the catalogue shapes the invalid class.
+
+The leak selection holds Radar matches seen at three or more collectors plus the largest candidates by message volume.
+Without Radar leak labels, 2022 and 2023 hold the top 396 candidates by collectors and messages.
+\emph{Usable} events have complete archive coverage and two hours of follow-up.
+
+\begin{table}[t]
+\footnotesize
+\centering
+\caption{Replay selections by year: selected candidates and usable events. Cat.: catalogue population (2022: stratified sample only). Str.: label-free invalid stratum. 2026: January to August.}
+\label{tab:selection}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+ & \multicolumn{4}{c}{Origin changes} & \multicolumn{2}{c}{Route leaks} \\
+\cmidrule(lr){2-5}\cmidrule(l){6-7}
+ & cat. & usable & str. & usable & selected & usable \\
+\midrule
+2022 & 1,980 & 1,963 & 2,997 & 2,975 & 396 & 396 \\
+2023 & 8,240 & 8,200 & 2,867 & 2,865 & 396 & 396 \\
+2024 & 18,367 & 18,350 & 2,592 & 2,590 & 1,602 & 1,602 \\
+2025 & 22,933 & 22,921 & 2,646 & 2,630 & 8,437 & 8,412 \\
+2026 & 14,506 & 14,500 & 2,742 & 2,740 & 6,416 & 6,411 \\
+\midrule
+total & 66,026 & 65,934 & 13,844 & 13,800 & 17,247 & 17,217 \\
+\bottomrule
+\end{tabular}
+\end{table}
+% src: paper/generated/propagation-facts.json, summed by script: selected = years.Y.selection.paper_rows / invalid_stratum_rows / leak.selected_events;
+%   usable = years.Y.paper.events / invalid_stratum.events / leak.events (scripts/paper_propagation_tables.py).
+
+\paragraph{RPKI validation.}
+We validate the \emph{new} origin of every replayed origin change under RFC~6811~\cite{rfc6811}.
+We use the ROAs that RIPE NCC archived for that UTC day~\cite{ripe_rpki_archive}, or the nearest earlier archive within one week.
+The archive has no documented snapshot time, so a ROA change on the event day can give the wrong state.
+% src (round 4, panel-r4 Q19, S5 "ROA snapshot time"): src/bgbench/rpki_validate.py roas_for (file of the event's UTC day, else the nearest
+%   earlier day within 7 days); scripts/fetch_roas.py (one roas.csv.xz per TAL and day from https://ftp.ripe.net/rpki/<tal>.tal/YYYY/MM/DD/);
+%   ftp.ripe.net/rpki/README.txt and https://github.com/RIPE-NCC/internet-dataset-descriptions/blob/main/rpki-repo-archive.md (both read
+%   2026-10-31) state no snapshot time; docs/results/2026-09-09-rpki-validity.md caveat ("a ROA created hours after the event, or an event minutes
+%   after a ROA change, can be misclassified"); docs/results/2026-09-15-decix-rs-dumps.md (disagreements with a live validator are archive-timing
+%   artefacts of the daily snapshot).
+% round 5 (panel-r5 NEW-10 / X11, domain B3): "all five trust anchors" is not guaranteed: scripts/fetch_roas.py (TALS ripencc, arin, apnic,
+%   lacnic, afrinic) skips a trust anchor whose daily file returns HTTP 404 and writes the day file from the others; src/bgbench/rpki_validate.py
+%   roas_for falls back to an earlier day only when the whole day file is missing. A missing anchor turns its invalid routes into unknown ones.
+A revision analysis finds AFRINIC missing on 2026-04-04, and one anchor below 90\,\% of its local median size on 46 more days, none in R2.
+% local median: the median of the same trust anchor over the 15 files on each side (scripts/paper_roa_anchor_check.py NEIGHBOURS, SHORT_RATIO).
+These 47 days hold \num{1049} of \num{79870} events, and 12 of them change a label with the anchor of the nearest earlier or later day.
+Both days agree on 3 changes from unknown to invalid, a fourth event changes differently with each, and 8 change with one day only.
+% src (round 6, panel-r6 NEW-6 / X1; review-r6 W3, item 3): roa_anchor_check.json development.revalidation_on_flagged_files:
+%   events_with_any_label_change 12 (sum of by_file[*].events_with_any_label_change); validity_changes_where_earlier_and_later_repairs_agree
+%   {"unknown->invalid": 3}; assessment.new_origin_both_repairs_agree_and_differ {"unknown->invalid": 3}, displaced_origin_both_repairs_agree_and_differ
+%   {"unknown->valid": 3}, stored_unknown_covered_under_both_repairs_but_class_differs 1 (20230804T010049_216.247.106.0-24_9009: earlier
+%   [valid, invalid], later [invalid, valid]), one_repair_only_adjacent_day_roa_change 8 (3 + 1 + 8 = 12). The former "at most 3 labels" was not a
+%   bound, and "in full" claimed more than a presence and row-count check shows: the printed text now names presence (tal_absent) and the
+%   short-file criterion (rows < 0.9 x local median, "usual size") only. No claim of complete archives.
+% src (round 5, panel-r5 A-R1(b), NEW-10 / X11): paper/generated/roa_anchor_check.json (scripts/paper_roa_anchor_check.py, first commit
+%   b644cf6b 2026-10-31 17:47 UTC). development.files_with_tal_absent_from_first_used_file {"2026-04-04": ["afrinic"]}; ripe_archive_check
+%   ripe_header_only ["2026-04-04 afrinic"] (empty in RIPE's own archive), stored_equals_ripe 47 of 47; event_days.days_resolving_to_flagged_file 47
+%   (tal_absent 1, short 46: tal_0.5_to_0.9_of_local_median 40 + tal_below_0.5 6; "short" = rows < 0.9 x median of that TAL in the +-15 neighbouring
+%   files; summary: "one anchor at 10%-85% of its usual size"); events_on_flagged_files.events 1,049; events 79,870 (reproduction: 79,870 identical).
+%   "At most 3": revalidation_on_flagged_files.validity_changes_where_earlier_and_later_repairs_agree {"unknown->invalid": 3} (repair = the affected
+%   TAL from the nearest unflagged earlier or later file within 7 days); summary_detail "Stored valid or invalid labels that change under both
+%   repairs: none"; the 8 changes under one repair only are ROA churn on the adjacent day (assessment.one_repair_only_adjacent_day_roa_change).
+%   "None in R2": newperiod.files_flagged {} and calendar_r2_window (45 days 2026-09-01..2026-10-15, all own unflagged files); all 47 new-period
+%   files complete; 224,466 new-period labels reproduced exactly. The 6 fallback days (2023-06-24, 2023-07-14..17, 2026-06-13) are absent from
+%   RIPE's archive for all five anchors (fallback_days_absent_at_ripe_for_all_tals), so the one-week fallback covers them.
+
+Of the invalid events, 98--99\,\% are \texttt{invalid\_asn}, where no covering ROA names the new origin.
+The others are \texttt{invalid\_length}, where the prefix exceeds the maxLength of a ROA for the origin.
+We also validate the \emph{displaced} origin.
+An invalid origin that displaces a valid one is an \emph{outward} change.
+Its \emph{return} is the first identified event that restores the previous origin of the prefix within 24\,h (\Cref{sec:recovery}).
+% src: paper/generated/propagation-facts.json (invalid_asn 8,354 / 8,492 in 2024 and 8,818 / 8,898 in 2025)
+
+\paragraph{Replay and targets.}
+We replay the window of each event and rebuild its anomalous announcements.
+For an origin change, these carry the prefix with the new origin.
+For a leak, their path runs through the new triple.
+The onset $t_0$ is the first observation of an anomalous route at any collector.
+The replay counts a route that a session reset or table transfer sends again like any other announcement.
+% src (round 4, panel-r4 Q19 "session churn and table transfers"; review-r4 W5 "peer/session churn"): src/bgbench/replay_day.py and
+%   src/bgbench/replay.py keep every announcement of the event prefix in the window and have no session-reset or table-dump handling;
+%   src/bgbench/prefix_events.py compares each announcement with the previous origin of the same peer and prefix on the same collector-day.
+%   The only reset hook (src/bgbench/forecast_signals.py reset_peer, "never infer it") belongs to the online trigger, which no reported result uses.
+
+The \textbf{membership} set $\set{T}$ holds every AS on an anomalous path from a collector peer to the actor by $t_0+T$.
+The actor is the new origin or the leaker.
+For leaks we drop the hops beyond the leaker towards the origin.
+The set accumulates: an AS stays in it once observed.
+
+\paragraph{Persistence floor.}
+Persistence forecasts that the set seen at horizon \Dl is the final set.
+Its Jaccard with the two-hour set, $\Jac(\set{\Dl},\set{2h})$, is the \floor.
+Because $\set{\Dl}\subseteq\set{2h}$, the floor equals $|\set{\Dl}|/|\set{2h}|$, the share of the two-hour set already visible at \Dl.
+We use $\Dl=30$\,s unless we say otherwise.
+
+This is close to the p90 collector delay of announcements, 26\,s (median 2\,s), which we measured with the RIS routing beacons~\cite{ripe_ris_routing_beacons} in June 2024.
+Withdrawals reach the collectors later, with a median of 97\,s and a p90 of 270\,s.
+It also equals the eBGP minimum route advertisement interval that RFC~4271 suggests~\cite{rfc4271}.
+The 30-s floor can therefore partly reflect export timing at collector peers.
+We report floors on the test split of the forecast experiments, September to December of each year (June to August in 2026).
+% src: docs/paper/corrections-2026-10-16/beacon-delay/summary.json (announcement delay p50 2 s, p90 26 s)

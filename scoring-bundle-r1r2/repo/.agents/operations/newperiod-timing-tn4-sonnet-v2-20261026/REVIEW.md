@@ -1,0 +1,37 @@
+# T-N4 v2 (sonnet) — per-horizon successor (sol-final decision N4_all_four_seals)
+
+v1 (`../newperiod-timing-tn4-sonnet-v1-20261026`) is untouched; v1 REVIEW.md still maps the checklist, storage and findings N4-F2..F7. This dir supersedes only the all-four coupling. Nothing issued/staged/run. `tests.txt`: 36 tests pass (`.venv` python).
+
+## What changed (successor package delta = 7 files, `package-delta.json`)
+v1's 6 files plus `wave_contract.py`; `kernel/timing.py` gains one new plan kind and nothing else.
+1. `kernel/timing.py` `manifest()` (4 lines): accepts `newperiod_timing_protected_manifest_horizon_v1` = {kind, horizon, timing_cohort, staging, development_tables, development_manifest}; requires `only_horizon == plan.horizon` (the group's own horizon) and uses only that sealed manifest. The legacy all-four plan still works and still refuses with "All four sealed timing manifests required". `entry.py` is unchanged (it only reads staging/tables/timing_cohort from the plan). No null/placeholder seal is representable: `tn4_lib.fill_horizon_plan` refuses `TN4_HSLOT_PENDING_D<h>` / `_REFS_` / `_PATH_`.
+2. `wave_contract.authorization` (1 line + canonical check): optional `request.admitted_groups`; default stays all four. The reviewed original still refuses a 12-job subgroup (tested).
+3. `release_once_tn4.py`: its admitted-groups equality follows `request.admitted_groups`.
+Both private horizon adaptations, Rule A, corrected cohort, helper relocation and ROOT SSH are as in v1.
+
+## Subgroup chains (same chain, run in order)
+- Subgroup 1 `d10__d5` is FULLY BOUND NOW: `manifest-plan-d5.json`, `manifest-plan-d10.json` (per-horizon plans from BOUND seals 800a24a5 / 55a3c615), `bound-d10__d5/` (successor package + `plan.json` + 12 job scripts via the reviewed `build_package.bind`; `subgroup-d5-d10.plan-ref.json` holds the plan ref). d300/d900 are `state: planned` in that plan (controller.groups requirement), complete inventory preserved. Waves ordinals 0..17.
+- Subgroup 2 `d300__d900`: `subgroup-d300-d900.PENDING.json`; same binder once the seals exist (tested with synthetic bound slots); ordinals 18..35. No retroactive change to subgroup 1.
+- `campaign-inventory.json`: all four horizons listed; `g1_unblocked=false`; `tn4_lib.require_g1` refuses `TN4_G1_REQUIRES_ALL_FOUR` unless every horizon has an accepted seal, accepted construction chain AND input gate (tested for ({5,10}), ({5,10,300}), ({10,300,900}), none, and a single missing gate). Roles stay 40/unfilled, fits not authorized. The `core_fit` integration gate is not required for construction (sol-final N4_development_gate).
+
+## Byte-identity proof (`test_per_horizon_construction_is_byte_identical_to_all_four_path_for_each_horizon`)
+The package's real `timing.manifest` runs with fakes only for the original custodian: for each of 5, 10, 300, 900 the all-four plan and the per-horizon plan give (a) byte-identical `custodian-construction-d<h>.json`, (b) identical arguments to the original `construction_manifest` (only that horizon's dev manifest, same rows/history/staging), (c) `.sources.json` and `timing-construction.json` equal except the `plan` reference (they must name different plan files). Refusals tested: wrong horizon, no only_horizon, extra keys, other kind, legacy partial plan.
+Limit: the fake does not reproduce the scientific construction itself; byte-identity is of the wrapper's inputs/outputs because the scientific call and its arguments are shown identical.
+
+## Coordination with the operator author
+`../newperiod-timing-tn4-operator-sonnet-v1-20261026` (common.py, make_request.py, operate_tn4.py, remote_wave.py, tn4_gate.py, gate_once.py; in progress, not reviewed) pins the **v1** package (`common.py: TN4=...tn4-sonnet-v1`). It must rebind to v2 and consume: `bound-d10__d5/plan.json` (+ later d300__d900), `request[admitted_groups]`, `release_once_tn4.py`. Recorded in `operator-reuse.json sibling_operator_author`. Its stage/submit/capture/gate gaps (v1 N4-F3/F5) stay with that author.
+
+## Still open (unchanged)
+V44 does not fund build/export (v1 storage.json; sol-final TN4-RESOURCE-1: borrowed H1 shape is not an admitted bound; per-wave live/physical/operational + cumulative retained and ALL custody appends incl. entry/original.log_read must be re-derived, no H1 retirement credit assumed); d300/d900 seals; operators/gates; independent review of the 7-file successor and the bound d5/d10 plan.
+
+## Storage re-derived from measurements (supersedes v1 `storage.json` and the borrowed H1 146 GiB shape; sol-final TN4-RESOURCE-1)
+`storage-row-spec.json` (generator `tn4_lib.storage_spec`, tested). Read-only `du -sB1` (allocated, st_blocks basis) and `--apparent-size` on <BATCH_HOST>:
+- d5 chain: 18,194,560,512 B allocated (64 build shards 18,189,586,432; apparent 138.4 GB; 27,198 files; max file 107 MB). d10: 18,402,432,512 B (builds 18,397,450,240; apparent 140.3 GB; max file 199 MB). Assembly 2.27 MB, audits ~2 MB. d300 PARTIAL: 32 shard dirs, 10,840,140,288 B (31 complete shards 341 MB each; shard 27 failed with a .pt of exactly 536,870,912 B = the 512 MiB FSIZE of that run, so the cohort build must keep the 2 GiB per-file cap). Apparent/allocated ~7.6x (compressed/sparse), so allocated is the only valid basis.
+- Population: development 13,096 events (accepted d5/d10 audit summaries; 64 shards = 204.6 events/shard); cohort 1,124 events over 32 shards = 35.1 events/shard. Allocated bytes per event: d5 1,388,942; d10 1,404,814; d300 1,667,611; d900 UNMEASURED = d300 x 1.25 = 2,084,514. Export/master/assemble from the accepted primary d30 chain of the same 1,124-event population (core export 1,861,772,800 B allocated, scaled by build-rate ratio to d10; master 6.79 MB; assembled 26.3 MB).
+- **Per horizon (raw -> row with 2x margin)**: d5 3.44 -> 6.88 GB; d10 3.48 -> 6.96 GB; d300 4.12 -> 8.25 GB; d900 5.14 -> 10.29 GB.
+- **Per wave, peak concurrent (2x margin + 512 MiB writer temp per writer)**, d10: build wave of 8 = 5.08 GB (8 shards x 49.3 MB x2 + 4 GiB temp), export 4.26 GB, assemble 0.59, master 0.55, audit 0.54, manifest 2 MiB; max over d5/d10 = 5.08 GB, over d300/d900 = 6.06 GB.
+- **Row spec**: d5/d10 now: retained 13.84 GB + live-wave peak 5.08 GB + controls 64 MiB; d300/d900 later: retained 18.54 GB + live peak 6.06 GB + controls 64 MiB. No deletion/H1 retirement credit assumed.
+- **V44**: row `protected_timing_current_wave` 10 GiB covers the measured live peak but not retained outputs plus live peak (13.84+5.08 > 10.74 GB), and does NOT satisfy `wave_contract.admit` as coded (logical caps need 68.5 GiB). Option B (needs independent review, not authored): a wave_contract successor admitting measured allocated peaks with the existing census STOP. Free headroom above V44 minimum was 49.3 GB (2026-10-26), so the measured rows (<= 24 GB) are fundable without H1 retirement.
+- **Fail-closed caps**: 2 GiB per build file / 512 MiB others (runner RLIMIT_FSIZE + reviewed writer allowance), overshoot refuses; retained logical maxima 132 GiB/group are caps, not reservations.
+- **Custody appends** (all, not only scope records): entry/original.log_read 78 calls per group (manifest 7, build 64, assemble 1, master 2, export 2, audit 2) x <=2 KiB + runner scope 37 tasks x 2 roles x 64 KiB = 4.9 MB per group, 20.0 MB for four groups; log EOF 1,526,065,393 + 20.0 MB is far below 2 GiB-64 MiB; hard FSIZE 2 GiB exceeds the log EOF.
+- Unmeasured/assumed: d900 rate, per-horizon export rate, record size (log body not read).

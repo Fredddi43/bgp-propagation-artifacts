@@ -1,0 +1,19 @@
+{
+ "dir": "<REPO>/.agents/operations/newperiod-h1-development-budget-r3-20261025/base-graph-ref-diagnostic-v1",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "exports": "histogram of predicate tuples {absolute, normalized, exists, leaf_symlink, regular, canonical, location, target_location, symlink_ancestor} with counts. location/target/ancestor are FIXED named roots (sealed-core-v1 | newperiod-development-v1 | forecasting-20261017 | <PROJECT>-models | <PROJECT_STORAGE> | <PROJECT_STORAGE> | INET) + \":root\"/\":under\", or other / not-absolute. Plus events count, raw-predicate true/false counts, stat error type names with counts, directories checked. No path, component, depth, event id, sha or manifest value.",
+ "files": {
+  "d2.py": "0f1d7ade7406902af73e754b0f1894646b9f4a97e87226d21e5db046a3883177",
+  "mutation-proof.txt": "48198e08019ae3555aa75acd2fc0939fae1aa2b591a56d9e89d89a497c84542a",
+  "request.json": "128bb59acfc8d52af03a9c2b445048e1fb0e70714964cc4c6eebec3e279958d5",
+  "test_d2.py": "ca8ed984eeed6b98fd8bd7924c3a424b20d16829977c17c80479ccb620afc3bb"
+ },
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<d2.py 0f1d7ade>'\" < request.json (once; operator_step records in fresh sibling base-graph-ref-diagnostic-execution-v1)",
+ "kind": "h1_base_graph_reference_diagnostic_review_ready_v1",
+ "limits": "system python3.12 -I -S -B; AS 2 GiB; alarm 300 s; output <= 64 KiB; stdin <= 16 KiB; events <= 100,000; writes nothing but the custody record",
+ "reads": "after ONE custody record: only the pinned manifest (exact path + sha 74ff724e, <= 128 MiB, stable O_NOFOLLOW read). Per events[].graph_path: isabs, normpath, lexists, lstat, stat, realpath, lstat of ancestor dirs (cached). No graph file is opened (tested).",
+ "scope_note": "base refs only (the proven failing call). Expanded r3 refs not read; they would only matter after a base fix.",
+ "tests": "10 pass (cwd repo root); 6/6 mutations caught (mutation-proof.txt)",
+ "why": "D1 v2 proved raw():39 fails on row[\"base\"] = base manifest sealed-core-v1/development-newperiod-v1-d30.json (74ff724e) graph_path, verbatim. D2 tells which sub-predicate fails and where (named roots)."
+}

@@ -1,0 +1,15 @@
+{
+ "approval_claimed": false,
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "frozen": "no edits while under review",
+ "kind": "newperiod_gate_host_readiness_revision_v2_review_ready_v1",
+ "pins": {
+  "path": ".agents/operations/newperiod-gate-host-readiness-20261022/revision-v2/pins.json",
+  "sha256": "7cbdf2ffb2c3899aefaf4042a19166f958c91e702c95f03feb59a70448457d17"
+ },
+ "review_md_sha256": "20c02e496d784700c014fc46f243e66f8f27335c66109c325f98ac4c94a7bffb",
+ "reviewer_session": "<SESSION_ID>"
+}

@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/REVIEW.md",
+      "sha256": "d82bcb6827e37b83e75a1af9bd10bc0d152429803073b7e76fa48e2fb7e78526"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/audit.py",
+      "sha256": "d6466d717b16f2b394dd3e9ef7ff4ba7b11ab562c3306b4af691a277bcac5dca"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/author-control-scan.json",
+      "sha256": "5077e29a3a60af8881f577f639b6ce9636358719fdcb0eb985e028f4753d47bd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/control_scan.py",
+      "sha256": "27ca457df11f15c607c953427d313b879fb06fb90a43afbc1c740f932e9c7098"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/diagnosis.json",
+      "sha256": "432b3542ad7bbbf9f251e744e195e683410f2f629efccf3d39b581a621594d43"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/once_operator.py",
+      "sha256": "53fe96a70ce5a9f116892c7f28f1fad5c5cffa75d93a4a6d3eb51acfd5757f31"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/prepare.py",
+      "sha256": "074f5b4ccb54ba277785ac3758138c2624eb97f854f5e95b603bb7effd201523"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/remote-command.txt",
+      "sha256": "df72dcbbf3e6bcfa1935824aa3c44dd830c441b22b19e044eeb16d13be4d2d3f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/request.json",
+      "sha256": "0797f5fe00b27cb3ed8628282b2243b8ebcd1b68a388c22e4f1a9d1cec757ed6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/root-authority.TEMPLATE.json",
+      "sha256": "491414dd0d325dd018f9a6a3d7e493f1e101b6f73ccff12e15d55ffdd82db4e2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/runtime-admission.TEMPLATE.json",
+      "sha256": "0268de7ee6048d540c17a348bad1faa277270ad091e958ab3a9f75e605db74fd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/worker.py",
+      "sha256": "2efb4ab6a94c0a5c12225b2a402ad0ddb07ba83a79374acc74a9e0c1723f78e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/test_audit.py",
+      "sha256": "ca19f8082914da9c674d29f8bc33ef193105c2f85e4c64a2e52a5b27774d1756"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/test_v4.py",
+      "sha256": "d7298d9e802ce79bf444970e2c380b4b41dffee06709dca57c0ab8a53abc2f37"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/tests.stderr",
+      "sha256": "dc778c87713f0a61dccc960d94267a021ce4629d6a301550865e988199a4cd9f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/wrapper.py",
+      "sha256": "9b27bd2a60757c2c7a446dceed38213cbbf0954205cdc4a66a4bc98c3ca20b77"
+    }
+  ],
+  "author": "astra-g1a",
+  "author_session": "<SESSION_ID>",
+  "dual32_authorized": false,
+  "execution_authorized": false,
+  "full400_singleR2_preserved": true,
+  "kind": "STABLE_SCIENTIFIC_AUDIT_V4_REVIEW_READY",
+  "private_payload_reads": 0,
+  "remote_actions": 0,
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/request.json",
+    "sha256": "0797f5fe00b27cb3ed8628282b2243b8ebcd1b68a388c22e4f1a9d1cec757ed6"
+  },
+  "reviewer": "sol-g1a",
+  "scope": "scientific-audit-stable-v4",
+  "source32_authorized": false
+}

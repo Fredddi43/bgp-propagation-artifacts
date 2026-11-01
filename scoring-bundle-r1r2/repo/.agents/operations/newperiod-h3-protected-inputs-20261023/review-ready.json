@@ -1,0 +1,18 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "1c6fba09b0bcacfa2a66e20dfe0b3f7431161d9d96ff746e8c73af1617ae6feb",
+    "entry.py": "2fb0c3f384aba9b4382ed705bfb3b6066a08a89fb7f9e3d6861e26c30a1b22ec",
+    "panel.py": "5310cb2b9e1fbae6a19103d8f1eaf5c6e5e2e6e962149546db450591bbb47a66",
+    "test_panel.py": "cff75e5c1a10b3ee389abee1acbcb2707e4b5b1fa0b65b4b65a596f50ca19725",
+    "verify_h3_panel_completeness.py": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0",
+    "verify_h3_panel_features.py": "3529b9800016ec798b463683cdf768ffecad2a0a7b14630a78adeb6c00119f2f"
+  },
+  "kind": "newperiod_h3_protected_inputs_code_candidate_v1",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 15,
+    "seconds": 23.52
+  }
+}

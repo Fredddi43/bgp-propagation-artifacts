@@ -1,0 +1,75 @@
+{
+ "actual_local_partial_dry_run": {
+  "STUB_SUMMARIES": true,
+  "adopted_onsets_changed": 116,
+  "core_events": {
+   "30": 14787,
+   "60": 14787
+  },
+  "excluded_inputs": {
+   "30": 0,
+   "60": 0
+  },
+  "extracts": {
+   "mixed7-d30": {
+    "events": 14787,
+    "extract_bytes": 16779603
+   },
+   "mixed7-d60": {
+    "events": 14787,
+    "extract_bytes": 16847622
+   },
+   "ris7-d30": {
+    "events": 14787,
+    "extract_bytes": 16169027
+   },
+   "ris7-d60": {
+    "events": 14787,
+    "extract_bytes": 16225266
+   }
+  },
+  "h3_prepare_run": false,
+  "kind": "h3_local_partial_dry_run_v1",
+  "legacy_events": 16821,
+  "original_daily_classifications_checked": 473678,
+  "receipt_bytes": 115198115,
+  "receipt_cap_bytes": 134217728,
+  "seconds": 29.5,
+  "staged_source_reads": false
+ },
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "execution_authorized": false,
+ "files": {
+  "REVIEW.md": "cd0999c673bdeb4e9dab3e42b333844e58d9e0e73b9ea261954cfb4d63f964b4",
+  "actual-local-v1/collector-inventory.json": "61adc1b32343cd18f145d8599bef8b635fe45c7d91a02d546a0603d67da4e46e",
+  "actual-local-v1/kernel-plan.json": "4791f41fc42c4560117d24105ac794da3e8f6e9f861901eded03733d5fef61f2",
+  "actual-local-v1/known-metadata.json": "6a7adc73abe87806423c445afd3c80a8da27d6b4d47197844da4770c64a8a280",
+  "actual-local-v1/local-partial-dry-run.json": "874ad2b0c21a52a51673b07b9c7df1b42735ff23798e6ac32cfb9a097bbfc5e0",
+  "actual-local-v1/prepare.py": "51b489ad6e332a724404db86d443c6451c65738105f7c3a1d84f8856f068fd56",
+  "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+  "core_metadata.py": "cc45d828994efd49d7188f25c5d64287249aca4a62fab6e72fb5c3c6bf955f20",
+  "coverage.py": "0ea072cca69fcaab6759f19e2c1dacab1b9eceb2aaac2c4607f8115c2d542de7",
+  "h3.py": "b578690b87a279fd7f99f6d71d74837d56bba49fbb3e6b034f4a351d3dcedc37",
+  "history.py": "7c946614b1630e5f9ed1665182b64f8a911f41d61e1c616dd3ca8301fe7729b2",
+  "original_guard.py": "7d2b8e3dde2e0c78d02ac23fb5f6c79ea3577f1166b84ff7636e8eddc8e4ef5f",
+  "publish.py": "97af2711bce3ab59c70e94b49a87faa9a6e58f202b5fe3d7e4518e3439dcb02c",
+  "source_io.py": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0",
+  "test_publish.py": "2aa760e2d68ce63b6d72dd465f82c7158b025b7dd7782f37093e3082379735ff"
+ },
+ "identical_to": {
+  "bound_selector.py": "same",
+  "core_metadata.py": "same",
+  "coverage.py": "newperiod-h3-coverage-reconciliation-20261024/r4",
+  "h3.py": "newperiod-variant-construction-binding-20261024",
+  "history.py": "same",
+  "original_guard.py": "newperiod-timing-metadata-publication-20261024",
+  "source_io.py": "same"
+ },
+ "kind": "h3_metadata_publication_kernel_review_ready_v1",
+ "supersedes_ready_sha256": "bb63e0d7502f37065fcae0526d3371438c1ade26e8c96936f16867511c02c6ca",
+ "tests": "5 passed (~11 s)",
+ "utc": "2026-10-24T08:51:15.725212+00:00"
+}

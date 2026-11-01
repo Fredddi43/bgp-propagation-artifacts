@@ -1,0 +1,66 @@
+{
+  "author": "astra-final",
+  "canonical_encoding": "operate.encoded: json.dumps(sort_keys=True,indent=2,allow_nan=False)+newline; worker.encoded identical. Remote envelope transports exact local request/review/authority text and all hashes are checked by worker.controls before protected access.",
+  "capacity": "Pending issued phase row; prior v32 cannot pass check.2GiB row serialfirst diagnostic, actual outputs<=1MiB; constructor separately reviewed.",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/operate.py",
+      "sha256": "d7e471a571f1609f421f57a972e4251c64c1d1ed7cb7faf759588ef000b8f836"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/worker.py",
+      "sha256": "c75499d7522cea765dbbe2df692f9f73765d59dbe4b7ff3d278e51459c4c95f3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/diagnostic.py",
+      "sha256": "bb33cc240d70758c1fcef5b3de9a8f7afcf7019b35b409a68813df2fe9eea832"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/build.py",
+      "sha256": "69c2a69258e9d7ff5f4e0d165371b2390e833fa9cceff3e4770514e9186e4a61"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/test_once.py",
+      "sha256": "5c8eb55d2b3abba1b5733632dda6ae5046b22663d39a8b45c245b0bdc2c12ce6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/request.json",
+      "sha256": "3f039417ac846800ec68c240636e4ddceb21619f56f122fad3e0dc25c6c398a0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/root-authority-template.json",
+      "sha256": "c9960144caa07ec92c24857616c8d52bed3f2bd8c381bdbb052cf9b47f095d64"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/independent-review-template.json",
+      "sha256": "1f5ba2878a1793cf73993fdc73b7aaced57a38c4a6b05d8cc149978d7af6680c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/validation.json",
+      "sha256": "4e7b9f4f72379ee59a6e8f2d2d9b33513bad08ff33bb2a2075ae525aa1a5117e"
+    }
+  ],
+  "kind": "AUTHOR_H3_COVERAGE_DIAGNOSTIC_ONCE_REVIEW",
+  "minimal_go_shape": {
+    "authority": {
+      "path": "FINAL_ABSOLUTE_PATH",
+      "sha256": "FINAL_SHA256"
+    },
+    "kind": "ROOT_GO_H3_COVERAGE_DIAGNOSTIC_ASTRA_V1_ONCE",
+    "to": "astra-final",
+    "utc": "ROOT_TIME"
+  },
+  "reviewer": "sol-final",
+  "root_commands": [
+    ".venv/bin/python -B <REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/operate.py check --authority FINAL",
+    ".venv/bin/python -B <REPO>/.agents/operations/newperiod-h3-coverage-diagnostic-once-astra-v1-20261025/operate.py run --authority FINAL"
+  ],
+  "root_fill": [
+    "Independent exact request review with passed:true and reviewer session",
+    "Current issued joint phase with dedicated2GiB protected_h3_coverage_metadata row and exact minima",
+    "Hash-bound root acknowledged six-directory controls snapshot",
+    "Fresh false template filled passed:true; real operate.py check --authority FINAL before minimal GO and detached root run"
+  ],
+  "runtime": "Direct <BATCH_HOST> python3 -I -S -B, stdlib only; root launches detached. Bound1CPU affinity,8GiB AS,1800CPU seconds and wallalarm; one stat, one operation, no Slurm calls/no source staging/no second capture."
+}

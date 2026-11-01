@@ -1,0 +1,26 @@
+{
+  "source_sha256": {
+    "scripts/forecast_acquire.py": "215508d49064f3de40e2643f53137b875afe8717c86f3b3ea74bee3a3c6ad8c2",
+    "scripts/forecast_source_inventory.py": "3c19160b156fc96a08d89fdab1aac25ca16ae6cccf6a05cfa10819f76779bfbc",
+    "scripts/forecast_live_capture.py": "0dff3ed8d176359e1998f192ebff51f2c73ea810af8edf2c1aebeeb766bdabb2",
+    "scripts/forecast_continuous_replay.py": "01cee03e72464f6118519bf83c660d6ff8761d2b7ad38c8cff89d389546bd817",
+    "scripts/forecast_mrt_resets.py": "6a71aaa43bf7309596c778214a02be33a8c472628fd10f54167599f2a10da518",
+    "scripts/forecast_state_order.py": "4c1e2f91ef9d450a4f13040f7ec367ed694f9d7a4aa1e96b8585d6bc2d8b417f",
+    "scripts/select_trigger_protocol.py": "39ecc70a3e5d516cb6cdc037c154323dcf77e01643a790d77bea786e001f23d4",
+    "scripts/trigger_feasibility.py": "93a63e58d22c0b12f578f90d2ee21416d57e0fc94b30d249fbbc78a1d8ea7f73",
+    "tests/test_forecast_acquisition.py": "cc5d8ce0ded5a9756681a96f0e08c4a54b8f09d81de3b845b7ad79d4fd078b89",
+    "tests/test_forecast_continuous_replay.py": "ccc2f808324e9e67f187763cf47ccf42377bbf5426305f1443277dbf212f5dce",
+    "tests/test_forecast_mrt_resets.py": "c5f53b02e3d2b0f88b32951355dfda3558f3257efe1f31b1c3122bd172f28a36",
+    "tests/test_forecast_trigger_selection.py": "b7ee377af20c4c8bbbe99082b542ce17b51ee410ecac66fa8739871cf2f3c949",
+    "rust/bgbench-mrt-order/Cargo.toml": "ab6d9edf5913f9906c06a80cd9aa6aee1c21cef6c97b6677fae1d17799b8b700",
+    "rust/bgbench-mrt-order/Cargo.lock": "304ec51f1880d96fc39002b1fe9f9e40bd11eb87027240f9fe00c1c7f445923b",
+    "rust/bgbench-mrt-order/src/main.rs": "1ba8b243de6fb0bb777d994b005788e64e3d06dd44fd1838bf052ffcd3d8f62e",
+    "scripts/forecast_recover_parts.py": "6e3d1b9031909b63d96ed574f1cb4be834da9759f2197c80c30de98d65bfc5c1",
+    "tests/test_forecast_recover_parts.py": "47f9436d88fdd36be446e70386024c251225788f9795a2933a532f6dea979f65"
+  },
+  "focused_tests_passed": 15,
+  "lint_passed": true,
+  "rust_cluster_build_job": 52015466,
+  "rust_parser_binary_sha256": "ccd53bf4335b222a4887f02671f1a6df2f7377abdb7154a0753445bbda2577da",
+  "canonical_panel_inventory_sha256": "52f4a78a15dc32a13b243e41e8d6967a282d61749d6d78719564e47009446b84"
+}

@@ -1,0 +1,24 @@
+{
+  "actual_results_read": false,
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    ".agents/operations/newperiod-paper-projection-20261024/README.md": "ede5ed6acfbad97063b45e66c2fdbbdee056f1a639669898bcfeb03bfcf6250e",
+    ".agents/operations/newperiod-paper-projection-20261024/test_projection.py": "86e450aa94c873445b7e9a93da0252e3fd11733131e588652800b4eb095d528d",
+    "scripts/forecast_full_report_facts.py": "514c82e1ead7ca994345f00dff4578d484163e9e9bb4692082062c0c971104d3",
+    "src/bgbench/forecast_full_report_facts.py": "05931d95a98d284d8510c00d08f67f1a3076cc2eab4ff24873297c44645c9d85"
+  },
+  "independent_review": "pending",
+  "kind": "newperiod_full_report_projection_code_review_v1",
+  "tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q .agents/operations/newperiod-paper-projection-20261024/test_projection.py",
+    "passed": 12,
+    "seconds": 47.47
+  },
+  "unchanged_reference_files": {
+    ".agents/operations/newperiod-single-r2-execution-20261023/runner.py": "a990908d9c0555816c20e1d24b64c1c1cf4d6555af2c0eb871c53df3d0947675",
+    ".agents/operations/newperiod-single-r2-execution-20261023/test_integration.py": "fa2d09e7730b37228e62d11963824221dc6ecdb415ce7d5f8744da0402501759",
+    "src/bgbench/forecast_release_facts.py": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99"
+  }
+}

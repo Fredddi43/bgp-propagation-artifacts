@@ -1,0 +1,18 @@
+{
+ "answers": "reviewer N3 (opus-review-v1/enumeration-actual-and-restore-v2-review.txt): read-only consumer-side proof with the pinned H1 verifier under -I -B",
+ "author_session": "<SESSION_ID>",
+ "author_worker": "/root/opus_implementation",
+ "execution_authorized": false,
+ "files": {
+  "consumer_proof.py": "d900786bce2f0e5146a76af3698bc2b8d4ee42d75c9a7f4f0e75ae3ad0925562",
+  "test_consumer_proof.py": "e2a04bfa094a879e6604ede7d97f40a2640bb7826720ee526726f74016e373a6"
+ },
+ "invocation": "getent hosts <INSTITUTION_HOST> && ssh -o BatchMode=yes <BATCH_HOST> 'exec env -i PATH=/usr/bin:/bin LANG=C.UTF-8 <FORECAST_ROOT>/newperiod-gate-private-v1/venv/bin/python -I -B -' < consumer_proof.py   (once, only after restore-v2 actual passes independent review)",
+ "kind": "placement_consumer_proof_review_ready",
+ "pins": {
+  "deployed_verifier": "20de55b7 (H1 plan.json 3a90cad0 files)",
+  "placement": "838fa32c",
+  "python": "62f0c11a"
+ },
+ "tests": "3 pass: real throwaway venv placement under env -i python -I -B passes and writes nothing; refuses without -B or -I; refuses an extra cache (file set) and a rewritten record (bytes). Directory total 21 pass."
+}

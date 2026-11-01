@@ -1,0 +1,13 @@
+{
+  "kind": "independent_review_request",
+  "author": "/root",
+  "scope": "Historical TSFM reviewer spelling compatibility only; no retry/execution authorization",
+  "bindings": {
+    "src/bgbench/forecast_retrospective_custody.py": "560ef630e9dab2dbab8ff256313ac3e15d9e9a841c0c3bffcffe656a54805dcc",
+    "tests/test_forecast_retrospective_release.py": "ce9272b68ffce12bdc25cde878067ba12bd191cf600298c199c46a41a3984f1b",
+    ".agents/operations/r1-review-identity-compatibility-20261020/diagnosis.json": "28b9efe7ef79d668aad12047f2c2f56b6c84b1af667d2c78a882ad55be1c3832"
+  },
+  "tests": "75 retrospective-release tests PASS; Ruff PASS",
+  "unchanged": "REVIEWER regex; original historical gate/review; prospective schemas; all scientific data/source/runtime and running diagnostic snapshot",
+  "execution_authorized": false
+}

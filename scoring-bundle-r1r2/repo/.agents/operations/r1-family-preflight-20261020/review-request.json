@@ -1,0 +1,18 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    ".agents/operations/r1-family-preflight-20261020/build.py": "398215f7d3674f9efdec5fb1a5fda3365b1266f263a6c1729bdf4c20f3366fdd",
+    ".agents/operations/r1-family-preflight-20261020/capture_readonly.py": "ece3ef2c49690ec62983aa2f0a92bd2bd7e649b675946fbc57d2c0288b98fa9b",
+    ".agents/operations/r1-family-preflight-20261020/families.json": "62410b1a67e53ca3d4af349ff3de213ebc8d6574b64ed35d4549073bb4647bf1",
+    ".agents/operations/r1-family-preflight-20261020/focused-tests.txt": "bad9cee2a011c44896a48446daed615f2c11ce4c4cb04ff01a0666904c57f141",
+    ".agents/operations/r1-family-preflight-20261020/launch.py": "5b5dec7bb6c5ba7b15215854be026d9b8725070925e4ab7f08478b94bbfd6779",
+    ".agents/operations/r1-family-preflight-20261020/preflight.py": "e09f6ca5dc6e8426bf6da69030e6c7ab16204cbb908641ad32edda164881449b",
+    ".agents/operations/r1-family-preflight-20261020/preflight.sbatch": "f12c290c0c6e7eef38205a55e70eea90d349d6ddd231a5c4c2299d19cd3c68f2",
+    ".agents/operations/r1-family-preflight-20261020/readonly-proof.json": "671d1752aae6ff27851fd075b0ccda4f69df990e763d82676378a745ef0b1a80",
+    ".agents/operations/r1-family-preflight-20261020/spec.json": "695ac47dc469996b03c6e17065cad052d339de79c71d0386b9e7d20bd6969ccc",
+    ".agents/operations/r1-family-preflight-20261020/test_preflight.py": "a460208302106a9f671f975bcc063609549e957a85f6fe38798e009b6a20c463",
+    "docs/paper/forecasting-improvement-20261017/REVIEW-PACKET-R1-FAMILY-PREFLIGHT.md": "d4b9eafe731e36d49558c96a3ac820f1a5083cbf48de8a084aa8bf5054ac1e1a"
+  },
+  "kind": "r1_completed_family_provenance_preflight_v1"
+}

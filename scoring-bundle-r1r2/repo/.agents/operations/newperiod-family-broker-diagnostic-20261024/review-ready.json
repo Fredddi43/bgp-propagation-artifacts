@@ -1,0 +1,11 @@
+{
+  "kind": "origin_broker_diagnostic_readiness_v1",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "capture.py": "3a4426a6d8d59e7e5371ba33b8a58c64777f51828d92f1b3870f1ed6926e57e7",
+    "remote-command.txt": "cab6074ad598835e51a0acd46bc7e01a774b796f55801424649dbf6b93707f5e",
+    "request.json": "bef2560f19817f7edc3de4960d31075c337d9e965928606476785c494544e42b",
+    "test_capture.py": "15428885cffd1af0442c9fce88e85113a50a5bdd22e62d450dfe08bed0e3ed4c"
+  },
+  "scope": "One original exact LINX Aug10 broker metadata listing, pre-read custody logging, source-only compile, at most2requests/1MiB each,120s; no download/parse/retry"
+}

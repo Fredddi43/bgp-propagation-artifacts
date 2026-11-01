@@ -1,0 +1,60 @@
+{
+  "complete_access_audit_claim": false,
+  "current_recovery_access": {
+    "limitations": "This is a bounded recovery record, not a complete audit of every prior machine, process, transcript or saved artifact.",
+    "local_records": "/tmp/<PROJECT>-recovery-20261018",
+    "machine": "<WORKSTATION> local repo; <BATCH_HOST> metadata/hashing and approved Slurm jobs",
+    "repository_records": "docs/paper/forecasting-improvement-20261017",
+    "scope": "source, metadata, byte-hash checks, approved development calibration and committed inference; no R1 outcome join or protected2026 payload access"
+  },
+  "evidence": [
+    {
+      "path": "docs/paper/forecasting-improvement-20261017/EXECUTION.md",
+      "sha256": "7cc684a29aa2489f98493b2b92274cd9d3c53c750f16853bbd6c52b041d19f5f"
+    },
+    {
+      "path": "docs/paper/forecasting-improvement-20261017/RESULT-2026-RESTORE.md",
+      "sha256": "81e7349c02db1136f485db3eb43992f8a63219b9fbb3f32d4bb69a55f1ba9839"
+    }
+  ],
+  "kind": "forecast_exposure_ledger",
+  "known_exposures": [
+    {
+      "interpretation": "retrospective analysis; no confirmatory reuse claim",
+      "population": "earlier retrospective 2025 results",
+      "status": "previously_exposed"
+    },
+    {
+      "influence_on_decisions": "unknown; absence of influence is not established",
+      "population": "prior saved May-split 2026 baseline results",
+      "status": "known_saved_results_unknown_influence"
+    },
+    {
+      "evidence": [
+        {
+          "path": "docs/paper/forecasting-improvement-20261017/EXECUTION.md",
+          "sha256": "7cc684a29aa2489f98493b2b92274cd9d3c53c750f16853bbd6c52b041d19f5f"
+        },
+        {
+          "path": "docs/paper/forecasting-improvement-20261017/RESULT-2026-RESTORE.md",
+          "sha256": "81e7349c02db1136f485db3eb43992f8a63219b9fbb3f32d4bb69a55f1ba9839"
+        }
+      ],
+      "interpretation": "quarantine is not proof of a historically pristine holdout",
+      "population": "prior protected-boundary incidents",
+      "retained_records_from_incidents": 0,
+      "status": "recorded_and_quarantined"
+    }
+  ],
+  "newperiod_outcomes_opened_by_current_recovery": false,
+  "pristine_holdout_claim": false,
+  "r1_opened_by_current_campaign": false,
+  "r1_release_authorized": false,
+  "required_updates": [
+    "Bind final R1 marker hash when the authorized opening occurs.",
+    "Record any subsequent exposure and exact scope before using it."
+  ],
+  "schema_version": 1,
+  "status": "draft_requires_review",
+  "test_scoring_authorized": false
+}

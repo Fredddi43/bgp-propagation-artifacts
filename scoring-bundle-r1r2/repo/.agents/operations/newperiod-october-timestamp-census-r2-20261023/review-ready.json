@@ -1,0 +1,36 @@
+{
+  "actual_raw_execution_authorized": false,
+  "binary": {
+    "path": "<REPO>/.agents/operations/newperiod-october-timestamp-census-r2-20261023/strict/target/release/bgbench-mrt-order",
+    "sha256": "667adbc3facc84ec0c2a8df5bae88f350d998421ceb4c2545584ecd1127b6eb0"
+  },
+  "files": {
+    "REVIEW.md": "90029278da1ad05f5d29819d5a91497e9566fbf185dc6e2245335d4c0db36f1c",
+    "build_candidate.py": "ab27e186d8efe88771574bec26afec35c2c38be5c6279e539299941fccf25935",
+    "build_plan.py": "d2d6f64d9e8f9e110a4b2fbc4d655c04665d508346da2b1e53144c7d9cde78d3",
+    "census.py": "ae3a1e206fa6994388756aed0517da12653bd03e8f09d217f87f73e7343146a0",
+    "check.py": "b1ea29b1ecf600045f1b88d50b9383ae1aab338d41fce304133b1cb8a9bde95d",
+    "fixtures.py": "02c0497ef85ec350e2b3a24c509f7c7e193d27498b98ffb2f3b8111a39bfeeb9",
+    "package-v1/census.py": "ae3a1e206fa6994388756aed0517da12653bd03e8f09d217f87f73e7343146a0",
+    "package-v1/check.py": "b1ea29b1ecf600045f1b88d50b9383ae1aab338d41fce304133b1cb8a9bde95d",
+    "package-v1/directory.html": "04eb79f81851394c3149401bd16ea814928f3601e6286f6350adf5af2994277e",
+    "package-v1/fixtures.py": "02c0497ef85ec350e2b3a24c509f7c7e193d27498b98ffb2f3b8111a39bfeeb9",
+    "package-v1/plan.draft.json": "52a5698c3fe9395f2998313d6193f789a9fc46e58d84771ed34c29433266b679",
+    "package-v1/release_source.py": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827",
+    "package-v1/request.json": "a12d6fb16622a82e0ab7c6be142cfef39e9b2a751206e743456bf1a9b97b47f0",
+    "package-v1/shared.py": "50538cc390729343f0bad13c58e902c4112b2be7b149d718054a2a7b6e4cdcec",
+    "package-v1/strict/Cargo.lock": "fe21c9d1035d071c5540295983717b03679e7af1706282a2b9215a42ec464af7",
+    "package-v1/strict/Cargo.toml": "d1a90e8170a8001455f59c7419bd18bb3125c0b48a8f66dcb77da7528af99937",
+    "package-v1/strict/src/main.rs": "d90259911e0f551b4d0e36682abd58a56af46f250cc2ad2287f845e8103b5170",
+    "plan.draft.json": "396527905d4d5e058dffad3fdf39e7ef536ee28da7cffc84c6545ed55d2e67a3",
+    "release_source.py": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827",
+    "shared.py": "50538cc390729343f0bad13c58e902c4112b2be7b149d718054a2a7b6e4cdcec",
+    "strict/Cargo.lock": "fe21c9d1035d071c5540295983717b03679e7af1706282a2b9215a42ec464af7",
+    "strict/Cargo.toml": "d1a90e8170a8001455f59c7419bd18bb3125c0b48a8f66dcb77da7528af99937",
+    "strict/src/main.rs": "d90259911e0f551b4d0e36682abd58a56af46f250cc2ad2287f845e8103b5170",
+    "test_census.py": "b41122f083634b25ac91083bb3422b442fbb94b66bb20a6d348f2ccee5f3d25c"
+  },
+  "independent_review_pending": true,
+  "kind": "october10_linx_timestamp_census_code_candidate_v2",
+  "tests_passed": 28
+}

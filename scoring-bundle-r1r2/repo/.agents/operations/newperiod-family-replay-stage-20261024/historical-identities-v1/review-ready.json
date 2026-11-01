@@ -1,0 +1,10 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "probe.py": "c6bc8e7ae7acc239fc7b57aa4132821d9c482de1761f89a322e713d8fbfc52f2",
+    "request.json": "2d49c4192e607f357bb435017bd083d955034f64579a60859f8d223768464e7b",
+    "test_probe.py": "c59b58b88168fc0390e3de45f03cc3b755102273327b8ca4c4d865927ddebd3e"
+  },
+  "kind": "origin_historical_manifest_identity_ready_v1",
+  "tests_passed": 3
+}

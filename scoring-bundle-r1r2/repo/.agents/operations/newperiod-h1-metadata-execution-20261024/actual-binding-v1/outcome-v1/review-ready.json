@@ -1,0 +1,14 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "c065360e6beb4587409a4efdc1de49f778aded3b0a296f44ee449c513da5c611",
+    "test_capture.py": "68f68d9ce137aac08a0fcc9d8c356177d1482f7590df0bb9dc2782f4e05b1e4d"
+  },
+  "kind": "h1_finalization_outcome_capture_code_review_v1",
+  "pending": [
+    "Actual held job identity and operation approval request bindings",
+    "Exact conditional capture approval after terminal"
+  ],
+  "scope": "Only finalize/attempt/done.json and failed.json;1MiB each,2MiB stdout,64KiB stderr,60s alarm/90s transport; no output references followed",
+  "tests_passed": 6
+}

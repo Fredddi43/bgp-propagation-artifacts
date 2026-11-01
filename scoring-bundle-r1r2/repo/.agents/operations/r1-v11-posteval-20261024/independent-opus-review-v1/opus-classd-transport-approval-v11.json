@@ -1,0 +1,36 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "conditions": [
+  "DEST absent (tool asserts); never the v8/v10 DESTs",
+  "code-only: 5 files 0444, empty out/, stage-complete.json; no venv/eval-root/registry/label path",
+  "on failure preserve records and remote state; no retry"
+ ],
+ "dest": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024",
+ "files": {
+  "code/adapter-r2/adapter.py": "4f1d0e4a53cd0693ce72e2672927440a32dd2c0c3313104ee9c89b305293743a",
+  "code/adapter-r2/run_adapter.py": "33289bba1140662fb01485a45bc240f4c38bc5eaff38b253f10b63b77afd4fc2",
+  "code/verifier-r2/pins.json": "79cb199fbd4c233fa052d9d3c5fb1c25ec8ce123714452d5a5850fb671ada752",
+  "code/verifier-r2/run_verify.py": "c02ecb9f0e4683aec3e7f8e5bc68b5d12934172ecf81c30d1fdb9dbd84f114d9",
+  "code/verifier-r2/verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf"
+ },
+ "kind": "r1_v11_posteval_classd_code_transport_approval_v1",
+ "label_read_authorized": false,
+ "passed": true,
+ "prediction_read_authorized": false,
+ "retention": "DEST stays as written; no cleanup/overwrite authorized",
+ "review_ready_sha256": "955199fefe7e011fe844fff2e49d614bd46e75b72231cd1a8c1d552de690c67b",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "run_authorized": false,
+ "scope": "r1-posteval-classd-code-transport-v1",
+ "steps": [
+  "T1 .venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/classd-host/stage_code.py stage --approval <this> --approval-sha256 <sha>",
+  "T2 same with readback, only after T1 rc 0"
+ ],
+ "tool_sha256": "433ddff6415d9a6f815b199b3cfa30157dfa378b125610b8df331231031ca8fa",
+ "transport_authorized": true,
+ "transport_check_sha256": "3086a692ee3ce03cac81a91aaab350f1e560a1d2d4d57e1c12e5287810aa9a2b"
+}

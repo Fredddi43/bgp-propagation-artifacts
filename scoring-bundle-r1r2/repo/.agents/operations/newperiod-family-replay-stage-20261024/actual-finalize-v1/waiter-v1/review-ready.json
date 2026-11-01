@@ -1,0 +1,9 @@
+{
+  "actual_execution_authorized": false,
+  "files": {
+    "request.json": "20997bdba03f9a042d532ec7a19f240b96fd450c57e1dd4265424ffeccd88f91",
+    "test_wait.py": "9e245e919ad5d71c9255d047bb5887e582b4de5b493ad88f982bf3a5b239a422",
+    "wait.py": "7e1351009e5467ac594364606577d597661c770e922ad79148f26e1e421f1970"
+  },
+  "tests": "13 passed combined; singleton original watcher plus fixed2 receipt outcome; no payload references followed"
+}

@@ -1,0 +1,9 @@
+# Own-origin40 inference transport
+
+Author /root/remaining_work_audit (Codex). Exact fixed binding of independently reviewed learned transport to reviewed own-origin inference f0b68764 / verdict895abaea. No new scheduler, fitter, calibration policy or scientific input read. Original job_script,binding,authority,time_limit,submit_argv,held,remote,readiness,scheduler_script ASTs are unchanged; original stage/readback/held admission/separate release and no-retry behavior preserved.
+
+Forty retained typed roles: original invalid/valid strata×sage/none×30/60×5seeds. Own fit manifest/receipt/review and actual full source/cohort/sampling/dual-master evidence are exact refs and bind the same frozen arm/plan. Actual final count-only descriptive valid branch retains its20cells without prediction jobs; generic upstream failures retain their exact failure chain. The reviewed inference producer independently checks original branch arithmetic before running any arm. This transport does not grant that branch, source admission, completed fit or execution authority.
+
+Fresh family-inference-transport-v1 namespace; original scientific source closure and private producer files copied byte-for-byte. The actual independent arm authority must explicitly refuse cohort selection as well as fit/calibration/score/seal/outcome release/retry. Per-arm source/runtime/model memory and concurrent aggregate CPU/input loads/storage remain inherited exact admissions; no new unmeasured capacity assumption.
+
+11tests8.46s: full40jobs stage→held→admit→separate release with original local fake cluster; complete typed retention and own evidence mutation refusal; descriptive-only valid20 retained with zero jobs; explicit upstream failure; exact producer copy and scheduler AST parity. All local synthetic metadata; no SSH/host mutations or protected reads. Actual stage/own masters/audits/gates/fits/source review/retention/resource approvals remain dependencies.

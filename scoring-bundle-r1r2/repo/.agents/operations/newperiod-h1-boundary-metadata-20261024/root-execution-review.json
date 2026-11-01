@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:51:10.717533+00:00",
+  "ready_sha256": "5a55441e0cbf1fb7d49626ef1b330802b53912695ac466a1ae748a08f7229195",
+  "request_sha256": "123979b6a03edac29ab0135ef1ee2e2943ad8bc2ae657e276dc0f049157d887a",
+  "source_sha256": "87c90418e6a3dfaf48adc1183241c6ce544e0172ef711e71dbc8fe4dae706e2b",
+  "capture_once_authorized": true,
+  "automatic_retry_authorized": false,
+  "scope": "Exact two original boundarymetadata refs independently reconciled flattened fields of acceptedactual dualcoregates;16MiB each/32total/90s/512MiBAS/durablelog/nofollows. No scienceexecution.",
+  "tests": "3passed; original actual gatehashes verified."
+}

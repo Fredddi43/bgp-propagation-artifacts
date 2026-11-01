@@ -1,0 +1,40 @@
+{
+  "author": "astra-final",
+  "execution_authorized": false,
+  "kind": "AUTHOR_C3_MEMORY_RETENTION_PROPOSALS_REVIEW",
+  "memory_admission_template": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-c3-admissions-proposal-astra-v1-20261025/memory-admission.TEMPLATE.json",
+    "sha256": "9c3091832eba7a8f89170a0801df6c08a9610465236288c1d5c0495179f8e27c"
+  },
+  "memory_proposal": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-c3-admissions-proposal-astra-v1-20261025/memory-proposal.json",
+    "sha256": "9dba1c4888132709c7818955efe7d67f4e952c280ba59fb92ed33860db382bae"
+  },
+  "missing": [
+    "Independent substantive memory admission, including historical scalar schema linkage or new reviewed proof.",
+    "Root-issued retention commitment with overlap controls; independent wholeinventory canonical/retention acceptance."
+  ],
+  "no_self_approval": true,
+  "private_inventory_opened": false,
+  "ready_for_actual_c3_request": false,
+  "retention_admission_template": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-c3-admissions-proposal-astra-v1-20261025/retention-admission.TEMPLATE.json",
+    "sha256": "beab383dc9734c82aa290fba904ebfedfd915901dd6a052090f3a7292738af40"
+  },
+  "retention_commitment_template": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-c3-admissions-proposal-astra-v1-20261025/root-retention-commitment.TEMPLATE.json",
+    "sha256": "078bc4f40337f15b2b484b3191066ce0e168839aeaa25a100e7457d6009610f2"
+  },
+  "structure_check": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-c3-admissions-proposal-astra-v1-20261025/structure-check.json",
+    "sha256": "5ba1549e90adc54e99e3dc25d717700204c21f2d3aa63a41fb23bb9dbdbfee05"
+  },
+  "structure_checker": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-c3-admissions-proposal-astra-v1-20261025/structure_check.py",
+    "sha256": "e011300c0dce7fb2f746a2105fe3463dc463761b9bd77a73b9c4ef851d5317cb"
+  },
+  "to": [
+    "root",
+    "sol-final"
+  ]
+}

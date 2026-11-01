@@ -1,0 +1,26 @@
+{
+ "kind": "successor_review_draft",
+ "lane": "agy-lanes-20261027/qwen/q34-origin-par-infer",
+ "date_utc": "2026-10-28",
+ "subject": "In-process fork-pool inference for the origin G2 arms (exact-equivalent successor of the pinned retain runner)",
+ "baseline_runner_sha256": "af8c03eb979851a7fe5caa5207f13cae5d5222a48376363793f56962ee8bbd88",
+ "successor_runner_sha256": "51d6328fac762310970c075fc4f38f6f418977955b8a6e7b4482f577e3c272c8",
+ "new_module": {"reviewed_parallel.py": "e69db57bef98dafa9d75d1af2b37b7f0bca8da2fbddb30572b68627cd085668f"},
+ "fix_round": "2026-10-28 REVIEW-VERDICT fixes: B1 both pools are fork-context ProcessPoolExecutor (SIGKILLed worker -> BrokenProcessPool < 60 s, no partial output; real-kill tests), B2 with no BGBENCH_* the successor delegates to the pinned p.infer verbatim ($SLURM_CPUS_PER_TASK never consulted; unit + full-chain byte test under a faked SLURM env), R2 threads!=1 or 'inherit' with workers>1 raises, R3 strict env parsing (malformed knobs raise, CUSTODY_LOAD only exactly 0/1); see FIXES-DONE.md",
+ "changed_vs_pinned": "runner.py only, 2 hunks verified pinned+diff==successor byte-for-byte: (1) import sys + 1 PINS entry for reviewed_parallel.py; (2) exec+sys.modules registration of reviewed_parallel.py and the single inference call site replaced by an env-gated dispatch (workers=1 with unset env is the pinned inline serial path; BGBENCH_PARALLEL_CUSTODY_LOAD=1 additionally fuses the pinned per-row custody read/sha/validate loop with prediction_rows in the fork workers, parent keeping every pinned pre-fork check). All scientific siblings, pins.json and both pinned test files byte-identical. No change to the frozen predict.py, src/bgbench, plan schema, freeze, custody or bounds.",
+ "exactness": {
+   "claim": "predictions.json bytes identical modulo the per-event wall-clock forward_seconds field (time.perf_counter: differs between ANY two runs of the original pinned code and is the only commitment field that is not a pure function of (model, inputs)); commitment.json identical modulo predictions_sha256; verify_arm passes per run; workers do zero reads/writes/log appends.",
+   "determinism": "row bytes bitwise identical across intra-op thread counts 1/2/4/8/16/32 (fresh env-pinned processes and runtime set_num_threads) on the frozen N-family configuration over big/small/max-node/no-edge/all-seed graph shapes -> 1-thread fork workers are an exact-equivalent parallelization.",
+   "tests": ["test_parallel_equivalence.py: original vs successor-inline vs successor-pool(4 workers, 1 thread) vs successor-fused(4 workers) vs successor-UNSET-under-faked-SLURM_CPUS_PER_TASK=8 vs original-at-cpus=32 vs fused-32-worker byte gate on a shared 6-event and 500-event realistic-shape fixture (real fit, real custody export/gate/freeze/verify) — passed", "tests/test_fixes.py (fix round): real-SIGKILL worker-death tests at the pool and infer levels (<60 s, BrokenProcessPool, no partial output), env-unset+fake-SLURM delegation to p.infer, threads>1/inherit refusal with workers>1, strict knob parsing; 36 passed", "pinned suite (test_inference.py + test_retain_population.py, unchanged bytes) executed against the mirrored successor: 20 passed (see REPORT.md)"]
+ },
+ "performance": {
+  "measured": "500-event stress (16-core box): pinned serial 65.6 s vs successor pool(W=4) 25.5 s vs fused(W=4) 21.2 s; fused verified at W=1..32 (RSS ~0.3-0.6 GiB/worker, also removes q30's payload-residency memory risk); pinned serial parent tail measured profiler-free (validated_rows 2.9 ms/row, verify re-hash 313 MiB/s) = 25-35 min at 135k rows",
+  "projection": "valid arm 135,088 events: W=16 ~53 min likely; W=32 ~42 min likely / ~64 min worst-case q30 profile; invalid arm 14,004 events ~5-15 min at W>=8. Recommend --cpus-per-task=32..64, BGBENCH_PARALLEL_WORKERS=$SLURM_CPUS_PER_TASK, BGBENCH_PARALLEL_CUSTODY_LOAD=1, inputs pre-staged locally (q36)"
+ },
+ "root_actions_if_adopted": [
+   "place successor/ at .agents/operations/newperiod-origin-inference-r3-par-20261028/ (name at root's discretion)",
+   "update g2r2/templates/history-stable-origin pins: g2templates.py runner_dir origin dir + PINNED[origin][runner] + templates/origin.json spec_arm.runner {path,sha256}; re-run make_g2_plan/validate_g2_plan",
+   "stage the new sibling runners/reviewed_parallel.py beside origin-runner.py on the cluster",
+   "regenerate plans/specs (approval runner_sha256 is derived automatically from the spec by g2_exec.py:97-98)"
+ ]
+}

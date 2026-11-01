@@ -1,0 +1,9 @@
+Operational scratch correction only; NOT A FROZEN EXECUTION PACKAGE.
+
+The original H3 wrapper reserves512MiB for its first scratch file against256MiB total scratch. This refuses before any write. Immutable source_io.Sources.read already bounds/hash-checks each source to64MiB, and immutable replay_task writes exactly3 such values, sequentially, then removes them.
+
+New output_budget.py uses an explicit scratch_file_bytes reservation. Before switching reservation units it finishes the previous active file under its own cap. Scratch completion checks its own64MiB cap; ordinary file cap remains512MiB. Original hook/removal/dirfd implementation is byte-identical. derive.job_delta adds one budget constructor keyword from the plan source limit. The science, read guards, graph cap, tensor values and temporary-file lifetime are unchanged.
+
+21 local synthetic tests PASS; no production runs, no remote calls, no actual graph/manifest/gate/label reads. Tiny scaled fixtures reproduce the original failure and exercise boundaries, cleanup and refusal. Oversize scratch detection at finish does not itself prevent an arbitrary malicious writer from exceeding the scratch reservation: safety relies on the fixed, bounded Sources.read -> direct write path, which remains byte-identical and must be included in independent review.
+
+Remaining gates: independent assembly acceptance; independent corrective source review; fresh sibling v5 freeze and full delta review; allocated-basis output/control admission; exact stage-held once operator, current phase binding and root once. No self-approval. Original H3 audit jobs remain held. No edits to old v4 code or packages.

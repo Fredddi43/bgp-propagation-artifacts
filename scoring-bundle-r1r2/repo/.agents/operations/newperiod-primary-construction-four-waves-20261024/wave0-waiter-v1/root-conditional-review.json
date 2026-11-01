@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:55:17.877846+00:00",
+  "ready_sha256": "34869d215f7aeecb7cf74b9d201a774de8661a8afbd4ba20f62a00b2d0f2848a",
+  "source_files": {
+    "request.json": "208777cdc53c3e9f0fbc049c491b264fddccb3be8c1c19bcb0f1ef56d4eaece2",
+    "wait.py": "883d33cf1273662e4ac670131ddb33b32f2abb31da890d2fe98bedb69bbcc57b"
+  },
+  "automatic_retry_authorized": false,
+  "waiter_start_once_authorized": true,
+  "conditions": [
+    "Start onlyafter successfulfirst16release; exactrootpane/session identity confirmed; scheduleronly."
+  ]
+}

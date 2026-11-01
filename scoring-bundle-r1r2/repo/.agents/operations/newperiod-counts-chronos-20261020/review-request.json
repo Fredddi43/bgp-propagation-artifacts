@@ -1,0 +1,42 @@
+{
+  "author": "/root/temporal_guard_recovery",
+  "author_aliases": [
+    "root",
+    "/root",
+    "temporal_guard_recovery",
+    "/root/temporal_guard_recovery",
+    "history_recovery",
+    "/root/history_recovery"
+  ],
+  "kind": "newperiod_counts_chronos_code_review_request_v1",
+  "packet": {
+    "path": "<REPO>/.agents/operations/newperiod-counts-chronos-20261020/REVIEW-PACKET.md",
+    "sha256": "1c7b6dcdd3f333ec3fe13c9ad5f09d70630f816378f2b3639eca533e0f314009"
+  },
+  "pins": {
+    "path": "<REPO>/.agents/operations/newperiod-counts-chronos-20261020/pins.json",
+    "sha256": "254b7c968d3ba74025856f962e8c30f83261d81aaa591405e174f736d3de52cf"
+  },
+  "requested_verdict": {
+    "actual_data_access_authorized": false,
+    "execution_authorized": false,
+    "n_unseal_authorized": false,
+    "passed": "independent reviewer decides",
+    "pins_sha256": "254b7c968d3ba74025856f962e8c30f83261d81aaa591405e174f736d3de52cf",
+    "prediction_authorized": false,
+    "protected2026_authorized": false,
+    "r1_release_authorized": false,
+    "retry_authorized": false,
+    "reviewer_agent": "required separate agent",
+    "scope": "code-only",
+    "spec_sha256": "87ce5f40416319d557005e19967682f31358e5705465b4a8a215ee53f3c1a056",
+    "staging_authorized": false,
+    "submission_authorized": false,
+    "training_authorized": false
+  },
+  "scope": "code-only N count preparation and five fixed Chronos fits",
+  "spec": {
+    "path": "<REPO>/.agents/operations/newperiod-counts-chronos-20261020/spec.json",
+    "sha256": "87ce5f40416319d557005e19967682f31358e5705465b4a8a215ee53f3c1a056"
+  }
+}

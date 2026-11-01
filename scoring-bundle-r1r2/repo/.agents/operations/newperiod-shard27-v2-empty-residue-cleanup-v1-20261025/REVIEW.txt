@@ -1,0 +1,20 @@
+Separate exact empty v2 residue cleanup packet, not part of probe v3.
+V2 local receipts show rc1 at own private directory after exclusive mkdir, no stdout,
+STOPPED identity null/files empty. This is metadata failure evidence, not actual
+remote stat proof that the directory remains empty. Reviewer must independently
+accept the failed actual and pin seven evidence files before cleanup admission.
+Root must attest v2 remote creation has terminated and timing builds remain stopped.
+The operator consumes a fresh once record and issues two bounded fixed-source calls:
+inspect the single known directory; then rmdir only after the exact receipt binds
+parent dev/inode and directory dev/inode/uid/gid/mode/ctime/mtime. Both calls validate
+canonical existing base, exact NFS export, <USER>, own private expected-group dir,
+and emptiness with at most one scandir entry. No children opened or unlinked.
+The rmdir kernel check refuses late nonempty entries. Unexpected replacement,
+permissions, identity, ownership, controls, phase, transport, or deadlines stops
+without retry or subsequent cleanup. Cleanup capacity does not depend on free-space
+floors because it writes no payload; exclusive18GiB row+64MiB control allowance is
+retained. Fixed180s local deadline; request expiry and SIGALRM remotely. NFS syscall
+completion can be late; STOPPED is not proof of remote termination.
+52 tests passed; exact real CLI in-memory fixture preflight passed; false templates
+stay false. No real authority, SSH, protected input or remote mutation performed.
+Independent actual cleanup acceptance remains necessary. S27-V2-1 remains open.

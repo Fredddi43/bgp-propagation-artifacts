@@ -1,0 +1,39 @@
+{
+  "author": "astra-h3t",
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/REVIEW.md",
+      "sha256": "017a5af01ebb33a23f79df89c76412477992f1c272308f2939ae2847a4f2db26"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/capture.py",
+      "sha256": "ad6b250cf6011d4e95c7c3ddbc7bc2985442fb704673291a554b55034167eeb2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/message_categories.py",
+      "sha256": "215e8a54baf71d85ee0ed5f10b4088841eb0ffea7f9f1529f4529b03e26119b2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/operate.py",
+      "sha256": "5e0cb4d458d8106921ef87d0eb8a758ae9a834f09e66e4504f873a87c79edf7e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/request.json",
+      "sha256": "d83c98d021d74f4b141e153804b7bf5f84843e4cc63d12a1c00da173d1f6cd4b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/root-authority-template.json",
+      "sha256": "0a61e344cfcfd1c4490bce93420450949956df8591da7b0f66f9b83487810d5d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/static-categories.json",
+      "sha256": "e2cbcdf254ab2d05d8a68f53a259157c5d0aa82168b5593eb779cc21d2a1e17e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-diagnostic-v1-20261025/test_capture.py",
+      "sha256": "f9f6f08306a4c452653b1f4f754d15e2aa34d7ff633e78a9b2e4a34dc3c7d7f7"
+    }
+  ],
+  "tests": "6passed;1137staticliteral mappings exercised",
+  "execution_authorized": false
+}

@@ -1,0 +1,7 @@
+{
+ "approval_claimed": false,
+ "kind": "paper_f1_protocol_timeline_r2_review_ready",
+ "pins_sha256": "b7bd0a05607508bb1e02b3ab6f68e5fb9a73f24931cb940a699caddc74788463",
+ "reviewer_session": "<SESSION_ID>",
+ "scope": "delta review of F1-F4 fixes (diff-r1-r2-f1_timeline.py.diff, rendered SVG/PDF, README caption)"
+}

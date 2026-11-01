@@ -1,0 +1,276 @@
+{
+  "kind": "INDEPENDENT_SUPPLEMENTAL_SHARD27_COMBINED_CGROUP_DESIGN_REVIEW_AND_STATUS",
+  "utc": "2026-10-25T13:46:03.550424+00:00",
+  "reviewer": "sol-h3t",
+  "reviewer_role": "independent supplemental reviewer, newly spawned /root/sol_h3t",
+  "reviewer_worker": "/root/sol_h3t",
+  "reviewer_model": "Inherited Codex model; exact model slug not exposed by session interface or spawn result",
+  "reviewer_thread_id": "<SESSION_ID>",
+  "reviewer_session_id": "<SESSION_ID>",
+  "distinct_from_author": true,
+  "historical_reviewer_session_adoption": false,
+  "historical_session_not_impersonated": "<SESSION_ID>",
+  "to": [
+    "root",
+    "astra-v28",
+    "sol-h3t"
+  ],
+  "verdict": "ANALYSIS_AND_CONDITIONAL_ARITHMETIC_ACCEPTED_ALLOCATION_ADMISSION_BLOCKED",
+  "analysis_accepted": true,
+  "passed": false,
+  "closes_S27_V2_1": false,
+  "source_approved": false,
+  "resource_admission": false,
+  "execution_authorized": false,
+  "authority_issued": false,
+  "ruling": "The existing 8 GiB logical writer guard and per-file allowance form a useful global model, but accepted metadata observations do not establish its future all-times allocation premise. Dirty serialized bytes are already inside the logical budget. A cgroup-plus-bandwidth watchdog does not close S27-V2-1 on the supplied evidence; current 128 GiB scheduler memory would also make a naive additive model exceed the dedicated 18 GiB row.",
+  "checks": [
+    "Verified 18 distinct author/reference/capture/verdict pins; independently decoded all three accepted local stat captures without opening any recorded target path. Capture path and SHA match the independent storage acceptance pins.",
+    "Independently recomputed every per-capture regular and .pt count, logical/allocated sum, positive excess, allowance violation count, directory count/allocation and recorded device; all author arithmetic matches. Recomputed all six scenario rows.",
+    "Read original Budget.reserve/finish_active and successor source stat collector/fences. Full next-file 2 GiB reservation supports tracked sequential 8 GiB cumulative logical cap; it is not successful-completion proof or a bound for bypass writes. Both unconditional allocation entrypoint fences remain present.",
+    "Verified current issued v34 hash and dedicated provisional 18 GiB row, plus source and plan memory request 131072 MiB. No current controller configuration, actual hard-memory limit or writer cgroup membership evidence is supplied.",
+    "Read current ROOT-/AUTHOR-/REVIEWER- inventory and relevant shard27 instructions. Latest shard27 request remains combined cgroup design; later H3 review requests are a separate live historical reviewer queue and are not taken over by this supplemental review.",
+    "Additional accepted comparable timing-d5/d10 wave2 captures independently rehashed and recomputed: 48 present shards each, all 96 regular-file shard aggregates allocated <= logical. Totals 14226167808/108320415041 B (d5) and 14387423232/109748478949 B (d10). Same index27 census fields match exactly, including 471 regular files each. These are terminal aggregate observations, not per-file vectors or active allocation maxima."
+  ],
+  "receipt_result": {
+    "regular_records": 70836,
+    "maximum_observed_allocated_minus_logical_bytes": 117174,
+    "violations_of_logical_plus_4095": 32369,
+    "violations_of_logical_plus_65535": 107,
+    "violations_of_logical_plus_131072": 0,
+    "corrections_pt_files": 31096,
+    "pt_maximum_positive_excess_bytes": 10725,
+    "interpretation": "Allocated <= logical is not universal, even for .pt files. 128 KiB is an observed additive envelope only, not a demonstrated allocation unit or worst-case bound for future active writes. Recorded dev=80 on capture hosts is not proof of future mount/server configuration. Comparable terminal timing aggregates do support allocated <= logical for all 96 observed shards; this does not contradict individual-file positive excesses in the storage captures or establish an all-times bound."
+  },
+  "scenarios": {
+    "existing_100000_observation_limit_as_if_prospectively_enforced": {
+      "GiB": 22.20703125,
+      "bytes": 23844618240,
+      "excess_bytes": 4517265408
+    },
+    "global_logical_plus_4096_file_allowance_plus_controls": {
+      "GiB": 10.5,
+      "bytes": 11274289152,
+      "remaining_bytes": 8053063680
+    },
+    "maximum_file_count_with_no_other_headroom": 65536,
+    "same_plus_dirty_clipped_to_total_logical_double_counting": {
+      "GiB": 18.5,
+      "bytes": 19864223744,
+      "excess_bytes": 536870912
+    },
+    "same_plus_full_requested_memory": {
+      "GiB": 138.5,
+      "bytes": 148713242624,
+      "excess_bytes": 129385889792
+    },
+    "sample_watchdog_L7_D8_Qhalf_C2": {
+      "controls_bytes": 2147483648,
+      "dirty_allowance_bytes": 8589934592,
+      "file_allowance_bytes": 536870912,
+      "headroom_for_bandwidth_latency_and_other_bytes": 536870912,
+      "sum_bytes": 18790481920,
+      "threshold_bytes": 7516192768
+    }
+  },
+  "no_double_counting": "For an all-times allocation model A <= sum(logical lengths)+N*q+C and an 8 GiB bound that includes the active reservation, buffered/unflushed serialized bytes are already counted. Adding min(M,8 GiB) again is conservative double counting and unnecessary for that global model. This statement does not dismiss separate server metadata, transient extents, preallocation, rewrite/copy amplification or untracked writes; these require their own admitted terms. A threshold watchdog uses a different measured-prefix plus future-growth model and cannot inherit the global proof before its premises are established.",
+  "remaining_blockers": [
+    {
+      "id": "S27-V2-1-filesystem",
+      "required": "Bind an actual finite allocation upper bound to this destination and exact write behavior, including active/preallocated/delayed blocks, directory and backend overhead, or use verified enforcement with bounded overshoot. Existing accepted stat receipts alone do not bound unseen/transient peaks. A universally hard quota is not the only acceptable mechanism."
+    },
+    {
+      "id": "S27-V2-1-entry-controls",
+      "required": "Implement and review prospective file/entry creation limits and all controls/log/partial/error-write bounds. 4096 is proposed, not enforced; the existing 100000 observation ceiling is not pre-admission. Account for directory st_blocks omitted by current file_stats and for every byte outside the logical writer guard. With q=128 KiB and C=2 GiB, 4096 files conditionally yield 10.5 GiB, while 100000 yield 22.20703125 GiB."
+    },
+    {
+      "id": "S27-V2-1-cgroup-watchdog",
+      "required": "If watchdog overshoot is used for admission, prove actual cgroup configuration/membership, its finite allowance including any transient excess, a worst-case NFS allocation rate or write quantum, bounded observation staleness and effective stop delay, in-flight/server pending allocations and all writer cessation. An observed throughput average is not a worst-case burst cap; SIGSTOP intent is not confirmed completion/cancellation. Current M=128 GiB additive case is 138.5 GiB before bandwidth; L=7 GiB,D=8 GiB,q*N=0.5 GiB,C=2 GiB leaves only 0.5 GiB for all rate/delay/other effects."
+    },
+    {
+      "id": "source-and-execution-gates",
+      "required": "Keep current fence. Any replacement source/operator and tests, current phase/resource bindings, six-directory control acknowledgment, fresh df/custody, exact independent source review and ROOT once authority remain separately required. No retry, omission of selected events, original-output mutation or downstream release is admitted."
+    }
+  ],
+  "precision_notes": [
+    "Analysis calls the captures quiescent observations. These metadata receipts are snapshots; this review does not independently establish quiescence or peak-write coverage. Read that phrase as snapshots with no active-peak guarantee. It does not alter the blocked conclusion.",
+    "General Linux documentation supports memory accounting of page cache but permits temporary memory.max overage. Its filesystem-specific cgroup writeback list omits NFS; this does not establish that NFS page cache is uncharged. Slurm memory request is not sufficient evidence of enforced cgroup limits."
+  ],
+  "references": [
+    {
+      "url": "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+      "sections": [
+        "Memory",
+        "memory.max",
+        "Writeback"
+      ],
+      "scope": "General documentation verified through web tool; not host evidence."
+    },
+    {
+      "url": "https://slurm.schedmd.com/cgroup.conf.html",
+      "sections": [
+        "ConstrainRAMSpace",
+        "AllowedRAMSpace"
+      ],
+      "scope": "General configuration semantics verified through web tool; not host evidence."
+    }
+  ],
+  "pins": [
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/AUTHOR-astra-v28-SHARD27-CGROUP-COMBINED-DESIGN-REVIEW.json",
+      "sha256": "4cf30b8dca1073bbd48c741861644c7ca3d1a8e6e5e88bb9b12509bb0cd4f2f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-design-v1-20261025/analysis.json",
+      "sha256": "929ed4733d8f33e3b320fa768a2f56192e80c99390e033b94a7609d4b1dea1ee"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-design-v1-20261025/receipt-arithmetic.json",
+      "sha256": "8b9e3b214fc13e14883d9b14b10d93b0ad2fdf840f467165f32f56166c181162"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-review-sol-h3t-v1-20261025/verify.py",
+      "sha256": "3f5b9ae685b3c7792b9c51faaf10165c12106d82278f017840a064532e379673"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-review-sol-h3t-v1-20261025/verification.json",
+      "sha256": "bd01fd16c283b8b926e029896c6a4eae3d5c4f2a00df4daecebeed41603989f3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-review-sol-h3t-v1-20261025/board-scan.json",
+      "sha256": "63a47777e70f6d0be88a7c6573cac4e3f511e87fa4837169bd443fd335764575"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-design-v1-20261025/timing-receipt-supplement.json",
+      "sha256": "02275e1fd7c5b0406e185d830af9ac8a284e8f7dac09181eb557e9e17af23d75"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-TIMING-WAVES1-2-METADATA-ACCEPTED.json",
+      "sha256": "6aa11ac1643aa66b6a723caf66f61bf3b7a40cc7ea61c7c78bdac05237301c39"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-v28-execution-20261025/chain/timing-d5-wave2-capture/size.stdout",
+      "sha256": "031ca2e08b8fe822141ed6f0d0920cf681dcc9c0a1ccc28ec326eb996d573b22"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-TIMING-D10-WAVES1-2-AND-V31-NOTES.json",
+      "sha256": "8ebdc810fd0aab859be6f0de628f71398c5350dfaf79a2470fa3228080169d85"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-generic-v30-execution-20261025/chain/timing-d10-wave2-capture/size.stdout",
+      "sha256": "a1ba019a3885ba353d511092c7b44788c4b4d89c87b3cb266387f35bf5b56bf9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-review-sol-h3t-v1-20261025/timing-verification.json",
+      "sha256": "244cc57e3cc05847426f86e6ad6ba16bb510de48f10e7d217809dcd5890650ae"
+    }
+  ],
+  "status": "ASSIGNED SHARD27 SUPPLEMENTAL REVIEW COMPLETE; BLOCKED ON FINITE DESTINATION ALLOCATION/ENFORCEMENT AND EXACT SOURCE/ADMISSION EVIDENCE; STATUS POSTED AND EXITING PER USER.",
+  "remote_cluster_actions": 0,
+  "scientific_payload_reads": 0,
+  "production_source_edits": 0,
+  "author_artifact_edits": 0,
+  "scientific_code_or_tests_run": 0,
+  "local_verification": "Reviewer-only metadata/pin arithmetic Python script passed; no author script or scientific target code executed.",
+  "revision": 2,
+  "prior_review": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-shard27-cgroup-review-sol-h3t-v1-20261025/review.json",
+    "sha256": "4577fbc592520b613b285fef4a83e08322d3491c2b8e0bf707061b0272a001c6"
+  },
+  "comparable_timing_evidence": [
+    {
+      "group": "timing-d5",
+      "present_shards": 48,
+      "logical_bytes": 108320415041,
+      "allocated_bytes": 14226167808,
+      "ratio": 0.13133413311438386,
+      "same_index27": {
+        "directories": 2,
+        "entries": 472,
+        "graphs": {
+          "allocated_bytes": 314765312,
+          "files": 232,
+          "largest_eight_bytes": [
+            67390375,
+            13384131,
+            12094375,
+            12093095,
+            11515623,
+            11502083,
+            11488871,
+            11287975
+          ],
+          "logical_bytes": 2456976398,
+          "maximum_file_bytes": 67390375,
+          "multiple_link_files": 0
+        },
+        "index": 27,
+        "other_regular": {
+          "allocated_bytes": 2694656,
+          "files": 239,
+          "largest_eight_bytes": [
+            4916733,
+            159036,
+            39435,
+            11102,
+            878,
+            846,
+            658,
+            658
+          ],
+          "logical_bytes": 5279489,
+          "maximum_file_bytes": 4916733,
+          "multiple_link_files": 0
+        }
+      },
+      "all_shard_aggregates_allocated_le_logical": true
+    },
+    {
+      "group": "timing-d10",
+      "present_shards": 48,
+      "logical_bytes": 109748478949,
+      "allocated_bytes": 14387423232,
+      "ratio": 0.13109451146640327,
+      "same_index27": {
+        "directories": 2,
+        "entries": 472,
+        "graphs": {
+          "allocated_bytes": 318267392,
+          "files": 232,
+          "largest_eight_bytes": [
+            88326631,
+            14821827,
+            12789223,
+            12305447,
+            11520487,
+            11498371,
+            11488103,
+            11288679
+          ],
+          "logical_bytes": 2495910606,
+          "maximum_file_bytes": 88326631,
+          "multiple_link_files": 0
+        },
+        "index": 27,
+        "other_regular": {
+          "allocated_bytes": 2694656,
+          "files": 239,
+          "largest_eight_bytes": [
+            4916733,
+            159504,
+            39435,
+            11137,
+            880,
+            847,
+            659,
+            659
+          ],
+          "logical_bytes": 5280227,
+          "maximum_file_bytes": 4916733,
+          "multiple_link_files": 0
+        }
+      },
+      "all_shard_aggregates_allocated_le_logical": true
+    }
+  ]
+}

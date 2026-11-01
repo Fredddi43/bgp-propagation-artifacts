@@ -1,0 +1,26 @@
+{
+ "delta_vs_v1": "delta-v1-to-v3.diff (program) + test-delta-v1-to-v3.diff (2 new tests + hash-absence asserts). request.json 5a787930 unchanged.",
+ "dir": "<REPO>/.agents/operations/newperiod-h1-development-budget-r3-20261025/audit-failure-diagnostic-v3",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "exports": "as v1 except: unlisted message -> message_bytes + message_group (opaque index, slot order of first appearance of each distinct unlisted text within this run; not derived from the text); NO message_sha256, NO lines_after_sha256, NO per-slot stderr_sha256; identical_stderr boolean; unlisted_message_groups count.",
+ "files": {
+  "build.py": "293d6fcf8ffae6814150666bd4bf799b9c1ce2586dc3034531202ff67eb480d4",
+  "delta-v1-to-v3.diff": "841615f5f708f942c376a7dd72f8fba4eea2c083fe6e1be3c33a8dd6ff9549cd",
+  "diagnose.py": "c7be27105a6526a7136199fd2b53ba183579e370b8069d5ada2083c39976b3e7",
+  "diagnose_template.py": "46358a3b0b47e4003a2e87132c0838175932f587bcebf71ba6f36d439d2e064d",
+  "mutation-proof.txt": "ef2a409e0a1adace63934a356354211be96aadae2919423d9614c34a57d1ffe8",
+  "request.json": "5a787930f2640d68c407e38a3052274cefdd436af9972fd7532ddbd34175fcec",
+  "test-delta-v1-to-v3.diff": "3e0d657d721c665b684cc9f1b50e9056a6648e520b6ba4ee05db9ca4e3e9d853",
+  "test_diagnose.py": "6500a88612f3a1c7cae17e94c67da65ac0d3b1ad3be7e5a11513fd37d252a08a"
+ },
+ "indices_note": "0-7 only (the slots terminal at M2). Audit 8-31 slots are NOT read; if needed later, a new request with other indices needs its own approval.",
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<diagnose.py c7be2710>'\" < request.json (once; operator_step records in fresh sibling audit-failure-diagnostic-execution-v1)",
+ "kind": "h1_audit_failed_slot_diagnostic_review_ready_v3",
+ "limits": "system python3.12 -I -S -B; AS 2 GiB; alarm 120 s; output <= 256 KiB; writes nothing but the custody record",
+ "program_size": "61,185 B (< 128 KiB single-arg limit)",
+ "reads": "after ONE custody record: audit-0000..0007-supervision/terminal.json (must be passed=false, exact shape) + stderr.txt (<= 4 MiB, stable read, O_NOFOLLOW) + lstat of stdout.txt. Running/pending slots refused (no terminal.json -> refuse). No other file.",
+ "supersedes": "v1 ee31b149 (CHANGES REQUIRED 0a5a634f) and v2 be0859e2 (no group index); both kept, never run",
+ "tests": "15 pass; 6/6 mutations caught (mutation-proof.txt)",
+ "why": "M2 (3c783aad) gives only ValueError = supervisor need(code==0) after a non-zero worker exit. The worker traceback is only in audit-000N-supervision/stderr.txt."
+}

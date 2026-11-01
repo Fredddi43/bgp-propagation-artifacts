@@ -1,0 +1,16 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "ec14e61aa9c5a5ec15e36c7697eb4c486fdc7f1c313b292eaaa136850abea016",
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "reviewed_calibration.py": "b8fc3bc3320cba80192cb02a63dd65d122de5cbcad8d1d5ad8f7bb0cba2f4b36",
+    "reviewed_fit.py": "b670caed5d0ac25a19750d20591417565af24e2aaa94e41dcc2e606f1c769a65",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "runner.py": "9fbd1b5ac4e7677df89868519ec4fe32a908d88e8364f7bb2174a88790c55c4e",
+    "test_runner.py": "5cd1d850f5bee49e26f7a54d479afc596e0128921ac4eced675536894985c537"
+  },
+  "kind": "newperiod_h1_inference_code_candidate_v1",
+  "tests_passed": 31
+}

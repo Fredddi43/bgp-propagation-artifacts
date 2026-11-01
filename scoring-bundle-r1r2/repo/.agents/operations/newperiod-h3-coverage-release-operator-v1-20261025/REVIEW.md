@@ -1,0 +1,9 @@
+# H3 coverage52518335 once release operator
+
+Reuses pinned source-stage operator f2a94103 read-only call/gate/scan/held helpers; no stage/submit method is invoked. Existing logged wrapper/probe/plan/job files all remotely hash-checked before uploading only approval.json,root.json and their exact64ASCII digest files with exclusive creation/readback. No overwrite/retry. Scope approval75d522f6 independently issued; root must issue both exact probe-root and outer operator authority after separate operator review.
+
+Real original logged_wrapper.run/probe.run checks actual control bytes,source/job/resource identity, then checker deliberately stops before first setrlimit or output/log/data access. It uses only explicit known control-path mappings; unknown reads refuse. Supplied root and approvedscope hashes remain exact. Fixed sibling release directory exclusive mkdir is the once lock, consumed marker before remote work, different record path forbidden. All records outside frozen packages. Existing heldowner/singleton/1CPU8GiB30min/command/workdir/noarray/norequeue/no nodepin rechecked.
+
+Current joint phase,h3_draft2MiB earmark,minima/sixdirs verified. Newer issuedphase refuses. Gates before upload/release repeat scan,canonical<USER> custodylogstat+64MiBmargin and freshdf,then repeat scan immediately before action. No raw job stderr or protected contents read. Release ends with RELEASED receipt; capture has NO authority here and needs its own root once scope.
+
+5synthetic tests PASS0.26s: actual signedscope through real consumer and mutations,exact64-byte digests,fixed records/replay refusal,real operator once flow with fake transports/no package writes,remote upload code executed on temporary source tree(writeonce refusal,staticfailure only). No remote calls or actual protected reads. Current phase changes require finalbindingreview; root must run actualfilled check before GO.

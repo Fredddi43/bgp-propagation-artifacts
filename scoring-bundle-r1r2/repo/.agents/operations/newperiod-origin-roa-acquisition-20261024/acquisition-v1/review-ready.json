@@ -1,0 +1,19 @@
+{
+  "actual_release_authorized": false,
+  "array_job_id": "52459509",
+  "author_model": "codex",
+  "author_session": "/root/metadata_check_review",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "README.md": "a7ba586d24a678a87ac3cc8bd51b98ea73d41fb5a3dbe7c02b5464c4453e068c",
+    "release.py": "33f6c03620acfc64a883e0c8b5ffc2a43bbb8d286234e3f10392c70ca645f33a",
+    "request.json": "b4b50f0f5ed8b9dfb77017f6bf0836225216f89214c4e7549e7434e9e75fb444",
+    "test_release.py": "cd49ca3b590d1b7a33ea131aad99275eb737d9ec0f818794e41f37ae3118afe3"
+  },
+  "kind": "origin_roa_actual_release_code_candidate_v1",
+  "source_author_worker": "/root",
+  "tests": {
+    "passed": 10,
+    "seconds": 0.22
+  }
+}

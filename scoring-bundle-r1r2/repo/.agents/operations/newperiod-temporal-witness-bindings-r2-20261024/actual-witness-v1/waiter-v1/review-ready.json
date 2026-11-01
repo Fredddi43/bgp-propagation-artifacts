@@ -1,0 +1,9 @@
+{
+  "actual_request_pending": true,
+  "delta": "Only fixed root and core\u2192temporal message/docstring; original7tests pass",
+  "files": {
+    "test_wait.py": "07e10eee63285eeda922a64539f1449a0040acc2b3d19f724aa9a2cdc2bf92b3",
+    "wait.py": "0044d9ff53fb3d6f879c066effe4226139a9ac03688dcb50f352a4f0535faa65"
+  },
+  "kind": "temporal_witness_waiter_ready_v1"
+}

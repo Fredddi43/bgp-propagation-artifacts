@@ -1,0 +1,13 @@
+{
+ "author_session": "<SESSION_ID>",
+ "execution_authorized": false,
+ "files": {
+  "allowlist.py": "ef508293b4eb8bddee80cb9ac1f6c83c40551e994b853f5efcd0d1222914a65f",
+  "capture.py": "982eb65fdb9ed4aa3140363789e5477e50ec718f6b6b0b37d9ba0399bf391923",
+  "capture_template.py": "118f3a9b9089b1131ec74022125eaaa8da580458aa749c25fbfe47aa89aa7647",
+  "test_capture.py": "ec0458a4f4334de2b4e9b0989e8d8b2a6c7a96742d3c34ce9287374f6f084ee2"
+ },
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < capture.py  (once)",
+ "kind": "h1_wave2_failure_diagnostic_review_ready_v1",
+ "tests": "3 passed"
+}

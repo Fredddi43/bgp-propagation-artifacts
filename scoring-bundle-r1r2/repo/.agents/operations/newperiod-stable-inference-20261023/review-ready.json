@@ -1,0 +1,19 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author": "/root/remaining_work_audit",
+  "author_model": "codex",
+  "files": {
+    "REVIEW.md": "7c133ecc8cb5add62f95d4a69241cd58c21a76a2137be31b5659945a4ec6c46d",
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "reviewed_baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "runner.py": "43e8579b36b95e1550caf8f1ee05f57d73216ec457f32344c6a56f7abc253788",
+    "stable.py": "3375dcff1a007ee043b5e254fec5392cba4c282c2a6c16e4cfb54337ef2e3e54",
+    "test_inference.py": "e9d0898071c93646ca4cae558d6a054c366ff3c618a998272f9c7d1d6a3f308d"
+  },
+  "kind": "newperiod_stable_inference_code_candidate_v1",
+  "retained_cells": 24,
+  "tests_passed": 26
+}

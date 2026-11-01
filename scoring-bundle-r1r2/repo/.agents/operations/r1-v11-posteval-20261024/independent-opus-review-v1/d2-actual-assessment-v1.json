@@ -1,0 +1,28 @@
+{
+ "capture": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/d2-fix-v5/evidence/capture-d2.json.gz",
+  "sha256": "52a9ab73a05d28cd8a8aafbc3988cd67348269d83eccee77d36e21764dc05c5a"
+ },
+ "completed_utc": "2026-10-24T04:48:09.455451+00:00",
+ "fetch": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/d2-fix-v5/run-records/fetch-sha.json",
+  "sha256": "b3f23384a38a63dfc4e77b7c38d63e3f4cfe9ac4bfb2d38ec19dc6aae45a5ffd"
+ },
+ "findings": {
+  "30": {
+   "path": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/rescore-d30.json",
+   "sha256": "fc0e252a1fe063066ae03ca9ab8f07ba7f388f92086e8b811fbd37e591cf4f59"
+  },
+  "60": {
+   "path": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/rescore-d60.json",
+   "sha256": "d9ba07acb96cfee765e26f8acdbac3a99bbe9215f48bf8afb467eec7d3648d9c"
+  }
+ },
+ "kind": "r1_d2_actual_assessment_v1",
+ "passed": true,
+ "reviewer": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_review"
+ }
+}

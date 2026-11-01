@@ -1,0 +1,60 @@
+{
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "kind": "h3_scratch_operational_correction_review_v1",
+  "package_frozen": false,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/derive.py",
+      "sha256": "50b023d06a040c94aa7215980153c0339fe377c1b5277da68216aa9408d862e6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/output_budget.py",
+      "sha256": "57387ccc3810546a7d1fa918d45f8b9e54eddf2e63e1eff76c408616838638ee"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/test_scratch.py",
+      "sha256": "5f30203d2d79d86235616cdbc86d720c61c4c13eb649a07902e01034ae1d4984"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/tests.txt",
+      "sha256": "66cc078cc8ebf35e386cbc2ca44f5876ce414a6eabfa3961da7f1d18d9263f06"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/design.json",
+      "sha256": "b5e095fea4785a027b79e4251a2eb3dfa500b62802f76171d1f0ce5e508482a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/REVIEW.txt",
+      "sha256": "9390b6dab97f320a285ece68fca753c252981f6d8f4b9acf9557f1c6efb1e04c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/actual-v1/package/job.py",
+      "sha256": "6f54cc51182d00903ce508e48578713e9739e875bba200214a84b228f932a228"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/actual-v1/package/output_budget.py",
+      "sha256": "9e122a6ff46e7d0566cea3e8868c7ce17f3e0a329decd56bb4316919fb2a0b51"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/actual-v1/package/original_budget.py",
+      "sha256": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/actual-v1/package/audits/h3/source_io.py",
+      "sha256": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/actual-v1/package/audits/h3/audit.py",
+      "sha256": "52fbe174cbbae40f08933769daf18dae6786cc4b643c23e8ef6587499d574a45"
+    }
+  ],
+  "tests": {
+    "evidence": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/tests.txt",
+      "sha256": "66cc078cc8ebf35e386cbc2ca44f5876ce414a6eabfa3961da7f1d18d9263f06"
+    },
+    "result": "21 passed",
+    "scope": "Synthetic local fixtures only"
+  }
+}

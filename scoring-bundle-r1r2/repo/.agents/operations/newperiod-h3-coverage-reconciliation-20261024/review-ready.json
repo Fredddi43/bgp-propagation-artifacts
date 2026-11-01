@@ -1,0 +1,29 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "note": "files authored by /root/deadline_audit (native), ownership transferred to Opus author f4d75bb1 by handoff 8ba1f07d; unchanged bytes",
+  "session": "<SESSION_ID>"
+ },
+ "author_reproduction": {
+  "coverage.original_parity(receipt)": 473678,
+  "probe_rule.py": "checked 473678, different 0, calendar_different 0",
+  "tests": ".venv/bin/python -m pytest -q test_coverage.py -> 8 passed"
+ },
+ "documented_rule": "Include one predecessor rotation; nominal missing intervals intersecting [onset-step,onset+horizon] remain unresolved ...",
+ "execution_authorized": false,
+ "files": {
+  "coverage.py": "1437dbf45f86316440377db8d5754462bcce058d3d1100cc397ba2b0d813ae44",
+  "probe_rule.py": "7336b7339912aee14af97b8135864a94c5343ae66a0d5ba5776653153c0c180a",
+  "test_coverage.py": "6b835dc91ddf3342fa8a9c9a651ef93e9b656808e644050b836c5b68219e00a5"
+ },
+ "handoff": {
+  "path": "<REPO>/.agents/operations/newperiod-h3-coverage-reconciliation-20261024/HANDOFF-TO-OPUS.json",
+  "sha256": "8ba1f07db3debf6992fc44b7f456655835460b615d8556e847cd417a3c6c72b6"
+ },
+ "input_local_receipt": {
+  "path": "<REPO>/.agents/operations/newperiod-variant-source-metadata-capture-20261024/execution-v1/decoded/h3-event-source-coverage-v2.json",
+  "sha256": "3aa8b404c04a2da72d5893cedd51197edac95ec2d7a8ef14049735e27842c0e1"
+ },
+ "kind": "h3_coverage_reconcile_review_ready_v1",
+ "utc": "2026-10-24T08:33:06.618402+00:00"
+}

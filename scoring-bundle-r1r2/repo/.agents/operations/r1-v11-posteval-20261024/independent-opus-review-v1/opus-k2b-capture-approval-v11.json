@@ -1,0 +1,55 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "bytes_total": 25694213,
+ "capture_authorized": true,
+ "command": ".venv/bin/python -B .agents/operations/r1-prerequisite-evidence-20261021/capture_metadata.py .agents/operations/r1-v11-posteval-20261024/k2-v1/request-k2b.json .agents/operations/r1-v11-posteval-20261024/evidence/capture-k2b.json.gz",
+ "conditions": [
+  "f19 tool asserts each sha and the 16 MiB/256 MiB caps; any mismatch or failure: keep the claimed output, stop, no retry",
+  "the released report is R1 retrospective (exploratory, no primary finding); manuscript use only after independent verification (vrun/D2)",
+  "no N admission, no new-period label access"
+ ],
+ "derived_from": {
+  "capture_k2a_sha256": "ed0ef4faf10fa807c780d731adcb5c3ffd00f2482e9cf3378616a2feae63da90",
+  "census_sha256": "f7315faec9effd4b0dff410ca72041ab4a14b22882a6a630bbf0ca04c52d85ef",
+  "complete_spec_sha256": "2233750ea0847b1034e6a7bf25e569026a72320bde866bf32e136fc1a7a238c5",
+  "k2a_approval_sha256": "2764b2503eca2fb8c3af4035804cf2d8b909dec5ee7b3313164d2becbb201744"
+ },
+ "files": {
+  "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json": {
+   "census_bytes": 5183175,
+   "sha256": "45865cdf4a76884bd1b55e2da43bc9875bd7d62892a8117cc2c03539579dee1c"
+  },
+  "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json": {
+   "census_bytes": 5183175,
+   "sha256": "f885a805deb61a17e295d4d93b2a41d51eea842a038c5965efa0f66eeaf1754d"
+  },
+  "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json": {
+   "census_bytes": 15327863,
+   "sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d"
+  }
+ },
+ "host_write_authorized": false,
+ "kind": "r1_v11_k2b_capture_approval_v1",
+ "label_read_authorized": false,
+ "local_followup_authorized": "requests.py extract --capture-k2a evidence/capture-k2a.json.gz --capture-k2b evidence/capture-k2b.json.gz --out-dir evidence/released (local only; prints the K3 command)",
+ "not_authorized": "K3 projection run, D0/D1/D2, vrun verifier job, per-event/label/prediction reads, N admission, retry",
+ "output": "<REPO>/.agents/operations/r1-v11-posteval-20261024/evidence/capture-k2b.json.gz",
+ "passed": true,
+ "per_event_read_authorized": false,
+ "prediction_read_authorized": false,
+ "request": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/k2-v1/request-k2b.json",
+  "sha256": "833d1cd1583adc7fb131f233209ba401ca8919185bd5ef989a935147628c6d15"
+ },
+ "result_report_read_authorized": true,
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-capture-k2b-v1",
+ "tool": {
+  "path": "<REPO>/.agents/operations/r1-prerequisite-evidence-20261021/capture_metadata.py",
+  "sha256": "f19d1066867ed82a1c6fd528d1374b741b7fcedcceefad5f262df1f642815e16"
+ }
+}

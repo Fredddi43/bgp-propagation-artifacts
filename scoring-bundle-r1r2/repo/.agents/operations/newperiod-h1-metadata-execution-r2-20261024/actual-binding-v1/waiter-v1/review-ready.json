@@ -1,0 +1,9 @@
+{
+  "condition": "Only after actual52478614 release",
+  "delta": "Only exact job52477896 to52478614 plus fresh2hmonitoring deadline; same passive owner/terminal/no-resend source",
+  "files": {
+    "request.json": "1f825b85faf468eaf5d922c330360078132d57032586da887da8393f98de3fe9",
+    "wait.py": "d759a10395abadda2b605692399971fdaaa3f09bbbe397a810c27f9788d0dd96"
+  },
+  "start_authorized": false
+}

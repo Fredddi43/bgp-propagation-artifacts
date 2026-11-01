@@ -1,0 +1,16 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>"
+  },
+  "files": {
+    "REVIEW.md": "903bccd59e2c0ae5c007309338a6e70a777a22b5019239f1d9050b600fdc9e8c",
+    "build_release.py": "074c7ecad05a889cd05150cac14dfc9e5c8099205dd13e8631b268f28ae12577",
+    "test_release.py": "06c40099bd3e6b32d9e30843448c5b52b33236efcb3667a891e4596753023bde"
+  },
+  "kind": "r1_release_receipt_draft_review_ready",
+  "tests": {
+    "passed": 6
+  }
+}

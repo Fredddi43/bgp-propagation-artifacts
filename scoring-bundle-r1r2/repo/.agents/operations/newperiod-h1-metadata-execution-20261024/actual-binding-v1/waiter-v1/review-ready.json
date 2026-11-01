@@ -1,0 +1,13 @@
+{
+  "condition": "Exact successful release52477896, no existing exact watcher, coordinator identity check and exclusive launch intent",
+  "delta": "Only exact job id, docstring and wake message changed; singleton accounting/identity/no-resend unchanged",
+  "files": {
+    "request.json": "5f27601476d1826fa93e3e955f4082fb070230e10a4374e1bb21e36a9268e511",
+    "wait.py": "3548b3db767e75b6afa7c70454b7fd4de91c9fab9e9c34b756ebe29f901adbc4"
+  },
+  "source_predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-family-history-stage-20261024/waiter-v1/wait.py",
+    "sha256": "913673613b529596517ddafcc66b673e89fd660d06f7043173661b3d32c8ba20"
+  },
+  "start_authorized": false
+}

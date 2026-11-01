@@ -1,0 +1,16 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "execution_authorized": false,
+ "files": {
+  "restore.py": "3d990bfcf3c5b69bb47a556d7755f353e4e77fff13d055f68038842277ed91a2",
+  "test_restore.py": "85f057ddc44159d3f67f6b8899464c041693ca1d8002c219589fb9d8fed08310"
+ },
+ "kind": "cold_prefix_restore_recipe_review_ready_v1",
+ "limits": "Not yet exercised against a real HF archive; a real restore drill (e.g. one rrc00-2025 member, compared to the live source sha) would need its own approval naming the HF read.",
+ "purpose": "Reviewer requirement 3b614f41: pruned.json must bind exact archive revision/sha + tested restore recipe before unlink. For the future prune successor; no execution or HF access requested now.",
+ "tests": "9 passed (synthetic zstd tar; full/subset restore; member/archive sha, truncation, missing member, existing output, unknown member, unverified receipt refusals)",
+ "utc": "2026-10-24T08:13:37.595272+00:00"
+}

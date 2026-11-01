@@ -1,0 +1,60 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "commands": [
+  ".venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/vrun-host/vrun.py submit --approval <this> --approval-sha256 <sha>",
+  "... queue-check (read-only)",
+  "... fetch-request --approval <this> --approval-sha256 <sha> (only after the job is COMPLETED)"
+ ],
+ "complete_sha256": "03d1c73ef8bfe07450392d31830342397c1fb30c0f265dd4780822a3ee1ac9cf",
+ "conditions": [
+  "one submit; job re-hashes the staged verifier code (sha256sum --strict) and refuses an existing out file",
+  "verify_r1 reads complete/report/per_event in place on the host and writes findings only to DEST/out/verify-r1.json",
+  "failure/timeout/OOM: preserve logs and records, stop; no retry or resource change without new review",
+  "the fetched verify-r1.json findings are independently assessed before any release/N decision; a failing verdict is reported, never worked around"
+ ],
+ "inputs": {
+  "arm-spec": "<FORECAST_ROOT>/r1-analysis-arm-binding-v1-20261020/arm-spec.json",
+  "complete": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/complete.json",
+  "ledger": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/evaluation/ledger.json",
+  "manifest-d30": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json",
+  "manifest-d60": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json",
+  "per-event-dir": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/per_event",
+  "report": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+  "seal": "<FORECAST_ROOT>/occurrence-final-v1/custody/r1-access/r1-seal-134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887.json",
+  "slice-rules": "<FORECAST_ROOT>/occurrence-final-v1/slice-rules/issue-time-slice-rule-v6b.json",
+  "spec": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/spec.json"
+ },
+ "job_script_sha256": "a0a531d78e03880f94f270c13b4a0ac80ccb36ff3065b60585b6623e634dd1ba",
+ "kind": "r1_v11_verifier_run_approval_v1",
+ "label_read_authorized": false,
+ "manuscript_use_authorized": false,
+ "measured_bytes": 18195546666,
+ "n_or_2026_authorized": false,
+ "not_authorized": "label/prediction extraction, D2 rescoring, N admission, manuscript use, retry",
+ "out": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/verify-r1.json",
+ "passed": true,
+ "per_event_in_place_read_authorized": true,
+ "prediction_read_authorized": false,
+ "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+ "resources": {
+  "cpus": 4,
+  "mem": "174G",
+  "node_pin": null,
+  "partition": "cpu",
+  "requeue": false,
+  "time": "12:00:00"
+ },
+ "result_fetch_authorized": true,
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-verifier-run-v1",
+ "tool_sha256": "2dee908be0134113917fae36de2376b70ec74c20fbd6822fd3a1a4930ffa7436",
+ "verifier_code": {
+  "pins.json": "79cb199fbd4c233fa052d9d3c5fb1c25ec8ce123714452d5a5850fb671ada752",
+  "run_verify.py": "c02ecb9f0e4683aec3e7f8e5bc68b5d12934172ecf81c30d1fdb9dbd84f114d9",
+  "verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf"
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "b4995e367493f606bb5ecbb573c6e9ec64cac860ed8bf2997f216c3c01cea97e",
+    "build_request.py": "cce75106ebf1b8a5a3eb68813fe03c6a049fa1367d69a41387f2f54d0f04652e",
+    "capture.py": "095b8767d7e9e2bcddb0b23edcf033f3bea4aa1c669f7a28c15c3b68b7cc8e78",
+    "request.json": "7247ff4263d5d23b26b5049d38c508f48dbd7d9d96aebf93c29382faffad8f92",
+    "test_capture.py": "7d414e6a49d0f675221a5757d868f57479386f57b5a6b3be99ccb7dd5ca62465"
+  },
+  "kind": "r1_resource_preflight_readiness_v3",
+  "supersedes": "../r1-resource-preflight-r2-20261024/review-ready.json",
+  "tests": "8 passed; unchanged original task-envelope tests"
+}

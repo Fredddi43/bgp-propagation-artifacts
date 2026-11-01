@@ -1,0 +1,10 @@
+{
+  "actual_request_pending": true,
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "28e60539ae7c2df7f49fe6bdf59d88a82a38d20f57024641e4e5e42092bc7f9c",
+    "test_capture.py": "cc57a0c456f359e039b513450636262eb99725588683c0618ecb019a0ab79af1"
+  },
+  "scope": "Fixed6originaloperationalJSONs,64KiBperfile1MiBstdout/64KiBstderr90stransport; exactlaunched/spec/approval required. Successful stage stdout exports only exact witnessref+audit_passed, failure only original WitnessFailure stage. No outputreferences followed.",
+  "tests_passed": 4
+}

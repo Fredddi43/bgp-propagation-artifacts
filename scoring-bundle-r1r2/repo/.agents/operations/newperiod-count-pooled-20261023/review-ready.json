@@ -1,0 +1,15 @@
+{
+  "kind": "pooled_count_source_overlay",
+  "files": {
+    "custody_run_package.py": "00c304253c10771faec51898c4877d6fc87f4127ce0fc273969f458ded32fe0e",
+    "collector_inventory.py": "109c2a865963343f67678038266b928a47ec09be657255e50ea58665f4683ac9",
+    "test_pooled.py": "417d78557b90812e782b0d5fefe7f6df2f24cb756b14934b5a912906e3cd496c",
+    "count_coverage.py": "ff486a366cdeafd3ac62146b20372fdd560dc4194cb6635f3a1f0890ffe4d15c",
+    "count_inputs.py": "2cf40398305c7245935b7fca1898c05ffaa6922ebad1517eae1dc48a31d2fdb2",
+    "chronos_run_package.py": "28dee07abe81440fb49e05a52b92845f48d9c2f778a9fca3926ffc83c9bb12e4"
+  },
+  "tests_passed": 17,
+  "new_inventory_kind": "newperiod_source_collectors_v1",
+  "scientific_selector": "pooled",
+  "limitations": "Local overlay. Client/spec closure assembly pending shared sourceguard amendment; no staged or executable package yet. Custody wrapper adds explicit collector_inventory prerequisite. Chronos wrapper reuses exact source_coverage inventory. No science or resource execution."
+}

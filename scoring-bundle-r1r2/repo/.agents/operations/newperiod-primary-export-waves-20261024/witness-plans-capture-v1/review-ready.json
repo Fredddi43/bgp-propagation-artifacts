@@ -1,0 +1,10 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "6fd3019ce8b3710fd467421bfb1e44e28d27d06a3e5c7925c589125df968939c",
+    "test_capture.py": "e92b6e9ee2e6708c5a02e257164bd764e09598ea96049b831145e22c5ac0416c"
+  },
+  "kind": "primary_core_witness_plan_metadata_capture_code_v1",
+  "scope": "Exact two produced plan-witness-d30/d60 operational JSON files after accepted binder completion supplies genuine hashes. Full raw metadata capture includes input graph/path/hash/size declarations (event IDs may occur in paths), but no event data/targets/labels or reference follows. One durable custody log before reads. Canonical nofollow stable regular files,64MiB/file128MiBtotal,32MiBgzip stdout64KiBstderr,120sec sourcealarm150sec transport,2GiB AS. Actual request and separate root once-capture approval required.",
+  "tests_passed": 3
+}

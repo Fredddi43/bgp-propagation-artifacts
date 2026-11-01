@@ -1,0 +1,19 @@
+{
+ "author_session": "<SESSION_ID>",
+ "execution_authorized": false,
+ "exports": "traceback frames (payload-relative / python: / <other>), exception types, messages only if sha256 in the pinned-literal allow-list (614), record entry names, counts",
+ "files": {
+  "allowlist.py": "88e9167adf4b24aaa2ec5f1a0281a948c32d96f98805d837edd893c22183a4fd",
+  "capture.py": "5e013ca8524e89e1ff06580073a236984cf36d799fd050056a068738e799e7f3",
+  "capture_template.py": "c828e769b01d64feb991eb92f77378c100f857809e3f65a902e1e2cc543c10e0",
+  "test_capture.py": "9558007da4fa363d6a30fd172087480c93c9f9d0a62dce84269f7d1676b817d6"
+ },
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < capture.py   (once)",
+ "kind": "replay_finalizer_failure_diagnostic_review_ready_v1",
+ "reads": [
+  "records/finalize-0000/stderr.txt (<=4 MiB), stdout.txt (<=4 MiB)",
+  "logs/finalize-52498314.{out,err} (<=1 MiB each)",
+  "lstat of records/finalize-0000 and its output tree (top level, events_replay, rpki/roas, inventory/2026)"
+ ],
+ "tests": "4 passed in 0.80s"
+}

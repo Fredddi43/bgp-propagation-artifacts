@@ -1,0 +1,37 @@
+{
+  "approved": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "base_package": {
+    "commit": "eaf0ed8",
+    "path": ".agents/operations/r1-evaluation-20261021",
+    "review_pins_sha256": "6c7703b39eac4a088c3b5d382f04696e2373bc6bf55b8003afa05ecf76666540"
+  },
+  "compat_note_sha256": "4f38eb29ce8e1085b32d3d6436afd213c3f5a00528d2cd18a1e987987ca165ca",
+  "files": {
+    ".agents/operations/r1-evaluation-v6-20261021/REVIEW.md": "103371fc35edf717c5a67ad19d9d7bc7d66e43bdb017eb9add19566bc96477f8",
+    ".agents/operations/r1-evaluation-v6-20261021/build_candidate.py": "b26838b3d5ac2feacd0f0afbceb885004e4ffe17ec71e0bb5eeb5e818d152072",
+    ".agents/operations/r1-evaluation-v6-20261021/execute.py": "c904c627f7b46345bef05c98e3d01d373e6aa42225124f83baae69fa93206886",
+    ".agents/operations/r1-evaluation-v6-20261021/execution-approval-TEMPLATE.json": "2bd534c1f0bf8a9ee404da2c8fa7adf82f4abd276efbc3e90c520dfec68a7ae8",
+    ".agents/operations/r1-evaluation-v6-20261021/execution-spec-TEMPLATE.json": "4c0094b4443d718b41fe1926d381431d5f93dc9501f65201d190291f16c4879e",
+    ".agents/operations/r1-evaluation-v6-20261021/launch.py": "0037580e2fec4a4451042b4b6ab44b48cada1dfb5a04c7e9258ecd41d51c24f2",
+    ".agents/operations/r1-evaluation-v6-20261021/r1-authorization-TEMPLATE.json": "7f67f5846f67d4b53f8e21489426c5d4e859f783028ea4d0a2e1bf68b0967379",
+    ".agents/operations/r1-evaluation-v6-20261021/run.sh": "8a71361e024186967e6c3553c43a64324b7968bc70d8815ed43f8806b8876cce",
+    ".agents/operations/r1-evaluation-v6-20261021/supervise.py": "5f32857ef8f32130f6d2bd3af4c3c88604a5f417abcbc466d8e2cbba0c5aa48c",
+    ".agents/operations/r1-evaluation-v6-20261021/test_evaluation.py": "622fce950307cbcc05bf4ecd95cafde574bf4023c807489d76bd6cc11992af56"
+  },
+  "kind": "r1_final_evaluation_v6_candidate_review_pins",
+  "review_required": "independent code-only; reviewer must not be an AUTHOR_SESSIONS member",
+  "tests": {
+    "base": "44 passed",
+    "candidate": "58 passed",
+    "ruff": "clean"
+  },
+  "v6_preparation": {
+    "draft_sha256": "c084ddfc5212a870fcd362ade65a634b0460f9ae09d5864b3b2c96ae72a4e609",
+    "execution_spec_sha256": "ce9e6bfc300f3e8758be2c17f8907472df5c7c9af7472db1f2896ba9308c2dbb"
+  }
+}

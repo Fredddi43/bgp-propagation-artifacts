@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "Packet v4 continuation_wave2 plan re-pinned to 8d8d1d0e5762 after one change: WaveLedger.SLACK 4 MiB -> 64 MiB (LiveMonitor tolerance for delayed NFS allocation; the 4 MiB invariant killed 5 of 8 first-batch workers silently at ~0.2 MB overshoot, no data-dependent cause).",
+    "Hard limits unchanged: per-task ceiling 1 GiB, wave aggregate 9,252,122,208 B, 2 GiB per-file cap, 8 GiB writer cap, ledger admission (SLACK is not used in admission). Observed wave aggregate 414 MB at the time of the kills.",
+    "Science unchanged: same original kernel build_shard, same group/arm/year/slot mapping, same pinned old plan 06b4b953; completed slots (32,33,35 of wave1) keep their receipts."
+  ],
+  "claim": "orig_budget_model_with_post_hoc_allocated_census_not_backend_theorem",
+  "execution_authorized": true,
+  "kind": "INDEPENDENT_D300_CONTINUATION_WAVE2_STAGE_SCIENCE_CONCURRENCE",
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v48-20261027/root-joint-storage-phase-v48.json",
+    "sha256": "913754c6c095bf1b0eb542a1d33d721318ccdc4934659bc4728a3d36f7b07baa"
+  },
+  "plan": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/sensitivity-parallel-timing-budget-v2/recovery/timing-d300-tasks48to63-sonnet-v4/controls/plan.json",
+    "sha256": "8d8d1d0e576277fd8fa6e253ba2f88f75326a23b9589cd1758b35755ac52e820"
+  },
+  "reviewer": "claude-sonnet-5-5",
+  "reviewer_model": "claude-sonnet-5-5",
+  "reviewer_session": "session-root-continuation_wave2-stage_science",
+  "reviewer_worker": "reviewer-claude-sonnet-5-5-science",
+  "scope": "stage_science",
+  "stage": "continuation_wave2",
+  "verdict": "PENDING_ROOT"
+}

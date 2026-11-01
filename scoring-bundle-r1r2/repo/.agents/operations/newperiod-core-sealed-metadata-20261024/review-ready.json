@@ -1,0 +1,14 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "capture_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "README.md": "5342e2edc52b80a8e6973bc563ed483ec4568c8b3317e7209dfc68d280e92729",
+    "capture_metadata.py": "cde0c0526d6e27fab90c5604e136cffe225155746bd83d134fe9f14e141d618d",
+    "expected-paths.json": "51ea5aade5e56ce909f3eba02cf38159dfd6ef9b93b47c16f95f1836624f2f5d",
+    "prepare_request.py": "5ce7d8dd8dca05f027dd8f987103e8f55f240c9c740d89d4fd94a9bac076f641",
+    "test_request.py": "b0896fef6c4f187e120a27cebd9916780c52f1507ecba7baeefe26b33bb8ebab"
+  },
+  "kind": "newperiod_core_sealed_metadata_capture_preparation_v1",
+  "tests_passed": 8
+}

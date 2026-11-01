@@ -1,0 +1,17 @@
+{
+  "kind": "origin_source_resource_probe_candidate_v1",
+  "author_worker": "/root",
+  "author_model": "GPT-6 Codex",
+  "files": {
+    "test_capture.py": "6192ee1ea58354b07bedea37fca098b243617ae2814f1bff4ec672f8d4a6bfd1",
+    "request.json": "65e751a182f725d22bfc5671c80c38879a1b5f5ca20bf6ba99bd3238f569adfe",
+    "capture.py": "19d0737f489836184a5aed9f0305964c34756bf86d5f1e4908cdcbb6883f8e47",
+    "reviewed_capture.py": "a13402af67edce09ba51547502ca56dd3748d40e19bf78a10ceee4672d78b04d",
+    "REVIEW.md": "b3e9cee6210cd085972a5bb0b146705e3c12e37429a03f87ed93dc5488683bb4"
+  },
+  "tests": {
+    "passed": 5,
+    "seconds": 0.13
+  },
+  "execution_authorized": false
+}

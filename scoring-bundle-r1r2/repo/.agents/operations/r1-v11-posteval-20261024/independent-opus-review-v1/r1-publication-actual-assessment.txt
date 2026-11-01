@@ -1,0 +1,23 @@
+ACTUAL ASSESSMENT: R1 receipt publication (approval 5025edf3)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review.
+
+VALID.
+  - One attempt: release-actual-v1/publication-v1 is the only intent binding 5025edf3.
+  - intent 89e91d18 binds approval 5025edf3, receipt ba2a1e2e at control-v1/release-native-v2/r1-release.json,
+    transport d70217e7 and retry false.
+  - stage.sh cbe00f69 equals publish.stage_script() regenerated from the exact receipt and approval bytes.
+  - result ae2ee719: rc 0, stderr empty (e3b0c442), stdout 2942ee64.
+  - stdout is exactly two sha256sum lines:
+      .../release-native-v2/r1-release.json: OK
+      .../release-native-v2/publication-approval.json: OK
+  - published.json 46c7961e: readback_passed true; receipt ba2a1e2e; publication-approval 5025edf3.
+
+R1 RETROSPECTIVE RELEASE: PUBLISHED.
+  - The external anchor is retrospective_release_sha256 =
+    ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6
+    at <CLUSTER_STORAGE>/.../r1-release-parallel-v11-20261024/control-v1/release-native-v2/r1-release.json.
+  - The numerical basis is class a/b (329,615 + 681 checks) plus class d (2,203,984 checks), 0 failures. All 1156
+    retained statuses are unchanged.
+  - N admission still requires each N plan/gate to bind this anchor in its own reviewed packet. verify_release
+    re-hashes the five evidence files on the consumer host at that time.
+  - No manuscript or result claims are made here.

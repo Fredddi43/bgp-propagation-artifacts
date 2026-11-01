@@ -1,0 +1,25 @@
+{
+  "complete_leaf_inventory": false,
+  "deletion_authorized": false,
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-v28-v2-20261025/prepare.py",
+      "sha256": "17c46f36edf84669c80549e34dbc76a18c7cbca9446a2616793878a186271183"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-v28-v2-20261025/owner-deltas.json",
+      "sha256": "bfde9cb55f7fd5082ff070a43d3895e5aa6f453592733aba5b7b58e613e458a7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-v28-v2-20261025/verification.json",
+      "sha256": "d32e68f7df5e0ef32c1b2af6f2ae299278d7875781840637f690812e91b1bffc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-v28-v2-20261025/independent-review.json",
+      "sha256": "dfc974cb9158b29d64b86f2f0271a3b3626d6e2c16b7704b42feebbf935e31eb"
+    }
+  ],
+  "kind": "P05_P08_OWNER_DELTAS_REVIEW_READY",
+  "reviewer_requested": "sol-storage"
+}

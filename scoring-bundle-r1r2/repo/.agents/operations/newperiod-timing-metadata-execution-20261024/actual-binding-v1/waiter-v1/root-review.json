@@ -1,0 +1,16 @@
+{
+  "automatic_retry_authorized": false,
+  "condition": "Only after independently approved actual release",
+  "execution_authorized": true,
+  "files": {
+    "request.json": "6adb361fedf6a5ffcaf29e0c5759c986836d218d86d95936ba5d6a62505e0f67",
+    "test_wait.py": "2b39fb61dff8dda37545521daeba6fe1d660a45d4ae4c4abb0a4b6e57e407911",
+    "wait.py": "02bb67e2c7953995492eb3c4cc4e4de29b1c393a1ed2557f7fe21fb59e86e745"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Exact52479250 scheduler-only terminal monitor, frozen pane/session identity, one wake; no release/retry/output reads.",
+  "tests_passed": 10
+}

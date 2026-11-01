@@ -1,0 +1,81 @@
+{
+  "all_four_groups_preserved": true,
+  "author_role": "astra-h3t",
+  "authorities_consumed": 0,
+  "draft_adoption": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/author-root-operating-adoption.DRAFT-passed-false.json",
+    "sha256": "5ed62eb2f7d9375cfdf51b12316546ad8e902ef8a40b459a4f1465817d4377a7"
+  },
+  "draft_phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/root-phase.FALSE-TEMPLATE.json",
+    "sha256": "b42651243560dccbd0d7998ad68bfd693bed7927e423f29c08f6b0d61391fa95"
+  },
+  "execution_authorized": false,
+  "first_group_actual_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-FIRST-V36-CAPTURE-ACTUAL-ACCEPTED-session<SESSION_ID>.json",
+    "sha256": "be5d45c698891b9747093266a1aa68e60bd580b30914039b9445b36952d42d2d"
+  },
+  "kind": "AUTHOR_H3_V37_OPERATING_EVIDENCE_REVIEW_READY",
+  "phase_floors": {
+    "models_bytes": 541628196864,
+    "results_bytes": 45231374336
+  },
+  "phase_issued": false,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/accounting.json",
+      "sha256": "e7c94a3d5e52cb0f5b845a0fadafc40ad430c6f664c47bf3183e9a7a386eadb1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/author-checks.json",
+      "sha256": "6790fc68e6caec12c6539b4d9ce27f2aa09992960b307c116e430dbe45ba58dd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/author-root-operating-adoption.DRAFT-passed-false.json",
+      "sha256": "5ed62eb2f7d9375cfdf51b12316546ad8e902ef8a40b459a4f1465817d4377a7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/scheduler-evidence.json",
+      "sha256": "0f1176ee2c336543a6f7f5bc48c34c4799005d7842abb441da433a2021cf08a1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/source-bounds.json",
+      "sha256": "acc4abfb192a9dd3f4f55d6506432f8e975c493f5d70f7c40b81fb3a1233b44d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/verify_source_bounds.py",
+      "sha256": "242935ead1343ed180c8d2829ea044c7fa8b77e80ff600fa8d5301224ba73850"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v1-20261026/writer-inventory.json",
+      "sha256": "89d41798cac068d39de6a65d8a687d4371f1d14244bccdff14802754574b1448"
+    }
+  ],
+  "protected_payload_reads": 0,
+  "remaining": [
+    "ROOT issues v37 after pending v36 operations; freeze fresh exact issued-phase sibling and obtain resource transfer admission.",
+    "Fresh substantive ROOT all-writer/scheduler adoption and live controls; author conditional evidence is not authority.",
+    "Exact request finalization, independent operator review, ROOT once, fresh capacity gates; one group then one reviewed finite capture and independent outcome acceptance."
+  ],
+  "remote_actions": 0,
+  "retained_v36_binding": {
+    "path": "<REPO>/.agents/operations/reviewer-sol-h3t-20261025/h3-release-capture-v3-v36-session<SESSION_ID>-r2/execution-binding.json",
+    "sha256": "8474301af85c8e408ad0c3a7a70952e617e69e42c62a73b9c366c75244de59ac"
+  },
+  "review_requested": [
+    "Check H1 selected firstmanifest zero-custody path and synthetic dispatch proof.",
+    "Check timingd10 exact original encoder/request yields one30928B append;3H3captures<=196608B;no baseline reset.",
+    "Check all8writer categories and explicit root-required exclusions; source proof is not currentglobalinventory.",
+    "Review historical TaskProlog/plugins/finite4MiB perstream operating basis and required root reaffirmation; no hardcap claim."
+  ],
+  "successor_groups": [
+    "mixed7-d60",
+    "ris7-d30",
+    "ris7-d60"
+  ],
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T20:13:11.983867+00:00"
+}

@@ -1,0 +1,42 @@
+{
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none: no host edit, placement, shared-venv change, gate host test, attempt 4, evaluation, labels",
+ "frozen": "no edits while under review; findings go to a separate revision",
+ "kind": "newperiod_input_gate_revision_v4_review_ready",
+ "known_limitations": [
+  "F2 cause observed only for import/start-up; attempt-3 witness trace content inferred, not read",
+  "not covered: audit-time opens, stage-time lazy imports, repo-root cwd reads, setsid descendants",
+  "all v3 known limitations carried unchanged"
+ ],
+ "package": {
+  "REVIEW.md": "e5d952dfa1edd95e1263f98144c09697efca99eacad422f843dca823d528beda",
+  "audit_witness.py": "3c0d17b44b51293b7c9a9dcbe1b28125fb81cc1dd5f618b12aa7d31857b28505",
+  "boundary.py": "e0afe503e7420d7eddc700c8613518d02f19b51efa56bfc8c3cbc5987b48d234",
+  "diff-v3-v4.diff": "53a5009f70cd27e8ed812d46b7f1fa3f1925b3ecbdeb844f497af87cf941c969",
+  "evidence-local/mutations.txt": "465375e4cd87952eaaa667df47e2e124adb5fb54c892cbf2284c0082c6a1de66",
+  "evidence-local/pytest.txt": "7e5deaaee2f0840ee00651fa35b4796795b1e0de628bc4aa824c060c637bf652",
+  "evidence-local/v3-repro.txt": "71e33ff0a89830fecf55ece612046f706902e6d14f52c3950afc2666f17ca502",
+  "input_gate.py": "93c343b6e0234cdc84780b4f1ba7dcf2113be9c312423a393b5ec1357c7bd032",
+  "label_handoff.py": "18061e3f8cc6c541e47035a7dd2cd89651a365ada8ba88ab3d8df2890e52d293",
+  "mutation_controls.py": "098425b08c7fffbaa890812d682214b6bd7d0dd4b7565b3a1ac13ec90be53244",
+  "synthetic_world.py": "2ca6914a72fe89461eca53b511a71d915248f2e701972b403f4900b86940251c",
+  "syscall_trace.py": "cdc7937bc15e5bc1250cd09733d8e34b03832ad901bff3e86808ddde630e911c",
+  "test_gate.py": "438cfb72d1451f48faedef262ccaf58352353d7dee193549e0d01def9b51163e"
+ },
+ "pins_path": ".agents/operations/newperiod-input-gate-20261021/revision-v4/pins.json",
+ "pins_sha256": "1cf54a2ca4e97b0786eed08b70798914cf9816633b1e7fa332e43a703ab5c2d7",
+ "repo_head_at_freeze": "6da41eb",
+ "reviewer_model": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker_label": "/root/opus_review",
+ "scope": "local synthetic only; two changes (absent listed readers recorded, /etc/locale.alias exact system file)",
+ "verification": {
+  "mutation_controls": "26/26 detected",
+  "revision_v3_test_gate_in_place": "162 passed",
+  "revision_v4_test_gate": "168 passed",
+  "ruff_check": "All checks passed",
+  "v3_repro": "WitnessFailure: readers, rc 1, no witness"
+ }
+}

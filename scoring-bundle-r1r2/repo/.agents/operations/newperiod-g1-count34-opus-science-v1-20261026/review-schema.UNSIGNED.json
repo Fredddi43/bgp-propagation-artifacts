@@ -1,0 +1,17 @@
+{
+  "independent_from_author": false,
+  "operator_source": {
+    "path": "<REPO>/.agents/operations/newperiod-g1-count34-opus-science-v1-20261026/operator.py",
+    "sha256": "76267b9055a02cc02a9e88432d3486969bac06ef986a1dab67b8dd751496295c"
+  },
+  "passed": false,
+  "request": null,
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": "opus-review",
+  "scope": "g1b-count-stage-v1-once",
+  "worker": {
+    "path": "<REPO>/.agents/operations/newperiod-g1-count34-opus-science-v1-20261026/worker.py",
+    "sha256": "9c1642741238da2afca99449d4e836664f1a3357aa7e46983520b458ccdcbd90"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author": "/root/remaining_work_audit",
+  "author_model": "codex",
+  "files": {
+    "REVIEW.md": "106a1757eb66416651d059d751ec8469df036e726ec53569f3b61571d2552e9e",
+    "build.py": "a16a87ac640c790ff53b6cada31808adafb086e359f67ce995cc333b515bfc84",
+    "candidate-v1/binding.json": "964bc2381f05e61abc52cd9e78238847495bfb2b6493d65868b73243497ccf46",
+    "candidate-v1/bootstrap.py": "e14d8a858e9f9756ed1b0396cc77b25b8a503b83efdb6166748fb4bb7db73cc4",
+    "candidate-v1/client.py": "a11d042163c7cd820bcb9cbbc815dd59b2d905c8628a431ca114a404e877a299",
+    "candidate-v1/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "candidate-v1/reviewed_baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+    "candidate-v1/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "candidate-v1/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "candidate-v1/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "candidate-v1/runner.py": "43e8579b36b95e1550caf8f1ee05f57d73216ec457f32344c6a56f7abc253788",
+    "candidate-v1/stable.py": "3375dcff1a007ee043b5e254fec5392cba4c282c2a6c16e4cfb54337ef2e3e54",
+    "original_bootstrap.py": "281b3b608dcd826b2ac0b6b18c34d3756836d32c29c8b1421bb2318d6b8e5c13",
+    "original_client.py": "1eeeea1d7e08a332a26384049d2061bc2d2b6198bd3dd48999758e0faf4c28fc",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "test_build.py": "4ecd0bbf11759542213dccd18d1fdb94444f374e1036b00cd15f0a29e87e8f18"
+  },
+  "kind": "newperiod_stable_transport_code_candidate_v1",
+  "tests_passed": 17
+}

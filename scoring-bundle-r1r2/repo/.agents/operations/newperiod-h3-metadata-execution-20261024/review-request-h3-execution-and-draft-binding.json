@@ -1,0 +1,7 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "packets":{"execution":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-execution-20261024/review-ready.json","sha256":"2a4e51859d101a2d6a920965cb4e180d05137cfe44ea7230beed692434c33bea"},
+   "kernel_current":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-publication-20261024/review-ready.json","sha256":"8985fc2afcc97f5be7ba15ecbd1733b2647d2ea6d9191d28e6ad31ebdb766300","note":"supersedes bdf5b437 only by moving the H3 collector inventory path to control-draft (exists on host) and regenerated local artifacts"},
+   "coverage_r3":{"path":"<REPO>/.agents/operations/newperiod-h3-coverage-reconciliation-20261024/r3/review-ready.json","sha256":"a69f40aea77faf17757a67fa2b119a9277da4aff8892b7e087666ec95be32e15"}},
+ "asks":["CODE review of the H3 execution specialization (diff vs reviewed timing execution) + actual draft binding + transport packet.","Resource assessment of draft: 8CPU/128GiB/4h, output 512MiB/2GiB, staged source scope (resource-request.json binding 8dd6e301).","If PASS (after kernel+coverage PASS): exact draft operation approval naming plan/files/resources/read_scope/source_scope, gate_publication_authorized false. Root then fresh joint admission + stage/held."],
+ "priority":"high","utc":"2026-10-24T08:47:24Z"}

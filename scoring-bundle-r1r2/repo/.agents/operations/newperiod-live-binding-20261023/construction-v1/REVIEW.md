@@ -1,0 +1,13 @@
+# L prospective construction binding
+
+This closes the local pre-R2 construction *declaration* gap in the reviewed L implementation. It does not claim an actual cohort, graph, source validation, fit, or execution-host runtime admission.
+
+`construction.py` consumes only the two already captured N construction metadata byte objects, exact immutable refs1b1d9a8b/ef952b00, frozen recipes6d851282, and the exact independently reviewed implementation-binding12d2ddbe. No source references are followed. Exact source declarations are retained, including original per-horizon receipts and history root/digest. The actual N values fix topology lag1month, ROV lag1day, max_nodes3000 and history2023–2026. The original reviewed `live.construction_options` supplies all original build_split options: RIS7 input, reference10 target, shared completed history, delay1800, no early input filtering and no candidate expansion.
+
+The emitted `prospective-construction.json` binds implementation/logger/local version anchors plus all20 cells and the exact L calendar. It explicitly forbids reusing N split/exclusion decisions: the L train/validation dates differ, so original incident grouping must run again over all admitted original source rows, including the unused interval before purging it. Actual L source/cohort metadata is not accessed now. Separate data/history roots must materialize max(recorded availability,onset+9000s) for successful histories, preserving failures. Existing `live.build` and `live.fit` enforce the reviewed post-R2 external operation boundary and use the unchanged original builder/trainer. This declaration creates no new launcher, approval or scientific kernel.
+
+The implementation declaration and this prospective declaration together are the local pre-R2 artifacts. Production still needs independent final freeze-ledger acceptance, actual execution-host version/source closure, completed R2, actual admitted L source/clock/maturity and boundary audits, and finite resource admission. The passive logger remains an availability/timing study unless a trigger is independently selected; the 14-day pilot plus2h followup is not shortened for the deadline.
+
+Seven tests pass: exact actual already-captured settings/ref binding with no referenced path reads; five source/recipe/implementation/horizon refusals; and the genuine original cohort constructor showing September20 validation and October5 unused exclusion rather than inherited N split decisions. Prior24 live tests, including original builder and20-epoch fits on invented tiny data, remain unchanged and independently reviewed.
+
+Run: `.venv/bin/python -B -m pytest -q -p no:cacheprovider .agents/operations/newperiod-live-binding-20261023/construction-v1/test_construction.py`

@@ -1,0 +1,281 @@
+% Required IMC appendix sections: Ethics, Open Science, Generative AI (titles are fixed by the call).
+% Revision of 2026-10-30 (peer review 1, item (a)17): facts from the repository replace the author-confirmation notes where
+% they exist; the facts the repository cannot establish are listed in ONE comment list (not printed) at the end of sec:openscience
+% (peer review 2, (a)1: the printed red \todo became a comment on 2026-10-30).
+\section{Ethics}\label{sec:ethics}
+This work does not involve human subjects or user traffic.
+It uses public BGP archives (RIPE RIS, RouteViews, PCH) and public RPKI ROA archives.
+It also uses public event catalogues (Cloudflare Radar, GRIP) and published per-AS ROV measurements (RoVista).
+Further sources are CAIDA datasets and the BGPKIT peer statistics, which we used to choose the collectors.
+All data of this study come from these passive sources.
+% src (round 4, panel-r4 P5 / T3): BGPKIT peer statistics of 2024-06-15 select the ten collectors (sections/03-data.tex, refs.bib bgpkit).
+The authors made no BGP announcements and sent no active probes.
+% src: no announcement, beacon or probe tooling or data by the authors exists in the repository (docs/plan/gap-register.md names RIPE Atlas and Ark as options only). Confirmed true by the authors on 2026-10-31.
+
+The paper names some networks, for example upstreams that stopped carrying an RPKI beacon (\Cref{sec:beacons}).
+Such a name reports what our collectors observed, not a judgement of the filtering policy of that network.
+The paper does not assign intent to any network.
+
+An observed origin change or an invalid origin is not evidence of an attack.
+For this reason the paper calls the first transition of a recovery pair the outward change.
+Some file names of the released recovery tables still use the word hijack, which follows the catalogue label and claims no attack.
+The released artifact keeps public prefixes, AS numbers and collector names, because they define the measurements.
+% src: scratch/release-public-final-20261016/MANIFEST.json (31 paths named *_hijack_first_transition); sections/06-recovery.tex (outward transition).
+
+A forecast of which ASes an event will reach could help an attacker to choose a leak or hijack with a wide reach.
+We judge the added risk low, because the forecasts add little over a history baseline that anyone can build from public data (\Cref{sec:forecast}).
+A hijacker can already try to keep a route away from collector peers~\cite{milolidakis2023}.
+Past public events show which ASes recur on collector-visible paths, so our forecasts add little to such an attempt.
+% round-3 reviews M11 / second reviewer W6: dual use argued from low marginal value, and collector evasion named (milolidakis2023, cited in sec:back).
+The study found no software vulnerability, so no disclosure was needed.
+% src: no vulnerability record exists in the repository either way; confirmed true by the authors on 2026-10-31.
+
+\section{Open Science}\label{sec:openscience}
+We release code and derived data in an anonymous repository (\url{https://anonymous.4open.science/r/bgp-propagation-artifacts-BE40/}).
+A permanent archive link replaces it in the final version.
+The package holds the replay code and the event identifiers with the observed path-AS sets for January 2022 to August 2026.
+It flags unavailable source windows and unsupported withdrawal baselines.
+It also holds the RPKI validity tables, the recovery pairs, the beacon measurements, and the retained checkpoints and per-event evaluation tables of the slow-regime experiments.
+It gives instructions to reproduce the main tables and figures with Python 3.12.
+% src: docs/artifacts-release.md; public release MANIFEST.json and REPRODUCE.md
+% src: docs/artifacts-release.md (release of 16 October 2026: 115 graph-model results, retained final checkpoints, 27 event tables).
+
+The package dates from 16 October 2026, before R1 and R2.
+It does not yet hold the R1 report or the R2 forecasts and labels.
+It also lacks the freeze and seal ledgers, the access log, the deviation ledger and the review records.
+
+Before submission, we will upload these items as a separate scoring bundle with these contents:
+\begin{itemize}
+\item the R1 report, the R1 per-event score files of every arm, the R2 primary result and the R2 per-event scores
+\item the R1 test labels and the R2 label file, both derived from public archives
+\item the seal of the R2 forecasts, with the hash of the forecasts of each arm, and the ledger of the R1 forecasts
+\item a ranking file of the R1 forecasts, with its checker
+\item the evaluator, the in-process wrappers of \Cref{app:protocol} and their hashes
+\item the freeze, seal and deviation ledgers, the access log of the custodian and the review records
+\item the scripts, inputs and outputs of the revision analyses
+\item the records of the two re-scorings of the secondary lanes, with their completion and validator records, the validator and the scripts that extract their table
+\item the inputs of the leak audit, except the CAIDA relationship and AS-to-organisation files, which a reader obtains from CAIDA
+\item a manifest with the size and SHA-256 hash of every file
+\end{itemize}
+The per-event score files name no forecast AS and no new member, and only the R2 files name the seeds (\Cref{app:protocol}).
+The native candidates of online history are the ASes of completed earlier leaks, so a reader can rebuild them from the released event tables.
+The released copies of generated files replace host names and local paths with placeholders.
+
+We do not release the raw R1 forecasts or the sealed R2 forecasts, which take 432 and 425\,GB.
+Instead, a ranking file of 121\,MB holds, for each R1 cell and event, the ranking positions of the new members with their ties.
+With the released target and seed sets, a checker recomputes AP, precision and recall at $k$ and coverage, and matches every released value.
+It covers \num{1008} of the \num{1032} R1 cells with ranking metrics.
+The forecasts of the other 24, history baselines of the delay and withholding sensitivity, no longer exist.
+The checker needs about 3 minutes on a workstation in its fast mode.
+% src (round 7, review-r7 item 2): <FORECAST_ROOT>/r1-rank-sidecar-20261101/ (README, sidecar/{cells,events,sets}.parquet, MANIFEST.json;
+%   121.4 MB; build jobs 52753673 and 52753933, replaying the R1 scoring envelopes with the pinned driver); scripts/r1_rank_sidecar_check.py:
+%   1,008 cells, 3,473,224 ranking rows, 32,193,080 fields compared, 0 mismatches; groups mode 3 min 18 s on the authors' workstation.
+%   Gaps: 24 history-kNN cells of the delay900/delay1800/withhold families (occurrence-final-v1/history-online-baselines-v1 deleted);
+%   34 curve/count cells report no ranking metric. 930 cells take their targets from set_final_2h of the hash-pinned event table, because
+%   the label tensors were deleted; every released ranking and decision field matched (sidecar README).
+% src (round 7): scratch/release-scoring-bundle-20261031/README.md "What is excluded": R1 raw forecasts 432,123,440,381 bytes; R2 predictions.json of
+%   the 345 sealed arms 425,467,553,865 bytes (bound by seal.json predictions_sha256); MANIFEST.json has no r2_forecasts component.
+% src (round 7, criteria M9(b)-(e)): native candidates: tab:recipe "History" (every AS with participation in completed earlier events of the
+%   library, built from the released event tables of 2023 onwards, sections/08-forecast.tex); placeholders: the bundle's anonymity pass
+%   (scratch/release-scoring-bundle-20261031, <BATCH_HOST>, <FORECAST_ROOT>); revision analyses: scripts/paper_*.py (the regenerations of round 7
+%   ran in seconds to minutes on the authors' workstation); runner: .agents/operations/newperiod-single-r2-persistence-20261024/runner.py,
+%   1,950,000 MiB requested (DEVIATIONS-LEDGER.md D-A35c), D-A39 run 14 h 53 min for all secondary lanes.
+
+The revision analyses of the R1 and R2 scores run as Python scripts on a workstation in minutes, from the released per-event scores.
+The allowlist and trust-anchor checks of \Cref{sec:data} read intermediate replay outputs and the ROA archive, which the bundle does not hold.
+To score R2 again, the runner of the evaluator reads the freeze, the seal and the label file.
+Each of our runs requested about 2\,TB of memory on one node.
+Attempt 12 ran for 8 hours, and the two re-scorings for 15 and 2 hours.
+% src (round 7, EIC B6, B7; criterion M9(d)): sacct 52700052 Elapsed 08:12:57, 52728251 14:53:03, 52750274 01:54:06; memory request
+%   1,950,000 MiB (DEVIATIONS-LEDGER.md D-A35c; Slurm MaxRSS sums the parallel workers and is not printed). Runner: the evaluator's runner.py.
+\pending{upload of the scoring bundle, with its manifest hash, and refresh of the anonymous mirror}
+% src (round 4, panel-r4 P6 / T3, NEW-7; review-r4 W3 and section 8 item 3): scratch/release-scoring-bundle-20261031/README.md
+%   ("What would go in" table) and MANIFEST.json (schema bgbench-scoring-bundle-staging/1, 2,014 entries; summary_by_component: r1_results,
+%   r1_forecasts incl. 1,066 per-event score tables and the prediction ledger, raw R1 forecasts 432,123,440,381 bytes "decision needed: size";
+%   r1_labels (evaluation seal 1cad501a... binding the R1 test labels); r2_results (primary.json 849e0645..., primary-scores.json af9656ac...);
+%   r2_labels (label file 20e3044f..., 644,719,739 bytes); r2_forecasts (sealed forecasts of the 345 sealed arms); ledgers; access_log;
+%   evaluator (197 files); wrappers (23); review_records (1,699); analysis_over_bundle (13: actor bootstrap, set errors, month boundary,
+%   R1 arm levels, R2 table)). Record fields: sections/app-protocol.tex "Revision analyses" (R1 files name no member AS, R2 files only seeds).
+%   No date is printed: the upload waits for the D-A39 run, a size decision for the raw R1 forecasts and an anonymity pass (README "Before the
+%   upload" 1--3). The README's author decision of 2026-10-31 (full bundle before submission) stands.
+% Round 5 (2026-11-01; panel-r5 V5 / T1, review-r5 W5): "Before submission, we will upload" is now printed, per the authors' decision
+%   of 2026-10-31 (full scoring bundle before submission); still no date, and the \pending line stays until the upload.
+% src: docs/artifacts-release.md; scratch/release-public-final-20261016/MANIFEST.json (2,193 paths, none new-period, seal, ledger, review or R1).
+% Author decision of 2026-10-31: release the FULL scoring bundle before submission (R1/R2 forecasts and labels derived from public data,
+%   evaluator and wrappers, freeze/seal/deviation ledgers, access log, review records, hashes, refreshed anonymous mirror).
+%   NOT released when this text was written. Staging list (local only, nothing uploaded): scratch/release-scoring-bundle-20261031/{README.md,MANIFEST.json}.
+%   FLIP after the upload: replace the two "does not yet hold / lacks" sentences and the \pending line with a description of the
+%   released bundle, its package date and the manifest hash, and update item [3] of the comment list below.
+% Round 6 (2026-11-01; panel-r6 M2 (a), (b), T3; review-r6 W4): owner instruction of 2026-11-01 (authors' release decision: the full
+%   scoring bundle; the 432 GB raw R1 forecasts are too large for the anonymous mirror, so "available on request / later archival deposit"
+%   replaces "their place of publication is still open"). Bundle list: the lane records are added as one item (family, completion and validator
+%   records of the D-A39 re-scoring and the lane-extraction scripts: paper/generated/newperiod-lanes.json records, extraction, validator; the
+%   D-A40 records join it after that run). The release stays under the \pending line. Round 7: the released copies of generated files carry
+%   placeholders for hosts and paths (printed above); the audit inputs a reader must obtain are listed; the allowlist needle matches 03-data.
+
+The code is under the MIT licence.
+Derived data keep the terms and the citation rules of their sources.
+RouteViews data are under CC BY 4.0, and Cloudflare Radar data under CC BY-NC 4.0.
+
+PCH states a Creative Commons Attribution-ShareAlike licence for its routing data~\cite{pch_mrt}.
+Its page names CC~BY-SA~4.0 but links to CC~BY-NC-SA~4.0~\cite{cc_by_nc_sa_4}, and the ShareAlike terms of the two differ.
+Because the two licences conflict, the scoring bundle holds no PCH-derived file.
+% Author decision 2026-11-01: drop the PCH-derived event sets (2024_pchorigin, 2024_leakpch) from the scoring bundle; the 16 October package
+%   is left as published.
+% src (round 7, criterion M8(b)): scratch/release-public-final-20261016/MANIFEST.json: data/eventset/2024_pchorigin/*, data/eventset/2024_leakpch/*
+%   (events, pch_vs_public, persistence splits, summary) and data/verification/frozen-event-ids/2024_{pchorigin,leakpch}.parquet.
+The 16 October package holds no raw PCH data, only derived per-event counts and AS sets.
+% src: author decision 2026-10-31 (PCH terms CC BY-NC-SA 3.0 for IXP routing data; refs.bib pch_mrt). The 16 October package holds PCH-derived
+%   per-event tables only: data/eventset/2024_{leakpch,pchorigin}/{events,pch_vs_public}.parquet, summary/scope JSON and persistence CSVs
+%   (scratch/release-public-final-20261016/MANIFEST.json); events.parquet carries per-event AS counts and AS sets (set_* columns), so
+%   "counts and AS sets", not "counts" alone. No MRT file of PCH is in the package.
+% RESOLVED (owner, 2026-11-01): printed what the PCH routing-data page states (text BY-SA 4.0, link BY-NC-SA 4.0); stricter terms applied. Earlier note:
+%   so no licence page is printed. https://downloads.pch.net/BGP_Routing_Data (redirect target of https://www.pch.net/resources/BGP_Routing_Data,
+%   accessed 2026-11-01): "This work is licensed under a Creative Commons Attribution ShareAlike 4.0 License", linked to
+%   https://creativecommons.org/licenses/by-nc-sa/4.0/ (text says BY-SA 4.0, link says BY-NC-SA 4.0; the page does not say it covers the MRT files).
+%   https://www.pch.net/ixp/data (accessed 2026-11-01): CC BY-NC-SA 3.0 for the IXP directory API data, and a CC BY-NC-SA 4.0 page footer.
+%   Round 7: the print states the page's two licences (BY-SA 4.0 text, BY-NC-SA 4.0 link); "CC BY-NC-SA 3.0" is no longer printed.
+
+The CAIDA datasets are under the CAIDA Acceptable Use Agreement, which requires citation, and GRIP permits academic and educational use only.
+BGPKIT states that its peer statistics are free to use for any legal purpose~\cite{bgpkit}.
+
+The RIPE NCC requires attribution for commercial use of RIS data~\cite{ripe_ris}.
+Its terms of service limit the redistribution of its data, so we release no RIS archive file.
+The event tables hold derived research results, event times and AS sets, and our data card names RIS as their source.
+% Author decision 2026-11-01: release the derived tables as research results with RIS attribution (no RIPE NCC request).
+% round 7 (review-r6 W5, Open Science "RIS sentence"): release basis stated. Terms of service: https://www.ripe.net/about-us/legal/terms-of-service/
+%   Art. 3.5 (src comment below). Data card: scratch/release-public-final-20261016/docs/benchmark/data-card.md lines 6 and 42 ("RIPE RIS:
+%   https://data.ris.ripe.net/"); README.md line 54 ("Derived data retain the applicable upstream terms and citation requirements").
+
+We found no published terms for the RIPE NCC RPKI archive~\cite{ripe_rpki_archive} or for RoVista~\cite{rovista_data} when we checked on 31 October 2026.
+The repository terms of the RIPE NCC allow scientific research with its RPKI objects.
+We did not check the terms of the other four trust anchors.
+From them, the package holds only derived states, counts and shares, not ROA files or per-AS RoVista ratios.
+% src (round 5, panel-r5 V4 / T1; review-r5 W5): official pages checked on 2026-10-31 (see item [4] of the comment list below):
+%   RIPE NCC RPKI archive: https://ftp.ripe.net/rpki/README.txt and
+%   https://github.com/RIPE-NCC/internet-dataset-descriptions/blob/main/rpki-repo-archive.md state no terms; the RIPE NCC Certification
+%   Repository Terms and Conditions cover the repository, not the archive. RoVista: https://rovista.netsecurelab.org/ shows no terms to a
+%   fetcher, and https://api.rovista.netsecurelab.org/rovista/api returned HTTP 404 (docs/research/2026-09-09-rpki-rov-propagation-prior-art.md
+%   section 6: "No licence page"). Released derived files (scratch/release-public-final-20261016/MANIFEST.json): data/eventset/<year>/rpki_validity
+%   and later_validity (columns event_id, validity, n_covering, invalid_reason, prev_validity, ...; no ROA rows) and rov_frontier* (columns
+%   carriers, carriers_measured, carriers_enforcing, frontier, frontier_measured, frontier_enforcing, log_odds; no per-AS RoVista ratio),
+%   schemas read 2026-11-01; recovery rov_summary*.json hold aggregate counts and shares only. No ROA file and no RoVista series is in the package.
+% src (round 4, panel-r4 P5 / T3; review-r4 W5 "other source-term checks"), official pages read on 2026-10-31:
+%   RIS: https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/commercial-use/ (undated page): to provide paid
+%   services or products based on RIS data, "The organisation must acknowledge the RIPE NCC and RIPE RIS as the source of any RIPE RIS data
+%   used", with the RIPE NCC logo, a link and a boilerplate description; a revocable default permission. The page states no separate terms for
+%   non-commercial or research use. The general https://www.ripe.net/about-us/legal/terms-of-service/ (Art. 3.5) forbids re-packaging or
+%   re-distributing data of the website or of publicly available RIPE NCC services "unless this is permitted as part of their Use".
+%   https://ris.ripe.net/docs/legal/ (last updated 2023-11-28) showed no terms text to the fetcher.
+%   BGPKIT: https://data.bgpkit.com/peer-stats/README.md: "This data set is free to use for any legal purposes including commercial usage",
+%   and use means agreeing to the "BGPKIT Public Data Acceptable Use Agreement" at https://bgpkit.com/aua, which returned HTTP 404 on 2026-10-31,
+%   so its terms are not verified. The package releases no BGPKIT data (the peer statistics only chose the collectors).
+% Round 6 (2026-11-01; panel-r6 M1 / T3, review-r6 W5 "Open Science"): RIS redistribution basis NOT printed, because no official page
+%   verifies one. Checked 2026-11-01: https://ris.ripe.net/docs/legal/ (last updated 2023-11-28) shows only the heading "Legal Information";
+%   https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/ ("researchers might use the raw data for research papers";
+%   no terms text), .../ris-data-access/ and https://www.ripe.net/analyse/raw-data-sets/ris-raw-dataset/ (no terms text; neither page says which
+%   terms apply to RIS); https://www.ripe.net/analyse/raw-data-sets/terms-conditions/ (RIPE Data Repository terms, undated: Art. 3(1) scientific
+%   research, 3(2) "must not re-distribute the RIPE Data Repository or the Data", 3(3) re-packaging or re-distribution only with written permission,
+%   3(6) attribution of the RIPE NCC in published results, 3(8) inform the RIPE NCC of publications) does not name RIS. Whether these terms or
+%   the Terms of Service Art. 3.5 bind the released derived per-event AS sets is raised with the authors (item [4] below).
+%   "as of 31 October 2026" -> "when we checked on 31 October 2026": the date is that of the terms check, not of the data access
+%   (refs.bib rovista_data lastaccessed 9 September 2026 is the data access; panel-r6 X12).
+
+The package does not include raw archives in the Multi-Threaded Routing Toolkit (MRT) format, raw third-party catalogues, CAIDA relationship files or bulk graph tensors.
+To rebuild the graph tensors, replay the public archives and obtain the topology inputs.
+% src: docs/artifacts-release.md; public release MANIFEST.json and REPRODUCE.md; scratch/release-public-final-20261016/LICENSE (MIT);
+%   paper/refs.bib (RouteViews CC BY 4.0, DOI 10.7264/1y7v-2d90; CAIDA AUA); docs/research/2026-09-03-data-and-tooling.md (CAIDA AUA lines 697-702; GRIP academic and educational use);
+%   Cloudflare Radar API and data downloads: CC BY-NC 4.0 per developers.cloudflare.com/radar (checked 2026-10-30).
+
+\paragraph{Compute and storage.}
+Ingestion streams 2.8 to 3.9\,TB of raw archives per year without storing them.
+The pass over 2024 took about 11 hours on cluster CPU nodes and kept 16.3\,GB of prefix events.
+The learned forecast models trained on Quadro RTX 8000 GPUs, at 0.42 to 0.61 GPU-hours per core fit on \num{3216} training events.
+The slow-regime ladder ran on CPUs, and each evaluation run of R2 requested about 2\,TB of memory on one node.
+The package holds 3.56\,GB in \num{2194} files, and its 140 code tests pass in 22\,s on a CPU.
+A rebuild from raw archives repeats the ingestion and needs the CAIDA files.
+% src: sections/app-a.tex (2.8--3.9 TB per year); docs/results/2026-09-04-pass-2024.md (about 11 h end to end, 3.43 TB streamed, prefix_events 16.3 GB retained);
+%   docs/paper/forecasting-improvement-20261017/MANUSCRIPT-DRAFT-METHODS.md GPU table (Quadro RTX 8000 for tuning and core fits); NEWPERIOD-READINESS-20261019.md (0.42-0.61 GPU-h at 3,216 training rows);
+%   jobs/ladder_years.sh (CPU); DEVIATIONS-LEDGER.md D-A35c (1,950,000 MiB request); docs/artifacts-release.md (2,194 files, 3,559,198,650 bytes);
+%   docs/paper/corrections-2026-10-16/public-clean-install/README.md (140 passed in 22.42 s, CPU PyTorch).
+
+The package manifest lists the size and SHA-256 hash of every file, so a reader can check any copy against it.
+This appendix describes the package whose manifest has the SHA-256 hash \texttt{a05edbba0c4fb182b55f3019a3568298\allowbreak 6dc2d27530daeb70ef54030a86b6596b}.
+% src (round 4, panel-r4 P6 / NEW-7 "print the manifest hash the paper describes"): docs/artifacts-release.md ("Its manifest SHA-256 is
+%   a05edbba0c4fb182b55f3019a35682986dc2d27530daeb70ef54030a86b6596b"; 2,194 published files, 3,559,198,650 bytes). The anonymous mirror served
+%   the initial manifest 48818b1b... when last checked (same file, "Publication status"); its refresh is part of the \pending line above.
+% round-3 review NEW-9: "such as the anonymous mirror" removed, because the mirror served its initial manifest when last checked (item [3] below).
+% Release plan: docs/artifacts/release-20261030/DECISIONS-FOR-AUTHORS.md proposed D1--D13 on 2026-10-30 (D3/D4: hold the new-period material
+%   and the deviation ledger until the evaluation is final). The authors decided on 2026-10-31 to release the FULL scoring bundle before
+%   submission (see the comment after the \pending line above); this supersedes D1--D4 and D12 of that proposal.
+% AUTHOR FACTS (peer review 2, check (5) and (a)1; kept as a comment, not printed).
+%   Closed on 2026-10-31 (author answers to the owner): no BGP announcements or active probes and no software vulnerability (sec:ethics,
+%   both confirmed true); the approval sentence and the tool list of sec:genai (confirmed as written); PCH terms (CC BY-NC-SA 3.0 for
+%   IXP routing data, cited through pch_mrt; no raw PCH data released).
+%   Still open:
+%   [3] release of the scoring bundle: decided (full bundle before submission), NOT yet uploaded; the printed \pending line marks it.
+%       Refresh the anonymous mirror BE40, which still served its INITIAL manifest 48818b1b... when last checked on 16 October 2026
+%       (docs/artifacts-release.md "Publication status"); the corrected package manifest a05edbba... is now printed (round 4).
+%       The planned bundle contents are now printed as a list (round 4); FLIP after the upload as described under the \pending line.
+%   [4] terms of the data sources (round 4, checked on the official pages on 2026-10-31):
+%       RIPE RIS: printed (commercial-use attribution, see the src comment under the licence paragraph). Open: whether the general RIPE NCC
+%         terms of service (Art. 3.5, no re-distribution) or the RIPE Data Repository terms (Art. 3(2), 3(3); round-6 check of 2026-11-01, src
+%         comment under the licence paragraph) bind the released derived per-event AS sets; no official page names a basis.
+%         Round 7: the printed text states the attribution rule, the redistribution term of the terms of service, that no RIS archive file is
+%         released and that the data card credits RIS; whether the derived tables need a written permission is raised with the authors.
+%       RIPE NCC RPKI archive: NOT verified; round 5 prints "no published terms found as of 31 October 2026" (author confirmation still welcome). ftp.ripe.net/rpki/README.txt and the dataset description
+%         (github.com/RIPE-NCC/internet-dataset-descriptions, rpki-repo-archive.md) state no terms. The RIPE NCC Certification Repository Terms
+%         and Conditions (https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/legal/ripe-ncc-certification-repository-terms-and-conditions/,
+%         in force from 13 November 2025, Art. 3.1) allow use of the RIPE NCC repository "only in order to validate Certificates, CRLs and
+%         RPKI-signed objects, or for scientific research purposes", but they cover the repository, not the archive, and the archive also holds
+%         the VRPs of the other four trust anchors, whose own terms were not checked. Printed (round 5): only that we found no published terms
+%         when we checked on 31 October 2026; no terms are claimed. Author confirmation still welcome.
+%       RoVista: NOT verified; round 5 prints "no published terms found as of 31 October 2026" (author confirmation still welcome). rovista.netsecurelab.org is a JavaScript application that shows no terms to a fetcher, and
+%         api.rovista.netsecurelab.org/rovista/api returned HTTP 404 on 2026-10-31 (also docs/research/2026-09-09-rpki-rov-propagation-prior-art.md
+%         section 6: "No licence page"). Printed (round 5): only that we found no published terms when we checked on 31 October 2026; author
+%         confirmation still welcome.
+%       BGPKIT: printed (README "free to use for any legal purposes"); the linked acceptable use agreement returned HTTP 404.
+%       PCH: printed per the author decision of 2026-10-31; the round-6 check (TODO-C under the licence paragraph) found no official page
+%         that states CC BY-NC-SA 3.0 for the routing data. ShareAlike may bind the PCH-derived tables (docs/artifacts/release-20261030/DECISIONS-FOR-AUTHORS.md D9).
+%   [5] closed (round 4): it asked how many of the 223,308 origin events of the former section sec:disclosures have their onset in the
+%       evaluation window. That section and its 223,308-event cohort are no longer in the paper (the label sec:disclosures does not exist);
+%       the origin lane is one of the secondary lanes of sections/08-forecast.tex "Secondary lanes".
+% The earlier printed \todo listed five items, [1]--[5]. The suggested sentence "the anonymous mirror reflects the 16 October package"
+% was not used, because docs/artifacts-release.md records that the mirror still served its initial manifest on 16 October.
+
+\section{Generative AI}\label{sec:genai}
+Generative AI tools helped with this work, under the direction of the authors.
+\emph{Writing.} The tools drafted and revised text in all sections, including the abstract, the captions and the appendices.
+The authors edited and approved the text of the paper.
+\emph{Code.} The tools wrote and changed code for data intake, replay, RPKI validation, measurement, model training and evaluation.
+They also wrote and changed the code for tables and figures, and the scripts that run compute jobs.
+\emph{Analysis.} The tools ran analysis jobs, collected the reported numbers into tables, and checked bibliography entries against their sources.
+
+AI-agent sessions also reviewed the steps that touched protected evaluation data (\Cref{sec:forecast-newperiod}) and drafts of this paper.
+Until 27 October 2026, the reviewing session was never the session that prepared the step, with one recorded exception.
+From 27 October, one coordinating AI session approved every step of the sealed evaluation after a short check (\Cref{app:protocol}).
+The check was a skim of a short summary of each step: what changed, the tests and their output, and the risks.
+It also took the scientific decisions of that phase together with the authors.
+% src (round 4, panel-r4 Q11 / T7 and EIC B8: the pointer alone was circular): .agents/operations/agy-lanes-20261027/RULES.md
+%   ("root signs by skim"; each review-queue entry holds the packet path, a 5-line summary, what changed against the predecessor, tests and their
+%   output path, exact risks, and the command that flips the verdict; root = an AI session). The confirmed approval sentence above is unchanged.
+The authors directed every session, so these reviews are not independent of the authors.
+
+The time-series foundation models in \Cref{sec:forecast} are methods under test, not writing aids.
+No generative AI tool is an author of this paper.
+
+The authors designed the study and its protocol.
+They checked the generated text, code and results.
+They take full responsibility for the accuracy, originality and integrity of the paper, the work it describes and its artifacts.
+Tools and versions:
+\begin{itemize}
+\item Claude Opus 5.5 and Claude Sonnet 5.5 (Anthropic) for writing, code, analysis, review and coordination.
+\item GPT-6 Astra and GPT-6.1 Sol (OpenAI) for code, review and proofreading.
+\item Gemini 3.1 Pro and Gemini 3.8 Flash (Google) for bibliography checks, code and job runs.
+\item Qwen3.8-flash-next for code and analysis jobs.
+\end{itemize}
+% layout only (round-2 review S8: the semicolon list became an itemised list); every tool, version and use is unchanged.
+% src (sources of the printed tool list of sec:genai): .agents/HANDOFF.md (authoring and review roles of the listed tools);
+%   .agents/operations/agy-lanes-20261027/RULES.md (coordinating session from 2026-10-27; lane workers); paper/bibcheck/README.md (bibliography
+%   check); docs/paper/review-codex-astra.md (proofreading); OPENCODE-ROOT-HANDOVER.md (workers).
+%   The approval sentence and the tool list were confirmed as written by the authors on 2026-10-31.

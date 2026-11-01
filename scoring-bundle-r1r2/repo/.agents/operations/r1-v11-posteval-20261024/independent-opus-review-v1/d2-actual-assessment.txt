@@ -1,0 +1,50 @@
+ACTUAL ASSESSMENT: D2 class (d) label rescoring (approval 62219c76, d2-fix-v5)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+Execution chain: VALID.
+  - submit-intent: script 805f427c (= approved). submit-result 2ccad25d: rc 0, job 52475222. One submit.
+  - fetch-sha b3f23384: sacct shows exactly
+      52475222_0|COMPLETED|0:0|00:21:00|<COMPUTE_NODE> and
+      52475222_1|COMPLETED|0:0|00:21:12|<COMPUTE_NODE>;
+    host shas d30 fc0e252a and d60 d9ba07ac.
+  - fetch-request-d2 b9998866 names exactly those 2 files, tool f19d1066.
+  - capture-d2.json.gz 52a9ab73 (2,272 B). Each embedded raw re-hashes to its fetch sha and is byte-identical to
+    evidence/rescore-d{30,60}.json (3,620 B each).
+  - The earlier OOM attempt 52474923 (d2-fix-v3) stays preserved. This was a distinct reviewed run at 128 GiB,
+    not a retry.
+
+Findings: PASS.
+  - Both files are kind r1_class_d_rescore_v1, plan 6e18854b, report 049c7a9c, verifier pins 79cb199f (= the job's
+    classd pins).
+  - Comparison rule: V1 atol 1e-12, rtol 1e-10, adopted rules fe602370.
+  - d30: 33 cells = exactly the frozen plan's d30 cells (20 core-gbdt, 10 transfer-repaired-neural, 3 baseline).
+    checks 1,101,992; failed []; no_per_event_file [] (the plan has no per-event-less cells).
+  - d60: the same structure and exact plan cells. checks 1,101,992; failed []; no_per_event_file [].
+  - Identical check counts are expected and verified: d30 and d60 share the same 3543 event ids and the same
+    33-cell structure.
+  - The label-reader closure is bound to forecast_train ebf066a2, with bgbench modules from the v8 source manifest.
+  - Disclosure carried forward: a target-decoding fault common to the evaluator and this reader (same
+    load_partition) is not detectable by class (d). Event ids, candidate lists and seeds are cross-checked
+    against the committed predictions.
+  - Only findings (counts, cell ids, hashes) were exported. No raw labels, predictions or tensors were fetched.
+
+Structured record for the receipt builder: d2-actual-assessment-v1.json e40d2fca, completed_utc
+2026-10-24T04:48:09.455451+00:00. It binds:
+  - capture 52a9ab73;
+  - fetch b3f23384;
+  - findings d30 fc0e252a and d60 d9ba07ac (host paths).
+I verified that release-native-v2/build_release.py check_d2 accepts it unchanged.
+
+R1 NUMERICAL VERIFICATION, combined: PASS.
+  - Class (a)/(b): verify-r1 d2a18c6f, integrity 329,615 checks / 0 failed, recompute 681 / 0 failed
+    (assessment d04808e3).
+  - Class (d): 2,203,984 checks / 0 failed over the 66 fixed cells.
+  - All 1156 retained statuses (1066 committed / 90 failed) are unchanged.
+This is NOT yet a release.
+  Still required:
+    1. The author builds the receipt with build_release.py (--completed-utc must equal the time above) from an
+       inputs record that binds this assessment.
+    2. My final exact review of that inputs record and the emitted receipt bytes.
+    3. My exact publication approval (C1).
+    4. One publish, with readback.
+  No N admission and no manuscript use follow until the published receipt sha is the external anchor.

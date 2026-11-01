@@ -1,0 +1,9 @@
+# Assembled pooled N temporal source audit
+
+This packages the already independently reviewed selector-compat/source_guard.py byte-for-byte under the original source_audit.py entry point. Exact collector_inventory.py109c2a86 is copied unchanged; original whole source-audit/scientific/guard files and original CPU job remain. The only other source edit adds the actual new author to common.independent. Spec adds the existing seventh collector_inventory requirement and exact changed file pins. Original source_guard execute already forwards that inventory; no new source comparison, normalization, fit, candidate, cohort or output arithmetic was written.
+
+34 tests passed1.89s:33 inherited source/audit/clock/status/exclusivity/refusal tests plus genuine original source→sealed pooled tensor→full source equivalence→new pooled input preflight→original normalization/input audit at30/60. No scientific validator, tensor/hash/source matcher or numerical kernel mocked in this added chain. Original full source bytes equal accepted selector-compat source_guard exactly.
+
+Prospective code only. No actual data, graph, source payload, validation outcome or fit read; no host calls. Actual dual sealed core manifests/gates from job52476269, actual N-temporal collector inventory, R1 release, resources/runtime and separate eligible operation review remain mandatory. Source audit then input audit then10GRU fits are distinct real dependency stages; core fit checkpoints are not a prerequisite. Resources unchanged CPU4/128GiB/112GiB AS/6h,100GiB floor; actual size/memory/output readiness not inferred from these limits. Actual source audit inputmax8GiB remains unchanged. Do not auto-retry or stage old/plain-selector package.
+
+Remaining operational seam: bind actual inputs and use reviewed held CPU source/runtime transport for each original job; no launch client or fabricated authority introduced here. Each original fixed output root remains exclusive.

@@ -1,0 +1,7 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "root_admission":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-execution-20261024/actual-binding-v1/draft-package-v1/resource-admission.json","sha256":"0596ccdc6e34947d754bd355fc17a8904106bdbaa41645b079722f70ec1ca5bf","pointer":"workers/opus-takeover-20261021/implementation/storage-gru-critical-path-20261024T075521Z/ROOT-H3-RESOURCE-ADMITTED.json","minimum_joint_free_bytes":494994980864},
+ "plan":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-execution-20261024/actual-binding-v1/draft-package-v1/plan.json","sha256":"e1c55139dbcbc8e1806e89f3535273f21f88aaf6c86f5adddf6aacdd94e0ee08","change_vs_reviewed":"resource_admission ref only (verified)"},
+ "asks":["Run your issue_approval.py on draft-package-v1 -> draft-package-v1/approval.json (exact existing approval terms)."],
+ "then":"author builds stage/held packet (transport_packet.py, min free 494994980864) for root stage/held review",
+ "utc":"2026-10-24T09:00:55Z"}

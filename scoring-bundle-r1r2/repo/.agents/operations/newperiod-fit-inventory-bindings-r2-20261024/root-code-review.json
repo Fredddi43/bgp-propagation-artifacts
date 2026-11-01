@@ -1,0 +1,17 @@
+{
+  "assessment": "Only two already-frozen recipe names added to composer allowlist. Existing exact dualcore/recipe/source/staging checks and bound-selector bytecode unchanged. No collector selection, population or numerical change.",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "684b8cc91aedaa4afe24753d1d5e82a76b718a559b9d221cca25050885b24314",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "prepare.py": "5e84a0833d8aeb32ea7ab725b2b05026b10d57087c28d47ef74c3b0ef1871e07",
+    "test_prepare.py": "0781ac3ea76d39ec12d3081830d8d7b5a36dfae13debc14cd1874e67486dea96"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "tests": "11PASS0.22s",
+  "utc": "2026-10-24T07:30:21.001625+00:00",
+  "verdict": "CODE_ONLY"
+}

@@ -1,0 +1,15 @@
+{
+  "automatic_retry_authorized": false,
+  "condition": "Once after exact successful export0 release, coordinator identity and no existing exact waiter. No later export release authority.",
+  "files": {
+    "request.json": "978ce792f7f74537dec2d9b26612766bb4a4aad48410eaae4e220457274fadd5",
+    "test_wait.py": "fa636efc5bc8e19acfd8a5a3e812415110be5afa15fa24e8d5703a7f987b17e8",
+    "wait.py": "93f25b710f81c04c547d93e8ad0de27b213f0c03ccc3b0a3a0e97427d9863a95"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "start_authorized": true,
+  "tests_passed": 3
+}

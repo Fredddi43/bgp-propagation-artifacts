@@ -1,0 +1,15 @@
+{
+ "approval_claimed": false,
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "frozen": "no edits while under review",
+ "kind": "r1_evaluation_v7_review_ready_v1",
+ "review_md_sha256": "5eab8317e09f7eb926feb2c2408d20de44195ce5e34c72e60335b6b806ee8858",
+ "review_pins": {
+  "path": ".agents/operations/r1-evaluation-v7-20261022/review-pins.json",
+  "sha256": "4d9a37b457597386c35cee456ae98916ab8c0191b5dd38cc53417c56328617f5"
+ },
+ "reviewer_session": "<SESSION_ID>"
+}

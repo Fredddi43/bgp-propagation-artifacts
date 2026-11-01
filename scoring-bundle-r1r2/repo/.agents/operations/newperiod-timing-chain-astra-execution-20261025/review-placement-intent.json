@@ -1,0 +1,11 @@
+{
+  "authority": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-chain-v2-20261025/root-authority-v1/chain-authority.json",
+    "sha256": "11e666e12e6f851f4a6262966ecb95ce31ac3881d274b8216d2fa0c3e83bb9c6"
+  },
+  "review": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/sensitivity-parallel-timing-budget-v2/controls/timing-d10__timing-d300__timing-d5__timing-d900/records/release-review-wave0.txt",
+    "sha256": "2e5d0da3f5392057ba0924fda3b6c30023c409d8ff4f0429fae9456a180aaa1a"
+  },
+  "remote_code_sha256": "7cb219b97935166bbc8dd91957f4736f015bbeb7da232a1ffb01343c76d50617"
+}

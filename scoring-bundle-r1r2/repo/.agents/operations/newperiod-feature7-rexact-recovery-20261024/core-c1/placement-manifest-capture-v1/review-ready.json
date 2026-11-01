@@ -1,0 +1,14 @@
+{
+ "author": "claude-opus-5-5 f4d75bb1 /root/opus_implementation",
+ "files": {
+  "capture.py": "a46f1e6de3a70823c819a7a64bba0932793794492c18222d666bf066e3e5317f",
+  "test_capture.py": "a689226507424972105e566cdd3cf4c1b6019e2d6bcab8b3d963aecd71d91445"
+ },
+ "host_call": "timeout 90 ssh -o BatchMode=yes <BATCH_HOST> 'timeout 60 python3 -I -S -B -' < capture.py (one invocation, one file, <=8 MiB, pinned d3e3c20a)",
+ "kind": "core_c1_manifest_capture_review_ready",
+ "not_authorized_here": "execution needs independent approval naming this call",
+ "purpose": "obtain exact placement closure list to build a fresh core tree locally from byte-identical repo files (only verifier 3a634a39 -> 6171148c), then core gate/launch successor like temporal-v2",
+ "root_decision": "C1 fresh isolated core source tree; no global verifier replacement",
+ "tests": "2 passed",
+ "utc": "2026-10-24T14:14:20Z"
+}

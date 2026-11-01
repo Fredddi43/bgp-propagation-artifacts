@@ -1,0 +1,20 @@
+{
+ "kind": "h3_chain_review_ready_v3",
+ "supersedes_review_ready": "4bfb9069fef52916677ec5388213266d2d8b13b93a09365178588637e357fc1e",
+ "dir": "<REPO>/.agents/operations/newperiod-h3-chain-20261025",
+ "author": "4ba6111c (h3_author)",
+ "reviewer": "review2 7f4c18c0",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "chain_h3.py": "9c5db616580c13cc9c90e1c877dce5fe13d7d7fdacff7d38e84b379170e0383b",
+  "assembly_capture.py": "8a6826dfd3e2d3a2153f71651405e2edb7902997cf0b5f0bcdfcfa6c4817cdb1",
+  "test_chain_h3.py": "4f3dae333b492401b757eab14ab97a167fee84b5ddf5673670ad446ad1067afe",
+  "test_assembly_capture.py": "714b6d1d6eefd39972fb454000dbe42bffb4531f623332751e8c06f18377c188",
+  "chain-authority.TEMPLATE.json": "bd9956071a5581c19a6a85e31bae80f40485cc515b526fdfda86c1f315c73ec8",
+  "test-run.txt": "e84b475cd0ed2051aff6d7e5b18eb8c99f55506d3f8cdcf03ff0016624571eb8",
+  "mutation-proof.txt": "ba40ed1fa50b85d13c96b67573de2764ff758db38252028ff4ff98f40afb81dd",
+  "REVIEW.md": "e34fc9198e58e19ec374de62bbaaffa32c9221b7513bd6686b39ae9d556707d5"
+ },
+ "utc": "2026-10-25T05:34:20Z"
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "AUTHOR_FOUR_INFERENCE_PREPARATORY_PACKETS",
+  "author_worker": "astra-final",
+  "author_session": "<SESSION_ID>",
+  "packets": {
+    "history": {
+      "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/revision-v2/history/packet.json",
+      "sha256": "fc9ee596d197148c33a666dd9ee8d4d51428dda83a63656c88937ae94d99181b"
+    },
+    "ordinary": {
+      "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/revision-v2/ordinary/packet.json",
+      "sha256": "4c6c890eb3c544fffc941421256b2ab66549537c57f190ce7a1e7ceb05ce5bc8"
+    },
+    "stable": {
+      "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/revision-v2/stable/packet.json",
+      "sha256": "0e479290670357f4a01f83b6acf23f4941a85dcdfaa53781076e5d4bb5286528"
+    },
+    "origin": {
+      "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/revision-v2/origin/packet.json",
+      "sha256": "633f60d1dac68ef8271f715678741bf6cb541473874e82ea57137fea7358194d"
+    }
+  },
+  "builder": {
+    "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/prepare.py",
+    "sha256": "403a4060f2241afdfc74cad73a2135318f00c7f3846b1c707b7865dedd5a6acd"
+  },
+  "tests": {
+    "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/tests.txt",
+    "sha256": "d5d0de763a1da67a422cafd0e349e074582362d54db009cef7fd670c8cdce665"
+  },
+  "test_source": {
+    "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/test_prepare.py",
+    "sha256": "bc520780c7d168d0dc673914c002175091611dd123c43600f7f5a1021fadd2c2"
+  },
+  "known_actual_refs": {
+    "path": "<REPO>/.agents/operations/newperiod-inference-packets-astra-20261025/actual-known-references.json",
+    "sha256": "ac2a03db2bc07297873da40e81136a3df53da09f45ce681d0814be225174f9c5"
+  },
+  "tests_passed": 8,
+  "source_loader_proof": "Four fresh isolated processes invoke actual family modules() over complete pinned bgbench closure; no log/data access. All existing generated transport bytes reproduce exactly. Real assemblers refuse missing actual freeze/batch.",
+  "execution_authorized": false,
+  "actual_jobs_assembled": false,
+  "first_draft_note": "Preserved parent family directories are superseded source-only drafts: pins.json direct subset was insufficient for full transitive imports. revision-v2 includes all88 R2 scientific pins applicable to bgbench plus each family scripts/extra pins and passes actual import proof.",
+  "counts": {
+    "history": 48,
+    "ordinary": 32,
+    "stable": 24,
+    "origin": 40
+  },
+  "finalization": "assemble_actual delegates unchanged reviewed builder, but actual complete freeze, per-arm producer reviews and memory/source/resources remain mandatory. No fabricated executable templates or approvals.",
+  "plan_correction": "Primary56=50 neural (40 updated+10 frozen2025) plus6 online-history comparators. GRU10/GBDT2 occur ONLY in ordinary32. Additional_baselines6 are separate. Corrects P18 wording; no role-grid change.",
+  "scope_policy": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-<AUTHOR>-DECISION-FULL-SCOPE.json",
+    "sha256": "686e099b532003e7e69f7503958dccd87f64fefd6d867cc85b7c5ba3b35269c9"
+  }
+}

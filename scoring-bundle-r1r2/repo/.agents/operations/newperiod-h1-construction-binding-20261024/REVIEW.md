@@ -1,0 +1,9 @@
+# Fixed H1 construction metadata candidate
+
+Fills the initial manifest seam before the existing shared development construction dispatcher. Reuses the exact core construction population, calendar, boundaries, source/history identity and frozen H1 K500 rule. Eight explicit SHA-bound metadata inputs are read through a caller callback; no graph/model/source payload is followed. Original manifest validators are source-pinned. Both horizon calls can be prepared independently from genuine core seals; no fit checkpoint is needed.
+
+The output is a candidate only: exact construction manifest bytes and a gate candidate with NO passed field. It cannot authorize construction or fitting. Independent review must bind actual metadata and exact derived bytes before a separate admitted metadata publisher issues a supervised_graph_build gate. That publisher must call original forecast_release.authorize against the actual base seal and the published construction pair, under finite exact read inventory; it does not issue a fitting/equivalence gate. Original full expansion/history/seed/slice audit after construction still precedes the20 H1 fits. Candidate retains every original event/exclusion; only candidate expansion, release and sealed signature lineage are added to the original construction manifest.
+
+Nine tests pass1.69s, including actual original core release guard, emitted construction gate under explicit synthetic external approval, unchanged original H1 builder, and original full paired_rows acceptance. Rehashed wrong source/staging/gate/boundary/construction/release/recipe refs refuse; exact eight-metadata read set checked. Existing fixture builds tiny synthetic tensors, never real research data.
+
+Actual inputs, eligible separate review, metadata publication transport and shared CPU/disk admission remain pending. No CLI, remote action or scientific execution in this candidate.

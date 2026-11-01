@@ -1,0 +1,12 @@
+{
+  "actual_protected_reads": false,
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "7b1256d6b3bbe45effac28584da2167cbd544a376d30c2fee62b58915d68524d",
+    "project.py": "1d51a596820210cf308a02b0e853358cdbe2adae6a9ef208382c1c647f5b8645",
+    "test_project.py": "a00ceb425236aa6c292dda3d7fa4edeb675d33d2aadbfb3bb695ab9496436de6"
+  },
+  "kind": "newperiod_issue_time_projection_candidate_v1",
+  "tests_passed": 15
+}

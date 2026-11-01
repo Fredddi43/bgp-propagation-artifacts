@@ -1,0 +1,14 @@
+{
+  "key": "valid-d60",
+  "must_check": [
+    "gate approved_operations == [core_fit]; manifests[0].sha256 == development manifest; inputs == available events graph_sha256 (count equals receipt)",
+    "real forecast_release.authorize(core_fit) passed inside the issuing process (gate-receipt.json)",
+    "source audit signature_source_digests == development manifest signature_source_digests; retrospective release == R1 ba2a1e2e",
+    "producer_sha256 equals science.py pin"
+  ],
+  "passed": false,
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null,
+  "subject": null
+}

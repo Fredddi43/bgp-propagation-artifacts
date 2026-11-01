@@ -1,0 +1,31 @@
+{
+  "actual_protected_reads_performed": false,
+  "author_model": "Codex",
+  "author_worker": "/root/metadata_check_review",
+  "execution_authorized": false,
+  "files": {
+    "README.md": "3b26d1a0c67e6e71846afa25ccb4dbcb457587d8185274d611042f631007f332",
+    "bootstrap.py": "281b3b608dcd826b2ac0b6b18c34d3756836d32c29c8b1421bb2318d6b8e5c13",
+    "build.py": "b63e23fd84cba3b139372af4549048bd4ec6376639560114d606d59c32164200",
+    "client.py": "1eeeea1d7e08a332a26384049d2061bc2d2b6198bd3dd48999758e0faf4c28fc",
+    "generate.py": "ae88a121e926e2f1f97b9c3482679bdb5c840dc12323a3b0d051c299062fb2df",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "test_transport.py": "3357062ab4a90432972935157b1021bc51e686ec86c2dd061757d7aa0b542dd2",
+    "tests.txt": "94b96401b2464ec5b269bb7f109e2643062140de4bba0862ec5d2141970aa18c"
+  },
+  "host_actions_performed": false,
+  "kind": "newperiod_learned_transport_review_ready_v1",
+  "original_predictor_sha256": "5e36a2f6c7e72a8aa042103069deb6580c1a5f4d723f49a4097e4be03bcaba8a",
+  "pending": [
+    "independent code review",
+    "actual complete freeze/calibration E1\u2013E5/issue-time tables/checkpoints/inputs",
+    "actual runtime/resource/storage admission",
+    "independent exact execution authority"
+  ],
+  "revision": 2,
+  "runner_readiness_sha256": "1fde47aea4ec3acea2645d5776442fcfafc7078e4f8df2757dad728bda06d2a9",
+  "scientific_kernel_changed": false,
+  "tests": {
+    "transport_passed": 10
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    "REVIEW.md": "107f1a163f6887a0ce2d4e3c65f380bf00ac01cc6f50342cbfbd8d60e1a81557",
+    "build.py": "051ce70f22db4d2c08a3d859dd94046ab8890893c365b08fd1f041063ff3dca4",
+    "construction/common.py": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d",
+    "construction/job.py": "dd8ff4b1f3f7d0973cbf699a4c5cd3efedc75734693f81ca2d3d08d1a3d91d7c",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "runner.py": "449b2c087af556edf837ff40600c55cc686d453f8cb58e3bad5c7cbdf4de9fdc",
+    "test_runner.py": "c2b6389075065e9ec829a3f443d7f30e3eaa44ad8e303c452f7d4bc72a36dd7b"
+  },
+  "kind": "newperiod_fixed_metadata_runner_code_candidate_v1",
+  "tests_passed": 25
+}

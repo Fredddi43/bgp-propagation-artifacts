@@ -1,0 +1,8 @@
+{
+  "kind": "fixed_replay_extraction_waiter_v1",
+  "source_sha256": "fd93fad3b3f49f423d58d55ac027b82718ef9c86ccb84210b9bce271aa1f98e7",
+  "request_sha256": "05bf7c15fd95358f7234d2d3941db8166bae052bd097cdb3e69946213db329ac",
+  "original_source_sha256": "7ef1d0eef06ed4725ad5919b07461b20d2a0d15a1143a6b8c97cd7c1c3f8580e",
+  "delta": "Exactjob52474983/taskcount32/deadline/description only; original coordinator identity and one durable metadata wake unchanged",
+  "execution_authorized": false
+}

@@ -1,0 +1,19 @@
+{
+  "actual_request_required": true,
+  "execution_authorized": false,
+  "gate_issuance_authorized": false,
+  "passed": true,
+  "review_ready_sha256": "dfb26e5886446e1d830a4bd1725ab1f0ade246656481512c812e2dafde9e2830",
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "/root",
+  "scope": "Original core/temporal B plan assembly from exactsuccessfulAmetadata; codeonly.",
+  "tests_passed": 13,
+  "verified": [
+    "Fixed9SHA-boundmetadatareads+6stat-onlymetadata paths, unique/horizon/profilevalidated before access; no tensor/source/tracepayloads.",
+    "OriginalAplan/authority/witness/sourceclosure lineage+reportpassed andsameprimarylibraryprotocol bound; originalB remainsfullverificationauthority.",
+    "Actualcore stage-manifest d3e3c20a has110repo-relativefiles matchingrepo_modules; actualtemporalmanifestf43fddde samekeyshape.",
+    "Originalcore+temporal checked_inputs tested; ancestry/authority/module/profile/latehashfaultrefusals;13testsPASS0.80s.",
+    "Durablecustodyscopelogbeforeallreads;256MiBtotal64MiBfile2GiBAS180CPU120swall/output1MiBfinite."
+  ]
+}

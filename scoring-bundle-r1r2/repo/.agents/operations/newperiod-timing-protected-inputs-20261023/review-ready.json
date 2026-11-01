@@ -1,0 +1,23 @@
+{
+  "actual_execution_performed": false,
+  "author_worker": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "040e8614449fbb8466f12fe61b3c13f8a4ea4a3708dd6cca22d742160b8c7cbb",
+    "core_projection.py": "dca0341b61b6c3f30327593b0f5dc3b8d8bec31868179b1c632ce787e86af61a",
+    "entry.py": "7a6f675dd91759afa0c297264757a0f9216f42cbf207d33adce715e544c6f158",
+    "original_custodian.py": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4",
+    "original_pack.py": "8bdc1551fa3b19e32defa940b0de640dbbe6883322fbab7c889c495ac2094318",
+    "protected_cohort.py": "4c28e80b1e413648b1ccd0ea2e9bbd391e30fcecde260df7fc4b7e2dc7a787fd",
+    "reviewed_master_contract.py": "a7c69d2e519cccb420d5a8113b9f76721dbbc2284676577a7a1d20ecf141cf29",
+    "reviewed_source_io.py": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0",
+    "test_protected.py": "16eb8d1fa343ee4a6664d874938b52005098e36a5c9939fb7edcdde0eb2a8977",
+    "timing.py": "bebab302dea5cdd99fd13aa1d2fb56fd1d2745cd12caba08f77edfbd2d878f81"
+  },
+  "kind": "newperiod_timing_protected_input_kernels_v1",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 20,
+    "seconds": 1.79
+  }
+}

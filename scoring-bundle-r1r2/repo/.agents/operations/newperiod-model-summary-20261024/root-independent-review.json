@@ -1,0 +1,27 @@
+{
+  "kind": "independent_descriptive_model_summary_review",
+  "verdict": "PASS_CODE_ONLY",
+  "reviewer_worker": "/root",
+  "reviewer_model": "Codex",
+  "author_worker": "/root/remaining_work_audit",
+  "reviewed_utc": "2026-10-24T05:40:13.165331+00:00",
+  "readiness_sha256": "bcd46a3dda0e9079a7aace3cb79293c354b68011fbae3bf483354b459f81ddc5",
+  "files": {
+    "REVIEW.md": "168232d9144ae6d13ae8f614b7dd2722ab12f7e6a91ecc2ce292afdd20f68bd1",
+    "summary.py": "db4f0c9dc3f509670fe58bdcc4ff46ee42dffd76b2415d65834f256dbf83215f",
+    "test_summary.py": "c20c07b5b984ef6b10af51f63f6d90557590dc62bad48a03dadefa5238aa6526"
+  },
+  "tests": {
+    "passed": 15,
+    "seconds": 0.27
+  },
+  "findings": [],
+  "evidence": [
+    "Original source hashes checked; exact cohort_ranking function and original event-macro Jaccard convention preserved.",
+    "PRIMARY-METRIC-REVISION2 event-macro then equal-planned-training-seed estimand matched; complete per-seed population required, no implicit successful-seed selection.",
+    "Original genuine per_event_rows fixtures retain no-growth undefined AP/P10, technical/no-input penalties, censored exclusion and all whole-cell failures.",
+    "Exact group/cohort scope, original status and denominators, source SHA/pointers retained; missing or partial seeds prevent aggregate publication while valid per-seed summaries remain visible.",
+    "No new intervals, tests, prediction recomputation or actual outcomes consumed."
+  ],
+  "scope": "Pure numerical summary kernel; caller must independently bind actual accepted score bytes, planned identities and scope before use. Not an actual data-reading CLI or scientific execution/release approval. Primary sidecar persistence and actual completed final evaluation remain prerequisites."
+}

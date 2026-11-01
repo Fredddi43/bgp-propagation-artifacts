@@ -1,0 +1,13 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "6176774ba93390d6af2983b7255544c62f62fe2ad10bdb5fee6d0273ff42cb38",
+    "bind_merge.py": "bda0e7c04088f5bab072ea70b580f1e292ca19fd1968581c2e23c950cf83c941",
+    "test_bind_merge.py": "ab44f92e83d92498f775bf5243b4051a6a4493758874d092715ce7be4cefea66"
+  },
+  "kind": "original_merge_metadata_binding_candidate_v1",
+  "scientific_source_changes": false,
+  "source_payload_reads": false,
+  "tests": "5 passed0.22s"
+}

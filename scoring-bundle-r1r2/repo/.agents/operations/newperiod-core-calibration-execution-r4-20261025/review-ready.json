@@ -1,0 +1,26 @@
+{
+  "actual_data_reads": false,
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "25972439d5d414ea891bb5bc4c3834e96126d56ba42c97c18e8b0b914af2c09a",
+    "build_stage.py": "cb841b5665c2752ef5710fa535c3a5b32f1a3388bcfd2f6acb906adb09c94eb5",
+    "execute.py": "ba4021aad7f99e7692de9226649b5b3c00c18420fdcd1dfcbdcea19f4dcd555e",
+    "packet.py": "339f3f0f09e59b7dd80ccea31200dcdc1af78541663d59efe3e218a4d083a0d4",
+    "run_calibration.py": "d03a1e9ba08eabac615052ee85de448417b01d2b61694c38b674f1abc7e1569c",
+    "test-run-fixed.txt": "e3681b3e9b61d1edf61a4dd1d9d82c05b758b5dc7e3457ddf9eded44d74ce067",
+    "test-run.txt": "b7bf942e5f69edeceb302853dff8c9cd603a890a77056dae6b30fa34807105b4",
+    "test_execute.py": "b105bc50c88d343a21a3f4011ae34f0da15e9e56999e5ce4588f80292cbf99f8",
+    "test_leaf_links.py": "623ae7d874de38c39932f8549407f0cdcce1b3f6bf3c2c1119a89f472fb5eef0",
+    "test_packet.py": "83f7bbb5b6211eb56ac0a6cebd4d7d096f45f3071f45ea60b6b8e3cfd549c8dd"
+  },
+  "kind": "newperiod_core_calibration_r4_review_ready",
+  "producer_unchanged": true,
+  "resource_completion_basis": "UNKNOWN; unchanged fail-closed caps; separate review required",
+  "reviewer": "sol-h3t",
+  "stage_manifest": {
+    "path": "<REPO>/.agents/operations/newperiod-core-calibration-r4-local-proof-20261025/stage-manifest.json",
+    "sha256": "d683b47b872ba8ace457dfdfa4e99ccf8ba9eab39258cc33844ffcb1450c2551"
+  },
+  "tests_passed": 35
+}

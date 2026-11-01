@@ -1,0 +1,41 @@
+{
+ "asks": {
+  "reviewer": "exact delta review of temporal-v1 vs originals (gate/launch/supervise/run/plans/spec/transport/source tar/stage command)",
+  "root": "authorities + execution approval for final spec, resource admission + minimum_free_bytes, core option decision"
+ },
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_implementation"
+ },
+ "automatic_retry_authorized": false,
+ "basis": {
+  "review_ready": "d42c19b3",
+  "source_pass": "comparison-exact-v2/opus-review-v1/exact-reference-review.txt",
+  "verifier": "6171148c"
+ },
+ "core": "decision C1/C2/C3 for root; C1 recommended",
+ "executed": false,
+ "files": {
+  "README.md": "1a4d4ea81537a942a5a33532d76f6aef255315f07643bd3f750d815d8d61ff52",
+  "build_temporal.py": "1792f9e5779b411aa07e25f464547e3c879e809958d4f90e552b7e6b94f842af",
+  "build_temporal_control.py": "eaa7774e2a331d8b79125ad7cfa8d1f0f1f71af1892dc3fa3714661b5776c158",
+  "temporal-v1/package/authority-witness-d30.draft.json": "24f47fe1e892b52defa71b4d4d7d51e08b8b86e800e72b42460acd65a11bf13f",
+  "temporal-v1/package/authority-witness-d60.draft.json": "3b9dd38f5b33ca87c3a28edd92039f1358865a4ac2723f6af0137c9a070e4bf4",
+  "temporal-v1/package/execution-spec.draft.json": "deac0bcd402fcb1aa60b4436c3d54725c042bd6d2a6aa592262bf2044c536777",
+  "temporal-v1/package/gate_execute.py": "e833a2db9e38212855656db711fd0f9d9fc46f01cce50bbe6dfb1aab28bd8b92",
+  "temporal-v1/package/launch.py": "1b208590fcec7893575dab8de35dbc0867fe6622dcdcb7217ed9c1c001a1cdc6",
+  "temporal-v1/package/plan-witness-d30.json": "07597e21535b16853e146be2ede334ac47f662e59efa96674565c05473c05dd2",
+  "temporal-v1/package/plan-witness-d60.json": "4d3eba9e889cb06b9581efb02eb8ce6f5499169c33049253180935fc91123b0a",
+  "temporal-v1/package/run.sh": "79742a20858ca6a420d3b2218d71cfc23061f4e6d39b7e9a18ea71858c1e4749",
+  "temporal-v1/package/supervise.py": "4ab1bcb122dac616f2cf8f873b95de5a3f95ab53292741066bd39c955807fe96",
+  "temporal-v1/source.tar": "2eb4d7d1b7e17c3138066eeb058aaec71ee3ee822470487108549194bb2a0177",
+  "temporal-v1/stage-command.sh": "315d31240abf9de3b6bd602ac39abd990041e75cdc30994290d46c4bcdd3322d",
+  "temporal-v1/transport/transport.py": "2581e82302058c5c9e0a40b9ef92b93a64174873c3388055ad6eb6ec476a98c7",
+  "test_build_temporal.py": "79c991aed82da6bc60d61e2ded65afa2c0dad8dc0ae55c162ab582fb1c711636"
+ },
+ "kind": "feature7_rexact_recovery_review_ready_v1",
+ "temporal": "concrete packet temporal-v1 (see README)",
+ "tests": "5 passed (test_build_temporal.py)",
+ "utc": "2026-10-24T14:05:28Z"
+}

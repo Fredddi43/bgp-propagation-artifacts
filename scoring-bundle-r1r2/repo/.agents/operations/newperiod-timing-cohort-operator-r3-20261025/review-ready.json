@@ -1,0 +1,26 @@
+{
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "0e1480aabf4cbc7ec513d2cd98ec58b8adcb4d03cfd706fa8c33fb0aa65f3cb6",
+    "operate_cohort.py": "bee8e357e1b397f27e8a76bd33b269bc3cd8aed93582f1073be95914bae33993",
+    "test-run.txt": "c751834aa59d6dd77a4b3f2ea28f8aa49f2911bbfc8f4c72938438788de3a40e",
+    "test_operate_cohort.py": "5fc5d2a32f204dac73483ee3cb996174202b6181035492e513bf271cc7562f5e",
+    "test_regressions.py": "c41817c1d65973cc44721a19e67a9d7775d70d5e3dea8f6ade2126e88be28779"
+  },
+  "final_plan": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-cohort-astra-final-binding-20261025/plan.json",
+    "sha256": "145dd8c4ee5395e0e73ded89db0fc3d62569638e208552d6c92cbf0a3f8e0e36"
+  },
+  "kind": "timing_cohort_operator_r3_review_ready",
+  "reviewer": "sol-h3t",
+  "source_build": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-protected-cohort-r1-20261025/build.py",
+    "sha256": "77af0c9ecf8ab524cf4f226ed796bbaa0fccc55fd3c10c493878a1fa82535ba0"
+  },
+  "source_runner": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-protected-cohort-r1-20261025/runner.py",
+    "sha256": "981a70aef3e373e881ff6213b5b10ec625e9597c2a35a108a2640de090a3872d"
+  },
+  "tests_passed": 33
+}

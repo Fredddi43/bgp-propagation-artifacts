@@ -1,0 +1,11 @@
+# N-H1 validation calibration candidate
+
+Author `/root`; independent review required. Local synthetic work only. No actual calibration, fits, protected inputs, cluster transport or numerical release has occurred.
+
+This adapter applies the unchanged original H1 semantic_preflight function to all twenty completed N-H1 fits, preserving original global thresholds, slice/remainder calibration, primary/K500 signature and seed equivalence, ranking/Jaccard checks and validation tensor readers. Actual N-H1 package, original fit operation, separate approval, release, exact completions/checkpoints/receipts and train/validation inputs are bound before payload calibration. The fixed slice predates the required actual R1 release; completion timestamps are not invented.
+
+The wrapper binds the corrected source-only H1 client, unchanged private runtime verifier and explicit original validation dependency omitted from the fit snapshot. Actual execution requires a separate exact plan/source/resource/CPU-job approval, fresh isolated interpreter, fixed fresh output, finite wall/memory/CPU/file budgets, storage admission and durable intent. All twenty rules are computed before publication. Full serialized publication reservation precedes its first rule; completion verification requires exact directory membership, matching intent and plan, all twenty hashes and package identities. No integration gate is issued by these in-memory original-reader views.
+
+38 synthetic tests pass. Genuine original tensor readers, numerical calibration and fit-receipt checks are exercised. Negative tests cover missing or changed fits, inputs, checkpoints, thresholds, rankings, common signatures and publication closure. The complete wrapper-sequencing fixture uses explicitly declared synthetic host, runtime-admission and fit-guard boundaries; it is not evidence of real cluster admission or a production end-to-end run. Existing original H1 client and private-runtime independent reviews remain necessary dependencies. Fixture source/slice identities are synthetic where declared; production source/rule constants remain fixed.
+
+Actual calibration remains dependent on the twenty completed fits and exact independent execution review. No automatic retry or scientific approval is granted by this candidate.

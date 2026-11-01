@@ -1,0 +1,13 @@
+{
+  "files": {
+    "request.json": "35f147b1915770ebeb1c68caed3eaf96afa56926d7e23dcff4c7ec576f8ef0f5",
+    "wait.py": "109c0c180e58b769571e801467e919b42f02759dd3feeb2a9e3da7423480d7cf"
+  },
+  "scope": "Exact manifest52477317 plus cumulative first32 build52477319_0..31; root terminal wake only. Start after successful second16 release; no duplicate old32 watcher ever started.",
+  "source_predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-construction-waves-20261024/actual-binding-v1/actual-seals-v1/wave0-waiter-v1/wait.py",
+    "sha256": "109c0c180e58b769571e801467e919b42f02759dd3feeb2a9e3da7423480d7cf"
+  },
+  "source_unchanged": true,
+  "start_authorized": false
+}

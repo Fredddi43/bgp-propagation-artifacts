@@ -1,0 +1,30 @@
+{
+  "kind": "timing_failed16_source_frames_review_v1",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "capture.py": "c3c607736808f9ab47d8d47268d4fef11099e44e6380e4c2cd0722157fb77186",
+    "README.md": "0fc97bff9fc8fa536b6243dab144745a2fae9e32adcb8b1926ddf71583a32228",
+    "test_capture.py": "7d5381059484af6ab2e08637bd61fc09d4bc04ce4f1613032911ee6d34199a08"
+  },
+  "exact_job": "52480019",
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "automatic_retry_authorized": false,
+  "tests": "3 passed"
+}

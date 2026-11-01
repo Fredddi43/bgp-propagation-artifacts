@@ -1,0 +1,8 @@
+{
+  ".agents/operations/r1-failure-diagnostic-20261021/shared-path-evidence.json": "d30fc61078ba23336fcafe9015cfb25598b9a76efb69152c30e575fc61f0ca01",
+  ".agents/operations/r1-reference-reuse-20261021/REVIEW.md": "a260311f6e792c29ae9591bf8a4c0e0c38cb1dd8045341ec79fdea2e1dee8484",
+  "src/bgbench/forecast_retrospective_custody.py": "818497e430b9871cdb3761e44b554a8c84e87ccbc66fd44647d28fd2cf9ccbc7",
+  "tests/test_forecast_retrospective_history_adapter.py": "33358eadf744faf9f5efe0676d026d1834885d5d7bb0bd049ad4286201bbfbe7",
+  "tests/test_forecast_retrospective_reference_reuse.py": "64df71d66d54765e7e003bed3824a9dcf6659eeb98713714f8551669c66b37ea",
+  "tests/test_forecast_retrospective_release.py": "ce9272b68ffce12bdc25cde878067ba12bd191cf600298c199c46a41a3984f1b"
+}

@@ -1,0 +1,5 @@
+{
+  "kind": "coordination_not_execution_authority",
+  "instruction": "\n2026-10-24T04:19:37.722470+00:00: D2 OOM both14GiB observed. User explicitly authorizes ampleRAM and SPEED; avoid incremental memory guessing/repeatedfailures. Prefer generous128GiB/task for the same2 exactrescoringtasks (256GiBtotal), with originalunchangednumerics/source/cells/report, fresh exclusiveattemptnamespace and separate eligibleindependentreview. 52GiB factor16 is still heuristic; if retaining it, provide concrete evidence it is sufficient rather than trial. No automaticretry or newevaluation. Root notsubmitting anything. Keep actualOOM verdict/records. Nativecore readiness477b371f resourcechecked awaits genuineR1release; preparecomplete5artifactrelease immediately afterD2successreview.\n",
+  "new_execution_approval": false
+}

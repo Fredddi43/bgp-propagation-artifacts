@@ -1,0 +1,30 @@
+{
+  "kind": "independent_existing_primary_ap_forest_review",
+  "verdict": "PASS",
+  "reviewer": {
+    "worker": "/root",
+    "model": "Codex"
+  },
+  "author": "/root/deadline_audit",
+  "reviewed_utc": "2026-10-24T04:45:59.711081+00:00",
+  "ready_sha256": "1136a54eb812728031897a9a37c2c56ca41db1d255da1a15db519cf81e3fed95",
+  "files": {
+    ".agents/operations/newperiod-paper-forest-20261024/MODEL-LADDER-GAP.md": "5d515d084f5780fa06217e5fe505cc0ee08479f31347f6d1354c654f6f158740",
+    ".agents/operations/newperiod-paper-forest-20261024/README.md": "9d0aa0ef7d0f3bd653cf060ca92bf3a68c0eed3ce0739ca92939fe373920a885",
+    ".agents/operations/newperiod-paper-forest-20261024/test_forest.py": "78d51c650fcd583e602c2fb2ab52e13cd40047869a8e9bf92e6c6f5261a883a8",
+    "scripts/forecast_report_forest.py": "b8bf56b7d86e75d963ab9bd604797ecde2f28a97a35bfef6f9896547cb6662fd",
+    "src/bgbench/forecast_report_forest.py": "4fd720cdf320429266d29695850423c4a231645a76126b5cc6d6c9ec6ca3c44f"
+  },
+  "tests": {
+    "passed": 10,
+    "seconds": 61.92
+  },
+  "findings": [],
+  "evidence": [
+    "Original PRIMARY_CONTRASTS C1\u2013C6 identity definitions compared to display mappings; exact30/60 horizons, fixed twelve positions and source fields retained.",
+    "Full400facts reconstruction, outside-point percentile intervals, unavailable families, altered identity/nonfinite/reversedCI/denominator rejection and deterministic outputs exercised.",
+    "No estimate, interval or p-value recomputation; ordinary intervals distinguished from simultaneous uncertainty, Holm12family copied unchanged.",
+    "Synthetic PNG visually inspected: labels, point/intervals, denominator/p-value columns and captions readable without clipping. Actual ACM preview compilation passes."
+  ],
+  "scope": "Pure presentation only; original evaluator unchanged, actual outcomes unread. Actual full-N report and numerical release remain prerequisites for use in paper. Model-ladder persistence gap separately documented and not claimed solved by this plot."
+}

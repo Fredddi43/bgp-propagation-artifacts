@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_verifier_run_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/vrun-host",
+ "pins_sha256": "198fa9d3bc00ff06397c299181f25b1906a5417c7ab9381b86ef5cbe9f5a74aa",
+ "requests": [
+  "code review of vrun.py (28 tests, 10 mutations); same review session as classd-host is fine",
+  "after K1/K2a run: author publishes `vrun.py script` output; reviewer issues the exact run approval (scope r1-posteval-verifier-run-v1) binding job_script_sha256"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "author_session": "<SESSION_ID>",
+ "execution_authorized": false,
+ "exports": "aggregates + code-relative module paths + non-<CLUSTER_STORAGE> system path names + <CLUSTER_STORAGE> 7-component prefixes; never data paths, event ids or contents",
+ "files": {
+  "diagnose.py": "73028a46b4f129d46f25d9d9d1b734e2a73bd1419c4b287c6ad0945146301f2c",
+  "test_diagnose.py": "863fa6e903e7c75f35676f33e2281ee1489539ffacaa0bde1a6ce3cdabde8c89"
+ },
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < diagnose.py   (once; stdout/stderr/rc + intent/result recorded locally)",
+ "kind": "rexact_temporal_postimage_diagnostic_review_ready_v1",
+ "reads": [
+  "pinned A plan 07597e21 (own metadata)",
+  "witness-d30.syscall-trace (<= the witness 64 MiB budget; open lines only)",
+  "lstat of the out dir, the marker, declared inputs and data paths opened in the audit window"
+ ],
+ "tests": "5 passed in 0.10s"
+}

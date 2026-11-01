@@ -1,0 +1,8 @@
+{
+ "authorizes_nothing": true,
+ "kind": "review_ready",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt3-probe-r2",
+ "pins_sha256": "3b7366f69dd103a58d6476370ecbc1c383284413a1c3274ace146814dd0e0130",
+ "requested": "delta review of probe r2 against review 48e0231b (P1-P4, N1); if passed, the one-attempt approval scope newperiod-attempt3-host-probe-v1 naming the scratch path",
+ "scratch_path": "<RESULTS_ROOT>/nobackup/<PROJECT>/newperiod-probe-scratch-v1"
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:55:17.877846+00:00",
+  "ready_sha256": "34869d215f7aeecb7cf74b9d201a774de8661a8afbd4ba20f62a00b2d0f2848a",
+  "source_files": {
+    "request.json": "8b68e2177616db120aa761bc3eeee2ce1dc62e588c07baf9a0389a85837e516d",
+    "capture.py": "30f27ddb777e33e3248270ce1c4fd83e60925291b94ca824f1f1af2e24b49b93"
+  },
+  "automatic_retry_authorized": false,
+  "capture_once_authorized": true,
+  "conditions": [
+    "Capture onlyafter exactmanifest52477317and52477319indices0..15 allterminal; exact34paths only,nooutputsfollowed.",
+    "No nextwaveauthority withoutactualsuccess andfreshjointadmission."
+  ]
+}

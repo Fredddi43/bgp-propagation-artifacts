@@ -1,0 +1,19 @@
+{
+  "automatic_retry_authorized": false,
+  "conditions": [
+    "Actualsuccessful finalwave48..63+dependentassemblyrelease, correctcoordinatoridentity, exclusive launch andnoexistingfinal67watcher.",
+    "Only exact scheduler67task terminal/deadlinewake; no outputref follows, downstream export or retry authority."
+  ],
+  "files": {
+    "request.json": "35f147b1915770ebeb1c68caed3eaf96afa56926d7e23dcff4c7ec576f8ef0f5",
+    "test_wait.py": "b83b72dc573aa6fd8abffb7c0a690dde3f8a66d15d1d9014e9f7246ccf4acee8",
+    "wait.py": "2fa00ac8702c9cea979d822d8d1f8ee6ded230b6baeef546b19371d0ff70f5e9"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "start_authorized": true,
+  "tests": "3testsPASS0.08s; exactfullpopulation/helddependency/differentfailureconditions.",
+  "utc": "2026-10-24T07:38:44.558258+00:00"
+}

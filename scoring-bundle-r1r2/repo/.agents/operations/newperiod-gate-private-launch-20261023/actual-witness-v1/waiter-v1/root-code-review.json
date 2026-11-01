@@ -1,0 +1,14 @@
+{
+  "actual_request_required": true,
+  "execution_authorized": false,
+  "passed": true,
+  "review_ready": {
+    "path": "<REPO>/.agents/operations/newperiod-gate-private-launch-20261023/actual-witness-v1/waiter-v1/review-ready.json",
+    "sha256": "303f704077bf6f7f5f1227003247dfd10bf535bb2a7786683b81a847de7bfab2"
+  },
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "/root",
+  "scope": "Code only; exact actual request must bind finalspec/approval/launched/PID before starting.",
+  "tests_passed": 7
+}

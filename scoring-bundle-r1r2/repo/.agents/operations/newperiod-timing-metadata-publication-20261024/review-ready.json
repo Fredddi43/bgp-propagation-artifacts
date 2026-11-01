@@ -1,0 +1,24 @@
+{
+  "actual_local_metadata_draft_sha256": "f0e0d53f24a2950e9e3b5bc3192da5f4c1c29b0fa12f20ea3bc1a535f5d74256",
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "1ca1ff0389a8b6672d0ffb0aab6b78dbd6bdab4e738df1d99595dcf67ed83d8d",
+    "actual-local-v1/collector-inventory.json": "c236ba94401806ffe4b85f23137c8e6c64c227b48fc0a96425096803cc597af1",
+    "actual-local-v1/draft.json": "f0e0d53f24a2950e9e3b5bc3192da5f4c1c29b0fa12f20ea3bc1a535f5d74256",
+    "actual-local-v1/kernel-plan.json": "1bd7760e9eb24a5079ea0a174e009c1254b0c4a24019844de52f2b9e98790381",
+    "actual-local-v1/known-metadata.json": "c1f7caa0d5fd1a42cd1c4796a0a721d4b234c2a6741a9aac4293856e75c438dc",
+    "actual-local-v1/prepare.py": "d68a22039c0beab44845efe3b9241f7a3f8a4753f22cf8629aaecb4135c67e3e",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "core_metadata.py": "b3fb7a3b52bd8f0c5c7ecacafbe3ab091f1b746da8b781edd20b3f0228474eb1",
+    "original_guard.py": "7d2b8e3dde2e0c78d02ac23fb5f6c79ea3577f1166b84ff7636e8eddc8e4ef5f",
+    "publish.py": "4655c5923cbac9b376f7f1c0263798f3a38aa3317389916f3c9b8c5385b0e99d",
+    "test_publish.py": "4165b66d5fbe5a2293f5392dabc61c1844502fb3eb9297854252cdd820ed71fb",
+    "timing.py": "7a151a1a3a3bf1d755d2c88bbc9e24601a5a5ef8d0c3059f2d7556e1d8fd38a5"
+  },
+  "tests": {
+    "covers_four_original_horizons": true,
+    "passed": 1
+  }
+}

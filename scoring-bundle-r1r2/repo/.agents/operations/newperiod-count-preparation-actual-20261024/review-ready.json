@@ -1,0 +1,17 @@
+{
+  "kind": "actual_count_sealed_metadata_question_inventory_v1",
+  "files": {
+    "join_sealed.py": "0fcd19ac68f5959a489a2920f94dd5e4ac4e27e73994fe192059a92231c77627",
+    "obligations.py": "2e051de004aa2e4a61831b9c15dddbd52c98e8b139a67a63aced1ab24e54232a",
+    "test_obligations.py": "ea1767c5eb464fa5ca82014f8b3ef351f22a62971bff82061f38c9f37e4bda37",
+    "REVIEW.md": "3b7c84cbf959653877c6a97a5cb358bb6c7adcfa7e0e95492ef2d802c6bf5a1c",
+    "sealed-join-v1/result.json": "6dd01fbdfddb492eb69adb0312e3055109150bc42913146761f384fb67651c5d",
+    "sealed-join-v1/join.json.gz": "41b50afabcc1b6f2c255cfba46a32c05a932d2afdee10bf08c51f0b82096a805",
+    "sealed-join-v1/source-questions.json.gz": "341aa144a859216a21f5d174b5fc9ff36f29e8e193712670805b7377e5dc3140",
+    "sealed-join-v1/source-questions-summary.json": "5a461f10e4f647600546c90b70e3213b4160c5775a36c9c78c4335875d7b5c7e"
+  },
+  "tests_passed": 3,
+  "new_capture_requested": false,
+  "source_payload_reads": false,
+  "admission_authorized": false
+}

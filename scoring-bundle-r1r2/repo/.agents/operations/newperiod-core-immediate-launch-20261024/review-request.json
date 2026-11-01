@@ -1,0 +1,140 @@
+{
+  "actual_source_inputs": {
+    "boundary_audit_d30": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/manifests/incident-boundary-audit-v1-d30.json",
+      "sha256": "e2be642cd3ea14d5b5df8e107f8a0f962d6e7dc074e64b3981d6042d80e69329"
+    },
+    "boundary_audit_d60": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/manifests/incident-boundary-audit-v1-d60.json",
+      "sha256": "594959b634b8c7aecbe14e9862ec2d492d8cc34e6113df25a2eaeac89c8d8bad"
+    },
+    "construction_d30": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/manifests/newperiod-development-v1-d30.json",
+      "sha256": "1b1d9a8be84c4cdc2d776e0bd724f42e063546f0df0ca1dfcd63caf7a723b385"
+    },
+    "construction_d60": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/manifests/newperiod-development-v1-d60.json",
+      "sha256": "ef952b004069a3136de49f0528f97c1cde26b02b1c4383405c48e05b2422886f"
+    },
+    "source_audit": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/gates/source-audit-newperiod-v1.json",
+      "sha256": "3d907fb219c6b3ae677789252a1b4f258be016a2a02dc919a5cc4d61765754e5"
+    },
+    "verification_d30": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/graphs/newperiod-v1/d30s/build-verification.json",
+      "sha256": "f878347fd48d0ff549a062657c86b4c0ccddd12a84a2c3ceaa5efb274f1ff748"
+    },
+    "verification_d60": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/graphs/newperiod-v1/d60s/build-verification.json",
+      "sha256": "3c0a6698a1a9036a8c30cf7fdf82e323b40acda3ee538a94cf3ff5c7d17e249b"
+    }
+  },
+  "binding_author": "/root/deadline_audit",
+  "eligible_execution_reviewer_session": "4ba6111c",
+  "excluded_original_author_workers": [
+    "/root/remaining_work_audit",
+    "remaining_work_audit",
+    "/root/impact_consumer_review",
+    "impact_consumer_review",
+    "opus-stable (worker TWO)",
+    "opus-stable",
+    "worker TWO"
+  ],
+  "execution_authorized": false,
+  "job": {
+    "path": "<REPO>/.agents/operations/newperiod-core-immediate-launch-20261024/source-ready/opus-newperiod-core-chain-v4.sbatch",
+    "sha256": "9384b9ddb063bc916b8b0f6c9eafc34486cf829a784cc54fcd9c377a0eed8760"
+  },
+  "kind": "newperiod_core_immediate_review_request_v1",
+  "marker": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/gates/opus-newperiod-core-development.json",
+    "sha256": "f1fae1f743eef46fe616f93724eea323c90bd2cabc385e5ea7bb752732ed6e1c"
+  },
+  "original_source_unchanged": true,
+  "original_spec": {
+    "path": "<REPO>/.agents/operations/newperiod-core-immediate-launch-20261024/source-ready/opus-newperiod-core-chain-v4-spec.json",
+    "sha256": "05d302e0574d1c0d9390ddacf317d9936253951c77b63574d72e28604484fb61"
+  },
+  "pending_dependencies": [
+    "actual completed R1 release capture with original five artifact refs and independent acceptance",
+    "original v4 execution approval plus hashed review text from eligible separate session",
+    "fresh joint storage admission before submit/waves"
+  ],
+  "placement": {
+    "path": "<REPO>/.agents/operations/newperiod-core-immediate-launch-20261024/source-ready/forecast_gpu_placement.py",
+    "sha256": "2a82b27f20a9eaa56acdac4e0246965e0c83b268efcf9fe2a3c9e8b7078f20e8"
+  },
+  "preconditions_observed": {
+    "free_bytes": 607672860672,
+    "paths": [
+      {
+        "exists": false,
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/core-chain-v4"
+      },
+      {
+        "exists": false,
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1"
+      },
+      {
+        "exists": false,
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/campaigns/core-v1"
+      }
+    ],
+    "uid": 23847,
+    "utc": "2026-10-24T04:17:27.966908+00:00"
+  },
+  "recipe": {
+    "configuration_id": 3,
+    "controls": [
+      [
+        "sage",
+        "on"
+      ],
+      [
+        "none",
+        "on"
+      ],
+      [
+        "sage",
+        "off"
+      ],
+      [
+        "none",
+        "off"
+      ]
+    ],
+    "horizons": [
+      30,
+      60
+    ],
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/recipes/core-v1.json",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "sha256": "1071f730961a31b405721d4ddf1781816a95b69303b8e91a8d9d23f0f0728b86"
+  },
+  "retained_fit_count": 40,
+  "runner": {
+    "path": "<REPO>/.agents/operations/newperiod-core-immediate-launch-20261024/source-ready/newperiod_core_chain_v4.py",
+    "sha256": "0e310d46b31ebf9ea755fbb38b559cac72f0bb59cd30946a15945c9307aa81b7"
+  },
+  "runtime": {
+    "path": "<RESULTS_ROOT>/work/<PROJECT>/venv/bin/python",
+    "sha256": "62f0c11aab0eb8297e00d8e24b5f781d7a5fce87a122a939ccb76791b2185631"
+  },
+  "scientific_outputs_read": false,
+  "shared_storage": {
+    "path": "<REPO>/.agents/operations/newperiod-core-immediate-launch-20261024/shared-storage.json",
+    "sha256": "ec4455d8871b7f55e9a1da7e9c7cde3ef252d69315df6bc7e71d5e6bd5893bec"
+  },
+  "source_staged": false,
+  "wave2_max_rss_gib": 200,
+  "wave_sizes": [
+    20,
+    20
+  ]
+}

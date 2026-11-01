@@ -1,0 +1,21 @@
+{
+ "author": "f4d75bb1",
+ "b_core_v3": {
+  "build_gate.py": "ff4fce0369b95b72ce4138ab3d34c5bf3f3ebef66bccb3f82d446380411cc60b",
+  "build_gate_v3.py": "7298a8bfbe51061adfaf1899744d7baa8dab925c8302079849ed1183fa90d551",
+  "delta": "from rexact-v2/gate-phase-core/build_gate.py: root private-rexact-v3, witness spec 2916e015 (v3 core), v3 core source manifest, binder path rexact-v3, kinds rexact_v3; tests repointed",
+  "test_build_gate.py": "b714285ad0c30d6a838e4e57b3c16febe45bd78e2f2fd7f685f6149ff662e321",
+  "tests": "16 pass"
+ },
+ "basis": "v3 A succeeded both profiles (captures in rexact-v3/packets/*/outcome/execution-v1; AUTHOR-REXACT-V3-TERMINAL-CAPTURES); L3/X4: binder/B only after successful A, under own review",
+ "binder_v3": {
+  "bind.py": "7d94814d55535a4bcd5ba8d5b5619e87948390a1fc194091e2c3d729916578d3",
+  "build_bind.py": "b6a9073eca76072e0e19e7eaa9c839b57785965a5a6cd09d1e60849f32cb50c0",
+  "delta": "from rexact-v2/bind.py: roots v2->v3, v3 packet manifests, PACKAGE revision-v3, plan code must name none of revision-v1/-v2/-v5, kinds rexact_v3(+_result), header; tests repointed + new revision-v2-refusal test",
+  "test_bind.py": "d033b1b15f57fd54889d471b46603dba49d8b7ea9c88e64bbb9ece183407216a",
+  "tests": "26 pass (local .venv, -B)"
+ },
+ "execution_authorized": false,
+ "kind": "rexact_v3_binder_and_b_candidate_review_ready_v1",
+ "not_done": "no binder run, no gate plan, no B execution, no gate issuance; each needs its own independent approval + root authority"
+}

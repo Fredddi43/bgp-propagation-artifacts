@@ -1,0 +1,46 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "capture_authorized": true,
+ "command": ".venv/bin/python -B .agents/operations/r1-prerequisite-evidence-20261021/capture_metadata.py .agents/operations/r1-v11-posteval-20261024/k2-v1/request-d0d1-fetch.json .agents/operations/r1-v11-posteval-20261024/classd-host/evidence-d0d1.json.gz",
+ "conditions": [
+  "output path is the fixed d2.py CAPTURE_D0D1 path (d2.py:71)",
+  "f19 asserts each sha and the 16 MiB/256 MiB caps; mismatch or over-cap: stop, preserve, no retry"
+ ],
+ "d2_authorized": false,
+ "host_write_authorized": false,
+ "kind": "r1_v11_d0d1_fetch_capture_approval_v1",
+ "label_read_authorized": false,
+ "output": "<REPO>/.agents/operations/r1-v11-posteval-20261024/classd-host/evidence-d0d1.json.gz",
+ "passed": true,
+ "per_event_read_authorized": false,
+ "prediction_read_authorized": false,
+ "request_bytes_sha256": "7d2643c72e89db763b71aa5d254e2f37212d17dcef0eaa4f4c74a2e43a2bfee4",
+ "request_content": {
+  "files": [
+   {
+    "path": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/plan.json",
+    "sha256": "6e18854beb7e1ef54adb810bd48b57863c97e40c4b4b18d8a2ded7663be85f60"
+   },
+   {
+    "path": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/census.json",
+    "sha256": "7b746087d75a71b148746a0edea43198311f5abddf1549956851c1c5b96cbc25"
+   }
+  ],
+  "kind": "r1_classd_d0_d1_fetch_request",
+  "tool": "r1-prerequisite-evidence-20261021/capture_metadata.py",
+  "tool_sha256": "f19d1066867ed82a1c6fd528d1374b741b7fcedcceefad5f262df1f642815e16"
+ },
+ "request_rule": "the request file MUST be the exact stdout of: .venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/d0d1-fix-v1/phases_r2.py fetch-request, saved as k2-v1/request-d0d1-fetch.json with request_bytes_sha256",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-classd-d0d1-fetch-v1",
+ "supersedes_unused": "an earlier 3f8addba draft of this approval (corrupted request_rule text, non-d2 output path) - never use it",
+ "tool": {
+  "path": "<REPO>/.agents/operations/r1-prerequisite-evidence-20261021/capture_metadata.py",
+  "sha256": "f19d1066867ed82a1c6fd528d1374b741b7fcedcceefad5f262df1f642815e16"
+ },
+ "why": "plan.json (label-free D0 plan, 2,065,679 B) and census.json (stat-only D1 census) are needed to size D2 and to count the D1 not_regular tensor entries, whose list was truncated in d1-result.json"
+}

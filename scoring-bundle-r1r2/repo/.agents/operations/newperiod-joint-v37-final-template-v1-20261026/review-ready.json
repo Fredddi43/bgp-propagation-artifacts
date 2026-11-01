@@ -1,0 +1,33 @@
+{
+  "designated_reviewer_role": "sol-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/prepare.py",
+      "sha256": "37be8c893ca60e15ac2221114f19843cdefe498df8f66d98c9b15a0cd5f00740"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/dry_run.py",
+      "sha256": "7c61ff30017f0e9df4d4c2b58643e54fe0d761afac8be745f34f9f729cf4f1f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/proposal.json",
+      "sha256": "914925a80611d56499da3073752fefafb0ed5029b70f47083ddd801462424534"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/root-phase.FALSE-TEMPLATE.json",
+      "sha256": "b42651243560dccbd0d7998ad68bfd693bed7927e423f29c08f6b0d61391fa95"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/consumer-dry-run.json",
+      "sha256": "e0515f7caa39fcf8a42b1c06a629a52bf88b585a7bb3367adafd262de2881339"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/board-scan.json",
+      "sha256": "a9d3726ed243ac32c5f92d6d14a1648bd5ec8f1f53b37e4fd81e918aef4b72ac"
+    }
+  ],
+  "issued": false,
+  "kind": "V37_FINAL_FALSE_TEMPLATE_REVIEW_REQUEST",
+  "request": "Final exact FALSE template review; core+cleanup acceptance bound; H3 outcome pin remains ROOT_FILL per user; final issuance remains blocked on ROOT fields/current controls/df/actors/operating closure."
+}

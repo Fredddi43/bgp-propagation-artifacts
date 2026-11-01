@@ -1,0 +1,39 @@
+{
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "kind": "AUTHOR_H3_FORTY_REFITS_CALIBRATION_PREPARATION",
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-forty-refits-calibration-preparation-v2-20261026/actual-prerequisite-map.json",
+      "sha256": "c1152f92b0e68258557edaa3a369d64a923882dad4ef138d055b2e92732f6b72"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-forty-refits-calibration-preparation-v2-20261026/author-checks.json",
+      "sha256": "ec20b84293030e3e5a22be70b27834edd4fe79f86250bd34331c00b406db2cfc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-forty-refits-calibration-preparation-v2-20261026/calibration-and-resource-handoff.json",
+      "sha256": "1869ef2eef0cf2c28931b44169e1844d420e0f93763b6d071e9878c4bcf65488"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-forty-refits-calibration-preparation-v2-20261026/eighty-role-interface.json",
+      "sha256": "e7d5ff459bf9eea8e5f57f17b9f98a86d94d199e09ca4cb55a2482555364f301"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-forty-refits-calibration-preparation-v2-20261026/forty-cells.json",
+      "sha256": "1ab9d8bd11763bd0681761fe2ea1bba18f98fa25b743baea22bb1d5b268321f1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-forty-refits-calibration-preparation-v2-20261026/prepare.py",
+      "sha256": "5c606160d8e76c58d9ceafc02eeaa6876d7195103936ec053757ada25ae791c3"
+    }
+  ],
+  "protected_payload_reads": 0,
+  "remote_actions": 0,
+  "request": "Review fixed40fit/80role mapping, exact available actual refs and calibration semantics; preparation only. Need all4audit acceptance/typed gates/runtime/resources before execution packet. No scope reduction.",
+  "to": [
+    "root",
+    "sol-h3t",
+    "astra-final"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "draft_package_key_files": {
+  "collector-inventory.json": "61adc1b32343cd18f145d8599bef8b635fe45c7d91a02d546a0603d67da4e46e",
+  "kernel-plan.json": "4791f41fc42c4560117d24105ac794da3e8f6e9f861901eded03733d5fef61f2",
+  "plan-without-resource.json": "528c80be85b65e18a98b4ac0c0be9cb393c6cb30b29f5f6bbbb510c64f0a3db9",
+  "resource-request.json": "6cbab329e757a69cb1472ecf23153bc7c7437649fe8df238f42cf1573037701b"
+ },
+ "execution_authorized": false,
+ "files": {
+  "REVIEW.md": "43a8aaa50a2011f316be9aa52c6683b03fef3a92daef4740c73774f697990b33",
+  "actual-binding-v1/assemble_draft.py": "db0d8be71ea2bb4cb9156e4a2a06f7787a9f4294c36a9ccdd4b56a38468e4592",
+  "actual-binding-v1/outcome-v1/capture.py": "5e5ab03d6db530862109edfe776e8ba7b51e88b963b4ea88e8d02a084204208a",
+  "actual-binding-v1/outcome-v1/test_capture.py": "df1704cb79593d1b510fe7662fa1e0c832c0351f29fd98b5565c8d0a5a294f6b",
+  "actual-binding-v1/test_transport_packet.py": "448ffde8329716ccb7fa78f191081a4f489a102bb1026b30bc4ba72ba884fcde",
+  "actual-binding-v1/transport_packet.py": "4ce67f6bb1d686672af9dbece85d8af3ba27308614781f8b8384d8ec3a816a14",
+  "build.py": "71e0cec31993dc643fee4c319aa537b83ade677374b76c52bde06bece205f16f",
+  "construction/common.py": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d",
+  "construction/job.py": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8",
+  "construction/runtime_verifier.py": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc",
+  "file_limits.py": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f",
+  "finite_io.py": "eb3e2859ff2187f9d5e25053bc4b3b390c4e1ebe742d98ff053ffb96046582d2",
+  "opus-4ba6111c-response.json": "e8658b1f74a96b727d85451f8eab02092e52f2d577e7b8c0231a29b2dee362db",
+  "opus-review-v1/execution-review.txt": "807b3ccb26af1ebf8584d53813da9a21a5f0797f5c4ea81f6b930f0044304cf9",
+  "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+  "runner.py": "c5ad9f0c952c5ee35a4cebad7a46d2c3253e469c32627822a20f58ce03213933",
+  "test_execution.py": "1123bdf8ef1cef775a500f2795c268794ef4dd9ed007e3d23d30da5f843395c7",
+  "test_file_limits.py": "6e30d630684aea1c03b1eb080f972ce63890c5e17cebf8db91c0dfa2b99b49f1"
+ },
+ "kernel_review_ready": "6f90509fc609f0e6b957f0142fdf3843840583c5332791312f9149281bda60ab",
+ "kind": "h3_metadata_execution_review_ready_v1",
+ "resource_binding_sha256": "8abcf02a7a100fee881b20610419a45c6ca6e1f68e911ff6a5c1b96d9f7721ae",
+ "tests": "31 passed (execution 20 + transport packet 5 + draft outcome capture 6)",
+ "utc": "2026-10-24T08:52:33.062248+00:00"
+}

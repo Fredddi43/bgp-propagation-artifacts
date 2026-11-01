@@ -1,0 +1,11 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "be5f9652b0ce15b6a43ebfb863967d8e862a261e572e2cee223966e87c1c73b7",
+    "execute.py": "7cc1dac5ff973634091f8f9157bf6403a274263fe23f8e8e1f3e643f4b4fcf41",
+    "test_execute.py": "b105bc50c88d343a21a3f4011ae34f0da15e9e56999e5ce4588f80292cbf99f8"
+  },
+  "kind": "newperiod_core_calibration_execution_code_candidate_v2",
+  "predecessor_readiness_sha256": "c1d47bd4104ff076a5a755a1a661caa32bd565ac956beca2d10834875b0dab4d"
+}

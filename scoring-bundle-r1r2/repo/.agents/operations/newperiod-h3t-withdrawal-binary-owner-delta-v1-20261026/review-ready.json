@@ -1,0 +1,48 @@
+{
+  "answer": {
+    "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/owner-delta.json",
+    "sha256": "d3b7525580f9211a0fb965e2857447965a6eb14838fc0eaae582b1f41116cfd9"
+  },
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/actor-deltas.json",
+      "sha256": "6b3110439a4f8864632602b2d1bb0292f89389c24f7752a4851e00576c0e2630"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/admission-deltas.json",
+      "sha256": "b472318e883e33dc69c31eee2a1ff2ce407fd1ed75bb0c9f4fd9763ab341c97e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/current-config-metadata.json",
+      "sha256": "fbd1b9b3ca750cab11f900ef0fd62714d81f8f99370808ac153feea10be5f0f8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/literal-path-intersection.json",
+      "sha256": "b54df471a764d008b17876c5d1b4064aaaf3c8f57b82453328c87689366cc5bb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/owner-delta.json",
+      "sha256": "d3b7525580f9211a0fb965e2857447965a6eb14838fc0eaae582b1f41116cfd9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/prepare.py",
+      "sha256": "77bde3fac171880e859254dd40eb394debe8040877ddd74fcf178d6962803e0e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/source-callsite-catalog.json",
+      "sha256": "8bc48b8eea121d93c925a49d58af1a2728b90935074c715460351bd6ec5674b8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/verification.json",
+      "sha256": "991eb214f3db78f3db5badbddd1c96135b7d46e582d091bf2ac746f77b8e12d4"
+    }
+  ],
+  "kind": "AUTHOR_REVIEW_READY",
+  "self_approved": false,
+  "verification": {
+    "path": "<REPO>/.agents/operations/newperiod-h3t-withdrawal-binary-owner-delta-v1-20261026/verification.json",
+    "sha256": "991eb214f3db78f3db5badbddd1c96135b7d46e582d091bf2ac746f77b8e12d4"
+  }
+}

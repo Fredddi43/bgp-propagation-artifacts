@@ -1,0 +1,51 @@
+This candidate implements ROOT-SHARD27-ALLOCATION-PROBE as a local once coordinator
+and a fixed synthetic remote worker. ROOT alone launches it detached after sol-h3t
+source/resource admission and a fresh acknowledged six-directory control snapshot.
+No remote action has been performed by the author. All authority/review templates
+remain false. The exact source is passed through SSH; no remote staging files.
+
+The eight random files total3827306497bytes. Sparse and preallocated cases each use
+64MiB (offset0), giving3961524225logical bytes,3.6894569406GiB. Random chunks are
+1MiB or smaller; short writes are completed explicitly. Each file is fsynced and
+sampled immediately; the fixed retained set is sampled again after all files are
+written and at least60 and300seconds after the last write response. Actual local
+elapsed time and remote monotonic timestamps are retained, so per-file elapsed
+ages can be reconstructed. This is not a claim that every file is sampled at
+exactly60/300seconds. Compact active per-chunk allocation observations are retained.
+Sparse/preallocated measurements are separate from the fresh sequential writer.
+
+Proposed resource source is an EXCLUSIVE earmark inside issuedv35's18GiB
+timing_shard27_successor_provisional row:4GiB observed allocation ceiling plus
+64MiB controls allowance. ROOT must attest no concurrent ordinary/singleton timing
+builds and retain exclusivity until cleanup is independently accepted. A stricter
+extra4GiB+64MiB free-space margin over the full phase minimum is checked before
+creation; phase minimum is checked during writing/sampling. No capacity row is
+changed. The4GiB check is observational, not a backend quota; delayed allocation,
+metadata attribution and between-sample peaks remain uncertain. Shared df/statvfs
+deltas may include other users' writes. Independent resource acceptance is required.
+
+ROOT workflow: obtain exact independent operator/resource review using the supplied
+false schema, take a fresh six-directory snapshot with root_acknowledges_all_controls
+true, fill a NEW root authority from the false template (including stopped-build
+attestation), run operate_probe.py --authority /absolute/new-authority.json --check,
+then launch that identical authority detached once with a ROOT-owned outer log.
+The board ROOT_GO_SHARD27_ALLOCATION_PROBE_ONCE post is exempted only when its exact
+four fields match utc/kind/to=astra-v28/authority; any extra/change/new controls block.
+The operator consumes its fixed local records namespace before the first SSH.
+Changes during execution stop subsequent calls. No scientific data or event metadata
+is read; no production job, capture, retry, release, or allocation model is authorized.
+
+Successful cleanup deletes only known newly-created regular single-link files with
+the exact creation-receipt inode/device identities, then the exact owned empty private
+directory. No recursive deletion. Failed/uncertain transport or control changes stop
+all further SSH, even cleanup: inspect STOPPED plus immutable intent/output receipts,
+preserve the earmark and obtain separately reviewed ROOT cleanup. Do not rerun the
+consumed operator. Remote expiry<=550seconds and SIGALRM/per-write guards prevent
+later user-space mutations; an already in-flight uninterruptible NFS operation may
+finish late. Coordinator timeout is not proof of remote termination or reclaimed bytes.
+
+After actual measurements, sol-h3t must accept an explicitly empirical envelope
+A<=alpha*L+q with margin and stated fixed-writer/stable-export assumptions. Apply it
+to8GiB logical output and prospective verified file count, then add all external
+control/log/source/directory costs once. Neither a count nor an accepted model is
+invented here. S27-V2-1 stays open, and the existing successor execution fence stays.

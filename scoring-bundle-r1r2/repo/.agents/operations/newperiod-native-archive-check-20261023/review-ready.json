@@ -1,0 +1,20 @@
+{
+  "admission_authorized": false,
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    ".gitignore": "1a058eedde54d46ae00174c7ba367d201407724f8205554be00071a88270371f",
+    "REVIEW.md": "f8d7b58b0670ca2737baa2ecabc08c5d06e776e743d34f2e2f14ce19b7b32db3",
+    "build.sh": "f36706b1c6840079fbbe9504e2e06f755f513ed56ec9962e46eb160b1f9b722b",
+    "check.py": "3030c6c19a478d1906aff0e062ce7f162d9aa85c68702386d5f89a6c1c818664",
+    "projection.py": "48eccc5f24e9d6c8d2ebff9fe6339efae4fd9f957610c4d5fa5e9e7a56ef718c",
+    "strict/Cargo.lock": "304ec51f1880d96fc39002b1fe9f9e40bd11eb87027240f9fe00c1c7f445923b",
+    "strict/Cargo.toml": "ab6d9edf5913f9906c06a80cd9aa6aee1c21cef6c97b6677fae1d17799b8b700",
+    "strict/src/main.rs": "b27cc0285049cb22c8794e7d53cda270b3930aae8fabb64112fe4b60f6edbf85",
+    "task14550-inventory.json": "bec239b6c63c68b67ceb4862e91e3953e716745d7bb9e452a37325b082ec1702",
+    "test_check.py": "e1cffe9d0bd23f056e772322449904755231402b2c538319cee95f2b28223b47"
+  },
+  "kind": "native_archive_completeness_code_review_v1",
+  "real_archives_read": false,
+  "tests_passed": 23
+}

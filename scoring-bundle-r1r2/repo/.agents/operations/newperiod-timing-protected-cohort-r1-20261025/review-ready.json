@@ -1,0 +1,31 @@
+{
+  "actual_execution_authorized": false,
+  "author": "h3_author",
+  "author_model": "claude-opus-5-5",
+  "files": {
+    "REVIEW.md": "eaf7e60ed50e8e5ca8319759c75c240d66ae2eced8df2a6fa6fcf05ccc0cda6c",
+    "actual-binding-v1/control/kernel-plan.json": "8e7fe2aeae512b1d3e31471e9ea5bef13777e5c77ce62eff9777f2e19542f91a",
+    "actual-binding-v1/job-cohort.sh": "36cff0ab83f7214a9028e6a2b9f87ed6ab2faf516e0187a20abeb6f7ccd672b5",
+    "actual-binding-v1/plan-without-resource.json": "1e7d7fe0e54526a0f9a162eb7ab91018e9b4ef944cded9725ea7841bc461307a",
+    "actual-binding-v1/resource-request.json": "ec0ec9daa3a71f246074b54b3c484bf745b8936a8318771814d56112d629aa7d",
+    "assemble_cohort.py": "858092f4c1aa7aab4ef655ddb37f5862e9bd002f73c9c4b94079c42f599ce501",
+    "build.py": "77af0c9ecf8ab524cf4f226ed796bbaa0fccc55fd3c10c493878a1fa82535ba0",
+    "build_runner.py": "36b36cf961991e568f9b743db280b35d2ff174caacb2a3bd6f29991bf8abd815",
+    "file_limits.py": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "runner.py": "981a70aef3e373e881ff6213b5b10ec625e9597c2a35a108a2640de090a3872d",
+    "test_runner_r1.py": "c8a69172cb4ca01e2cdbc360f9d5f525bcb7eadfbba687f10c80a0eaa8166308"
+  },
+  "kernel_ready": {
+    "path": ".agents/operations/newperiod-timing-protected-inputs-r2-20261023/review-ready.json",
+    "sha256": "f7011fbf10a5ef067932ff7269ea51c384f5a38bec5aea2f66320660661d284b"
+  },
+  "kind": "newperiod_timing_protected_cohort_runner_r1_candidate_v1",
+  "mutation": "FSIZE line restored -> 3 targeted tests fail",
+  "protected_reads_performed": false,
+  "source_runner": {
+    "path": ".agents/operations/newperiod-timing-metadata-runner-20261023/runner.py",
+    "sha256": "449b2c087af556edf837ff40600c55cc686d453f8cb58e3bad5c7cbdf4de9fdc"
+  },
+  "tests_passed": 25
+}

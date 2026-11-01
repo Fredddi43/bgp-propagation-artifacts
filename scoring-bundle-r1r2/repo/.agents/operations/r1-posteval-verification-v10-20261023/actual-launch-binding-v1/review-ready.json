@@ -1,0 +1,18 @@
+{
+  "author_worker": "/root/metadata_check_review",
+  "change_scope": "Only actual supervisor constant and adjacent comment in original census; all functions and remote program AST-identical.",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "8b3a47518679c1cb0a173a9fc3e6ad3f10150fe033d1c5757ad4a6275b5f1b6a",
+    "census.py": "8d4f55cfcaeb0a97fdd22c3c0bbabdf2097261dbce469c0226734f0b77479b9f",
+    "request.json": "fc842f28e88d657c9f47cab1d6d076da61fb00f1212b0cf6197175bf0bf9d7c9",
+    "test_binding.py": "0cf58123e1f48efcceb3554590247f69dcb19815c52336310c21049df6c7e6c1"
+  },
+  "host_actions_performed": false,
+  "kind": "r1_v10_actual_launch_census_binding_candidate_v1",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 3,
+    "seconds": 0.1
+  }
+}

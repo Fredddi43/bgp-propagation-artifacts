@@ -1,0 +1,23 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "e889b4a37789b11d087006c3e9486e9e1bae2c1863c47ccdb8e1fb274b32e104",
+    "capture.py": "a13402af67edce09ba51547502ca56dd3748d40e19bf78a10ceee4672d78b04d",
+    "request.json": "bead1f3ea53c8533fdfc0ee10b33465180f3f74268bcc01360756787c479fc1c",
+    "test_capture.py": "563cfa70c57f783e3fd73f773530c4f18274c00d6b1cd5a82b1d40f9f9d69f19"
+  },
+  "kind": "origin_source_exact_inventory_probe_candidate_v1",
+  "scope_evidence": {
+    ".agents/operations/codex-takeover-20261023/origin-family-current-source-path-status.json": "b0567d29409449d201bfaf99087dc4f6f2ea373a7b24baf1442ef6925a8efbba",
+    ".agents/operations/codex-takeover-20261023/protected-staging-actual-verdict.json": "c8bb8fd5677d88447d0771100c25d7729c45c3a53895b66bdf1b14d598a6c074",
+    "scripts/custodian_newperiod_pass.py": "43eb34aef0366682ce0cd5946f914084e684a483b912aea340352b3e6e541f17",
+    "src/bgbench/config.py": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab"
+  },
+  "tests": {
+    "passed": 8,
+    "seconds": 1.19
+  }
+}

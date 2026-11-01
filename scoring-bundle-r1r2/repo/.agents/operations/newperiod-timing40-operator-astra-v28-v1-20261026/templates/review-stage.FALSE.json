@@ -1,0 +1,59 @@
+{
+  "action": "stage",
+  "author_sessions": [
+    "<SESSION_ID>",
+    "<SESSION_ID>",
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "astra-v28",
+    "astra-final",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery"
+  ],
+  "execution_authorized": false,
+  "manifest_sha256": "a5053dffde116b77d3a24b2bf3cace59e2b54ffca38e035cc38ed72f87a1ed57",
+  "operating_adoption": null,
+  "passed": false,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v43-20261026/root-joint-storage-phase-v43.json",
+    "sha256": "7b2d75f3652482fd196b6ef790344a6cb050f9f25fb2fb9c712975145d3f0304"
+  },
+  "pins": {
+    "entry.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/entry.py",
+      "sha256": "707e4564126ad0b8020cd55349bf37d5ef372edbfbe7c05737658de6a412c053"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/operate.py",
+      "sha256": "fe7f9146bef4b39f0775f9bfa20f7c345df76d81b74de6fd4e474d3df1acabcd"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/prepare.py",
+      "sha256": "92259da64843055388338e49d3783e9925f4a9fda389bb8e66f023b97e46e1d8"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/remote.py",
+      "sha256": "6634599f28f5d988118f5fcdfc142c840471329599791f547c1dff1b539bfcd2"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    },
+    "writer.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-astra-v28-v1-20261026/writer.py",
+      "sha256": "d333b3529214f9f60b9fe3d9c96e20a01af96f1f1e4277e94d7d167d15bbac8a"
+    }
+  },
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null
+}

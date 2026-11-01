@@ -1,0 +1,18 @@
+{
+  "cohort_review": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-cohort-finalize-ts4-root-v1-20261026/cohort-review.json",
+    "sha256": "f907a960cef5d258c00fd4b553c7d8aa7158812cb27014a880718828d3cdee1d"
+  },
+  "operator": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-cohort-finalize-ts4-root-v1-20261026/operator.py",
+    "sha256": "f4d52cf8ef85c6925cf69863f634663fab3f059044d17ac6e4b5dda11c023d3f"
+  },
+  "passed": true,
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-ts4-v1-review-sol-final-20261026/SYNTHETIC-authority-fixture/request.json",
+    "sha256": "fa477a17083a36049cd05d5a3938895db64d177e50b9c7e3842db20848528510"
+  },
+  "reviewer_model": "gpt-6.1-sol",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "/root"
+}

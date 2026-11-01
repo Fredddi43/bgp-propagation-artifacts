@@ -1,0 +1,11 @@
+{
+  "kind": "origin_completion_metadata_readiness_v1",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "test_capture.py": "a0365ea6e360c0877e95f1a91c37f9a6c261c3989fb2c2c5a0f74af374c49fc0",
+    "request.json": "1eb6b9ace8b703649c84a2e134ac5beeafb773489890f71bb9bb89e82f04ecc9",
+    "capture.py": "994a4393b98a554ca4cd91fa1c707ba7531cbde4779a52a66b8a90f0c131da10",
+    "remote-command.txt": "b003cd06a408f682648c1937c6ec67e535060946e2d846cfb9b68331e0e46d49"
+  },
+  "scope": "One exact13task done/failed receipt capture and successful declared origin output lstat only; no parquet payload read/hash or arbitrary followed refs"
+}

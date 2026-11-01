@@ -1,0 +1,9 @@
+# Chronos pooled-selector client assembly
+
+This package assembles already-reviewed source overlays into the existing Chronos client's finite staged closure. Inputs: `newperiod-count-pooled-20261023` count consumer, Chronos preflight and exact collector helper; `newperiod-selector-compat-20261023/source_guard.py` shared source guard. Every input hash is fixed in `build_candidate.py`. The predecessor directory remains unchanged.
+
+Changes: four staged operational sources (`count_inputs.py`, `original_n_source_guard.py`, `collector_inventory.py`, `run_package.py`), corresponding `spec.json.files` bindings, and client template/runner hashes. The pooled selector remains pooled; acquisition obligations come from the separately bound `source_coverage.collector_inventory`. No new top-level prerequisite: seven preparation and four additional fit requirements remain. All science snapshots, recipes, five fixed configuration6 fits, concurrency1–5, budgets, phase paths, source/staging identities, sbatch scripts, approvals and failure/retry semantics are preserved. Protected custody/export is outside this package.
+
+Reproduce with `python3 .agents/operations/newperiod-chronos-pooled-client-20261023/build_candidate.py`. Run `.venv/bin/python -B -m pytest -q .agents/operations/newperiod-chronos-pooled-client-20261023/test_client.py`:45 passed. This reuses39 predecessor tests, changes only the preservation test for the new reviewed base/overlays, and adds six exact source-binding/inventory-routing/refusal checks. Relevant source scientific invariance and real synthetic count NPZ equivalence were independently reviewed in the input packets; this assembly does not alter those bytes.
+
+No actual source coverage, R1 release, sealed N inputs, cache/padding/resource receipts or execution approval is invented. This is a code/template candidate, not an executable authorization. No host actions, fits or protected reads occurred.

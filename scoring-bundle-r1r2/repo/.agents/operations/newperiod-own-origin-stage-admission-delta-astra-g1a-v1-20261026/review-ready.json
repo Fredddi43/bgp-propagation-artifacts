@@ -1,0 +1,19 @@
+{
+  "artifacts": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-own-origin-stage-admission-delta-astra-g1a-v1-20261026/verify_ancestry.py",
+      "sha256": "b83fc29b015407fc63f282c6391c246d618c595d98a29ea57aa138337077f690"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-own-origin-stage-admission-delta-astra-g1a-v1-20261026/ancestry-verification.json",
+      "sha256": "26d0204877ace5da705363b58368c9402bdb131ffab4028cca548b0aa95d5541"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-own-origin-stage-admission-delta-astra-g1a-v1-20261026/admission-delta.json",
+      "sha256": "da23ffeca38e2cea1963537769484f550708aac7ada5ff2c9171fcd86a7bbdad"
+    }
+  ],
+  "execution_authorized": false,
+  "kind": "OWN_ORIGIN_STAGE_ADMISSION_DELTA_REVIEW_READY",
+  "reviewer": "sol-g1a"
+}

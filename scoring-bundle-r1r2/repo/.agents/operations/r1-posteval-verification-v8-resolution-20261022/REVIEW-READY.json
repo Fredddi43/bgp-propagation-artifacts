@@ -1,0 +1,7 @@
+{
+ "approval_claimed": false,
+ "kind": "r1_v8_posteval_resolved_review_ready",
+ "pins_sha256": "7c5ec5dd3b641bfd1bb7b1bc6c61b8ffabacb8e3442ab5e90073effa47e77e46",
+ "request": "actual-resolution/execution-identity review of the resolved posteval packet (markers + cascade only); no host action requested",
+ "reviewer_session": "<SESSION_ID>"
+}

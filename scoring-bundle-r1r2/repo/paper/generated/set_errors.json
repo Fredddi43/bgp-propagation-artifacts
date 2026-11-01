@@ -1,0 +1,948 @@
+{
+ "kind": "set_error_accounting_revision_analysis",
+ "confirmatory": false,
+ "replaces_published_values": false,
+ "population": "all scored events (AP-ineligible events without new members included)",
+ "definitions": {
+  "added": "|predicted - seeds| = new_tp + new_fp (bgbench.forecast_retrospective_scoring)",
+  "no_growth": "no AS joins after issue time (no_growth; equals new_members == 0)",
+  "false_additions_on_no_growth": "every addition on a no-growth event is false (new_tp = 0 there)",
+  "adds_nothing": "empty_new_prediction: the committed set equals the seed set",
+  "jaccard": "full-target Jaccard of the committed set (seeds included) against the target set",
+  "persistence": "the seed set; jaccard_persist; adds nothing by construction",
+  "seed_aggregation": "statistic per training seed, then mean over the five seeds",
+  "minus_persistence_interval": "paired_bootstrap, training seeds then incident-day blocks over all scored events, 10000 repetitions, rng seed 1701"
+ },
+ "r2_record_fields": [
+  "average_precision",
+  "coverage_ceiling",
+  "decision_rule",
+  "eligible",
+  "event_id",
+  "in_issue_time_slice",
+  "input_status",
+  "issue_time_variables",
+  "jaccard",
+  "metric_version",
+  "new_members",
+  "precision_at",
+  "ranking_status",
+  "recall_at",
+  "seed_asns",
+  "two_threshold_jaccard"
+ ],
+ "r2_missing_fields": {
+  "added_mean": [
+   "new_tp",
+   "new_fp",
+   "predicted_asns"
+  ],
+  "false_additions_on_no_growth": [
+   "new_fp",
+   "predicted_asns"
+  ],
+  "adds_nothing_share": [
+   "empty_new_prediction",
+   "predicted_asns"
+  ],
+  "persistence_jaccard": [
+   "jaccard_persist",
+   "target_asns"
+  ]
+ },
+ "r1_frozen_arm": "not applicable: the R1 SAGE is itself the 2025 model; the frozen arm exists only in R2 (60 s)",
+ "provenance": {
+  "R1": {
+   "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+   "per_event_sha256": {
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed0": "b4794e1c3a20f7ffecb07075452ece2ce4a28e53c50aa3179ea2840510ea9888",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed1": "d96dd59fa1e5b072560da1971518c03f262c52e128c3c67ec954d21b71512b3c",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed2": "ce7f40ee32f68675294f90046356a3351f29f767ddb0d662e93f9248f97b19c8",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed3": "a82f7026555dec7f7c2c4b08f02321b603f2b5419e19c62682e63be6707f4202",
+    "core-gbdt/core-v6b--c3_sage_history-on_d30_seed4": "784dae17ebe32f981673f4343ab01072c8bc55cbef49755d7b2a685443697478",
+    "baseline-d30/history-knn-mean_matched_d30": "ff5de65e533dbfec835a94609d7ce391e9bed012d3f0df1052254c35e74e1f44",
+    "baseline-d30/history-knn-median_matched_d30": "0a2aa47cd89f7b73a7959091cf5a4400f777b91c95d24243a6767d81432060b4",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed0": "60369490185f4ff22b3d3c5a44c5884c4fe54aab9380ec5efaa0306441ee0da0",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed1": "49776612bd5fb44dba554055879ec2e2c909a98ceb0f6444926c7786554529f0",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed2": "1779eebc9464cbda143ffca5ca2d73178216217de596e97c977b0bced2916933",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed3": "fd62d2c492fc9c190a27d53ade339d1681e786ac8f5e8ecbed212cab02efc501",
+    "core-gbdt/core-v6b--c3_sage_history-on_d60_seed4": "f233ac0becec37fff72f638e1c226cbe26c6c4535e13fe52f989b8368a56b53f",
+    "baseline-d60/history-knn-mean_matched_d60": "8af0b15b394b4886c2e8cc14b7654bdce53fd59df44bdd338c8e47ca24536b4f",
+    "baseline-d60/history-knn-median_matched_d60": "742fb62d41912acc2039d2afc6d6c9c64fd24b699033968733cbc80eec4a2b09"
+   },
+   "arm_spec_sha256": "9a6d36e81dce9817bbd0e722c62197c0c02bc4989962e944380721526c35c09f"
+  },
+  "R2": {
+   "primary_scores_sha256": "af9656ac8e1961eccbda75c590e5c8361a640229127dc122e79611d0365cef59",
+   "primary_report_sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+   "evaluation_window": {
+    "start": "2026-09-01T00:00:00+00:00",
+    "end_exclusive": "2026-10-16T00:00:00+00:00"
+   }
+  }
+ },
+ "results": {
+  "R1": {
+   "30": {
+    "sage_on": {
+     "events": 3543,
+     "no_growth_events": 882,
+     "eligible_events": 2661,
+     "added_mean": {
+      "mean": 0.3391476150155236,
+      "per_seed": [
+       0.23906294101044312,
+       0.511148744002258,
+       0.14817950889077053,
+       0.43014394580863674,
+       0.36720293536550946
+      ],
+      "min": 0.14817950889077053,
+      "max": 0.511148744002258
+     },
+     "added_mean_growth": {
+      "mean": 0.4450958286358512,
+      "per_seed": [
+       0.30665163472378804,
+       0.6768132281097332,
+       0.19654265313791808,
+       0.5633220593761744,
+       0.48214956783164226
+      ],
+      "min": 0.19654265313791808,
+      "max": 0.6768132281097332
+     },
+     "no_growth_added_mean": {
+      "mean": 0.019501133786848073,
+      "per_seed": [
+       0.035147392290249435,
+       0.011337868480725623,
+       0.0022675736961451248,
+       0.02834467120181406,
+       0.02040816326530612
+      ],
+      "min": 0.0022675736961451248,
+      "max": 0.035147392290249435
+     },
+     "no_growth_false_total": {
+      "mean": 17.2,
+      "per_seed": [
+       31.0,
+       10.0,
+       2.0,
+       25.0,
+       18.0
+      ],
+      "min": 2.0,
+      "max": 31.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.006122448979591836,
+      "per_seed": [
+       0.01020408163265306,
+       0.0045351473922902496,
+       0.0022675736961451248,
+       0.005668934240362812,
+       0.007936507936507936
+      ],
+      "min": 0.0022675736961451248,
+      "max": 0.01020408163265306
+     },
+     "adds_nothing_share": {
+      "mean": 0.9463166807790009,
+      "per_seed": [
+       0.9339542760372566,
+       0.9556872706745696,
+       0.9672593847022297,
+       0.9424216765453006,
+       0.9322607959356477
+      ],
+      "min": 0.9322607959356477,
+      "max": 0.9672593847022297
+     },
+     "jaccard": {
+      "mean": 0.7024553593042465,
+      "per_seed": [
+       0.7024828086173516,
+       0.7024145897346569,
+       0.7024277252674647,
+       0.7024160982766463,
+       0.702535574625113
+      ],
+      "min": 0.7024145897346569,
+      "max": 0.702535574625113
+     },
+     "persistence_jaccard": {
+      "mean": 0.7022786580157323,
+      "per_seed": [
+       0.7022786580157323,
+       0.7022786580157323,
+       0.7022786580157323,
+       0.7022786580157323,
+       0.7022786580157323
+      ],
+      "min": 0.7022786580157323,
+      "max": 0.7022786580157323
+     },
+     "minus_persistence": {
+      "difference": 0.0001767012885140001,
+      "ci95": [
+       6.050073157219485e-05,
+       0.0003006449657513863
+      ],
+      "p_value": 0.003999600039996,
+      "events": 3543,
+      "blocks": 121,
+      "training_seeds": 5
+     }
+    },
+    "online_history": {
+     "events": 3543,
+     "no_growth_events": 882,
+     "eligible_events": 2661,
+     "added_mean": {
+      "mean": 56.74767146486029,
+      "per_seed": [
+       56.74767146486029
+      ],
+      "min": 56.74767146486029,
+      "max": 56.74767146486029
+     },
+     "added_mean_growth": {
+      "mean": 59.39534009770763,
+      "per_seed": [
+       59.39534009770763
+      ],
+      "min": 59.39534009770763,
+      "max": 59.39534009770763
+     },
+     "no_growth_added_mean": {
+      "mean": 48.759637188208615,
+      "per_seed": [
+       48.759637188208615
+      ],
+      "min": 48.759637188208615,
+      "max": 48.759637188208615
+     },
+     "no_growth_false_total": {
+      "mean": 43006.0,
+      "per_seed": [
+       43006.0
+      ],
+      "min": 43006.0,
+      "max": 43006.0
+     },
+     "no_growth_any_share": {
+      "mean": 1.0,
+      "per_seed": [
+       1.0
+      ],
+      "min": 1.0,
+      "max": 1.0
+     },
+     "adds_nothing_share": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "jaccard": {
+      "mean": 0.38365594998371005,
+      "per_seed": [
+       0.38365594998371005
+      ],
+      "min": 0.38365594998371005,
+      "max": 0.38365594998371005
+     },
+     "persistence_jaccard": {
+      "mean": 0.7022786580157323,
+      "per_seed": [
+       0.7022786580157323
+      ],
+      "min": 0.7022786580157323,
+      "max": 0.7022786580157323
+     },
+     "minus_persistence": {
+      "difference": -0.31862270803202236,
+      "ci95": [
+       -0.33233198909617884,
+       -0.3033998656304956
+      ],
+      "p_value": 0.00019998000199980003,
+      "events": 3543,
+      "blocks": 121,
+      "training_seeds": 1
+     }
+    },
+    "history_median": {
+     "events": 3543,
+     "no_growth_events": 882,
+     "eligible_events": 2661,
+     "added_mean": {
+      "mean": 26.77928309342365,
+      "per_seed": [
+       26.77928309342365
+      ],
+      "min": 26.77928309342365,
+      "max": 26.77928309342365
+     },
+     "added_mean_growth": {
+      "mean": 30.198421645997744,
+      "per_seed": [
+       30.198421645997744
+      ],
+      "min": 30.198421645997744,
+      "max": 30.198421645997744
+     },
+     "no_growth_added_mean": {
+      "mean": 16.46371882086168,
+      "per_seed": [
+       16.46371882086168
+      ],
+      "min": 16.46371882086168,
+      "max": 16.46371882086168
+     },
+     "no_growth_false_total": {
+      "mean": 14521.0,
+      "per_seed": [
+       14521.0
+      ],
+      "min": 14521.0,
+      "max": 14521.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.8696145124716553,
+      "per_seed": [
+       0.8696145124716553
+      ],
+      "min": 0.8696145124716553,
+      "max": 0.8696145124716553
+     },
+     "adds_nothing_share": {
+      "mean": 0.0708439175839684,
+      "per_seed": [
+       0.0708439175839684
+      ],
+      "min": 0.0708439175839684,
+      "max": 0.0708439175839684
+     },
+     "jaccard": {
+      "mean": 0.586275359869936,
+      "per_seed": [
+       0.586275359869936
+      ],
+      "min": 0.586275359869936,
+      "max": 0.586275359869936
+     },
+     "persistence_jaccard": {
+      "mean": 0.7022786580157323,
+      "per_seed": [
+       0.7022786580157323
+      ],
+      "min": 0.7022786580157323,
+      "max": 0.7022786580157323
+     },
+     "minus_persistence": {
+      "difference": -0.1160032981457964,
+      "ci95": [
+       -0.1232607904654509,
+       -0.10854360951605198
+      ],
+      "p_value": 0.00019998000199980003,
+      "events": 3543,
+      "blocks": 121,
+      "training_seeds": 1
+     }
+    },
+    "persistence": {
+     "events": 3543,
+     "no_growth_events": 882,
+     "added_mean": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "added_mean_growth": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_added_mean": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_false_total": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "adds_nothing_share": {
+      "mean": 1.0,
+      "per_seed": [
+       1.0
+      ],
+      "min": 1.0,
+      "max": 1.0
+     },
+     "jaccard": {
+      "mean": 0.7022786580157323,
+      "per_seed": [
+       0.7022786580157323
+      ],
+      "min": 0.7022786580157323,
+      "max": 0.7022786580157323
+     }
+    },
+    "published_reproduced": {
+     "full_target_jaccard_C2": 0.31879940932053635,
+     "online_history_jaccard": 0.38365594998371005,
+     "history_median_jaccard": 0.586275359869936
+    }
+   },
+   "60": {
+    "sage_on": {
+     "events": 3543,
+     "no_growth_events": 1413,
+     "eligible_events": 2130,
+     "added_mean": {
+      "mean": 0.00908834321196726,
+      "per_seed": [
+       0.004233700254022015,
+       0.009031893875246966,
+       0.03048264182895851,
+       0.001693480101608806,
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.03048264182895851
+     },
+     "added_mean_growth": {
+      "mean": 0.015117370892018778,
+      "per_seed": [
+       0.007042253521126761,
+       0.015023474178403756,
+       0.05070422535211268,
+       0.0028169014084507044,
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.05070422535211268
+     },
+     "no_growth_added_mean": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_false_total": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "adds_nothing_share": {
+      "mean": 0.9961614451030201,
+      "per_seed": [
+       0.9983065198983911,
+       0.9954840530623765,
+       0.9884278859723398,
+       0.9985887665819927,
+       1.0
+      ],
+      "min": 0.9884278859723398,
+      "max": 1.0
+     },
+     "jaccard": {
+      "mean": 0.8005125712268333,
+      "per_seed": [
+       0.8005128352728227,
+       0.8005123954834051,
+       0.800526022005358,
+       0.8005073164899625,
+       0.8005042868826185
+      ],
+      "min": 0.8005042868826185,
+      "max": 0.800526022005358
+     },
+     "persistence_jaccard": {
+      "mean": 0.8005042868826185,
+      "per_seed": [
+       0.8005042868826185,
+       0.8005042868826185,
+       0.8005042868826185,
+       0.8005042868826185,
+       0.8005042868826185
+      ],
+      "min": 0.8005042868826185,
+      "max": 0.8005042868826185
+     },
+     "minus_persistence": {
+      "difference": 8.284344214772778e-06,
+      "ci95": [
+       -9.391714605382296e-08,
+       2.2825491612916614e-05
+      ],
+      "p_value": 0.05599440055994401,
+      "events": 3543,
+      "blocks": 121,
+      "training_seeds": 5
+     }
+    },
+    "online_history": {
+     "events": 3543,
+     "no_growth_events": 1413,
+     "eligible_events": 2130,
+     "added_mean": {
+      "mean": 42.76827547276319,
+      "per_seed": [
+       42.76827547276319
+      ],
+      "min": 42.76827547276319,
+      "max": 42.76827547276319
+     },
+     "added_mean_growth": {
+      "mean": 46.667605633802815,
+      "per_seed": [
+       46.667605633802815
+      ],
+      "min": 46.667605633802815,
+      "max": 46.667605633802815
+     },
+     "no_growth_added_mean": {
+      "mean": 36.89030431705591,
+      "per_seed": [
+       36.89030431705591
+      ],
+      "min": 36.89030431705591,
+      "max": 36.89030431705591
+     },
+     "no_growth_false_total": {
+      "mean": 52126.0,
+      "per_seed": [
+       52126.0
+      ],
+      "min": 52126.0,
+      "max": 52126.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.9830148619957537,
+      "per_seed": [
+       0.9830148619957537
+      ],
+      "min": 0.9830148619957537,
+      "max": 0.9830148619957537
+     },
+     "adds_nothing_share": {
+      "mean": 0.010160880609652836,
+      "per_seed": [
+       0.010160880609652836
+      ],
+      "min": 0.010160880609652836,
+      "max": 0.010160880609652836
+     },
+     "jaccard": {
+      "mean": 0.4771590165189649,
+      "per_seed": [
+       0.4771590165189649
+      ],
+      "min": 0.4771590165189649,
+      "max": 0.4771590165189649
+     },
+     "persistence_jaccard": {
+      "mean": 0.8005042868826185,
+      "per_seed": [
+       0.8005042868826185
+      ],
+      "min": 0.8005042868826185,
+      "max": 0.8005042868826185
+     },
+     "minus_persistence": {
+      "difference": -0.32334527036365374,
+      "ci95": [
+       -0.3358913342301074,
+       -0.30962022096325614
+      ],
+      "p_value": 0.00019998000199980003,
+      "events": 3543,
+      "blocks": 121,
+      "training_seeds": 1
+     }
+    },
+    "history_median": {
+     "events": 3543,
+     "no_growth_events": 1413,
+     "eligible_events": 2130,
+     "added_mean": {
+      "mean": 16.16963025684448,
+      "per_seed": [
+       16.16963025684448
+      ],
+      "min": 16.16963025684448,
+      "max": 16.16963025684448
+     },
+     "added_mean_growth": {
+      "mean": 20.723474178403755,
+      "per_seed": [
+       20.723474178403755
+      ],
+      "min": 20.723474178403755,
+      "max": 20.723474178403755
+     },
+     "no_growth_added_mean": {
+      "mean": 9.305024769992922,
+      "per_seed": [
+       9.305024769992922
+      ],
+      "min": 9.305024769992922,
+      "max": 9.305024769992922
+     },
+     "no_growth_false_total": {
+      "mean": 13148.0,
+      "per_seed": [
+       13148.0
+      ],
+      "min": 13148.0,
+      "max": 13148.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.6312809624911536,
+      "per_seed": [
+       0.6312809624911536
+      ],
+      "min": 0.6312809624911536,
+      "max": 0.6312809624911536
+     },
+     "adds_nothing_share": {
+      "mean": 0.2647473892181767,
+      "per_seed": [
+       0.2647473892181767
+      ],
+      "min": 0.2647473892181767,
+      "max": 0.2647473892181767
+     },
+     "jaccard": {
+      "mean": 0.7284525999604978,
+      "per_seed": [
+       0.7284525999604978
+      ],
+      "min": 0.7284525999604978,
+      "max": 0.7284525999604978
+     },
+     "persistence_jaccard": {
+      "mean": 0.8005042868826185,
+      "per_seed": [
+       0.8005042868826185
+      ],
+      "min": 0.8005042868826185,
+      "max": 0.8005042868826185
+     },
+     "minus_persistence": {
+      "difference": -0.07205168692212081,
+      "ci95": [
+       -0.07775864361556399,
+       -0.066316165302095
+      ],
+      "p_value": 0.00019998000199980003,
+      "events": 3543,
+      "blocks": 121,
+      "training_seeds": 1
+     }
+    },
+    "persistence": {
+     "events": 3543,
+     "no_growth_events": 1413,
+     "added_mean": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "added_mean_growth": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_added_mean": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_false_total": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "no_growth_any_share": {
+      "mean": 0.0,
+      "per_seed": [
+       0.0
+      ],
+      "min": 0.0,
+      "max": 0.0
+     },
+     "adds_nothing_share": {
+      "mean": 1.0,
+      "per_seed": [
+       1.0
+      ],
+      "min": 1.0,
+      "max": 1.0
+     },
+     "jaccard": {
+      "mean": 0.8005042868826185,
+      "per_seed": [
+       0.8005042868826185
+      ],
+      "min": 0.8005042868826185,
+      "max": 0.8005042868826185
+     }
+    },
+    "published_reproduced": {
+     "full_target_jaccard_C2": 0.32335355470786853,
+     "online_history_jaccard": 0.4771590165189649,
+     "history_median_jaccard": 0.7284525999604978
+    }
+   }
+  },
+  "R2": {
+   "30": {
+    "sage_on": {
+     "events": 1289,
+     "no_growth_events": 285,
+     "eligible_events": 1004,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.671204602975346,
+      "per_seed": [
+       0.6711396399704669,
+       0.6712784715531895,
+       0.6712368397931182,
+       0.671102808240779,
+       0.6712652553191764
+      ],
+      "min": 0.671102808240779,
+      "max": 0.6712784715531895
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "online_history": {
+     "events": 1289,
+     "no_growth_events": 285,
+     "eligible_events": 1004,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.3814038646158177,
+      "per_seed": [
+       0.3814038646158177
+      ],
+      "min": 0.3814038646158177,
+      "max": 0.3814038646158177
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "history_median": {
+     "events": 1289,
+     "no_growth_events": 285,
+     "eligible_events": 1004,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.5693792218437125,
+      "per_seed": [
+       0.5693792218437125
+      ],
+      "min": 0.5693792218437125,
+      "max": 0.5693792218437125
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "published_reproduced": {
+     "full_target_jaccard_C2": 0.2898007383595282,
+     "online_history_jaccard": 0.3814038646158177,
+     "history_median_jaccard": 0.5693792218437125
+    },
+    "persistence": {
+     "unavailable": [
+      "jaccard"
+     ],
+     "reason": "no jaccard_persist (or target set) in R2 records"
+    }
+   },
+   "60": {
+    "sage_on": {
+     "events": 1289,
+     "no_growth_events": 447,
+     "eligible_events": 842,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.7757193666276163,
+      "per_seed": [
+       0.7757578883998362,
+       0.7756936635513286,
+       0.7756197926103319,
+       0.7757626220123932,
+       0.7757628665641917
+      ],
+      "min": 0.7756197926103319,
+      "max": 0.7757628665641917
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "frozen_sage_on": {
+     "events": 1289,
+     "no_growth_events": 447,
+     "eligible_events": 842,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.7757955159822991,
+      "per_seed": [
+       0.7758017114841668,
+       0.7757916752953018,
+       0.7757881960444365,
+       0.7757947608771296,
+       0.7758012362104609
+      ],
+      "min": 0.7757881960444365,
+      "max": 0.7758017114841668
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "online_history": {
+     "events": 1289,
+     "no_growth_events": 447,
+     "eligible_events": 842,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.4838862347936151,
+      "per_seed": [
+       0.4838862347936151
+      ],
+      "min": 0.4838862347936151,
+      "max": 0.4838862347936151
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "history_median": {
+     "events": 1289,
+     "no_growth_events": 447,
+     "eligible_events": 842,
+     "abstentions": 0,
+     "jaccard": {
+      "mean": 0.7064877199358627,
+      "per_seed": [
+       0.7064877199358627
+      ],
+      "min": 0.7064877199358627,
+      "max": 0.7064877199358627
+     },
+     "unavailable": [
+      "added_mean",
+      "adds_nothing_share",
+      "false_additions_on_no_growth",
+      "persistence_jaccard"
+     ]
+    },
+    "published_reproduced": {
+     "full_target_jaccard_C2": 0.2918331318340011,
+     "online_history_jaccard": 0.4838862347936151,
+     "history_median_jaccard": 0.7064877199358627,
+     "full_target_jaccard_C5": 0.291909281188684
+    },
+    "persistence": {
+     "unavailable": [
+      "jaccard"
+     ],
+     "reason": "no jaccard_persist (or target set) in R2 records"
+    }
+   }
+  }
+ },
+ "source_sha256": "89ff6a6d72c78ccec02333de4ad34f1e33df0d9a428aa9faa7ce52f9ee54149c"
+}

@@ -1,0 +1,52 @@
+ROOT-GO-G2  (TEMPLATE - q36-prestage draft 2026-10-28T04:40Z, PENDING_ROOT)
+
+=================================================================
+HOW TO USE (root): copy this file to .agents/operations/agy-lanes-20261027/g2r2/ROOT-GO-G2.txt,
+replace every {{PENDING_ROOT:...}} field, DELETE this HOW-TO block and the PENDING_ROOT marker line,
+save. g2_exec.py records sha256(bytes of this file) as the approval `review` for EVERY arm it runs
+(g2_exec.py:38-40,101) and refuses an empty/absent file ("root go file ... missing: G2 not authorized").
+qwen/q36-prestage/prestage_check.py --gate g2 then enforces the CONTENT contract (G2-03: approval
+sentence + freeze path/sha/arms anchors that must MATCH the published freeze) — an 8-byte file or a
+stale sha reads NOGO, not GO.
+CLUSTER SIDE (row 9b of ROOT-ACTION-SHEET): the per-family specs carry go_file = a CLUSTER path and
+g2_exec reads it INSIDE the job — after saving locally, copy the file to every spec go_file path:
+  scp .agents/operations/agy-lanes-20261027/g2r2/ROOT-GO-G2.txt <BATCH_HOST>:<spec go_file path>
+prestage_check.py --gate g2 (G2-13) proves the copy landed (NOGO until it does).
+=================================================================
+PENDING_ROOT
+Approval: I approve G2 forecast execution under the bypass design of g2r2/DECISIONS-NEEDED.md item 1
+(runner guards kept, only the transport/approval ceremony replaced by g2r2/g2/g2_exec.py), for exactly
+the frozen arms of the G1 freeze anchored below. One attempt per arm; failures are recorded, never
+retried silently (R2-RUNBOOK step 6).
+
+FROZEN ANCHOR (fields only root can fill - recorded outside the repo at freeze time):
+  freeze.json path:    <FORECAST_ROOT>/data-custodian/g1-freeze-{{PENDING_ROOT:STAMP}}/freeze.json
+  freeze.json sha256:  {{PENDING_ROOT:sha256 recorded externally at finalize (work/freeze.anchor.json "freeze.sha256")}}
+  draft_sha256:        {{PENDING_ROOT:printed by freeze_run.py draft}}
+  executable arms:     {{PENDING_ROOT:len(freeze.arms) printed by draft; 346 if no new not_executable}}
+  8 review packets signed at: {{PENDING_ROOT:root_signoff_utc from work/review-complete.json}}
+  ROOT-GO-G2 written:  {{PENDING_ROOT:UTC time you saved this file}}
+
+AUTHORIZED ARRAYS (partition cpu, --export=NIL, --no-requeue; shapes = the q33/q20 floors in
+g2templates.SUBMIT / make_templates.SUBMIT; g2_exec re-binds cpus/mem from the live allocation):
+  g2-h1-arms          20 arms   0-19%20      64 cpus / 1,000,000 MiB / 1-00:00:00
+  g2-h3-arms          80 arms   0-79%52      64 cpus / 1,000,000 MiB / 1-00:00:00
+  g2-timing-NEWFIT40  40 arms   0-39%40      64 cpus / 1,000,000 MiB / 1-00:00:00
+  g2-timing-REUSE20   20 arms   0-19%20      64 cpus / 1,000,000 MiB / 1-00:00:00 (AFTER core arms: r4 reads core predictions)
+  g2-ordinary         12 arms   0-11%12      32 cpus /   500,000 MiB / 1-00:00:00 (ordinary/baseline/primary: build_g2_plan SUBMIT)
+  g2-baseline          6 arms   0-5%6        32 cpus /   500,000 MiB / 1-00:00:00
+  g2-primary          56 arms   0-55%52      64 cpus / 1,000,000 MiB / 1-00:00:00
+  g2-history          48 arms   0-47%48      64 cpus / 1,000,000 MiB / 1-00:00:00
+  g2-stable           24 arms   0-23%24      32 cpus /   500,000 MiB / 1-00:00:00
+  g2-origin           40 arms   0-39%40      32 cpus /   900,000 MiB / 1-00:00:00
+     origin is ONE mixed array (q33, R2-RUNBOOK "SUPERSEDED ... origin launches as ONE wave"):
+     invalid arms re-bind down from the live allocation (g2_exec.py:82-83); monitoring rule replaces
+     the canary; ONLY an OOM-dead valid arm reruns once at --mem-mib 1000000; never preempt slow-but-alive arms.
+Every array runs the g2_exec.py --spec listed in the per-family work dir
+(<MODELS_ROOT>/.../newperiod-g2-inference-v1-20261027/work/<family>/g2.spec.json,
+sha256 recorded per arm in arms/NNN/approval-1.json); staged source root
+<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/source;
+H1 arms use g2r2/h1-successor pinned to the signed admission refs
+(newperiod-g2-admissions-v1/g2-calibration-admission.json a5157145...,
+h1-calibration-admission-review.json 82de785b... per DECISIONS-NEEDED item 9).
+{{PENDING_ROOT:optionally add/remove family lines - the file is the authority}}

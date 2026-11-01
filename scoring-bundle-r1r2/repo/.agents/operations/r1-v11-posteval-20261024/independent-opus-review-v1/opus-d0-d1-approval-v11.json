@@ -1,0 +1,44 @@
+{
+ "attempt_limit_per_phase": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "capture_k2a_sha256": "ed0ef4faf10fa807c780d731adcb5c3ffd00f2482e9cf3378616a2feae63da90",
+ "commands": [
+  ".venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/classd-host/phases.py d0 --approval <this> --approval-sha256 <sha>",
+  ".venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/classd-host/phases.py d1 --approval <this> --approval-sha256 <sha>  (only after d0 rc 0)"
+ ],
+ "conditions": [
+  "D0 writes only DEST/out/plan.json (label-free plan from seal/ledger/spec/report/manifests/gate); D1 writes only DEST/out/census.json (stat-only allowlist census)",
+  "shared <PROJECT> venv used read-only as interpreter; no install/placement change",
+  "one attempt per phase (phase-records intent refuses a second); failure or uncertainty: preserve, stop, no retry"
+ ],
+ "d0_command_sha256": "361d3c8d6f8a49f3a80d62f97b7b7d8252afb7bfad054003ff0f8259ec7ff330",
+ "d2_authorized": false,
+ "dest": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024",
+ "host_paths": {
+  "gate": "<FORECAST_ROOT>/occurrence-final-v1/manifests/training-integration-v6b-both.json",
+  "ledger": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/evaluation/ledger.json",
+  "manifest_d30": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json",
+  "manifest_d60": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json",
+  "report": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+  "seal": "<FORECAST_ROOT>/occurrence-final-v1/custody/r1-access/r1-seal-134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887.json",
+  "spec": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/spec.json"
+ },
+ "kind": "r1_v11_classd_d0_d1_approval_v1",
+ "label_read_authorized": false,
+ "not_authorized": "fetch of plan/census (separate exact capture), D2 rescoring, vrun, per-event/label/prediction reads, N admission",
+ "passed": true,
+ "per_event_read_authorized": false,
+ "phases_authorized": [
+  "d0",
+  "d1"
+ ],
+ "prediction_read_authorized": false,
+ "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-classd-d0-d1-v1",
+ "tool_sha256": "72a6d837c24a86ce5e96320504b8f1bab13f03400cfaf97bb87c759c9feff793",
+ "transport_stage_complete_sha256": "a839351ad670c9cb4157dbeefdbc918a31a9d5d1474ceb472e860d890062e2b6"
+}

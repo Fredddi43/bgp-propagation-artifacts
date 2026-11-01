@@ -1,0 +1,19 @@
+{
+  "actual_execution_authorized": false,
+  "author": "/root",
+  "author_model": "codex",
+  "files": {
+    "README.md": "f259d8c2197a3d08e254af99e98ebc136854b6c6dd3e923f01ef93aee9aeed56",
+    "cohort.py": "ab43142596175ab5070696768f1740cabb91c79522b4e3d8640727f33940091c",
+    "test_cohort.py": "d6d9bd5ec88600d61df443d82c2360008affc40b492f74318eaef012ab61248d"
+  },
+  "kind": "newperiod_family_metadata_code_candidate_v1",
+  "original_sources": {
+    "docs/paper/forecasting-improvement-20261017/ALL-RECIPES-DRAFT.json": "6d851282e4036a6323a24ef41740207c75b839a72a960604cb1404d593ae0917",
+    "docs/paper/forecasting-improvement-20261017/NEWPERIOD-RECIPE-CLARIFICATIONS.md": "3014cd43906ebda04e60242ae19fa3e5d07978cdd5852f786475e25ceb54b126",
+    "src/bgbench/forecast_protocol.py": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7",
+    "src/bgbench/rpki_validate.py": "817f435fdaaf25031bf3e1b37e6e2a4f702bfb0e8c75eaba3a9f3a250261b342"
+  },
+  "protected_data_read": false,
+  "tests_passed": 13
+}

@@ -1,0 +1,68 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "cells": {
+  "30": 33,
+  "60": 33,
+  "cells_sha_d30": "fbbb2487ad0364a97ec3223e245ea8c27c40b379a33afb7c286b7cd6113b8daa",
+  "cells_sha_d60": "022807ba96cd807a3f1cd53b4857a21750cac91d77c94e78dfda2d642df745bc",
+  "total": 66
+ },
+ "code_shas": {
+  "adapter-r2/adapter.py": "4f1d0e4a53cd0693ce72e2672927440a32dd2c0c3313104ee9c89b305293743a",
+  "adapter-r2/run_adapter.py": "33289bba1140662fb01485a45bc240f4c38bc5eaff38b253f10b63b77afd4fc2",
+  "verifier-r2/pins.json": "79cb199fbd4c233fa052d9d3c5fb1c25ec8ce123714452d5a5850fb671ada752",
+  "verifier-r2/verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf"
+ },
+ "commands": [
+  ".venv/bin/python -I -B .agents/operations/r1-v11-posteval-20261024/d2-fix-v3/d2_r3.py submit --approval <this> --approval-sha256 <sha>",
+  "... queue-check (read-only)",
+  "... fetch-request --approval <this> --approval-sha256 <sha> (only after both array tasks COMPLETED 0:0)"
+ ],
+ "conditions": [
+  "one submit (2-task array); never resubmitted; per-task failure/timeout/OOM: preserve logs and records, stop; no retry or resource change without new review",
+  "fetch only the two findings files after BOTH tasks COMPLETED 0:0, via f19 at the host shas",
+  "the fetched findings are independently assessed before any release/N decision; a failing check is reported, never worked around"
+ ],
+ "inputs": {
+  "per-event-dir": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/per_event",
+  "report": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+  "source-manifest": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/source-manifest.json",
+  "source-src": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/source/src"
+ },
+ "job_script_sha256": "733a667615daaeeafd89ae12998c2264bc9552ad82474173760019678129f8cf",
+ "kind": "r1_v11_classd_d2_run_approval_v1",
+ "label_read_authorized": true,
+ "link_census_sha256": "2890fceec0bc736b2e008b6853106451a36b1625e48fb58bb60187b13c220995",
+ "manuscript_use_authorized": false,
+ "n_or_2026_authorized": false,
+ "not_authorized": "any other cell, any fetch of raw labels/predictions/tensors, N admission, manuscript use, retry, resource change",
+ "other_cells_authorized": false,
+ "outs": {
+  "30": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/rescore-d30.json",
+  "60": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024/out/rescore-d60.json"
+ },
+ "passed": true,
+ "per_event_read_authorized": true,
+ "plan_sha256": "6e18854beb7e1ef54adb810bd48b57863c97e40c4b4b18d8a2ded7663be85f60",
+ "prediction_read_authorized": true,
+ "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+ "resources": {
+  "array": "0-1",
+  "cpus_per_task": 1,
+  "derivation": "per horizon 2x tensor bytes (2.85/2.89 GB, resolved links) + 10x(max predictions 453.7 MB + max per-event 27.6 MB) + 4 GiB",
+  "mem": "14G",
+  "partition": "cpu",
+  "requeue": false,
+  "time": "02:00:00"
+ },
+ "result_fetch_authorized": true,
+ "review_ready_sha256": "ad69b6f454ee3bae5d5564d0d3ae9f32abcec5ef5924a28785e2167bf421d1d6",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-classd-d2-v1",
+ "scope_of_reads": "in place on the host only, inside the job: the 7086 gate-pinned test tensors via the staged load_partition (ebf066a2) with expected hashes, the 66 fixed cells predictions/decision rules/per-event files; outputs are findings only (rescore-d30/d60.json). Nothing label- or prediction-valued is fetched beyond those findings files.",
+ "tool_sha256": "4b8ccda62dd479563939514fddba472f47d2f74f5bd631809459e8593263b4a7"
+}

@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_budget_r3_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/budget-r3",
+ "pins_sha256": "dade0f43d1a009a3c26196ae55b108c3906da32e7d997ccf91d743e7daab6e84",
+ "requests": [
+  "review budget r3 inputs (S0b measured rates, header-metadata read volume, labelled proxies)",
+  "decide on PROPOSAL-S0c (synthetic-only, R1 ordering)",
+  "any walltime/CPU limit is a separate reviewed decision"
+ ]
+}

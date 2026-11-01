@@ -1,0 +1,15 @@
+{
+  "condition": "One start after exact independently approved first16 release succeeds, coordinator identity and no existing exact watcher. Remaining48+assembly/audit remain held; no release authority.",
+  "files": {
+    "wait.py": "84c0b1c32975c2e20512a6c356c66d0f23fcaa91de3695ecfe796aaa97d50b23",
+    "test_wait.py": "3b7cef1d6ac4bc8bdd8983786bc8683d883e601dd4450721ed2f4c9e0b1562d0",
+    "request.json": "75c289c33a84e56fe3fdbf4b735ff728033fa833951de5aeafed4c69faf4a4f1"
+  },
+  "kind": "h1_first16_waiter_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-h1-development-launch-20261024/wave0-waiter-v1/wait.py",
+    "sha256": "46b3e1645eb506a846c755a71f7ae5e140238b322836c43859c072c23c7c3974"
+  },
+  "start_authorized": false,
+  "delta": "Exact successor job/request; accept actual held [16-63%16] alongside [16-63], preserving all16 terminal failures and no active later wave."
+}

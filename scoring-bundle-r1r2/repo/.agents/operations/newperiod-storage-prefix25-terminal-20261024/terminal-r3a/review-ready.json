@@ -1,0 +1,19 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "base_capture": {
+  "approval": "d23a6a2e",
+  "sha256": "9d65a6af7683dcac41a3d5f087a3b3a0f033a8ec5ae30e908f4b3c7c77de33d6"
+ },
+ "delta": "JOB 52479088; r3 ROOT/TEMP; staged pins = r3a stage (b1441c21,b0912ee6,ac8f5f63,7c1473ea); skip index 0; docstring",
+ "files": {
+  "capture.py": "bc6e5fab280e5fda12dc9119e7a878f98822cc95e8cdbdba19ba85fa1c57060c",
+  "test_capture.py": "792f1cf84c3cda2325a5d616ae431873498b79695f6b933d20e02dbc80df8d99"
+ },
+ "kind": "r3a_terminal_capture_review_ready_v1",
+ "proposed_execution": "cd terminal-r3a && python3 -B capture.py capture-v1 (once, after the waiter reports all 9 terminal)",
+ "tests": "5 passed",
+ "utc": "2026-10-24T08:17:56.475876+00:00"
+}

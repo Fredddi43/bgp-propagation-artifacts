@@ -1,0 +1,32 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "conditions": [
+  "DEST2 absent (tool asserts); the classd DEST r1-posteval-classd-v11-20261024 is untouched",
+  "3 verifier files 0444, empty out/, stage-complete.json; on failure preserve, no retry"
+ ],
+ "dest": "<FORECAST_ROOT>/r1-posteval-vrun-v11-r2-20261024",
+ "files": {
+  "code/verifier-r2/pins.json": "7c474f00f4b10cc10ee0e1efc573d1a8d535e323b688d246612ba35ef1333325",
+  "code/verifier-r2/run_verify.py": "7392ef6f67563ae0e4906b83354e5f3d0ebdcd9c748403b5524876dea015ffe0",
+  "code/verifier-r2/verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf"
+ },
+ "fix_review_ready_sha256": "ad1b66c1cb507a83918536e338ba0621b8a8f97c758cc820db3089e23ee9744f",
+ "kind": "r1_v11_vrun_r2_code_transport_approval_v1",
+ "label_read_authorized": false,
+ "passed": true,
+ "prediction_read_authorized": false,
+ "retention": "DEST2 stays as written",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "run_authorized": false,
+ "scope": "r1-posteval-vrun-code-transport-r2",
+ "steps": [
+  "T1 .venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/vrun-fix-v1/stage_vrun.py stage --approval <this> --approval-sha256 <sha>",
+  "T2 same with readback, only after T1 rc 0"
+ ],
+ "tool_sha256": "cdaf65dfc14216ad289c856bf876a94a91f3c659552471856e41ee302fbe0d20",
+ "transport_authorized": true
+}

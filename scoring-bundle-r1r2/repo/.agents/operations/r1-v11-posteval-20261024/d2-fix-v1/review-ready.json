@@ -1,0 +1,18 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "base_review_ready": "955199fefe7e011fe844fff2e49d614bd46e75b72231cd1a8c1d552de690c67b",
+  "files": {
+    "REVIEW.md": "ea806661ab597e97da51a53da08deaabdac560d9fd4a7b262177d97059233728",
+    "build_d2_fix.py": "5af9e984585e0f205ba6dd7f21a392c79e551e4d72e65f41366a4da315d94997",
+    "d2_fix.diff": "243e10e7f89f52bdab80a79af10b9357528d11c5c5e48e11d289d5da0c7a8d20",
+    "d2_r2.py": "1b7d51e9a565ca9b36d72b9ffdb8574ef7f008da734949e443c8014ee65cefb0",
+    "test_d2_fix.py": "a936fdf913dfb2518219d93a23c3cd30e04ae6a3babedde2f993ec3419c4f128"
+  },
+  "host_actions_performed": false,
+  "kind": "r1_v11_d2_fix_v1_review_ready"
+}

@@ -1,0 +1,19 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author": "/root",
+  "author_model": "codex",
+  "files": {
+    "README.md": "9918fd9a0a1e99a85fe794e6a43f2568238dcdfa7a86fcc3a1024366b4329127",
+    "derive.py": "165d94308f70741a437f20f1bca9f8b9c265788d1ae9e6fb3a58a9d0be81791d",
+    "test_derive.py": "a574d0cff7cdb3dbc078a282bff67c1a3a002e382c5f350d1bc7bcba64a3db0c"
+  },
+  "kind": "newperiod_stable_derivation_code_candidate_v1",
+  "original_scientific_sources": {
+    "scripts/custodian_multipart_acceptance_2026.py": "507e22beb0f5e21997f486075322adcd58adb8f60d48d171034a791e0d8d3f8d",
+    "src/bgbench/extent.py": "09d616606a9fda99ff097f6b3cdd84f88e636fa5b0d6489cae386fbbfac42a04",
+    "src/bgbench/forecast_protocol.py": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7",
+    "src/bgbench/forecast_stable_peer.py": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+  },
+  "tests_passed": 17
+}

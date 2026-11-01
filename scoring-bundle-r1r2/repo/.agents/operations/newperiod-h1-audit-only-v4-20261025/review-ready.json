@@ -1,0 +1,54 @@
+{
+ "bound_base_rule": "accept a canonical regular file unchanged, or exactly one leaf link: absolute normalized path, canonical parent, readlink hop (joined, normalized) == realpath (no chain), target absolute/canonical/regular, strictly under newperiod-development-v1, link lstat + readlink unchanged across the check. The sha stays the manifest sha; unchanged raw() opens the target O_NOFOLLOW and refuses any byte difference (tested: swapped target -> \"Input identity changed\").",
+ "cause": "D1 60d3f93c + D2 dab710a9 (55ef d3f3a969): all 14,787 sealed base graph refs (74ff724e) are leaf links; raw():39 fails only on resolve()==path.",
+ "deltas_vs_r3": "Closed edits only (build_v4.py docstring lists them; diffs in the package vs r3): W1 wrapper bound_base + one line in audit_shard; J1 job.py audit plan = preserved r3 assembly audit-plan.json, bound to r3 receipt 4ccaa06e and manifest 258f60ce; C1-C5 controller (namespace sensitivity-parallel-h1-audit-v4, PHASES audit + audit-finalize, first-phase rule, audit-only storage/control/concurrency, predecessor refs). jobs: only audit + audit-finalize scripts. original_audit.py byte-identical (e0d26611). Expanded refs strict and untouched.",
+ "dir": "<REPO>/.agents/operations/newperiod-h1-audit-only-v4-20261025",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "build-result.json": "83b38938c442cbbf53a990ef18ab9399fa6122c9338829eaa0bee1b7fa92eb9b",
+  "build_v4.py": "2728faf27238065b5d2a464b2b0c06b7dce1182ce28d0334f668508b2fd85cde",
+  "capture-v4/build_capture.py": "a3aef985d7ffcc0403376b130c25c2629d1c0c7ea3490248f6d44258a51f8c29",
+  "capture-v4/chain_capture_v4.py": "c048aa36a519d9ebb40dc69176ae4c9c269b45485bc8ea814d312cccb66dfe89",
+  "capture-v4/test_chain_capture_v4.py": "15b76f0b3038a28209fded60d3ef39a4ec576ca1f466458ff2398d3a4d1880ab",
+  "mutation-proof.txt": "c50e12afbdc89f79f17848df98bc00b2fc333c30803111178d85da2333ecf6e6",
+  "preflight-p0/build_p0.py": "9313f8983a744880413e30aebb48d6b582967ecf4ebc5fefb86976e1b885a755",
+  "preflight-p0/p0.py": "953a8b9a845265070bf55e3a3ce1bbe9c9e728c2290b90f3d774bcde943fdd7a",
+  "preflight-p0/p0_template.py": "8c6d43e8e6864016ca7170bf09cef09ef2b2147963085c07f235942b6e034bef",
+  "preflight-p0/request.json": "225979cc69d8bb456ed00fe8529b362ce7fac1b569c07caad39abcac3e19dfa6",
+  "preflight-p0/test_p0.py": "6e2dd596008c476eb5b38f330d81d48d2d6a1e613a69ae7bc35e997243078767",
+  "test-run.txt": "a076b96b30dddd17caa395c3060165ab9b682ac2dc7fff1dc999110681c9827b",
+  "test_v4.py": "dcf3c250507d307cd78b3140a5ee5c4a48de536ce4f783320b3be972402efd8e"
+ },
+ "kind": "h1_v4_audit_only_corrective_A_review_ready_v1",
+ "package": {
+  "controller": "495ccf5b4ad66996cf1bb91e784ef5a0f36cd8d2fba640479035885971559333",
+  "dir": "<REPO>/.agents/operations/newperiod-h1-audit-only-v4-20261025/package",
+  "files": 264,
+  "job": "257e93cacb6b44118aceb0aa5e4cb700ea95db16ecd43082d827e00c31c5bc58",
+  "jobs": {
+   "jobs/h1-d30-audit-finalize.sh": "dd54bb2b7d5e342619e07969f3c7c9b6610ef07dbbd9dc44f45009a5a873b03a",
+   "jobs/h1-d30-audit.sh": "c0b3d865ebc9334f51a5b4a3b1f6aa875c5c88d0640ba089a798d192c34e35dc"
+  },
+  "plan_sha256": "c3f372e3dbb38058f426061997c03c2f9a781eee01f72e0f019a77f9676b1571",
+  "reservation_bytes": 36507222016,
+  "wrapper": "f34dda949a7248767e08eab983a73ef883331ca7cea8679757b185379ebf674d"
+ },
+ "preservation": "r3 namespace untouched (64 builds, assembly, 32 failed audit slots, cancelled finalize); sealed manifest and base graph bytes untouched; nothing deleted.",
+ "resources": {
+  "concurrency": "8 audit tasks -> 16 cpus / 1 TiB peak",
+  "per_task": "cpu partition, 2 cpus, 128 GiB, wall 86,400 s, log 4 MiB (r3 values unchanged)",
+  "storage": "reservation 36,507,222,016 B (control 1 GiB + 33 x audit_bytes 1 GiB) + free floor 64 GiB; actual output expected small (32 done.json + summary + events.jsonl)",
+  "time": "unknown audit kernel runtime (r3 never reached it); per-task wall 24 h"
+ },
+ "science_unchanged": "tested: audit_shard changes ONLY row base paths (order, event ids, shas, expanded refs, records identical); inputs not mutated; records carry the manifest base sha.",
+ "steps": [
+  "P0 preflight (recommended before stage; once, root authority): p0.py (embeds frozen wrapper f34dda94, sha-checked) runs bound_base over all 14,787 base refs of 74ff724e; metadata only (graphs never opened, tested); exports accepted/refusal counts keyed by bound_base literals or OSError type. Invocation ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<p0.py>'\" < preflight-p0/request.json; AS 2 GiB, alarm 300 s; records preflight-p0-execution-v1 (sibling). Goal: accepted == 14,787 before any rerun (D2 did not test single-hop).",
+  "S stage (root approval, r3 root-stage-held-approval shape, v4 plan/files/storage): cd package && python3 -B controller.py stage --package . --approval <root approval> --approval-sha256 <sha> --review <review.txt> --records <v4>/stage-execution-v1/stage",
+  "H submit-held: controller.py submit-held ... --stage-receipt <stage.json> --records ... -> 2 held jobs: audit array 0-31%8, audit-finalize afterok (kill-on-invalid-dep).",
+  "A read-held + admit (fresh df snapshot) -> admission; root release approval (release_held_authorized, admission_sha256) -> controller.py release (bind + one scontrol release of both jobs).",
+  "W waiter: chain_wait successor (job ids from the actual submission; build + review after H).",
+  "C capture once on terminal: capture-v4/chain_capture_v4.py c048aa36, request {kind h1_v4_audit_chain_outcome_request_v1, plan v4 ref, jobs from submission, access_log, source_payload_reads false}."
+ ],
+ "tests": "v4 18 + P0 6 + capture 5 = 29 pass (cwd repo root); 12 mutations: 11 caught, 1 equivalent (mutation-proof.txt)"
+}

@@ -1,0 +1,22 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    ".agents/operations/r1-family-preflight-v2-20261020/build.py": "183d998f04ff9800602dbc9119c662f3625c457fc18a8008e7d5e4d10566bd16",
+    ".agents/operations/r1-family-preflight-v2-20261020/capture_readonly.py": "e4cc9e422906cbb808da2ec609ba4289042dd5001515460c64213abb04600f48",
+    ".agents/operations/r1-family-preflight-v2-20261020/families.json": "2a1eef90fbe49ca4ebdfb8d97f4dba7cc948ff1f22c6199f0d0c941c85054115",
+    ".agents/operations/r1-family-preflight-v2-20261020/focused-tests.txt": "4d403a067597ca7144f43f1c715199f9674030f69646fa0fd12c31fa2c0c1d0e",
+    ".agents/operations/r1-family-preflight-v2-20261020/launch.py": "5c728292a9bc9daf6b1748fd6ad05ae7312dcd273ed207c6cfcc6500caed87e1",
+    ".agents/operations/r1-family-preflight-v2-20261020/predecessor-evidence/accounting.txt": "f91a9d2e92603d7a19a94eb9736404492c53f8f620ff1dbd3e41365a305362f3",
+    ".agents/operations/r1-family-preflight-v2-20261020/predecessor-evidence/import-failures.json": "5e38486c341d220835bcf5f2b3060cdc819aa5f809fa1cbe33b1e0baa2c6455f",
+    ".agents/operations/r1-family-preflight-v2-20261020/predecessor-evidence/torch-bootstrap-smoke.json": "07ee6625c37268e0571200294b964c100f0b97d142a3d5026aaecf80373e47bb",
+    ".agents/operations/r1-family-preflight-v2-20261020/preflight.py": "98aeacc7f87d5e982c3cf2203985405be854ac4d33ead1f057be96949daa591d",
+    ".agents/operations/r1-family-preflight-v2-20261020/preflight.sbatch": "4678bdc597e453bc11af408a62920dd5195dace3a300a426351896c537cda91a",
+    ".agents/operations/r1-family-preflight-v2-20261020/readonly-proof.json": "737c90d846b8d7fd9792fad052a3a1f76081bc75212e4b66ae1fbc1622864801",
+    ".agents/operations/r1-family-preflight-v2-20261020/spec.json": "50fce687384eada86b624137eabb2cc4e2b65825f9476a730e18c79bf6f297b4",
+    ".agents/operations/r1-family-preflight-v2-20261020/test_preflight.py": "c7831d877fa5a984c43dc787eeca63a2c474c40a420346f8699bbe1db0e5dd22",
+    "docs/paper/forecasting-improvement-20261017/REVIEW-PACKET-R1-FAMILY-PREFLIGHT-V2.md": "068dba0efad4a6c0450769ab77c274ef9f7ea517ec0aea0561ff8f8dca68dcb3"
+  },
+  "kind": "r1_completed_family_provenance_preflight_v1",
+  "launch_revision": 2
+}

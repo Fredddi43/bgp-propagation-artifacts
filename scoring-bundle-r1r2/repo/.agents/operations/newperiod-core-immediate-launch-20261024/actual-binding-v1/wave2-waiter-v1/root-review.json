@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "files": {
+    "README.md": "958925e16a15b189143145e0a1af747b5e058051ced4a7fcef2e264e5b0d4cbc",
+    "request.json": "18ef43c04a0390c78b4d084151d59ea78b969f30884ffc4b4b066e64a5347657",
+    "test_wait.py": "53582b1de407a3851770466b2a0a4817220d90ffa1faf664912acac9320d48da",
+    "wait.py": "39d03f439de388675948f271d601ed017478b40f790260824a05280e00e92e87"
+  },
+  "tests_passed": 11,
+  "scope": "One read-only exact20-job terminal waiter; original placement matches all20remaining indices. No science action/retry authorized.",
+  "automatic_retry_authorized": false
+}

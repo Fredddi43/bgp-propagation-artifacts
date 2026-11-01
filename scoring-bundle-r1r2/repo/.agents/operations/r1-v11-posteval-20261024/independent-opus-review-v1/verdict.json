@@ -1,0 +1,37 @@
+{
+ "author_session": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "files_pinned": 31,
+ "k1_census_approval": {
+  "attempt_limit": 1,
+  "path": "independent-opus-review-v1/opus-k1-census-approval-v11.json",
+  "sha256": "50e5e337a80b5cb5d1233cdaff40f53574a6c0c39d715ccdfefbd2438f69aac1",
+  "tool_sha256": "4229ec2cb74468497b1f17fd46668f42b393b5f1c9ca75b75ab9596d2e3a56e5"
+ },
+ "kind": "independent_review_verdict_v1",
+ "not_approved": [
+  "K2a/K2b/K2c",
+  "class-(d) transport (fresh DEST r1-posteval-classd-v11-20261024)",
+  "D0/D1/D2",
+  "verifier job",
+  "result/label/prediction/score reads",
+  "retry",
+  "N admission"
+ ],
+ "required_fixes": [],
+ "review": {
+  "path": "independent-opus-review-v1/review.txt",
+  "sha256": "76452d4b176566017e0cb7c7ab66a71e4e4979e476c86ea3590e6b8ce360dc6b"
+ },
+ "review_ready_sha256": "955199fefe7e011fe844fff2e49d614bd46e75b72231cd1a8c1d552de690c67b",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "stale_approvals_not_reusable": [
+  "v8 K1 6c623c88",
+  "v8 transport 30a82d47",
+  "v10 census approvals"
+ ],
+ "tests": "282 (280 isolated + 2 in place)",
+ "verdict_code": "PASS_CODE_ONLY"
+}

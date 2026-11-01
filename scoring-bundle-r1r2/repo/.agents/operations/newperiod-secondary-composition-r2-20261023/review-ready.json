@@ -1,0 +1,22 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "README.md": "12187a438ba4cd0c16c1300b19ac92b8f85422ba04da46091c3f440a0493624c",
+    "components/count/evaluate.py": "52ad01ae9b7b1c0e3bf7fda4261672540dee282c91ebd18bae5c7ddf7a20c625",
+    "components/membership/consumer.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+    "components/membership/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "compose.py": "47c991b5d79e2733a7e1c3b02fcb3cec0602b03ab9eab4723842b024d403c4a0",
+    "test_compose.py": "91813f2dba235f3dfea6ba27d9d0ab35fb82a54b5974a32f8d9a2469fc74deb2"
+  },
+  "kind": "newperiod_secondary_composition_r2_code_candidate",
+  "label_reads_performed": false,
+  "original_failed_selection_cells": 20,
+  "protected_reads_performed": false,
+  "retained_secondary_cells": 274,
+  "tests": {
+    "passed": 3,
+    "seconds": 28.36
+  }
+}

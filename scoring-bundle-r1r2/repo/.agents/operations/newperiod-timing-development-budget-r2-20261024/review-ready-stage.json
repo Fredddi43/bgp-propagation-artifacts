@@ -1,0 +1,21 @@
+{
+ "kind": "timing_stage_held_proposal_review_ready_v1",
+ "dir": "<REPO>/.agents/operations/newperiod-timing-development-budget-r2-20261024",
+ "author": "4ba6111c (h3_author; timing author by root assignment ROOT-ASSIGNMENTS-V2)",
+ "reviewer": "review2 7f4c18c0",
+ "files": {
+  "build_stage_proposal.py": "c59f94b3ec18e35a20abb288ed0119f2e69bf5aa89902134d3bc897487f3e5fa",
+  "stage-proposal-v1/request.json": "f6f31c25c50a48490f481c909afcf01be93addbd76d701b7eac85994bd19038f",
+  "package/plan.json": "06b4b953477f36e0c0f2b66c916a6d8280ddb4d259d8f5028798d66ede4aeddd",
+  "package/controller.py": "a18e2dba4991b60991a3edb1026df6f2e3f161acd1413be9a094814696af821e",
+  "waves.py": "78e816557a53bc66e9605e67558b7b93b6ce82e97b5cac5b9546a92b26ab9b86",
+  "independent-review-f4d75bb1/review.txt": "05072aa932a5ce72c0d33bc46118a740f63fefd01b4a3adf1da78037d516ca4a",
+  "old-campaign-disposition.json": "ce24cd476f0c07c01c30fc69c4da7ced50419834f781a03e82cf8a207fe8474c"
+ },
+ "executed": "nothing",
+ "execution_authorized": false,
+ "what": "stage + submit-held (all four timing groups HELD) + read-held for the f4d-reviewed timing budget-r2 package (plan 06b4b953); port of the H3 stage proposal (H1 r2 shape); approval template review path = <root>/review.txt (the H1 r3 refusal lesson); no release",
+ "storage": "control bytes only; v25 row timing_stage_controls 4 GiB already reserved",
+ "old_campaign": "52480019[16-63%16] + 52480020-34 stay held, never released (disposition ce24cd47)",
+ "utc": "2026-10-25T05:35:58Z"
+}

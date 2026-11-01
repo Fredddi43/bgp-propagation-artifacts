@@ -1,0 +1,20 @@
+{
+  "actual_e5_completed": false,
+  "author": "astra-final",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "2854a67ea3cfe59fc6494637c86cb4d99b0a9507965e7c04e6d5db4270d31895",
+    "actual-bindings.TEMPLATE.json": "18befefaf56a6deac74517a2aa7c558033d29198356ba76c0c4cd4c93d7b57ac",
+    "calibration-admission-with-e5.TEMPLATE.json": "d4a6ad965133b80a3031219b126f7cec81c147318e97c13fb3402a1fd949e5e7",
+    "check_e5.py": "acb3bbef89f20192a135fa98b7258764ac81474dabd9663a99ef650de72a7309",
+    "dependency-trace.json": "2d5e384443ad6d5d21e86c8aae20e3f39db03110e80081ee4145c5287363d541",
+    "e5-review.TEMPLATE.json": "4e22f5d2a26a173f869a969be9e4a1abfee3a0765e2d1483eeadb97e494b5d2a",
+    "g1-actual-acceptance.TEMPLATE.json": "eaacf7de3474203d5a419467c50029631507f0733c04666934f77815e57f8a72",
+    "local-validation.json": "0c60d6d3d060697357c2f6283482e2ca7b3818e48ceac71f6d7eb7d244783ba6",
+    "sources.json": "6476bc2a9ad89148a05801682d293eec0e17b883d1fb037b5e5a6880c1d09d75",
+    "test_e5.py": "fd9a5cbf02c06ef2fc958ad31d9a6849118da0539e956e14bae9f03c1837ddfb"
+  },
+  "full_roles": 400,
+  "kind": "AUTHOR_E5_CHECK_PREPARATION",
+  "reviewer": "sol-h3t2"
+}

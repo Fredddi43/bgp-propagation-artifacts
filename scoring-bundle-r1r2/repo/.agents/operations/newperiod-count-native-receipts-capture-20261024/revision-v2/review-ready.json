@@ -1,0 +1,15 @@
+{
+  "files": {
+    "capture.py": "53de31a01a266878473896fcb8a11b010d02fd64229dd3bfe78d537f6afb43a2",
+    "test_capture.py": "62a6fb320ae40a20ed1091e0de9b4425159416a9a28ca4cbeb53a61062146da1",
+    "build_request.py": "a4d53fb00738b430731e626d38c8541ca05a577e43f30f8c45e322dfb9b46ff2",
+    "files.json": "cc59f48bf771e860f6094fdb63e99016db5c86cad78354268cfc783fef90fcc3",
+    "scope-provenance.json": "970360f7adea4fd4c4a3479e55d01ae6e2b632ed2fe7ed33190479b945867b48",
+    "request.json": "6346507225aac7178b92365499d28e1cb14d182d9d55dbec5b85ee4b8b1687ed",
+    "REVIEW.md": "ac0b2eaf87e1221a4744b1d15ee39668c2cff8bc98a9eb79c2aba565d3139361"
+  },
+  "tests_passed": 8,
+  "scientific_execution_authorized": false,
+  "capture_authorized": false,
+  "predecessor_preserved": true
+}

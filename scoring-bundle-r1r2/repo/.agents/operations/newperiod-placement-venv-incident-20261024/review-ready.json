@@ -1,0 +1,11 @@
+{
+ "author_session": "<SESSION_ID>",
+ "execution_authorized": false,
+ "files": {
+  "enumerate.py": "c960e83955a6a355edee0b04b773c9eab3d6540fc9fdbb85aae879a63bec5091",
+  "test_enumerate.py": "08053b849fe48a1e443dcb73ec51e811dd8b24c9d9cf4a551521b2ba47b114fc"
+ },
+ "invocation": "getent hosts <INSTITUTION_HOST> && ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < enumerate.py  (once)",
+ "kind": "placement_venv_enumeration_review_ready_v1",
+ "tests": "2 passed"
+}

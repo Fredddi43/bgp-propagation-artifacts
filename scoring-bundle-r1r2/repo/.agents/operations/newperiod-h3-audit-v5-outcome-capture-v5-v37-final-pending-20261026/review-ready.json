@@ -1,0 +1,104 @@
+{
+  "all_four_groups_preserved": true,
+  "author_role": "astra-h3t",
+  "authorities_consumed": 0,
+  "changes_from_reviewed_v4": [
+    "Exact final FALSE v37 template b4265124 and models floor541628196864; includes1MiB count row.",
+    "Genuine first-group v36 terminal/allocation acceptance be5d45c6 bound in all remaining release requests.",
+    "No scientific, allocation, remote capture, sequence or once-policy change; immutable installed v36 binding retained."
+  ],
+  "draft_phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v1-20261026/root-phase.FALSE-TEMPLATE.json",
+    "sha256": "b42651243560dccbd0d7998ad68bfd693bed7927e423f29c08f6b0d61391fa95"
+  },
+  "execution_authorized": false,
+  "first_group_actual_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-FIRST-V36-CAPTURE-ACTUAL-ACCEPTED-session<SESSION_ID>.json",
+    "sha256": "be5d45c698891b9747093266a1aa68e60bd580b30914039b9445b36952d42d2d"
+  },
+  "kind": "AUTHOR_H3_V37_FINAL_TEMPLATE_PENDING_CAPTURE_REVIEW_READY",
+  "phase_floors": {
+    "models_bytes": 541628196864,
+    "results_bytes": 45231374336
+  },
+  "phase_issued": false,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/author-checks.json",
+      "sha256": "e4fa2b00bbf9bf3805275882b55047176d53c9ca82d602c5b50816748b2d486c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/build_packet.py",
+      "sha256": "7ac2088a353d9c765df0633f85b684dc32b305d6dff8e59a3097fe24aa68947f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/capture_once.py",
+      "sha256": "2709dcbdbedde56e53dbf84ba0af686a44d1c14bb1ce3579eb61d0b67da90dec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/capture_remote.py",
+      "sha256": "a2f039f1e17dcccffb2e6d6f0210226c1822a25b8e94c682912f76ffe2582235"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/mixed7-d60-author-once.FALSE-TEMPLATE.json",
+      "sha256": "9794d52e6b7ee09faec4833f07b7965f23af6302bdaca37d15058361ef59deeb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/mixed7-d60-exact-scope.json",
+      "sha256": "8c111a6e9204bc05a0de985ab7d517d8fea891ed19e948178b8d684ff37f57c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/mixed7-d60-request.PENDING.json",
+      "sha256": "c0835c176bb61cd41107f26babff0469f32a5bef67575be57775abf278404396"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/packet.json",
+      "sha256": "dcfa9140c384b4b1e8ffc9ae552329f1d59fca72eeb2fc4f92a7507f4fcca2da"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/ris7-d30-author-once.FALSE-TEMPLATE.json",
+      "sha256": "900b5ba29d5ff2a5fef2eb6f07e445da2795e341d83a52e039a8dbf821d8a0c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/ris7-d30-exact-scope.json",
+      "sha256": "3da0322dfe0a450f028c175e41fd1f0ba5c8f25ea11d19cb1a9327e6f3706f4b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/ris7-d30-request.PENDING.json",
+      "sha256": "1516b649b1132f4b74b212dd014cd6b7d6c9216ff11b01a936f7e1755e362637"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/ris7-d60-author-once.FALSE-TEMPLATE.json",
+      "sha256": "9a09a95b4bdc16a1405eb96c7dc35b4f9f58ba28c992d4bd66c7d78e85104d77"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/ris7-d60-exact-scope.json",
+      "sha256": "9d31488dbcca45de5e3a490def7d2475e655afc689fcd09405c0fa9532c4d52b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v5-v37-final-pending-20261026/ris7-d60-request.PENDING.json",
+      "sha256": "c47504d1d9c2414ad23d6768d7bde3adaaf18e30d75fdaf1592d5740c5e5b7c7"
+    }
+  ],
+  "protected_payload_reads": 0,
+  "remaining": [
+    "ROOT issues v37 after pending v36 operations; freeze fresh exact issued-phase sibling and obtain resource transfer admission.",
+    "Fresh substantive ROOT all-writer/scheduler adoption and live controls; author conditional evidence is not authority.",
+    "Exact request finalization, independent operator review, ROOT once, fresh capacity gates; one group then one reviewed finite capture and independent outcome acceptance."
+  ],
+  "remote_actions": 0,
+  "retained_v36_binding": {
+    "path": "<REPO>/.agents/operations/reviewer-sol-h3t-20261025/h3-release-capture-v3-v36-session<SESSION_ID>-r2/execution-binding.json",
+    "sha256": "8474301af85c8e408ad0c3a7a70952e617e69e42c62a73b9c366c75244de59ac"
+  },
+  "successor_groups": [
+    "mixed7-d60",
+    "ris7-d30",
+    "ris7-d60"
+  ],
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T20:13:11.983867+00:00"
+}

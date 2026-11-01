@@ -1,0 +1,16 @@
+{
+  "automatic_retry_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "dbd5b59aa7424774a626f0b901b38c4f7bb1f7b5413dc810603e31cd0041cd60",
+    "capture.py": "ed7293cd6f05c68eabda0923323bbf93d4ac56330da30d36c80069ace72dea91",
+    "test_capture.py": "ac445eb387136f8d2c00f34095e9baa22bce5c4c83b34043b0b8536d1045d210"
+  },
+  "passed": true,
+  "review_ready_sha256": "7638c7cfdd98392a4de7db0809a2ef971f09e1cbd55b846dd81608e96fb1ae60",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Code only: fixedcomplete+dualinputaudit metadata projection. Originalproducer schema/lineage verified; sixoutputrefs and non-eventcapacity/populationcounters only. Actualjob/request/eligibleapproval pins and successfulterminal plusboundedtransporttimeout beforeonceexecution; no tensors/rows/IDs exported.",
+  "tests_passed": 10
+}

@@ -1,0 +1,41 @@
+{
+ "actual_core_binder_request": {
+  "binds": "core witnesses d30 49ef007e / d60 20d40289, plans 99ca0477 / a5c34ac0, source manifest 03a79dd8, upstream inventory/assembly from master-outcome-v1",
+  "built_by": "python3 -B build_gate.py request ../packets/core/outcome/execution-v1/capture.stdout (local, deterministic)",
+  "path": "newperiod-feature7-rexact-recovery-20261024/rexact-v3/gate-phase-core/binder-request-core.json",
+  "sha256": "fcc07c81fe88cf1535588e9f2629935897a3cc3a077864d7d935e9fbf1aa0d96"
+ },
+ "after_binder": "python3 -B build_gate.py spec <capture> <binder result> -> gate-phase spec (pending root gate authority); B stage/launch request + transport and its capture are a further packet built from the actual binder result; B needs root admission + gate-issuance authority",
+ "author": "f4d75bb1",
+ "b_core_v3": {
+  "build_gate.py": "ff4fce0369b95b72ce4138ab3d34c5bf3f3ebef66bccb3f82d446380411cc60b",
+  "build_gate_v3.py": "7298a8bfbe51061adfaf1899744d7baa8dab925c8302079849ed1183fa90d551",
+  "delta": "from rexact-v2/gate-phase-core: root private-rexact-v3, witness spec 2916e015, v3 core manifest 03a79dd8, binder rexact-v3, kinds rexact_v3; B runs revision-v3 input_gate f25f641d (TRACE_BUDGET 256 MiB) from the v3 source tree",
+  "test_build_gate.py": "b714285ad0c30d6a838e4e57b3c16febe45bd78e2f2fd7f685f6149ff662e321",
+  "tests": "16 pass"
+ },
+ "basis": {
+  "a_actual_accepted": "1b8f015d (55ef)",
+  "root": "ROOT-REXACT-V3-A-ACCEPTED-BINDER-B-LOCAL"
+ },
+ "binder_execution_scope": {
+  "capture": "the binder result JSON on stdout (plan path + sha) is the record; review before spec",
+  "command": "getent hosts <INSTITUTION_HOST> && ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<bind.py>'\" < binder-request-core.json   (once)",
+  "limits": "AS 2 GiB, CPU 180 s, FSIZE 1 MiB, alarm 120 s",
+  "reads": "9 sha-pinned metadata docs (source manifest, 2x plan/authority/witness/construction) + lstat of inventory/assembly/audit-report; no payload",
+  "storage": "negligible (< 1 MiB)",
+  "writes": "one custody record + private-rexact-v3/gate-plan-bindings-v1/plan-input-gate.json (<= 1 MiB, fresh dir)"
+ },
+ "binder_v3": {
+  "bind.py": "1495f21f99bd12352a64dca8751c637f48ff55ec79feb30ce6124e490061db77",
+  "build_bind.py": "3416ca35ff6b3720463ecb540d6645a2e9ce5625fbd4ff16b7bfa5acd9d63876",
+  "delta": "from rexact-v2/bind.py by closed substitutions (roots v3, v3 manifests core 03a79dd8, PACKAGE revision-v3, no revision-v1/-v2/-v5 in plan code, kinds rexact_v3) + ONE addition: witness.json syscall_trace.trace must be {path,sha256,size_bytes}, path <out>.syscall-trace, 0 < size <= 256 MiB (revision-v3 TRACE_BUDGET); tests: fixture trace record + over/path/missing refusals + revision-v2 refusal",
+  "test_bind.py": "05d0f6b1e5dc3f95c50bb5fc3b2ea39c1ba2e0811b82a347ece2b3be3aa86a18",
+  "tests": "27 pass"
+ },
+ "execution_authorized": false,
+ "kind": "rexact_v3_binder_and_b_candidate_review_ready_v2",
+ "not_done": "no binder run, no gate plan, no B execution, no gate issuance",
+ "supersedes": "review-ready-binder-b-v3.json 152413c6 (adds the d60/d30 trace-size check, the actual core binder request, commands/resources, temporal gap)",
+ "temporal_gap": "NO temporal B builder exists (v1/v2 had core only). The binder supports temporal-rexact, but a temporal gate-phase builder needs its own upstream inventory/assembly mapping (temporal export chain), which is new design, not a substitution. Not prepared; root/55ef decide whether to scope it."
+}

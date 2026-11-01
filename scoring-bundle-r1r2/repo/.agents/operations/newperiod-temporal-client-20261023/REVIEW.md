@@ -1,0 +1,13 @@
+# N temporal stage/held admission/release client
+
+Prospective local code only. Eight actual prerequisites remain pending; no host reads, staging, submission, fit, label or outcome access performed. Reuses reviewed GBDT client state/transport mechanics with the existing temporal runner's exact ten-fit submission helper and closure/approval checks.
+
+Only GRU configuration4,30/60seconds,seeds0–4 (ten fits) can execute. Twenty TGN/Mean dispositions remain nonexecutable. One RTX8000/four CPUs/240GiB/24h per task, array0–9 with concurrency1, no node pin/requeue. These remain original unverified N resource proposals; actual per-horizon readiness and all-ten-fit admission are required before transport. No pilot or extra fit introduced.
+
+Changes from reviewed GBDT client: temporal package closure and approval schemas; eight prerequisite refs (two extra temporal audits); original temporal resource-readiness schema; exact ten-cell GPU held-array admission; original temporal job path/argument names. Explicit Slurm log paths and equivalent held NumNodes1/1-1 plus %a/sentinel spellings are checked. Array scope/throttle, GPU count, memory, CPU, owner, held/restart/requeue state and fresh readback precede release. Exclusive local/remote intents and separate actual-admission release approval are preserved; no automatic unhold/retry.
+
+policy-candidate preserves the original temporal package/adapter/job/both76-file scientific and guard closures byte-for-byte except runner reviewer policy plus its package hash. Adds truthful codex identity with actual independent worker/session and author lists using the already reviewed GBDT identity helper; current authors cannot approve. Every runner function AST except check_approval is unchanged. Original v20261020 remains untouched. No new scientific/release gates.
+
+Synthetic validation: `.venv/bin/python -B -m pytest -q .agents/operations/newperiod-temporal-client-20261023/test_client.py` —58passed9.34s. Includes exact candidate regeneration/scientific closure, all eight unresolved refs before transport, Codex independence, exact metadata resource binding, held→admit→separately approved release with fixture transport, ambiguous submission/no retry, resource/array/GPU/owner/requeue/refusal and fresh failed preflight. No live submission tested.
+
+Author codex `/root/remaining_work_audit`; separate review required. CLI mirrors reviewed GBDT: client.py stage|submit-held|admit|release with --candidate --records --approval --approval-sha256 --review; release additionally needs --release-approval --release-approval-sha256 --release-review. All approvals must be actual future independently issued records, never the synthetic test fixtures.

@@ -1,0 +1,33 @@
+{
+  "designated_reviewer": "sol-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v1-20261025/prepare.py",
+      "sha256": "eb672ef224a799f2c51265b66e5e5cbf425233b148faa0b56b1ae633207b9658"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v1-20261025/proposal.DRAFT.json",
+      "sha256": "bcdab9dc22b7428ddd4b45827d256f7c175d951155bcf8c89887ec3fda028939"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v1-20261025/verify.py",
+      "sha256": "74c0938b6ae1ac67d9d8dfd0ce583fec4adf4f9c60c0cf0c56c7e384a30b0fc2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v1-20261025/local-checks.json",
+      "sha256": "df78a4a18172bc141462d8e14fd89e76f177f8c786f515b31b7609c541bb1278"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v1-20261025/independent-draft-review.json",
+      "sha256": "b75d68ff6606c7c4be6e86b1bfebe36eb3f2f82701b0002e4a7fea52015fbe49"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v1-20261025/board-scan.json",
+      "sha256": "6ae9d9084e24cbfc2fe9c5b899aaf73ccdf39c4ba61a6b2c3b42be400a098fbe"
+    }
+  ],
+  "issued": false,
+  "kind": "v37_composition_draft_review_request",
+  "physical_sizing_accepted": false
+}

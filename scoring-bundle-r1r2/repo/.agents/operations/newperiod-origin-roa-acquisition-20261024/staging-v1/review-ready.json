@@ -1,0 +1,29 @@
+{
+  "actual_acquisition_authorized": false,
+  "actual_stage_authorized": false,
+  "author_model": "codex",
+  "author_session": "/root/metadata_check_review",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "README.md": "3c3f5cd846342e39b9f719930d09be730b11f2b3300da05450fcd58a4505c5ac",
+    "package/acquire.py": "4d43aa1dbf8a0a3345e67a4a60ffe95b9095eedc81138c024e48f81044b7b5a6",
+    "package/job.sh": "3417de9fbd08c615c30e79866d07d24fb122268cf1f6ab01c30cc6eba62c8a1c",
+    "package/original_fetch_roas.py": "268a38ed211b64844ad29f55967cbf731db27131e2b6ccbfdf632e6338b509fc",
+    "package/plan.json": "e80fc58a6a95b459903f368e2a1400464f07c05bbff592a55263b0035a0ebbd5",
+    "package/resource-assessment.json": "d09e496672cd373a1aabeb694ca07298e81fba47cdf2b7f4112130581d0aa701",
+    "package/run.py": "8155af1d9ab788dc34e5577d95512bfbde632ad5cb12a065fc6cebbcc972784f",
+    "prepare.py": "01a82d9904e2ce5f4618f2742d548719e91d499bf77ca300415a364c15b651cb",
+    "request.json": "5346143f1ccedc3faeabdb518fd8ac98e197441ac6f9a20e0cdd29cdf5f41a31",
+    "test_transport.py": "cf4030e957f5f4b3f1ede10c456af7a757acc48bbbb2ef15679aa7a84ab29a6c",
+    "transport.py": "8da7e7ec2fc0aab46f3b3294ffe78a59b1b4a9cb8327e14038cfadb9220a7dfa"
+  },
+  "kind": "origin_roa_stage_held_code_candidate_v1",
+  "source_kernel_review": {
+    "path": ".agents/operations/codex-takeover-20261023/origin-roa-acquisition-code-review.json",
+    "sha256": "87bb4f7daa52b16ed7068b58fde3f90b3945744d23fce07411d8f6c188ea5390"
+  },
+  "tests": {
+    "passed": 10,
+    "seconds": 0.18
+  }
+}

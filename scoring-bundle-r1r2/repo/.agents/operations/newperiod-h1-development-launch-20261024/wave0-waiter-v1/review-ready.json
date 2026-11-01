@@ -1,0 +1,14 @@
+{
+  "condition": "One start after exact independently approved first16 release succeeds, coordinator identity and no existing exact watcher. Remaining48+assembly/audit remain held; no release authority.",
+  "files": {
+    "request.json": "85737e17398510c50119d351c6459030c4da75e77b18e4dd49ca05d376a39759",
+    "test_wait.py": "5f1c1bae9e503ca005c2533f32ba4ed2032d7d2326587ad026492deaf6eff6eb",
+    "wait.py": "46b3e1645eb506a846c755a71f7ae5e140238b322836c43859c072c23c7c3974"
+  },
+  "kind": "h1_first16_waiter_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-construction-four-waves-20261024/wave0-waiter-v1/wait.py",
+    "sha256": "883d33cf1273662e4ac670131ddb33b32f2abb31da890d2fe98bedb69bbcc57b"
+  },
+  "start_authorized": false
+}

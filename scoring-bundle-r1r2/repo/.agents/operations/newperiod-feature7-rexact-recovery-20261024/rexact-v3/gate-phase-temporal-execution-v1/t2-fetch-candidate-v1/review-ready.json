@@ -1,0 +1,14 @@
+{
+ "delta": "vs reviewed core fetch_plan 3be5628d: docstring, PLAN = (temporal-rexact-v3/gate-plan-bindings-v1/plan-input-gate.json, a0219e8a, 12,989), input_profile check temporal. Nothing else (delta-vs-core-fetch-3be5628d.diff).",
+ "dir": "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/rexact-v3/gate-phase-temporal-execution-v1/t2-fetch-candidate-v1",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "delta-vs-core-fetch-3be5628d.diff": "9eb9f212d6008b3ac97fffc9af2d4cdfab346fd23e1faae844fbf72b1fb59ace",
+  "temporal-fetch-request.json": "507745130a2dff486c22eb83dcc531a5be99474b9777245511b069916301b2b0",
+  "temporal_fetch_plan.py": "eda1b8a9b8577f4d8c64a3f3c8202edf56ab2f9724f4dff246416b72792e50a3"
+ },
+ "generated_by": "gate-phase-temporal/build_temporal_packet.py fetch (frozen design 72caceb5) from the T1 binder actual",
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<temporal_fetch_plan.py>'\" < temporal-fetch-request.json; once; records gate-phase-temporal-execution-v1/fetch-execution-v1; AS 512 MiB, alarm 60 s; custody record only remote write",
+ "kind": "rexact_v3_temporal_T2_fetch_review_ready_v1"
+}

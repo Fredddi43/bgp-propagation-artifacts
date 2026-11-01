@@ -1,0 +1,11 @@
+# Complete issue-time projections from canonical observations
+
+Pure custodian code candidate; no file I/O or actual protected reads, prediction, target release, status changes or execution authority. Caller supplies the source-verified original data-root library, full original manifest, exact actual parse receipts and original graph/export projections for every available row.
+
+The original HistoryEvent.signature explicitly covers nongraph events. The same canonical per-AS first_available records determine the observed seed set at issue time. This module requires those records, exact event/onset/delta/library digest and successful parse evidence; missing or failed evidence is an error, never an invented empty event. The original signature function and its one-second first offset are reused without arithmetic changes. Available rows must exactly equal independently audited existing graph/export projections.
+
+A source_failure with parsed canonical partial observations keeps source_failure. Its observed signature does not claim that the source was complete. A certified unavailable_no_input needs complete parse evidence, zero observed records and actual empty seeds. Technical forecast abstention convention is unchanged: the separately projected slice variables can describe observed seeds even though the prediction remains an empty technical abstention. No event is dropped or status reclassified.
+
+The output has precisely the original preparation's five input-only projection fields. The existing issue_time_table consumer can use these after actual custody/source review. This candidate does not provide source/runtime/resource execution binding or issue a completed table/gate by itself; the shared helper caller is separate work. Outcome-dependent exclusion or whole-family abandonment is not authorized.
+
+Fifteen tests pass: original float64 signatures at30/60s, retained technical/source statuses, incomplete-but-parsed observation preservation, future membership exclusion, genuine empty inputs, failure evidence refusal, and original source→graph→master→export parity on an entire two-row fixture including unavailable_no_input. Fixtures contain invented sources and reviewer identities, not actual admission. There are no numerical BGP findings in these tests.

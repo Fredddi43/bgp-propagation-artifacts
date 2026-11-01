@@ -1,0 +1,34 @@
+{
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-capture-astra-v1-v36-20261025/capture-independent-review.TEMPLATE.json",
+      "sha256": "9a5d369189300a62957bfef59329f799f17e0bacfc7c7427901a146dab91c7e6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-capture-astra-v1-v36-20261025/capture-root-authority.TEMPLATE.json",
+      "sha256": "a1f1527c78341744eb8563b348709babe08a9f86a8daf06dc2d7cf75e1dca88e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-capture-astra-v1-v36-20261025/local-checks.json",
+      "sha256": "7c601277fbcfa4a5c07acf2da65e7ab091630ca1496ee9dd9edf67e6fa53b5b3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-capture-astra-v1-v36-20261025/prepare.py",
+      "sha256": "92765e5f9430902f835e22b295c867c5ee78700a6900ce3d97f5ed786e971824"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-capture-astra-v1-v36-20261025/request.json",
+      "sha256": "cd7f4951c66ad18f271be2d24c356a8ad8e311cc9bb2e236d86fbb19af18cdc0"
+    }
+  ],
+  "kind": "AUTHOR_CORE_CAPTURE_REVIEW_REQUEST",
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-capture-astra-v1-v36-20261025/request.json",
+    "sha256": "cd7f4951c66ad18f271be2d24c356a8ad8e311cc9bb2e236d86fbb19af18cdc0"
+  },
+  "to": [
+    "root",
+    "sol-h3t2"
+  ]
+}

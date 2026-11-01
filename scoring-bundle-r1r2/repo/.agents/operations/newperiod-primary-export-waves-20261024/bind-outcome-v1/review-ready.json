@@ -1,0 +1,15 @@
+{
+  "condition": "Once only after exact independently authorized binder52479040 release and terminal scheduler evidence; fixed two JSON metadata files only, no witness/source/output refs followed. No gate/witness execution authority.",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "c7bb99cb137963e6de3dc2548d549b94182d238a035f2319e5f8e6412eee958b",
+    "request.json": "d73a37d2da6a76e2c892105e2349c0e2e2bda2c1ffae302f8bcdf874858e97f2",
+    "test_capture.py": "c9e3d0721e3eaf534ab80dcfc010e0d1789c3206c760f6bdadb955c68cdb08a6"
+  },
+  "kind": "primary_bind_outcome_candidate_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-export-waves-20261024/export-outcome-v1/capture.py",
+    "sha256": "aedbec4d7d0bd04f9ab51dde62011b12671b9ba42fdf41931d7358434e3beba0"
+  },
+  "tests_passed": 6
+}

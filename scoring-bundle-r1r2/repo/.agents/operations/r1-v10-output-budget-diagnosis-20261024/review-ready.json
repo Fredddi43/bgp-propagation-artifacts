@@ -1,0 +1,18 @@
+{
+  "kind": "r1_v10_bounded_terminal_resource_capture_request",
+  "author_worker": "/root",
+  "files": {
+    "test_capture.py": "5af66d67827d04e4fbe220458d551aa34f3695f1fdf8ad15b2f8530ea9e60467",
+    "capture.py": "b765c85e2408bb9660750ddee77fcf71ad1fbe04b94efe89f5978910787cf977"
+  },
+  "tests": {
+    "passed": 7,
+    "seconds": 0.1
+  },
+  "scope": "Exact v10 launch/terminal and bounded prelabel resource-evidence metadata only; project known numeric memory/cardinality fields, fixed control/lane lstats. No results/labels/scores/prediction reads. Derivative of reviewed v9 capture with exact PID/spec/namespace/exception substitutions only.",
+  "execution_authorized": false,
+  "requested_max_executions": 1,
+  "wall_seconds": 120,
+  "stdout_limit_bytes": 1048576,
+  "stderr_limit_bytes": 65536
+}

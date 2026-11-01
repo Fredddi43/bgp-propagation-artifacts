@@ -1,0 +1,10 @@
+{
+  "files": {
+    "capture.py": "81427ea7773acc8077170efe6ab6400094f916ddb4239b8780f81502c6c9691d",
+    "request.json": "3a4f3540de27e270736d9dbe196b7621df099db1f5096da94e0bb22d94107916",
+    "test_capture.py": "cf50b40efd7e22281820a8310415faaf5e6525652bbde0be5a7879edc9dc6c31"
+  },
+  "kind": "temporal_witness_outcome_ready_v1",
+  "scope": "six bounded operational JSON files only after exact parent terminal; no witness/report/data references followed",
+  "tests": "4 passed; exact root and kind derivative of approved core capture"
+}

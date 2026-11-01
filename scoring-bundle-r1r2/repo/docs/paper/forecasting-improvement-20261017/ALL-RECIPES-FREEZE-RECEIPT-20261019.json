@@ -1,0 +1,95 @@
+{
+  "contract_version": "new-period-recipe-freeze-v1",
+  "draft": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/evidence/docs/paper/forecasting-improvement-20261017/ALL-RECIPES-DRAFT.json",
+    "sha256": "6d851282e4036a6323a24ef41740207c75b839a72a960604cb1404d593ae0917"
+  },
+  "evidence_root": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/evidence",
+  "exposure_ledger": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/evidence/docs/paper/forecasting-improvement-20261017/EXPOSURE-LEDGER-DRAFT.json",
+    "sha256": "ba323f55d727725ec2cfd29748a3108f542daafcaca2e5e328180e34a3a6e636"
+  },
+  "freezer_source_sha256": "979d0d91f86c89ccc6b8cf3f3de94a3357965df0402819d18d4789e90d69d66f",
+  "frozen_before_r1": true,
+  "kind": "new_period_recipe_freeze",
+  "module_source_sha256": "04691c483a64c0e6c93fd058da8d41347eabdc0c31ba881f165746074ab50d6e",
+  "passed": true,
+  "recipes": {
+    "L-recipe": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-L-recipe.json",
+      "sha256": "fa30c02b3481bb5c6b63bfc5b13033a67e167c2c159fc922e7645f227a738673"
+    },
+    "N-base": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-base.json",
+      "sha256": "6df4217c157f161ad3eb951290ae15abde950a19d618641b04aade0943563e8a"
+    },
+    "N-chronos-ad": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-chronos-ad.json",
+      "sha256": "528b0113ff8099b9faed897cd0f952778b434f875aea5601b25aca122f1797c4"
+    },
+    "N-core": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/recipes/core-v1.json",
+      "sha256": "1071f730961a31b405721d4ddf1781816a95b69303b8e91a8d9d23f0f0728b86"
+    },
+    "N-counts": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-counts.json",
+      "sha256": "4809bec7c26041a63f105b84164b44960d10702ac5b77b922ce7918ef5b74ee6"
+    },
+    "N-delay": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-delay.json",
+      "sha256": "9720b7e99d51dad95eee549fc567ab12a62106adeac4eefc5767263a329f107f"
+    },
+    "N-family": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-family.json",
+      "sha256": "b82df24e7ca5926b18b516cbba2376c6c41224b1d48dab7de5eaf127ddb36ef8"
+    },
+    "N-frozen2025": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-frozen2025.json",
+      "sha256": "7709f168ad176d0a5d7eba7b2361c8ce200a93c5ea83ba5043873597ed99d7d2"
+    },
+    "N-gbdt": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-gbdt.json",
+      "sha256": "a2d912fca97c79f8e2ece2bc5ec4b1ac582804f79d906421bdc76aeb4e0e55fa"
+    },
+    "N-h1": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-h1.json",
+      "sha256": "4bdda88720e28fdd00c572dc06c2355d80e445ffd0caccc044975e4503fc5c7e"
+    },
+    "N-h3": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-h3.json",
+      "sha256": "dc63c31234d311f55b9582fe69589ae7393c1074f013a4003936cedd1a73d206"
+    },
+    "N-mean": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-mean.json",
+      "sha256": "298b6c995c0185a2cae309a5ff98e30877ae88bd498a6d1feab535cd12dee4d0"
+    },
+    "N-stable": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-stable.json",
+      "sha256": "905fbb91e79b6e044cb50fe1c9aa30877e8d47b8fbb86280b2f02b9439274ade"
+    },
+    "N-temporal": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-temporal.json",
+      "sha256": "88c4fde1f81ae847280902827986672ea8ab74d0c95fe90d686c264026a746e8"
+    },
+    "N-timing": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-timing.json",
+      "sha256": "537d79fe0a9a117be5a898eef55a591d1970a39d38ed0ceaee94598ef5856d80"
+    },
+    "N-trigger": "declared_absent",
+    "N-tsfm": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-tsfm.json",
+      "sha256": "dc16e3e2d54e9d898d0ae7b96d604d6b64da4d96aba75d34fd8b0ac3be3d9972"
+    },
+    "N-withhold": {
+      "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/frozen/recipe-N-withhold.json",
+      "sha256": "29f5c48d3ebed6941540022076bb9f2dcf18b36e1235ac7c286bf24856bad30f"
+    }
+  },
+  "retuning_reserve_closed": true,
+  "review": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/all-recipes-astra-20261019/review.json",
+    "sha256": "7e354b7f8266276105406a421daad6788258553985e82b853b0c6ae182b65d52"
+  },
+  "reviewer": "openai/gpt-6-astra",
+  "scope": "new-period-recipe-freeze-v1"
+}

@@ -1,0 +1,16 @@
+{
+  "author_worker": "/root/deadline_audit",
+  "coverage_admitted": false,
+  "files": {
+    "REVIEW.md": "31bbfce84e80f105ff5a1c6813a61bbf4dcbb9fb06f6b1a1f15675326d27caa0",
+    "actual-v1/matrix.json.gz": "3d1bab83d2bf1cb4ab37df51a8155be08c073fb5b4d509a1b2c1e859d327c7e0",
+    "actual-v1/summary.json": "fcb4eeb8c16fe24007920296e68edaa248432c14e0f1ea8cca1819ffe6ed93c5",
+    "bridge.py": "6266f3033ee5ed3fafc4121abcab4b03abdda64187ed58db38ea7a7cc9d64c13",
+    "build_actual.py": "3e8e4b03cb46c0335196bf4e39d846d1d8e376def2582b107d4fbac1e901f134",
+    "test_bridge.py": "a901ae904e26ea44a7b96cfda215fbbf3d77bbfb972647e2d4a7dce74d29d367"
+  },
+  "kind": "count_ledger_bridge_review_ready_v1",
+  "references_followed": false,
+  "source_payloads_read": false,
+  "tests": "7 passed; genuine full14,787-event captured composition succeeded,11,552 exact ledger attachments,2 original boundary failures preserved in source"
+}

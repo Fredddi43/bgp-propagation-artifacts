@@ -1,0 +1,12 @@
+{
+  "agent_wake_authorized": false,
+  "author_worker": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "eval_status.sh": "84fc9be9e7d8a2a7509b3246bf0e2606613501a588acc0068f256e48133af785",
+    "test_wait.py": "54ef296446de45876f3e6f82c283785e5e53c7ef04a5d7025d10316596b2812f",
+    "wait.py": "780c9e54737704b3174b3e194da00a1f75c25aa6247b28e117823bb9c460ee35"
+  },
+  "kind": "r1_v11_passive_waiter_code_v1",
+  "tests_passed": 6
+}

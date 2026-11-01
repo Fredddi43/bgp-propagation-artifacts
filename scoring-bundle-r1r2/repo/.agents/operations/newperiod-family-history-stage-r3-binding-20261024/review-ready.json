@@ -1,0 +1,21 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>"
+  },
+  "files": {
+    "REVIEW.md": "3878a8a47dbed7d555272a3c0536bebdb573da54b8ed142b9911de9045fe4a26",
+    "build_binding.py": "5b98b018311ceaab2995de59f4b0ec7565ef09b7194539a048b1540c378ce869",
+    "controls-draft.json": "1c7891115b5ca029511968eb9feee1a061bb2182de6394c8127d2c45ed53c216",
+    "plan-draft.json": "2aebdce1de0d13205dc3428767ead5e10be8e399eb76d6e6a2f878567027aba5",
+    "resource-request.json": "834aeff74121b32438636f61ff0bc477f41b49c3c64cc4017f40a81dcf267d43",
+    "task-0.json": "a6a6e02a5b9cb9180c8e128904e31903049078b84a87d377b5902a057a1f55f8",
+    "test_binding.py": "7d3adad329fb3510e904e8b2511869d4a6ad3c5f5970c1ccb8573455d1456f4b"
+  },
+  "kind": "history_r3_launch_binding_draft_review_ready_v1",
+  "r3_ready": "1495b5839cac7faac63585f02d9707663c4ad70ce789e6a0a6ba33dc6c93b6dd",
+  "tests": {
+    "passed": 4
+  }
+}

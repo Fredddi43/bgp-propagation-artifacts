@@ -1,0 +1,4 @@
+{"probe": "production-shaped_baseline", "exit": 0, "summary": "PASS"}
+{"probe": "production_and_validator_binding_algorithms", "result": "identical"}
+{"probe": "aggregate_primary_empty_but_recomputed_primary_and_sidecars_intact", "exit": 0, "summary": "PASS"}
+{"probe": "JSON_cell_status_and_envelope_kind_diverge_from_raw_and_sidecars", "exit": 0, "summary": "PASS"}

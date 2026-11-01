@@ -1,0 +1,13 @@
+{
+ "author_session": "<SESSION_ID>",
+ "deletion_authorized": false,
+ "execution_authorized": false,
+ "files": {
+  "enumerate.py": "c960e83955a6a355edee0b04b773c9eab3d6540fc9fdbb85aae879a63bec5091",
+  "restore.py": "cb4a8014ddf5fb5b8f5d3f2ee710bf51bb27658cef7d9798ea7fc71345c01223",
+  "test_restore.py": "8da7ee2d2ff0e61223c27c428ff1c9c8179fb136a37669579e66692d5dc61732"
+ },
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < restore.py <<< request.json  (once; request = the reviewed enumeration actual's extra list)",
+ "kind": "placement_venv_restore_review_ready_v1",
+ "tests": "7 passed (enumerate 2 + restore 5)"
+}

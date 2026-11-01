@@ -1,0 +1,23 @@
+{
+ "answers": "55ef4bc5 review bc3e57ec (D1 blocking, D2, D3)",
+ "author": "f4d75bb1",
+ "changes": [
+  "D1: trace lstat first; trace_bytes + T2 always recorded; read/parse only if size <= CAP (else T5 not_run_over_cap); each profile contained (error = step_reached + exception type); shared receipt read contained (T3_receipt_image error:<type>, T1/T2 still recorded); the injectable cap bounds the trace read only",
+  "D2: untraced_mtime_utc and trace_mtime_utc per profile (UTC, 1 s, stat only)",
+  "D3: T3_receipt_image (pinned read) + T3_log not_rerun",
+  "kind -> rexact_v2_trace_stage_diagnostic_v2; everything else unchanged (pins, categories, locations, fixed messages, custody record)"
+ ],
+ "execution_authorized": false,
+ "invocation": "getent hosts <INSTITUTION_HOST> && ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < trace-diagnostic-v2/diagnose.py (once, after independent PASS and root next step)",
+ "kind": "rexact_v2_trace_diagnostic_v2_delta_review_ready",
+ "tests": "9 pass (v1 5 adapted + over-cap, T2-over-budget, two-profile isolation, receipt-failure containment); -B, no pycache",
+ "v1_preserved": {
+  "diagnose.py": "2ff4320b967f01056a679588cf909176927c533750d6218d555077c5b66b3094",
+  "test_diagnose.py": "ca13757248c856905d3a1ae3691c21c1cbe9b70128a1c28942c43443e47a7e03"
+ },
+ "v2": {
+  "delta-vs-v1.diff": "83edc7274061f8cc1d75b8c4d96e3419d767b06278c42eb093fbeebcf5926cfb",
+  "diagnose.py": "a4be6fa842b59169b89b49e4ba14316424f56eff5e8d12e302b64784d19e7079",
+  "test_diagnose.py": "9022a44e8c92ac8fe8e0e9748ba599f6bce79316cdc1509965946e09d4f70a88"
+ }
+}

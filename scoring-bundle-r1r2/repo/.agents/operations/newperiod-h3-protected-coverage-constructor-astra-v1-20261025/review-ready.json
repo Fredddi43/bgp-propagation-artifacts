@@ -1,0 +1,48 @@
+{
+  "actual_projection_ref": null,
+  "author": "astra-final",
+  "corrections": [
+    "COV-SCOPE-1:7exactstatuses incldaily_receipt_unavailable; exactly2certifying",
+    "COV-SCOPE-2: diagnosticoperator interpret() requiresallrowsvalid beforefulltemporalclaim; constructorrefusesnaiveinvalidonsets/days",
+    "COV-SCOPE-3:finiteeventpaths/IDs stayincustody; exacttwo-columnphysicalread disclosed, noASN/targetcolumns requested"
+  ],
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/constructor.py",
+      "sha256": "83ff71480c648a0cac0ca6a3d14dee845674574a8dbb5aeedebe51dc1e1af9f3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/finite_reader.py",
+      "sha256": "4ea5bf58505f04c23b2af462556171888d4f745609632a61ce7f44df3d3c9c86"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/test_constructor.py",
+      "sha256": "77f8b3ccb39e1d5e57b96d96252a1129c7cd935af993ea40b9426db49542e79a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/source-trace.json",
+      "sha256": "b3eacc3dd29545bc8e28ca6c2ecc24272fb48b92b78afdb2d97882a24a7a71f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/projection-contract.json",
+      "sha256": "f090eff5598c855604af8e88f7c799ffdb62ac20832f26f89d582cb4d0c4f118"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/read-scope.json",
+      "sha256": "627e4aa88e83c53030313d378ccfe83da1467dfc6f6e235d086d93ad39eee1d5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/resources.json",
+      "sha256": "af5bc65a567ea7b79450ced1978aa0c17a06df96c85bbbd22d59d544f59450ce"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-constructor-astra-v1-20261025/validation.json",
+      "sha256": "6bc2d6f83f790fe8c9ddf31c1f90914c0789ea860e3ff28efdbdf9068584a742"
+    }
+  ],
+  "kind": "h3_protected_coverage_constructor_source_review_v1",
+  "operational_wrapper_exists": false,
+  "reviewer": "sol-final",
+  "unresolved": "Actualdaily/summary/membership sourcebindings/sizes/decodedmemory/custodyprojection, C0priorproducer, independentactualscopereview, freshwrapper/onceauthority are necessary; sourcepreparedhere doesnotclaimactualadmission."
+}

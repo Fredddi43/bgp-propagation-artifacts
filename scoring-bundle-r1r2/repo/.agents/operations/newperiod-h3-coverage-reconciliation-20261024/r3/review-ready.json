@@ -1,0 +1,18 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "base": {
+  "r2/coverage.py": "07540088f8e4f463ca468a598ea4245175194a6bb3b6673dc21a327c60dfbb0a"
+ },
+ "delta": "reconcile restricted to the two frozen H3 input panels ris7/mixed7 (recipe panels); ip.H3_PANELS also holds reference10 (target panel) which the real legacy receipt correctly lacks -> r2 refused real data with Fixed original panels differ. Reference identity asserted.",
+ "files": {
+  "r3/coverage.py": "6903bf0a9982502a787ec0dd0532346dd0bffe28aadbab9ac740b042b64b5946",
+  "r3/test_coverage.py": "c56d6fe59377676112d02270009b9e4da595a459ee638b381c42fc599963746b"
+ },
+ "found_by": "local partial dry run on real captured metadata (actual-local-v1)",
+ "kind": "h3_coverage_reconcile_r3",
+ "tests": "15 passed",
+ "utc": "2026-10-24T08:44:06.681859+00:00"
+}

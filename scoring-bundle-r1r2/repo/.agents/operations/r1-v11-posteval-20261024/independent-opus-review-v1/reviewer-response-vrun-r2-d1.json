@@ -1,0 +1,6 @@
+{"kind":"reviewer_response_v1","reviewer":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "vrun_r2":{"transport":"VALID (stage-complete 82b192aa)","run_approval":{"path":"opus-vrun-r2-approval-v11.json","sha256":"ab2cc47a414f1af83b9f854b784a33c0883273409066855bb412350769e55fed"},"tool":"82caae79","job_script":"657d47fa","resources":"cpu 4 / 174G / 12:00:00 / no-requeue (unchanged)","attempt_limit":1,"checked_by_tool_predicate":true},
+ "d0d1_fetch":{"content":"VALID (plan 6e18854b, census 7b746087; output e5e08ddd)","records":"MISSING - route the actual intent/result for approval c7e1fab0; no second capture"},
+ "d1_not_regular":{"count":7086,"cause":"every planned tensor path is an absolute symlink (lstat size = len(path)+8); 0 missing","d2":"NOT admissible until D1b follow-the-link metadata census (realpath under ROOT_FILTER, S_ISREG, sizes), then D2 job script + resources"},
+ "assessment":"d0d1-capture-and-transport-assessment.txt 287b1e58",
+ "history_r2":"job 52473649 FAILED 1:0; root failure-capture approval 74a83aa3 (newperiod-family-history-stage-r2-binding-20261024/independent-opus-review-v1/opus-history-r2-failure-capture-approval.json)"}

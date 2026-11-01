@@ -1,0 +1,83 @@
+{
+  "kind": "origin_stable_metadata_once_review_ready_v1",
+  "author": "astra-g1a",
+  "author_session": "/root",
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/REVIEW.md",
+      "sha256": "d1663371a3808521409ae4bf80a0424020f16f6276f70bd8fd399134891e83eb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/aliases.py",
+      "sha256": "815f306723a86b51d2658536c80ff928c9622c77210e5dba9fb07eec05d11b81"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/control_scan.py",
+      "sha256": "27ca457df11f15c607c953427d313b879fb06fb90a43afbc1c740f932e9c7098"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/kernel.py",
+      "sha256": "92c2c69f0f4d44b0400103f1c26e6c7b00fea728372798fa247083a81656e976"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/operator.py",
+      "sha256": "f5603d3877983750f929a9146369f2fe1a445ca3949d3543eeaabd0050091349"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/origin/remote-command.txt",
+      "sha256": "de383130eff413054766737ed3546d7805a3b9e852c739b3fe940cc8a7ec9d28"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/origin/request.json",
+      "sha256": "940562bc61a4fa54db515ac8b2755d702386855eb3f80aba39855cc98ee431ed"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/origin/root-authority.TEMPLATE.json",
+      "sha256": "8c32b58f53e9651099d43faa98b989740ea63ec2fca6ddff6a3a7ba4e6776b65"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/origin/worker.py",
+      "sha256": "b3702fd5d91f83c62de0d2afd4a97cebb08b4a122a28a6b297aecdc5a8c74b99"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/prepare.py",
+      "sha256": "24aa5aadf4c096ca2f8ac9a54a26b59d2851ed88da95bcb79e423aebd88079de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/stable/remote-command.txt",
+      "sha256": "de383130eff413054766737ed3546d7805a3b9e852c739b3fe940cc8a7ec9d28"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/stable/request.json",
+      "sha256": "8abaeed623ac8b8f8a7ba26615191ca66d17053c0a5d21d5b8654a35facfa760"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/stable/root-authority.TEMPLATE.json",
+      "sha256": "7c3fcda891698ece8307d1a24a8652b38dfc8caaae1132cd385db1cfc2336e04"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/stable/worker.py",
+      "sha256": "dc87755d3d3792f951a3cdb960549790eb2913fae32d39c82983636fec761a8b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/test_packets.py",
+      "sha256": "c07f3e30c009b33c00023bafaa486082103696c8a7630983d37b7d2e70c5cc44"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/tests.stderr",
+      "sha256": "74f0f265e1174e901794fd34c98ed787b66ce7688dea8e6f2bf3faceee987c28"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-metadata-once-astra-g1a-v1-20261026/wrapper.py",
+      "sha256": "7bae6c4943c0a31c0feb0cb2b13bb0bfebd57e020fd694126c524684a78c1df1"
+    }
+  ],
+  "execution_authorized": false,
+  "remote_actions": 0,
+  "custody_log_appends": 0,
+  "tests_passed": 11
+}

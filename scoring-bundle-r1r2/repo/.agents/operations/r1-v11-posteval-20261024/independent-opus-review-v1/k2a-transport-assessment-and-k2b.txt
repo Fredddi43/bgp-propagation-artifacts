@@ -1,0 +1,35 @@
+INDEPENDENT ASSESSMENT: actual K2a capture and class-(d) transport, plus the K2b approval
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+K2a (approval r2 2764b250; the superseded 91580118 was unused). Output evidence/capture-k2a.json.gz
+ed0ef4faf10fa807c780d731adcb5c3ffd00f2482e9cf3378616a2feae63da90 (682 B).
+  - requests.captured(): exactly the 2 requested paths. complete.json is 395 B and execution-exit.json is 55 B, equal
+    to the K1 sizes.
+  - requests.complete() passes:
+      * passed true, automatic_retry false;
+      * spec_sha256 2233750e (binds the release to v11);
+      * report .../control-v1/results/report.json sha 049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d;
+      * exit {"automatic_retry_authorized": false, "returncode": 0}.
+  - The author's k2a-complete-check.json (4d4f9fd4) agrees.
+  - Only one capture exists; the f19 tool claims its output with xb, so a second capture would refuse.
+  VALID.
+
+Class-(d) transport (approval e8d0bed3, tool 433ddff6), once each:
+  - stage: intent b6099fb9, result cfa7f30c, rc 0, stderr empty. 5 files at the approved shas, mode 0444, owner
+    <USER>.
+  - stage-complete a839351a (992 B), reconstructed from stage_code.py:108.
+  - readback: intent b6099fb9, result 7e126066, rc 0. Exactly 5 files + stage-complete; the readback asserts out/ empty.
+  - DEST r1-posteval-classd-v11-20261024.
+  VALID. Approval e8d0bed3 is CONSUMED. The DEST stays as written.
+
+K2b: request-k2b.json 833d1cd1 reproduces byte-exactly from reviewed `requests.py k2b` on census f7315fae plus capture
+  K2a ed0ef4fa.
+  - Contents: report.json @049c7a9c (15,327,863 B) and the d30/d60 manifests @45865cdf / f885a805 (5,183,175 B each),
+    25,694,213 B in total. Within the f19 caps.
+  APPROVED, one attempt: opus-k2b-capture-approval-v11.json 9f79a24d.
+  - Output evidence/capture-k2b.json.gz.
+  - Then local `requests.py extract` into evidence/released.
+  - First released-report read. No per-event, label or prediction read.
+
+Still not approved: K3 projection run, D0/D1/D2 phases, the vrun verifier job, N admission, any retry. Each needs its
+own exact approval.

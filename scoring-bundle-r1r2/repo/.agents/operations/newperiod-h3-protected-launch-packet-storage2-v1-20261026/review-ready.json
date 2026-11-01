@@ -1,0 +1,53 @@
+{
+  "actual_controls_signed": false,
+  "author_session": "<SESSION_ID>",
+  "author_worker": "astra-storage2",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/build_packet.py",
+      "sha256": "4f366a4d0768bc13f73edef08324f6f753df098f500e900ed4fe68f10004ab00"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/verify.py",
+      "sha256": "997115d27d88f4202f4830a81cd0a2bda676b8c00a93b928c3b2d24c0310fa26"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/writer-reconciliation.DRAFT.json",
+      "sha256": "e61a3beffbea9b30d4ded2648dc583108071a5abaac3cb0f69042fbad556c0fd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/root-operating-adoption.DRAFT.json",
+      "sha256": "b7033e487205a7e61c9afeb193ff34b850838e0dc2c35fad34f1424b920e98c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/stage-physical-profile.DRAFT.json",
+      "sha256": "90cad7a48a95c5b703f53dc89b2df10246622c900b4a86ce5dd1500687fd1f17"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/root-stage-once.FALSE-TEMPLATE.json",
+      "sha256": "a92a46438fe4ed879b3436be8e59234a08fd2c5e4e4ce008f81aa3c82f824675"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/stage-independent-review.FALSE-TEMPLATE.json",
+      "sha256": "17a808f271936c17e7219435af6b29ee9ad3cc13382b4fbf24cf3243b0d4e7b5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/scientific-source-approval.FALSE-TEMPLATE.json",
+      "sha256": "e3831f86ae339eb0225a7bfae3b63ec0f9472bce19813c86ba51f6fa5b5f8a6f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/launch-sequence.json",
+      "sha256": "6a2672f53b6620f261bcddd454171dbd03698bb71932e635c2f87bd330e0283f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v1-20261026/proof.json",
+      "sha256": "f2a9ddfbc28b39c1e31994ceeb609ff6cc139d5e382c32818b3101855250deeb"
+    }
+  ],
+  "kind": "AUTHOR_PROTECTED_H3_STAGE_V4_LAUNCH_PACKET_REVIEW_READY",
+  "remote_actions": 0,
+  "reviewer_requested": "sol-h3t2",
+  "scope": "Exact false draft package. Issued v7 base preserved;64MiB guard conflict explicit. Designated independent actual review and root issuance pending.",
+  "utc": "2026-10-26T10:05:30.378348+00:00"
+}

@@ -1,0 +1,14 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_serial_d1_recovery_review_ready_v1",
+ "live_v7_at": "2026-10-22T07:28Z not terminal, pre-label loop >= 5.24 h",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/recovery-serial-d1",
+ "pins_sha256": "cca61e139a64ec5322ae3033266e642430d57fa471ae509bd6606d2addc8ac6e",
+ "requests": [
+  "review budget.py/budget.json (evidence kinds, ranges, 105 h limits rule) and the memory admission",
+  "review launcher template/render (byte-identical v7 reproduction; 9 declared sites)",
+  "review D1-ADDENDUM (F1/F2/F4 records; DIAGNOSIS corrections); F3/F5 remain open",
+  "separate decisions, not in code: O1 decode-only post-label re-parse; S0 host synthetic micro-benchmark"
+ ]
+}

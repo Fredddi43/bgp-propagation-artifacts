@@ -1,0 +1,20 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "REVIEW.md": "9332e80047676109c8a027c774779b1dd7fd9ccd9effa1a23d1a5deaf5f7efdb",
+    "bind.py": "605f2b20c411f615dddf7ffa59a00f913625929e9152f12953eb3aefcf9b63f9",
+    "implementation-binding.draft.json": "8d4fe323f8e1d2a7da1b17d37be140c88942d6a3e0a799213808f7142d6c11c7",
+    "live.py": "54d2befda38dc5e83e133c4707bd31f06b7c40e76f22c68b6a8c64458b9007b2",
+    "test_live.py": "3663122f776e2633222f9567a3c6d7c30d052a9541ae4b7eac9c0eaea1d4118e"
+  },
+  "kind": "live_recipe_local_code_candidate_v1",
+  "live_capture_performed": false,
+  "pre_R2_binding_complete": false,
+  "protected_reads_performed": false,
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q -p no:cacheprovider .agents/operations/newperiod-live-binding-20261023/test_live.py",
+    "passed": 20
+  }
+}

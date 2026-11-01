@@ -1,0 +1,69 @@
+{
+ "dir": "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/rexact-v3/gate-phase-core/core-gate",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "build_core_gate.py": "14cf7da7d33e88391757709c447d95ae82a5e629bc53f19073405161f176f68c",
+  "fetch-request.json": "33b3d4a529566bddf1114b32c72d80feb2f10b8d14926968477cf19637459272",
+  "fetch_plan.py": "3be5628db125105741fad3a4ee480651f2e7dc76d35a33c2442b004de02170e3",
+  "mutation-proof.txt": "dc5aac970736ae321e89766101fd03425360401508c08b515c94bf127c83ddd6",
+  "outcome/capture.py": "7f8007636a9eacc15846b7e76d764ec1a56b5790b7a50ec82df12f09b01098f5",
+  "outcome/test_capture.py": "805cbb60faa505119b0c919e278bccc6d3b8cc9bdf1af79d244f3c161e53486f",
+  "test_build_core_gate.py": "2c25c7645a4b603d7a11ec57161ff4abad55090e575d9d30f851c22668ddfb7c",
+  "test_fetch_plan.py": "063e7e4113d45f7a4b5128814cc53dc1cfcb18e022a4dd9280d66bbae240f917",
+  "waiter/test_wait.py": "07e10eee63285eeda922a64539f1449a0040acc2b3d19f724aa9a2cdc2bf92b3",
+  "waiter/wait.py": "a637c93fecc7ea5f5e8ccc26f7778e8890fca941f2e6d68bee7a92a03dd78bf8"
+ },
+ "inputs_accepted": {
+  "A_capture": "packets/core/outcome/execution-v1/capture.stdout 4bd4e101 (A accepted)",
+  "B_builder": "build_gate.py ff4fce03 (unchanged, reviewed)",
+  "binder_actual": "gate-phase-core/binder-execution-v1 (55ef fe6ba4ad): plan c3226e28, 12,958 B",
+  "gate_package": "revision-v3 input_gate f25f641d (TRACE_BUDGET 256 MiB)"
+ },
+ "kind": "rexact_v3_core_B_execution_packet_review_ready_v1",
+ "pins_now": {
+  "authority-gate.json": "ab8ff17bd086f0fe2fb6d924d105973fa595ac5ed54a2deb9a014b85866aeb1b (= {\"approved\":true,\"kind\":\"newperiod_input_gate_authority_v1\",\"plan_sha256\":\"c3226e28\u2026\",\"scope\":\"input_gate_issuance_only\"}, sorted compact)",
+  "code": "gate_execute 40b49cce, launch 469dc1f6, supervise 8c933c0d, run.sh 2afe1faa (byte-identical to the launched witness package)",
+  "execution-spec.json": "ca24d60a30bc7b7c9d437eade39200479532c9c38dc2fdd8bb6b4abdfe60fbac",
+  "plan-gate.json": "c3226e28 (F0 bytes)",
+  "transport.py": "byte-identical to packets/core/transport/transport.py",
+  "witness_exit": "21376bf5"
+ },
+ "resources_B": {
+  "as_bytes": 8589934592,
+  "cpu_seconds": 3600,
+  "disk": "gate JSON + control records, small (< 256 MiB by FSIZE; expected few MB)",
+  "fsize_bytes": 268435456,
+  "host": "<BATCH_HOST> (non-Slurm), placement venv python",
+  "nice": 10,
+  "reads": "both v3 witness traces (~70 MB each, <= 256 MiB TRACE_BUDGET) + export bytes checks",
+  "threads": 2,
+  "time": "expected minutes; wall 1800 s",
+  "wall_seconds": 1800
+ },
+ "steps": [
+  {
+   "F0 plan fetch (needs root once-authority)": "fetch_plan.py 3be5628d + fetch-request.json; ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<fetch_plan.py>'\" < fetch-request.json; records core-gate/fetch-execution-v1 (operator_step). Reads only plan-input-gate.json (exact path/sha/12,958 B, O_NOFOLLOW, stable); custody first; stdout = the exact bytes; AS 512 MiB, alarm 60 s; no remote write but custody."
+  },
+  {
+   "P packet build (local)": "python3 -B build_core_gate.py packet fetch-execution-v1/fetch.stdout -> packets/core-gate/{package,root-ready,transport}. Asserts plan sha c3226e28, spec ca24d60a reproduces, code shas. Tested with synthetic plan through the reviewed launch.check() (gate phase passes; witness-scoped approval refused)."
+  },
+  {
+   "R independent execution review": "reviewer issues package/execution-approval.json (from root-ready/execution-approval.TEMPLATE.json: scope newperiod-input-gate-issue-execution-v1, gate_issuance_authorized true, n_input_read_authorized false, spec ca24d60a, launcher 469dc1f6) + execution-review.txt"
+  },
+  {
+   "root": "gate-issuance authority = authority-gate.json ab8ff17b (input_gate checks this exact shape) + transport/request.json from root-ready/request.TEMPLATE.json (minimum_free_bytes, approval/review shas, payload)"
+  },
+  {
+   "S/L stage + launch (once each)": "python3 -B transport/transport.py stage <sha256(request.json)>; then launch. Stage writes gate-control-v1 (fresh, 0444 files); launch starts supervise.py detached (one attempt per phase)."
+  },
+  {
+   "W waiter": "waiter/wait.py a637c93f (witness waiter b/c only ROOT -> gate-control-v1 + message); request {pane <AGENT_PANE>, session <SESSION_ID>, cwd, deadline, launched_sha256, spec_sha256, supervisor_pid} from launch result; start_waiter.py"
+  },
+  {
+   "C capture (once, after terminal)": "outcome/capture.py 7f800763 (witness capture with ROOT gate-control-v1, five records ending stage-gate-result.json; success stdout must be exactly {gate: <root>/outputs/input-gate.json, sha256}; failure stderr only the sanitized refusal line). Gate output (event ids) never opened."
+  }
+ ],
+ "temporal_B": "not in this packet (root: after these blockers)",
+ "tests": "26 pass (cwd repo root): build_core_gate 4 (incl. reviewed launch.check), capture 7, waiter 7, fetch 8; 5/5 mutations caught (mutation-proof.txt)"
+}

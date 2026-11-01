@@ -1,0 +1,18 @@
+{
+  "author_worker": "/root/deadline_audit",
+  "automatic_retry_authorized": false,
+  "files": {
+    "README.md": "66f24101f79b3eda4c6c44bdb84365c7fb4c7fb8c8a280233a6f897d9c2cd3b8",
+    "request.json": "0efeaa2a03e512cd84759063440bca3152c26d617d4d719515b14dd6259b8970",
+    "test_wait.py": "8cb9c2453ee3115ad2b23895dd3bda9d1b5e89b1112fd4be1fabf93b8b968773",
+    "wait.py": "5e7907e491ad90d51519d053577884e671e7fcb60334b9bb13f7ec2bf24e7c8a"
+  },
+  "job_id": "52476269",
+  "kind": "core_singleton_terminal_waiter_review_v1",
+  "predecessor": ".agents/operations/newperiod-family-replay-stage-20261024/actual-extract-v2/waiter-v1/wait.py",
+  "started": false,
+  "tests": {
+    "passed": 10,
+    "seconds": 0.09
+  }
+}

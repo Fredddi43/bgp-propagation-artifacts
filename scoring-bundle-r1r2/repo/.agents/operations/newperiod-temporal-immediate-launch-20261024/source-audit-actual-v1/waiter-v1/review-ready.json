@@ -1,0 +1,12 @@
+{
+  "author_worker": "/root/actual_metadata_review",
+  "author_model": "gpt-6-astra",
+  "files": {
+    "wait.py": "dfdd3859117433e456b7c90baefd73ddd9b799d9cb1f8804ccee7c4518ae3f6e",
+    "test_wait.py": "af2b3be9a4f075a1dca957815e65d844954b444f7b1fb90dcef20e7bc26bb42c",
+    "request.json": "54db55900c2c942a4d35222b9d3bae06c0fa7d5dbca8efb90408584d48df2206"
+  },
+  "scope": "Exact singleton52477730 scheduler-only terminal wake; deadline expires without wake if no terminal record, matching approved project pattern. One durable identity-bound internal root prompt. No result/tensor/source reads or host mutations, no subsequent input-audit/fit authority.",
+  "execution_authorized": false,
+  "root_independent_review_required_before_start": true
+}

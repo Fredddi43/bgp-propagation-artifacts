@@ -1,0 +1,19 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "REVIEW.md": "bbca5866a51897c3dc6dc340c1d8189517db8c52b610aa342bac31b4c3fd302a",
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "reviewed_baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+    "reviewed_family.py": "7234a558c8430c38252b93cf11f5ddbaad9be0cd99001eec7c75f835db921f4a",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "runner.py": "af8c03eb979851a7fe5caa5207f13cae5d5222a48376363793f56962ee8bbd88",
+    "test_inference.py": "8c2c0035897d06163f255366f7f78a7ee4a893daf3bb1d16859d700e99824de4"
+  },
+  "kind": "newperiod_family_inference_code_candidate_v1",
+  "retained_cells": 40,
+  "tests_passed": 17
+}

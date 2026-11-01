@@ -1,0 +1,9 @@
+# Protected count pooled compatibility candidate
+
+Author Codex /root. Independent review pending. Local synthetic code only; no protected files or archive payloads read, no staging, no fit or scientific execution.
+
+Preserves original finite source closure, all numerical count calculations, output schemas, protected status retention, issue-time projection and source logging. The pooled scientific selector stays pooled. Before any protected membership read, an explicit collector inventory in the already-bound source index must bind both actual masters, both parse-source inventories and the immutable N-counts recipe6d851282. Coverage and unexpected-collector checks use that inventory. Reduced-panel or mismatched identities refuse. Explicit-list legacy behavior stays unchanged. Exported manifests retain their original source_inventory and parent_master bindings, unchanged schema.
+
+Development count/source-guard overlays are the independently reviewed versions from newperiod-count-pooled-20261023 and newperiod-selector-compat-20261023. The sourceguard gains its already-reviewed pending collector_inventory prerequisite; exact specification hashes are updated. The already-reviewed separate Codex identity predicate is copied for both operation approval and custody handoff. No other approval condition is relaxed.
+
+Actual master/index/authority/resource bindings remain pending. No live client, transport or actual execution authorization is claimed. Original job paths and budgets are preserved; protected export admission needs independent actual-input review. Original 68 tests are retained with only the mocked preflight accepting new keyword arguments. Focused tests compare all four exported NPZ grids and all five row statuses against the explicit-list baseline, test frozen inference consumption, missing/mismatched inventories and same-model review identity. Extra collectors with zero event rows still require source coverage.

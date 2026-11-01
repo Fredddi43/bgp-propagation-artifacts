@@ -1,0 +1,14 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "delta": "Only replay aggregate128\u2192130GiB accounting; binder/sourcepins unchanged. Tests and budget proposal updated.",
+  "execution_authorized": false,
+  "files": {
+    "README.md": "534f5305fce104103b9def7abdf1ea1f84622cecd81915dc38c86a902a647beb",
+    "budget.py": "e187e097c6feeda544a6324c879bb8b3c5e368dcaba3dad3f52ceb853d265c1b",
+    "pins.json": "0cd5b2cb6c8014080a91d760aa48890af0fd531def03235188b77ca13ab9312a",
+    "prepare.py": "63c23d2502ebf74f0c5b7c2277f77c9c17ae9ad9fe64331a9517818330c4fc89",
+    "shared-budget-proposal.json": "30e7249545b177bc967ddd3b59682c2683927bcd12bb8d0ed6a72e8756c10c94",
+    "test_prepare.py": "8ef74bff70d47820979219f7fb5b94e56c102d1fdb25468eba0b20e35fcd17d7"
+  },
+  "tests": "13 passed in0.18s"
+}

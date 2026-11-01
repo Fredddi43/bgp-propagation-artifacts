@@ -1,0 +1,7 @@
+{
+ "approval_claimed": false,
+ "kind": "paper_related_work_gate_status_r2_review_ready",
+ "pins_sha256": "e1ad7afe18ae11b429110dc7dce90b790c0bdae7c4a0374ec8d26fa71fe0d4d1",
+ "reviewer_session": "<SESSION_ID>",
+ "scope": "R1 one-word delta (delta-r1-r2.diff) + re-pins"
+}

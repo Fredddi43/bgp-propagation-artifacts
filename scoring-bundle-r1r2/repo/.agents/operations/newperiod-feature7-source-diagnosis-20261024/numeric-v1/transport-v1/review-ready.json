@@ -1,0 +1,12 @@
+{
+  "actual_execution_authorized": false,
+  "files": {
+    "request.json": "272d86c4dec5b7b1e2da154ecffe0bb7928e117bf499780c6f545223670d7b61",
+    "review-ready-v1.json": "c9de10dafc2bfccbf90890135b8523955f2506f6b3e4d426d0d9fd545e4f05eb",
+    "run.sh": "1b7c6392bd0a15c832f127767fff80a27d101d4fbaa345a27556f524d10889c3",
+    "source.tar": "6227df51e053013815a7206bca7552dc5ee000a07b40fa9feeca3f12f477d362",
+    "stage.sh": "b6beb0d85672f46385d1d98b032876f54c939fe7ca36a11861f5316d88c5c58d",
+    "test_transport.py": "e8d768bdc3ec7993b59258df5e1e1c832aa3a77df96953278a6fcaa2e5ee6066"
+  },
+  "tests": "2 passed0.11s; added NUMEXPR_NUM_THREADS=4 per independent C1 approval condition only"
+}

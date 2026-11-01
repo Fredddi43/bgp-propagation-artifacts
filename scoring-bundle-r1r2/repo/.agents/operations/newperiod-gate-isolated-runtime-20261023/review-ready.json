@@ -1,0 +1,17 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "9ca7ce97979bf4797f747c4565445095f2e1d0d06582413cf94a3ffede855881",
+    "diff.json": "5097bd36470aae60ca8fe0c1bf3e7aca8bab666e341ff731638d397a59fdada7",
+    "host_run.py": "dd377581058028bce18449f5016a43cdd4dc9ce381247a34676995adfb731377",
+    "place.py": "c234e0d9dfae5399abe2e02a7af90685c3cdf8c8dc2934798749ca5caa200df8",
+    "rehearse_local.py": "ceee8fe4fd5ac4689b24e2d8511a6924fc578795605ec7aaf3d01b12fcddb383",
+    "stage.py": "88ee8e498d7df6e37417a38cdc23cb02a9a2fc48a11b4acb7e544cfe0bfab641",
+    "test_isolation.py": "2ceaa41a109c5b236d261ac82e22562778a05665d3ba550215ddae4a8bbfd847"
+  },
+  "gate_pins_sha256": "ff4a953562f3a8fcc2677931bb75423f77483543e72a4d077fd8bd499b7d1423",
+  "kind": "newperiod_gate_private_runtime_candidate",
+  "tests_passed": 10
+}

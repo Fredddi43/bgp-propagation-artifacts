@@ -1,0 +1,43 @@
+{
+ "attempt_limit": 1,
+ "automatic_retry_authorized": false,
+ "basis": {
+  "builder_review": "release-native-v2-review.txt 097bab4a",
+  "class_ab_assessment": "vrun-r2-actual-assessment.txt d04808e3",
+  "d2_assessment": "d2-actual-assessment-v1.json e40d2fca / d2-actual-assessment.txt",
+  "receipt_reproduced_byte_identical": true,
+  "root_c1_acknowledgement": "release-native-v2/publication/root-c1-acknowledgement.json",
+  "transport_review": "release-publication-code-review.txt c7edf022"
+ },
+ "builder_sha256": "a615c58892562da66300ffd14910d54471108ab372181db0978361ad6b256bd8",
+ "conditions": [
+  "exactly one publish.py run; any partial/failed state preserved, no retry",
+  "after success the published receipt sha (this receipt sha) is the external anchor; N plans/gates bind it through their own reviewed packets \u2014 this approval itself admits no N run"
+ ],
+ "excluded_authors": [
+  "/root/remaining_work_audit",
+  "<SESSION_ID>"
+ ],
+ "inputs_record": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/release-actual-v1/actual-inputs.json",
+  "sha256": "5cb73adb1e01b9de47501075f77891111940c73ee1374c203e093c8715167f14"
+ },
+ "kind": "r1_release_receipt_publication_approval_v1",
+ "local_receipt": {
+  "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/release-actual-v1/r1-retrospective-release.json",
+  "sha256": "ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6"
+ },
+ "manuscript_use_authorized": false,
+ "n_or_2026_authorized": false,
+ "passed": true,
+ "receipt": {
+  "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/release-native-v2/r1-release.json",
+  "sha256": "ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6"
+ },
+ "release_receipt_publication_authorized": true,
+ "reviewer_model": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scientific_execution_authorized": false,
+ "transport_sha256": "d70217e7d38cd6dcb756a310fc0ca2e9f141975c0729fbe96dbc388aa18ed38d"
+}

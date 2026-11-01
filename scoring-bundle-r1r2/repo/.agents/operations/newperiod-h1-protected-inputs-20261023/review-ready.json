@@ -1,0 +1,16 @@
+{
+  "actual_protected_reads": false,
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "README.md": "e9cb3aaee82a8a2ab8638a85e069bd6a34eb35758046726cd89af2159e355772",
+    "audit_candidate_expansion.py": "33fee4ea193b5a0603838bc1873dd53b012ad80d8d83bf53835195f1d44c335b",
+    "entry.py": "9995282fd3c243a834b48410ffaa6aa4157ed907bac459a7ddb9d009ec38d6f4",
+    "kernel.py": "608f5f7e3937d3edee2c2993b4130dca84f082cc1471dd83883a575dc14398f1",
+    "reviewed_audit.py": "e0d266111f76d56c9b28090b40e5333b157ff1ee4f1c1509997ea6c6f317cf72",
+    "test_kernel.py": "d9805c690b495541d281122c70fd5cdaa1f01d7545314184a1e18859fca6812c",
+    "verify_candidate_topk_sample.py": "5d8c1301c4d8ea450abb5efa3e14f054472bef1caed9a0ed0c0a910d15db61c0"
+  },
+  "kind": "newperiod_h1_protected_inputs_code_candidate_v1",
+  "tests_passed": 7
+}

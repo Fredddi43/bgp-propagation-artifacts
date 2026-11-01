@@ -1,0 +1,10 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_final_inventory_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/final-inventory",
+ "pins_sha256": "8bcced6d0c8765d2a8c3e4c108d9860a7681e6d2dd86558c5d36e212eda4f9b2",
+ "requests": [
+  "delta review of the N1 regeneration on the final tree (new v8-work subdirs, preparation re-pin map)"
+ ]
+}

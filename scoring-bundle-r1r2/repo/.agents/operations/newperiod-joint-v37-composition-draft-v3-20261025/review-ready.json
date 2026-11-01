@@ -1,0 +1,22 @@
+{
+  "designated_reviewer": "sol-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v3-20261025/prepare.py",
+      "sha256": "b7c3c8b7a12d18d9e4a3f92416e88409a224a74129e70daf518e5de7a7178016"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v3-20261025/proposal.DRAFT.json",
+      "sha256": "d0994753fcaa63319ae85d76999abd76430550f0f6bcf2b4aa2911673165e14b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v3-20261025/local-checks.json",
+      "sha256": "a1cb432b404b8e461622e72fc16c3be7c4a18296343929e3c4dc38bf93d53740"
+    }
+  ],
+  "issued": false,
+  "kind": "V37_INITIAL24_SCOPE_CONDITIONAL_RETIREMENT_DRAFT_V3_REVIEW_REQUEST",
+  "physical_model_accepted": false,
+  "resource_retirement_authorized": false
+}

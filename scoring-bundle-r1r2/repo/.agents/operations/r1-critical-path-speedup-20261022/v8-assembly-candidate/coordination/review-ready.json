@@ -1,0 +1,13 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_assembly_candidate_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/v8-assembly-candidate",
+ "pins_sha256": "2420b59373258fdd6b93b60551b3793f00f9497d3a96d1f282bf70768bd248d8",
+ "requests": [
+  "code review: build_v8 (L1 manifest diff, L2 draft 11-leaf diff, L5 resource rebinding), check_u2, repin_inventory",
+  "note two reuse corrections vs 4e8ca557 (U1 extra binding leaves; U4 label-bound cannot be byte-reused)",
+  "reviewer-owned once acceptable: resource review, calibration approval re-issue, retention/preparation reviews",
+  "decision: whether a v8 chain binds the v7 terminal record (FAILED_V6 notes)"
+ ]
+}

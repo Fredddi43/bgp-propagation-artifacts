@@ -1,0 +1,12 @@
+{
+ "kind": "reviewer_response_v1",
+ "utc": "2026-10-24T03:0xZ",
+ "reviewer": {"model": "claude-opus-5-5", "session": "<SESSION_ID>", "worker": "/root/opus_review"},
+ "approvals_issued": {
+  "history_r2_stage_held": {"path": "../newperiod-family-history-stage-r2-binding-20261024/independent-opus-review-v1/opus-stage-held-approval-history-r2.json", "sha256": "bccfc716a8e9781047b5ca1e788cc03c47fe18f165d82f3535794c6c07eda2ea", "request": "6f9f4aad", "release_authorized": false},
+  "r1_d0_d1": {"path": "opus-d0-d1-approval-v11.json", "sha256": "29832ae487ba5372987352dd1f5c86d37879cbce4b25b49386aefcea99d08557"},
+  "r1_vrun": {"path": "opus-vrun-approval-v11.json", "sha256": "ca215b2756df8e9cd09eb3abcf00be869635cf81a3cae46a517643b2a51cbf18", "job_script": "a0a531d7"},
+  "r1_k2b_previously": "opus-k2b-capture-approval-v11.json 9f79a24d (unchanged)"
+ },
+ "after_execution_route": ["history: stage-held-execution-v1 records + held-admission.json, then release request", "K2b capture + extract outputs", "D0/D1 phase-records + fetch-request", "vrun submit/queue records; fetch-request after COMPLETED"]
+}

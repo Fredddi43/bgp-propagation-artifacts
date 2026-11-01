@@ -1,0 +1,7 @@
+{
+ "authorizes_nothing": true,
+ "kind": "review_ready",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt3-diagnosis-r2",
+ "pins_sha256": "da1c37fc1faa906501e667ddd6b1907d909d4092b9207d2fe5a91f3eee533bff",
+ "requested": "code review of the log-only capture r2 and, if passed, an exact once-only capture approval (scope v2)"
+}

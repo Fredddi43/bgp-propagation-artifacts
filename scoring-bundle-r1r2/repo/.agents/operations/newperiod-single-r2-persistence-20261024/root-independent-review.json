@@ -1,0 +1,51 @@
+{
+  "kind": "independent_single_R2_primary_scores_persistence_code_review",
+  "verdict": "PASS_CODE_ONLY",
+  "reviewer_worker": "/root",
+  "reviewer_model": "Codex",
+  "author_worker": "/root/deadline_audit",
+  "reviewed_utc": "2026-10-24T05:42:43.120081+00:00",
+  "readiness_sha256": "b9f053d71ed2b5dddbc4b5fce6b579cf89c51c51b814323c8a64db4dd8166c62",
+  "files": {
+    "README.md": "c2279b87e50c0f9db38c5b6feb5c549a3be1d2a7c7e9e3712776a0d16594399b",
+    "bootstrap.py": "68c598c3648e3d167dc2cd4508273222a9b6b3689a16b104ce1ac6bf4c92af61",
+    "build.py": "30d95901a79a69fc07f602fe9ac63efe376a0ecb046ba490ef08bad725ab133b",
+    "client.py": "2c7f3fbfdb6992fbe3e0ac1bd5df5d9309ac87ccc6aed9a45e90f09f70cc2f9c",
+    "components/baseline/consumer.py": "cd2a20467fbc8c77f981a6c3e0b4c5f5cd77b6b5cf38fa315d9ccabb2898aa71",
+    "components/baseline/reviewed_membership.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+    "components/baseline/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "components/composition/components/count/evaluate.py": "52ad01ae9b7b1c0e3bf7fda4261672540dee282c91ebd18bae5c7ddf7a20c625",
+    "components/composition/components/membership/consumer.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+    "components/composition/components/membership/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "components/composition/components/stable/consumer.py": "deb124b1931cfa36f0dff0fdc3a2a4d592edbd2147c0d662e44986c09aabb712",
+    "components/composition/components/stable/reviewed_membership.py": "5cd8c4720675273f232940d39b3dfe7bbdc7a1a72d7c6b21b24f3823575fbfde",
+    "components/composition/components/stable/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "components/composition/compose.py": "b4952f08025194700f8612771561aada3c37fe25feefa18e534154e8e59bebfe",
+    "components/origin/consumer.py": "43585d446b35f2c9c6cf15029117ac72eba91b51dffcad25b53f0cf440f5482f",
+    "components/origin/reviewed_membership.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+    "components/origin/reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "pins.json": "2e438517d9d0ed58ab7c626f3624bd48ea1bddacf8ac38b5ec30a1d6b87d3ca9",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "runner.py": "cf90e07d314c481849f22297d3a6815de5b6fa7aded60cd5797810c654f913df",
+    "runtime_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "test_bootstrap.py": "da9682cd5f9ca29e844179bdbabbfe7c82d13f821a0eb1de0322b999a53c53a3",
+    "test_persistence.py": "b074756036382c3b4df5810c9126bb8c45253825c6a49bd481c9c533f07cd0c7",
+    "test_transport.py": "93c7da803470bb1894f23d7beb886010601d926af663b0cac767768387449bdb"
+  },
+  "tests": {
+    "passed": 25,
+    "seconds": 124.15,
+    "command": "PYTHONPATH=src .venv/bin/python -B -m pytest -q -p no:cacheprovider .agents/operations/newperiod-single-r2-persistence-20261024/test_persistence.py .agents/operations/newperiod-single-r2-persistence-20261024/test_transport.py .agents/operations/newperiod-single-r2-persistence-20261024/test_bootstrap.py"
+  },
+  "findings": [],
+  "evidence": [
+    "17 predecessor files including all numerical components/pins remain byte-identical; runner/client/bootstrap deltas limited to identity exclusion, exact new source pins, sidecar hook and complete output accounting.",
+    "Hook acts on private evaluator copy, invokes original contrast function once before serializing existing score objects, restores function in finally and does not recalculate metrics or open labels again.",
+    "Genuine original full400 fixture proves identical complete result and original output bytes including fixture-controlled marker; sidecar retains all56 primary identities and exact original arms/rows.",
+    "Sidecar fixed path, exclusive nofollow creation, streamed hard byte cap/fsync/hash; partial failures retained, no success receipt and no retry.",
+    "Six-output-file plus access-log reservation checked by client/runtime/execute before actual label opening; fresh original namespace and original source/read/runtime guards preserved.",
+    "Real isolated execution and unchanged transport flow tests pass; invalid identities, path, reservation and self-review rejected."
+  ],
+  "actual_execution_authorized": false,
+  "scope": "Prospective alternative wrapper only. Actual final R2 plan/source closure/read inventory/output and memory reservation require independent admission before the single authorized evaluation. No installed frozen source or actual outcomes changed."
+}

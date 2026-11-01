@@ -1,0 +1,8 @@
+{
+  "files": {
+    "capture.py": "1e33994fd2a5ec2618815d0071f2a950da623126df2fb7f12c5d662bfbd45031",
+    "request.json": "541e7d43fecb4c5a201e32c99aa4fb1190caf40869ecbd9a09ddc84d4d0210fe",
+    "test_capture.py": "126065a5cbb1708eb0c0c76d0af4c1bcaf637e26aca5cdc781790d76b34306df"
+  },
+  "scope": "Read only collector/ts from all770 exact already admitted source files; output violation refs and booleans only, <=1MiB. No detector, source modification, retries or event columns."
+}

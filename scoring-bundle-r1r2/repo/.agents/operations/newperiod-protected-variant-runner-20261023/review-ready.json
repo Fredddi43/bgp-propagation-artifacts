@@ -1,0 +1,17 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "8fbb47b9ceaa3c0711d916bc21933cbfbe712076a25d4e5a133c25deb77e8948",
+    "build_package.py": "7c3a2703ee65627e1d8534d257d3e1752da0bb14d4efe338f92b2279bcfc19d9",
+    "controller.py": "15cce3f4a49de73a63b46321d5c3dbe203ae4b6d9a4cf22f931b602c451c50be",
+    "producer_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "runner.py": "c07f57c3f966ad5ef84d825ba8434ad98afa6b24921de2e29edbb3dc99a4aa81",
+    "test_runner.py": "144aab68bb069fe0672d9b8b653808fb3f892f94f51f2ccea0e7b71eb0a768c6"
+  },
+  "kind": "newperiod_protected_variant_runner_code_v1",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 26
+  }
+}

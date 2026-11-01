@@ -1,0 +1,26 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "PAPER-LIMITATION.md": "bea755337e22ec6a2319a8f4c314b025fecae529ccece1498ba8574744e4e78b",
+    "REVIEW.md": "eb4de29ebce85d362091604121502d9a764c569e7e2b983746c77c344f77b3cb",
+    "identify.py": "3674bbf24dd3ebd3b1f31a60214e9bd012de15badd38b77c9f876892fb95996f",
+    "inputs.py": "c63c50eef72bed64eb3d8e71f86d7592de9004c2f46d6014d977f8cf842e20da",
+    "pins.json": "fedab5b17d6dc214ddadc16b13b44f864fa57c1dde9d126c1b9362221fcf359c",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "reviewed_supervisor.py": "dd8ff4b1f3f7d0973cbf699a4c5cd3efedc75734693f81ca2d3d08d1a3d91d7c",
+    "run.py": "522572187d31c06a4599603d8efee06d805ce248183e368b81954c6622502ed9",
+    "source/bgbench/__init__.py": "58ea62cf6617a1065c6add8b8202ad0f43243ff3104ee5d3cc2754e1728ba113",
+    "source/bgbench/config.py": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab",
+    "source/bgbench/identifier2.py": "76131cc0da3c84555c678a1c5f0ca5335ac431b9e04592d90b9eefdf68f76600",
+    "test_boundary_parity.py": "409e5d6ddc78f3760e84b26c5feb2cca99fd06a8bb99212cc4a580bbcd9aad1e",
+    "test_inputs.py": "e5d2a87117d33f038d0a0f7f8538a7d35723c21b3867fecac3b6cf506a514148",
+    "test_qualification.py": "e5562701cb111345c32232b3b18d422d6f662228dddd1af79791c6a0e998016d"
+  },
+  "scope": "Original loader parity: keep all archive rows, remove only incorrect filename-day timestamp guard, retain collector/null/source admission; fresh v2 namespace. Actual diagnosis and recovery authority separate.",
+  "tests": {
+    "passed": 24,
+    "seconds": 40.98
+  }
+}

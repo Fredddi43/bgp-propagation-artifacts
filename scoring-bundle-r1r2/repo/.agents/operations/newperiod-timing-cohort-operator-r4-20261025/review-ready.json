@@ -1,0 +1,40 @@
+{
+  "author": "astra-h3t",
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/REVIEW.md",
+      "sha256": "5ced890313d1789f26cb9e1b9cbe61b388ab13d588a5a4c3ef069ec0943b8ac8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/cohort-root-authority-template.json",
+      "sha256": "811dd4d6068300a6c07dd026b0101484a4f9ee85a2d03b0460f18a575d160edc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/dry_run.py",
+      "sha256": "6d54687c0b15e1384d71376f3e49348d4d5c12fa81b5750b246a0953206f02b8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/operate_cohort.py",
+      "sha256": "6438fbda68567e660c51349e931a1170eb0a8ff8ba00ff327c262f166acc4152"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/test-run.txt",
+      "sha256": "5efcd8bf236642ec5a7b46ce829c2ed5ac9b8a53d893c290f62d0dea135982c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/test_operate_cohort.py",
+      "sha256": "5fc5d2a32f204dac73483ee3cb996174202b6181035492e513bf271cc7562f5e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/test_regressions.py",
+      "sha256": "c41817c1d65973cc44721a19e67a9d7775d70d5e3dea8f6ade2126e88be28779"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-timing-cohort-operator-r4-20261025/test_wake_posts.py",
+      "sha256": "2e1a63aadffb7e4454e08dc254191175b28d83bdf421ebe8ee32361390c8f993"
+    }
+  ],
+  "tests": "37 passed",
+  "dry_run": "real r4 consumer of filled actual template in TemporaryDirectory PASS; zero remote actions",
+  "execution_authorized": false
+}

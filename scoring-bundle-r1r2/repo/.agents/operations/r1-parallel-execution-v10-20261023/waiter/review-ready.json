@@ -1,0 +1,12 @@
+{
+  "actual_launch_binding_pending": true,
+  "files": {
+    "PENDING.json": "960ae6ea307dae9675585c4562714736e003f4a85ad8213e4298f3a4f0808936",
+    "eval_status.sh": "2f2afa8778b572fc082b8e1d59450828a9a2fc1700cfd9aa1e22ad3e1f852a3d",
+    "test_wait.py": "07e10eee63285eeda922a64539f1449a0040acc2b3d19f724aa9a2cdc2bf92b3",
+    "wait.py": "e02587342aaf3c18768d354228ffbb646ea8aacdd6a285363f0ee132c7435f31"
+  },
+  "kind": "r1_v10_metadata_waiter_review_v1",
+  "started": false,
+  "tests_passed": 7
+}

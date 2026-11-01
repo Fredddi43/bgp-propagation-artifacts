@@ -1,0 +1,56 @@
+{
+ "D1_D9": {
+  "D1": "gate-control-v1 + all v1 records untouched (builder only reads local v1 packet bytes, pins asserted)",
+  "D2": "gate_execute/launch/supervise/run.sh: exactly one line each, gate-control-v1 -> v2 (test: line-level diff)",
+  "D3": "fsize 268,435,456 -> 4,294,967,296 (= A); other resources identical (asserted + tested)",
+  "D4": "transport guard (before root.mkdir() AND before launch-started.json): os.stat(spec access_log) regular and st_size + 64 MiB <= spec fsize, stat only. Measured log 1,489,366,721 + 64 MiB fits 4 GiB; would refuse 256 MiB (tested).",
+  "D5": "plan 99626478 = c3226e28 re-serialized exactly as bind.py (round trip byte-exact) with ONLY out -> gate-control-v2/outputs/input-gate.json (tested). input_gate reads plan.out only in preflight (171-173) and write (432-437); the witness-scope check (263) names only the witness dir, so no witness/A evidence references the gate output.",
+  "D6_D7": "authority aa686a13 over plan 99626478; spec 04982034 = v1 spec with only root/resources.fsize/files/launcher/stage refs moved (asserted); approval template 04dd47bf; request template 0fc4bc5b; waiter b8d6adf3 and capture 09f4c5a3 = a637c93f / 7f800763 with ROOT -> v2 only (tested); new root once-authority + fresh df at execution.",
+  "D8": "temporal B adopts fsize >= 4 GiB and the same log-size predicate (temporal B design pending; this rule is part of it).",
+  "D9": "7 tests: predicate refusal; local EFBIG reproduction (errno 27, 0 bytes appended); one-line diff proof; plan derivation proof; reviewed launch.check on the v2 package; tools ROOT-only delta; reproducible build. Mutations: mutation-proof.txt."
+ },
+ "build": {
+  "approval_template": "04dd47bf497d063520fe0ba614bc56a448ed166919ae6534757275f38b70ddf4",
+  "authority": "aa686a136049fea59ab58908c2d47abf9f32695b095eea10fb5cee76a212b368",
+  "code": {
+   "gate_execute.py": "b646bab1d8a7fbe12ed213ef4cbb260cf562357b05f185ed5880caa56452a7d5",
+   "launch.py": "d280c8ec95671f7c82d7d08b4d45ab14109342f54ce8168dd4542ea8c629dee0",
+   "run.sh": "f613aa9ee59db029a20c164d11250566e080fb2a599a84ba6116ec9178a05dfb",
+   "supervise.py": "c3624fa1b506ad5389ce6d5df7ba7fb3eeb9d02007d9c15461b261d606ff3cda"
+  },
+  "plan": "99626478cee760d85c40cd378b0aa5f8b4e8e6660ea22c023f6fd011ff265864",
+  "request_template": "0fc4bc5bd30073588f189b8ffe3a27b9eee687a524eeb6fad2160538d2ce2fb0",
+  "spec": "04982034eca3b35ae223d3f5a248fa7090f6cdd0043dd43d39a30b4ad61608bb",
+  "tools": {
+   "outcome/capture.py": "09f4c5a346982e2ad3a842c71c1a68353b4fb17d49be5e4bb9984bc40169297d",
+   "waiter/wait.py": "b8d6adf3480e1913ccb4202914771fc67449e29b78f71aab67ae2170c11bdde6"
+  },
+  "transport": "7fb66caf44dd25dbef13ac5318b434fe6f44c344862b8ff0d777bb136e042636"
+ },
+ "dir": "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/rexact-v3/gate-phase-core-v2",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "execution_steps": "same as v1 (55ef R-step approval/review on the v2 package; root gate authority aa686a13 + transport/request.json + once-authority with fresh df; stage once, launch once; waiter; capture once). New records under packets/core-gate-v2/{execution-v1,launch-records,waiter,outcome}.",
+ "files": {
+  "build-result.json": "412115fbfffe6fab1c1dff80e3924e702a0c09c5b005cf4c6e5f5ab04089ece7",
+  "build_core_b_v2.py": "463d164349e785b28c6a929dc253881d1f42aec35bfb8729de72ddb8de003667",
+  "mutation-proof.txt": "fec0bb53bba953894c775273cf2b68c9e7a09303b73f3558181be5f95a905459",
+  "test_core_b_v2.py": "71022948e85851a3d2a2a0fd3b3798ac3ad95b413c7868f27351a7bc89533303"
+ },
+ "kind": "rexact_v3_core_B_v2_corrective_review_ready_v1",
+ "packet": "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/rexact-v3/packets/core-gate-v2",
+ "packet_files": {
+  "outcome/capture.py": "09f4c5a346982e2ad3a842c71c1a68353b4fb17d49be5e4bb9984bc40169297d",
+  "package/authority-gate.json": "aa686a136049fea59ab58908c2d47abf9f32695b095eea10fb5cee76a212b368",
+  "package/execution-spec.json": "04982034eca3b35ae223d3f5a248fa7090f6cdd0043dd43d39a30b4ad61608bb",
+  "package/gate_execute.py": "b646bab1d8a7fbe12ed213ef4cbb260cf562357b05f185ed5880caa56452a7d5",
+  "package/launch.py": "d280c8ec95671f7c82d7d08b4d45ab14109342f54ce8168dd4542ea8c629dee0",
+  "package/plan-gate.json": "99626478cee760d85c40cd378b0aa5f8b4e8e6660ea22c023f6fd011ff265864",
+  "package/run.sh": "f613aa9ee59db029a20c164d11250566e080fb2a599a84ba6116ec9178a05dfb",
+  "package/supervise.py": "c3624fa1b506ad5389ce6d5df7ba7fb3eeb9d02007d9c15461b261d606ff3cda",
+  "root-ready/execution-approval.TEMPLATE.json": "04dd47bf497d063520fe0ba614bc56a448ed166919ae6534757275f38b70ddf4",
+  "root-ready/request.TEMPLATE.json": "0fc4bc5bd30073588f189b8ffe3a27b9eee687a524eeb6fad2160538d2ce2fb0",
+  "transport/transport.py": "7fb66caf44dd25dbef13ac5318b434fe6f44c344862b8ff0d777bb136e042636",
+  "waiter/wait.py": "b8d6adf3480e1913ccb4202914771fc67449e29b78f71aab67ae2170c11bdde6"
+ }
+}

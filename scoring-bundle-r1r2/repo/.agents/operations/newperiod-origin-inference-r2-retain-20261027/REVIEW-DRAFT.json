@@ -1,0 +1,25 @@
+{
+ "changed_vs_original": "ZERO lines in runner.py or any pinned sibling (reviewed_runner.py, reviewed_family.py, reviewed_baseline.py, reviewed_helpers.py, pins.json, test_inference.py all byte-identical; runner sha stays af8c03eb979851a7fe5caa5207f13cae5d5222a48376363793f56962ee8bbd88). Added only: reviewed_membership.py (2f40bf28, the sibling reviewed_family.py:12 pins but the original dir lacked) and test_retain_population.py (e536e747, ROOT-decision-B population-check test).",
+ "checks": "Original 17 tests pass; identical 17 pass against the successor; +3 new retain-path tests pass (20 total). Full pin inventory verified: RECIPE 6d851282 == the recipe construction/fit use; all 13 pins.json sources hash-exact in the worktree AND at git 6bebfc7c^ (staging base); cluster read-only (<BATCH_HOST>): all four origin-construction-v4-20261026-{valid,invalid}-d{30,60}/stage/family carry the retain bytes family.py 1f8bd91c, adapter.py 4558c74b, reviewed_build.py 32c5b92a; real retain dev manifests (valid-d30/d60) show events=1743 + excluded_inputs=1 technical_failure (all six cohort keys present) = projection population, the exact shape runner.py:83-86 accepts.",
+ "files": {
+  "newperiod-origin-inference-r2-retain-20261027/runner.py": "af8c03eb979851a7fe5caa5207f13cae5d5222a48376363793f56962ee8bbd88",
+  "newperiod-origin-inference-r2-retain-20261027/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+  "newperiod-origin-inference-r2-retain-20261027/reviewed_family.py": "7234a558c8430c38252b93cf11f5ddbaad9be0cd99001eec7c75f835db921f4a",
+  "newperiod-origin-inference-r2-retain-20261027/reviewed_baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+  "newperiod-origin-inference-r2-retain-20261027/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+  "newperiod-origin-inference-r2-retain-20261027/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+  "newperiod-origin-inference-r2-retain-20261027/reviewed_membership.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+  "newperiod-origin-inference-r2-retain-20261027/test_inference.py": "8c2c0035897d06163f255366f7f78a7ee4a893daf3bb1d16859d700e99824de4",
+  "newperiod-origin-inference-r2-retain-20261027/test_retain_population.py": "e536e7475c97832bfa0a792b2c99685d563866e86337088b26ba8780195448bb"
+ },
+ "kind": "G2_ORIGIN_RETAIN_RUNNER_SUCCESSOR_DRAFT_REVIEW",
+ "packet": "<REPO>/.agents/operations/newperiod-origin-inference-r2-retain-20261027/DIFF.md",
+ "premise_correction": "q9's pin-breakage catalog (qwen/q9-g2-templates-b/REPORT.md risk 1) claimed the frozen origin runner pins old family/adapter bytes and would refuse every retain arm. Refuted by exhaustive inventory: the runner chain pins ONLY its local reviewed siblings, RECIPE 6d851282 (which retain also uses), pins.json repo sources, and reviewed_membership.py. None is changed by decision B. retain changes only construction artefacts; runner.py:85 already reads dev events + excluded_inputs, exactly like family.fit_cell (family.py:135-138), which the real retain fits pass. Note the fits themselves stage family.py aa7f633d + adapter v2 67ae8340 (fit_bypass.py overrides only the adapter pin); the retain bytes 1f8bd91c/4558c74b are construction-only, which is sound because the retain hunk lives in builder() and fit_cell never calls it.",
+ "practical_consequence": "Since the successor is byte-identical, the G2 spec may keep using newperiod-family-inference-20261023/runner.py (af8c03eb) OR this dir interchangeably; g2templates.py PINNED['origin']['runner'] and templates/origin.json need NO change. A distinct successor with different bytes would needlessly invalidate those pins and the packet's operational_files.",
+ "reviewer_model": "claude-sonnet-5-5",
+ "reviewer_worker": "qwen-origin-successor-author",
+ "risks": "First real execution of a retain arm is still untested (origin fits not yet staged/run; G2 source tree newperiod-g2-inference-v1-20261027 is not on the cluster, so pins.json bytes were verified in the worktree and at git 6bebfc7c^ instead of at a staged root). invalid-d30/d60 assembles have not produced development_manifest.json yet, so the retain cohort shape was verified only on valid-d30/d60. The real projection's valid_family_branch (fit_twenty assumed) was not read (172 MB).",
+ "scientific_change": false,
+ "scope": "retain-world successor audit+copy of newperiod-family-inference-20261023 (origin 40 arms) after root science decision B (family_retain 1f8bd91c / adapter_retain 4558c74b)",
+ "verdict": "PENDING_ROOT"
+}

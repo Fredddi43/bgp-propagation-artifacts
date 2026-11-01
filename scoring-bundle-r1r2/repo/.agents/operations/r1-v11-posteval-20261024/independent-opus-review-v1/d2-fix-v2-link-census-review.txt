@@ -1,0 +1,63 @@
+INDEPENDENT REVIEW: d2-fix-v2 link census
+Packet: review-ready 31f50f22; tool link_census.py c3c4e3b7; tests 9a3b62cb; payload 6a1ec366.
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+VERDICT: CHANGES_REQUIRED. No approval issued.
+
+BLOCKING
+B1. The claimed "3 tests pass" is false. On a byte-identical isolated copy, with the repo venv, the result is
+    1 failed, 2 passed:
+      FAILED test_link_census.py::test_remote_reports_regular_targets_in_root_and_flags_the_rest
+      subprocess.CalledProcessError: ... returned non-zero exit status 1
+    Causes, all in the test:
+      (a) The doc passed to REMOTE has no "hop_cap", so int(x["hop_cap"]) raises KeyError.
+      (b) root=str(tmp_path/'root') has no trailing "/", so `assert root.endswith("/")` fails.
+      (c) The test asserts out['targets_regular_in_root'] and out['target_bytes']. REMOTE emits neither. It emits
+          entries, bad, summary{d30s,d60s}, hop_cap, root, max_hops, distinct_target_dirs.
+    The REMOTE path, which runs on the host exactly once, is therefore untested.
+    Fix: make the test match REMOTE as written, or REMOTE match the test, then re-run.
+B2. Missing coverage. Add synthetic cases for:
+      - a chain longer than HOP_CAP (expect "hops" in bad);
+      - a link cycle (expect "error" ELOOP or "hops" in bad, never a hang);
+      - relative link text;
+      - a d30s/d60s split, so summary files/bytes/max_bytes are asserted per horizon.
+B3. Chain containment. I asked that no hop leave the root. REMOTE checks only the final realpath. Record each hop
+    target ("chain") and add a bad reason "chain_outside_root" when any hop's absolute path is outside root.
+    If a deliberate design allows an external intermediate hop, say so explicitly in REVIEW.md.
+
+VERIFIED OK, keep as is
+  - payload() is bound to capture e5e08ddd, plan 6e18854b and census 7b746087. It is exactly the 7086 sorted
+    not_regular paths; each is a plan tensor path with lstat type other. The payload test passes.
+  - REMOTE is metadata only:
+      * it uses lstat, readlink, realpath and stat;
+      * it opens no file, reads no content and writes nothing on the host;
+      * it asserts the user (<USER>), the host (<BATCH_HOST>) and the -I -S flags.
+  - The interpreter is the reviewed base python3.12 (same as census.py, stage_code.py and stage_vrun.py).
+  - It makes one attempt: exclusive intent/result/output, and the output-exists check refuses a second run.
+    The refusal on any bad entry happens after the output is preserved.
+  - checked_approval excludes the author sessions and workers and binds scope, tool, payload, attempt_limit 1
+    and all four read/write flags false. Test 3 passes.
+
+AFTER THE FIX: route the new review-ready (tool/test/payload shas, actual test output). The approval binds the
+exact new tool sha and payload 6a1ec366, if the payload is unchanged. The d2 change that accepts exactly the
+resolved links, and the D2 sizing, come after the actual link census is assessed.
+
+=== R3 RE-REVIEW (review-ready 143fac09; tool 6481cd4f; tests 2a690e6b; payload 4cc45b96) ===
+VERDICT: PASS. One-shot approval opus-d2-link-census-approval-v11.json ded3cf10 issued; the tool's own
+checked_approval accepts it.
+  B1 fixed. The test docs carry hop_cap 4 and a root ending in "/". The asserts use summary/bad/entries.
+     The exact author command, run in place, gives 5 passed. An isolated copy gives 4/5 only because
+     test_root_is_the_adapter_root_filter reads the sibling adapter-r2/run_adapter.py; that is not a defect.
+  B2 fixed. Tests now cover:
+     - a 7-hop chain over cap 4 -> ['hops'];
+     - a cycle -> hops, terminating;
+     - relative link text, accepted, with the chain resolved to the absolute target;
+     - outside, dangling and plain-file entries, each with its named reason;
+     - the d30s/d60s per-horizon summary.
+  B3 fixed. Each hop's normpath goes into "chain". chain_outside_root fires on an external intermediate hop, even
+     when the final target is in the root (tested).
+  The payload changed to 4cc45b96 (recomputed: 7086 paths, ROOT_FILTER root, hop_cap 4). It is still bound to
+  capture e5e08ddd, plan 6e18854b and census 7b746087.
+D0/D1 fetch execution record: classd-host/d0d1-fetch-record.json.
+  - It binds approval c7e1fab0, command capture_metadata.py with the exact request, rc 0 and output e5e08ddd.
+  - It is consistent with my content check. The missing-records item is closed.

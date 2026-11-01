@@ -1,0 +1,81 @@
+{
+  "author_role": "astra-h3t",
+  "authorities_consumed": 0,
+  "current_capture_records_absent": true,
+  "execution_authorized": false,
+  "false_once_rejected_by_real_operator": true,
+  "false_release_acceptance_rejected_before_output": true,
+  "frozen_scope": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v3-v36-20261026/mixed7-d30-exact-scope.json",
+    "sha256": "04fec9af2c17abcb786c2047c8cb46640304317f394a1c5a7509a8c8a6e60b80"
+  },
+  "full_positive_operator_check_passed": false,
+  "kind": "AUTHOR_FIRST_V36_ACTUAL_BOUND_CAPTURE_PREPARATION",
+  "operator": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v3-v36-20261026/capture_once.py",
+    "sha256": "10ee4697cb9c25e747800e497b7cf51b8fc902d1adc667f50123ed885485fc41"
+  },
+  "phase_policy": "Exact v36 until full first-group outcome/allocation acceptance. Remaining groups successor separately reviewed underv37. No retries or duplicate capture.",
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/author-checks.json",
+      "sha256": "393bc5b1cbcb96af9d42db7d08fe93ced3427f8505d52d423aacc9e6999f66e0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/author-once.FALSE-TEMPLATE.json",
+      "sha256": "7857cb45c15ae170ac98eb3d578ca045bc461829f8b9b0ed60b99106d8694657"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/author-operation-review.FALSE-TEMPLATE.json",
+      "sha256": "7261de9cc5426fe45f97124384b36eb8b3dfa45ca0e2e5d69077e2b7e071eab3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/author-release-acceptance.FALSE-TEMPLATE.json",
+      "sha256": "b79150a55537e43f63d132940b6a8c526613700fe6abdaff40fbaf4967f15525"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/finalize.py",
+      "sha256": "7bef989d05777cef6f30f8eb023ccb2a74f6219a80a96da3a52c9ca9e138dab0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/request.REVIEWABLE.json",
+      "sha256": "1f2b3f872a7316dcb42715fbecbf6c97493b9130baaaab321bb7bba5146e2e43"
+    }
+  ],
+  "protected_payload_reads": 0,
+  "release_acceptance_pending": true,
+  "release_actual_acceptance_request": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/AUTHOR-astra-h3t-H3-FIRST-V36-RELEASE-ACTUAL-ACCEPTANCE-REQUEST.json",
+    "sha256": "2fb9ece52e26c85751cfc5a03bacf9f0c807b9b7da835ad261a1a1fb37c27644"
+  },
+  "released": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-release-mixed7-d30-actual-v2-v36-20261026/released.json",
+    "sha256": "4c2ad4c25a3615281fdd9f5c0f4240e9d758bfd3f87380f13c3bbdc86eeb5e7d"
+  },
+  "remaining": [
+    "sol-h3t genuine releaseactual acceptance4c2ad4c2; author finalize.py fills only that ref into fresh sibling",
+    "sol-h3t exact final capture request/scope/resource/operator review",
+    "ROOT reaffirms or freshly substantiates all-writer/site-diagnostic operating adoption, fresh six-dir controls and unconsumed once; real fullcheck and root detached capture once when terminal",
+    "Independent full14787/all33/exclusions/scratch/allocation acceptance beforev37"
+  ],
+  "remote_actions": 0,
+  "remote_source": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v3-v36-20261026/capture_remote.py",
+    "sha256": "a2f039f1e17dcccffb2e6d6f0210226c1822a25b8e94c682912f76ffe2582235"
+  },
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/request.REVIEWABLE.json",
+    "sha256": "1f2b3f872a7316dcb42715fbecbf6c97493b9130baaaab321bb7bba5146e2e43"
+  },
+  "scope": "Exact reviewed100own metadata files, per-file stat-reserved limits totaling159514624B,160MiB aggregate,4GiBAS,120sremote,128KiBprojection and one<=64KiBcustody append; all33 COMPLETED0:0/restart0 before any metadata payload read. No source/input-gate/labels/predictions/scores/event identity reads.",
+  "source_review": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-RELEASE-V3-CAPTURE-V3-V36-SOURCE-RESOURCE-PASS-session<SESSION_ID>.json",
+    "sha256": "4c6b3d5c4d14864e17ad5a03ea930f585a97c1117b671207587bdfeb066386e6"
+  },
+  "terminal_success_claimed": false,
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T18:26:34.598788+00:00"
+}

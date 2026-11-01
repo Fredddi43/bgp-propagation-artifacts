@@ -1,0 +1,30 @@
+{
+  "actual_results_read": false,
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    ".agents/operations/newperiod-paper-forest-20261024/MODEL-LADDER-GAP.md": "5d515d084f5780fa06217e5fe505cc0ee08479f31347f6d1354c654f6f158740",
+    ".agents/operations/newperiod-paper-forest-20261024/README.md": "9d0aa0ef7d0f3bd653cf060ca92bf3a68c0eed3ce0739ca92939fe373920a885",
+    ".agents/operations/newperiod-paper-forest-20261024/test_forest.py": "78d51c650fcd583e602c2fb2ab52e13cd40047869a8e9bf92e6c6f5261a883a8",
+    "scripts/forecast_report_forest.py": "b8bf56b7d86e75d963ab9bd604797ecde2f28a97a35bfef6f9896547cb6662fd",
+    "src/bgbench/forecast_report_forest.py": "4fd720cdf320429266d29695850423c4a231645a76126b5cc6d6c9ec6ca3c44f"
+  },
+  "independent_review": "pending",
+  "kind": "newperiod_F4_presentation_review_v1",
+  "plot": "/tmp/paper-forest-final-tests-20261024/test_actual_cli_and_acmart_pre0/rendered/f4-primary-ap.png",
+  "scientific_packages_changed": false,
+  "synthetic_preview": "/tmp/paper-forest-final-tests-20261024/test_actual_cli_and_acmart_pre0/rendered/preview.pdf",
+  "tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q .agents/operations/newperiod-paper-forest-20261024/test_forest.py",
+    "passed": 10,
+    "seconds": 68.85
+  },
+  "unchanged_references": {
+    ".agents/operations/newperiod-paper-projection-20261024/test_projection.py": "86e450aa94c873445b7e9a93da0252e3fd11733131e588652800b4eb095d528d",
+    ".agents/operations/newperiod-single-r2-execution-20261023/test_integration.py": "fa2d09e7730b37228e62d11963824221dc6ecdb415ce7d5f8744da0402501759",
+    "src/bgbench/forecast_custodian_eval.py": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078",
+    "src/bgbench/forecast_full_report_facts.py": "05931d95a98d284d8510c00d08f67f1a3076cc2eab4ff24873297c44645c9d85",
+    "src/bgbench/forecast_release_facts.py": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99",
+    "src/bgbench/forecast_report_latex.py": "b677c01751995377669e3ec9009c96b3396b1860c229ce31f698ee52cacff85f"
+  }
+}

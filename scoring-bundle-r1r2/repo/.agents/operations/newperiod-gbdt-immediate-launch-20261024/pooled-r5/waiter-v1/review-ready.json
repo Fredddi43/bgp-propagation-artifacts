@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root",
+  "files": {
+    "request.json": "3bef686750cd4dd3b9ed678fbcf26ee916e7ccb85a0d2ea2697b24993b3de82c",
+    "wait.py": "ad58b412b769e25549707961378c15e3df727812f81657d2fb1f464681da547e",
+    "test_wait.py": "3f508283745f286b87491383e53f44a3445da229b2091e803c54666d40fe012b"
+  },
+  "release_complete_sha256": "dba662657c4a6759c9a906cf7f686295d912ed5032e9e66b860f3b419fefee05",
+  "scope": "Exact singleton52477562 scheduleronly terminal identityboundwake. No payload/results/fitretry.",
+  "execution_authorized": false
+}

@@ -1,0 +1,117 @@
+\section{Return of the previous origin}\label{sec:recovery}
+
+We ask how the previous route returns after an invalid origin displaces a valid one.
+For identifier gaps of at least 15 minutes, the return shows more of its final set at 30\,s than the outward change.
+Its day-block intervals are above zero in 2022, 2023 and 2025.
+But most matched pairs are flips under one minute apart.
+In these flips the observed return set is larger than the outward set, and it shows less of its final set at 30\,s.
+
+\begin{table*}[t]
+\small
+\centering
+\caption{Matched outward ($O$) and return ($R$) transitions per year. Gap: time between the identifiers of the two events of a link. $\Delta\Jac$: paired difference of the 30-s \floor, $R$ minus $O$, with 95\,\% component-bootstrap intervals. These intervals treat links as almost independent, and the wider day-block intervals are in \Cref{tab:recovery-dayblock}. Return slower: share of links where $R$ has the larger $t_{90}$. ROV share: share of RoVista-measured AS--link observations that are RoVista-protected.}
+\label{tab:recovery-summary}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+year & \hd{retained\\links} & \hd{links with\\gap $<1$\,min} & \hd{$\Delta\Jac$, all links\\{[95\,\% CI]}} & \hd{$\Delta\Jac$, gap $\geq 15$\,min\\{[95\,\% CI]}} & \hd{$t_{90}$ p50 (s)\\$O$ / $R$} & \hd{return\\slower} & \hd{extent\\$R/O$, p50} & \hd{$|R\setminus O|/|R|$\\mean} & \hd{ROV share\\$R\setminus O$ / $R\cap O$} \\
+\midrule
+\csname @@input\endcsname generated/recovery_summary_rows.tex % primitive input: expandable inside the tabular
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% layout (round-3 reviews S6, second reviewer presentation): the pooled figure fig:pairs repeats Table 3 and moved unchanged to sections/app-tables.tex.
+\paragraph{Matched transitions.}
+Each outward transition ($O$) is a selected origin change in which an invalid origin displaces a valid one.
+From 2023 on, it comes from the catalogue population.
+In 2022, without catalogue labels, the outward changes come mostly from the label-free stratum, because the stratified sample holds only 96.
+% src: docs/paper/corrected-recovery-2026-10-16.json years.2022.pairs.exclude_reason null and full_selection_links_all_populations = identified_links = 1,999;
+%   years.2023--2026.pairs.exclude_reason "rpki_invalid_sample" (4,940 all-population links against 3,141 identified in 2023);
+%   paper/generated/propagation-facts.json years.2022.stratified.invalid_displacing_valid 96, years.2022.invalid_stratum.invalid_displacing_valid 2,593;
+%   recovery_population.tex 2022: 2,710 selected outward changes (round-3 review NEW-5).
+We pair it with the return transition ($R$) that restores the previous origin within 24\,h (\Cref{sec:data}).
+Each pair is a \emph{link}, and we measure both directions with the same rule.
+
+For each collector, peer and prefix, we take the first observed transition from the preceding origin to the target origin at or after its identifier.
+We keep the ASes on the paths of that transition, with a clock that starts at its first observation.
+We do not count ordinary announcements of the valid origin before its return, so routes that never left do not inflate the return footprint.
+
+We exclude links with missing source files, no qualifying transition, under two hours of follow-up, or a return before its outward change.
+Of \num{20464} identified links, \num{20256} remain.
+% src: paper/generated/recovery_population.tex (identified 1,999 + 3,141 + 5,429 + 6,689 + 3,206 = 20,464; retained 1,982 + 3,109 + 5,355 + 6,684 + 3,126 = 20,256;
+%   excluded 173 + 35 = 208). Corrected from 21,464, an addition error (round-3 review NEW-6 / X1).
+
+A return event can belong to more than one link.
+Intervals thus resample connected components of shared events, with 1,000 draws.
+Almost every component holds one link, so a revision analysis also resamples UTC days of the outward identifier (\Cref{tab:recovery-dayblock}).
+\Cref{fig:pairs} shows the pooled distributions.
+
+\paragraph{All links.}
+The mean paired difference in the 30-s \floor, return minus outward, is negative in every year (\Cref{tab:recovery-summary}).
+It is $-0.05$ to $-0.16$ in 2023--2026, with intervals below zero also under day blocks, and $-0.005$ in 2022, with an interval that includes zero.
+The return reaches 90\,\% of its two-hour extent later than the outward change in 53--63\,\% of links.
+The median return $t_{90}$ is 56.5--88.1\,s.
+The median ratio of return extent to outward extent is 1.06--1.54.
+The signs stay the same when we exclude links whose source windows cross midnight, where the daily history of a session resets.
+% src: docs/paper/corrected-recovery-2026-10-16.json years.*.same_day_sensitivity (-0.006 / -0.054 / -0.087 / -0.166 / -0.047; only 2022 includes zero)
+% src: paper/generated/recovery_summary_rows.tex t90 column, R values 87.6 / 88.1 / 79.0 / 73.6 / 56.5 (round-2 review N15: report 56.5, not 56)
+
+% layout: generated/recovery_gap_wide.tex is generated/recovery_gap.tex transposed by tools/recovery_gap_wide.py,
+%   with every cell copied verbatim (the script checks the cell multisets); generated/recovery_gap.tex is unchanged.
+
+\paragraph{By identifier gap.}
+Flips with an identifier gap under one minute are 55--65\,\% of links (\Cref{tab:recovery-gap} in the appendix).
+For them the paired difference is $-0.10$ to $-0.23$ with all intervals below zero, and the return is slower in 65--75\,\% of links.
+For these flips, the median extent ratio is 1.09--1.57, and one UTC day holds 24\,\% of the 2025 flips (\Cref{tab:recovery-dayblock}).
+
+Three reasons, which we did not test, can explain why the observed return set is larger.
+First, the return can start before the outward route has finished spreading.
+Second, ROV can keep the invalid outward route away from ASes that later carry the valid return.
+Third, path exploration after the withdrawal of the invalid route can add transient paths to the return set, which keeps every AS once observed~\cite{labovitz2000delayed}.
+Withdrawals also reach the collectors later than announcements (\Cref{sec:data}), which can delay the return.
+% round 5 (review-r5 W3, item 2; panel-r5 W7(c), W11): the larger return set is a descriptive, secondary result; "We did not classify
+%   what triggers each return, so these reasons are hypotheses" is folded into the first sentence ("which we did not test"), and the accumulation
+%   caveat is explicit (sections/03-data.tex: "The set accumulates: an AS stays in it once observed").
+
+Links with a gap of at least 15 minutes are 13--31\,\% of the total.
+For them the difference is $+0.03$ to $+0.13$, and all component intervals are above zero.
+Under day blocks, the intervals of 2024 and 2026 include zero.
+In each of these years, one UTC day holds many such links with a negative mean (\Cref{tab:recovery-dayblock}).
+A post hoc check, run for these two years only, gives a mean of $+0.09$ and $+0.10$ without that day.
+
+The median return $t_{90}$ of these links is 30--56\,s, against 55--186\,s for the outward change.
+Their median extent ratio is 0.95--1.26, closer to one than for the flips.
+In 2023--2026 its point estimate stays above one.
+The identifier gap is the time between two identified events, not a measured lifetime of the outward route.
+These ratios therefore do not rule out an early end of the outward change.
+% round 5 (review-r5 W3, item 2): the former clause "which an early end of the outward change alone does not explain" is removed; a long
+%   identifier gap does not show a long continuous exposure of the outward route. The leave-largest-day-out values above are a post hoc check
+%   of 2024 and 2026 only (panel-r5 W7(a), DA #13), not a robustness check of every stratum; their src is the comment below.
+% src: paper/generated/recovery_gap.tex; gap strata: scripts/paper_recovery_dayblock.py GAPS (< 1 min = [0, 60) s; >= 15 min = [900, 86,400) s).
+% src: paper/generated/recovery_dayblock.json years.2025.lt1min (links 4,306, max_links_per_unit 1,013); years.2024.gt15min and years.2026.gt15min
+%   (links 1,259 / 809, max_links_per_unit 116 / 107, mean_diff.point +0.0336 / +0.0616, dayblock_excludes_zero false). Dates and means of the
+%   largest day and the means without it: recovery_dayblock.json years.{2024,2026}.gt15min.largest_day (written by
+%   scripts/paper_recovery_dayblock.py since round 7, review-r6 W5 "generate the two-year diagnostic"; raw UTC day hijack_id[:8]):
+%   2024-10-17: 116 links, mean -0.5452, without it 1,143 links, mean +0.0924; 2026-08-01: 107 links, mean -0.1827, without it 702 links, mean +0.0989
+%   (the same values as the earlier read-only recomputation; every other field of the JSON is unchanged).
+% src: extent ratio >= 15 min, 2023--2026: 1.04 / 1.14 / 1.13 / 1.26 (recovery_gap.tex; recovery_dayblock.json median_ratio.point).
+% src (round 4, panel-r4 NEW-12): extent ratio >= 15 min, day-block CI 2023 [1.00, 1.09], 2024 [1.05, 1.26], 2025 [1.07, 1.18],
+%   2026 [1.08, 1.80] (recovery_dayblock.tex); Delta J >= 15 min day-block CI above zero in 2022, 2023, 2025 (same file), replacing "in most years".
+% src: return hypotheses: round-3 reviews NEW-7 (truncation, ROV, path exploration); ROV: "Overlap and ROV" below.
+% src: trigger classification of returns not done (docs/paper/camera-ready-20261030/reviews-20261030/RESPONSE-ROUND1.md "Not done")
+
+\paragraph{Overlap and ROV\@.}
+On average, 40--52\,\% of each return footprint is absent from its outward footprint.
+Absence from observed paths does not show that an AS lacked or rejected a route.
+The data therefore do not identify an outage in $R\setminus O$.
+
+We apply the RoVista rule of \Cref{sec:prop}, with the latest measurement up to the return identifier.
+Of measured AS--link observations, 36--43\,\% are RoVista-protected in $R\setminus O$, against 13--18\,\% in $R\cap O$.
+RoVista covers 61--77\,\% of them.
+
+The share in $R\setminus O$ is in the same range as among the carriers of ordinary valid routes in the frontier of \Cref{sec:prop}, 0.33--0.41.
+The low share is thus in $R\cap O$, the ASes that carried the invalid route.
+This fits ROV, but carriage and RoVista protection both measure reaching invalid prefixes.
+It does not show that a given AS filtered the route itself~\cite{li2026rscope}.
+% src: docs/paper/corrected-recovery-2026-10-16.json years.*.overlap, rov; generated/recovery_pairs.tex

@@ -1,0 +1,116 @@
+{
+ "kind": "native_vs_shared_history_revision_analysis",
+ "confirmatory": false,
+ "replaces_published_values": false,
+ "contrast": "online_history_native minus online_history (shared candidates), average precision",
+ "statistic": "event-macro mean AP difference; paired training-seed then incident-day-block percentile bootstrap, ordinary 95 %, unadjusted, descriptive (scripts/paper_month_boundary.py subset_contrast)",
+ "repetitions": 10000,
+ "rng_seed": 1701,
+ "source_sha256": "2fb112d73b158a0d329cc878d6ff8c931efcf06be735ad365f23af534f8186b0",
+ "results": {
+  "R1": {
+   "provenance": {
+    "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+    "per_event_sha256": {
+     "core-gbdt/core-v6b--c3_none_history-off_d30_seed0": "f00352fa23c447fc59fb62aa3027612a06a12fc69c545ed3675b57e6d6ebb8f2",
+     "core-gbdt/core-v6b--c3_none_history-off_d30_seed1": "863f42c93101d7698c2eb10868a5f194a1cb032d64a34fd67401dded82cd610d",
+     "core-gbdt/core-v6b--c3_none_history-off_d30_seed2": "b60c7b24bdd7a6c88951961e34aa7144e23ab8665a66b886d776f07fff9ebe07",
+     "core-gbdt/core-v6b--c3_none_history-off_d30_seed3": "11993b9f4dae1ce86563447f9b7130b2aa5ff12e231e8086cbeb4272fd658980",
+     "core-gbdt/core-v6b--c3_none_history-off_d30_seed4": "94b0dccaba8f807a6bd0f8dbd0f623283e432bc92b620add97a7576c6b27ef7a",
+     "core-gbdt/core-v6b--c3_none_history-on_d30_seed0": "7cb6d41ee59b8707b5064457b925c7e18609145335abb5e05dc6e5dd696be31f",
+     "core-gbdt/core-v6b--c3_none_history-on_d30_seed1": "271908f8b37ad3ed3bfc72bdf021309f2947c635fc99e3cbf00ef688b6fdc7e3",
+     "core-gbdt/core-v6b--c3_none_history-on_d30_seed2": "c3f67277afedc3204124f232c8a01eaaa275f25b74a0131f0d00365f16808c01",
+     "core-gbdt/core-v6b--c3_none_history-on_d30_seed3": "eb42975122baff864bf3207b799eb727487d14088dd7c3cdae425ff9038f74d1",
+     "core-gbdt/core-v6b--c3_none_history-on_d30_seed4": "40440723d05bf4dcd4c2c3a758d0a3b6f967f75ee3a5be487c299a642b7bbec0",
+     "baseline-d30/history-knn-mean_matched_d30": "ff5de65e533dbfec835a94609d7ce391e9bed012d3f0df1052254c35e74e1f44",
+     "baseline-d30/history-knn-mean_native_d30": "347a7a98b7ebd423e535b94be89d63a065823aa746bec2e0580a5cac0af84a12",
+     "core-gbdt/core-v6b--c3_sage_history-off_d30_seed0": "237b1ce4dd4ca48d12b58748b5d6a27c35f9f7eda965c528f3d43e1d27cff336",
+     "core-gbdt/core-v6b--c3_sage_history-off_d30_seed1": "d393ea52e629e387af6be753cb23da0ae9b4d8cd1938036f0580bf711fdfbcc3",
+     "core-gbdt/core-v6b--c3_sage_history-off_d30_seed2": "452e56277bdf06fddb750299b119bc3cba823dee29223d9b918c1901bb51d95a",
+     "core-gbdt/core-v6b--c3_sage_history-off_d30_seed3": "cb16e900326bef085f70cc471f2852d48a5b0ff1b57ab8f4a19d519c20b6e3ac",
+     "core-gbdt/core-v6b--c3_sage_history-off_d30_seed4": "80ebe6a347e0274bba7e69513fa2e88e730ce2ff21fa274e735c687a7fc1ecbc",
+     "core-gbdt/core-v6b--c3_sage_history-on_d30_seed0": "b4794e1c3a20f7ffecb07075452ece2ce4a28e53c50aa3179ea2840510ea9888",
+     "core-gbdt/core-v6b--c3_sage_history-on_d30_seed1": "d96dd59fa1e5b072560da1971518c03f262c52e128c3c67ec954d21b71512b3c",
+     "core-gbdt/core-v6b--c3_sage_history-on_d30_seed2": "ce7f40ee32f68675294f90046356a3351f29f767ddb0d662e93f9248f97b19c8",
+     "core-gbdt/core-v6b--c3_sage_history-on_d30_seed3": "a82f7026555dec7f7c2c4b08f02321b603f2b5419e19c62682e63be6707f4202",
+     "core-gbdt/core-v6b--c3_sage_history-on_d30_seed4": "784dae17ebe32f981673f4343ab01072c8bc55cbef49755d7b2a685443697478",
+     "core-gbdt/core-v6b--c3_none_history-off_d60_seed0": "f780c46642a6d67c58a07edc476c7ea6942d2179254f3bb738b8e60814a38ef6",
+     "core-gbdt/core-v6b--c3_none_history-off_d60_seed1": "3624f314ac8a92d28a0c50602a8f0a628afa17debff627b16cbe81265c04aca8",
+     "core-gbdt/core-v6b--c3_none_history-off_d60_seed2": "869bb9fc5e4f026573d45e550aac3e61a594469fea1e3a6bd6cf563a0745a500",
+     "core-gbdt/core-v6b--c3_none_history-off_d60_seed3": "d9c60a9233b81bc4739b03d52534a95bc46f1cbea029a58aa98bc83b64d795b9",
+     "core-gbdt/core-v6b--c3_none_history-off_d60_seed4": "42496c601f17ef29b8d78b2d5710585b77396c13025c249959509ff6d0899b3a",
+     "core-gbdt/core-v6b--c3_none_history-on_d60_seed0": "f33c677c61d09d15a1aeb1639c9853578fe64e372fae1b74baf55360967c35cf",
+     "core-gbdt/core-v6b--c3_none_history-on_d60_seed1": "81e201324f151208c55dc539633c7e6c67cd69a8628c5fb16b45bcb39ac688c3",
+     "core-gbdt/core-v6b--c3_none_history-on_d60_seed2": "d5201d5ceae108133f39310716c9dbcde3182d5f0f90862eb8d18eaee23fcc36",
+     "core-gbdt/core-v6b--c3_none_history-on_d60_seed3": "7044b37fea6bc49a4181b1682816c30843c7eabc0a6478e74242271444725ab9",
+     "core-gbdt/core-v6b--c3_none_history-on_d60_seed4": "447b6e9e9f3942ca8b2f96f2225c61ad3d8bdd84e9c4d04e76b97cbd7d512f89",
+     "baseline-d60/history-knn-mean_matched_d60": "8af0b15b394b4886c2e8cc14b7654bdce53fd59df44bdd338c8e47ca24536b4f",
+     "baseline-d60/history-knn-mean_native_d60": "22c682213023a151e0becf9784e2fc77ac0e17721a5efb4a2d31ec7da0551b97",
+     "core-gbdt/core-v6b--c3_sage_history-off_d60_seed0": "5d2e5563696693ce4a08835f8c3b7dbe9b7ff201ded8144cff043c0895c2770d",
+     "core-gbdt/core-v6b--c3_sage_history-off_d60_seed1": "2a11a68b014479f56345e80889ad6d93e3f3486f0acab6e4657216345f06e4cb",
+     "core-gbdt/core-v6b--c3_sage_history-off_d60_seed2": "85797bd307b50d82aade858705095ff88749ef8fb342ae187c54614ae5d10fac",
+     "core-gbdt/core-v6b--c3_sage_history-off_d60_seed3": "5e0629f2fb7a36ca96694b0926f587ca2412ce1fc378a337d5e8087b4d25d365",
+     "core-gbdt/core-v6b--c3_sage_history-off_d60_seed4": "2e00f73e529bdeafa52edb1fb6da9342232d3b102838626f993a63c3cabc5dab",
+     "core-gbdt/core-v6b--c3_sage_history-on_d60_seed0": "60369490185f4ff22b3d3c5a44c5884c4fe54aab9380ec5efaa0306441ee0da0",
+     "core-gbdt/core-v6b--c3_sage_history-on_d60_seed1": "49776612bd5fb44dba554055879ec2e2c909a98ceb0f6444926c7786554529f0",
+     "core-gbdt/core-v6b--c3_sage_history-on_d60_seed2": "1779eebc9464cbda143ffca5ca2d73178216217de596e97c977b0bced2916933",
+     "core-gbdt/core-v6b--c3_sage_history-on_d60_seed3": "fd62d2c492fc9c190a27d53ade339d1681e786ac8f5e8ecbed212cab02efc501",
+     "core-gbdt/core-v6b--c3_sage_history-on_d60_seed4": "f233ac0becec37fff72f638e1c226cbe26c6c4535e13fe52f989b8368a56b53f"
+    },
+    "arm_spec_sha256": "9a6d36e81dce9817bbd0e722c62197c0c02bc4989962e944380721526c35c09f",
+    "manifest_30_sha256": "45865cdf4a76884bd1b55e2da43bc9875bd7d62892a8117cc2c03539579dee1c",
+    "manifest_60_sha256": "f885a805deb61a17e295d4d93b2a41d51eea842a038c5965efa0f66eeaf1754d"
+   },
+   "30": {
+    "difference": 0.02910575343462343,
+    "ci95": [
+     0.026302164256655387,
+     0.03247302603318332
+    ],
+    "eligible_events": 2661,
+    "left_mean": 0.23569177677692968,
+    "right_mean": 0.20658602334230625
+   },
+   "60": {
+    "difference": 0.02656607841167874,
+    "ci95": [
+     0.023194887692250813,
+     0.030463590859648507
+    ],
+    "eligible_events": 2130,
+    "left_mean": 0.22481523757135166,
+    "right_mean": 0.19824915915967295
+   }
+  },
+  "R2": {
+   "provenance": {
+    "primary_scores_sha256": "af9656ac8e1961eccbda75c590e5c8361a640229127dc122e79611d0365cef59",
+    "primary_report_sha256": "849e064518d1aa7e0b1c61c4c5836acd75864de12dce0278dab75918493e9ac1",
+    "evaluation_window": {
+     "start": "2026-09-01T00:00:00+00:00",
+     "end_exclusive": "2026-10-16T00:00:00+00:00"
+    }
+   },
+   "30": {
+    "difference": 0.03009287955382403,
+    "ci95": [
+     0.025271478455811236,
+     0.03530625931895268
+    ],
+    "eligible_events": 1004,
+    "left_mean": 0.24516253145515363,
+    "right_mean": 0.2150696519013296
+   },
+   "60": {
+    "difference": 0.024464761354903664,
+    "ci95": [
+     0.019027509348674764,
+     0.03019577653559825
+    ],
+    "eligible_events": 842,
+    "left_mean": 0.2209486962979736,
+    "right_mean": 0.19648393494306995
+   }
+  }
+ }
+}

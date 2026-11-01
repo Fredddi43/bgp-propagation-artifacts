@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "/root/deadline_audit"
+  ],
+  "automatic_retry_authorized": false,
+  "coverage_admitted": false,
+  "files": {
+    "README.md": "47779688b691acd0f1e72a5ad8a0c3881c10efcbcf5fa4b2d9391cfd0d026bd4",
+    "build_request.py": "05e57c4c99f27678f6dc155ecb1a2cab9f2dc7927fd88f02eca931279722ec88",
+    "capture.py": "fe436ca4659f8fc13979dc3dd5c3909de913bce0148acfdaf450bb2205c24b62",
+    "files.json": "38cc998f4c633fb62daf778a824ca97676663fe308fed323a792724c0f2e96b8",
+    "request.json": "cf0999a953e3f7cafdf24136b5e99aa88634bdd5207364e5c79ad51f3f519add",
+    "scope-provenance.json": "7456e28c5802204f6ef2263f0b74efaf5cd8faf4017ae4fc5e612084a723ee24",
+    "test_capture.py": "41cb2e7dcb21b477aeb293b9cecca256809f6ddab38e6f77c0d91cc3e7a8a080"
+  },
+  "files_requested": 3923,
+  "kind": "count_special_receipts_capture_review_v1",
+  "tests": {
+    "passed": 8
+  }
+}

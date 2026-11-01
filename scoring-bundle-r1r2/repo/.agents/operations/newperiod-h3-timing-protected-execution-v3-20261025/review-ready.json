@@ -1,0 +1,1003 @@
+{
+  "author": "astra-h3t",
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/REVIEW.md",
+      "sha256": "9a2769cd645701c7c42ffe67ba2ee97cdd9f5deedccaccda40950f84d443c545"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/actual-dependencies.json",
+      "sha256": "7b07e02c77d9478bbaa71568e0ac68923ee5af9b17dedb433a25ffb3042e260d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/build_packets.py",
+      "sha256": "abfe867e51bc5ac5aad3b5fd28a6175f0948e2a79bb734ae6f69ee329eab4529"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/custody_scope.py",
+      "sha256": "f358466c2cafdeb59954bb804bffc0d0e29b49f7585e05dff6142e9a24505ce3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/client.py",
+      "sha256": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/common.py",
+      "sha256": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/job.py",
+      "sha256": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/runtime_verifier.py",
+      "sha256": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/scripts/custodian_access_log.py",
+      "sha256": "4e84e4c8f3ad3922bb7fd0dcd65d1ae1fe04d80acfe31ea98d98c6f63679e5b4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/scripts/custodian_newperiod_inputs.py",
+      "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/__init__.py",
+      "sha256": "58ea62cf6617a1065c6add8b8202ad0f43243ff3104ee5d3cc2754e1728ba113"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/aggregate.py",
+      "sha256": "53029727aedc1952eb10e5c62f772ce440dbbfcf5ffb1c806284e3631136f4f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/baselines_eventset.py",
+      "sha256": "94add4d390325694374ea2fb8f2c69c3471e7208a0d7a60e53b5c6a12ebea2de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/beacon_analysis.py",
+      "sha256": "5b9ee952008172182fe709a53cc98745f9140da685b99b69fb5f42760d9d5c39"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/beacons.py",
+      "sha256": "2f3c39fd8abdb7474c5049399066543405bf35dae8b93c01413eb98801c40031"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/broker.py",
+      "sha256": "a3419c58a4cf4966c0c5a438c4656b30861d507873684d15e55df0a9498e64e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/cli.py",
+      "sha256": "87b389dcba4f68fbd6b8cc4082df50f8ab28ec82909aaf28025db885c36a18f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/config.py",
+      "sha256": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/curve_baseline.py",
+      "sha256": "173695a9778e8f9dc7a25130f89d9a0903a82bbd6d38d355b7bbd6aa9c38fdae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/curve_eventset.py",
+      "sha256": "333edb31f6db6521126df099fadff8ffe783e8ab4116d224b480125bde46fd7b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/diffusion.py",
+      "sha256": "a38873478b0598954195ddc732d0db6fb493dbe217ca7eda6b23ff84d70f1c42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/dyrep_train.py",
+      "sha256": "2db3da8d8a0e64a9826f62d31e06c11b6d9ab643d81de426e902825fe1d153ad"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/eventset.py",
+      "sha256": "d1a8f11648aa41e5e2b2ed8c500b2af11ce319528b38bcdb51402920f1692439"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/extent.py",
+      "sha256": "09d616606a9fda99ff097f6b3cdd84f88e636fa5b0d6489cae386fbbfac42a04"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/fetch.py",
+      "sha256": "513b234987baf4b1b1c115bba45ec4834a27c97f8cbf3ba3caafc9d4baf3277e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_analysis.py",
+      "sha256": "1539b06701ec30d429ae1dbe2c5a6d966c12bd1dfe2708589649eb725a8146c9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_baseline.py",
+      "sha256": "097930bb8bf03d4b7d9b6234fdb3aa85541c5bf9ba940c92cba53dcef51d521f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_candidates.py",
+      "sha256": "13f7e2717e11b859df460e93246adff14fbd3315c7309664da3eec11a7b12bae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_counts.py",
+      "sha256": "57a0b86bbfce18e8789c845cff304864c44333069312368ad9ae8273c8cf90a3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_curve.py",
+      "sha256": "0e3432a543daf487b8da860cac7538b94924070fd61e922c9094524a7bf67d5f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_custodian_eval.py",
+      "sha256": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_custody.py",
+      "sha256": "bbda361fb36df0af60ff41a710779fc99a6f28703c53c48e9b143754a5bd9d9d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_development.py",
+      "sha256": "4061b531ca1c95ff12aa6edf0330f20d9159b3bde4b7ed9cad1d66276e270b3e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_evaluation.py",
+      "sha256": "5acbdbd7f510283ed43f4f7334c246bf7dcf1491068e7033b8db586e301fe21d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_h1_predictions.py",
+      "sha256": "23e15575be3d4fd4ae03a50597a3627e7792ac3cb223ef8a05bcf621b45a43a7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_h3_commitments.py",
+      "sha256": "d382885df6f43c0762d90bfe8cb9d1841564c859bdbeca95f67ba51461a5e777"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_history.py",
+      "sha256": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_history_families.py",
+      "sha256": "e52ce7d71ad78314daa2c485fb5ea8e8f51bbb8891f39f7a7eb617595032adb2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_history_sensitivity.py",
+      "sha256": "3af6b34dc6042f34c4efd2c61544247cb8dc916ec97aba51fe034673afc4b451"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_history_sensitivity_report.py",
+      "sha256": "543b8225cfffd7b59c42fc6e1acfbafb12f0f67b04a5523a1835815f880e5b73"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_history_variants.py",
+      "sha256": "37372d32cbf104ab07e0ce63e46f6d5ecad505378dbc410b9199f0d559e00c08"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_input_panel.py",
+      "sha256": "6ddaf8583b46ef4aaaffa1634e35df07b622da4d09ae993f64499622a4f9174e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_inputs.py",
+      "sha256": "deab11d87ea0940cdbde9bb0b2981f9e4d0059cf9eb7dc5b86ba6f7e6becf84f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_manifest.py",
+      "sha256": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_numeric.py",
+      "sha256": "478dd41883d8b7a5497f075911a397f9184ddb1d7623a494082190699d1947df"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_panel.py",
+      "sha256": "ac9468bceb62020da660993f2fdc80e4efbdca2297de4e7dcdfbfa348b876290"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_panel_reference.py",
+      "sha256": "4bdc7f2efc57407de0d23b4d6d06005832d22deec0149bfa651c99ff3a920ff5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_panel_scoring.py",
+      "sha256": "b7374f69c5c0d88d66ef3e8454fb4529f73ec7155be1791904b4c7aa27f168db"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_precision.py",
+      "sha256": "bbe5c65c4b9ad03a5516b548b90c284d81c16005ffda85092104cabe1a9a1ac6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_protocol.py",
+      "sha256": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_ranking.py",
+      "sha256": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_recipes.py",
+      "sha256": "04691c483a64c0e6c93fd058da8d41347eabdc0c31ba881f165746074ab50d6e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_release.py",
+      "sha256": "5b728f4624ecf211df1f165685506dc17aeda405050a0a25663d5796cac73c33"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_release_facts.py",
+      "sha256": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_retrospective_custody.py",
+      "sha256": "818497e430b9871cdb3761e44b554a8c84e87ccbc66fd44647d28fd2cf9ccbc7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_retrospective_scoring.py",
+      "sha256": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_sensitivity_gate.py",
+      "sha256": "590d9cf7e49561f4db506366745451e250da21058a5fc194d310035b57d6193f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_signals.py",
+      "sha256": "26ffabbb5dd0762224dd84c0c0c381da8f7d72b5d33e0b308f65f97d99bebd84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_stable_peer.py",
+      "sha256": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_temporal.py",
+      "sha256": "f218734eaaa07b222e70dd6145268d362f367e9c18106cca86a234984b118de1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_temporal_mean.py",
+      "sha256": "4e97fcfddf3fa2c104ad21f5a5f4faa1c15d6add3ed7d1f3400851c0833b25c7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_temporal_mean_predict.py",
+      "sha256": "a21524b7b517595c2a62feaaf3343d5a79a261932c051a552bd3b32ac3b14bd6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_temporal_mean_train.py",
+      "sha256": "fa29b754fb2806ed2aedab40ab41bf78a55d56627e067680347d4007534f843c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_temporal_predict.py",
+      "sha256": "711f36df7588ac95da25103852cbb555a6fca91bcc7612a883f557a0df2fbb10"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_temporal_train.py",
+      "sha256": "25cc9de6a62e56d432e8fb6af047e8699b962d1c2539991aa4401a91e82690a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_train.py",
+      "sha256": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/forecast_trigger.py",
+      "sha256": "15b96f850f8e6db2557250afb408fd5dc94f7bab41f0a67e71af4e1dd2e5c87e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/gat_train.py",
+      "sha256": "d2020057f3d14391d403dab1e168aae63bccea13e47b5136fb2fdbfdb0fc7910"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/gnn_train.py",
+      "sha256": "ca121f2f062d52d4fa9dcbbea0dd9d6cea9a2b7ebef3bd87fb7c0148b226b008"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/graph_metrics.py",
+      "sha256": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/hist_avg.py",
+      "sha256": "b9a3e9c1a472d8d440290e3c64edb4a5058ed6ce89b3709c5b6f16566494b5d1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/identifier.py",
+      "sha256": "bb677d637a490e204dfed5cbf8cb2dba20e8264546ff516669871f188f352c20"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/identifier2.py",
+      "sha256": "76131cc0da3c84555c678a1c5f0ca5335ac431b9e04592d90b9eefdf68f76600"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/labels.py",
+      "sha256": "032f4a38b05123c825e6a457f3a07b72a5047a3bc7cf464ce4ff902b0fd099a9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/leak_events.py",
+      "sha256": "337041389be35819d302bf420562b48959c1674c54fe51e3104c3cde3d201e84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/leakcheck.py",
+      "sha256": "20bf95721c69183882994f2a519340f1235fbacadc4cbac67d81a80703c8839c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/paired_analysis.py",
+      "sha256": "77e746156e2051a3a71cf9339f17bf61f93717976ed444dd88354b8d80151aba"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/parse.py",
+      "sha256": "e6afff8f01f9bbb1629c694f00210b00dbbe9709e444ff56471b82c12acd1559"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/plots.py",
+      "sha256": "a4011d17b919189ce9442ecc2dbc73d0ba50d3a4b0a2e14d6e5d9a40fed66727"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/prefix_events.py",
+      "sha256": "22d8c8aa8519f688acd14545568404b059a7c98631c85a1b23eb2fed260375c8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/prefix_metrics.py",
+      "sha256": "bfc7d9fb45fcc82ddadd97d5233362655c5f369c81a41bff1de0506d0a2b060d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/ranking.py",
+      "sha256": "5c450ad1e43b9b2f53a294252270a5d6eb774871e9df96caf63b9d52d4f1ec76"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/recovery.py",
+      "sha256": "881ecf04be36fa50f7091ba3fc2d897df899a801bb6858a5e0569f5a8483eb5c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/replay.py",
+      "sha256": "d0b805bb392f4f6d23e7457573f45d055fab3ac4f83cb8fea073a31a20601993"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/replay_day.py",
+      "sha256": "e4c124b0388fcfe7c3208985409158337909c717e8bd9e811ebc8aa6d301e7f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/replay_multipart.py",
+      "sha256": "5a859f127cb6231ba0462aa67c8e1046f16d78905f4b135b8e6e3a89371007a2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/ribs.py",
+      "sha256": "277b7bb82dbd98aed8a3560a7373898e688a912d501b2bd4e9079634611d8314"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/robustness.py",
+      "sha256": "4861651bfa0a5e697148894fd197590b34cb9954e094842d189b3781e04b10cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/rov_history.py",
+      "sha256": "eaea73613006ae423d61819246bdd216ed08f404996600eef708a0db94ac461f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/rpki_validate.py",
+      "sha256": "817f435fdaaf25031bf3e1b37e6e2a4f702bfb0e8c75eaba3a9f3a250261b342"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/schema.py",
+      "sha256": "45ccf2ac60c73226b049d78ddd245260e508261818df1692db266394c46ce0a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/select_leak_replay.py",
+      "sha256": "917330469029ead8fd74410ef4209011a255d2dd10198ccfb93b0906090849cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/select_replay.py",
+      "sha256": "664d56b601d7d802cf6369bb4d3c463607ebd2e3ca0085bfe6699f5cf7fec4f2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/select_withdrawal_replay.py",
+      "sha256": "0440ef64c8be464fe22e46ea8b539e05479fa670bfdc53ce241862cc5889c6bc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/tgn_data.py",
+      "sha256": "12dbc1c0543560d93d95ad5f72c46003f7703d9da5c7096f7353ea94e08af6b1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/tgn_train.py",
+      "sha256": "fe14080ebb4d91d6facd630b9241f3cfb271878ec78cc603525efeaa5219ca57"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/construction/source/src/bgbench/vp_select.py",
+      "sha256": "7905e070559ba1ab578365a2a1957cb50c1d8ef7bc2c5847fda79a1b979bd565"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/controller.py",
+      "sha256": "01330bafb8f68f251bd4f31b243f41ab91d9fa0fbe83798c99609aa5112925eb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/custody_scope.py",
+      "sha256": "f358466c2cafdeb59954bb804bffc0d0e29b49f7585e05dff6142e9a24505ce3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/file_limits.py",
+      "sha256": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d30-assemble.sh",
+      "sha256": "22dc0e4d233b303548b625cb8e4fa9e13858d9df5f117e099f10b81722cbdfd8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d30-audit.sh",
+      "sha256": "26ed4d0d0f970144a3a5dcea82a17688e199984e52dd38dcc30838df63a7aded"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d30-build.sh",
+      "sha256": "f1bfdcaddf2167f436e7f60191fc29724740a0e2ced556ce7ec32ce130a76bb5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d30-export.sh",
+      "sha256": "60c55872a72e690b8eda2c0e1c69fff98dd58fc4cf24bffa5f1025a1fcc21c38"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d30-manifest.sh",
+      "sha256": "9e9bc38b76b970ef4b14a20117c102e325dab800b3ceb6eff9fa96badac5df35"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d30-master.sh",
+      "sha256": "3855dd3dbd30ad00262f268de9f0ef6dcb9f7db5cee26149064a6c7cfb6837c9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d60-assemble.sh",
+      "sha256": "b2cc69b4d90e2725148af99c94f95cfe46adaf3738545ac7bdcb29e0078825ae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d60-audit.sh",
+      "sha256": "de51af49f4c91b2a1ebab3fabeb7f924a5672f06833b736f5fa1e3c00612a40a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d60-build.sh",
+      "sha256": "68976f30611b19d8edbb4631cd63707679e0016a1419ae183b3462460b726467"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d60-export.sh",
+      "sha256": "d959b4cad793afe32a56b27d1f305c9a7a246d98438a6a69397ed09d0800cad8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d60-manifest.sh",
+      "sha256": "716053e0b278bcb8f4183c48134a0aae02c5546e8692d92e6189a6007951eeb6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/mixed7-d60-master.sh",
+      "sha256": "40a122bec85ac218b41e58f010ab4af60276ae9cd435ed1473ed75f291ccdf24"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d30-assemble.sh",
+      "sha256": "2c91377084e857ce8d16b4d44916117e2132f0e1b5c74710bd9c036be5f48699"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d30-audit.sh",
+      "sha256": "2acc032d0d131fa332851c05cfc08c169d72691a99dca2160af6808d03aac6a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d30-build.sh",
+      "sha256": "bcf577c18d615e2c4bf18b2ec881824fe0adf2b458bc40241c6677caef2e051d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d30-export.sh",
+      "sha256": "358ef52e1bc4e7a609eb83337c9b792331bb62419224249f9315db4a4bd3783f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d30-manifest.sh",
+      "sha256": "279065e6c2f52f213859754fe83446062c5303a8b3b8a6b7fa2b684e09038055"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d30-master.sh",
+      "sha256": "9dbae8351f90f87c274dcf2e926a421412204170dc2da4b9e4f90ce4f9599d79"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d60-assemble.sh",
+      "sha256": "376dbcc345549b063073ec152315fa6f0c587f5860e28605b0c80e3b6ebbe153"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d60-audit.sh",
+      "sha256": "72bc3c279974c92b3de85ce04f29d8614dd47be702fb030a26f62ac166c4995c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d60-build.sh",
+      "sha256": "bbcd17e561ef335335aac3fb402a4f2c91ee3f0c3fb4c6cdfa8609d7359a1960"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d60-export.sh",
+      "sha256": "088ba8a1170ad7fb3c15ab019140eab5afe6cfad88989c29991b05a9b01f62fc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d60-manifest.sh",
+      "sha256": "7e7677649dd76332ece13d54826773e43149a718fa728748b480787d9120204a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/jobs/ris7-d60-master.sh",
+      "sha256": "cb94ddd928d81d9bdc5ab77023a143aad1e9dcdc154b6724fee306ffa60967c4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/kernel/entry.py",
+      "sha256": "2fb0c3f384aba9b4382ed705bfb3b6066a08a89fb7f9e3d6861e26c30a1b22ec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/kernel/panel.py",
+      "sha256": "47b153e49679c6360cc8989417272b3ab4f099db8db02c33b97d581aa0ac22de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/kernel/verify_h3_panel_completeness.py",
+      "sha256": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/kernel/verify_h3_panel_features.py",
+      "sha256": "3529b9800016ec798b463683cdf768ffecad2a0a7b14630a78adeb6c00119f2f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/plan.json",
+      "sha256": "323e3c3086802725c562514db7cf5d64cc91b1b0ce675b6809937efc230bb970"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/producer_budget.py",
+      "sha256": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/runner.py",
+      "sha256": "cd51633b73450de08a4387bb2042b168cbca3655ebd994e7ab9e76c599aba44d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/source-receipt-original.json",
+      "sha256": "d1413ed7c105ebab0187c90bbd7cac0eeb1eecef7c0403b84192a5b36b15ac6c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/source-receipt.json",
+      "sha256": "c8223cf282d8d6ddf047ad42495e62d4cdd6487ad1009f8c1cb11e908b8791ef"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/h3-package/wave_contract.py",
+      "sha256": "89410590b1cfb0dd87bc14f997e176f253d690b93fff5660953fea75d84c0a26"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/release_once.py",
+      "sha256": "30239dbe58902a2c054bc2f312c3271761e4493987a5afee407ef772ff38a21c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/root-authority-template.json",
+      "sha256": "69d4572ac119688b0a7a76525ffe348a10d6fe94d65c651a523dedb36518d193"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/test-run.txt",
+      "sha256": "ddbeb125eea33c35033305ad4f695b96b9df843523e146cca8953974d6f99bda"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/test_custody_scope.py",
+      "sha256": "550e3be17bcf56b740694439fff03c99a7edb61810d8e28768bf2fb43270c44f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/test_packets.py",
+      "sha256": "3a5d4cdba5fc3c6eca810698afb031dc31f856f9b90692a54f0cb2ca2bb03950"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/client.py",
+      "sha256": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/common.py",
+      "sha256": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/job.py",
+      "sha256": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/runtime_verifier.py",
+      "sha256": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/scripts/custodian_access_log.py",
+      "sha256": "4e84e4c8f3ad3922bb7fd0dcd65d1ae1fe04d80acfe31ea98d98c6f63679e5b4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/scripts/custodian_newperiod_inputs.py",
+      "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/__init__.py",
+      "sha256": "58ea62cf6617a1065c6add8b8202ad0f43243ff3104ee5d3cc2754e1728ba113"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/aggregate.py",
+      "sha256": "53029727aedc1952eb10e5c62f772ce440dbbfcf5ffb1c806284e3631136f4f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/baselines_eventset.py",
+      "sha256": "94add4d390325694374ea2fb8f2c69c3471e7208a0d7a60e53b5c6a12ebea2de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/beacon_analysis.py",
+      "sha256": "5b9ee952008172182fe709a53cc98745f9140da685b99b69fb5f42760d9d5c39"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/beacons.py",
+      "sha256": "2f3c39fd8abdb7474c5049399066543405bf35dae8b93c01413eb98801c40031"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/broker.py",
+      "sha256": "a3419c58a4cf4966c0c5a438c4656b30861d507873684d15e55df0a9498e64e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/cli.py",
+      "sha256": "87b389dcba4f68fbd6b8cc4082df50f8ab28ec82909aaf28025db885c36a18f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/config.py",
+      "sha256": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/curve_baseline.py",
+      "sha256": "173695a9778e8f9dc7a25130f89d9a0903a82bbd6d38d355b7bbd6aa9c38fdae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/curve_eventset.py",
+      "sha256": "333edb31f6db6521126df099fadff8ffe783e8ab4116d224b480125bde46fd7b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/diffusion.py",
+      "sha256": "a38873478b0598954195ddc732d0db6fb493dbe217ca7eda6b23ff84d70f1c42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/dyrep_train.py",
+      "sha256": "2db3da8d8a0e64a9826f62d31e06c11b6d9ab643d81de426e902825fe1d153ad"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/eventset.py",
+      "sha256": "d1a8f11648aa41e5e2b2ed8c500b2af11ce319528b38bcdb51402920f1692439"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/extent.py",
+      "sha256": "09d616606a9fda99ff097f6b3cdd84f88e636fa5b0d6489cae386fbbfac42a04"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/fetch.py",
+      "sha256": "513b234987baf4b1b1c115bba45ec4834a27c97f8cbf3ba3caafc9d4baf3277e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_analysis.py",
+      "sha256": "1539b06701ec30d429ae1dbe2c5a6d966c12bd1dfe2708589649eb725a8146c9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_baseline.py",
+      "sha256": "097930bb8bf03d4b7d9b6234fdb3aa85541c5bf9ba940c92cba53dcef51d521f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_candidates.py",
+      "sha256": "13f7e2717e11b859df460e93246adff14fbd3315c7309664da3eec11a7b12bae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_counts.py",
+      "sha256": "57a0b86bbfce18e8789c845cff304864c44333069312368ad9ae8273c8cf90a3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_curve.py",
+      "sha256": "0e3432a543daf487b8da860cac7538b94924070fd61e922c9094524a7bf67d5f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_custodian_eval.py",
+      "sha256": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_custody.py",
+      "sha256": "bbda361fb36df0af60ff41a710779fc99a6f28703c53c48e9b143754a5bd9d9d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_development.py",
+      "sha256": "4061b531ca1c95ff12aa6edf0330f20d9159b3bde4b7ed9cad1d66276e270b3e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_evaluation.py",
+      "sha256": "5acbdbd7f510283ed43f4f7334c246bf7dcf1491068e7033b8db586e301fe21d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_h1_predictions.py",
+      "sha256": "23e15575be3d4fd4ae03a50597a3627e7792ac3cb223ef8a05bcf621b45a43a7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_h3_commitments.py",
+      "sha256": "d382885df6f43c0762d90bfe8cb9d1841564c859bdbeca95f67ba51461a5e777"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_history.py",
+      "sha256": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_history_families.py",
+      "sha256": "e52ce7d71ad78314daa2c485fb5ea8e8f51bbb8891f39f7a7eb617595032adb2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_history_sensitivity.py",
+      "sha256": "3af6b34dc6042f34c4efd2c61544247cb8dc916ec97aba51fe034673afc4b451"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_history_sensitivity_report.py",
+      "sha256": "543b8225cfffd7b59c42fc6e1acfbafb12f0f67b04a5523a1835815f880e5b73"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_history_variants.py",
+      "sha256": "37372d32cbf104ab07e0ce63e46f6d5ecad505378dbc410b9199f0d559e00c08"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_input_panel.py",
+      "sha256": "6ddaf8583b46ef4aaaffa1634e35df07b622da4d09ae993f64499622a4f9174e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_inputs.py",
+      "sha256": "deab11d87ea0940cdbde9bb0b2981f9e4d0059cf9eb7dc5b86ba6f7e6becf84f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_manifest.py",
+      "sha256": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_numeric.py",
+      "sha256": "478dd41883d8b7a5497f075911a397f9184ddb1d7623a494082190699d1947df"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_panel.py",
+      "sha256": "ac9468bceb62020da660993f2fdc80e4efbdca2297de4e7dcdfbfa348b876290"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_panel_reference.py",
+      "sha256": "4bdc7f2efc57407de0d23b4d6d06005832d22deec0149bfa651c99ff3a920ff5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_panel_scoring.py",
+      "sha256": "b7374f69c5c0d88d66ef3e8454fb4529f73ec7155be1791904b4c7aa27f168db"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_precision.py",
+      "sha256": "bbe5c65c4b9ad03a5516b548b90c284d81c16005ffda85092104cabe1a9a1ac6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_protocol.py",
+      "sha256": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_ranking.py",
+      "sha256": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_recipes.py",
+      "sha256": "04691c483a64c0e6c93fd058da8d41347eabdc0c31ba881f165746074ab50d6e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_release.py",
+      "sha256": "5b728f4624ecf211df1f165685506dc17aeda405050a0a25663d5796cac73c33"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_release_facts.py",
+      "sha256": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_retrospective_custody.py",
+      "sha256": "818497e430b9871cdb3761e44b554a8c84e87ccbc66fd44647d28fd2cf9ccbc7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_retrospective_scoring.py",
+      "sha256": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_sensitivity_gate.py",
+      "sha256": "590d9cf7e49561f4db506366745451e250da21058a5fc194d310035b57d6193f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_signals.py",
+      "sha256": "26ffabbb5dd0762224dd84c0c0c381da8f7d72b5d33e0b308f65f97d99bebd84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_stable_peer.py",
+      "sha256": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_temporal.py",
+      "sha256": "f218734eaaa07b222e70dd6145268d362f367e9c18106cca86a234984b118de1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_temporal_mean.py",
+      "sha256": "4e97fcfddf3fa2c104ad21f5a5f4faa1c15d6add3ed7d1f3400851c0833b25c7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_temporal_mean_predict.py",
+      "sha256": "a21524b7b517595c2a62feaaf3343d5a79a261932c051a552bd3b32ac3b14bd6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_temporal_mean_train.py",
+      "sha256": "fa29b754fb2806ed2aedab40ab41bf78a55d56627e067680347d4007534f843c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_temporal_predict.py",
+      "sha256": "711f36df7588ac95da25103852cbb555a6fca91bcc7612a883f557a0df2fbb10"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_temporal_train.py",
+      "sha256": "25cc9de6a62e56d432e8fb6af047e8699b962d1c2539991aa4401a91e82690a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_train.py",
+      "sha256": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/forecast_trigger.py",
+      "sha256": "15b96f850f8e6db2557250afb408fd5dc94f7bab41f0a67e71af4e1dd2e5c87e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/gat_train.py",
+      "sha256": "d2020057f3d14391d403dab1e168aae63bccea13e47b5136fb2fdbfdb0fc7910"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/gnn_train.py",
+      "sha256": "ca121f2f062d52d4fa9dcbbea0dd9d6cea9a2b7ebef3bd87fb7c0148b226b008"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/graph_metrics.py",
+      "sha256": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/hist_avg.py",
+      "sha256": "b9a3e9c1a472d8d440290e3c64edb4a5058ed6ce89b3709c5b6f16566494b5d1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/identifier.py",
+      "sha256": "bb677d637a490e204dfed5cbf8cb2dba20e8264546ff516669871f188f352c20"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/identifier2.py",
+      "sha256": "76131cc0da3c84555c678a1c5f0ca5335ac431b9e04592d90b9eefdf68f76600"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/labels.py",
+      "sha256": "032f4a38b05123c825e6a457f3a07b72a5047a3bc7cf464ce4ff902b0fd099a9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/leak_events.py",
+      "sha256": "337041389be35819d302bf420562b48959c1674c54fe51e3104c3cde3d201e84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/leakcheck.py",
+      "sha256": "20bf95721c69183882994f2a519340f1235fbacadc4cbac67d81a80703c8839c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/paired_analysis.py",
+      "sha256": "77e746156e2051a3a71cf9339f17bf61f93717976ed444dd88354b8d80151aba"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/parse.py",
+      "sha256": "e6afff8f01f9bbb1629c694f00210b00dbbe9709e444ff56471b82c12acd1559"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/plots.py",
+      "sha256": "a4011d17b919189ce9442ecc2dbc73d0ba50d3a4b0a2e14d6e5d9a40fed66727"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/prefix_events.py",
+      "sha256": "22d8c8aa8519f688acd14545568404b059a7c98631c85a1b23eb2fed260375c8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/prefix_metrics.py",
+      "sha256": "bfc7d9fb45fcc82ddadd97d5233362655c5f369c81a41bff1de0506d0a2b060d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/ranking.py",
+      "sha256": "5c450ad1e43b9b2f53a294252270a5d6eb774871e9df96caf63b9d52d4f1ec76"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/recovery.py",
+      "sha256": "881ecf04be36fa50f7091ba3fc2d897df899a801bb6858a5e0569f5a8483eb5c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/replay.py",
+      "sha256": "d0b805bb392f4f6d23e7457573f45d055fab3ac4f83cb8fea073a31a20601993"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/replay_day.py",
+      "sha256": "e4c124b0388fcfe7c3208985409158337909c717e8bd9e811ebc8aa6d301e7f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/replay_multipart.py",
+      "sha256": "5a859f127cb6231ba0462aa67c8e1046f16d78905f4b135b8e6e3a89371007a2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/ribs.py",
+      "sha256": "277b7bb82dbd98aed8a3560a7373898e688a912d501b2bd4e9079634611d8314"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/robustness.py",
+      "sha256": "4861651bfa0a5e697148894fd197590b34cb9954e094842d189b3781e04b10cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/rov_history.py",
+      "sha256": "eaea73613006ae423d61819246bdd216ed08f404996600eef708a0db94ac461f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/rpki_validate.py",
+      "sha256": "817f435fdaaf25031bf3e1b37e6e2a4f702bfb0e8c75eaba3a9f3a250261b342"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/schema.py",
+      "sha256": "45ccf2ac60c73226b049d78ddd245260e508261818df1692db266394c46ce0a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/select_leak_replay.py",
+      "sha256": "917330469029ead8fd74410ef4209011a255d2dd10198ccfb93b0906090849cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/select_replay.py",
+      "sha256": "664d56b601d7d802cf6369bb4d3c463607ebd2e3ca0085bfe6699f5cf7fec4f2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/select_withdrawal_replay.py",
+      "sha256": "0440ef64c8be464fe22e46ea8b539e05479fa670bfdc53ce241862cc5889c6bc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/tgn_data.py",
+      "sha256": "12dbc1c0543560d93d95ad5f72c46003f7703d9da5c7096f7353ea94e08af6b1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/tgn_train.py",
+      "sha256": "fe14080ebb4d91d6facd630b9241f3cfb271878ec78cc603525efeaa5219ca57"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/construction/source/src/bgbench/vp_select.py",
+      "sha256": "7905e070559ba1ab578365a2a1957cb50c1d8ef7bc2c5847fda79a1b979bd565"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/controller.py",
+      "sha256": "01330bafb8f68f251bd4f31b243f41ab91d9fa0fbe83798c99609aa5112925eb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/custody_scope.py",
+      "sha256": "f358466c2cafdeb59954bb804bffc0d0e29b49f7585e05dff6142e9a24505ce3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/file_limits.py",
+      "sha256": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/core_projection.py",
+      "sha256": "dca0341b61b6c3f30327593b0f5dc3b8d8bec31868179b1c632ce787e86af61a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/entry.py",
+      "sha256": "b0ae5de37fe7ddef2c1463984d34b974dddbdb533e9bc5f327ff6c944512e4b7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/original_custodian.py",
+      "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/original_pack.py",
+      "sha256": "8bdc1551fa3b19e32defa940b0de640dbbe6883322fbab7c889c495ac2094318"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/protected_cohort.py",
+      "sha256": "4c28e80b1e413648b1ccd0ea2e9bbd391e30fcecde260df7fc4b7e2dc7a787fd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/reviewed_master_contract.py",
+      "sha256": "a7c69d2e519cccb420d5a8113b9f76721dbbc2284676577a7a1d20ecf141cf29"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/reviewed_source_io.py",
+      "sha256": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/kernel/timing.py",
+      "sha256": "8d20827bffea0fe3290769efb0c767b5eefdcade2a5bd839cbaf9c985b3d4824"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/producer_budget.py",
+      "sha256": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/runner.py",
+      "sha256": "cd51633b73450de08a4387bb2042b168cbca3655ebd994e7ab9e76c599aba44d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/source-receipt-original.json",
+      "sha256": "ead7958fb2453e516b3c513243db923a6b6076d01bda09d23024682dde63dc1a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/source-receipt.json",
+      "sha256": "1fbc137a00c94675bcd5afec1d56e8544a1434e603ce3972d38ddd5246dde083"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/timing-source-package/wave_contract.py",
+      "sha256": "89410590b1cfb0dd87bc14f997e176f253d690b93fff5660953fea75d84c0a26"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-timing-protected-execution-v3-20261025/wave_contract.py",
+      "sha256": "89410590b1cfb0dd87bc14f997e176f253d690b93fff5660953fea75d84c0a26"
+    }
+  ],
+  "tests": 33,
+  "execution_authorized": false
+}

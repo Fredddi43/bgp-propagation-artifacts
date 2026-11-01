@@ -1,0 +1,39 @@
+{
+ "author": "claude-opus-5-5 f4d75bb1 /root/opus_implementation",
+ "delta_vs_v1": "ONLY transport/transport.py (bd9bcc34): +integer floor assert (MINIMUM int >= 250 GiB), argv now stage|launch <sha256(request.json)> refusing any other request bytes; all other temporal-v2 artifacts byte-identical to temporal-v1",
+ "executed": false,
+ "files": {
+  "README.md": "1a4d4ea81537a942a5a33532d76f6aef255315f07643bd3f750d815d8d61ff52",
+  "build_root_ready.py": "1d1bb15eb085e33a7a8bc60fc75aa7bbb90883ce29734bec3d3116f7a200ad6d",
+  "build_temporal.py": "1792f9e5779b411aa07e25f464547e3c879e809958d4f90e552b7e6b94f842af",
+  "build_temporal_control.py": "3d5bfcd01bc6d465a8819e109389823c1371b5b004d54fc33352f6a05d5466be",
+  "temporal-v2/package/authority-witness-d30.draft.json": "24f47fe1e892b52defa71b4d4d7d51e08b8b86e800e72b42460acd65a11bf13f",
+  "temporal-v2/package/authority-witness-d60.draft.json": "3b9dd38f5b33ca87c3a28edd92039f1358865a4ac2723f6af0137c9a070e4bf4",
+  "temporal-v2/package/execution-spec.draft.json": "deac0bcd402fcb1aa60b4436c3d54725c042bd6d2a6aa592262bf2044c536777",
+  "temporal-v2/package/gate_execute.py": "e833a2db9e38212855656db711fd0f9d9fc46f01cce50bbe6dfb1aab28bd8b92",
+  "temporal-v2/package/launch.py": "1b208590fcec7893575dab8de35dbc0867fe6622dcdcb7217ed9c1c001a1cdc6",
+  "temporal-v2/package/plan-witness-d30.json": "07597e21535b16853e146be2ede334ac47f662e59efa96674565c05473c05dd2",
+  "temporal-v2/package/plan-witness-d60.json": "4d3eba9e889cb06b9581efb02eb8ce6f5499169c33049253180935fc91123b0a",
+  "temporal-v2/package/run.sh": "79742a20858ca6a420d3b2218d71cfc23061f4e6d39b7e9a18ea71858c1e4749",
+  "temporal-v2/package/supervise.py": "4ab1bcb122dac616f2cf8f873b95de5a3f95ab53292741066bd39c955807fe96",
+  "temporal-v2/root-ready/authority-witness-d30.json": "24f47fe1e892b52defa71b4d4d7d51e08b8b86e800e72b42460acd65a11bf13f",
+  "temporal-v2/root-ready/authority-witness-d60.json": "3b9dd38f5b33ca87c3a28edd92039f1358865a4ac2723f6af0137c9a070e4bf4",
+  "temporal-v2/root-ready/execution-approval.TEMPLATE.json": "4d73fed443920e4d37c892f671f26af307cc405360d0e3e4c78a9349244a95f9",
+  "temporal-v2/root-ready/execution-spec.json": "cf5dd5f9a07c4dbd0349e17ebddcb32aba6962b45a9adf2a6f0daec64999ded8",
+  "temporal-v2/root-ready/request.TEMPLATE.json": "6b5db94be390414af4f4350c8d11f12198b9311f33a5fef58b540a6f74ff3f5e",
+  "temporal-v2/root-ready/resource-binding.draft.json": "023028c97e5cc655953326042f531d2a18c8d9bc3bf2f855aaa1fc891954187d",
+  "temporal-v2/source.tar": "2eb4d7d1b7e17c3138066eeb058aaec71ee3ee822470487108549194bb2a0177",
+  "temporal-v2/stage-command.sh": "315d31240abf9de3b6bd602ac39abd990041e75cdc30994290d46c4bcdd3322d",
+  "temporal-v2/transport/transport.py": "bd9bcc34d0aa4db6cdc4f8215f6c68d85f57f2e22b7840f3c726cfe45a196533",
+  "test_build_temporal.py": "79c991aed82da6bc60d61e2ded65afa2c0dad8dc0ae55c162ab582fb1c711636",
+  "test_root_ready.py": "89aea12920a29b498a076da08f73d1dab407118d1f0c930c5f4e1a8faaa970cd"
+ },
+ "kind": "feature7_rexact_temporal_v2_review_ready",
+ "predecessor": {
+  "delta_review": "opus-review-v1/delta-review.txt (DELTA PASS T1-T3)",
+  "review_ready": "018e862c"
+ },
+ "root_ready": "temporal-v2/root-ready/: authority d30 24f47fe1 / d60 3b9dd38f, final spec cf5dd5f9 (pending [], resources unchanged), approval TEMPLATE (passed false, reviewer fields null), request TEMPLATE, resource-binding draft (16 GiB covers d30+d60, phase 602->634 proposed, not admitted)",
+ "tests": "13 passed (test_root_ready 8, test_build_temporal 5)",
+ "utc": "2026-10-24T14:13:40Z"
+}

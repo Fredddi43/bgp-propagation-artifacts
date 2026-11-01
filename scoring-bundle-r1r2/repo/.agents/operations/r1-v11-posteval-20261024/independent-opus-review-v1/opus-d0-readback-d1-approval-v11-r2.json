@@ -1,0 +1,50 @@
+{
+ "attempt_limit_per_phase": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "commands": [
+  ".venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/d0d1-fix-v1/phases_r2.py d0-readback --approval <this> --approval-sha256 <sha>",
+  ".venv/bin/python -B .agents/operations/r1-v11-posteval-20261024/d0d1-fix-v1/phases_r2.py d1 --approval <this> --approval-sha256 <sha>  (only after d0-readback succeeds)"
+ ],
+ "conditions": [
+  "D0 is never rerun; d0-readback is read-only sha256sum of DEST/out/plan.json, once",
+  "D1 writes only DEST/out/census.json, once; uses the readback plan sha",
+  "failure/uncertainty: preserve records, stop, no retry"
+ ],
+ "d2_authorized": false,
+ "dest": "<FORECAST_ROOT>/r1-posteval-classd-v11-20261024",
+ "executed_d0": {
+  "intent_sha256": "fced0513",
+  "result_sha256": "4b98fd15",
+  "stdout": "{\"cells\": 66, \"tensors\": {\"30\": 3543, \"60\": 3543}}"
+ },
+ "fix_review_ready_sha256": "8289e7730b14ff75838b23250194263b85e94ffd86986e2fa4a8d7bf09d57fce",
+ "host_paths": {
+  "gate": "<FORECAST_ROOT>/occurrence-final-v1/manifests/training-integration-v6b-both.json",
+  "ledger": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/evaluation/ledger.json",
+  "manifest_d30": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json",
+  "manifest_d60": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json",
+  "report": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+  "seal": "<FORECAST_ROOT>/occurrence-final-v1/custody/r1-access/r1-seal-134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887.json",
+  "spec": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/spec.json"
+ },
+ "kind": "r1_v11_classd_d0_readback_d1_approval_v1",
+ "label_read_authorized": false,
+ "not_authorized": "fetch of plan/census (separate exact capture), D2, per-event/label/prediction reads, N admission",
+ "passed": true,
+ "per_event_read_authorized": false,
+ "phases_authorized": [
+  "d0-readback",
+  "d1"
+ ],
+ "prediction_read_authorized": false,
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-classd-d0-d1-r2",
+ "supersedes": {
+  "d0_d1_approval_sha256": "29832ae487ba5372987352dd1f5c86d37879cbce4b25b49386aefcea99d08557",
+  "status": "D0 consumed (ran once, rc 0, sha skipped by exec); its D1 part is void and must not be used"
+ },
+ "tool_sha256": "66c51a116999be56a1ff405bd773e26ad1fa83a949526b10c5350c977818383b"
+}

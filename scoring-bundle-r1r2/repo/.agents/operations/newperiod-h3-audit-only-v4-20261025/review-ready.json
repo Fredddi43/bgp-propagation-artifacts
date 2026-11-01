@@ -1,0 +1,18 @@
+{
+ "kind": "h3_audit_only_v4_review_ready_v1",
+ "dir": "<REPO>/.agents/operations/newperiod-h3-audit-only-v4-20261025",
+ "author": "4ba6111c (h3_author)",
+ "reviewer": "review2 7f4c18c0",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "build_audit_v4.py": "d9a7ba76cb75e696039a60e60669a6f2745e3a8bb4b414d0a6589877d3084dcd",
+  "build_release_h3_v4.py": "ba80eec7f9a71649d739a86ca94278bcdd46f97c22c587f62994134bd6119a55",
+  "release_h3_v4.py": "8f580a9830f7db8be305652ac04a55d9577ea68804c95ee38ecf5fc7fcd4d142",
+  "test_audit_v4.py": "ef65664c818bcdaf5ce0ba5d10517055ca3475d7e9579b3a0710a19ef3a38673",
+  "test-run.txt": "c59e0ca8bb837a449b05340a7374b9425672998a840e15afd1507f5f5d366dfe",
+  "mutation-proof.txt": "258772ced33680c17b4a9db3fd7079b32cba25d76ea5d0df2f45487e77c2a267",
+  "REVIEW.md": "652cbd609ffb257a96ff3ef0779633350e2417915ffb4a520187e3f3f8423922"
+ },
+ "utc": "2026-10-25T05:26:09Z"
+}

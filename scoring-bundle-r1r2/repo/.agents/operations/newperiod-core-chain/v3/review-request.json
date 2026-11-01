@@ -1,0 +1,37 @@
+{
+  "author": "gpt-6-astra",
+  "author_worker": "/root/impact_consumer_review",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW-PACKET.md": "7dd8f1a58f9610460231a204dfdf152e3ee6e774f9bcec5521f06779e9d372a3",
+    "focused-tests.txt": "8ceb147ccfd2413ed5a9b7fc5dd2c7a33a08deec9c860c9fcda8107d9d82c602",
+    "forecast_gpu_placement.py": "2a82b27f20a9eaa56acdac4e0246965e0c83b268efcf9fe2a3c9e8b7078f20e8",
+    "make_package.py": "13147fdf7690dddc167f7f21bf3140610adeb38f8b4738e38a85a3eae445f7d5",
+    "newperiod_core_chain_v3.py": "7816010b266b8d3d1c3165d7eb02e8df79bf3046d171397afb9d55c5d1705d2a",
+    "opus-newperiod-core-chain-v3-approval-TEMPLATE.json": "7b6993e43bbb0bb3a1899f872d1d4c7faf302756865fa79ef799f38990e869c7",
+    "opus-newperiod-core-chain-v3-spec.json": "51826b24a050cab1b997e0092b9eee253e75da713229bac0e4d07eee6961dfab",
+    "opus-newperiod-core-chain-v3.sbatch": "604b19fc1f4e0504d50a9991fc289a417f983ea14e9691df14f97cbd9ec14523",
+    "placement-lint-baseline.json": "e79be42e469a7ac65776ffd68dd807ebb39da4b7f4285462f1594b079bf9c896",
+    "test_opus_newperiod_core_chain_v3.py": "12c95fe6723c0458f27c147bfced884681bec1c23d994ad1fe96932dd2586534"
+  },
+  "fits_authorized": false,
+  "kind": "newperiod_core_chain_v3_code_review_request",
+  "newperiod_unseal_authorized": false,
+  "original_placement": {
+    "path": "<REPO>/scripts/forecast_gpu_placement.py",
+    "sha256": "1bba8bf940d8ecea6b83be4c4ee2e9cd0c6cec1a6342dde03a374285a1efae33"
+  },
+  "original_v2": {
+    "newperiod_core_chain_opus_v2.py": "187e04916fecd4a99506497e1aab430176d96e8fece7f104149141410508366e",
+    "opus-newperiod-core-chain-v2-spec.json": "8cc5559b9d85c3794a2e1909eec4287ff201468f2e06a88ad02ee7f3572cdb5d",
+    "opus-newperiod-core-chain-v2.sbatch": "cba566f2179ef558782c8063b3ac624e45c7f5332860e1545595fac2b9b28e2c"
+  },
+  "protected2026_authorized": false,
+  "r1_open_authorized": false,
+  "retrospective_release": {
+    "path": null,
+    "sha256": null,
+    "status": "pending"
+  },
+  "scope": "code_only"
+}

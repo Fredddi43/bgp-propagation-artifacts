@@ -1,0 +1,8 @@
+{
+ "authorizes_nothing": true,
+ "kind": "review_ready",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt3-probe-r3",
+ "pins_sha256": "97d12e2868ef1d0bee509f8391341fc3694b2d306f233e5689bb3d842b3c11e6",
+ "requested": "delta review of D1-D4 and the S1 parent-owner check only (delta-probe.diff vs r2); if passed, the one-attempt approval scope newperiod-attempt3-host-probe-v1",
+ "scratch_path": "<RESULTS_ROOT>/nobackup/<PROJECT>/newperiod-probe-scratch-v1"
+}

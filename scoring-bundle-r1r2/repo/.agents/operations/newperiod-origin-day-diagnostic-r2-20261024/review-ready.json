@@ -1,0 +1,9 @@
+{
+  "delta": "Resolve only pinned runtime executable target before descriptor hash; prior attempt failed before any source/log open; all exact source canonical restrictions unchanged.",
+  "files": {
+    "capture.py": "e17e500bfe7918630aa2a6b943d2667688113f82db45c9ce82349ca63daa7620",
+    "request.json": "541e7d43fecb4c5a201e32c99aa4fb1190caf40869ecbd9a09ddc84d4d0210fe",
+    "test_capture.py": "208a555fda5f378bde31c38f9bb76d405b54e242becdafd6207a9a6caee3a152"
+  },
+  "scope": "Read only collector/ts from all770 exact already admitted source files; output violation refs and booleans only, <=1MiB. No detector, source modification, retries or event columns."
+}

@@ -1,0 +1,23 @@
+{
+ "builder": "temporal_build_gate.py 36ce3f4d = closed derivation of reviewed build_gate.py ff4fce03 (build_temporal_gate.py): packets/temporal, temporal-rexact-v3 root, witness spec 169815de, source 72c2484d, profile temporal-rexact, fsize 4 GiB (D8).",
+ "dir": "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/rexact-v3/gate-phase-temporal",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "binder-request-temporal.json": "dcfcc591fb9f3e5ea99f7a9134a66c5881e9e732fc9c2c65fef9d0418f3394c0",
+  "build_temporal_gate.py": "4eb1f65822b20c266271a6f2bc60909241260bf3d3b68dbd280f0ab0a8be7fee",
+  "build_temporal_packet.py": "8cd6dc7e8f16ec8fefa1a8f8d532ba7db4eaa501acca4341c7e9cdaeb10f5eaf",
+  "temporal_build_gate.py": "36ce3f4d641d2a8b9bc811dba437b15dab072881d658ef5b70449a786f34a5b8",
+  "test_temporal_b.py": "ac49c75186beb769fd0790aeca5c160b9468829d7eaee1fa1ef20f81e535bf10"
+ },
+ "kind": "rexact_v3_temporal_B_design_review_ready_v1",
+ "mapping": "Temporal and core witness plans bind the same construction/master/staging; bind.py:71 fixes inventory (primary-export-chain-v2/d{h}/master/source-inventory.json) and assembly (construction-primary-v1/assembled/d{h}s/assembly-verification.json) identically for both profiles. The temporal binder request dcfcc591 (from the accepted temporal A capture 211b5ebb) has inventory/assembly/construction refs byte-equal to the accepted core request fcc07c81 for d30 and d60 (tested). Only plan/authority/witness refs and the source manifest (72c2484d) are temporal.",
+ "packet_builder": "build_temporal_packet.py: fetch (core fetch_plan 3be5628d with the temporal binder actual path/sha/size, profile temporal) and packet (temporal witness code byte-identical; temporal gate-control-v1 never used; spec fsize 4 GiB; transport = launched temporal transport + the core-B-v2 log-size guard, LAUNCH_SHA unchanged; waiter/capture = core gate tools with the temporal root). Tested with a synthetic plan through the reviewed launch.check().",
+ "resources_B": "as core B v2: AS 8 GiB, CPU 3600 s, wall 1800 s, FSIZE 4 GiB, 2 threads, nice 10; plus the custody-log predicate.",
+ "steps": [
+  "T1 temporal binder ONCE: rexact-v3-r3/bind.py 2e0e9773 (immutable; supports temporal-rexact) with stdin binder-request-temporal.json dcfcc591; writes temporal-rexact-v3/gate-plan-bindings-v1/plan-input-gate.json (fresh dir, <= 1 MiB); limits AS 2 GiB / CPU 180 s / FSIZE 1 MiB (bind.py own); custody first. Needs 55ef + root once-authority.",
+  "T2 F0: build_temporal_packet.py fetch <binder actual> -> temporal_fetch_plan.py + request; one fetch run (authority).",
+  "T3 packet: build_temporal_packet.py packet <fetched bytes> <binder actual> -> packets/temporal-gate; 55ef R-step approval; root gate authority + request + once-authority; stage/launch once; waiter; capture once."
+ ],
+ "tests": "4 pass (derivation reproducible; request mapping = core upstream; fetch generation + run on synthetic bytes; packet passes reviewed launch.check, guard at both insertion points, tool deltas root-only; foreign plan refused)"
+}

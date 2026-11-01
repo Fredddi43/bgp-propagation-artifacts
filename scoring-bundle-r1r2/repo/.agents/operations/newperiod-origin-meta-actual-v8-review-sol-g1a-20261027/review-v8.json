@@ -1,0 +1,77 @@
+{
+  "conditions": [
+    "No launch, release, retry, or operating adoption for later group steps; storage, runtime, serialization/resource and exact operation-review gates remain required."
+  ],
+  "execution_authorized": false,
+  "findings": [
+    {
+      "id": "OCV8-1",
+      "location": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/chain.py:191,205",
+      "observed": "Actual generated job script executed the supplied BASH_ENV and wrote a marker before its first command; RLIMIT_FSIZE was unlimited (-1,-1), before the script installs its cap. No cluster job was submitted.",
+      "priority": "high",
+      "problem": "Removing --export=NONE defaults sbatch to inherited exports. Generated #!/bin/bash reads inherited BASH_ENV before the script body, so /usr/bin/env -i inside the body cannot establish the claimed clean runtime/write closure.",
+      "proof": {
+        "path": "<REPO>/.agents/operations/newperiod-origin-meta-actual-v8-review-sol-g1a-20261027/v8-shell-startup-reproducer.json",
+        "sha256": "ac74c95712cf95ddf5b406516cd6b1331598cfa085fc4b3ae1451dfd8c7ca840"
+      },
+      "required_change": "Establish an explicit safe sbatch export allowlist (without NONE), or an independently justified clean submission boundary; prevent Bash startup hooks/loader controls before interpreter startup. Add a real generated-script regression with hostile BASH_ENV, proving no startup write and preserved scheduler facts."
+    }
+  ],
+  "nonblocking_notes": [
+    "verification.json matches code and all templates; its tests.txt hash is stale (expected 21455e46..., actual 94e8a0ea...). Reviewer reran targeted tests and pins own results."
+  ],
+  "passed": false,
+  "pins": {
+    "chain.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/chain.py",
+      "sha256": "04bdc549bc83fb62a635009ee54a32a7606100ca8ae61fa73175221027b8e32a"
+    },
+    "common.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/common.py",
+      "sha256": "e05ea3088a915bf6f56e1d4810d13f4e390e31a1af5db1c83006d216e705984c"
+    },
+    "job.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/job.py",
+      "sha256": "1140b23d71de0fddc2c51895d2d043d1b2a0423cfbbf03848c03299575258282"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/operate.py",
+      "sha256": "b5b96bb6e145c1b98446d3d1e92c1ffafd647eed2db895420d0393db4ec539f4"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/remote.py",
+      "sha256": "18c082b98add25906ae48b97d5d2a71ad3bbe43e0c8e893feb5a57e26a9d47c1"
+    },
+    "science.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/science.py",
+      "sha256": "b2514da3d9d3fe100e2feb2b6abda6f1114c19548b767ccbc2bb87866f408ae7"
+    },
+    "test_v8.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/test_v8.py",
+      "sha256": "d7d71833030110d31bb23be644b11bd349163cf80fab3a774cb944197cb58665"
+    },
+    "verification.json": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v8-20261027/verification.json",
+      "sha256": "509a43569f319103336d0b3deca9cbe09455d401e47b538c36a56423ff7f269e"
+    }
+  },
+  "retry_authorized": false,
+  "reviewer_model": "GPT-6 (Codex; exact deployment model ID not exposed)",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "sol-g1a",
+  "scope": "v8 two-line delta from reviewed v7; later group steps remain storage-blocked",
+  "tests": {
+    "all_passed": true,
+    "delta": 18,
+    "evidence": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-meta-actual-v8-review-sol-g1a-20261027/tests.json",
+      "sha256": "9f5bdcba54519e37a10ec2aca7e2689938403510a0267873ae89ddbff4ff4502"
+    },
+    "scheduler_script_and_template_consumers": 7
+  },
+  "unchanged_evidence": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-ORIGIN-STEP1-V5-sol-g1a.json",
+    "sha256": "5439441b1f32a37576ae8530a1865e842d01b06e020c48196d22fce643856b3e"
+  },
+  "verdict": "CHANGES"
+}

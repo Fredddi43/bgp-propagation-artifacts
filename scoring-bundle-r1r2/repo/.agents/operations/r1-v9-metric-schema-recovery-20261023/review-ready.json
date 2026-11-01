@@ -1,0 +1,18 @@
+{
+  "author": "/root",
+  "created_utc": "2026-10-23T11:18:55.401324+00:00",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "5238cf06905912eb9bb7d55e4b31093ce5760ab9259daddd953cac3dad8e14cc",
+    "forecast_retrospective_release.py": "3f82b34a282e1c180ca33d98523c972cd29791813fd6a5b303f2972b6f4f3b6b",
+    "test_capture.py": "d967c4724ee3816d8a72128b00f8a47f6ee951abc591d1fd68ffa5d1c31bea1e",
+    "test_recovery.py": "db274cb000244081aecbdbe94b7f134b964a2c283b3c68e26a2838481680950e"
+  },
+  "kind": "r1_v9_population_metadata_recovery_review_ready_v1",
+  "retry_authorized": false,
+  "scope": "One original NPZ validated-population metadata normalization, no numerical changes",
+  "tests": {
+    "capture": 7,
+    "normalization": 14
+  }
+}

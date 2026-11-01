@@ -1,0 +1,60 @@
+{
+  "assembly_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-FOUR-ASSEMBLY-ACTUAL-ACCEPTED-session<SESSION_ID>.json",
+    "sha256": "d708e4d02c3869e8bf7867abf7913c17536f468602d595363b776a24b9adc836"
+  },
+  "author": "astra-h3t",
+  "base_link_and_execution_design": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-successor-prefreeze-v1-20261025/execution-design.json",
+    "sha256": "04295923ffa05b6f422fdb9a011053bdd06ac1861f3d1c7afb0fdbe03a76f9f8"
+  },
+  "execution_authorized": false,
+  "kind": "h3_audit_v5_exact_candidate_review",
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/build.py",
+      "sha256": "329e79354a7db026eab4e0ccab900e8e67f5e5307690df81d1387b2d0acc15fc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/build-result.json",
+      "sha256": "eb9e80a21260984d6bc7327df72ae030cf4573aedeef45a672f3822f505129de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/test_candidate.py",
+      "sha256": "d4c3863f823bee552b0039d1e61059f34491b4e77324de1d70a25759f5bc15bf"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/tests.txt",
+      "sha256": "6db33371ec11cf9426e45d6c62257d81e2576c845fadbdfa01be37d2d248afeb"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/release_h3_v5.py",
+      "sha256": "5742a9292ae0014e18a6ccfe1156c112d9c7f66751adc52d43340428e401e2ee"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/stage-approval.FALSE-TEMPLATE.json",
+      "sha256": "d52c5eb4b9e62b16306ca2a9e3c23d6db2b1962ecebfa8e171cb93e454a76c89"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/prepare_review.py",
+      "sha256": "3b5fef1e25b76adf4cf7dcca20297b5ca09d2949249e4ca83722c9d138628c9d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/consumer-check.json",
+      "sha256": "bb5a17b847a5d70d67315151b237968e7836403e9c93f6d0ae9fbecce5f1a9f1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/REVIEW.txt",
+      "sha256": "9f195ed9d7d90daf02e82bddecf0aa2d2735a5393ea68bbe582c990a0773cb77"
+    }
+  ],
+  "scope": "Exact local source candidate, not a ready-to-execute operator package.",
+  "scratch_correction": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-scratch-correction-v1-20261025/review-ready.json",
+    "sha256": "b57b72a513c2e5cd8399a075d239545a31b43079c085cd33d9c61f7ad5c8ada3"
+  },
+  "source_map": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-only-v5-20261025/package/plan.json",
+    "sha256": "bdf64c830ef27570821438b1c37280d8428527509c726f62aa48b5515881ed0a"
+  }
+}

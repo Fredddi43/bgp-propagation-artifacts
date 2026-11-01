@@ -1,0 +1,33 @@
+{
+  "actual_results_read": false,
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    ".agents/operations/newperiod-paper-latex-20261024/README.md": "7e75a415709dc1e173936dc64593d4bc5ff567c87daaf352d74992175406f40c",
+    ".agents/operations/newperiod-paper-latex-20261024/test_latex.py": "00f317eb16530bd77ac4df0f69d40fd7009d8b5c599925bbc3c446cad0b0d10a",
+    "scripts/forecast_report_latex.py": "b69d0767abd2ef05f121e85453760d62f1c90c1681f24f4ec6c2ac3ad2dcd2b1",
+    "src/bgbench/forecast_report_latex.py": "b677c01751995377669e3ec9009c96b3396b1860c229ce31f698ee52cacff85f"
+  },
+  "independent_review": "pending",
+  "kind": "newperiod_full400_latex_renderer_review_v1",
+  "manuscript_changed": false,
+  "synthetic_previews": {
+    "directory": "/tmp/paper-latex-ready-tests-20261024/test_actual_cli_and_synthetic_0/rendered",
+    "main_class": "acmart[sigconf,anonymous,review,nonacm]",
+    "main_pages": 1,
+    "overfull_boxes": false,
+    "supplement_pages": 42,
+    "undefined_references": false
+  },
+  "tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q .agents/operations/newperiod-paper-latex-20261024/test_latex.py",
+    "passed": 7,
+    "seconds": 46.27
+  },
+  "unchanged_references": {
+    ".agents/operations/newperiod-paper-projection-20261024/test_projection.py": "86e450aa94c873445b7e9a93da0252e3fd11733131e588652800b4eb095d528d",
+    ".agents/operations/newperiod-single-r2-execution-20261023/test_integration.py": "fa2d09e7730b37228e62d11963824221dc6ecdb415ce7d5f8744da0402501759",
+    "src/bgbench/forecast_full_report_facts.py": "05931d95a98d284d8510c00d08f67f1a3076cc2eab4ff24873297c44645c9d85",
+    "src/bgbench/forecast_release_facts.py": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99"
+  }
+}

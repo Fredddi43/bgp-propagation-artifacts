@@ -1,0 +1,32 @@
+{
+  "actual_scientific_reads_performed": false,
+  "author_model": "Codex",
+  "author_worker": "/root/metadata_check_review",
+  "dispatcher_external_commands": [
+    "sbatch",
+    "scontrol"
+  ],
+  "execution_authorized": false,
+  "files": {
+    "README.md": "648df4f828558aa566f684af210fb20317452857661188485bc6e237a2da0f8c",
+    "bootstrap.py": "9a9de25f72a91aaa9d67ea2a4463e861aecef75e0f1c93c792f9bb0b0a437ca3",
+    "build.py": "9fcb3984b613a24a6ca76dd5650b58462397b9afc2ec0a5350ac5143e313f463",
+    "client.py": "c031c57d994167ddffa09f77fecef21ec9cf702352ae824d248eef1a3b145df9",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "test_transport.py": "6d82ae0b499b51cb45bcc64a198a3d2dd434e656636b444c0afa7a7e150051cb",
+    "tests.txt": "c8bfa01c40eb3b0c530a5ef58adf5982a9a6f4b16a99912767560245d1416b48"
+  },
+  "host_actions_performed": false,
+  "kind": "newperiod_baseline_transport_review_ready_v1",
+  "pending": [
+    "independent code review",
+    "actual complete freeze and per-arm scientific/input/runtime bindings",
+    "whole-input/two-library RAM and storage admission",
+    "independent stage/held-submission authority",
+    "actual held job identities and separate exact release controls/authority"
+  ],
+  "phase_connection_count": 16,
+  "runner_sha256": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+  "scientific_changes": false,
+  "tests_passed": 37
+}

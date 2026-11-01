@@ -1,0 +1,6 @@
+{
+ "governing_approval_sha256": "247a41213a4c2d7962323fd9d973ea95d407431900ef96ac634fbe6a998d89e3",
+ "kind": "newperiod_gate_host_attempt2_request_ready_v1",
+ "pins_sha256": "ba94736f0cdd1a105f6c1636a670b7fffabdbeee237b08292a5cb49967d96a4f",
+ "request": "reviewer: note local validation of approval-v2 S0/S1 and the full sequence; decide optional addenda (a) evidence dir name, (b) H1-H3 preflight. No approval claimed; nothing executed."
+}

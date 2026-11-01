@@ -1,0 +1,19 @@
+{
+  "kind": "origin_family_secondary_code_candidate_v2",
+  "author_worker": "/root",
+  "author_model": "GPT-6 Codex",
+  "files": {
+    "test_consumer.py": "a42c4563b5fb133ece102944384fdb0e6a00aac90a1b420ee1f855625e0aaac1",
+    "reviewed_membership.py": "2f40bf28ea95bf69df378c81fc1c57abacf306f9be59a55028397a70be36e006",
+    "consumer.py": "43585d446b35f2c9c6cf15029117ac72eba91b51dffcad25b53f0cf440f5482f",
+    "reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "REVIEW.md": "f8f04e0edf4549c2dd0d2f6c25fa736f66e0a26eff6aef01e207508b4471ca07"
+  },
+  "tests": {
+    "passed": 24,
+    "seconds": 14.18
+  },
+  "retained_cells": 40,
+  "execution_authorized": false,
+  "actual_protected_reads": false
+}

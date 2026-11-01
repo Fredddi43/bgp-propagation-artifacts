@@ -1,0 +1,16 @@
+{
+  "kind": "r1_paper_actual_candidate_review",
+  "author_worker": "/root",
+  "source_facts": {
+    "path": "<REPO>/.agents/operations/r1-paper-actual-projection-20261024/r1-facts.json",
+    "sha256": "c5754320dc6e69e95ecc45d79238df6b168f96759719ec080355e0eeb6033d60"
+  },
+  "files": {
+    "r1-ap-table.tex": "c974bf9ddffd1f45c2d897002cf47e69cc763ca1eae72dc06b5442eae51a524e",
+    "all-comparisons.json": "6a3e7e82783506b2e5bad25d409d1b8b2b2fe0ca2b5292b3b918c4e864b06214",
+    "provenance.json": "e1650be3c4d9608473171f0c102c167af16c25de9f0fef3fd60b38e330303442",
+    "r1-results.tex": "98e1ca1db4968554351ffd4ca7762e1b46cadc50a6a2afbf1cde67bdc1a9b5c4"
+  },
+  "integration_proposal": "Insert new full-cohort subsection at start of section08; retain and explicitly label the legacy selected-cohort results below until full N integration, without relabeling legacy numbers. No abstract/general conclusion update yet.",
+  "manuscript_publication_authorized": false
+}

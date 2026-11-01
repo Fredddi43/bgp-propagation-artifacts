@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_preparation_candidate_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/v8-preparation-candidate",
+ "pins_sha256": "f088bb707005c64257acc2cd721e8130581aec8e7cf653fd6edf5a59d1b09d14",
+ "requests": [
+  "code review of the re-pinned v8 preparation tools (EDITS table, failed_v7, calibration re-issue binding, approval keys)",
+  "then, in order and each exact: source staging approval (stage.py, scope r1-source-only-staging-v8), the four reviewer records, package build, execution approval"
+ ]
+}

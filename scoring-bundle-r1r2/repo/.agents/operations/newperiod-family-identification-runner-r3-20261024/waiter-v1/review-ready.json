@@ -1,0 +1,9 @@
+{
+  "files": {
+    "wait.py": "59ca35de872e1af2fb582e889d20ee9cb9175018a7f19543da918941ba7e8d29",
+    "test_wait.py": "e528a165de4bdb81be612239fd43987c67ec315ddd608a01efba280afa505f1a",
+    "request.json": "d7132e160e323115102528a44e77a3b680a439ce603013da673608eef711a461"
+  },
+  "scope": "Only jobID52459312\u219252459915 and prospective monitor deadline17:30UTC; unchanged three-task scheduler-only/no-retry/identity-bound prompt logic. No waiter armed.",
+  "execution_authorized": false
+}

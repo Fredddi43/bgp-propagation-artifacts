@@ -1,0 +1,46 @@
+{
+ "answers": "reviewer readiness note OPUS-REVIEWER-EXECUTION-READINESS-20261024T2031 (rexact_v2_core_A / temporal_A needed_from_author)",
+ "author_session": "<SESSION_ID>",
+ "author_worker": "/root/opus_implementation",
+ "builder": {
+  "build_tools.py": "656ac4ec1f33021cb3dc69824e60b4b3b7d15c1ab43de5132d3c8721debb0578",
+  "test_build_tools.py": "1382835832c6cc38007d6ca8073f7bd53b15cdf9c8fdc186aefd616812fb5708",
+  "tools-build-result.json": "29c2ec777ac3626ed10621b5841dfe0e8f3104a80b0a9df0a0989348385832c8"
+ },
+ "execution_authorized": false,
+ "frozen_packet_unchanged": "package/ and root-ready/ spec+authorities re-hashed before/after: unchanged",
+ "generated": {
+  "core": {
+   "outcome/capture.py": "8256097fdffc5630d3d54887f4fd7232ef7176968559b1252fe7ea837353b991",
+   "outcome/test_capture.py": "cf50b40efd7e22281820a8310415faaf5e6525652bbde0be5a7879edc9dc6c31",
+   "root-ready/execution-approval.TEMPLATE.json": "d80aaf577c0e6ed74dd657a8c1b3ace2db5ba59aeaa51375a5dae269ca1dcc72",
+   "root-ready/request.TEMPLATE.json": "2ce4fcc790368f777776602b24d6238ce5fb2b23cd801728ed8dc7126a049097",
+   "waiter/test_wait.py": "07e10eee63285eeda922a64539f1449a0040acc2b3d19f724aa9a2cdc2bf92b3",
+   "waiter/wait.py": "2c73b33b881a9d7c1cd3913ef4f209d668e5c7cd9a767d2dc213b0603afd5126"
+  },
+  "temporal": {
+   "outcome/capture.py": "07b672cfef1274005826a2e6822946f1913736db6da5cab3d5a65525c26ddf7b",
+   "outcome/test_capture.py": "cf50b40efd7e22281820a8310415faaf5e6525652bbde0be5a7879edc9dc6c31",
+   "root-ready/execution-approval.TEMPLATE.json": "bdea96500426d5d85b22fa56776ec2b2e54a86913d670779b96b461a918b457a",
+   "root-ready/request.TEMPLATE.json": "ca86d5d0ec07e1a07fd6f23b914bd5debc7ac6fbb84329e2779fb2517b4b6df1",
+   "waiter/test_wait.py": "07e10eee63285eeda922a64539f1449a0040acc2b3d19f724aa9a2cdc2bf92b3",
+   "waiter/wait.py": "c3a0e2dd22be5d02158a1a47158f9e112c6484d0fe13b12719f847bbd1e8038f"
+  }
+ },
+ "kind": "rexact_v2_tools_review_ready",
+ "launcher": {
+  "core": "d6bdae771c0bc2f585323ebcd0d66f136155f679254e175406b75bfcece8e4d7",
+  "temporal": "0b9407878805e502c7b4fc4b4c513a98dc36b654462393b08591704fff8b294b"
+ },
+ "root_notes": [
+  "core: v18 row core_witness_output 16 GiB points at v1 approval b1ab0e8a; root rebinds it to the v2 approval once issued",
+  "temporal: 16 GiB not admitted in v18",
+  "each profile: independent execution approval (template) + root once-authority; minimum_free_bytes from fresh df"
+ ],
+ "spec": {
+  "core": "229db3ae676aab211e9300b4aa127d0da8c0db5482e6581509f8dc89bdb6e34d",
+  "temporal": "2b20d6590e7ab8d4c7d9a92513121506bf18e0c9a41e2f9af6bfe1acaa28644d"
+ },
+ "tests": "test_build_tools 3 (byte reproduction, diff = ROOT (+prompt profile name in wait.py) only, templates bind v2 packet incl. transport LAUNCH_SHA) + test_build_v2 7; generated waiter 7 + capture 4 per profile; all pass",
+ "v1_slip_fixed": "v1 core waiter prompt said \"Original temporal input witness\"; v2 names the profile"
+}

@@ -1,0 +1,16 @@
+{
+  "change": "Only EXPORT constant primary-export-chain-v1 to actual independently completed chain-v2. Functions, full paired status/tensor population, source/code/profile checks and output namespace unchanged. Old producer preserved.",
+  "execution_authorized": false,
+  "files": {
+    "bind_witness.py": "464c13ade5821ca6029b11d08151968a8569d3070286b20855a4b050a2571722",
+    "test_binding.py": "30998fdad9d4a5c97cdd6fbed6f450c2f8a865fc4a42bab5808320515769cfeb"
+  },
+  "kind": "temporal_witness_actual_export_namespace_compatibility_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-input-gate-temporal-20261023/bind_witness.py",
+    "sha256": "b5e996a4ad32cbda2d413f58dae01dd7713dc4945c454b10a360c419afaf57c1"
+  },
+  "remaining": "Actual complete4export receipts, approved metadata/stat scope, source/runtime/resource/custody operation authorization and exact output absence required before execution.",
+  "tests_passed": 3,
+  "validation": "Exact full-file one-line comparison; genuine original dual-horizon synthetic temporal input/status metadata fixture; old namespace refuses before reads. No real host/payload access."
+}

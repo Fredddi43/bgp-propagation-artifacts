@@ -1,0 +1,7 @@
+Stable v4 is a fresh unissued successor to the consumed stable v3. No remote actions.
+
+V3 suppresses all exception detail; exact first remote guard is unknown. The source-role lookup at audit.py:260 is incompatible with the actual primary historical membership-only staging. Synthetic regression reproduces the KeyError. V4 retains missing historical summary/anomalous provenance as NOT_CERTIFIED with a boolean and commitment; current data and membership omissions still refuse. No implied sibling reads, paths, counts, IDs, payload values or scientific failures are exported. A finite diagnostic code/phase identifies future guard failures without exception text. The 1,319-path read contract, runtime bounds, output cap, nofollow policy and content hashes are unchanged.
+
+Source32, dual32, feature closure, complete source plan and actual G1 remain unapproved. Existing historical provenance and pre-repair inputs remain required. V3 artifacts and consumed authority are preserved. V4 has its own request, worker, runtime and root templates and fresh output directory; operator accepts only exact sol-g1a v4 review, fresh runtime admission, acknowledged controls and issued v36. A later issued phase requires a reviewed successor/rebind. Do not execute this preparation.
+
+23 local synthetic tests pass. Default local Python does not validate remote Polars/runtime; execution requires separate authority. Reviewer must check embedded worker source, exact scope preservation, missing-role semantics and diagnostic non-disclosure.

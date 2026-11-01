@@ -1,0 +1,21 @@
+{
+  "author": "gpt-6-astra",
+  "author_worker": "/root/impact_consumer_review",
+  "automatic_retry_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "REVIEW-PACKET.md": "f22da407cf5c23ba7327bb4dac3fe8c5636a0b71e023542d2c5907a315a68bbe",
+    "audit_headers.py": "413a6cce491d3309d1a4025974fdd78214bc1b65f21b67afcb0bfdb8bac6f026",
+    "compression-receipt-sample.json": "99d5bd8b2c9df8ec6b3c2c6636dda4b2dc6831296bcbe441f19da085483902f8",
+    "test_headers.py": "a232c1d6be694f656e151efa90f315ba306f0c8f441ab559262ea9be0147afd8"
+  },
+  "freeze_authorized": false,
+  "kind": "r1_label_header_audit_code_review_v1",
+  "labels_authorized": false,
+  "newperiod_authorized": false,
+  "protected2026_authorized": false,
+  "r1_authorized": false,
+  "scoring_authorized": false,
+  "seal_authorized": false,
+  "tests_passed": 13
+}

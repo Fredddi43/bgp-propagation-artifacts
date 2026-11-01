@@ -1,0 +1,15 @@
+{
+  "key": "invalid-d60",
+  "manifest_subject": null,
+  "must_check": [
+    "every shard done.json passed, one builder sha, signature digests per year equal the history-r3 L6 summary signature_source_digests (2025, 2026)",
+    "development_manifest.json: manifest_kind development, rows = available + excluded_inputs = construction manifest events (full train+validation population), no test rows",
+    "construction-receipt.json integration_gate_issued false, shard grid complete (years x shards_per_year), graphs + excluded_inputs == rows",
+    "accounting within the phase row (allocated and logical), 0 custody appends, sacct all COMPLETED 0:0 for build array + assemble"
+  ],
+  "passed": false,
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null,
+  "subject": null
+}

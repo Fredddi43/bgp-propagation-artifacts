@@ -1,0 +1,61 @@
+{
+  "action": "stage",
+  "author_sessions": [
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "sonnet",
+    "sonnet-h3-refit40",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery",
+    "opus-h3"
+  ],
+  "binding_acceptance": {
+    "path": null,
+    "sha256": null
+  },
+  "bundle_manifest_sha256": null,
+  "execution_authorized": false,
+  "operating_adoption": {
+    "path": null,
+    "sha256": null
+  },
+  "passed": false,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v44-20261026/root-joint-storage-phase-v44.json",
+    "sha256": "e5fab44a899b288627d28a67a536ed23535349ddbca43cb110ba75a0c2f2f302"
+  },
+  "pins": {
+    "client.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-client-r2-20261023/client.py",
+      "sha256": "ac0275b0808e3d85afc6bde2d8e1f2ccf66f4aec09e3ee08850ef0b09cbfe533"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v1-20261026/operate.py",
+      "sha256": "f716828bbccab5d4b9a988341df2d694c1fd325855ea0921f47574d83d812075"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v1-20261026/prepare.py",
+      "sha256": "529d8ce5d8140b6a5ebff705ab4c9281f65ad21e01d5ef7b7d3a9774d1dfa824"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v1-20261026/remote.py",
+      "sha256": "5d4753118005cf5435a5540b4b9cc13878cc6ea74a2886f23401befd4ac71b21"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v1-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v1-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    }
+  },
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null
+}

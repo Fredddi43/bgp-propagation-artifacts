@@ -1,0 +1,20 @@
+{
+ "author": "opus 55ef4bc5 (claude-opus-5-5) per ROOT-ASSIGNMENTS-V2",
+ "executable": false,
+ "files": {
+  "build_skeleton.py": "bd518f226c6ccdd7fd0c54869b6e83bb045b3687286d70084166d156aa9e19af",
+  "complete400-skeleton.json": "133f8b86940c8955f6fa878787b3a9240661b837e498c5d4ad0f849be5a62064",
+  "test_skeleton.py": "b40801b290590e040a876b6e44313ef28bdf9b0ab282b7a259e6ffb1690a145f"
+ },
+ "kind": "newperiod_complete_retention_skeleton_review_ready_v1",
+ "not_done": [
+  "count R-b disposition (needs the count author record)",
+  "origin valid projection",
+  "destinations layout (inference runners)",
+  "primary/timing/baseline identities",
+  "all executable producer refs"
+ ],
+ "reviewer": "review2 (not 55ef)",
+ "tests": "2 passed: counts/ids; ordinary kernel retained() accepts the TGN/Mean dispositions and refuses an empty failure chain; validate_grid refuses the skeleton (not executable by design).",
+ "what": "G1 preparable part: all 400 roles via the kernel own expected()/fixed_id(); 40 already-terminal non-executables filled (ordinary TGN+Mean 20: failure_chain = selection 52d1a0f0 + tuning ledger 1b6b682c, selection_sha256 per ordinary kernel.retained; origin valid 20: descriptive_only_no_ranking, projection PENDING); 360 PENDING with null producer refs and destinations (nothing invented)."
+}

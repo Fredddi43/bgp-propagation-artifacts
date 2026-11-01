@@ -1,0 +1,26 @@
+{
+  "kind": "r1_resource_evidence_review_request_v1",
+  "author_agent": "/root/temporal_guard_recovery",
+  "pins": {
+    "path": "<REPO>/.agents/operations/r1-resource-inventory-20261020/pins.json",
+    "sha256": "4f45fc751dd92ebd90975a139f857c8e885e2ab5af3b7020f600869af54a0fe7"
+  },
+  "packet": {
+    "path": "<REPO>/docs/paper/forecasting-improvement-20261017/REVIEW-PACKET-R1-RESOURCES.md",
+    "sha256": "c695a409dba112bb08c8ee565973dceb6a422ba71efa395e97365ca004931ec4"
+  },
+  "requested_scope": "collector safety, immutable metadata/stat evidence and conditional planning arithmetic only",
+  "required_verdict_fields": {
+    "kind": "r1_resource_evidence_review_v1",
+    "passed": "boolean",
+    "reviewer_agent": "separate agent identity",
+    "reviewer_model": "actual model",
+    "pins_sha256": "4f45fc751dd92ebd90975a139f857c8e885e2ab5af3b7020f600869af54a0fe7",
+    "final_resource_proof": false,
+    "execution_authorized": false,
+    "r1_access_authorized": false,
+    "scientific_execution_authorized": false,
+    "remaining_blockers": "explicit list"
+  },
+  "author_approval": false
+}

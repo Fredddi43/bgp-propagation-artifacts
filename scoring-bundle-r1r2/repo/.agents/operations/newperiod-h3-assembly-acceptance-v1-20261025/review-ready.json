@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-assembly-acceptance-v1-20261025/prepare.py",
+      "sha256": "f4e6e646a71e9a844528e2d183f620bc63da7f2aa2d0b198b50271e61caeed82"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-assembly-acceptance-v1-20261025/candidate-predecessors.json",
+      "sha256": "e2fd83d474d48178106e1767558ea0790586f905eda8457e6eb59971aad102d6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-assembly-acceptance-v1-20261025/acceptance-request.json",
+      "sha256": "fac2af208412d680ed5b1aa094adebafa648f9e52edde823016ed168e980ef20"
+    }
+  ],
+  "kind": "h3_assembly_metadata_review_ready"
+}

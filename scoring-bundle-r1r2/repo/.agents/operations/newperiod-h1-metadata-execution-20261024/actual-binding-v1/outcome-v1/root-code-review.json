@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "6 tests PASS0.12s.",
+    "Only exact done/failed, 1MiB each, nonlink regular stable identity, finite known schema and expected four output references, no follow.",
+    "Original authorization proof exact match, numeric read counters, failed exception type only.",
+    "Custody log before read;60s/512MiB process limits; actual job/plan/approval request and terminal scheduling still required."
+  ],
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "c065360e6beb4587409a4efdc1de49f778aded3b0a296f44ee449c513da5c611",
+    "test_capture.py": "68f68d9ce137aac08a0fcc9d8c356177d1482f7590df0bb9dc2782f4e05b1e4d"
+  },
+  "passed": true,
+  "retry_authorized": false,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "utc": "2026-10-24T07:15:51.887246+00:00",
+  "verdict": "CODE_ONLY"
+}

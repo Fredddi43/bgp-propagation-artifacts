@@ -1,0 +1,8 @@
+{
+ "approval_claimed": false,
+ "kind": "r1_posteval_k2c_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/k2c",
+ "pins_sha256": "57e6dc3d605ff7302829529280ab32207795362e7e1125f8d8e60aef58b26eda",
+ "request": "review + exact once-only approval of the K2c read",
+ "request_sha256": "ab53829dac98f051729508f89c533137fceb6ac276c28dd501ca9ab27c6d86a5"
+}

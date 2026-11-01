@@ -1,0 +1,17 @@
+{
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/approved-runtime-capabilities.json": "7a298b07fc37e19084d8eb348289d0a2cff702cba81100bafe72c2d778000e2f",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/failed-stop-observation.json": "1db719464d02182b805ec56165b07e7e2f41d72e1114fa9fc5c8ba454dc39723",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/probe_system_runtime.py": "32e8c952c6da412bf971a5c81b89b0f4b43301ba55618af3ef869e1518f19a70",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/reviews/failed-runtime-addendum.txt": "870e101877946dd3a57b3acdb683ef6e0ee852e999d0c7cd60ed9baf500f537c",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v1/system-runtime-capabilities.json": "7ad7473265192139971b9f652f8fc52b7c4831cb79f45f79175f94367affcd71",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/REVIEW.md": "029bcd43c69eddd6e27cdd826619a31f7b4b5a73c8a1caa54e4880dc40924523",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/launch.py": "73d194a791bd54601dbc51554cfb8d9b14ece8d97a5758787d6aff4c69902f33",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/package/failed-stop-observation.json": "1db719464d02182b805ec56165b07e7e2f41d72e1114fa9fc5c8ba454dc39723",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/package/identity.json": "3972de0c6b57ae351e9ea25c08884130efe1117c1d8d21bb5ede053591eba039",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/package/launch.py": "73d194a791bd54601dbc51554cfb8d9b14ece8d97a5758787d6aff4c69902f33",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/package/runtime.json": "7ad7473265192139971b9f652f8fc52b7c4831cb79f45f79175f94367affcd71",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/package/spec.json": "0500a56513c7dc501138216b35827e76a41f199d36d85600d60fc24efaea999b",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/package/stop.py": "7b45e7010ff988320cf3ff684e9e2e3d5fa48b097ef9f3b1db0fc7a7b5e07ac4",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/stop.py": "7b45e7010ff988320cf3ff684e9e2e3d5fa48b097ef9f3b1db0fc7a7b5e07ac4",
+  ".agents/operations/r1-recovery-assembly-20261021/supersession-v2/test_stop.py": "6e5df8911b0d76a871a19ad32c264421a978e2d35eba6ea87aef65a9c4e01046"
+}

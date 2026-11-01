@@ -1,0 +1,12 @@
+{
+  "actual_receipt_pending": true,
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "e5264a495ccefd70f330aca303b56a1404c2bc7a710c1659febd9760feb9c754",
+    "publish.py": "d70217e7d38cd6dcb756a310fc0ca2e9f141975c0729fbe96dbc388aa18ed38d",
+    "test_publish.py": "c65c830ff777fffae5405e0ae0c78b2a456202bbf33108ad3a46d289c0239edc"
+  },
+  "kind": "r1_release_receipt_publication_code_v1",
+  "tests": "4 passed"
+}

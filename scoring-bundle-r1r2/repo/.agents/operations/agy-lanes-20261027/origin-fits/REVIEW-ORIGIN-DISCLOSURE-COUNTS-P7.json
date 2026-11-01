@@ -1,0 +1,27 @@
+{
+ "author": "gemini",
+ "counts": {
+  "development": {
+   "cross_midnight": 90,
+   "fallback_1_to_7d": 63,
+   "no_roa_data": 0,
+   "same_day": 42764,
+   "total_events": 42827
+  },
+  "new_period": {
+   "cross_midnight": 3018,
+   "fallback_1_to_7d": 0,
+   "no_roa_data": 0,
+   "same_day": 223308,
+   "total_events": 223308
+  }
+ },
+ "kind": "REVIEW_ORIGIN_DISCLOSURE_COUNTS_P7",
+ "packet": "<REPO>/.agents/operations/agy-lanes-20261027/origin-fits/ORIGIN-DISCLOSURE-COUNTS.json",
+ "paper_target": "paper/sections/10-disclosures.tex",
+ "reviewer": "claude-sonnet-5-5",
+ "root_signoff_utc": "2026-10-27T05:50:06Z",
+ "summary": "Computed exact origin disclosure counts from pinned historical and prospective tables and daily ROA availability. Development: 42,827 total, 42,764 same-day, 63 fallback (1-7d), 0 no_roa, 90 cross-midnight. New period: 223,308 total, 223,308 same-day, 0 fallback, 0 no_roa, 3018 cross-midnight. Updated paper/sections/10-disclosures.tex replacing pending marker.",
+ "utc": "2026-10-27T04:40:00Z",
+ "verdict": "PASS"
+}

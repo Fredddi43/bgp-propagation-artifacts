@@ -1,0 +1,50 @@
+{
+  "kind": "newperiod_complete_label_execution_r3_source_review",
+  "author_worker": "astra-final",
+  "reviewer": "sol-final",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-complete-label-execution-r2-20261024/review-ready.json",
+    "sha256": "12ce27486dcd20b7233cde9c0351def4031086e1ce635d924629d6e7d5abf887"
+  },
+  "root_direction": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-G4-FSIZE-DIRECTION.json",
+    "sha256": "50f3dc1b5637c56a0ab248c0c42495bb29a0491246a186a7cb11c04f539a8812"
+  },
+  "files": {
+    "README.md": "65a26aeb0beb049b1629cda774fa867a015bd781d2b93ccd255cf6fd64f486e2",
+    "bootstrap.py": "78003b8d2623ec5ec51267b925b1d7cd5d5a5c0261c413b4174cc6692a7e1ce1",
+    "build.py": "9674d02356a45aa4393f8ea57f69da37f0ff61b31009cc9b3e3068877f5dacf8",
+    "client.py": "574e4ad1b04747f60b6957b6347b6719c9660a1a75d3f6fd7f279fa018dd9532",
+    "construction/client.py": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344",
+    "construction/common.py": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d",
+    "construction/job.py": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8",
+    "construction/runtime_verifier.py": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc",
+    "original_metadata_runner.py": "449b2c087af556edf837ff40600c55cc686d453f8cb58e3bad5c7cbdf4de9fdc",
+    "overrides.py": "9eff1827161a500588c494b3aecf4489ad83085fe989d7d93d1a0498211f774c",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "runner.py": "f317174f39de2db0ede74fef85ed1250309c63c74e7a9bc1f280ad1737cb4624",
+    "test_execution.py": "c822a85cde00fbfc16c84cac38dd28f469835f8e33b69e371c7510c2bf0af6b7",
+    "test_fsize.py": "e054105cd0aa432304fbfcbc72c8b9e07c36f61016533bde89f55cc1f592d17a",
+    "tests-r2.txt": "3dfbe0c999d595c3e724e8c77c16ab896a9c53df29128d054b0fe0d4910a6c4e",
+    "tests.txt": "65b1b352cd4ab705b71de40a51262026aad810184770d3c0724c21f3bb864788",
+    "transport_overrides.py": "8dfa3c058afb646c9199c109827eacc7cd655f0a81ba135118e20309dde0494a"
+  },
+  "unchanged_predecessor_files": {
+    "construction/client.py": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344",
+    "construction/common.py": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d",
+    "construction/job.py": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8",
+    "construction/runtime_verifier.py": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc",
+    "original_metadata_runner.py": "449b2c087af556edf837ff40600c55cc686d453f8cb58e3bad5c7cbdf4de9fdc",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e"
+  },
+  "tests": "28 passed in4.18s",
+  "execution_authorized": false,
+  "actual_protected_reads": false,
+  "namespace": "complete-label-preparation-v2",
+  "per_process_fsize_bytes": 4294967296,
+  "shared_log_ceiling_bytes": 2147483648,
+  "output_file_max_bytes": 536870912,
+  "output_total_max_bytes": 2147483648
+}

@@ -1,0 +1,17 @@
+V3 prospective review: inherited setgid correction only in the remote writer.
+V2 actual failed on own-private-directory check immediately after exclusive mkdir;
+local real-filesystem reproduction under a 02700 parent returned child02700, empty.
+V3 private_directory accepts only0700 or02700 plus directory type, current euid,
+and expected gid (parent gid for setgid parent, otherwise current egid).
+Fresh remote allocation-probe-shard27-v3 and fresh local once-records path.
+61 tests passed including full setgid lifecycle, wrong uid/gid and invalid-mode refusal.
+All v2 package bytes preserved. Existing six-directory/current-phase/read-before-consume
+checks, deadlines, ten-case payload sizes, active/fsync/delayed observations, exact
+identity cleanup and no-retry behavior retained. Actual-inventory CLI proof ran
+with synthetic authority/review ONLY in memory and forbidden subprocess transport.
+All persisted authority and reviewer templates remain false. Resource proposal is
+unchanged: 4GiB observation threshold and64MiB controls inside an exclusive18GiB row;
+this is not a hard backend cap or production allocation model. V2 empty-residue
+cleanup is a separate packet and distinct once operation, not included here.
+Root must obtain independent actual termination/cleanup acceptance before releasing
+the shared exclusive row. Production S27-V2-1 remains open. No remote action taken.

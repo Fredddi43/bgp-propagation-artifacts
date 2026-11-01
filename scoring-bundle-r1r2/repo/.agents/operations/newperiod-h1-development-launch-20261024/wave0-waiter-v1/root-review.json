@@ -1,0 +1,13 @@
+{
+  "author_agent": "/root/remaining_work_audit",
+  "automatic_retry_authorized": false,
+  "condition": "Only after exact independently authorized first16 release succeeds; no duplicate watcher.",
+  "maximum_starts": 1,
+  "passed": true,
+  "request_sha256": "85737e17398510c50119d351c6459030c4da75e77b18e4dd49ca05d376a39759",
+  "reviewer_agent": "/root",
+  "reviewer_session": "<SESSION_ID>",
+  "source_sha256": "46b3e1645eb506a846c755a71f7ae5e140238b322836c43859c072c23c7c3974",
+  "start_authorized": true,
+  "tests_passed": 5
+}

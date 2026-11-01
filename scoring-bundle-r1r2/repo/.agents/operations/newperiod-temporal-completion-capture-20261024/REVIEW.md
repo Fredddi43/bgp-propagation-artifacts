@@ -1,0 +1,5 @@
+# Original GRU source-audit completion capture
+
+Fixed terminal52477730. Read only its original complete.json and exact two bound summary.json documents (1MiB/file,3MiBtotal); verify actual spec/approval/manifest/gate/source/staging/producer identities, original input-only flags and all14787 rows per horizon. Return the four refs needed by the reviewed next input auditor. Never open events.jsonl or graph/model/label/source payloads. Before each read append+fsync an exclusive exact access log. Stable nofollow canonical regular files. 1GiB AS/30CPU s; external timeout90s/killafter5 plus outer SSH timeout,64KiB output/error. Root separately verifies scheduler terminal success. No retry or next job authority. Execute configured <BATCH_HOST> alias with direct system python3 -I -S -B, source supplied through compiled -c bytes and request stdin, exclusive local intent/receipts.
+
+8 synthetic tests prove exact reads, foreign authority/scope/changed metadata refusal and forbidden event path refusal.

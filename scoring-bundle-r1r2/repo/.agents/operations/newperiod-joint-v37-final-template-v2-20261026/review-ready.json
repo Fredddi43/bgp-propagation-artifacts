@@ -1,0 +1,38 @@
+{
+  "designated_historical_session": "<SESSION_ID>",
+  "designated_reviewer_role": "sol-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/prepare.py",
+      "sha256": "14435186c6f0b2a933cae47e3ecdfd85e4aa4a7d140be60aa46dd37cfb99c1b4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/dry_run.py",
+      "sha256": "bfe764a9f09fdf3afe367a3197fc25b00afe8e1ae3f6fd3cd42ebcb9a91d40f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/proposal.json",
+      "sha256": "a0fe7cf3f0a767ab2e1d078ccceeccb14ca7ae2aa441867cfacaa7c5f3446643"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/root-phase.FALSE-TEMPLATE.json",
+      "sha256": "9b48a2f56ccb57b6b4b06887f6d6824d83ab7d52c88beaf37479f1fbb690d82c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/consumer-dry-run.json",
+      "sha256": "df1dee0ddca535f892a566c9ada7e8451dff97eda81202c6db98e0d87c76c781"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/board-scan.json",
+      "sha256": "106810a8e08636b0d5742a2aae9d83e11a561cbaa975d3fb372fcd518afc4a80"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/ROOT-ISSUANCE-NOTES.md",
+      "sha256": "fcfa34c30d5fce2acac296766e17000126c7470c128b85066bcbcb9d6ffbcc4a"
+    }
+  ],
+  "issued": false,
+  "kind": "V37_FINAL_V2_FALSE_TEMPLATE_REVIEW_REQUEST",
+  "request": "Review six measured-consumption credits, exclusions including H1 prospective-charge correction, exact row/floor arithmetic and current consumer rebind blockers. No issuance."
+}

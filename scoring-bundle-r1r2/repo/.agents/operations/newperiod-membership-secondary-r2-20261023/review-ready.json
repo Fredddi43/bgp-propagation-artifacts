@@ -1,0 +1,35 @@
+{
+  "actual_execution_authorized": false,
+  "author_agent": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    "REVIEW.md": "3bf8bc86275676540f0313be0b7b93ee8cd18243fffefabdc936ab8138f3ce95",
+    "consumer.py": "5cd8c4720675273f232940d39b3dfe7bbdc7a1a72d7c6b21b24f3823575fbfde",
+    "reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "test_actual_schema.py": "7a39fbd196f2c9f904f2a6a80a4fe932ac43b732afd2d199669f189c28872f6b",
+    "test_consumer.py": "90dc924df2625ad8748ab86da4e0c46d1e8edfe2ce8034bbf50f2fa52db0cb96"
+  },
+  "kind": "newperiod_membership_secondary_code_candidate_r2",
+  "label_reads_performed": false,
+  "previous_candidate": {
+    "path": ".agents/operations/newperiod-membership-secondary-20261023/review-ready.json",
+    "sha256": "7520fb27994a4e8f1a59fa80a93468e490038b2c3ddfa09d68f0cd7125abf0fd"
+  },
+  "protected_reads_performed": false,
+  "scientific_source_pins": {
+    "src/bgbench/forecast_custodian_eval.py": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078",
+    "src/bgbench/forecast_history.py": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c",
+    "src/bgbench/forecast_numeric.py": "478dd41883d8b7a5497f075911a397f9184ddb1d7623a494082190699d1947df",
+    "src/bgbench/forecast_panel.py": "ac9468bceb62020da660993f2fdc80e4efbdca2297de4e7dcdfbfa348b876290",
+    "src/bgbench/forecast_panel_scoring.py": "b7374f69c5c0d88d66ef3e8454fb4529f73ec7155be1791904b4c7aa27f168db",
+    "src/bgbench/forecast_ranking.py": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97",
+    "src/bgbench/forecast_retrospective_scoring.py": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d",
+    "src/bgbench/forecast_train.py": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3",
+    "src/bgbench/graph_metrics.py": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+  },
+  "tests": {
+    "actual_producer_seconds": 6.29,
+    "existing_seconds": 5.37,
+    "passed": 41
+  }
+}

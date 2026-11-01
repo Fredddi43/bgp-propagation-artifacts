@@ -1,0 +1,15 @@
+Path B d300 singleton successor v5 — source/model preparation
+
+This fresh package replaces no frozen file and grants no execution authority. It retains the original scientific source, all14787 reference/status accounting, original failed task52515293_27 and exactly63old+1new downstream lineage. Original32..63 and old downstream jobs stay held. Full400/timing60/fits40 scope remains; d900 follows accepted complete d300.
+
+Requested new row: timing_d300_singleton_path_b =16,106,127,360 bytes (15GiB), comprising14GiB scientific outputs plus1GiB controls. No retired18GiB credit. Model: ceil(5*logical/4)+262144*files+65536*directories+margin.8GiB science logical,4096files,64dirs,2GiB explicit margin yield13,962,838,016 bytes;14GiB leaves1,069,547,520 bytes additional headroom.96MiB controls,64files,16dirs,512MiB margin yield680,525,824 bytes;1GiB leaves393,216,000 bytes (exact values in resource-proposal.json).
+
+The fixed worker checks prospective file/directory creation,2GiB RLIMIT_FSIZE,8GiB whole-attempt logical cap, before/after st_blocks and observed stop-on-exceed, with bounded terminal accounting on success/failure. Accepted active/post-fsync/60s/3053s same-export measurements support the proposed empirical transfer. Sparse/preallocated results provide no credit. Physical allocation can exceed the model during a write before detection; this is no backend theorem. A cap failure stays a failure and never drops a scientific role.
+
+The staged64MiB allowance plus bounded supervisor streams, scheduler-log allowances and finite control records fit96MiB. The future operating packet must implement/enforce the scheduler/runtime/control/temp writer assumptions and prospective control counts. This source preparation does not claim those external controls have already been implemented or admitted. No remote stat, source payload read, probe, submit, release or capture was performed.
+
+Both sol-final (timing science) and sol-h3t (allocation premise) must review the exact model/source. Exact current-phase and operator concurrence remains required later. Release binding is false; stage-spec is explicitly pending. Worker checks two distinct reviewer identities/sessions and exact plan/issued-phase/root-decision bindings; it is reviewer agnostic. The phase base is issuedv42; the release binder must use the latest issued funded successor and all-writer adoption, with no shrinking floors.
+
+Source verification:44 synthetic tests pass; actual canonical consumer positive/negative cases use synthetic mapped inputs only. Six generated JSON files reproduce byte-for-byte.280 original closure members were hash-verified without reading event/label/gate payloads. No real execution authorized.
+
+Next: review model/source; issue funded phase; author stage/held/release operators against accepted limits and latest phase; both exact execution reviews; root alone operates. Then accepted singleton, reviewed continuation32..63, fresh complete64 assembly/audit/finalize with separately admitted2GiB graph/decoded-memory bounds. All consumed authorities remain consumed.

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T07:09:19.359711+00:00",
+  "ready_sha256": "309c6258b8dfcebb7e7638abc610f9d043bf7bfa6ee365fed0cd0b3003b9b161",
+  "files": {
+    "assemble_finalize.py": "e5ccc60fee9d10001170aa747c394d91b7f35031ef6cdec5d35b7f02401b05c7",
+    "inherited-preflight-scope.json": "a6f91175f6412c9efb8f7f3e577ac5afb4f7f83e5c525d38a5df5370ab5fae0e",
+    "publication-review-request.json": "18399cfb5327bb4ce50da0d617c585b977beaf7504a5e20cda779a02afea8531",
+    "test_assembly.py": "b0c06bbb8099a578239e6853a5091a571147f965deecee0085332fe7c5f50f71",
+    "transport_packet.py": "6ab28239b094e46fb56ed5ea4f904f2d8ab5351e1bbb1a19c8c7bca9e9d0202a",
+    "verify_local.py": "65bfd1521241c254d0dbbbfc5506dfca935bcbba4e73123ddef290207e529eca"
+  },
+  "tests": "7passed0.39s",
+  "scope": "Fixedactual98source assembler with genuineeligiblepublicationreview; explicit inheritedprimary preflight, finitekernel19refs incldraft/review, exclusive boundedtar/readback andheldonlyjob. Scientific bytes unchanged, nohost execution bycodeapproval.",
+  "actual_execution_authorized": false
+}

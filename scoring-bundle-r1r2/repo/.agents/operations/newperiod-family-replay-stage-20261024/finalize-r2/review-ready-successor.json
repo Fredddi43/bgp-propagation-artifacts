@@ -1,0 +1,29 @@
+{
+ "author_session": "<SESSION_ID>",
+ "author_worker": "/root/opus_implementation",
+ "builder": {
+  "build_successor.py": "da42e26369c286929428f1635abef08338c5e3a59c6ba8df5be375f25e90062e",
+  "successor-build-result.json": "8eda4bd5e3fade1b5d8a244ab7a90d6b2a38a58b918b1e3b530bd3f03927b981",
+  "test_build_successor.py": "6821f81efc97bd34bd89f3d3fc8a44f7d3aea241e22ecae96c5b9105d0a84e29"
+ },
+ "derived_from": "actual-finalize-v1 release fcee435c, wait 7e135100, capture a8c89ac8 (reviewed); closed substitution list in build_successor.py",
+ "execution_authorized": false,
+ "generated": {
+  "outcome-v1/capture.py": "c439dc3e5ce61cb200a7c69631d2d7b5a176d183d93c30828edc6a4f95a3d7bf",
+  "outcome-v1/request.json": "c4b69e5e2df78c557e0a75dd0a11580347cf73671a630c1446fcf9922311b373",
+  "outcome-v1/test_capture.py": "c62ffbc3249c1c2956109fffa002c9566e07c4f2ec08927bf9a651ccf305a52c",
+  "release-v1/release.py": "187b339be32bb4990e48a8056c810bf112c723cadf3f3479fd943a13c9e22731",
+  "release-v1/test_release.py": "c58de01266c0d36aa973c195302236d293f41a0ae17ead1ed993036c6780f283",
+  "waiter-v1/request.TEMPLATE.json": "145269bf2ace8d1e259baf7676e98be893e79bc31d6b20c386b93589a62328ca",
+  "waiter-v1/test_wait.py": "fbfa21a37771adfec887d421c519794ea2b9a541da0844d96c61ad5300e4f978",
+  "waiter-v1/wait.py": "4c79854dcff5bfe553d63cf41337581059e84fe5471403d4b7c78b008ad67643"
+ },
+ "kind": "replay_finalize_r2_successor_review_ready",
+ "operator_sequence_after_root_release_authority": [
+  "python3 -B release-v1/release.py --approval <root release approval> --approval-sha256 <sha> --output release-execution-v1 (once)",
+  "write waiter-v1/request.json from the template with the real deadline; start wait.py once (background)",
+  "after terminal: capture.py once via ssh <BATCH_HOST> python3 -I -S -B - with outcome-v1/request.json on stdin"
+ ],
+ "root_release_approval_fields": "passed, source_replay_authorized true, job_id 52510900, plan {path PHASE/plan.json, sha 91e8c4b6}, files == plan files, resources == plan resources, pre_release_required_bytes 417685569536, reviewer_worker /root, reviewer_session /root, reviewer_model, retry/fit/prediction/scientific_evaluation/canonical_replacement false (release.py + run.py check)",
+ "tests": "release-v1 2 (incl. client_r2.held on the REAL r2 held.stdout, one release, refuses below 389 GiB) + waiter 7 + capture 6 + builder 2; all pass, -B, no pycache"
+}

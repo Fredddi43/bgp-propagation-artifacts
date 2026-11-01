@@ -1,0 +1,16 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "0503ed4993e14140e607a1728d9a3a9172bc6b01b558389e07b2c930c9fad3dc",
+    "batches.json": "f5041d0c7499f137cc81e4313ebec6e4c467346e21b90ff912fbedbea44d27dc",
+    "consumer_probe.py": "74e49053a730e8de3decd0ca7a6432776d42e4b70163e0f30b525ab59679a2cc",
+    "execute.py": "f2dcbc0e1632de3e88d0f3ff7e50764adb9e10aabdc01a41a4c2af77d423a94b",
+    "prune.py": "163c86d7813ac7f431e3b018d12708182bcedc2dabd6f0b3ee56ffab29732616",
+    "request.json": "2b96a7fe2455b68157d4e121f3a4e32484fea8cb922490ed15847d37eaa89734",
+    "test_execute.py": "77435c10e83e3c51388d3082712f58a3d7657b7fcc5de9b2b603c0ee4c9adb8d",
+    "test_prune.py": "59d9a92d3dbeaa5b9066365fe9fb78e3e00d73ee412518291e8043960ddac652"
+  },
+  "kind": "cold_prefix_remaining_batches_ready_v3",
+  "tests_passed": 24
+}

@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "passed": true,
+  "ready_sha256": "6613d1e88c0ac752dd46b75b8dfec7b1ebc08d2066bf39692c5855ca114e1aaf",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Exact12metadata-only reads logged durably plus declared path stat, fixed unchanged464c13ad binder. Finite2GiBAS/64MiBfile/180sinner/max192MiB outputs; actual independently pinned request and resource admission still required. No source/tensor/label/score payload reads.",
+  "tests_passed": 4
+}

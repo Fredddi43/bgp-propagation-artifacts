@@ -1,0 +1,55 @@
+{
+ "actual_dry_run_after_r4": {
+  "STUB_SUMMARIES": true,
+  "adopted_onsets_changed": 116,
+  "core_events": {
+   "30": 14787,
+   "60": 14787
+  },
+  "excluded_inputs": {
+   "30": 0,
+   "60": 0
+  },
+  "extracts": {
+   "mixed7-d30": {
+    "events": 14787,
+    "extract_bytes": 16779603
+   },
+   "mixed7-d60": {
+    "events": 14787,
+    "extract_bytes": 16847622
+   },
+   "ris7-d30": {
+    "events": 14787,
+    "extract_bytes": 16169027
+   },
+   "ris7-d60": {
+    "events": 14787,
+    "extract_bytes": 16225266
+   }
+  },
+  "h3_prepare_run": false,
+  "kind": "h3_local_partial_dry_run_v1",
+  "legacy_events": 16821,
+  "original_daily_classifications_checked": 473678,
+  "receipt_bytes": 115198115,
+  "receipt_cap_bytes": 134217728,
+  "seconds": 29.5,
+  "staged_source_reads": false
+ },
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "base": {
+  "r3/coverage.py": "6903bf0a9982502a787ec0dd0532346dd0bffe28aadbab9ac740b042b64b5946"
+ },
+ "delta": "B1: evidence() = exact port of refine_h3_window_coverage.py check() L11-25 (0fa404c7): six statuses in original order, no manifest status use, bad slot format -> unlocated_day_ingestion_failure; overlap arithmetic/day range unchanged; CERTIFYING unchanged (2 statuses)",
+ "files": {
+  "r4/coverage.py": "0ea072cca69fcaab6759f19e2c1dacab1b9eceb2aaac2c4607f8115c2d542de7",
+  "r4/test_coverage.py": "acf4ac3a55fe8be1769f8b25de246c79eba787e775c5083a0e92ebdd27488e59"
+ },
+ "kind": "h3_coverage_reconcile_r4",
+ "tests": "29 passed: per-status (11) vs AST-extracted original check(); unavailable; full-manifest parity 13384 manifests / 26922 window comparisons (no-overlap + first-slot windows, 30/60) all equal original incl. all 7 real incomplete receipts (route-views.linx 2023-10-17..23); original_parity on 3aa8b404 = 473678",
+ "utc": "2026-10-24T08:51:15.724200+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "launch_result_sha256": "84909eb517ef2b41c429378e7025c927bb132f343c7e461609c10b55e635d857",
+  "launched_sha256": "23f063eb774009fd69b2971cb25d9f8ee17d2dd4c3bfd005ff0a1d37e93f5f50",
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "/root",
+  "scientific_outcome_known": false,
+  "spec_sha256": "a3eb9328915fd72eb62eb3f83e3d601c5ebb95d79f76098af282a31cc0b15bc7",
+  "stage_and_launch_once_succeeded": true,
+  "stage_result_sha256": "98dfeb82eb3c7bbb76f97c5672f03f1d88450fe59c60cbd9ab1dc34bc1a20c41",
+  "supervisor_pid": 960624
+}

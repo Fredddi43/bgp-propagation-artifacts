@@ -1,0 +1,86 @@
+{
+  "action": "release",
+  "author_sessions": [
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "sonnet",
+    "sonnet-h3-refit40",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery",
+    "opus-h3"
+  ],
+  "bundle_manifest_sha256": "e3c41e1203bae32c30e1a20dc00208903f394626987884a8799171de16547adf",
+  "conditions": [
+    "Root alone issues one fresh release once/current control snapshot and performs final native --check-only. Exact adoption004/v44 and unchanged bundle/signatures; any newer phase or changed writer/runtime/floor premise requires successor adoption/review.",
+    "Keep the65 other jobs held/unchanged. Release only52558223, array0-39%40/full40fits80roles; no retries/requeue, new submission, R2 label opening or protected inference.",
+    "Release client must reread exact admitted record, check this approval and canonical admitted hash, persist release-intent, freshly validate exact held-job readback and all staged prerequisite bytes before scontrol release. No update of scheduler resource/array settings.",
+    "Before every remote call keep stat-only custody identity/no-shrink and EOF+84322856 B reserved growth<2080374784 B plus full fresh phase floors. The reviewed fit Python path adds zero shared-log growth per pinned fit-write-scope-review; native/cache/other-host writer exclusions remain root-attested.",
+    "All forty jobs use previously accepted empirical allocation25034567715 B within25769803776 B phase row,240GiB RAM/one RTX8000/four CPUs/24h each; no wave accounting exists. Preserve empirical-transfer and completion-risk qualifications, immutable runtime/import closure and package-identity checks.",
+    "Independently accept release actual before a separate reviewed/root-authorized capture; completed40/0:0 and full completion metadata remain required. This review authorizes no capture or downstream science acceptance."
+  ],
+  "execution_authorized": true,
+  "fit_write_scope_review": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-admit-actual-release-review-astra-final-20261027/fit-write-scope-review.json",
+    "sha256": "55b4dddb9755a17ff23eab0de376319db08c0a63dd863b5e8b9a41806c6071ae"
+  },
+  "job_id": "52558223",
+  "operating_adoption": {
+    "path": "<REPO>/.agents/operations/ROOT-H3-REFIT40/operating-adoption-004.json",
+    "sha256": "817f4f7ba063d1cb1fc2dfb0f698478853f7e25d9f1386c6bedc728837a379bb"
+  },
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v44-20261026/root-joint-storage-phase-v44.json",
+    "sha256": "e5fab44a899b288627d28a67a536ed23535349ddbca43cb110ba75a0c2f2f302"
+  },
+  "pins": {
+    "client.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-client-r2-20261023/client.py",
+      "sha256": "ac0275b0808e3d85afc6bde2d8e1f2ccf66f4aec09e3ee08850ef0b09cbfe533"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/operate.py",
+      "sha256": "5e9a0c6fd4dd3a8705cf0d97cadd5ca9910b095e06426310efaa0b7a0d0f72ad"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/prepare.py",
+      "sha256": "d8b64bd83009a336b132f1c44d78d2876a09ff628ee2926aa38b935a2c9714a9"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/remote.py",
+      "sha256": "5d4753118005cf5435a5540b4b9cc13878cc6ea74a2886f23401befd4ac71b21"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    }
+  },
+  "previous_acceptance": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-admit-actual-release-review-astra-final-20261027/admit-acceptance.json",
+    "sha256": "e4f98f26065bbb299be913a81c8f7855df79bed6f251f42411117859e96271e1"
+  },
+  "previous_actual": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/actual-admit/result.json",
+    "sha256": "6162ae875024e94a7acdbb873960e7adc8179a0bb18b31f1bf6ee86c860d8300"
+  },
+  "release_approval": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-admit-actual-release-review-astra-final-20261027/release-approval.json",
+    "sha256": "c1c9c03fef4f258cf95d34683ad7fb263f0c0443bc278fc5a7045b20f0a473f8"
+  },
+  "release_review": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-admit-actual-release-review-astra-final-20261027/release-review.txt",
+    "sha256": "1c216ff36cc741cefb492e2d65807b396f838595677deb1ae435bc792deebdbb"
+  },
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "astra-final"
+}

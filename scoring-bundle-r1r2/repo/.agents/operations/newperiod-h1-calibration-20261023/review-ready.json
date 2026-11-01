@@ -1,0 +1,17 @@
+{
+  "author": "/root",
+  "execution_authorized": false,
+  "files": {
+    "DESIGN.md": "4fb4456eaa1d992a9dfa78caf4d7d616abbe92bf61d595e50dc5cad3c61c644b",
+    "REVIEW.md": "bf43ccdb480323d7b49a83b91f0cfacb71865e29780ef9bcd8a4c2f2527a2b7d",
+    "calibrate.py": "b8fc3bc3320cba80192cb02a63dd65d122de5cbcad8d1d5ad8f7bb0cba2f4b36",
+    "execute.py": "e5b349fca460f38c9620cbca15748cfe39b06d570cb1131871890f662aea280f",
+    "test_calibrate.py": "d9d386e66e9b514a486fc40bfa7b16eddf08b2292dadd349d834d585c65ed02e",
+    "test_execute.py": "686d69ed2c4b5308eb193f079d5a154bd08e81b65873584a8fecf2072facedda"
+  },
+  "kind": "newperiod_h1_validation_calibration_code_candidate_v1",
+  "tests": {
+    "passed": 38,
+    "seconds": 14.72
+  }
+}

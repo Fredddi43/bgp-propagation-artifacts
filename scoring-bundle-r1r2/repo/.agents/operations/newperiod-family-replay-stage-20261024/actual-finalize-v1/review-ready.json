@@ -1,0 +1,15 @@
+{
+  "files": {
+    "binding.json": "09a4c30fd7705ada7fcbd9591103273ff57ddc9fd23eb9565a6fca6d255244db",
+    "local-binding-check.json": "9acfce92fe8dd61b954c472458f8ede8e18ccfa0eb477c2a5f67816474af6e60",
+    "plan-without-resource.json": "270494e4fb35130230e99886ae630e0ae65fd76b713de3e7f43e9073a7749278",
+    "resource-proposal.json": "13a41cd3b45b27c6a9de83b7ce3a921059ed776afaaa3b86dc7e3b7c9fc33e34",
+    "task-0.json": "bd1463c329dfd2c48ee0a0994eb238d47242ce7d6ffeb3b7225c092fc7d2a1a8"
+  },
+  "original_execution_code_review": {
+    "path": "<REPO>/.agents/operations/newperiod-family-replay-stage-20261024/execution-r4/independent-root-review/verdict.json",
+    "sha256": "9c6ef39c71ad3ac0be58bbfbaa4654fe377cde2cb5f2457cd00c80e779f40c33"
+  },
+  "resource_and_execution_authority_pending": true,
+  "science_unchanged": true
+}

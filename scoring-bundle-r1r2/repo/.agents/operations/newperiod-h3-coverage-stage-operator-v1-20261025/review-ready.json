@@ -1,0 +1,34 @@
+{
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/REVIEW.md",
+      "sha256": "77d2d7cfe6596eba14d0ccb772f2b554d7e868f6c0462f2186c34790938e0eb4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/dry_run.py",
+      "sha256": "8a87e8f95eda59345e955bf5fb26065890e53e99dcad52f0ffe9a5eb2c51cd62"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/independent-admission-template.json",
+      "sha256": "93880f44b4057641db83dce736c0273054ffbf44d44dc42037d5fc30aa440877"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/root-authority-template.json",
+      "sha256": "a5a95937cf5e8d3d1d64bb161a0d25fa93bc333eadfe536efe02d874e321c517"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/stage_once.py",
+      "sha256": "f2a94103cf8cc76aeb7de08f9674ad81ac1952a22c1bdeaf23d60c6ed217a7f0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/test-run.txt",
+      "sha256": "fc46f9f0bf875343c0e3b87959920c72739063b878c96d77f852a0ff7cd9ae24"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-stage-operator-v1-20261025/test_stage_once.py",
+      "sha256": "5ef98845b9de121a81772dcb4eb5aa82452980afbe0285010f2c18486791f598"
+    }
+  ]
+}

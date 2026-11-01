@@ -1,0 +1,21 @@
+{
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "543a232c01af5f6bee089dfe852f6bacac14061ea77249dbb95cd20610953d3f",
+    "actual-v1/collector-inventory.json": "9be6bea20a453931188d9d84cc276f63d428eb585e177f6616179374407c1803",
+    "actual-v1/matrix.json.gz": "3c9dc4ce5d565958fd025dc0c26e4a99c2dea45d25c98dd9d8f9dd9e3c31ba65",
+    "actual-v1/summary.json": "26ffcf3113ff3e8d15d8a54d7e341db7fea6ec7d8c8e7aeeb9a31c6901b31b90",
+    "bind_index.py": "f87104555c587e14aeb0222b2842a839944c5c4dcf96afae2a11dd542cef8d57",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "build_actual.py": "ab34e8702f6c7d941657a23f4a6ed4d95825110461a05c6b6283e09191e0d508",
+    "evidence_matrix.py": "6775d4f58a2a26769380b6b97d9001d89cc457ee066a5ebb6d7e3ed48512a631",
+    "prepare_inventory.py": "4fdf304885436020348d85e15889266e722973a7763e772ae4190d52ba56ef0d",
+    "test_actual.py": "e6cc89debbcb8aa0b543f34e9ce4b0377daaebc540667709c5702171bc3ff36a",
+    "test_evidence_matrix.py": "1016b787b4521037f8662acbfe78641c84c10b75c488a15e57d37ddb60568e37",
+    "test_pooled.py": "b017219cf186e4ce3c71bfb7048f87eac1004c8c4a22e8f1e3c4b9607e6178dc"
+  },
+  "kind": "newperiod_count_native_bridge_review_ready_v1",
+  "scientific_execution_authorized": false,
+  "scope": "Existing native matrix pooled compatibility and actual captured metadata join; no coverage admission",
+  "tests_command": ".venv/bin/python -m pytest -q .agents/operations/newperiod-count-native-bridge-20261024"
+}

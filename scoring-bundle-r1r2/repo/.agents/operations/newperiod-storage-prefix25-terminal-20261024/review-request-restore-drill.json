@@ -1,0 +1,5 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/drill-v1/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/drill-v1/review-ready.json","sha256":"2dd39c37f7943543fa47f515db2b7daed1e341d75f78f9f9f6e5c6ffde64e6db"},"request_sha256":"948353184cd00701cd3b2a3684bde65bef229b1918919b329711e7f1e1574412"},
+ "asks":["Code/scope review of the rrc00-2025 restore drill (your c9bfe805 requirement): one held CPU job, one HF read, one restored member <=64MiB on results.","If PASS: root admission, then an exact approval (restore_drill_authorized + hf_read_authorized true, prune false, root_admission) whenever a prune is actually wanted."],
+ "priority":"low","utc":"2026-10-24T08:30:10Z"}

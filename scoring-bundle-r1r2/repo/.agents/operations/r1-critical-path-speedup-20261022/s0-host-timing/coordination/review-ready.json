@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "exact_command": "from the packet dir: <repo>/.venv/bin/python -B s0.py run --approval <A> --approval-sha256 <sha> (once; no retry)",
+ "kind": "r1_s0_host_timing_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/s0-host-timing",
+ "pins_sha256": "4054f4c9418b29e426a0a40c8c402c76b9c2681af2dfb52b2e3227a0991b74c1",
+ "requests": [
+  "code/containment review of s0_program.py (audit-hook read whitelist, no writes) and s0.py (one attempt, records)",
+  "if acceptable: exact approval (scope r1-s0-host-timing-v1) binding tool_sha256, program_sha256, host, remote_command; data/remote-write/slurm/install false"
+ ]
+}

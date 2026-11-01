@@ -1,0 +1,44 @@
+# H3 forty-refit execution packet v1 (sonnet) — FALSE templates only, nothing issued or run
+
+## Binding status: 21/21 hash-bound, two items still need independent acceptance
+`candidate/bindings.21of21.json` holds all 21 slots; the real reviewed binder (`bind_package.py` sha 16ab86c8) produces `candidate/package.bound.json` (status `actual_inputs_bound_pending_execution_review`, 40 cells, 80 roles, no pending requirement; `run_package.blockers() == []`). Package sha `1141319c...`.
+- Slots 1-19: copied unchanged from the reviewed v7 map (`newperiod-h3-forty-refits-binding-preparation-astra-v7-20261026/bindings.PENDING.json`, sha 8258323a).
+- Slot 20 `core_gateris7_60`: issued actual `.../h3-integration-gates-v1/h3-integration-gate-ris7-d60.json` sha `af3b9ca1...`. Checked: equals the gate in `newperiod-h3-integration-gate-ris7-d60-actual-v1-20261026/stdout.json` (sha 850bb295; rc0, `fit_authorized false`, `custody_appends 0`, 14696 inputs + 91 excluded = 14787) and `sha256sum` on <BATCH_HOST> matches. **No independent actual-acceptance post for this gate exists yet** (only the pre-issue `REVIEWER-sol-h3t-RIS7-D60-GATE-EXACT-PASS`). `stage` therefore requires a `binding_acceptance` document with `ris7_d60_gate_actual_accepted: true`.
+- Slot 21 `resource_readiness`: `candidate/resource-readiness.CANDIDATE.json` (sha `117f1c43...`), installed by the client at `STAGE/resource-readiness.json`. It is an AUTHOR CANDIDATE: `passed`/`all_forty_fits_admitted` are claims that need independent acceptance (same `binding_acceptance`).
+
+## Resource admission (measured, conservative)
+Measured read-only on 2026-10-26: core-v1 (40 completed fits, all `COMPLETED 0:0` via sacct on the 40 recorded job ids): campaign apparent bytes 22,608,322,592 (allocated 11,300,518,912, i.e. half), MaxRSS max 163,264,340 KiB = 0.65 of the 245760 MiB request, max elapsed 01:14:55 of 24:00:00, partition gpu-rtx8000, python sha on host 62f0c11a (equals package pin).
+Storage bound = apparent (not allocated) + 10 percent + 128 MiB logs + 16 MiB staged code + 220 x 64 KiB = **25,034,567,715 bytes < 25,769,803,776** (v44 row `h3_forty_refits`, issued v44 `e5fab44a`, row unchanged since v42); margin 735 MB (2.9 percent), true allocation expected near half. Free models space at v44 issue 904,128,364,544 vs floor 847,577,881,600. H3 reference population is the same 14787 with exclusions, so outputs should not exceed core; that is an empirical conditional, stated in the file, not a theorem.
+**The reviewed client has no wave mechanism** (single array, throttle 40 = ceiling, scheduler decides concurrency). The whole array is therefore bounded in advance; per-wave allocated stop is not available without changing reviewed client bytes, and I did not change them.
+Not covered (stated in the candidate): exact N-panel peak memory (core analogue only), node/power failure, scheduler-side external writes, runtime package identity refresh (package marks `refresh_required_at_actual_review`; adoption flag `runtime_package_identity_refreshed` must be root-true after a fresh identity check).
+
+## What is byte-identical
+Reviewed client `newperiod-h3-client-r2-20261023/client.py` (sha `ac0275b0`) is executed unmodified (exec of its pinned bytes; its own source hash is part of its transport binding). All 169 files of `review-ready.json` (runner, binder, selector, adapter, job.sbatch, scientific/guard sources) are re-hashed by `prepare.reviewed_sources()` at every gate. `ssh_contract.py` and `transport.py` are byte copies of the reviewed timing40 files (d5103fae / f9fd89f4, hash-checked at the gate). No science file was edited.
+
+## Operator (5 distinct root onces, `operate.py`)
+`stage -> submit_held -> admit -> release -> capture`. Each: own authority file kind `ROOT_H3_REFIT40_OPERATOR_ONCE_V1`, own fixed `actual-<action>/` consumed before the first remote call (`mkdir`, never retried; failures write `STOPPED.json`, jobs left unchanged), independent action review, predecessor actual + independent acceptance, phase must be the newest issued compatible phase (`phase_compat` v2, own rows `h3_forty_refits`), root operating adoption (all-host writers, immutable runtime, native closure, package identity refreshed, temp/cache writers, scheduler writes, empirical transfer, completion risk; custody identity with EOF + all growth < 2GiB-64MiB; zero appends), acknowledged control snapshot of the current board, exact bundle manifest (163 + 4 reviewer files), exact bound package and exact readiness candidate. `--check-only` also runs the reviewed client's own bundle/approval validators locally (no cluster).
+- Transport: ROOT SSH standard verbatim (`ssh_contract.py`, pinned read-only known_hosts sha b60433ea). Every client cluster call is replaced through `Transport`: it first runs the custody/fresh-floor guard on <BATCH_HOST> (`remote.py preflight`), then executes under `bash -c 'ulimit -c 0; ulimit -f 2097152; exec "$@"'`.
+- FSIZE: remote helper and every remote command 2 GiB (> 1,500,270,395-byte custody log + 64 MiB + growth bound enforced as `size + growth < 2GiB-64MiB`); no process here appends to the custody log. The only smaller FSIZE is the local operator's 4 MiB, a non-appender writing small records. The fit job itself is the unchanged `job.sbatch` (no FSIZE set, therefore not below the log).
+- `python -I -B` everywhere; `operate.py`/`remote.py` refuse non-isolated start.
+- Capture: all 40 `sacct -X` rows `COMPLETED 0:0`, then stat-only metadata (complete.json sha, checkpoint/receipt sizes, allocated-bytes accounting vs the 24 GiB row); checkpoints and predictions are never read; result is `independently_accepted false`.
+- Reason codes: `H3O_*` (operate), `H3P_*` (prepare), `H3R_*` (remote), unique per refusal; test enforces uniqueness.
+
+## Unresolved (honest list)
+1. **Reviewer model.** Reviewed `run_package.py` MODELS = codex, gpt-6-astra, openai/gpt-6-astra, claude-opus-5-5, anthropic/claude-opus-5-5; sol-h3t's `gpt-6.1-sol` is not accepted for `execution-approval.json`, `operation-review.json` (client also needs `reviewer_model` for transport/release approvals). Sol-h3t can review this packet and the bindings, but the four signed approval documents must come from a fresh separate Astra (`gpt-6-astra`) or Opus reviewer. I did not edit the runner (its hash is pinned in the package) and did not label a reviewer `codex` falsely.
+2. Slot 20 actual acceptance and slot 21 readiness acceptance (above).
+3. Operator `release` passes the client the release approval; the client enforces `admitted_sha256`, job id and separate release authority itself.
+4. No part of this was run against the cluster except read-only `sha256sum/ls/du/stat/sacct`.
+
+## Exact root command sequence (A = this packet dir; ROOT = root-owned files, B = bundle dir)
+1. Independent acceptance (fresh reviewer): fill `templates/binding-acceptance.FALSE.json` (package sha 1141319c..., readiness sha 117f1c43..., gate actual accepted).
+2. Fresh Astra/Opus reviewer signs the four client approval documents (`templates/execution-approval.FALSE.json`, `operation-review.FALSE.json`, plus `.txt` review texts) over package sha 1141319c...; then `/usr/bin/python3 -I -B A/assemble_bundle.py --out B --approvals DIR` prints `manifest_sha256`.
+3. Client transport approval (`templates/transport-approval.FALSE.json`): `binding` is computed by the client over exactly this bundle (see `World` in `test_packet.py` for the three-line computation: `client.anchor(client.bundle(B), client.py bytes)`).
+4. Root fills `operating-adoption`, `control-snapshot` (current board hashes), per-action `review-<action>` (independent), `root-<action>` from templates, binding the manifest sha.
+5. `cd A && /usr/bin/python3 -I -B operate.py --authority ROOT/root-stage.json --check-only` (rc 0), then the same without `--check-only`. Repeat for `submit_held`, `admit`, `release` (also needs `release_approval` bound to the admitted record), `capture`, each with its own predecessor acceptance, fresh floors, fresh control scan and unused `actual-<action>` namespace.
+
+## What Codex sol-h3t must check
+- Hash pins: client, 169 reviewed files, ssh_contract, transport, package 1141319c, readiness 117f1c43, bindings 084616c1 (all in `verification.json`).
+- That slots 20/21 are acceptable as bound (gate actual vs `stdout.json`; readiness numbers vs the cluster metadata quoted above; whether a 2.9 percent margin on the funded row is acceptable given the no-wave client).
+- `operate.gate()` order of checks, one-way namespace consumption, guard-before-every-call, no reachable path that releases without the separate release approval, FSIZE reasoning, capture reads no payloads.
+- Model/reviewer conflict (item 1) and which signer will be used.
+- Tests: `tests.txt` (21 tests; real binder, real reviewed client validators in `--check-only`, fake cluster stage success and guard-refusal consumption).

@@ -1,0 +1,13 @@
+{
+  "kind": "G4_reference_only_binding_builder",
+  "author": "astra-final",
+  "files": {
+    "actual-reference-bindings.json": "b0aee02e07d80a7f3dbbc8bf82524e4b1e9487c2ec8264aad8a0504fb43ffcf7",
+    "build.py": "f9a3ad8fc5bcf4bc2f953ec62b09393598e34a54050ca699da3376b4c81a231b",
+    "test_build.py": "205e849763bdec5f03164d7e41b304cae2b11625bab5ccf8b4b07e0852635e22"
+  },
+  "tests": "9 passed0.17s;real G4 bundle_scope and client.encode",
+  "actual_bundle_assembled": false,
+  "protected_data_reads": false,
+  "execution_authorized": false
+}

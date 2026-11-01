@@ -1,0 +1,14 @@
+{
+  "kind": "timing_first16_metadata_waiter_review_ready_v1",
+  "author_worker": "/root/deadline_audit",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-construction-four-waves-20261024/wave0-waiter-v1/wait.py",
+    "sha256": "883d33cf1273662e4ac670131ddb33b32f2abb31da890d2fe98bedb69bbcc57b"
+  },
+  "delta": "Exact job and explanatory text only. Original first16 accounting and remaining48held checks unchanged; identity-bound single root wake, no automatic next wave.",
+  "files": {
+    "wait.py": "42b14fed08bfce8d5b3cc884fa54c8ec250ecdeadf443b63ba8868d6bc96f11b",
+    "test_wait.py": "5f1c1bae9e503ca005c2533f32ba4ed2032d7d2326587ad026492deaf6eff6eb",
+    "request.json": "f374f6292e04b0737441f6290e7ded2d73a784dee7210e08f823e89775e820bd"
+  }
+}

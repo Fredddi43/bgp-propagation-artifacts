@@ -1,0 +1,26 @@
+{
+ "kind": "h3_release_packet1_review_ready_v1",
+ "dir": "<REPO>/.agents/operations/newperiod-h3-release-v26-20261025",
+ "author": "4ba6111c (h3_author)",
+ "reviewer": "review2 7f4c18c0",
+ "files": {
+  "v26-h3-rows-proposal.json": "3944b29faa1e2e5ae4d6a0fc37edd3f3746b22109c47888177eb1bd73754b053",
+  "build_waves_v2.py": "69d8322a414523c30690296abf89b86598beccb07c4639c18898db50aae6b35f",
+  "waves_v2.py": "bdaf8e145157fe9ecef5ce5fbf2ac89bf67b08372ef45c3e72b96bb627503621",
+  "test_waves_v2.py": "838f60294079a2e475ab4fd88557febe5564d71020406d514d2a62783c177d05",
+  "build_binding.py": "ebc432c48e5fab51c42c1a36e10e215c51a470cbbee27b07f0e9881ea10383eb",
+  "test_binding.py": "54cf29a1c90174f5c93d2a9bed4323ff3260a930099447dbf1c70caf163fc732",
+  "test-run.txt": "d655fe6fffb0731d8e46bc999221a16c387d1dcabcfbf2c788100f8732d8abda",
+  "mutation-proof.txt": "4d985a3f0f90b6f7136ebdedf069af773fde8db7a0eb7c9caa9810cb633da126",
+  "REVIEW.md": "2e58f653a1ad1ab442f2a8235dde87dc4bada0c4cbc7459a51f2de12a2354801"
+ },
+ "executed": "nothing",
+ "execution_authorized": false,
+ "basis": {
+  "h3_waves_v1": "newperiod-h3-development-budget-r2-20261024/waves.py 5301e876",
+  "submission": "351c6afb",
+  "held_readback_review": "55ef independent-heldreadback-55ef4bc5/review.txt",
+  "v25": "be6c8df6"
+ },
+ "utc": "2026-10-25T05:15:39Z"
+}

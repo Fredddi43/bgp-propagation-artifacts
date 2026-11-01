@@ -1,0 +1,12 @@
+{
+  "kind": "newperiod_h1_construction_candidate_review_v1",
+  "author_worker": "/root",
+  "author_session": "<SESSION_ID>",
+  "files": {
+    "prepare.py": "a9c5f17236609c3e8f18a19c504811928306c0d8f6c9a19d8be7dfae28d11ab4",
+    "test_prepare.py": "93d3d3fd94827b887d78ee7f47840abb3dac852008303ee53137cbfbcfac5fc7",
+    "REVIEW.md": "9955a6819f87560529af0c9ba0ccc0debcefaf0d0fa53e6637d7d6bf38b8be6a"
+  },
+  "tests_passed": 9,
+  "execution_authorized": false
+}

@@ -1,0 +1,118 @@
+{
+  "accepted_consumption": {
+    "h3_audit_v4_chain": 4109824,
+    "h3_development_stage_controls": 3174912
+  },
+  "all_four_groups_preserved": true,
+  "author_role": "astra-h3t",
+  "authorities_consumed": 0,
+  "changes": [
+    "v37finalv2FALSEtemplate9b48a2f5; floor541592786944.",
+    "Verify exact accepted consumption ledger/census/reviewer and unique H3science/control credit4109824/3174912.",
+    "New independent resource flag accepts remaining-reservation accounting. Preserve installedv36binding and total35GiB/4GiB caps.",
+    "Release/capture compute allocated use minus sameacceptedresidentcredit once, compare remainingrows; no custodycredit or freedbytesclaim; disappearance stops.",
+    "28testsPASS including credit drift/duplication/omission/wrongrow/falseadmission and remainingtotal boundary/refusal."
+  ],
+  "draft_phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/root-phase.FALSE-TEMPLATE.json",
+    "sha256": "9b48a2f56ccb57b6b4b06887f6d6824d83ab7d52c88beaf37479f1fbb690d82c"
+  },
+  "execution_authorized": false,
+  "first_group_actual_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-FIRST-V36-CAPTURE-ACTUAL-ACCEPTED-session<SESSION_ID>.json",
+    "sha256": "be5d45c698891b9747093266a1aa68e60bd580b30914039b9445b36952d42d2d"
+  },
+  "kind": "AUTHOR_H3_V37_CREDITS_PENDING_CAPTURE_REVIEW_READY",
+  "phase_floors": {
+    "models_bytes": 541592786944,
+    "results_bytes": 45231374336
+  },
+  "phase_issued": false,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/author-checks.json",
+      "sha256": "e4fa2b00bbf9bf3805275882b55047176d53c9ca82d602c5b50816748b2d486c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/build_packet.py",
+      "sha256": "fff58f4a9ec51d4e0d7c243df9478d086d45f369bea9b1c8afbfc8acde214c49"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/capture_once.py",
+      "sha256": "506c8fee526d6a08f85324665e934c4796b929ad411df620c3b3085c845159a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/capture_remote.py",
+      "sha256": "a2f039f1e17dcccffb2e6d6f0210226c1822a25b8e94c682912f76ffe2582235"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/mixed7-d60-author-once.FALSE-TEMPLATE.json",
+      "sha256": "55042167e207a302a8fca3c67f2584cdaed4d1d915a5cbc48d81cd19cc050bc8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/mixed7-d60-exact-scope.json",
+      "sha256": "8c111a6e9204bc05a0de985ab7d517d8fea891ed19e948178b8d684ff37f57c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/mixed7-d60-request.PENDING.json",
+      "sha256": "aa464822c4e3692093b737b86be92d8054ff739f5e938eaa5193a05f0b197116"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/packet.json",
+      "sha256": "e912c13f1d1d880f5e4edb51e342b9c1333ad68e0654e9a3e3c6575ffa897c41"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/ris7-d30-author-once.FALSE-TEMPLATE.json",
+      "sha256": "1ebe0351ce958a4593e18b8e0afa2d35362a483f61469081baf3cb8ba144a4e0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/ris7-d30-exact-scope.json",
+      "sha256": "3da0322dfe0a450f028c175e41fd1f0ba5c8f25ea11d19cb1a9327e6f3706f4b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/ris7-d30-request.PENDING.json",
+      "sha256": "618fa109fca9bcfb294b83d2b9fa4a4562b05cdb2e26a741b83e83791b02f025"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/ris7-d60-author-once.FALSE-TEMPLATE.json",
+      "sha256": "51200c005e8c9f9c1c9f4e7fa737104a4d6392e801ecb6e467cc908246983b35"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/ris7-d60-exact-scope.json",
+      "sha256": "9d31488dbcca45de5e3a490def7d2475e655afc689fcd09405c0fa9532c4d52b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v6-v37-credits-pending-20261026/ris7-d60-request.PENDING.json",
+      "sha256": "5735b64f27a302753e3d413c0868bb7ef37b6fec75a8098a65415ca4d8d9d245"
+    }
+  ],
+  "protected_payload_reads": 0,
+  "remaining": [
+    "Independent review of v37finalv2 and thiscredit-aware successor; ROOT issuance after pendingv36operations.",
+    "Fresh exact issuedphase successor/resource and operator admission; root substantive allwriter/scheduler adoption/currentcontrols.",
+    "One group release/capture then independent actual acceptance before nextgroup. No automaticchain/retry."
+  ],
+  "remaining_phase_rows": {
+    "h3_audit_v4_chain": 37576854016,
+    "h3_development_stage_controls": 4291792384
+  },
+  "remote_actions": 0,
+  "retained_total_caps": {
+    "h3_audit_v4_chain": 37580963840,
+    "h3_development_stage_controls": 4294967296
+  },
+  "retained_v36_binding": {
+    "path": "<REPO>/.agents/operations/reviewer-sol-h3t-20261025/h3-release-capture-v3-v36-session<SESSION_ID>-r2/execution-binding.json",
+    "sha256": "8474301af85c8e408ad0c3a7a70952e617e69e42c62a73b9c366c75244de59ac"
+  },
+  "successor_groups": [
+    "mixed7-d60",
+    "ris7-d30",
+    "ris7-d60"
+  ],
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T20:17:46.365867+00:00"
+}

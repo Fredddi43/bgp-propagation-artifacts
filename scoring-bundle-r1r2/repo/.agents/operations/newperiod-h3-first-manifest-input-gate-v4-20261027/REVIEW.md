@@ -1,0 +1,21 @@
+# Wave-0 outer-operator successor (v4): fix for the consumed STOPPED/TypeError
+
+Author: Sonnet worker. No edit to the staged package or the v6 stage dir; no launch, signature, authority, board post, cluster call.
+
+## Cause (confirmed in code)
+`wave_once.py` transport does `s.bounded(argv, kw.get('input',b''), ...)`. The inner `release_once.run` calls `runner(..., input=data, ...)` and for the first call (`scontrol show job -o`) `data` is `None` (`call(name, host, command, data=None)`), so the key exists and `kw.get('input',b'')` returns `None`. `stage_once.bounded` forwards to the pinned H1 `bounded`, which does `inp.write(data)`: `TypeError` for None. The inner `run` catches it, writes `release/STOPPED.json` and returns 3; the outer then raises `Wave release refused; consumed`. This matches the consumed record (`held-00-intent.json` with `stdin_sha256: null`, `STOPPED.json` TypeError, nothing released; 52555157 still PENDING/JobHeldUser).
+Second None/kwarg risk found and fixed the same way: `kw.get('timeout',120)` (inner always passes 120 so harmless today, now `kw.get('timeout') or 120`). No other mismatch surfaced when the real inner `run()` was driven end to end against a fake transport (held check, quiescent squeue, snapshot + admission, permission write + readback, release-stat, release: 6 calls, one `scontrol release 52555157`, `released.json` written).
+
+## Files
+- `wave_once_v2.py`: verbatim copy of v6 `wave_once.py` with (1) `input` None to b'' and `timeout` guard, (2) `STAGE` = unchanged v6 dir for `package/plan.json`, `release_once.py` and package files, (3) `records_path(ordinal)` = `newperiod-h3-protected-wave-00-actual-storage2-v4-20261027` (v3 records stay consumed). Everything else identical (diff in the author transcript: 7 changed lines).
+- `final_check.py` (imports `wave_once_v2`) and `gate.py` unchanged from v3.
+- `bind_v4.py` + `bound/`: takes the SIGNED v3 request (`reviewer-sol-h3t2-20261027/h3-first-manifest-v3-review/bound/request.json`, sha `d7084db3...`) and changes ONLY `outer_operator` to `wave_once_v2.py`. New `bound/request.json` sha256 `24864ec54f0b86239b834643d54d05680f871e1ff96eb8a89518191d1eb42db2`; FALSE wave-review template bound to it; FALSE root-once template with the new records path. The signed retained-input, protected-read-scope and physical-profile files, adoption `ROOT-ADOPTION-H3-FIRST-MANIFEST-002` and evidence-f are reused unchanged (none of them contains the outer-operator pin or the request hash).
+- `test_v4.py` (5 tests, `tests.txt`, stable over 3 runs): real `bounded(None)` raises TypeError; the OLD wrapper reproduces `release/STOPPED.json` TypeError with zero commands sent; the NEW wrapper completes the real inner `run()` end to end with a fake transport (records and `s.OPS` redirected to temp dirs, board scan stubbed because other agents post continuously, `posts()` is a verbatim copy); pins, fresh records name and "nothing else changed vs the signed request"; a request pinning the old operator is refused by the new one.
+
+## What the reviewer must redo
+Only the wave approval: sign `bound/independent-wave-review.FALSE-TEMPLATE.json` fields over the new request (`request_sha256` above, scope `protected-single-wave-release`), then root fills a fresh once (control snapshot over the 7 control dirs, `passed`, `execution_authorized`, review ref), and runs `final_check.py` of THIS directory (`--authority <once>`, then `--execute`). The old `final_check.py` of v3 must not be used (it still imports the old operator).
+
+## Timing (tight but feasible)
+At 2026-10-26T23:01:17Z `gate.gate` on the new request passes: adoption valid to 07:02:48Z, `latest_start_utc` 01:52:48Z, evidence age 1249 s. The gate refuses once the evidence is older than 10800 s, i.e. after **01:40:28Z**, which is earlier than latest start: effective GO deadline is 01:40:28Z, about 2 h 39 min from now. Re-collecting evidence would invalidate the signed profile/adoption pins, so it is not offered; if GO slips past 01:40:28Z a fresh collect, adoption and profile are needed. Free-space margin was 891311488 B at the last collection; the floor re-check at release time can still refuse (before any release).
+
+Exact review request text: `REVIEW-REQUEST.txt`.

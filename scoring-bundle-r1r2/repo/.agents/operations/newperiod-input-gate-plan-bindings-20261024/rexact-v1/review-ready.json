@@ -1,0 +1,25 @@
+{
+ "author_session": "<SESSION_ID>",
+ "basis_review": {
+  "path": "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/core-c1/opus-review-v1/ck3-downstream-compatibility.txt",
+  "sha256": "0532cf599cdd28c66c84089bd34cdcc08e30b99b20411dd5fed5b117ae77b210"
+ },
+ "execution_authorized": false,
+ "files": {
+  "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/core-c1/core-v1/gate-phase-v1/build_gate.py": "86fd078ef5e1efb07bc18f291686bebb5b3082d66402a7cc057a3e85d72e0d70",
+  "<REPO>/.agents/operations/newperiod-feature7-rexact-recovery-20261024/core-c1/core-v1/gate-phase-v1/test_build_gate.py": "9aec8f13d26d0785d27f726551690bb4b2f7aac964bafd5f597ffffb84be403d",
+  "<REPO>/.agents/operations/newperiod-input-gate-plan-bindings-20261024/rexact-v1/REVIEW.md": "a70a314f7ae817c56e8d3c143cfdd898fc3f6308b7746ee0be680d471e223502",
+  "<REPO>/.agents/operations/newperiod-input-gate-plan-bindings-20261024/rexact-v1/bind.py": "96fbf28296f96fbb417e9c0d52e6d5d404f4b2de80e40b76e0b4d28ac7b880a4",
+  "<REPO>/.agents/operations/newperiod-input-gate-plan-bindings-20261024/rexact-v1/test_bind.py": "218ac874bf32fd7346c41da4f475642ea1c9a92f177b5d72f424f4851310b513"
+ },
+ "gate_issuance_authorized": false,
+ "kind": "rexact_ab_binder_and_gate_phase_ready_v1",
+ "original_binder_unchanged": {
+  "bind.py": "f5d05febaf8ea458fc862cecde2a4560ae6afbc97cb00d2c0c254317f4fe240c",
+  "test_bind.py": "bdc38ab2092c89a09e2bfe9ab460ed7d194c87316e6f145b71957011e999c447"
+ },
+ "tests": {
+  "binder": "23 passed in 0.12s",
+  "gate_phase": "16 passed in 0.07s"
+ }
+}

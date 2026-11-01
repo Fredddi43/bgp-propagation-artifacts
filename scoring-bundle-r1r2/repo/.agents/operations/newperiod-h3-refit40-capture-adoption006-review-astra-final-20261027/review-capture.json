@@ -1,0 +1,86 @@
+{
+  "action": "capture",
+  "adoption_correction_record": {
+    "path": "<REPO>/.agents/operations/ROOT-H3-REFIT40/operating-adoption-006.correction-record.json",
+    "sha256": "767baa984f43dce04bb497d30912925b8ddd97de98c3bf8e35849dcc024164c4"
+  },
+  "adoption_probe": {
+    "path": "<REPO>/.agents/operations/ROOT-H3-REFIT40/operating-adoption-005.json.probe.json",
+    "sha256": "8a2393368f779fbe89511cd39b105bb07036f3ef53ba9db5307cdaa95d75e49a"
+  },
+  "author_sessions": [
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "sonnet",
+    "sonnet-h3-refit40",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery",
+    "opus-h3"
+  ],
+  "bundle_manifest_sha256": "e3c41e1203bae32c30e1a20dc00208903f394626987884a8799171de16547adf",
+  "conditions": [
+    "Root alone issues one fresh capture once with this exact review, adoption006, v48/current compatible phase, release actual bcda633e and unchanged accepted predecessor6a46e82d; full current control acknowledgment and native --check-only immediately before execution. No duplicate capture/retry.",
+    "Capture reruns exact sacct for52558223 and requires all40 distinct tasks COMPLETED0:0 before remote metadata reads. Supplied terminal evidence is accepted but does not replace the runtime terminal gate.",
+    "Remote scope: exactly40 fixed completion JSONs (each<=1MiB), checkpoint/fit-receipt stat metadata only (each<=512MiB), and fixed output+stage tree stat accounting (<=1600 entries; apparent and allocated bytes<=25769803776). No checkpoint/receipt/validation-prediction payload reads or payload rehash; no protected label opening.",
+    "No additional models/results output files allocated by capture helper; stdout<=262144 B. Local operator requires32MiB free and writes bounded intent/scheduler/result or failure records. Full fresh models floor867383093888 B and results floor45231374336 B remain mandatory despite zero extra output allocation.",
+    "Fresh remote stat-only custody identity/no-shrink and EOF+84322856 B remaining growth<2080374784 B; retain unchanged all-host writer exclusions, no-release/no-update conditions on65 other held jobs, runtime/native/cache/scheduler attestations. Updated probe is inherited from005 via exact12-ref correction only; changed premises require successor adoption/review.",
+    "Single metadata capture only. Result remains independently_accepted=false until separately reviewed; no rerun, deletion, training, seal, G4 or R2 authority."
+  ],
+  "execution_authorized": true,
+  "job_id": "52558223",
+  "operating_adoption": {
+    "path": "<REPO>/.agents/operations/ROOT-H3-REFIT40/operating-adoption-006.json",
+    "sha256": "ba3d6ca837ed78a845624df2f53cf949fef22926af84bc8e698301c443befa75"
+  },
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v48-20261027/root-joint-storage-phase-v48.json",
+    "sha256": "913754c6c095bf1b0eb542a1d33d721318ccdc4934659bc4728a3d36f7b07baa"
+  },
+  "pins": {
+    "client.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-client-r2-20261023/client.py",
+      "sha256": "ac0275b0808e3d85afc6bde2d8e1f2ccf66f4aec09e3ee08850ef0b09cbfe533"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/operate.py",
+      "sha256": "5e9a0c6fd4dd3a8705cf0d97cadd5ca9910b095e06426310efaa0b7a0d0f72ad"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/prepare.py",
+      "sha256": "d8b64bd83009a336b132f1c44d78d2876a09ff628ee2926aa38b935a2c9714a9"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/remote.py",
+      "sha256": "5d4753118005cf5435a5540b4b9cc13878cc6ea74a2886f23401befd4ac71b21"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    }
+  },
+  "previous_acceptance": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-release-actual-review-astra-final-20261027/release-acceptance.json",
+    "sha256": "6a46e82d673ae299d96d535d0ffdce12a2df827f8aa4d57915a4e9d0ce64ec43"
+  },
+  "previous_actual": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/actual-release/result.json",
+    "sha256": "bcda633ef25b029ecb3563b1edaab128e0938c985667f5392ea846062595451f"
+  },
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "astra-final",
+  "terminal_acceptance": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-capture-review-astra-final-v1-20261027/terminal-acceptance.json",
+    "sha256": "50ae3546c99cd3b5d8a12a125b35def6c775c9414444fcf89c33e6b8b9cd72e1"
+  }
+}

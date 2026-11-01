@@ -1,0 +1,14 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "bd6a681ce2d0944930cf62fd3a0c1d94812342c690fbf2135fee228cc56969b8",
+    "audit.py": "52fbe174cbbae40f08933769daf18dae6786cc4b643c23e8ef6587499d574a45",
+    "h3_audit.py": "27c2601f584738b13b4adc4df2d3c8a502e9392bae761c996fcf824d37d509a2",
+    "source_io.py": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0",
+    "test_audit.py": "cfff14f9389624bd962b4d6fb6d8358a7b1cf9c054aae0c8117a3b8871b80585",
+    "verify_h3_panel_completeness.py": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0",
+    "verify_h3_panel_features.py": "3529b9800016ec798b463683cdf768ffecad2a0a7b14630a78adeb6c00119f2f"
+  },
+  "kind": "newperiod_h3_full_development_audit_code_candidate_v1"
+}

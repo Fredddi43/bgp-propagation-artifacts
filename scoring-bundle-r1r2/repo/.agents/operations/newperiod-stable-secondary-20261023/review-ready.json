@@ -1,0 +1,22 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_worker": "/root",
+  "files": {
+    "README.md": "0579cc6cb0469106139337a747c8b4a9755601ef91941b4f3ed57b12454b48f5",
+    "consumer.py": "deb124b1931cfa36f0dff0fdc3a2a4d592edbd2147c0d662e44986c09aabb712",
+    "reviewed_membership.py": "5cd8c4720675273f232940d39b3dfe7bbdc7a1a72d7c6b21b24f3823575fbfde",
+    "reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "test_consumer.py": "ce868b8a223e4f96890fe0d36ff2e86899b84987bfd7bcae3e9e3b9162ff7486"
+  },
+  "kind": "newperiod_stable_secondary_code_candidate_v1",
+  "original_sources": {
+    "docs/paper/forecasting-improvement-20261017/ALL-RECIPES-DRAFT.json": "6d851282e4036a6323a24ef41740207c75b839a72a960604cb1404d593ae0917",
+    "src/bgbench/forecast_custodian_eval.py": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078",
+    "src/bgbench/forecast_ranking.py": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97",
+    "src/bgbench/forecast_retrospective_scoring.py": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d",
+    "src/bgbench/forecast_stable_peer.py": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+  },
+  "protected_data_read": false,
+  "tests_passed": 18
+}

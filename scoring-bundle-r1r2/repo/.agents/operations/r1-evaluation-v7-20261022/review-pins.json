@@ -1,0 +1,50 @@
+{
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "base": {
+  "review_pins_sha256": "853ec1dba9544a43f73970bc540ea798edf0a8448b7877a841255d13012e0c4a",
+  "review_sha256": "e8f0b337e7f5b17178a97d64fa2bd4613c3aa4254910af5934fc50056466222e",
+  "verdict_sha256": "3422896a12a85d6e32454e531072acb293d3a3bd1d737810fa2d6496e1abd345"
+ },
+ "kind": "r1_evaluation_v7_review_pins_v1",
+ "package": {
+  "REVIEW.md": "5eab8317e09f7eb926feb2c2408d20de44195ce5e34c72e60335b6b806ee8858",
+  "build_candidate.py": "015614b5cfc25112e6c5bf4fc930ba1eb3c47bf6ddd8a85934d0e0fa81a12810",
+  "execute.py": "3c71438b58ba1cffa9011e19cba8d9fed3ede6da68e6bb0eb56b355fa714bf58",
+  "execution-approval-TEMPLATE.json": "529c95a75d12dfa065a8c57f91d1d07b336b9943561c4bcb1d2a96a43ca827b7",
+  "execution-spec-TEMPLATE.json": "91e7403c45c28c19d48d46b619b2b99943e4e2e8dc174778c16b5d4db5a27f48",
+  "launch.py": "cd282379de729feafdf9bc6df650df7a6f10be8ca7d7985d3308a4b98fc651de",
+  "mutation_controls.py": "29586a45fc945d32feea708866684378c7d61083888f4de460c4c1cc9ce60249",
+  "r1-authorization-TEMPLATE.json": "7f67f5846f67d4b53f8e21489426c5d4e859f783028ea4d0a2e1bf68b0967379",
+  "run.sh": "8f697763422a812aa15b35644519b19422d3666ac21105a3cf6e38ee1c75b1e9",
+  "supervise.py": "b427b1c1dc257fce8acf8d96c146bcb06fc831a33916291e0f0b1f529f4efbb7",
+  "test_evaluation.py": "f6c62e581c76d0298e9b6f02c66411c094ce01e345579b56986dad48024b2afa"
+ },
+ "prepared_refs": "all null until an actual successful v7 preparation",
+ "repo_head": "054d4c3",
+ "status": "code_only_candidate_ready_for_independent_review",
+ "v7_preparation": {
+  "custody_sha256": "409e1171d982c8e13bd3065403797083195339a97b2aed247e21dba8a7732dc0",
+  "draft_sha256": "44acc870e2432570e3336853e025fee20bb543d6054c298d665cc8abaf09edff",
+  "execution_spec_sha256": "0cb262fb0f71e244729d2ad3aa0584596bf7fef9356d0869b19735093038b4fb",
+  "launcher_sha256": "6ea224eb3db400872181df175c8156751fa3895fdd6562d651ebdd84b43648f5",
+  "source_manifest_sha256": "7f35bd2258ef67ef6e8dfb1548d0c7ab0d5f84d347321ee612aa6f8255007823"
+ },
+ "verification": {
+  "base_suite": "44 passed",
+  "negative_controls": {
+   "builder PREP back to v6": "3 failed, 58 passed",
+   "current author dropped": "8 failed, 53 passed",
+   "execute root back to v6": "5 failed, 56 passed",
+   "launch root back to v6": "4 failed, 57 passed",
+   "prepared ref fabricated": "2 failed, 59 passed",
+   "run.sh root back to v6": "4 failed, 57 passed",
+   "spec template v6 manifest": "3 failed, 58 passed"
+  },
+  "ruff": "All checks passed",
+  "test_evaluation": "61 passed",
+  "v6_codepass_suite": "58 passed"
+ }
+}

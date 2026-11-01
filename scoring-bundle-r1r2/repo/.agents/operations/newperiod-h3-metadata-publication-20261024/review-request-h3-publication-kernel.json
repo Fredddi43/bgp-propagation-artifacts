@@ -1,0 +1,5 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-publication-20261024/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-h3-metadata-publication-20261024/review-ready.json","sha256":"bb63e0d7502f37065fcae0526d3371438c1ade26e8c96936f16867511c02c6ca"}},
+ "asks":["CODE review of the H3 metadata publication kernel (publish.py new; all other modules byte-identical to reviewed sources; coverage.py = r2 pending in review-request-h3-coverage-*). 5 isolated tests incl. genuine original authorize + build_graphs for all four groups."],
+ "priority":"high (Monday critical path, H3)","utc":"2026-10-24T08:38:20Z"}

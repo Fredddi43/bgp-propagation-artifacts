@@ -1,0 +1,59 @@
+{
+  "actual_runtime_adopted": false,
+  "author": "astra-final",
+  "bytes_freed": 0,
+  "deletion_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": {
+      "path": "<REPO>/.agents/operations/newperiod-p24-retained-launcher-astra-v1-20261026/REVIEW.md",
+      "sha256": "d7808f5f4f6934eaa1542f027989e3a04779caecae29a17ab33364c3c65c7688"
+    },
+    "launcher.py": {
+      "path": "<REPO>/.agents/operations/newperiod-p24-retained-launcher-astra-v1-20261026/launcher.py",
+      "sha256": "1cf6f5f7665fc630983e2cb243fce25d55b431d427a8c3d08ced2a67177c0c54"
+    },
+    "retained_guard.py": {
+      "path": "<REPO>/.agents/operations/newperiod-p24-retained-launcher-astra-v1-20261026/retained_guard.py",
+      "sha256": "08aa980b20cfe0ffe1874510cc4871bb7e139943266e184b1d490ddfa39328ea"
+    },
+    "source-pins.json": {
+      "path": "<REPO>/.agents/operations/newperiod-p24-retained-launcher-astra-v1-20261026/source-pins.json",
+      "sha256": "5bd486f330707a66c358627eb1133cdd753ff5c750f939b1fe9750770cff375c"
+    },
+    "test_launcher.py": {
+      "path": "<REPO>/.agents/operations/newperiod-p24-retained-launcher-astra-v1-20261026/test_launcher.py",
+      "sha256": "952b83e5a078944a020260dd6442b4e1053d7c1cc5ce0a55fb394f17a2087f11"
+    }
+  },
+  "guard": "Unchanged accepted08aa980b guard, P24/launcher before entry source execution and before original top-level scientific imports. Exact dispatch data/runtime/project refs must be included in admitted edge; bgbench imports compile captured hash-bound source only.",
+  "kind": "AUTHOR_P24_RETAINED_LAUNCHER_SOURCE_REVIEW",
+  "operations": [
+    "projection",
+    "summary",
+    "forest",
+    "latex"
+  ],
+  "remaining": [
+    "Designated independent source verdict.",
+    "Root actual configured route blocking direct original entrypoint/summary imports, complete retained contract and semantic plan.",
+    "Exact runtime/startup/font/config/import closure; approved report/facts/sidecar/summary-control refs after R2; no pending outputs treated as existing.",
+    "Actual once/resource/custody permission and namespace/actor interval; source hook is not a syscall sandbox."
+  ],
+  "remote_actions": 0,
+  "request": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-ROUTE-PARSED-P24-2219.json",
+    "sha256": "c7a3a98342c3b150c4f42b1996389df33b2140507de6c06cb1d725dd2da20298"
+  },
+  "scientific_payload_reads": 0,
+  "scientific_sources_changed": 0,
+  "self_approved": false,
+  "session": "<SESSION_ID>",
+  "source_files_original": 12,
+  "tests": {
+    "command": ".venv/bin/python -I -B -m unittest discover -s .agents/operations/newperiod-p24-retained-launcher-astra-v1-20261026 -p test_*.py -v",
+    "passed": 10,
+    "synthetic_only": true
+  },
+  "utc": "2026-10-25T22:25:44.849851+00:00"
+}

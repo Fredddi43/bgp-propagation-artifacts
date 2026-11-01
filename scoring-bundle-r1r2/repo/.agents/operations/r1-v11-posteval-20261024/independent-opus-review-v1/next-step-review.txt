@@ -1,0 +1,26 @@
+INDEPENDENT REVIEW of the author's next-step requests (review-request-next a4189005, next-requests 8f435d39)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. The author f4d75bb1 is excluded.
+
+1. K1 census: valid; terminal_success TRUE; approval 50e5e337 consumed (k1-census-assessment.txt fdd7915f).
+
+2. K2a capture: APPROVED, one attempt (opus-k2a-capture-approval-v11.json).
+   - request-k2a.json 3bfcbeb8 reproduces byte-exactly from reviewed requests.py k2a on census f7315fae.
+   - Contents: complete.json (395 B) and execution-exit.json (55 B), tool f19d1066 (re-hashed).
+   - The f19 tool claims its output exclusively and caps 16 MiB per file / 256 MiB in total.
+   - Control records only; no result payload.
+
+3. Class-(d) code transport: APPROVED, one attempt T1 stage, then T2 readback (opus-classd-transport-approval-v11.json).
+   - transport-check 3086a692 reproduces from `stage_code.py check`, tool 433ddff6.
+   - DEST <CLUSTER_STORAGE>/.../r1-posteval-classd-v11-20261024 is new; the tool asserts it is absent.
+   - The 5 files equal the reviewed packet pins:
+       adapter 4f1d0e4a, run_adapter 33289bba, verifier pins 79cb199f, run_verify c02ecb9f, verify_r1 5ed5229f.
+   - Accepted by stage_code checked_approval; the author's session or worker is refused. run_authorized false.
+
+4. K2b (report.json 15,327,863 B + manifests 2 x 5,183,175 B = 25,694,213 B): NOT YET APPROVED.
+   - The exact request depends on the report sha in the actual K2a capture.
+   - After K2a: run requests.py k2b --census evidence/census.json --capture-k2a k2-v1/capture-k2a.json.gz. It refuses
+     unless complete.json passed, spec 2233750e and exit 0.
+   - Then route the request bytes plus the capture-k2a sha. I issue an exact one-attempt approval on those bytes.
+   - The sizes already fit the f19 caps per the census.
+
+Not requested and not approved: K3 projection, D0/D1/D2, the vrun verifier job, N admission, any retry.

@@ -1,0 +1,31 @@
+{
+  "actual_source_import_only_passed": true,
+  "author": "gpt-6-astra",
+  "author_worker": "/root/impact_consumer_review",
+  "automatic_retry_authorized": false,
+  "bash_syntax_passed": true,
+  "execution_authorized": false,
+  "files": {
+    "REVIEW-PACKET.md": "9db395ebfe9b3d50ff100bf7f2863f34856a9d4ac6267e069fa6f73a8ebc89b2",
+    "approval-TEMPLATE.json": "60c71798c1b3e9c5065fea2b47313705c0b8e24978ee3bcd48ad6ed5041c0a4e",
+    "audit_boundary.py": "b8ba55c9c6233584ba16e1f4efeaf3940462de01681ede8afa776503ce337769",
+    "preflight.py": "1a7f141f5e34994a4c23bb77edd05ac1d3120eb11d62d45369f9711eee9462c7",
+    "run.sh": "0a1b6671afb64b30bb531ac5acad31f59b08f4d9b35b35890cf71c476d8ffa75",
+    "spec.json": "73194540f8d487af106f7c526074a7926e0ff9c3df0b4c5d2606bfb1f601e86f",
+    "test_preflight.py": "6961ca5103952300d84933d25650f64c882987605ad41db48eef7f95eb8892c9"
+  },
+  "fits_authorized": false,
+  "freeze_authorized": false,
+  "kind": "r1_full_custody_opaque_preflight_v1",
+  "labels_authorized": false,
+  "newperiod_authorized": false,
+  "prediction_authorized": false,
+  "prediction_decoding_authorized": false,
+  "protected2026_authorized": false,
+  "r1_authorized": false,
+  "ruff_passed": true,
+  "scope": "code_only_pending_actual_draft_and_resources",
+  "scoring_authorized": false,
+  "seal_authorized": false,
+  "tests_passed": 63
+}

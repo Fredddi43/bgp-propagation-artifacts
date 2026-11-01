@@ -1,0 +1,12 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "210257e0a63ab6c332b038f37e909784dbea2ab42995fd31bf1a56bd71138a4f",
+    "capture.py": "e8b5518661e5a204bb8d3d733d23d7b2b5fe2c33bbb7b90bd158504ab746374f",
+    "request.json": "7a8eaf6e98117872333a026641ae2c63fd91b485aafd145362170bf41aaa54b2",
+    "test_capture.py": "6467a520f2bef8517f97827d452c3336f9c778376da4cb14c411220777d4c5a5"
+  },
+  "kind": "newperiod_h3_coverage_discovery_review_v1",
+  "tests_passed": 5
+}

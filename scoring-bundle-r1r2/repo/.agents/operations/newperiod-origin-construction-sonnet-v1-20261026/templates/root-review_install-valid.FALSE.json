@@ -1,0 +1,48 @@
+{
+  "action": "review_install",
+  "actual_dir": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/actual-valid-review_install",
+  "attempt_limit": 1,
+  "control_snapshot": null,
+  "execution_authorized": false,
+  "issued": false,
+  "issuer": "root",
+  "kind": "ROOT_ORIGIN_CONSTRUCTION_ONCE_V1",
+  "manifest_sha256": "e4487dd5a957d8c6189f6ff55a3cf951ac4e23336315599ebaea2b4a85750ee5",
+  "operating_adoption": null,
+  "operation_review": null,
+  "phase": null,
+  "pins": {
+    "chain.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/chain.py",
+      "sha256": "c2e8c497143a01991fd43cef19226fba9ac8451eb0ec55abbb162890aa682604"
+    },
+    "common.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/common.py",
+      "sha256": "13ef80d3240e379e58a6f21861852f2369812f3ff16b238e41e461b239853170"
+    },
+    "job.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/job.py",
+      "sha256": "81545fafb1281defeca50302dea0254d101db455da807a2c63b29313156fcfc7"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/operate.py",
+      "sha256": "9119f7b67776e60d8674e4421be11d8b2411e998051ab4040ac8ab0756e852d9"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/remote.py",
+      "sha256": "f074a49c6207bf01c88699504bf7a638c982db5140faf25300fdc4b1d7ecc288"
+    },
+    "science.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-construction-sonnet-v1-20261026/science.py",
+      "sha256": "ac643c952a6c9e8a573628faf12f0255ad480135bf2f0fe52a07f3ee906b7489"
+    }
+  },
+  "precision": null,
+  "precision_review": null,
+  "previous_acceptance": null,
+  "previous_actual": null,
+  "resource_admission": "n/a",
+  "retry_authorized": false,
+  "source_closure": null,
+  "target": "valid"
+}

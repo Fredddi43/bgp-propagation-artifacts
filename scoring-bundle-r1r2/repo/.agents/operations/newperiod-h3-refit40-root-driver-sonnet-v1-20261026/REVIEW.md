@@ -1,0 +1,22 @@
+# H3 refit40 root driver v1 (author: sonnet; scripts only, nothing launched, issued, posted or written remotely)
+
+`driver.py` fills documents for the v2 execution packet (`../newperiod-h3-refit40-execution-sonnet-v2-20261026`, prepare.py d8b64bd8, operate.py 5e9a0c6f unchanged).
+Run as root from /tmp: `python3 -I -B .../driver.py <cmd> ...` (refuses if not isolated or cwd not under /tmp). All outputs are created exclusively; none may sit in a scanned control dir (except the authority itself, which the gate removes from the snapshot).
+Tests: `cd /tmp && python3 -I -B .../test_driver.py` (20 tests, `tests.txt`; synthetic probe, real bound package, real reviewed client validators, real signed approvals).
+
+## Already independently signed (astra-final, session <SESSION_ID>..., model `codex`, which the frozen runner accepts)
+Binding acceptance `../newperiod-h3-refit40-review-astra-final-v2-20261026/binding-acceptance.json` (16245eb0) and the four client documents in `.../approvals/` (execution-approval.json 9c2f6c3c, execution-review.txt a46987ff, operation-review.json 94f55358, operation-review.txt e4b7b8ea). Expected bundle manifest e3c41e12 (167 members): the `bundle` test reproduces it and the client transport binding from `approval-validation.json` byte for byte.
+
+## Root sequence
+1. `bundle --approvals .../approvals --out B --draft-out D/transport-approval.DRAFT.json --expect-post <REVIEWER-astra-final-...-PASS-PREPARATION.json>`: runs assemble_bundle.py, checks the four files and manifest against the PASS post, computes the client binding, writes the UNSIGNED transport-approval draft (only `binding` filled).
+2. `adopt --phase-path ... --phase-sha ... --bundle-manifest-sha256 M --bounds BOUNDS.json [--zero-writers-evidence F] --attest X ... --out ADOPTION.json` (read-only probe; `ADOPTION.json.probe.json` records it). `runtime_package_identity_refreshed` is measured (venv python sha + 141 dist-info name/version vs package pin), never attestable by hand. The other seven flags are root attestations, default false, one `--attest NAME` each. Refuses a phase that is not the newest compatible one; refuses a running `n-*` job with no bound in BOUNDS.json (`{"jobs": {name: {evidence, remaining_positive_logical_growth_bytes}}, "other_writers": [...]}`, evidence = accepted-row ref, bytes re-verified). `passed` is false (rc 2) if any flag is false, EOF + growth >= 2080374784, a floor is breached, or local allocation < 32 MiB.
+3. Per action, after its independent review exists: `snapshot --acknowledge --out S.json` (fresh, includes the review post), then `authority ACTION --review R --adoption ADOPTION.json --snapshot S.json --bundle B --transport-approval T --transport-review TR --out ROOT-ACTION.json` plus `--binding-acceptance` (stage) or `--predecessor-acceptance` [+ `--previous-actual`, default `actual-<prev>/result.json`] (later) and `--release-approval/--release-review` (release). It prints the `operate.py --check-only` rc (4 = refused, with the H3O_ code). Real run of operate.py stays a root decision.
+
+## Documents that still need independent signatures
+| Document | Signer | Notes |
+|---|---|---|
+| transport-approval.json + transport-review.txt (fill draft: `passed`, `review_sha256`, `reviewer_agent/model`, `stage_authorized`, `submit_held_authorized` true, `release_authorized` false, `retry_authorized` false) | fresh reviewer, model gpt-6-astra, claude-opus-5-5 or codex; `reviewer_agent` not an author | checked by client `check_transport` against the binding of exactly this bundle. Not signed yet. |
+| review-stage, review-submit_held, review-admit, review-release, review-capture (5) | independent reviewer (worker/session not in AUTHOR lists; any model by `operate.independent`) | each binds the ACTUAL adoption (so after step 2), phase, pins, bundle manifest, predecessor refs; the astra-final PASS is not one of these. |
+| predecessor acceptance of actual-stage, -submit_held, -admit, -release (4), and acceptance of actual-capture | independent reviewer | feeds the next action; capture acceptance closes the run. |
+| release-approval.json + release-review.txt | independent reviewer, client-checked model as above | only after admit; binds admitted sha256 and job id (`check_release`; precheck refuses otherwise). |
+| operating adoption, control snapshots, root-ACTION once files | root only | produced by this driver; not reviewer documents (adoption content is reviewed through the per-action reviews). |

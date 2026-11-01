@@ -1,0 +1,83 @@
+{
+  "author_check": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-final-v1-v36-20261026/author-check.json",
+    "sha256": "2b58e947ad8d2be78c61696adf53eb783fcc66a9e38713943144b532e99dca8f"
+  },
+  "author_role": "astra-h3t",
+  "authorities_consumed": 0,
+  "candidate_root_operating_adoption": {
+    "path": "<REPO>/.agents/operations/root-h3-v36-operating-adoption-v1-20261026/root-operating-adoption.json",
+    "sha256": "2e0ab965e7c423650610b9a08ec25469558142b017487d2ae66c17ddefe4156a"
+  },
+  "capture_attempted": false,
+  "exact_scope": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v3-v36-20261026/mixed7-d30-exact-scope.json",
+    "sha256": "04fec9af2c17abcb786c2047c8cb46640304317f394a1c5a7509a8c8a6e60b80"
+  },
+  "execution_authorized": false,
+  "false_operator_review_template": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-final-v1-v36-20261026/author-operation-review.FALSE-TEMPLATE.json",
+    "sha256": "cda9eccaf8658bc644594fc939893885a8b24191a4fedb67349ee7ffe6fac569"
+  },
+  "filled_false_once": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-final-v1-v36-20261026/author-once.FALSE-TEMPLATE.json",
+    "sha256": "d125f44fe6f741105d63b05789a9f7550d6b0012dbdcb611a9f11522e143a7a8"
+  },
+  "full_positive_root_operator_check_passed": false,
+  "kind": "AUTHOR_EXACT_FIRST_V36_CAPTURE_OPERATOR_REVIEW",
+  "limits": {
+    "aggregate_bytes": 167772160,
+    "custody_append_bytes": 65536,
+    "metadata_files": 100,
+    "projection_bytes": 131072,
+    "remote_address_space_bytes": 4294967296,
+    "remote_wall_seconds": 120
+  },
+  "local_finalizer": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/finalize.py",
+    "sha256": "7bef989d05777cef6f30f8eb023ccb2a74f6219a80a96da3a52c9ca9e138dab0"
+  },
+  "operator": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v3-v36-20261026/capture_once.py",
+    "sha256": "10ee4697cb9c25e747800e497b7cf51b8fc902d1adc667f50123ed885485fc41"
+  },
+  "prepared_packet": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-preparation-v1-v36-20261026/review-ready.json",
+    "sha256": "8490c6f39507cb30bb6e545442763a526518ffccadbbc4c78328185c14354e4a"
+  },
+  "protected_payload_reads": 0,
+  "release_actual_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-FIRST-V36-RELEASE-ACTUAL-ACCEPTED-session<SESSION_ID>.json",
+    "sha256": "ea6eaa4c0c4d02cd2d7db3d3def9a08e5bbf47f27b836a34325eeb0891e8b91d"
+  },
+  "released": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-release-mixed7-d30-actual-v2-v36-20261026/released.json",
+    "sha256": "4c2ad4c25a3615281fdd9f5c0f4240e9d758bfd3f87380f13c3bbdc86eeb5e7d"
+  },
+  "remaining": [
+    "sol-h3t exact request/scope/resource/operator verdict using requestc152a33c; never approve previous unresolved preparation request",
+    "ROOT current operating restrictions/adoption and six-dir snapshot; fresh capture-only once authority encoded through real encoder; full real checker",
+    "ROOT may run once only after all32audit tasks and finalizer COMPLETED0:0/restart0; remaining6jobs held; capture operator checks terminal state before metadata reads",
+    "Independent full14787/exclusions/scratch/allocation outcome acceptance beforev37 issuance"
+  ],
+  "remote_actions": 0,
+  "remote_source": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v3-v36-20261026/capture_remote.py",
+    "sha256": "a2f039f1e17dcccffb2e6d6f0210226c1822a25b8e94c682912f76ffe2582235"
+  },
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-first-capture-final-v1-v36-20261026/request.json",
+    "sha256": "c152a33c6634e69bf8d7c567fead366ce6e93888b418bd9c34e24a1ebafd89eb"
+  },
+  "source_resource_verdict": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-RELEASE-V3-CAPTURE-V3-V36-SOURCE-RESOURCE-PASS-session<SESSION_ID>.json",
+    "sha256": "4c6b3d5c4d14864e17ad5a03ea930f585a97c1117b671207587bdfeb066386e6"
+  },
+  "summary": "Local finalizer completed once. Exact genuine releaseactual acceptanceea6eaa4c bound into fresh canonical requestc152a33c; only release_acceptance differs from prepared request. All metadata scope/source/budgets unchanged. Real FALSE authority rejects before consumption. ROOT operating adoption structurally checks; current restrictions/reaffirmation remain ROOT responsibility.",
+  "terminal_state_observed": false,
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T18:28:09.032973+00:00"
+}

@@ -1,0 +1,69 @@
+{
+  "accepted_consumption": {
+    "h3_audit_v4_chain": 4109824,
+    "h3_development_stage_controls": 3174912
+  },
+  "all_four_groups_preserved": true,
+  "author_role": "astra-h3t",
+  "authorities_consumed": 0,
+  "draft": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v2-credits-pending-20261026/author-root-operating-adoption.DRAFT-passed-false.json",
+    "sha256": "02f6bac9a95ce083567123c2b4be7a9b2c4124912df0d5c5852a465f07669e7c"
+  },
+  "draft_phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v37-final-template-v2-20261026/root-phase.FALSE-TEMPLATE.json",
+    "sha256": "9b48a2f56ccb57b6b4b06887f6d6824d83ab7d52c88beaf37479f1fbb690d82c"
+  },
+  "execution_authorized": false,
+  "finite_proposed_future_append_bytes": 227536,
+  "first_group_actual_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-H3-FIRST-V36-CAPTURE-ACTUAL-ACCEPTED-session<SESSION_ID>.json",
+    "sha256": "be5d45c698891b9747093266a1aa68e60bd580b30914039b9445b36952d42d2d"
+  },
+  "kind": "AUTHOR_H3_V37_OPERATING_EVIDENCE_CREDITS_REBIND_REVIEW_READY",
+  "phase_floors": {
+    "models_bytes": 541592786944,
+    "results_bytes": 45231374336
+  },
+  "phase_issued": false,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v2-credits-pending-20261026/author-root-operating-adoption.DRAFT-passed-false.json",
+      "sha256": "02f6bac9a95ce083567123c2b4be7a9b2c4124912df0d5c5852a465f07669e7c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v37-operating-evidence-v2-credits-pending-20261026/evidence-reuse.json",
+      "sha256": "3595bfd0ddc10eda410d47cddd97b238d109c0ba6455848e36e099840e399e80"
+    }
+  ],
+  "protected_payload_reads": 0,
+  "remaining": [
+    "Independent review of v37finalv2 and thiscredit-aware successor; ROOT issuance after pendingv36operations.",
+    "Fresh exact issuedphase successor/resource and operator admission; root substantive allwriter/scheduler adoption/currentcontrols.",
+    "One group release/capture then independent actual acceptance before nextgroup. No automaticchain/retry."
+  ],
+  "remaining_phase_rows": {
+    "h3_audit_v4_chain": 37576854016,
+    "h3_development_stage_controls": 4291792384
+  },
+  "remote_actions": 0,
+  "retained_total_caps": {
+    "h3_audit_v4_chain": 37580963840,
+    "h3_development_stage_controls": 4294967296
+  },
+  "retained_v36_binding": {
+    "path": "<REPO>/.agents/operations/reviewer-sol-h3t-20261025/h3-release-capture-v3-v36-session<SESSION_ID>-r2/execution-binding.json",
+    "sha256": "8474301af85c8e408ad0c3a7a70952e617e69e42c62a73b9c366c75244de59ac"
+  },
+  "root_substantive_adoption_issued": false,
+  "successor_groups": [
+    "mixed7-d60",
+    "ris7-d30",
+    "ris7-d60"
+  ],
+  "to": [
+    "root",
+    "sol-h3t"
+  ],
+  "utc": "2026-10-25T20:17:46.365867+00:00"
+}

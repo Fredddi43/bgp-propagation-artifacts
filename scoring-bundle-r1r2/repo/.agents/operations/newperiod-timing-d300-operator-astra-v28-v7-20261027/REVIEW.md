@@ -1,0 +1,8 @@
+# d300 operator v7 (--export=NIL, absolute-path job.sh)
+
+No execution authority. Minimal delta from v6: only `prepare.py` changes (`remote.py` and `operate.py` byte-identical to v6; successor v6 and its plan unchanged).
+- `held_argv`: `--export=NIL` (not NONE, which root canaries show is cancelled by uid 0; plain default export lets a submit-time BASH_ENV be sourced before the script). Job name `n-timing-d300-v7`. `check_held` compares SubmitLine to `held_argv`, so NONE or no export flag is refused.
+- `job.sh`: `env` -> `/usr/bin/env` in both the SLURM_ARRAY guard and the final `exec`; all other commands are builtins (set, umask, test, read, case, ulimit, cd, exit, exec) or already absolute (/usr/bin/grep, sha256sum, cut); python path is absolute from the plan. The script cannot itself defend against BASH_ENV (bash sources it before line 1): NIL is the only guard, and the test demonstrates both facts.
+- Tests: regression asserts exactly one `--export=NIL` and no NONE, every command in job.sh is a builtin or absolute, `bash -n`, and a real run with an empty environment (no PATH) reaching the binding read (exit 98) without sourcing a hostile BASH_ENV file. test_operate 13, test_prepare 10, test_reason_codes 3 pass. FALSE templates refuse `--check-only`.
+- Pins: prepare.py 5ba8c964fb37..., remote.py 2bdaf522..., operate.py 56be41c2... (same as v6).
+- Concurrences pin `operator` = prepare.py path+sha, so both v6 concurrences cannot authorize v7: re-issue timing_science and allocation_premise against v7 prepare.py; stage_hold and install_release operation reviews and root authorities rebind to v7 pins; the operating adoption pins phase+plan (not operator), so it is unaffected by v6->v7 (it needs the v6 plan path and sha from the v6 round).

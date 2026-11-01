@@ -1,0 +1,18 @@
+{
+  "coverage_or_parse_admission": false,
+  "passed": true,
+  "review_ready_sha256": "e2f52cc8381a9c03d3b6b50a93c62c1a3d8c0fd7a6344e8b439cc5b3432f3e00",
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "/root",
+  "scientific_execution_authorized": false,
+  "scope": "Narrow existingnative evidence matrix pooled collector compatibility and exact localmetadata join only.",
+  "tests_passed": 26,
+  "tests_seconds": 5.95,
+  "verified": [
+    "12frozenpins; originalbind_index andbound_selector byteidentical.",
+    "Matrix delta only verifiedpooled collectorhelper, explicitnon-filedirectoryentries, metadataoutputselector; originalclassification/gaps preserved.",
+    "Inventorycomposer changes onlyacceptedarm to originalfrozenN-chronos-ad; equalN-counts panel checkedbyunchangedhelper.",
+    "Actual14787 completepopulation,3235directendpointmatches,11552source-ledgerbridge pending; no proof cleared or missingparsecounters invented."
+  ]
+}

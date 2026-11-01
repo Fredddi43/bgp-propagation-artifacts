@@ -1,0 +1,55 @@
+D2 OOM ACTUAL ASSESSMENT + d2-fix-v4 REVIEW
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+1. Actual D2 (approval 2bf740ce, consumed): FAILED, final.
+   - One submit, as job 52474923 (submit-result rc 0).
+   - sacct (d2-oom-sacct.txt 79afba91), both tasks OUT_OF_MEMORY 0:125 on <COMPUTE_NODE>:
+       * _0 (d30): after 3:32, batch MaxRSS 14,641,048K, MaxVMSize 22,916,520K;
+       * _1 (d60): after 2:49, batch MaxRSS 14,642,352K, MaxVMSize 19,153,276K.
+   - No fetch. No retry. The d2-fix-v3 run-records are preserved.
+   - No partial findings are possible. run_adapter writes OUT once, after all cells of the horizon have been
+     rescored (write_new 'x' at the end of do_rescore). A kill at about 3 minutes, during the horizon load and the
+     first cells, leaves no OUT. If one did exist, the next job's `test ! -e OUT` would refuse safely.
+   - REVIEWER MISS (mine): I accepted MEM_FACTOR 2 ("clone/long/float bounded by ~2x") without evidence of the
+     stored dtypes.
+       * The decoded edge_index and edge_type are int64 (16+8 B per edge). The stored dtypes are unknown; int32 or
+         uint8 storage alone gives about 2.7-8x.
+       * Python-level event objects and the 4-key lists come on top.
+       * The observed RSS reached the cap, so the true peak is unknown and at least about 5.1x the stored tensor
+         bytes. This is recorded so it is not repeated.
+
+2. d2-fix-v4 (review-ready, tool d2_r4 2b647edc, script e10e5f37, 3 tests): CHANGES_REQUIRED. No approval issued.
+   - Verified:
+       * the diff is MEM_FACTOR 2 -> 16 only;
+       * the script reproduces e10e5f37 locally and differs from 733a6676 only in --mem=14G -> 52G;
+       * 3 tests pass in place;
+       * run-records are a fresh namespace (d2-fix-v4/run-records).
+   - Blocking: 52 GiB (16x) is still a heuristic. Nothing in the evidence bounds the peak. It is only 3.6x the
+     observed lower bound, and the decode expansion could plausibly be about 8x plus transients.
+     Root/user direction (d2-fix-v4/root-memory-review-response.json): use ample RAM and avoid incremental memory
+     guessing.
+   REQUIRED CHANGE, precise:
+     - Set the per-task memory to 128 GiB. Use an explicit constant (e.g. MEM_GIB_FIXED = 128), and have
+       resources() need(MEM_GIB_FIXED >= the formula estimate) rather than a new factor.
+     - Keep everything else byte-identical in substance: cells, code shas, INPUTS, OUTS, plan 6e18854b,
+       report 049c7a9c, the 2-task array, 1 CPU, no requeue and the approval predicate.
+     - Time: keep 2h. The observed failure was at about 3 min. Rescoring 33 cells of up to 454 MB predictions each
+       fits easily. 3h is acceptable if you prefer the margin, but say which.
+     - Use a fresh run-records namespace (keep d2-fix-v4/run-records unused, or create d2-fix-v5). The v3 OOM
+       records stay preserved.
+     - Add a test that asserts the script carries `--mem=128G` and differs from 733a6676 only in the mem line
+       (and the time line, if changed).
+     - Route the new review-ready (tool sha, script sha, test output). The approval will bind that exact script.
+       It is again one attempt, with no retry.
+
+=== d2-fix-v5 REVIEW (review-ready eaa75970; tool d2_r5 11086d60; script 805f427c) ===
+VERDICT: PASS. Exact one-attempt approval opus-d2-run-approval-v11-r5.json 62219c76 is issued, and the tool's own
+checked_approval accepts it.
+  - The diff from the approved d2_r3 is two lines: MEM_FLOOR = 128 GiB, and total = max(MEM_FLOOR, original
+    estimate). This satisfies the required need(floor >= formula), because the max keeps any larger estimate.
+  - The script reproduces 805f427c locally. Its only difference from 733a6676 is `--mem=14G` -> `--mem=128G`
+    (2h, 1 CPU and the 2-task array are unchanged).
+  - The test asserts that exact one-line substitution. 3 passed in place.
+  - Fresh run-records in d2-fix-v5. d2-fix-v4 is superseded and was never approved.
+  - Non-blocking: the MEM_FACTOR comment "decoded tensors + objects <= 2x stored bytes" is now known false. The
+    MEM_FLOOR comment records the OOM. Fix the comment in any later revision. Execution is unaffected.

@@ -1,0 +1,23 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "base_review_ready": "955199fefe7e011fe844fff2e49d614bd46e75b72231cd1a8c1d552de690c67b",
+  "files": {
+    "REVIEW.md": "e3226f5c2cc0ed7f1a6101735b033eb1ddc61866305747385b82fcbbca015591",
+    "build_vrun_fix.py": "c073e9eb4fac79f401dec68f0f734e9a3854c253fb6570d467ac13162be52a49",
+    "stage_vrun.py": "cdaf65dfc14216ad289c856bf876a94a91f3c659552471856e41ee302fbe0d20",
+    "test_vrun_fix.py": "1097098b03f8c7488c27b508455321995608a5d686abc89d8abe6bf749fcb84d",
+    "verifier-r2/pins.json": "7c474f00f4b10cc10ee0e1efc573d1a8d535e323b688d246612ba35ef1333325",
+    "verifier-r2/run_verify.py": "7392ef6f67563ae0e4906b83354e5f3d0ebdcd9c748403b5524876dea015ffe0",
+    "verifier-r2/test_verify.py": "44bb0e03d242a72975e2da53239465bad854e16e71e6c38be6ae468e5a110645",
+    "verifier-r2/verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf",
+    "vrun_fix.diff": "ef9f9f22eb76754963db4213a760923b4a6e47a70f0322b2940ac24e4fee52a2",
+    "vrun_r2.py": "82caae790ac8bffa5fa3ed112d18a0457847be68272610f1867c0757fdfb3d83"
+  },
+  "host_actions_performed": false,
+  "kind": "r1_v11_vrun_fix_v1_review_ready"
+}

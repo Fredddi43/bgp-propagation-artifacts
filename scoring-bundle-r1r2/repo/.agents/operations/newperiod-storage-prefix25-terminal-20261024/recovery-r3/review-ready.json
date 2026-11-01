@@ -1,0 +1,26 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_implementation"
+ },
+ "capture_approval_sha256": "d23a6a2e6e6180d45103732d6eed7391d9f13ca1c1723d9ef9e950774caa423e",
+ "diagnosis_sha256": "116d61c806e0d826b4bfb060fe58f6aa5f697cd1e1976e823251d9239ae93846",
+ "execution_authorized": false,
+ "files": {
+  "REVIEW.md": "266293ea9483d464c56dce36047adce7b0a1f405c73231ecfbb7ef1f95bd96e5",
+  "archive.py": "6e7845fa629d90bc16250cf0df145e2ea70344ac668035dc3f1c0d028f844f97",
+  "job.sh": "b0912ee6e84f455256d702ce746b871b11ac2ab6536be6f8b8092788c930fdf2",
+  "request.json": "4259b26ab23f3dc26f7fe1d13692ed31fd6f0b80605158b727e024ea0c69e323",
+  "test_archive.py": "8adeefe30efd066dd3c893562549465d925e0af5c3e2fb3ff483f7a618134845",
+  "test_transport.py": "3bb6606d9f91502399767960974673da4a85e8100abcd4d6574f05b809bc1422",
+  "transport.py": "769284b18247485d6566f83d94f41f0951a6b3a1cc399dc8efa89ac980d18be5"
+ },
+ "kind": "cold_prefix25_r3_recovery_review_ready_v1",
+ "requires": [
+  "independent exact approval (archive_execution_authorized true, prune false, request_sha256)",
+  "root fresh joint storage admission ref inside that approval"
+ ],
+ "tests": "22 passed",
+ "utc": "2026-10-24T08:03:23.740113+00:00"
+}

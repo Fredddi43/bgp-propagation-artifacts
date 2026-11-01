@@ -1,0 +1,12 @@
+{
+  "files": {
+    "capture.py": "1ca20a77b6143a9becff79d7cacbe67ed3b3af8cd9fb009168f1ce50e9373ba1",
+    "test_capture.py": "8bfe708bf7fe203d2e4514fea0b32c5051b555f5b8f6d23d3d86c4eb26d66b04"
+  },
+  "scope": "Only six exact completion/result JSON files for v2 three source blocks. Strict actual plan/approval/grid/source population/qualification/output refs. No detector/event Parquet reads or source/scientific admission. Actual exact request remains unbound until final execution approval.",
+  "tests": {
+    "passed": 4,
+    "seconds": 0.05
+  },
+  "execution_authorized": false
+}

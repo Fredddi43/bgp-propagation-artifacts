@@ -1,0 +1,12 @@
+{
+  ".agents/operations/r1-evaluation-20261021/REVIEW.md": "3f96a07f7b12197f11961896c6fd688854b6a635f9a96bedec31f7e450b0fb98",
+  ".agents/operations/r1-evaluation-20261021/build_candidate.py": "25352bb80d25b8c8cde2097d2b25e5bb90de04d10fcca5cafeed0cd6486f2e42",
+  ".agents/operations/r1-evaluation-20261021/execute.py": "3b74f5d613ce423737cf8407e8255b15be4962a391991c18d2a01c9593c9a802",
+  ".agents/operations/r1-evaluation-20261021/execution-approval-TEMPLATE.json": "e342ab078641baea667be1eb75f3383137a476bac4f5923f60fe1eaf6ba6276a",
+  ".agents/operations/r1-evaluation-20261021/execution-spec-TEMPLATE.json": "7b6bb78b5352fb46f790a663359564ac8a2ad5f129c2eab4efe05e30510e2b9c",
+  ".agents/operations/r1-evaluation-20261021/launch.py": "738b8064f4cb3cca375af6348c3bb594347ffca1492bb2a822f6d9e1b5f12883",
+  ".agents/operations/r1-evaluation-20261021/r1-authorization-TEMPLATE.json": "7f67f5846f67d4b53f8e21489426c5d4e859f783028ea4d0a2e1bf68b0967379",
+  ".agents/operations/r1-evaluation-20261021/run.sh": "464f82c387ae400fabb1098efaef1e1400f1a568e09ffb26c3330ace1ae96a5a",
+  ".agents/operations/r1-evaluation-20261021/supervise.py": "5213a8f0ac227c2cd7d71cd25bad45f4ec8ce85a62aae2295920258fcad384e4",
+  ".agents/operations/r1-evaluation-20261021/test_evaluation.py": "556d88019309899325d44c5997bd3d7e7e9a5aa0571a42c5c82531a4ada221e6"
+}

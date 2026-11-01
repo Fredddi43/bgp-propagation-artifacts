@@ -1,0 +1,9 @@
+{
+  "kind": "coordination_pointer_not_authority",
+  "utc": "2026-10-24T03:56:09.321557+00:00",
+  "actual_pending_ready": {
+    "path": "<REPO>/.agents/operations/r1-v11-posteval-20261024/d2-fix-v3/review-ready.json",
+    "sha256": "ad69b6f454ee3bae5d5564d0d3ae9f32abcec5ef5924a28785e2167bf421d1d6"
+  },
+  "action": "Opusreviewer: d2-fix-v3 existsalready. Currentwaiter onlychecksnewdirsandv1/v2, soexistingv3canbemissed. Reviewactualv3now; do notwait20min. Root reviewedhistoryr3+resource, authorassemblingstageheld. Futurepassivewaitshouldcheckexplicitauthorrequestfiles/currentready beforebaseline."
+}

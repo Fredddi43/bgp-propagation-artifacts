@@ -1,0 +1,33 @@
+# N-H1 development campaign/client — prospective code review
+
+Author: Codex `/root/deadline_audit`. No real inputs, labels, predictions, scores, host writes, jobs or fits were opened/run. All production prerequisites remain pending. This is not a scientific or execution approval.
+
+The exact frozen recipe is N-h1 in recipes.json6d851282: configuration3, K500 selected by14595bc3, common corrected2025-training slice0291d789, SAGE/history-on and no-edge/history-on,30/60s,seeds0–4,20fits. No new K, hyperparameter, epoch, threshold or slice search is introduced. The updated models use their own N validation calibration, which is a separate pending package.
+
+## Reuse and narrow changes
+
+Both original scientific and guarded source maps are copied byte-for-byte from the independently reviewed pooled-selector temporal package. All76 original scientific files, including forecast_train/gnn_train/tgn_data/forecast_candidates/forecast_history, are unchanged. Existing selectors and actual source inventory are checked by the identical bound_selector.pyf2985250; pooled is never converted to a different scientific selector.
+
+h1_adapter.py loads forecast_development in a private namespace. Its original fit function and the original forecast_train.fit bytes remain unchanged. Its isolated loader preserves original load/hash/label checks and all core tensor/history validation, then checks the exact K500 contract. The generic nested validator rejects any candidate_expansion dictionary, so the adapter first requires whole forecast_contract equality to original expected contract plus exactly the original tgn_data K500 extension, and validates a shallow core-only contract projection through the original validator. The event, labels, tensors and normalization inputs remain unchanged. Extra extension keys, other K, unknown contract keys and changed history are refused. Only this private adapter delegates core_fit's authorization call to the separately reviewed candidate_refit operation; no imported global is patched.
+
+build_adapter.py reuses the original guarded development build function with exactly one scientific call delta: candidate_history_k=500 passed to the original tgn_data.build_split. Imports are made explicit for standalone use. An AST equality test removes that one kwarg and verifies the remaining function is identical. The wrapper requires the exact declared expansion contract first. Existing supervised_graph_build/R1 gates and source/history/population/immutable output checks stay intact. Its construction receipt truthfully hashes build_adapter.py. This is a callable for future exact build execution; there is no automatically authorized build launcher.
+
+Full-population H1 equivalence is required as actual bound evidence before fits: identical base IDs/splits/onsets/incidents/statuses/roots/panels/settings, unchanged original candidates, seeds/targets/signatures/issue-time slice variables, deterministic topK, capacity and source-occurrence proof, plus exact original builder hashes. The current candidate defines/consumes the precise audit schema; it does not forge that audit or supply its production generator. The historical sampled verifier disallows2026, so it must not be reused unmodified for N. The separate future audit must use its independent arithmetic on authorized development histories.
+
+The runner authorizes the original H1 integration gate (core_fit schema), binds its actual H1 audit, then derives a candidate_refit operation gate only under the exact independent operation approval, as the reviewed temporal package does. This avoids an impossible package↔operation approval digest cycle. Both horizons and the complete unchanged population are checked before any tensor or output.
+
+## Runtime and resources
+
+Twenty fixed GPU array cells; independently admitted max_concurrent_fits1–20 (default20). Each requests one RTX8000,4CPUs,245760MiB,24h,no node pin,no requeue. These are proposed resource bounds, not measured N-H1 sufficiency. The actual both-horizon expanded-input/resource evidence and all_twenty_fits_admitted record are required before transport. Interpreter/package identity and allocation checks are retained. The held-array client validates exact task scope, throttle, CPU/RAM/GPU/node/owner/time/log bindings before a separately reviewed release. Exclusive local/remote intents preserve ambiguous/failing attempts; there is no automatic retry or unhold.
+
+The full12 prerequisite set is visible in local-source-proof.json: R1 receipt, two H1 manifests, two H1 integration gates, two H1 equivalence audits, two original-core manifests, collector inventory, common slice rule and resource readiness. No placeholder grants access. Actual source/runtime/resources/stage/submission/execution approvals are still required, using a genuinely separate reviewer identity. Current and predecessor author identities cannot approve.
+
+## Validation and boundaries
+
+Tests reuse the reviewed transport fixture suite and exercise stage→held submission→actual-resource admission→separately approved release without SSH. They reject altered scientific source, wrong task scope/concurrency/resources, failed live preflight, author self-review, incomplete R1 and ambiguous submission retry. New actual tiny CPU training tests run the unchanged trainer with valid expanded contracts and negative contract/history/NaN cases; a full20-epoch configuration3 fixture checks the production receipt verifier against actual trainer output. A tiny original graph construction exercises the real candidate expansion builder. Population/seed/target/slice/capacity obligations are tested independently as metadata guards.
+
+Production H1 graph construction execution, source/equivalence audit production, actual resource evidence, per-arm own-N-validation calibration, protected input export/inference and final retention are not complete or authorized by this code packet. These remain explicit dependencies; the existing retrospective H1 approval cannot authorize N.
+
+Final focused run:89 tests passed in14.04s (one existing Torch deprecation warning). Command: `.venv/bin/python -B -m pytest -q .agents/operations/newperiod-h1-client-20261023/test_adapter.py .agents/operations/newperiod-h1-client-20261023/test_client.py`.
+
+Independent-review evidence addition: fresh isolated subprocess imported the exact staged guard-source closure and passed the real tiny fit, K500 graph build, and full20-epoch configuration3 receipt check (4.27s). No production source changed; test suite now contains90 tests. audit-v1 is a separate later work package, outside this frozen code-review scope.

@@ -1,0 +1,35 @@
+{
+  "author": "astra-h3t",
+  "corrective_options": {
+    "path": "<REPO>/.agents/operations/newperiod-core-label-preconditions-v4-20261025/corrective-options-CONDITIONAL.json",
+    "sha256": "cc975547c366c2de38e5421508edcdc2200371f20a6a174d89f74cdc9386738f"
+  },
+  "execution_authorized": false,
+  "kind": "AUTHOR_REVIEW_NOTES",
+  "minimal_go_kind": "ROOT_GO_CORE_LABEL_PRECONDITIONS_V4_ONCE",
+  "records": "<REPO>/.agents/operations/newperiod-core-label-preconditions-actual-v4-20261025",
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-core-label-preconditions-v4-20261025/request.json",
+    "sha256": "edffe16752b8295dd21132f7f5b68748b9f81978c91222c6483c6b252653ea6e"
+  },
+  "required_review_shape": {
+    "passed": true,
+    "request": {
+      "path": "<REPO>/.agents/operations/newperiod-core-label-preconditions-v4-20261025/request.json",
+      "sha256": "edffe16752b8295dd21132f7f5b68748b9f81978c91222c6483c6b252653ea6e"
+    },
+    "reviewer_session": "<independent session>",
+    "reviewer_worker": "<independent reviewer>"
+  },
+  "reviewer_requested": "sol-h3t2",
+  "root_authority_template": {
+    "path": "<REPO>/.agents/operations/newperiod-core-label-preconditions-v4-20261025/root-authority-template.json",
+    "sha256": "89665379f2385880248d3d14ff4e05fca744753f50b7be70eef152b576e559f8"
+  },
+  "root_steps": [
+    "Independent request-bound PASS first. Root fills exact template with fresh six-directory acknowledged snapshot and signed review; encode using operate.encode.",
+    "Run real operate.check on final canonical authority; rescan controls/consumption; exact minimal GO.",
+    "Root launches operator detached once; workers never launch long operators. V3 stays consumed."
+  ],
+  "scope_delta": "Access only four fixed label values for fixed exact-identity type histogram and torch.as_tensor(value) outcome counts. No tolist, lengths, shapes, scores or retained converted corpus. Sequential."
+}

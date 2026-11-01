@@ -1,0 +1,23 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "files": {
+    "REVIEW.md": "d161c15fdfe45f5c83b110093eb0ea019523fd12ba093c70226c9a00d1bf9e07",
+    "build_d2_r5.py": "bf22b5a8e7202047c0246b149ab0da2fccec6e5ed34f88c3cc9eac6377f55526",
+    "d2-script.json": "6e0f7489f8f2e9ef16c32f25c246f29fa0148cb1e3793b4f64ad9c56f6d94be4",
+    "d2_r5.diff": "e845c670d5b08b9f7263cdf97a3d3692dae28b6f33d61a877486fae32bdc6a56",
+    "d2_r5.py": "11086d60feac72f03b93bb946853a581a9d04639bfa1221892d5fc3ac656556e",
+    "test_d2_r5.py": "1b54f125384f2b5abab82cf6979e8b9869a8d6637909a09a9970010930dfd70e"
+  },
+  "job_script_sha256": "805f427cc38e46ae47d28cda6df89d600c71589d217b8109778fd6f26932ed16",
+  "kind": "r1_v11_d2_r5_review_ready",
+  "supersedes": "d2-fix-v4 851e37f8 (unexecuted)",
+  "tests": {
+    "passed": 3
+  },
+  "tool_sha256": "11086d60feac72f03b93bb946853a581a9d04639bfa1221892d5fc3ac656556e"
+}

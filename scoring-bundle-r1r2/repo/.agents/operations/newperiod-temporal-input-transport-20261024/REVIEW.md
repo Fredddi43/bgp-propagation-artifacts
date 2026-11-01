@@ -1,0 +1,9 @@
+# Original GRU input audit: local exact binding and held transport
+
+Narrow adaptation of the accepted temporal source-audit transport to the separately accepted pooled-r2 **input** audit. It binds the original eleven actual prerequisites, copies all unchanged scientific/guard/package bytes and calls the original input-audit approval predicate from its verified source. The source-stage namespace, original CPU4/128GiB/6h job, 112GiB address-space guard, runtime/source checks and original data algorithms remain unchanged. The only operation is original input auditing; no fit, prediction, protected input or score action is added.
+
+Actual rule-A source job52477730 must first produce successful summary/events identities for both horizons. No prospective hash is accepted and no resource/execution authority is synthesized. `bind` requires every original requirement and a real passed resource-readiness record, copied with the collector inventory into the fixed source stage. `build` requires a genuine independent original input-audit approval and exact review text. It returns exclusive source tar/stage script/one held submission argv; no subprocess or host calls, release command or retry exists.
+
+The original source-audit predecessor was not modified. This input specialization changes only source identity/schema, original approval module and fixed namespace/job label. It reuses all external source/runtime checks. Actual transport review, held admission and fresh shared-storage release approval remain separate.
+
+Validation:12testsPASS0.77s with genuine source closure, unchanged original approval predicate, exact tar/SHA/bash syntax/held command, rejected author identity/scope/resource/changed source and exclusive destination. Synthetic approvals are test fixtures only. No actual candidate, staging or job has been performed.

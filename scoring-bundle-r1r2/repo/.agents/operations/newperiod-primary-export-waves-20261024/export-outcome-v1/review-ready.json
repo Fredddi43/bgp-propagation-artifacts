@@ -1,0 +1,14 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "aedbec4d7d0bd04f9ab51dde62011b12671b9ba42fdf41931d7358434e3beba0",
+    "request-0.json": "f98189aae6a5702cc992b6276e72a627cb534473647b36d2c12ae691b97d6f49",
+    "request-1.json": "d1e0bb0f253a81dc4447d3aee7cce10dfee95273f4e6acbcf0411a1b34cadf7b",
+    "request-2.json": "f175dc8efc2bfbd045d0b9837035413787b23c5c670a1721d3e9be02977faeaa",
+    "request-3.json": "413305d6aba6355a33fc246d701cf9d18126ff537e469a99c4af2e434f4c656b",
+    "test_capture.py": "17b3d02d76ed27aa2175a611a9e02bd07ab43556e369731d795b3001f60ae0e9"
+  },
+  "kind": "primary_export_outcome_capture_v1",
+  "scope": "Separate once-only exact two-receipt capture per released export index, after exact task terminal. No output reference follows. Index0 is currently the sole released/export-authorized task; remaining requests are prospective and never executed without authority.",
+  "tests_passed": 9
+}

@@ -1,0 +1,11 @@
+{
+  "delta": "Only authorize minimum>=512GiB then enforce exact higher minimum at fresh-df and record.64tasks/all original writer250GiBfloor unchanged.",
+  "execution_authorized": false,
+  "files": {
+    "test_delta.py": "87f19a556b79fd439bac029fa969b9259a5a08799dfb75ae9b9c887865115847",
+    "waves.py": "ded90950f8a800d6f182e7de77092e13044a621d11f71b938f5ac596e8f9c273"
+  },
+  "kind": "primary_wave_higher_joint_minimum_code_review_v1",
+  "original_preserved": true,
+  "tests_passed": 10
+}

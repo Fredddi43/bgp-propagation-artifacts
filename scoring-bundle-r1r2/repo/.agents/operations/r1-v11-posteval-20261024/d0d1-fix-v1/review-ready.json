@@ -1,0 +1,23 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "base_phases_sha256": "72a6d837c24a86ce5e96320504b8f1bab13f03400cfaf97bb87c759c9feff793",
+  "files": {
+    "../classd-host/phase-records/d0-intent.json": "fced0513e98a94e8866e6086a0852ffa9f512634d5cd6fb1f4154114ecd2502c",
+    "../classd-host/phase-records/d0-result.json": "4b98fd152d9fa4299ee2e5817915370d914bbc7ef2ed4541ff2f4ebd2f41c68c",
+    "REVIEW.md": "4275ac109beab0f68735eee5be54e45f4b2fda87d646eb0252ae598e52fa46b0",
+    "build_fix.py": "0c9d7afda2cbcb044734bd8a5824bfe1b4311b68e65a9484bd2ec9c4a8f1b7d0",
+    "phases_r2.diff": "4b99c2b48c254d1ff3a2f0dfd274b88bff9a28b3bbfdb604bef65cb974d687f3",
+    "phases_r2.py": "66c51a116999be56a1ff405bd773e26ad1fa83a949526b10c5350c977818383b",
+    "test_fix.py": "f4740fd82561b64d3604f5295a2bc8ee75dee4dfeb46cf5cc2ea9305c7d319d9"
+  },
+  "kind": "r1_v11_d0d1_fix_review_ready_v1",
+  "phases_r2_sha256": "66c51a116999be56a1ff405bd773e26ad1fa83a949526b10c5350c977818383b",
+  "tests": {
+    "passed": 18
+  }
+}

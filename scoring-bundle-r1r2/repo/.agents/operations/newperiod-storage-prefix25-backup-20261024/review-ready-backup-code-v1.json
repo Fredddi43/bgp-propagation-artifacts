@@ -1,0 +1,29 @@
+{
+  "actual_transport_pending": true,
+  "author_worker": "/root",
+  "execution_authorized": false,
+  "existing_public_repo": "<USER>/<PROJECT>-public-bgp-archive",
+  "files": {
+    "REVIEW.md": "3a4b09bc1a4f0e1f4d5f5251f81de71d4a68cde0f4d08bea72f264b3ac055d61",
+    "archive.py": "e6990c8efea84c70c469b37570dd1c487fbe60d6ee0cb8f66b5212d99b1f0b90",
+    "test_archive.py": "4f9d7c76a81a5be7c947794817e7451ce9951f9f0f3c743fe5a1e1030234aa5f"
+  },
+  "kind": "prefix2025_backup_only_code_review_v1",
+  "resources": {
+    "concurrency": 1,
+    "cpus": 4,
+    "max_temporary_archive_bytes": 21474836480,
+    "memory_mib": 16384,
+    "minimum_models_free_bytes": 568009424896,
+    "minimum_results_free_bytes": 55834574848,
+    "results_free_floor_bytes": 34359738368,
+    "tasks": 10,
+    "wall_seconds": 14400
+  },
+  "source_deletion_authorized": false,
+  "source_scope": "Same original ten collectors; exact four public prefix derivative categories2025 only; original coldmtime andsinglelink checks retained.",
+  "source_year": 2025,
+  "tests_passed": 5,
+  "tests_seconds": 0.32,
+  "utc": "2026-10-24T06:37:34.414488+00:00"
+}

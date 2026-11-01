@@ -1,0 +1,39 @@
+# N count preparation and five Chronos fits — prospective code-only candidate
+
+Author `/root/temporal_guard_recovery`; root is also an author. A separate agent must review the exact pins. No author approval, actual N data access, training, prediction, staging, submission, scoring, R1 release, N unseal, protected2026 access, fallback, search or retry has occurred or is authorized by this package.
+
+## Concrete behavior
+
+`run_package.py prepare` checks the current R1 release and both N development seals using the exact copied, independently reviewed N source-audit preflight. It checks the frozen calendar, panel, available population, excluded-input status receipts, construction and source/staging identity. No supervised tensor is deserialized. Its separate prospective approval must explicitly authorize training-label preparation and the exact CPU resources.
+
+`count_inputs.py` requires exact per-event and per-collector source coverage before opening any membership. Every available development event needs complete parsed onset-to-two-hour coverage for training or onset-to-60-second coverage for validation. Missing/censored/partial coverage refuses the attempt; it does not delete a row or invent a zero label. Existing excluded-input records are retained. A certified complete empty context may contain zero observations. Membership outside the frozen reference collector panel refuses; no silently changed panel is inferred or filtered. Canonical pooled membership then goes through unchanged `relative_first_times` and `count_context`: whole-second availability is applied before ASN pooling; raw first_seen supplies training targets only. Validation reads only the issue window and writes no labels.
+
+Outputs are 30/60-second, 1/15-second development partitions with physically separate train labels, and one paired Chronos training series. The unchanged `mixed_series` produces the same NaN padding and availability-context/raw-future splice. The unchanged original `validate_mixed`, plus exact train-population and independent count-control context/target comparisons, validates the emitted arrays before completion. Full trajectories and mixed arrays are hash checked before loading. Existing retrospective helpers' hardcoded 3216-event guards are not misrepresented as N validation.
+
+`run_package.py fit` requires the preparation completion, an exact separately approved `chronos_adaptation_fit` operation, current development guards, actual model-cache/padding/resource bindings, and one first-attempt RTX8000 task. Exactly five cells use config6, seeds0–4, learning rate1e-5, 1000steps, batch32. Each checkpoint is shared by30/60-second contexts. There is no additional pilot fit, no validation passed to fitting, and no model/epoch/config selection.
+
+`chronos_adapter.py` checks the original worker and reference-adapter hashes, loads a private original module, and replaces only the retrospective input/authority preamble. Its AST retains the original imports and every statement from `inputs, data_receipt = training_inputs(...)` through the receipt return. The fixed-step training call, precision, RNG, callback, gradients, weights, final checkpoint and receipt construction are unchanged. A regression compares the complete retained AST. The N envelope records this adaptation explicitly; it does not claim the entire original entry-point guard was executed. Historical pilot fields remain null. The actual padding sentinel must bind installed sampler sources. Cache paths permit only the exact snapshot's files and same-repository HF blob links before weight hashing; external targets refuse. Initial weights are externally hash bound and checked in the returned receipt.
+
+All output attempts are exclusive. Started/failed records remain on any failure; every subsequent attempt at the same path refuses. Completed fitting stores the original fit receipt plus N authorization/source lineage. No global five-fit completion is fabricated from partial cells. Job templates explicitly clear CPU CUDA visibility and use fixed thread variables; submission argv is held, bare `--export=ALL`, explicit chdir, serial `0-4%1` for fits. There is no live launch client.
+
+## Original source and frozen recipes
+
+The full14-file original Chronos snapshot `8dd839ae1e84d45d61cbf77b831f8e81536893eabca5061e5883c958e427b4af` is preserved byte-for-byte. Local source/git provided13files; the exact original padding-sentinel JSON was fetched read-only by its already captured SHA256. No source data, predictions, model weights, tensors or labels were opened to construct this candidate.
+
+The guard source is the unchanged guard snapshot of the independently reviewed N temporal candidate: the original76-file scientific closure plus only its four previously reviewed N guard modules. The exact N source-audit guard and original count/training helpers are copied and pinned. Source-proof records these equalities. The recipes hash and frozen count-transfer spec hash are enforced in the runtime closure.
+
+N-counts has zero new fits: it retains frozen2025 boosted fits and deterministic controls, with no reselection/calibration. N-tsfm has zero fits and twelve declared fixed model/grid/horizon cells. All prediction cells remain nonexecutable here. Exact old checkpoint bindings and protected count input/export/access-log integration remain prerequisites; the shared pure `context` function is available for that separately reviewed custodian. Deterministic count controls still have no interval/pinball metrics.
+
+## Actual blockers, not synthetic evidence
+
+All eleven actual references in `spec.json` are pending: R1 release; two development manifests; two core seals; exact count source coverage; preparation resources; actual preparation completion; exact padding sentinel; fit resources; model-cache identity. The preparation phase needs the first seven; fitting needs all eleven. Runtime identity comes from the previously captured original Python/package metadata and must be rechecked at actual review/execution. Nothing in this code review opens those gates.
+
+Coverage collection is still missing: this package defines and validates the needed evidence but never asserts actual feed continuity from a staging receipt or peer list. Actual source population/panel conformity must be shown. Protected test count-context collection, custody access logging, prediction/commitment export and final N sealing remain separate work. No test rows or fabricated test partitions are used here.
+
+Resource proposals are4CPU/128GiB/12h, with112GiB address-space cap for preparation; fitting uses one RTX8000 and at most one concurrent fit. Both use8GiB per-file and100GiB free-disk floors. These are unverified proposals, not resource sufficiency evidence. Actual readiness must bind both manifests/coverage/release, and for fitting the preparation completion/padding/model cache and all five fits. No new two-step resource pilot is silently added to the five-fit budget.
+
+## Validation and requested review
+
+Focused synthetic tests use the real development/release/source validators and exact scientific helpers. They cover cutoff/availability order, first_seen/end-inclusive behavior, timezones, incomplete/missing/censored sources, complete empty contexts, panel coverage, corrupt arrays/population/splice/control values, exclusive output, pending-before-read refusal, exact computational AST, both normalized reviewer identities, CPU/GPU/no-retry allocation, and safe/escaping HF cache links. New source Ruff and both job shell syntax checks pass; copied immutable modules remain unchanged.
+
+Requested verdict: code-only, bound to spec/pins/request. Every execution/scientific/data-access/staging/submission/release/retry flag must remain false. A later exact bound spec and prospective independent phase/operation approval are necessary before any production action. The author does not issue the verdict.

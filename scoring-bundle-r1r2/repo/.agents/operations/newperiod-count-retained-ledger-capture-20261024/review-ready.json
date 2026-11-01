@@ -1,0 +1,13 @@
+{
+  "actual_capture_executed": false,
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "26e0b41c608e23ce877f0befef25c3ff37b076d70e2ff86c1d1aa000c56e4562",
+    "capture.py": "e45b2de144740e0e9c5dd8db3c94be6324943120fe7b28949c4c9d20ccf4c1c0",
+    "request.json": "d95bcd3092958e60d007d942fd772962321032a9b1e2e5fc0b6b1a6e6134d145",
+    "test_capture.py": "6002b6ebde0baee93ada84b46f54e02749e904d907e8d1b4c948a4f4dd214ef9"
+  },
+  "kind": "count_retained_source_ledger_capture_review_ready_v1",
+  "request_sha256": "d95bcd3092958e60d007d942fd772962321032a9b1e2e5fc0b6b1a6e6134d145",
+  "source_sha256": "e45b2de144740e0e9c5dd8db3c94be6324943120fe7b28949c4c9d20ccf4c1c0"
+}

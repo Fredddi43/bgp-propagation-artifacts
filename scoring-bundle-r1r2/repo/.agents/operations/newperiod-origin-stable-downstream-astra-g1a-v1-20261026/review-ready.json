@@ -1,0 +1,19 @@
+{
+  "author": "astra-g1a",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "fdd6f5e4a182ca763fed8c926d623d920412769079a1108ecf94ba82a51f2238",
+    "output-v1/origin-export-gate-custody.PENDING.json": "db595338a0b05f295a3112587dba3c1193b81038a94b79386c8b91247ede94d2",
+    "output-v1/origin-fit-calibration.PENDING.json": "c9e92aafd0e7e8858aa8fac5af466fad5772432b67307733ba98259fdb0770ec",
+    "output-v1/origin-projection.PENDING.json": "bc399b1a807413fe95ce4375312a3fa0f8b3310c17b032f9e1bf62aa2b61f70d",
+    "output-v1/stable24-bindings.PENDING.json": "e1dc00f541634c2d594b0273c8c53b3bbfc5a6f831528721d6dfa95045507fb8",
+    "prepare.py": "ddcfb478089f15e7ac05a47a5ed95725eb2fed968302c8ffccf91838c97cedfc",
+    "source-inputs.json": "dcfe11896af41cc19d0b90d8e1f8d42705e2e1f13277391f5a28cc9739cca4d7",
+    "test_prepare.py": "48f3fd4f8f29f1261bdd7b6e73378d31a9d7ade895485530e2598cc83dd0a683",
+    "tests.stderr": "27646679b58d0b2a95fe6e72bc56e04dec44738f2275109c060d8d4160904e7c",
+    "tests.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation.json": "cd346c2a5b505b111021bff7f058b3be58cfd000ca76f38c64ef52423a6773ef"
+  },
+  "kind": "origin_stable_downstream_prerequisites_review_v1",
+  "reviewer": "sol-g1a"
+}

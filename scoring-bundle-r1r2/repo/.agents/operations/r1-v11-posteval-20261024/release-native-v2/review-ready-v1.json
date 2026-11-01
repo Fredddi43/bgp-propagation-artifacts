@@ -1,0 +1,15 @@
+{
+  "actual_d2_pending": true,
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "071813d7d63156dea0389b6ab33854d8bab73862104d5da69367302157c139e6",
+    "build_release.py": "c995063fe2c6ae52c45a41c44e6db96aaecb720f9ad2418d4bbe1e4440848fb8",
+    "d2-plan.json.gz": "425b85494f41b2d00f6550f15590eb129fb49e22be5ed0aef84e6cfdb3be9883",
+    "integration-gate.json.gz": "0ef32652bd74ad815c23a0e294d2fa5c00cf9fd425d9472a3768f61a825be5e5",
+    "test_release.py": "9d35ddf709f2aba31e4af1203fa5f1db578af3fc2f96dce84d281bb7dc666062"
+  },
+  "kind": "r1_release_native_v2_code_candidate",
+  "receipt_emitted": false,
+  "tests": "18 passed"
+}

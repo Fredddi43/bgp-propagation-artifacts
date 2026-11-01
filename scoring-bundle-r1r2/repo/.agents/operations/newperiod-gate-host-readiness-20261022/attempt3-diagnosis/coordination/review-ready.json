@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "newperiod_attempt3_diagnosis_review_ready_v1",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt3-diagnosis",
+ "pins_sha256": "65793501abf2fe54441def032d0491dc45ea3a768b85bfb729e8cb178e6799f5",
+ "requests": [
+  "review the diagnosis (single cascade from the chain fixture d30 witness; first causal error not captured)",
+  "if acceptable: exact approval for capture_diag.py (scope newperiod-attempt3-diagnosis-capture-v1, tool af607ccf, payload as in capture_diag.payload(), attempt_limit 1, host_write/rerun/cleanup/real_data_read false)"
+ ]
+}

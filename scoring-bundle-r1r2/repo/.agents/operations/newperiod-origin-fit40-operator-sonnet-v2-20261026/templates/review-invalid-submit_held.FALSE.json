@@ -1,0 +1,66 @@
+{
+  "action": "submit_held",
+  "author_sessions": [
+    "<SESSION_ID>",
+    "<SESSION_ID>",
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "sonnet-origin-fit40",
+    "astra-g1b",
+    "astra-final",
+    "astra-v28",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery"
+  ],
+  "execution_authorized": false,
+  "family": "origin_change_invalid",
+  "manifest_sha256": null,
+  "operating_adoption": null,
+  "passed": false,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v44-20261026/root-joint-storage-phase-v44.json",
+    "sha256": "e5fab44a899b288627d28a67a536ed23535349ddbca43cb110ba75a0c2f2f302"
+  },
+  "pins": {
+    "entry.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/entry.py",
+      "sha256": "e050c27086b5ed71d6db568af2c56880987d32c8af9673026e9a6ef7c5f94e41"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/operate.py",
+      "sha256": "6fdfd2882becb622ac3a756725f4cfb8e80b14e78b53eecf35dbba5957092bcc"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/prepare.py",
+      "sha256": "7c0fe86a2a7db9e9a23e2f003fb480319ebd70b6ec5a087816113e980d125761"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/remote.py",
+      "sha256": "5cf39018dc4f74ee96b0ace9cb0828c9943f150fd9431eb190694df078767b61"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    },
+    "writer.py": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-fit40-operator-sonnet-v2-20261026/writer.py",
+      "sha256": "d333b3529214f9f60b9fe3d9c96e20a01af96f1f1e4277e94d7d167d15bbac8a"
+    }
+  },
+  "previous_acceptance": null,
+  "previous_actual": null,
+  "resource_admission": null,
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null,
+  "source_closure": null
+}

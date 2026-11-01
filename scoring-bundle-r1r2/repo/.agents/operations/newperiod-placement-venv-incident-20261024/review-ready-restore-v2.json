@@ -1,0 +1,26 @@
+{
+ "after": "Actual capture to independent review; then a separate read-only consumer-side proof (the H1 verifier itself) before any H1/timing/H3/witness/replay consumer is released by root.",
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker": "/root/opus_implementation",
+ "enumeration_actual": {
+  "author_summary": "0590f97ed273a22a4d4783a09a78b11f06c1f2bda1617f35c8068c06ca0e88a0",
+  "intent": "60ca310d766f7ee0172d20e05125411e40d39fcd2d6d2f2c396eb3a6372e0adb",
+  "result": "56891e3922502d7020b1071ec4fb6a0dcd7ed38aa99b5137ecf74164d9f21360",
+  "stdout": "5dbbe79c77184687c8db10b201b6b7f8bbba490568c661c7133d6a3f09cec68d"
+ },
+ "enumeration_approval_sha256": "ab01384b7a0fcb8f026ac80724ac6507f2b0e1fc438504ded09ceb4738dba039",
+ "execution_authorized": false,
+ "files": {
+  "enumerate.py": "c960e83955a6a355edee0b04b773c9eab3d6540fc9fdbb85aae879a63bec5091",
+  "restore_v2.py": "24f8918267a321742f20f59cdb5ecdaa94e8b50c15a7dc50eea2fd12ad3b8332",
+  "test_enumerate.py": "08053b849fe48a1e443dcb73ec51e811dd8b24c9d9cf4a551521b2ba47b114fc",
+  "test_restore_v2.py": "aea330c9575e7cf58b22a36c0dc721ad3aaaaf535d4c98986b9fb5e713fc4e3c"
+ },
+ "invocation": "getent hosts <INSTITUTION_HOST> && ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < restore_v2.py   (once; intent/result/stdout/stderr locally)",
+ "kind": "placement_venv_restore_v2_review_ready",
+ "known_risk": "If the source venv caches no longer match the placement records, preflight refuses with no writes; then the records cannot be restored from source and a different remedy is needed (not prepared).",
+ "operator_precheck": "within 10 min before: ssh -o BatchMode=yes <SUBMIT_HOST> \"squeue -u <USER> -h -o '%i|%j|%T|%r|%Z'\" shows every <PROJECT> job PENDING JobHeldUser (none RUNNING/CONFIGURING/COMPLETING); read-only",
+ "tests": "test_restore_v2.py 11 pass; with enumerate 2 and restore v1 5 (unchanged) the directory runs 18 pass. Uses the real H1 private_runtime_verifier.verify_private as oracle.",
+ "writes": "only inside the fresh quarantine .../newperiod-placement-venv-incident-20261024/restore-v2 and the 98 venv paths (97 atomic renames over recorded paths, 1 rename out); nothing unlinked"
+}

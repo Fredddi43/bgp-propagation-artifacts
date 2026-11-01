@@ -1,0 +1,29 @@
+INDEPENDENT REVIEW: D0 outcome, the D0/D1 fix (ready 8289e773), and the vrun failure diagnostic
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+D0, approval 29832ae4, ran once:
+  - intent fced0513, result 4b98fd15, rc 0, stdout {"cells": 66, "tensors": {"30": 3543, "60": 3543}}.
+  - Root cause, confirmed in phases.py 72a6d837: d0_command/d1_command `... && exec python ...`, and run_remote
+    appends `&& sha256sum`. exec replaces the shell, so the sha never runs. The digest became the token
+    '{"cells":', which fromhex rejected.
+  - This defect was in the reviewed v8/v10/v11 phases code; the earlier fake-ssh tests could not catch it.
+    REVIEWER MISS, recorded (mine in the v11 review, and the inherited reviews).
+  - 66 cells = the protocol-fixed class-(d) count; 3543 = the R1 test cohort per horizon. Both consistent.
+
+Fix, phases_r2.py 66c51a11: PASS_CODE_ONLY.
+  - build_fix reproduces it from 72a6d837, and phases_r2.diff equals the real diff.
+  - Changes: exec removed from both commands; HEX 64 validation of digests; recorded('d0') falls back to a
+    d0-readback only for an rc-0 D0 without a valid digest; new read-only one-attempt d0-readback
+    (`true && sha256sum DEST/out/plan.json`); scope r1-posteval-classd-d0-d1-r2; RECORDS shared with the executed D0.
+  - HOST, DEST, interpreter and approval identity checks are unchanged.
+  - Tests: 18 passed on an isolated copy, including a real-bash reproduction.
+  - Provenance argument holds: T2 readback asserted DEST/out empty, so plan.json can only come from this D0.
+  APPROVAL: opus-d0-readback-d1-approval-v11-r2.json b96c4c6f, phases ['d0-readback', 'd1'], once each.
+    Supersedes the D1 part of 29832ae4.
+
+vrun, approval ca215b27, now consumed: job 52473761 FAILED 1:0 after 48 s on <COMPUTE_NODE>. Preserved, no retry.
+  - Author's local precheck e022d869: all locally checkable inputs pass.
+  APPROVED one bounded diagnostic: opus-vrun-diagnostic-approval-v11.json a1fbb93e.
+  - A stat listing of DEST/out and the last 16 KiB of verify-r1-slurm-52473761.out.
+  - No verify-r1.json content and no per-event, label, prediction or report read.
+  - Any resubmission needs a reviewed resolution and a new exact approval.

@@ -1,0 +1,284 @@
+{
+  "assessment": "Exact original manifest, all64 construction shards and both assemblies are successful; each original bounded done record verified. No producer-result or assembly content refs followed.",
+  "automatic_retry_authorized": false,
+  "capture_sha256": "14a413f7725b0b6a23e0e09f6ff358f5122a634a49e67c7fb879877d2ef16997",
+  "completion_count": 67,
+  "completion_refs": [
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/manifest/done.json",
+      "sha256": "aee374525f5a1e8e0931febdb45924e273fbb00d9562ddc03c0292fad733fa3c"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-000/done.json",
+      "sha256": "9adf7a81b221fcebbfc84a95fb8a7fd3ce6d16481ff65590562e520d033b1d5a"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-001/done.json",
+      "sha256": "c75efd546904ba10ad7e88eaa0156c2b70fa53bd01b0a9652a4b6f67ecfe8caf"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-002/done.json",
+      "sha256": "65743d9a464d845b25a4b7d611e74c4c8f4b6e3eca32ff2bb1513a83c6d58a89"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-003/done.json",
+      "sha256": "a25717486bcf57ba89ff43ebaf08eb1719f5bfa3a70cda584f42fe1fd9722296"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-004/done.json",
+      "sha256": "952aa592a56834f80d67d3e701e67a8c89df86f29e9cf94d4b214e708348d472"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-005/done.json",
+      "sha256": "d7a3cd0ce3fd0330a25dcf9e9569b4fe0ad99cda7092b30f9a593793fb44204b"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-006/done.json",
+      "sha256": "1e9f077116c47dba5bca8b5cac8fb94a63c02c0431e013abd3745823ef625a5b"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-007/done.json",
+      "sha256": "bf67cc3c105c7ea1bdd0088a8971eec01db9f28073fb5aa32eba488a4da9c925"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-008/done.json",
+      "sha256": "28438b888434bf6379e6717d34fb7a9b29f6741765f90b7cc9e57bccd9676bcd"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-009/done.json",
+      "sha256": "327400a0759ffdb0b17e25decdf9b7dfc57e83367d50b8dbc82e127c5f4340ac"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-010/done.json",
+      "sha256": "ba75b89c9fd142e9a74e8ad6f5aa0781abd6a3bab8ea93c7c9a158bd2e150272"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-011/done.json",
+      "sha256": "be3c54b3eb2b8550ce4089a4faff6a4e076f42018dbcabb8e87e7236995cee57"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-012/done.json",
+      "sha256": "f9a1d8f56b19801dc6c8708d3f5571b356486bfd7c8c8ee2501503f45af7c738"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-013/done.json",
+      "sha256": "6dd7faeabcff5f0b965ba8d7b5681512ad6cfed4d219cfae041e4feb7b7b8340"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-014/done.json",
+      "sha256": "d7168072a45235c4a448a987dceeb0da151b4778cfd991f269aa7cf79815c237"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-015/done.json",
+      "sha256": "832c668e1b19c95c600a388641e8feed9ba86a64d54adc819ca12ee233659491"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-016/done.json",
+      "sha256": "ac89cdf5ae9455a3d76b0981bc30fd98f90b902d3c65f2d384acb50f385ecd41"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-017/done.json",
+      "sha256": "16f27ea588c8171938fbbcc0b6c0f73269f4459b1843fe00c2364f71cf11c6ca"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-018/done.json",
+      "sha256": "e743b2938d0b4c60c77f78d08bef2748038023d89b41480d507bc48ea1f0b571"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-019/done.json",
+      "sha256": "3ab24f3b64159c42e5bfe51162eb7d1062764ecef4e021cc2761ccfc92afcd42"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-020/done.json",
+      "sha256": "14590bb9799b420b4cd73a63012ea7ad19cf2f1d0a2be926f40ea3c988831b17"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-021/done.json",
+      "sha256": "419f231aeefa9fbde036a3a21cb4d5668189f0786b22572d5146aac7fd389d97"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-022/done.json",
+      "sha256": "1db1461c965718fb69753d6b58cf0a3e794e8f71dbdd1f3a1603b1dbc2bf0b49"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-023/done.json",
+      "sha256": "1bbd3e57c12a036c8cacd6939083d3005b24f13226f47cc85b1351b197a300f2"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-024/done.json",
+      "sha256": "3a125e1fd3bd9a56205587b689ea54df026170c220dd1521b868358e203c5d42"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-025/done.json",
+      "sha256": "7dec19e89007e6264e00321cc4643f79729926031091b96474a66e7109b4cdbe"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-026/done.json",
+      "sha256": "55215e0b2ec8feb1862a035af202388414741eff9d146c2f014d3ea092f47acc"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-027/done.json",
+      "sha256": "b8e0c86c96d7c1d89ef4151c1684a113d5ccec21473928c2e8b3cc303f71e32c"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-028/done.json",
+      "sha256": "7b4c6b2755d4e33d75d87a95bcc05f97d7ebc109dc44b8af87b21519e7388a7b"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-029/done.json",
+      "sha256": "b205cc777514e28e45ec737b09a980b2e0187eb8915e28c659d3478247fb8e45"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-030/done.json",
+      "sha256": "bf830952b0af7cb9065b462c2e6070fb9b257562b47fdb51ca31445700faae39"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-031/done.json",
+      "sha256": "386505348c2edd606179c3a3100da157113418a2d085ecc438428aebcca69b60"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-032/done.json",
+      "sha256": "6ea3f2c5e8fa3b2573a54d29abd73f760dd61032cc97be36fcdbbb3206b7ab79"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-033/done.json",
+      "sha256": "d161d43cfff2529e23666ae44852b86d3d916350e0834965c098e2525e2c3634"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-034/done.json",
+      "sha256": "9ac6d0518b40c28f7d382a5357ff356e4fa2b77c3b6a16d3ae0b4b0f543f2f59"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-035/done.json",
+      "sha256": "88028e46bdb24361e95d9bf055c807aac864a50d9f0ef3f54f62ee7ca4f2ce54"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-036/done.json",
+      "sha256": "9a447957a20bce3453703feaaed7bf50e177d66ce2ee57afac504569f6ec9fa4"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-037/done.json",
+      "sha256": "f114c88b896be14f3534415a9b87b35ee9bf0d54e90c2a00c69edc1fc398f146"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-038/done.json",
+      "sha256": "62c561c4a29d75dbb25598ad6d26e479840e1461085e7d4f4cc11197a4f927fd"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-039/done.json",
+      "sha256": "e1159f63e14c6aa587384b444d583b94ab541de64c771e06079841f830eb3328"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-040/done.json",
+      "sha256": "24c6de932fc04f9878322e71cbc045dd96630400e6fe3a617baf4c4b4f9399b8"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-041/done.json",
+      "sha256": "d62f2dd7a2b20f1c181e5000fe159359b62e820ea1f848c1847411f6cbb6135c"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-042/done.json",
+      "sha256": "8c5272c5b07d24eef4c2c36cfbd0abb69e69711dd2b6b338b27f93abd9ea1eb0"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-043/done.json",
+      "sha256": "72d7b9c6b61c79b3f785dcea613d7427bb183b66f9dd2875f6ba1130b6b1a113"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-044/done.json",
+      "sha256": "82bc579f3a309b53e1df1fd7335092a88bd2e4a5e8bc105328a12e229069052c"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-045/done.json",
+      "sha256": "a03cd7a9b9b2f390d59767e1f07b5103adefe5fbc6297c920a89dbe5eabe5958"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-046/done.json",
+      "sha256": "53ae705cc51d21c6d50089036d7b15cc0810f83f08da4d636c110db7f7ab6111"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-047/done.json",
+      "sha256": "2f853c42bd1f921e50560934bee978c6479ff22e510c08518ba02c0926fb1db2"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-048/done.json",
+      "sha256": "5f76b3f055809f04766c0d1dc5db1c425cfb3ab81ef23ea061ae6e58058d27f0"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-049/done.json",
+      "sha256": "a97b8adf5a0473eb8e94160123367481194091548b92d4b5eb69a479647f2f59"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-050/done.json",
+      "sha256": "ac8b1643cfdbc161ae9d113b68ce91f9c09fa5756a90f71e45be02dbfea436cd"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-051/done.json",
+      "sha256": "024aa881936704b230883033841bc86818d38bce1d9f6d63497163b908a8c349"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-052/done.json",
+      "sha256": "e2915d9eb8e87401a475f52f8eb879b2655257183f6fd927e19ff43236c9076d"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-053/done.json",
+      "sha256": "82b3e8f6678b56bbae447cfff29965e70d031337efde7f0303234cfccac103a2"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-054/done.json",
+      "sha256": "d6aaa7f805e54db7f21d3be793602eb8185274da29fea481c1611d2964e1dc30"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-055/done.json",
+      "sha256": "8a4b9ed8b29b7f5e1e3a2aeae5b3b494d390e60e856fe886ac265815ef2355c8"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-056/done.json",
+      "sha256": "ac45de25748007d8311f06699917c1626973072fa6775d7997b5e9dc9dd16e59"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-057/done.json",
+      "sha256": "f8ae38a3ee6e23e27c892c2d760c5563f2f7ad4fde2e90ada59a319860be319e"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-058/done.json",
+      "sha256": "80ff79c594c5d1227dd7bb4ba99a6cb30d3732be40ba3b16d01162631a6d36e2"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-059/done.json",
+      "sha256": "02a61c1749e0abcd18a96755b6b9b27eb96dfead7262ae82658811fbfdecddc4"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-060/done.json",
+      "sha256": "4687f6b96d787676e8e642d48b93390db482fdb2021ec1d2de0f85c35f20adb0"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-061/done.json",
+      "sha256": "e0755f9da2138ab6fd1beca271e95789e1c10e7c803361835f41bfc2a2ca2b6a"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-062/done.json",
+      "sha256": "afb680a45cf6f683a688d774c61132ea0843433ba6430e8f61d50c842b0e5e50"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/build-063/done.json",
+      "sha256": "43a3dff9a735209e0d627e5a49a6c5be1fda8512479472877cc966964851471c"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/assemble-000/done.json",
+      "sha256": "cfa362a63f69a5bb96a9a8c2baa71109f521b86275ea34688b0c39f5287542d3"
+    },
+    {
+      "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/construction-primary-v1/records/assemble-001/done.json",
+      "sha256": "ba62da0197203da9b0698997386e40786afaffeb514d574c340629a01b523d69"
+    }
+  ],
+  "downstream_export_authorized": false,
+  "future_primary_construction_write_reservation_may_retire": true,
+  "metadata_bytes": 44150,
+  "passed": true,
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scheduler_sha256": "3739f4bcd3fe63e265a87bc57ce93ac2020cf589f1543ddac1075e3b55a8129f",
+  "utc": "2026-10-24T07:46:11.872024+00:00"
+}

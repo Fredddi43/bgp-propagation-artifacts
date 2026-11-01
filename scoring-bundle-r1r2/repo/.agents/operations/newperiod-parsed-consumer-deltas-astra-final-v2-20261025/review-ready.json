@@ -1,0 +1,26 @@
+{
+  "answer": {
+    "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-final-v2-20261025/owner-deltas.json",
+    "sha256": "79c1c4b1b0d8bd0a328da1a5151ff24a30fba85b7ab920f338237f822f928d44"
+  },
+  "deletion_authorized": false,
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-final-v2-20261025/owner-deltas.json",
+      "sha256": "79c1c4b1b0d8bd0a328da1a5151ff24a30fba85b7ab920f338237f822f928d44"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-consumer-deltas-astra-final-v2-20261025/prepare.py",
+      "sha256": "f4f90beee43caa2537fc5904a14851b9b728cfb9c9e020049d8244db7a7cdf26"
+    }
+  ],
+  "kind": "AUTHOR_PARSED_CONSUMER_DELTA_REVIEW_REQUEST",
+  "to": [
+    "root",
+    "astra-storage",
+    "sol-storage",
+    "sol-final",
+    "astra-h3t"
+  ]
+}

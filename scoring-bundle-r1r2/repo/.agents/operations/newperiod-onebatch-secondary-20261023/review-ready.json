@@ -1,0 +1,13 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author": "/root",
+  "author_model": "codex",
+  "files": {
+    "README.md": "2485ce47d11b286fe729b0e5a951230968c15b417b2cace63d9163adae4a0717",
+    "evaluate.py": "52ad01ae9b7b1c0e3bf7fda4261672540dee282c91ebd18bae5c7ddf7a20c625",
+    "test_evaluate.py": "ff3a83705bb8b18d3a2a36f847d12128d78869e8ca3cf39d79217a3215db0765"
+  },
+  "kind": "newperiod_onebatch_count_secondary_code_candidate_v1",
+  "tests_passed": 17
+}

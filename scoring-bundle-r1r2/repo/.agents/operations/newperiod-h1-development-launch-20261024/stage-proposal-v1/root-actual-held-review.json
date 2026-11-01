@@ -1,0 +1,13 @@
+{
+  "all_four_original_phases_checked": true,
+  "author_agent": "/root/remaining_work_audit",
+  "automatic_retry_authorized": false,
+  "complete_tasks": 98,
+  "held_sha256": "cf758266232de4541b0377a817b6144a5357cfdd4c36e15efb781371c7239387",
+  "passed": true,
+  "release_authorized": false,
+  "reviewer_agent": "/root",
+  "reviewer_session": "<SESSION_ID>",
+  "source_pins": 268,
+  "stage_sha256": "1e8c56c6f3d4ee880b4cbb3c2e648b4f5829b4e56de2d40d427f5ed9191f7184"
+}

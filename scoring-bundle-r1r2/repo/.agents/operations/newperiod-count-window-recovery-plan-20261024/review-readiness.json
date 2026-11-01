@@ -1,0 +1,43 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_implementation"
+ },
+ "classes": {
+  "G1": 20,
+  "G2": 13,
+  "G3": 7,
+  "M1": 35,
+  "M2": 26
+ },
+ "decisions_for_root_user": [
+  "D1 approve R1 metadata capture",
+  "D2 2-task M2 source reacquisition",
+  "D3 G1/G2 content-timestamp probe",
+  "D5 R-b vs R-c for the residual (>=7 G3 always remain)"
+ ],
+ "dir": "<REPO>/.agents/operations/newperiod-count-window-recovery-plan-20261024",
+ "files": {
+  "PLAN.md": "c30bbf7b4bee8de496ad47bfba9441c425fcc85851421fef7c6d69e6fb72bd8d",
+  "adapter_r1.py": "daa39324259509efb96b79a5e0c7e9deddeeafd8009bebc9219f65070999748d",
+  "capture_r1.py": "ebad94d7a650d545b16134e89e77d3e8708ef0858ab25826c4f8f52939025632",
+  "classification.json": "7c2ff1010ed1a5d1ff763c73a1aa7e52b690046341fb3cd8ff79b0ef217896da",
+  "classify.py": "4543c1b3ad70adac5fec4bea146b52e075765f3db479fac6f71ad1db0d74de92",
+  "test_adapter_r1.py": "b749c09b47d41517711a83bdcb406f7562b9a7b46f5a47f5db533dcb255a04e9",
+  "test_capture_r1.py": "cee077bc5663674b9a77e295f5c9125f3645665b9fd4a62310247b02f3f4e119",
+  "test_classify.py": "99e270bb45c94c8a10ae1bc40c4633476a80b6a7c70b7aa94570e9a9bea0f2d3"
+ },
+ "kind": "count_window_recovery_plan_readiness_v1",
+ "not_done": "Nothing executed; no request sent to any host; no composition of certified days into a projection.",
+ "review_asks": [
+  "Confirm classification facts (part_present for all 61 M; canonical day products absent for M1 days; G1/G2/G3 from captured manifest counts).",
+  "D4: is R1 criterion c (original extraction K/K == repair broker_files, plus full-slot repair pass receipt) adequate daily-ingestion equivalence, or is R3 row-multiset re-extraction required?",
+  "Review capture_r1.py exact host scope (19 paths, one ssh <BATCH_HOST>, one custody-log append) for D1 approval wording.",
+  "Review adapter_r1.py criteria and the verbatim qualification; confirm it reuses window.daily() unchanged."
+ ],
+ "reviewer_routing": "Existing Opus reviewer 4ba6111c when free (current run actual-gru-timing-replay-review-20261024T131436Z is busy); no new reviewer.",
+ "scope": "Planning + frozen local candidates only. No host reads, retrieval, parsing, jobs, deletion, canonical replacement, labels/scores/predictions. 14787 population and 101 defects unchanged; nothing admitted/excluded/zero-filled.",
+ "tests": "14 passed (classify 4, capture_r1 3, adapter_r1 7); classification deterministic",
+ "utc": "2026-10-24T13:34:26Z"
+}

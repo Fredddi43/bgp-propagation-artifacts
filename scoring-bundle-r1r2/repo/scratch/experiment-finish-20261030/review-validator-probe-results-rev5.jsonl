@@ -1,0 +1,8 @@
+{"probe": "production-shaped_baseline", "exit": 0, "summary": "PASS"}
+{"probe": "production_validator_binding_equality", "result": "identical"}
+{"probe": "cap_exact_actual_document_bytes", "exit": 0, "summary": "PASS"}
+{"probe": "cap_one_byte_below_document", "exit": 1, "summary": "FAIL"}
+{"probe": "empty_aggregate_primary_rejected", "exit": 1, "summary": "FAIL"}
+{"probe": "JSON_only_scientific_changes_rejected", "exit": 1, "summary": "FAIL"}
+{"probe": "actual_run_missing_cannot_final_PASS", "exit": 1, "summary": "FAIL"}
+{"probe": "legal_tuple_set_nan_mixed_key_projection", "exit": 0, "summary": "PASS"}

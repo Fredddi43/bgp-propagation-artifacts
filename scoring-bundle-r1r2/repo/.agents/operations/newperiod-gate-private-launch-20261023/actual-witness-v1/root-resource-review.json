@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    "Original64GiBAS/4threads/4hperhorizon/4GiBFSIZE; 16GiB empirical futureoutput only, not hard cap.",
+    "Original1289events eachhorizon,8MiBhashstreaming,per-eventgraph audit; actual maxgraph2085614B/maxexport11704941B,metadata14740430B perhorizon. Originalsuccessfulopen-familytrace <=64MiB perhorizon; unchanged original science and tracing.",
+    "Separate eligible Opus phase authority and final exact spec/source/transport review still required.",
+    "Do not start temporal witness concurrently without additional joint resource admission."
+  ],
+  "evidence": {
+    "path": "<REPO>/.agents/operations/newperiod-gate-private-launch-20261023/actual-witness-v1/resource-evidence.json",
+    "sha256": "0a307d214f87a7baf83e914285f427cc70676a1e25a10ae4a739a0dd5fb5af35"
+  },
+  "execution_authorized": false,
+  "joint_storage": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-export-waves-20261024/root-joint-storage-phase-v8.json",
+    "sha256": "5f77584f54a49adae64c387b7bb0c5bf6d2fdb358f873c9c3cd6cf353cea7d89"
+  },
+  "kind": "independent_core_witness_resource_review_v1",
+  "passed": true,
+  "resources": {
+    "as_bytes": 68719476736,
+    "empirical_reservation_not_hard_cumulative_cap": true,
+    "fsize_bytes": 4294967296,
+    "nice": 10,
+    "per_horizon_wall_seconds": 14400,
+    "per_process_cpu_seconds": 57600,
+    "prospective_output_bytes": 17179869184,
+    "threads": 4
+  },
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "/root"
+}

@@ -1,0 +1,11 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "f5ea75be7a3cd5882aecb7978abbe3c0349f757215a78fac720feda241a5dbb0",
+    "publish.py": "192ab130bd5b4995d242f8bd04d8c9982794a729241026b5a8a494c9806164c5",
+    "reviewed_prepare.py": "a9c5f17236609c3e8f18a19c504811928306c0d8f6c9a19d8be7dfae28d11ab4",
+    "test_publish.py": "0302ad73d5a904944768252f05029df99e562c0472ec4c0109ab6805157c4d88"
+  },
+  "kind": "newperiod_h1_dual_metadata_publication_code_ready_v1",
+  "tests_passed": 8
+}

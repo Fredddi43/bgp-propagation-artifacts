@@ -1,0 +1,10 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "request.json": "89c69ba74d5659a5990866fe4dfa783b2067d806244eff6870253ae47c642a96",
+    "test_transport.py": "7248195f50537d634330f7ecd74d95d33db3728b6024e4adbd983e87aafe8e70",
+    "transport.py": "bc6e193379209ac2a42a96af0552039d72ea342b9b0f581c6ff505868dc77ed5"
+  },
+  "kind": "temporal_original_transport_ready_v1",
+  "tests": "4 passed in 0.08s"
+}

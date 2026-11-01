@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "V4 sources and plans verified for stage audit with stage_science.",
+    "2 GiB per-file cap and NIL array parameters verified.",
+    "Phase V48 floors and storage margins confirmed.",
+    "FLOOR CHANGE (root decision): writer floor 867383093888 -> 400 GB; only the two floor comparisons in successor.py changed; plan re-pinned 8ed0b2063033 -> 326ea25cd186."
+  ],
+  "claim": "orig_budget_model_with_post_hoc_allocated_census_not_backend_theorem",
+  "execution_authorized": true,
+  "kind": "INDEPENDENT_D300_AUDIT_STAGE_SCIENCE_CONCURRENCE",
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v48-20261027/root-joint-storage-phase-v48.json",
+    "sha256": "913754c6c095bf1b0eb542a1d33d721318ccdc4934659bc4728a3d36f7b07baa"
+  },
+  "plan": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/sensitivity-parallel-timing-budget-v2/recovery/timing-d300-audit-sonnet-v4/controls/plan.json",
+    "sha256": "326ea25cd186cfe73c80d5f964c650f0f639383895e356cd74a088b2cf364794"
+  },
+  "reviewer": "claude-sonnet-5-5",
+  "reviewer_model": "claude-sonnet-5-5",
+  "reviewer_session": "session-root-audit-stage_science",
+  "reviewer_worker": "reviewer-claude-sonnet-5-5-science",
+  "scope": "stage_science",
+  "stage": "audit",
+  "verdict": "PENDING_ROOT"
+}

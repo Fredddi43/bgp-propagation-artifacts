@@ -1,0 +1,15 @@
+ACTUAL ASSESSMENT: D0-readback and D1 (approval b96c4c6f, tool phases_r2 66c51a11)
+Reviewer: claude-opus-5-5, session <SESSION_ID>.
+  - d0-readback: once (intent: command true), rc 0, plan.json sha 6e18854beb7e1ef54adb810bd48b57863c97e40c4b4b18d8a2ded7663be85f60.
+    Plan mtime 03:02:43Z = the single D0 run; DEST/out was empty at T2.
+  - d1: once, rc 0, empty stderr, census.json sha 7b746087d75a71b148746a0edea43198311f5abddf1549956851c1c5b96cbc25
+    (64-hex valid).
+  VALID. Approval b96c4c6f CONSUMED.
+  - D1's printed summary {bytes, files, max_file_bytes, not_regular} was cut to its last 64 KiB in d1-result.json.
+    The visible tail is a long NOT_REGULAR list of graph tensors under occurrence-final-v1/graphs/2025-v6/d60s/*.pt.
+    Allowlisted tensor files are therefore missing or non-regular at the planned paths.
+  - D2 must not be proposed until census.json is captured and the not_regular count and cause are explained. Missing
+    tensors cannot be silently skipped. They are either an explained plan or path defect with a reviewed fix, or
+    reported per cell as unavailable under the protocol's failure rules.
+  Fetch: opus-d0d1-fetch-approval-v11.json 4a2fd4e9 (request bytes 7d2643c7; output classd-host/evidence-d0d1.json.gz,
+  the d2.py:71 path). An earlier draft 3f8addba was corrupted by shell backtick expansion and must never be used.

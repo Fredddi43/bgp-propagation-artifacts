@@ -1,0 +1,65 @@
+{
+  "action": "capture",
+  "author_sessions": [
+    "<SESSION_ID>",
+    "<SESSION_ID>",
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "astra-v28",
+    "astra-final",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery"
+  ],
+  "execution_authorized": false,
+  "manifest_sha256": "a5053dffde116b77d3a24b2bf3cace59e2b54ffca38e035cc38ed72f87a1ed57",
+  "operating_adoption": null,
+  "passed": false,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v43-20261026/root-joint-storage-phase-v43.json",
+    "sha256": "7b2d75f3652482fd196b6ef790344a6cb050f9f25fb2fb9c712975145d3f0304"
+  },
+  "pins": {
+    "entry.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/entry.py",
+      "sha256": "707e4564126ad0b8020cd55349bf37d5ef372edbfbe7c05737658de6a412c053"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/operate.py",
+      "sha256": "f48950b52176ab3ae052e99613488d91884adc427d514463c652bdd1acf05303"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/prepare.py",
+      "sha256": "e047655ee31e8216af17eea2643f54b02eb2043869a8e1f8379459071805767a"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/remote.py",
+      "sha256": "6634599f28f5d988118f5fcdfc142c840471329599791f547c1dff1b539bfcd2"
+    },
+    "replace_remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/replace_remote.py",
+      "sha256": "f92601fb749ef5696c431817f14a72169978d5da5d245a4278c578b9895ba311"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    },
+    "writer.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing40-operator-sonnet-v2-20261027/writer.py",
+      "sha256": "d333b3529214f9f60b9fe3d9c96e20a01af96f1f1e4277e94d7d167d15bbac8a"
+    }
+  },
+  "previous_acceptance": null,
+  "previous_actual": null,
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null
+}

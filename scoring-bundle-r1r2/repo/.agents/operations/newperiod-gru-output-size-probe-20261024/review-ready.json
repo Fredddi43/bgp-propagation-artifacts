@@ -1,0 +1,10 @@
+{
+  "files": {
+    "capture.py": "bcdf7bd98b1b1f4bf5b636f55629a328bc40b93492598e9ea5a9b35be9190768",
+    "test_capture.py": "d222bc9ef9742bf925a90435b3bc02e8c8d69e31d824a0f31ae7cfcac69ee662",
+    "request.json": "53cf4a1be935005a921b052c20fd3b88b42f7b0f07f9e8036013ca24c539f984",
+    "REVIEW.md": "d0a4de459e4e151ef8a339e5011a908ffb34c241576201a3027c63f0c4af7f80"
+  },
+  "tests_passed": 3,
+  "scientific_execution_authorized": false
+}

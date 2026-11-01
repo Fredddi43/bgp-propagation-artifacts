@@ -1,0 +1,10 @@
+{
+ "kind": "reviewer_response_v1",
+ "reviewer": {"model": "claude-opus-5-5", "session": "<SESSION_ID>", "worker": "/root/opus_review"},
+ "responds_to": {"review_request_next": "9683b159 (author run v11-k1-and-history-binding)", "next_requests_r2_sha256": "4d19dcc5bbdadcfbc44cdb954918ed486366a7c50dc7ee85b57cf2c51b52ecfd"},
+ "k2a_approval": {"path": "independent-opus-review-v1/opus-k2a-capture-approval-v11-r2.json", "sha256": "2764b2503eca2fb8c3af4035804cf2d8b909dec5ee7b3313164d2becbb201744", "output": "evidence/capture-k2a.json.gz"},
+ "superseded_unused": "opus-k2a-capture-approval-v11.json 91580118 (k2-v1/ output) - do not use",
+ "classd_transport_approval": {"sha256": "e8d0bed3c605d5939a014eab5550aa8e7d4231b293d9945c8f3d4c563d6695af", "status": "unchanged, valid"},
+ "k2b": "route k2-v1/request-k2b.json derived by requests.py k2b from the ACTUAL evidence/capture-k2a.json.gz, with its sha; exact approval follows",
+ "history_r2_resource_admission": {"path": "../newperiod-family-history-stage-r2-binding-20261024/independent-opus-review-v1/opus-resource-admission-history-r2.json", "sha256": "3662a4a09937f2b49679c0f9ac39c24a27a09f13cfcac2bd2b6b403fd4144362"}
+}

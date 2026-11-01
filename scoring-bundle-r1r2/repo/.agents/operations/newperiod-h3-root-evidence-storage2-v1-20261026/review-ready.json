@@ -1,0 +1,52 @@
+{
+  "actual_controls_signed": false,
+  "author_worker": "astra-storage2",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/README.md",
+      "sha256": "df4837a655e5c7c7a5bc33797cb0e24454af4140032559f0403e8d09098cbea7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/fill_evidence.py",
+      "sha256": "3ef62c4d377b2e41fc57d25c34468a80c8be43e1e10dc8cf97030e95b4ff5844"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/independent-review.json",
+      "sha256": "ba30f59ad854c43c7f4e73ee28c463358f3e30b980a05fcd253271d48d50362d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/inputs.json",
+      "sha256": "9cf5bf68f95a19585c47d427cfb38cf09503058cc851cefd66c31a0bb372f8ca"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/probe.py",
+      "sha256": "91e07fc49d1eb3f26b15dfa7595ee5ccf8d91a7fa5ff163a20436bf6f918c109"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/proof.json",
+      "sha256": "f87a3425932c33bbb37e76ac2b7e8ed0e1106d902380019970084596ecd6d4fa"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/test_evidence.py",
+      "sha256": "feaaa2350a7909ea7e70025a0dcc054f84428720c6066c86b0ad2e0475dcf288"
+    }
+  ],
+  "kind": "AUTHOR_ROOT_H3_READONLY_EVIDENCE_FILL_REVIEW_READY",
+  "packet": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-launch-packet-storage2-v3-20261026/review-ready.json",
+    "sha256": "cddc9881d9664fe36e2c2fb117411beeca42dfacdbb0129517b8f42808db134a"
+  },
+  "proof": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/proof.json",
+    "sha256": "f87a3425932c33bbb37e76ac2b7e8ed0e1106d902380019970084596ecd6d4fa"
+  },
+  "review": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-root-evidence-storage2-v1-20261026/independent-review.json",
+    "sha256": "ba30f59ad854c43c7f4e73ee28c463358f3e30b980a05fcd253271d48d50362d"
+  },
+  "stage": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v6-20261026/review-ready.json",
+    "sha256": "449f070591d87010c8a7778c0f7436e16ad3e7f3df4998f6c754249a805cd9fb"
+  }
+}

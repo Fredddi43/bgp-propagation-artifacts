@@ -1,0 +1,625 @@
+{
+  "actual_controls_signed": false,
+  "author_worker": "astra-storage2",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/accounting.json",
+      "sha256": "ad231c790a8bda0079b5e68ac1f5487368f346da77f4983bbddba24b1a0959e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/allocation_policy.py",
+      "sha256": "6928892385310e5b90faeadbb8f122159ae084eb9b26e7e061f2add74de4f04c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/budget-successor.json",
+      "sha256": "2d4a6b46a5783057934038fdc44e5639167ce05c7e3f2251877b3d645700679d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/build_successor.py",
+      "sha256": "2a618db867ed0c15c2e3119465ada44d98c244bb398ceab93a9aff36793f2a06"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/finite_capture.py",
+      "sha256": "872c076002ec212aa728e26102cb50083e6864b4154bfbc3267fe511812e5c0d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/allocation_policy.py",
+      "sha256": "6928892385310e5b90faeadbb8f122159ae084eb9b26e7e061f2add74de4f04c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/client.py",
+      "sha256": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/common.py",
+      "sha256": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/job.py",
+      "sha256": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/runtime_verifier.py",
+      "sha256": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/scripts/custodian_access_log.py",
+      "sha256": "4e84e4c8f3ad3922bb7fd0dcd65d1ae1fe04d80acfe31ea98d98c6f63679e5b4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/scripts/custodian_newperiod_inputs.py",
+      "sha256": "2097d1ebdd7dc903e3405496502c21f8013ed013c3601a34886c4bd4d8e7d9f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/__init__.py",
+      "sha256": "58ea62cf6617a1065c6add8b8202ad0f43243ff3104ee5d3cc2754e1728ba113"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/aggregate.py",
+      "sha256": "53029727aedc1952eb10e5c62f772ce440dbbfcf5ffb1c806284e3631136f4f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/baselines_eventset.py",
+      "sha256": "94add4d390325694374ea2fb8f2c69c3471e7208a0d7a60e53b5c6a12ebea2de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/beacon_analysis.py",
+      "sha256": "5b9ee952008172182fe709a53cc98745f9140da685b99b69fb5f42760d9d5c39"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/beacons.py",
+      "sha256": "2f3c39fd8abdb7474c5049399066543405bf35dae8b93c01413eb98801c40031"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/broker.py",
+      "sha256": "a3419c58a4cf4966c0c5a438c4656b30861d507873684d15e55df0a9498e64e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/cli.py",
+      "sha256": "87b389dcba4f68fbd6b8cc4082df50f8ab28ec82909aaf28025db885c36a18f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/config.py",
+      "sha256": "6e658b4ba3ebe8f57d61e521f98bd4e07f92410309bb8169bdf6235c49d4cdab"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/curve_baseline.py",
+      "sha256": "173695a9778e8f9dc7a25130f89d9a0903a82bbd6d38d355b7bbd6aa9c38fdae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/curve_eventset.py",
+      "sha256": "333edb31f6db6521126df099fadff8ffe783e8ab4116d224b480125bde46fd7b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/diffusion.py",
+      "sha256": "a38873478b0598954195ddc732d0db6fb493dbe217ca7eda6b23ff84d70f1c42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/dyrep_train.py",
+      "sha256": "2db3da8d8a0e64a9826f62d31e06c11b6d9ab643d81de426e902825fe1d153ad"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/eventset.py",
+      "sha256": "d1a8f11648aa41e5e2b2ed8c500b2af11ce319528b38bcdb51402920f1692439"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/extent.py",
+      "sha256": "09d616606a9fda99ff097f6b3cdd84f88e636fa5b0d6489cae386fbbfac42a04"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/fetch.py",
+      "sha256": "513b234987baf4b1b1c115bba45ec4834a27c97f8cbf3ba3caafc9d4baf3277e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_analysis.py",
+      "sha256": "1539b06701ec30d429ae1dbe2c5a6d966c12bd1dfe2708589649eb725a8146c9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_baseline.py",
+      "sha256": "097930bb8bf03d4b7d9b6234fdb3aa85541c5bf9ba940c92cba53dcef51d521f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_candidates.py",
+      "sha256": "13f7e2717e11b859df460e93246adff14fbd3315c7309664da3eec11a7b12bae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_counts.py",
+      "sha256": "57a0b86bbfce18e8789c845cff304864c44333069312368ad9ae8273c8cf90a3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_curve.py",
+      "sha256": "0e3432a543daf487b8da860cac7538b94924070fd61e922c9094524a7bf67d5f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_custodian_eval.py",
+      "sha256": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_custody.py",
+      "sha256": "bbda361fb36df0af60ff41a710779fc99a6f28703c53c48e9b143754a5bd9d9d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_development.py",
+      "sha256": "4061b531ca1c95ff12aa6edf0330f20d9159b3bde4b7ed9cad1d66276e270b3e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_evaluation.py",
+      "sha256": "5acbdbd7f510283ed43f4f7334c246bf7dcf1491068e7033b8db586e301fe21d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_h1_predictions.py",
+      "sha256": "23e15575be3d4fd4ae03a50597a3627e7792ac3cb223ef8a05bcf621b45a43a7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_h3_commitments.py",
+      "sha256": "d382885df6f43c0762d90bfe8cb9d1841564c859bdbeca95f67ba51461a5e777"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_history.py",
+      "sha256": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_history_families.py",
+      "sha256": "e52ce7d71ad78314daa2c485fb5ea8e8f51bbb8891f39f7a7eb617595032adb2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_history_sensitivity.py",
+      "sha256": "3af6b34dc6042f34c4efd2c61544247cb8dc916ec97aba51fe034673afc4b451"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_history_sensitivity_report.py",
+      "sha256": "543b8225cfffd7b59c42fc6e1acfbafb12f0f67b04a5523a1835815f880e5b73"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_history_variants.py",
+      "sha256": "37372d32cbf104ab07e0ce63e46f6d5ecad505378dbc410b9199f0d559e00c08"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_input_panel.py",
+      "sha256": "6ddaf8583b46ef4aaaffa1634e35df07b622da4d09ae993f64499622a4f9174e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_inputs.py",
+      "sha256": "deab11d87ea0940cdbde9bb0b2981f9e4d0059cf9eb7dc5b86ba6f7e6becf84f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_manifest.py",
+      "sha256": "6b7e3dce71a108f2fa1747d4ea1f75f619983190001b74e23087f0d2a4747827"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_numeric.py",
+      "sha256": "478dd41883d8b7a5497f075911a397f9184ddb1d7623a494082190699d1947df"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_panel.py",
+      "sha256": "ac9468bceb62020da660993f2fdc80e4efbdca2297de4e7dcdfbfa348b876290"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_panel_reference.py",
+      "sha256": "4bdc7f2efc57407de0d23b4d6d06005832d22deec0149bfa651c99ff3a920ff5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_panel_scoring.py",
+      "sha256": "b7374f69c5c0d88d66ef3e8454fb4529f73ec7155be1791904b4c7aa27f168db"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_precision.py",
+      "sha256": "bbe5c65c4b9ad03a5516b548b90c284d81c16005ffda85092104cabe1a9a1ac6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_protocol.py",
+      "sha256": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_ranking.py",
+      "sha256": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_recipes.py",
+      "sha256": "04691c483a64c0e6c93fd058da8d41347eabdc0c31ba881f165746074ab50d6e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_release.py",
+      "sha256": "5b728f4624ecf211df1f165685506dc17aeda405050a0a25663d5796cac73c33"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_release_facts.py",
+      "sha256": "442f3cbc0cf294d99e02fecc2f1ac23bfb950aed20037dd4f57e87dcf5575e99"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_retrospective_custody.py",
+      "sha256": "818497e430b9871cdb3761e44b554a8c84e87ccbc66fd44647d28fd2cf9ccbc7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_retrospective_scoring.py",
+      "sha256": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_sensitivity_gate.py",
+      "sha256": "590d9cf7e49561f4db506366745451e250da21058a5fc194d310035b57d6193f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_signals.py",
+      "sha256": "26ffabbb5dd0762224dd84c0c0c381da8f7d72b5d33e0b308f65f97d99bebd84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_stable_peer.py",
+      "sha256": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_temporal.py",
+      "sha256": "f218734eaaa07b222e70dd6145268d362f367e9c18106cca86a234984b118de1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_temporal_mean.py",
+      "sha256": "4e97fcfddf3fa2c104ad21f5a5f4faa1c15d6add3ed7d1f3400851c0833b25c7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_temporal_mean_predict.py",
+      "sha256": "a21524b7b517595c2a62feaaf3343d5a79a261932c051a552bd3b32ac3b14bd6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_temporal_mean_train.py",
+      "sha256": "fa29b754fb2806ed2aedab40ab41bf78a55d56627e067680347d4007534f843c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_temporal_predict.py",
+      "sha256": "711f36df7588ac95da25103852cbb555a6fca91bcc7612a883f557a0df2fbb10"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_temporal_train.py",
+      "sha256": "25cc9de6a62e56d432e8fb6af047e8699b962d1c2539991aa4401a91e82690a6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_train.py",
+      "sha256": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/forecast_trigger.py",
+      "sha256": "15b96f850f8e6db2557250afb408fd5dc94f7bab41f0a67e71af4e1dd2e5c87e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/gat_train.py",
+      "sha256": "d2020057f3d14391d403dab1e168aae63bccea13e47b5136fb2fdbfdb0fc7910"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/gnn_train.py",
+      "sha256": "ca121f2f062d52d4fa9dcbbea0dd9d6cea9a2b7ebef3bd87fb7c0148b226b008"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/graph_metrics.py",
+      "sha256": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/hist_avg.py",
+      "sha256": "b9a3e9c1a472d8d440290e3c64edb4a5058ed6ce89b3709c5b6f16566494b5d1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/identifier.py",
+      "sha256": "bb677d637a490e204dfed5cbf8cb2dba20e8264546ff516669871f188f352c20"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/identifier2.py",
+      "sha256": "76131cc0da3c84555c678a1c5f0ca5335ac431b9e04592d90b9eefdf68f76600"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/labels.py",
+      "sha256": "032f4a38b05123c825e6a457f3a07b72a5047a3bc7cf464ce4ff902b0fd099a9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/leak_events.py",
+      "sha256": "337041389be35819d302bf420562b48959c1674c54fe51e3104c3cde3d201e84"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/leakcheck.py",
+      "sha256": "20bf95721c69183882994f2a519340f1235fbacadc4cbac67d81a80703c8839c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/paired_analysis.py",
+      "sha256": "77e746156e2051a3a71cf9339f17bf61f93717976ed444dd88354b8d80151aba"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/parse.py",
+      "sha256": "e6afff8f01f9bbb1629c694f00210b00dbbe9709e444ff56471b82c12acd1559"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/plots.py",
+      "sha256": "a4011d17b919189ce9442ecc2dbc73d0ba50d3a4b0a2e14d6e5d9a40fed66727"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/prefix_events.py",
+      "sha256": "22d8c8aa8519f688acd14545568404b059a7c98631c85a1b23eb2fed260375c8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/prefix_metrics.py",
+      "sha256": "bfc7d9fb45fcc82ddadd97d5233362655c5f369c81a41bff1de0506d0a2b060d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/ranking.py",
+      "sha256": "5c450ad1e43b9b2f53a294252270a5d6eb774871e9df96caf63b9d52d4f1ec76"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/recovery.py",
+      "sha256": "881ecf04be36fa50f7091ba3fc2d897df899a801bb6858a5e0569f5a8483eb5c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/replay.py",
+      "sha256": "d0b805bb392f4f6d23e7457573f45d055fab3ac4f83cb8fea073a31a20601993"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/replay_day.py",
+      "sha256": "e4c124b0388fcfe7c3208985409158337909c717e8bd9e811ebc8aa6d301e7f9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/replay_multipart.py",
+      "sha256": "5a859f127cb6231ba0462aa67c8e1046f16d78905f4b135b8e6e3a89371007a2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/ribs.py",
+      "sha256": "277b7bb82dbd98aed8a3560a7373898e688a912d501b2bd4e9079634611d8314"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/robustness.py",
+      "sha256": "4861651bfa0a5e697148894fd197590b34cb9954e094842d189b3781e04b10cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/rov_history.py",
+      "sha256": "eaea73613006ae423d61819246bdd216ed08f404996600eef708a0db94ac461f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/rpki_validate.py",
+      "sha256": "817f435fdaaf25031bf3e1b37e6e2a4f702bfb0e8c75eaba3a9f3a250261b342"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/schema.py",
+      "sha256": "45ccf2ac60c73226b049d78ddd245260e508261818df1692db266394c46ce0a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/select_leak_replay.py",
+      "sha256": "917330469029ead8fd74410ef4209011a255d2dd10198ccfb93b0906090849cc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/select_replay.py",
+      "sha256": "664d56b601d7d802cf6369bb4d3c463607ebd2e3ca0085bfe6699f5cf7fec4f2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/select_withdrawal_replay.py",
+      "sha256": "0440ef64c8be464fe22e46ea8b539e05479fa670bfdc53ce241862cc5889c6bc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/tgn_data.py",
+      "sha256": "12dbc1c0543560d93d95ad5f72c46003f7703d9da5c7096f7353ea94e08af6b1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/tgn_train.py",
+      "sha256": "fe14080ebb4d91d6facd630b9241f3cfb271878ec78cc603525efeaa5219ca57"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/construction/source/src/bgbench/vp_select.py",
+      "sha256": "7905e070559ba1ab578365a2a1957cb50c1d8ef7bc2c5847fda79a1b979bd565"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/controller.py",
+      "sha256": "9656ab1a88b7a12863a2b2d8dfb3539b51d79a4e40fde41e46a45379b2bdf90e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/custody_scope.py",
+      "sha256": "f358466c2cafdeb59954bb804bffc0d0e29b49f7585e05dff6142e9a24505ce3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/file_limits.py",
+      "sha256": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d30-assemble.sh",
+      "sha256": "7079eab4d329fdc7cc6d77b29af537fcd602b45a4ac6001058bfda16c93595de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d30-audit.sh",
+      "sha256": "1b6397491118b93edc3ce48bbff9f2c03161c12eadf171e7f526c746d4a12cf1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d30-build.sh",
+      "sha256": "a5223d9b9a5246a8f33919a7213c48d00d3ac18c6bdda40c8c46908438d318dc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d30-export.sh",
+      "sha256": "a24bff8d88a4f221a81eab46103dc98a7a2c4151cea1b6cf99bbef929e2d5243"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d30-manifest.sh",
+      "sha256": "03d6d8f793dd1cdee96ea38dad38bbb24f0d8fb1221f58a101ab053fedab7e5c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d30-master.sh",
+      "sha256": "5888271b36d525c3359c46b2c8ae6b98841f0298653fc7e61ff99f91fad2f547"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d60-assemble.sh",
+      "sha256": "1ff6f2b85171899faaacfde513be4225a8c0f37f01b886c86442e018a4b315f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d60-audit.sh",
+      "sha256": "be29b67ed0d17705ca368d57cec5b37c94588e2925eb117461783fa03a3dd1e2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d60-build.sh",
+      "sha256": "05ad9a4e5d03f644ca9792c21c273bf672f1120141302e0a37266360ef493b56"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d60-export.sh",
+      "sha256": "620aa58725effbaa09adc562061d1eb4c22b9c511a74f4483697e01f14062357"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d60-manifest.sh",
+      "sha256": "b3c1ff5c4f9122bc324bf3d5a5e6bc8d4b36d2645f3d5fb94af6ac3c0d9497ff"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/mixed7-d60-master.sh",
+      "sha256": "f481653e652799cef53561098e2cc3db46538df49f1e57d7b644b6999ffd88b9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d30-assemble.sh",
+      "sha256": "4d2806e3412a11e27299913f2f33fb71344465e87ac3bbd0af19baebb699c9a8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d30-audit.sh",
+      "sha256": "1c383ad1d620134bd6c9fb2dcc92ab39a51414ee50a02b08e820382bef2ea088"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d30-build.sh",
+      "sha256": "ff14b354427ae0fb7c9a13da2ddf1a242297a3506ff9cb9911e0920007156019"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d30-export.sh",
+      "sha256": "74a4c3c8de37c6e5e7276470981830c5f3e7199c5aee7d7867eba56b704b26d0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d30-manifest.sh",
+      "sha256": "9e1332618deab84bd1190f19f1d53aaa523b79cacb976f32eeedc564d6ef3fd5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d30-master.sh",
+      "sha256": "c0edc7ae112695ee5e02d8a1666001986f2e9c3c6eae8bc20e03869e80ff79ee"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d60-assemble.sh",
+      "sha256": "57d102af32d03bce0f89297bb393e8428d45b3cab8bafdb2741eb6a2c3c12196"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d60-audit.sh",
+      "sha256": "f2e462630b8d3e3fccf2803312e39cf056ff378687c5fcab9158a05e677e9372"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d60-build.sh",
+      "sha256": "4da5a492f93f258eaefb73435a5d87b9176896ffd26e2206b5fe0b061bc563a4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d60-export.sh",
+      "sha256": "eec85fd2bb333f47471ca93d7c16227f6bdd59a20960535f720648e2f80d88d0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d60-manifest.sh",
+      "sha256": "234736dd8e26372588db5a3a3076e578d4c91586b9a152c757964dc31907ee1e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/jobs/ris7-d60-master.sh",
+      "sha256": "e902cfc682f1565e80feba0d933ce48d2742e3cbd0591a7707c0a42e798770c9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/kernel/entry.py",
+      "sha256": "2fb0c3f384aba9b4382ed705bfb3b6066a08a89fb7f9e3d6861e26c30a1b22ec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/kernel/panel.py",
+      "sha256": "47b153e49679c6360cc8989417272b3ab4f099db8db02c33b97d581aa0ac22de"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/kernel/verify_h3_panel_completeness.py",
+      "sha256": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/kernel/verify_h3_panel_features.py",
+      "sha256": "3529b9800016ec798b463683cdf768ffecad2a0a7b14630a78adeb6c00119f2f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/plan.json",
+      "sha256": "ea302b9ce8cea7eca87517f57edeb1cd1d7d14e5b6c09fcc5830b883aaac5346"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/producer_budget.py",
+      "sha256": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/runner.py",
+      "sha256": "d8e28f5bd903f463aa3e7114e0ef1317de4b122a0e22667fd3ad4dd8bd09ba29"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/source-receipt.json",
+      "sha256": "40eae5a22241c48f4bc336fde4819ee2da367ff0b9ff3e3e4e0ee20cfd01a242"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/wave_contract.py",
+      "sha256": "473d3ac47b0ae7c631b30d10ad4435458a33dc333bcaa2fe42813b524c1b4092"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package/write_guard.py",
+      "sha256": "4ae7db38f04441d2b049fdd805dcb7c5dd51fdef7850a7e79c6b560e9d9d33c7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/package-manifest.json",
+      "sha256": "5c794bbecec08935e190218c597d0fd6fc64f4a4c84ed8fb2c304f3c6d2a828d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/preflight.py",
+      "sha256": "76100f941678b4f8326a16ead1159be283e516b2433d27f071fccb64f60fe14a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/proof.json",
+      "sha256": "85a41292959a8873fa617b0b22b3f2c305f8fad5dd2c3515cfa174c5d7342738"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/release_once.py",
+      "sha256": "c1c0ed52368af08a4f54268cde9272d1a72df52bdf462445746d419e43b71d05"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/root-operating-adoption.FALSE-TEMPLATE.json",
+      "sha256": "7457d217366f0fc61741e33fa368b6a1c650e053012b3213ff2673e566488ca8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/root-stage-once.TEMPLATE.json",
+      "sha256": "6bfdf96c216eb77c38e60134c9002f8a555a869b4953dbdef8e6313e3d4b1b1b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/scientific-source-approval.TEMPLATE.json",
+      "sha256": "e3831f86ae339eb0225a7bfae3b63ec0f9472bce19813c86ba51f6fa5b5f8a6f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/ssh_transport.py",
+      "sha256": "1cc73fdd35779a282867f50d5d7c275284b8c552963d24d5cb90eaff9176d6f0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/stage-independent-review.TEMPLATE.json",
+      "sha256": "389e7c1855419efede14e9ba27c8bfaf6e69389537155e8cd16b6a5ec46bd979"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/stage-physical-profile.TEMPLATE.json",
+      "sha256": "b41930063937376b1d7a557699e78fe250bb5f9cfb7d73d5eec02c00241e0f3f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/stage-request.json",
+      "sha256": "8eea6963d70977e72f0c6a13455a09a4077381ba836c55ea8ef44138e96bf9e2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/stage_once.py",
+      "sha256": "f94d6414d7dafbe01d53ed30f1a92753e5431ac933971f90fd631f3b0a2e5638"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/test_budget.py",
+      "sha256": "edfdd96ec55ba1734ecb474f02132d99d2f2e0810514699757a1195f5b00deb8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/test_stage_adoption.py",
+      "sha256": "eb328e471e09651e554e0e6fd601f22ed2517ec49222ab145d90932341f14231"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/transport-source.json",
+      "sha256": "fd2c4c0df567c7f1dad214eb55536c6f9e1db795b11554ad2ba1ab6a0fc4b69b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/verify_successor.py",
+      "sha256": "e5a03508773ed514ca38056f2c19e80ab7478828b38784507756076b9d555305"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v5-20261026/wave_once.py",
+      "sha256": "53eb410669663ec003a359cf653a29482576c55395196b1861f293cfb2a1c466"
+    }
+  ],
+  "kind": "AUTHOR_PROTECTED_H3_STAGE_V5_BUDGET_REVIEW_READY",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-stage-storage2-v4-20261026/review-ready.json",
+    "sha256": "85002c2c326e467c21c518e235373d7ff03ad2b1e11f36924273558fd8face48"
+  },
+  "reviewer_requested": "sol-h3t2"
+}

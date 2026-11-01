@@ -1,0 +1,18 @@
+{
+  "author": "astra-final",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "bd4fd8e5c850b8239be3e9e9bcb6160d0abeaf2b67fc835c89f17eb05b595da2",
+    "complete400.MERGED_PENDING.json": "e4f5770d40daac05358c03aa3c5f2a02657bc7ce068b16a32141b382db44b5ca",
+    "inventory-requirements.PENDING.json": "96d9f0609ba1607e3af041598cb7ea91326b41742743089bde993ff90c58c376",
+    "local-validation.json": "04d9123ae9a4b6a075e878641024aedc6140fe2e8936e50618e66a9f80702dff",
+    "merge-report.json": "819c551587bd22f1f09d781abedf2e584fed54a1d99b7d90b50e7fb556fd0a99",
+    "owner-routing.json": "b20df7e5faa5059f38d1374389deacf31d66897c074a834a4766bdb7f9637579",
+    "prepare.py": "8336b6eb8a32e4a539830effafdb806b0a6ce9e13795c2291dda5729f94408e8",
+    "sources.json": "0a014668390b94ebf3b246001061b048e7adecf9e39db930a48803d0a048ffa0",
+    "test_prepare.py": "19e8427a85713e3425587cacc5ceb37d3a16ed4fd6cb729fa2086788c589a110"
+  },
+  "full_roles": 400,
+  "kind": "AUTHOR_G1_OWNER_MERGE_PREPARATION",
+  "reviewer": "sol-final"
+}

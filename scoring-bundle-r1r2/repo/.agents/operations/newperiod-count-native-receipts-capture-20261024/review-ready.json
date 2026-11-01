@@ -1,0 +1,14 @@
+{
+  "files": {
+    "capture.py": "fb16940f8443a42f6db016d2d99ed0bda19e3c33cf379c09a572953a073f12ba",
+    "test_capture.py": "45ee1c10493b514d236e1f9db522bbbe6502ca93a7cf40d45ad7b545c1da7079",
+    "build_request.py": "6cc07a789400b90c28065070f57e945c7a18d7aa1f76222cda06450de2a8fe68",
+    "files.json": "cc59f48bf771e860f6094fdb63e99016db5c86cad78354268cfc783fef90fcc3",
+    "scope-provenance.json": "970360f7adea4fd4c4a3479e55d01ae6e2b632ed2fe7ed33190479b945867b48",
+    "request.json": "8b4e0e0991a0bad6ac1ee4d4ae4254700bcbc9229671f0c99628e2b943b3cab2",
+    "REVIEW.md": "ebfc9edcc9cf324ef28ce6f0a1dbf959168f6b9504916310884266af735d12ff"
+  },
+  "tests_passed": 7,
+  "scientific_execution_authorized": false,
+  "capture_authorized": false
+}

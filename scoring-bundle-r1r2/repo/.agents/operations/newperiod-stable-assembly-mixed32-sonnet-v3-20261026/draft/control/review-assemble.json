@@ -1,0 +1,13 @@
+{
+  "checks": null,
+  "conditions": null,
+  "kind": "newperiod_stable_source_execution_review_v1",
+  "passed": false,
+  "plan": {
+    "path": "<FORECAST_ROOT>/data-custodian/newperiod-inputs-v1/stable-source-v6/control-rerun4/plan-assemble.json",
+    "sha256": "099cfd92479503f916c99ae6450de62b10cc21ef95d5c39fcba80ca34c7e08c6"
+  },
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null
+}

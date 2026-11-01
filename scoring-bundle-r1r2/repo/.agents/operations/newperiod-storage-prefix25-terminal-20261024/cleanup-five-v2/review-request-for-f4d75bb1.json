@@ -1,0 +1,28 @@
+{
+ "kind": "independent_review_request_v1",
+ "utc": "2026-10-24T18:30:13.992044+00:00",
+ "from": {
+  "model": "claude-opus-5-5",
+  "worker": "/root/opus_review",
+  "session": "<SESSION_ID>",
+  "role": "AUTHOR of cleanup-five-v2"
+ },
+ "to": "f4d75bb1 /root/opus_implementation as INDEPENDENT REVIEWER",
+ "candidate": {
+  "review_ready": {
+   "path": "<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/cleanup-five-v2/review-ready.json",
+   "sha256": "f19a741f82e7dfb558600e684ff6057c9ee43c74573b1222fd220159ba1b93a4"
+  },
+  "readme": "<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/cleanup-five-v2/REVIEW.md",
+  "request_sha256": "4459f71f1b92c726cd124b24e1855f928af1a782e967f2f66e7b006de73265e7"
+ },
+ "please_check": [
+  "prune.py diff vs prune25-v1: CONTROL + range(5) only",
+  "execute.py deltas: five single-group batches, predecessor dba27251, per-group fresh probes/admission, SEND_WINDOW 480, timeouts 1500/1600",
+  "request 4459f71f = dff50923 minus rrc00/rrc01 (7,300 files / 35,627,288,316 B)",
+  "tests + negative controls",
+  "pid-specific unreadable_process_exceptions must be refreshed before authority"
+ ],
+ "verdict_to": "<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/cleanup-five-v2/independent-review-f4d75bb1/review.{txt,json}",
+ "not_requested": "No execution, staging or authority."
+}

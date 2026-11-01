@@ -1,0 +1,23 @@
+{
+  "kind": "r1_paper_actual_candidate_review",
+  "author_worker": "/root",
+  "source_facts": {
+    "path": "<REPO>/.agents/operations/r1-paper-actual-projection-20261024/r1-facts.json",
+    "sha256": "c5754320dc6e69e95ecc45d79238df6b168f96759719ec080355e0eeb6033d60"
+  },
+  "files": {
+    "r1-ap-table.tex": "a08fff0f60c8e59a0a3d1eb5c4cc3cc3900961e5fcc55455f495a30b33d30c5b",
+    "all-comparisons.json": "6a3e7e82783506b2e5bad25d409d1b8b2b2fe0ca2b5292b3b918c4e864b06214",
+    "provenance.json": "e1650be3c4d9608473171f0c102c167af16c25de9f0fef3fd60b38e330303442",
+    "r1-results.tex": "fc5bc4b896cbd4dc5684ab0806615297f62c259f9fb6d523e7d9d6da45d358af"
+  },
+  "integration_proposal": "Insert new full-cohort subsection at start of section08; retain and explicitly label the legacy selected-cohort results below until full N integration, without relabeling legacy numbers. No abstract/general conclusion update yet.",
+  "manuscript_publication_authorized": false,
+  "supersedes": ".agents/operations/r1-paper-integration-20261024/review-ready.json",
+  "revision": 2,
+  "corrections": [
+    "C2 explicitly matched-candidate; adverse native history AP with separate family reported.",
+    "Original14 no formal tests; transferred message passing adverse30/null60 retained.",
+    "All90 actual failure categories explicit; N confirmation pending."
+  ]
+}

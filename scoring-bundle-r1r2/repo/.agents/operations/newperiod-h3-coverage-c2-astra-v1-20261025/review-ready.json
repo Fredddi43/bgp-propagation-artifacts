@@ -1,0 +1,84 @@
+{
+  "actual_c2_inputs_not_opened": true,
+  "actual_c2_leaf_bindings_produced": false,
+  "actual_diagnostic_result_bound": true,
+  "author": "astra-final",
+  "c0_disposition_bound": true,
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/ROOT-NEXT.md",
+      "sha256": "9a429aa904ec9eb494c618b3d76863aed9da8eb272e69e1b91afd88dcf131cfa"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/author-tests.stderr",
+      "sha256": "c6c23114b1d0dac60c27658d40ca85bf7cba3ddf07303b6aae021b7b35b2e493"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/author-tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/build.py",
+      "sha256": "d1699b7e83cfffa26b5396c0fc72df69fa56ef020b5824784022e862ee20ca71"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/c2.py",
+      "sha256": "31e1fb24ec9eff30b431bc4cd32dceb2f9a53012c8c8842ba252214669a9dcd3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/constructor.py",
+      "sha256": "83ff71480c648a0cac0ca6a3d14dee845674574a8dbb5aeedebe51dc1e1af9f3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/independent-review-template.json",
+      "sha256": "13c5685d0619f6e3c84d18cd261edbb0b58522d6f40591d8f2f43f420584091c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/operate.py",
+      "sha256": "ac47ef5d66639489c40999390782f8d6c56e53419b5b2d05730c769b34f88094"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/request.json",
+      "sha256": "a188cb559eeb6ad1dcdce63a232aa1975be54f256fe6b11343578e5593e5a09e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/root-authority-template.json",
+      "sha256": "b0bf5e2cb9c7c59feed09bc08851125dee45d6572e8c5ba0907a3c2e608c4c7e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/source-trace.json",
+      "sha256": "5dc7b33d8c7600c696dcc00cc62bce23b47dd4d79472178c90ac547cd5ad49ae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/test_c2.py",
+      "sha256": "1d0071ed003e84b596f3dae8727f1ac97029a917142f7c33cc0e5e448753e8a2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/test_once.py",
+      "sha256": "7fdc65baf2d76493b15aba04be8aa0253c649720eed6b6c5cd78e82c3b6b03a0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/validation.json",
+      "sha256": "ec005d8e0c09f309b062e39d6a39a6400812262b3666b965cc8832a9fae01dfc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/worker.py",
+      "sha256": "ddcb0a542ce64dde3c36b5d1744c3bbc71d351968e2f6dc926e0ff8349cf6ab5"
+    }
+  ],
+  "independent_review_required": true,
+  "kind": "h3_coverage_c2_review_ready_astra_v1",
+  "remaining": [
+    "Independent actual diagnostic acceptance and exact C2 source/scope/wrapper review. Consuming verdict fields are in independent-review-template.json.",
+    "Fresh current-phase root authority plus acknowledged six-dir controls, serial row check and root detached launch.",
+    "Actual C2 custody leaf refs/provenance/sizing acceptance, actual decoder/retention admission and separate C3 construction wrapper/authority."
+  ],
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c2-astra-v1-20261025/request.json",
+    "sha256": "a188cb559eeb6ad1dcdce63a232aa1975be54f256fe6b11343578e5593e5a09e"
+  },
+  "reviewer": "sol-final",
+  "root_once_required": true,
+  "utc": "2026-10-25T12:48:28.431367+00:00"
+}

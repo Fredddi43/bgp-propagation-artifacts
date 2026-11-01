@@ -1,0 +1,37 @@
+{
+ "author_operator": "f4d75bb1",
+ "captures": {
+  "capture_sources": {
+   "core": "8256097f",
+   "temporal": "07b672cf"
+  },
+  "files_sha256": {
+   "core": {
+    "capture-intent.json": "40a1bdd5f44772e227b4eb462a6583424db21015bd108eb244de96e40948ad9c",
+    "capture-result.json": "9cd223ca9c1b0cf246dd41fa3e27636878b2f213002c2f4eafa45ab7a6b2d260",
+    "capture.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "capture.stdout": "385d8b80468f356746ddc43a6f098831699161ef4503a6b7a24b0ebeac9691d5",
+    "request.json": "16465622ec7fa5f39ca7997af61a0e545d27e4e43a833127c10cba262e263644"
+   },
+   "temporal": {
+    "capture-intent.json": "af92ef996bf506881f60608a041ff97e217ef55395bac26439dfd5fcab21a1fb",
+    "capture-result.json": "d236d8c867bdc0d517de2385ab3886a30bee0890ba70a1174ab4226c2b6effe6",
+    "capture.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "capture.stdout": "96aa6c7d32067f0b6bf24e7f0ade55dd4449d4e3f7135a9a594098b1ae197c02",
+    "request.json": "f50bcbef9c6370449a5422159b717290d1c069f9b973d50f5eee5e9fb742ae09"
+   }
+  },
+  "invocation": "ssh <BATCH_HOST> 'python3 -I -S -B -c <capture.py>' with request on stdin (once each)"
+ },
+ "diagnostic": {
+  "invocation": "getent hosts <INSTITUTION_HOST> && ssh -o BatchMode=yes <BATCH_HOST> 'python3 -I -S -B -' < diagnose.py (once)",
+  "program": "2ff4320b967f01056a679588cf909176927c533750d6218d555077c5b66b3094",
+  "scope": "re-runs parent T1/T2/T4/T5 with the staged pinned syscall_trace (0a20b826) under system python3 -I -S -B; exports the first failing step + fixed TraceError message and fixed-category/fixed-location counts only; one custody record; no paths/ids/contents",
+  "tests": "ca13757248c856905d3a1ae3691c21c1cbe9b70128a1c28942c43443e47a7e03",
+  "tests_result": "5 pass"
+ },
+ "execution_authorized": false,
+ "finding": "Both profiles: execution-exit rc 1; stage-witness-d30 rc 1 stderr \"WitnessFailure: trace\"; d60 never ran (missing). The child audit and its postimage passed (witness-untraced.json written; v1 postimage cause fixed); the PARENT trace stage (audit_witness.py:573-584) refused.",
+ "kind": "rexact_v2_terminal_capture_and_trace_diagnostic_review_ready_v1",
+ "preserved": "both v2 A roots and all v1 roots untouched; no retry, no binder/B"
+}

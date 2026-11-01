@@ -1,0 +1,12 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "README.md": "91849279bcac94cf33b7e3818963d6ee152a7d55e7690ef5e591824dc8f25ccd",
+    "capture.py": "54a853ec50702ba972d40ea524da69f5d97c3c27eb3478acad649343471d5221",
+    "request.json": "d9b20717283b02c511b1f2114d921cd9226a06b10a604b0a14991009c5d72f67",
+    "test_capture.py": "bf2f45781375f29afb522349fb31479c01a774650278a454883c24987117d923"
+  },
+  "tests": "8 passed in 0.40s",
+  "utc": "2026-10-24T03:40:56.209295+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "condition": "Only after exact wave2 indices32..47 release succeeds",
+  "delta": "Only cumulative first32\u2192first48 accounting set and held-tail boundary; same terminal/owner/no-resend logic",
+  "files": {
+    "request.json": "35f147b1915770ebeb1c68caed3eaf96afa56926d7e23dcff4c7ec576f8ef0f5",
+    "wait.py": "de15d1b7d35596e530eaaa67b2aba7de44c109f73e2150da9f82844cf000d348"
+  },
+  "start_authorized": false
+}

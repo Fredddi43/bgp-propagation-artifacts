@@ -1,0 +1,13 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "host_actions": "none",
+ "kind": "newperiod_gate_host_revision_v3_review_ready_v1",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/revision-v3",
+ "pins_sha256": "f4c297b7a848d56d01c487dc0c01c969a334cb4a4aba31200d2c10a9ae21ad25",
+ "requests": [
+  "assessment of the captured runtime bytes (runtime-capture-v1 result-ready 72005fba)",
+  "code review of revision-v3",
+  "no attempt-3 approval until the R1 final evaluation has its terminal proof"
+ ]
+}

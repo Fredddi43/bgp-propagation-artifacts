@@ -1,0 +1,19 @@
+{
+ "approval_claimed": false,
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "frozen": "no edits while under review",
+ "kind": "newperiod_gate_host_readiness_review_ready_v1",
+ "pins": {
+  "path": ".agents/operations/newperiod-gate-host-readiness-20261022/pins.json",
+  "sha256": "adbf072b9d93dce558f0e7908e5a0151e46f7485d9bd4eab531e05232cf0922e"
+ },
+ "requested": [
+  "code/plan review of stage.py, place.py, host_run.py",
+  "exact approval for the synthetic host run after R1 v7 is terminal"
+ ],
+ "review_md_sha256": "2d3fdf84e5ff45fb173bafe7e293bf398d9e10123464726d4bae1037c5a0e0cc",
+ "reviewer_session": "<SESSION_ID>"
+}

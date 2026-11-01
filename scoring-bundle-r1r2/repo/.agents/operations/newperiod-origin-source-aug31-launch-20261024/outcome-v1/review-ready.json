@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "832cd9011d3b653ba3989ebfe6fa81fb4eeab4a0ae4f3c8f4ff3b9f67e009f9d",
+    "request.json": "58abfbf317b405eda9751c09c732f80a8afb611eb32f460ebc1b2c834d84eaeb",
+    "test_capture.py": "08ff07a6a1e44f86f0db82ecd14fdf2fb09681da907061c6bfc05f7a723be2ba"
+  },
+  "kind": "aug31_outcome_capture_code_v1",
+  "tests": "3 passed0.08s"
+}

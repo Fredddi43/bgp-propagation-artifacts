@@ -1,0 +1,15 @@
+# Exact N-core calibration CPU execution
+
+Author `/root`; independent review required. Local synthetic work only; no actual fits, calibration, protected reads or host execution.
+
+This is a narrow execution wrapper around the existing reviewed revision-v2 forty-fit calibration producer b8265789. The original producer and adopted policy ecccd698 remain unchanged, including original fit-ledger verification, source imports, own validation reads, threshold reproduction, slice/remainder calibration, original failures and exact publication shape. It receives the real ledger, frozen slice and separate producer approval.
+
+Stage layout mirrors the producer's existing repository-relative layout. The entire cache-free source tree, isolated private interpreter, exact existing private-runtime verifier and placement, CPU allocation, one-attempt identity and finite wall/memory/CPU/output limits are checked before calibration. Original Path.read_bytes calls have preallocation bounds for metadata, tensors/checkpoints and predictions; original write_once has a cumulative own-output budget. All checks restore temporary wrappers when returning. No checkpoint is deserialized for calibration.
+
+The current same-model review policy is represented explicitly: the original producer's reviewer enumeration additionally accepts truthful `codex`; its original author-session exclusion stays intact. The producer approval must name the same separate reviewer as this wrapper's exact independent execution approval, whose identity must differ from `/root`. No numerical function or publication provenance is rewritten. Execution stdout binds the wrapper, producer, plan, independent approval, runtime and exact completed publication. An independent E1-E5 assessment is still needed before the learned-inference freeze; this wrapper does not mint it.
+
+Twelve synthetic tests pass in23.53s. One integration runs forty genuine tiny original development fits through the existing test fixture, then executes the unchanged calibration producer under the new read/write boundary. Every rule equals the unchanged numeric helper. Tests also prove preallocation refusals for metadata/tensor/checkpoint/prediction reads, restoration of global read behavior, exact reviewer binding and wrapper-author rejection. Synthetic recipes/runtime paths are fixture-local; this is not actual production CPU admission.
+
+Actual source packaging, exact completed-fit ledger and separate source/resource/producer/execution approvals are prerequisites for one CPU execution. No retry, training, prediction, protected input, scoring or freeze is authorized here.
+
+Revision2 fixes the independent review's only blocking finding: the same scoped preallocation boundary now also covers original Path.read_text calls. Decoding, errors and universal-newline behavior are preserved; both methods restore on exit. A genuine original _checked_ledger regression refuses oversized text before decoding; UTF-8/UTF-16 and newline comparisons match Path.read_text. The unchanged forty-fit numerical integration is retained from revision1; only changed read boundaries and existing quick refusals are rerun.

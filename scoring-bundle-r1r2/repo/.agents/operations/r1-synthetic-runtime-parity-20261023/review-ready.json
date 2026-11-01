@@ -1,0 +1,19 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "8f66c8552ac98f907344563115c4ec413c1ad062c0b2683a65095dff63e9e99d",
+    "compare.py": "aad35fa711bb90da9d1a4cc320103bd532f9faecf7c8498acc9a0e46640c0cbd",
+    "cpu-runtime.json": "ea030b714804b660fd17de08db671cf210a76a65f45e02b68430d916f0993308",
+    "cpu-spec.json": "a6df0c5d5eb06fe2d1777f588d2c7512980960670a892cdcacd5e15e6346616e",
+    "parity.py": "e2397e275fc66ba33ec2c7f54c72f348d9134b8c8a8bafaf0b39d20542be4912",
+    "<BATCH_HOST>-runtime.json": "8ea9a64c35f88dda7155e10b729444e9304338191e6347fa158ba746dc7ffcc4",
+    "<BATCH_HOST>-spec.json": "3abf18aa1f47891a4f48e40b5a6ba27e4cbee5230c8b167f5954f0571254274a",
+    "run-cpu.sh": "50c378e632f3c0ba57658761cedea05e64f871cf19698ab7364ab9a1a355b1a1",
+    "run-<BATCH_HOST>.sh": "0d50969211d328fc03349340369b11a03b50b55a81f11748e176a7ddf614f8ed",
+    "test_parity.py": "138b86180936e812c113a0afd05c7f910d05ffba65b896c4137b53bfae4a9ff4"
+  },
+  "kind": "r1_synthetic_parity_candidate",
+  "tests_passed": 7
+}

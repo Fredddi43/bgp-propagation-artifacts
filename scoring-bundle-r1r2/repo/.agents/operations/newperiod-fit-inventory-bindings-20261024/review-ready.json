@@ -1,0 +1,12 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "5e00cc673805e4ce76affb142e425a772aef3201dfcddbc653f903514fcecf0e",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "prepare.py": "ef06e44e97960ace460b0287bae913d962a8a0b369ed42147b435e7a27516053",
+    "test_prepare.py": "fadc9e07f3db768ac94912b9a7ecfb5275b663d1c95e68a3bf27b088257cd6d7"
+  },
+  "kind": "newperiod_fit_inventory_composer_readiness_v1",
+  "tests_passed": 9
+}

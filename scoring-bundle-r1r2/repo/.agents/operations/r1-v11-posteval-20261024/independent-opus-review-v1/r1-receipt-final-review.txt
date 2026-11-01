@@ -1,0 +1,41 @@
+FINAL EXACT REVIEW: R1 retrospective release receipt (release-actual-v1)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review.
+Authors excluded: /root/remaining_work_audit (builder), f4d75bb1 (D2).
+
+Inputs record actual-inputs.json 5cb73adb binds exactly:
+  - D2 assessment record e40d2fca (mine);
+  - capture 52a9ab73;
+  - fetch b3f23384.
+Receipt r1-retrospective-release.json ba2a1e2e (6,220 B).
+  - I REPRODUCED it byte-identically with the reviewed builder a615c588 (build_release.py --inputs actual-inputs.json
+    --completed-utc 2026-10-24T04:48:09.455451+00:00) in an empty temp dir.
+  - Content:
+      * kind r1_retrospective_release_v1; passed, development_frozen and evaluation_release_complete are true;
+      * window 2025-09-01..2026-01-01; completed_utc = my D2 assessment time.
+  - The five consumer keys (verify_release):
+      * evaluation_manifest = seal 1cad501a;
+      * source_audit = source-audit-v5 0f9be434 (gate 7e48955b);
+      * retained_arm_ledger 0c137d44;
+      * prediction_ledger 5575ebb3;
+      * score_artifacts = report 049c7a9c.
+  - Extra keys:
+      * code_source_manifest 0bdaf006, integration_gate 7e48955b, cohort manifests 45865cdf and f885a805;
+      * development_freeze: frozen 16:51:57 < authorization 16:55:22 (approval 4a57b284, launch 85e92767);
+        exposure ledger ba323f55;
+      * execution: spec 2233750e, complete 03d1c73e, 1066/90;
+      * verification class_ab: d2a18c6f + d04808e3; class_d: e40d2fca + capture + fetch + findings fc0e252a and
+        d9ba07ac, no_per_event_file [].
+  - Note: the development_freeze and verification refs point to local review-workspace paths. They are
+    informational extras and are not re-hashed by verify_release. The five consumer keys all point to host paths;
+    if any host byte ever differs, verify_release refuses at consumption (fail-safe).
+
+VERDICT: PASS. The R1 numerical verification is complete (class a/b + class d: 0 failures).
+  - The single publication approval opus-r1-receipt-publication-approval-v1.json 5025edf3 is ISSUED (C1).
+  - It is bound to receipt ba2a1e2e at control-v1/release-native-v2/r1-release.json, transport d70217e7 and
+    builder a615c588.
+  - publish.py's own pre-network checks accept it (validated with a stub runner into /tmp; no network).
+  - One run. No retry.
+  - The receipt is RELEASED only after a successful readback (published.json). Then sha ba2a1e2e is the external
+    anchor for N plans/gates.
+  - This approval itself admits no N run and no manuscript use. Those bind the anchor in their own reviewed
+    packets.

@@ -1,0 +1,25 @@
+{
+ "delta_vs_v1": "delta-v1-to-v2.diff: drops message_sha256, lines_after_sha256, per-slot stderr_sha256; docstring updated. Everything else is byte-identical, including request.json 5a787930.",
+ "dir": "<REPO>/.agents/operations/newperiod-h1-development-budget-r3-20261025/audit-failure-diagnostic-v2",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "exports": "per slot: stderr bytes/lines, stdout bytes, terminal sha; last traceback block only: frames (category package|venv|other; file only if an identifier-only .py path under that NAMED root; line; function if identifier), exception type, message ONLY if it equals one of 1,097 literal need()/raise strings of the staged package (build.py, ast); else message BYTE LENGTH only. NO hash of any stderr text (v1 exported message/stderr sha256: a short id in a message is recoverable from its hash). identical_stderr = one boolean.",
+ "files": {
+  "build.py": "0fd21e75cf3308f545903bc600ccac4151a8d4160636932aad98f78e7e76c05b",
+  "delta-v1-to-v2.diff": "7098a3f1c5a573778e1d203e49f7fe0d89a974bbc2d51efb87074d30918452e6",
+  "diagnose.py": "3b75bdbe3f0cc7b18caf56ba0827984a5f8732c3a81671eb4497cc539fd1463f",
+  "diagnose_template.py": "7bed6a1201d2736432625c2278c430810403c4bd0fd7ee4962dae9f0fb756758",
+  "mutation-proof.txt": "e4f2c98a129432ac61b50523a5406cc5935aade7f9530b8b6a6f8ce0c2e5b114",
+  "request.json": "5a787930f2640d68c407e38a3052274cefdd436af9972fd7532ddbd34175fcec",
+  "test_diagnose.py": "ffe7ccd8f68d36891b24e2b965896467adb8d53d69de62a3f2591e23fdb56f21"
+ },
+ "indices_note": "0-7 only (the slots terminal at M2). Audit 8-31 slots are NOT read; if needed later, a new request with other indices needs its own approval.",
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<diagnose.py>'\" < request.json  (once; operator_step records in a fresh sibling dir audit-failure-diagnostic-execution-v1 (sibling of v2))",
+ "kind": "h1_audit_failed_slot_diagnostic_review_ready_v2",
+ "limits": "system python3.12 -I -S -B; AS 2 GiB; alarm 120 s; output <= 256 KiB; writes nothing but the custody record",
+ "program_size": "61,185 B (< 128 KiB single-arg limit)",
+ "reads": "after ONE custody record: audit-0000..0007-supervision/terminal.json (must be passed=false, exact shape) + stderr.txt (<= 4 MiB, stable read, O_NOFOLLOW) + lstat of stdout.txt. Running/pending slots refused (no terminal.json -> refuse). No other file.",
+ "supersedes": "audit-failure-diagnostic-v1 review-ready ee31b149 (kept, never run)",
+ "tests": "13 pass; 5/5 mutations caught (mutation-proof.txt)",
+ "why": "M2 (3c783aad) gives only ValueError = supervisor need(code==0) after a non-zero worker exit. The worker traceback is only in audit-000N-supervision/stderr.txt."
+}

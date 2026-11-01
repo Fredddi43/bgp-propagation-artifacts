@@ -1,0 +1,3 @@
+Exact failed predecessor52461068 is preserved. Sanitized actual frames locate its added datetime-only guard. This successor calls the exact pinned original stager utc parser (ISO strings or datetime), retaining null/invalid refusal, unchanged pre-September bound, full populations and query-summary equality. Only outer namespace becomes newperiod-origin-history-v2; no actual retry authority. All original source/library/runtime and16CPU/768GiB candidate resource numbers are unchanged.
+
+21 focused/inherited integration tests pass, including genuine full original libraries from timestamp and ISO-string tables, and null/invalid/post-window refusal. Actual source inputs and resource/phase authority remain separately bound.

@@ -1,0 +1,14 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "newperiod_gate_host_attempt4_candidate_r2_review_ready",
+ "pins_path": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt4-candidate-r2/pins.json",
+ "pins_sha256": "fbe3ef91d1beb0ef4648432a9684065fdff6a7148df6db1b3c121dc20e802da5",
+ "reviewer_session": "<SESSION_ID>",
+ "scope": "delta review of F1 only: diff-r1-r2.diff (test_host.py rehearsal output to tmp_path / opt-in outside path; session packet guard; F1 mutation), regenerated evidence, re-pins",
+ "verification": {
+  "f1_mutation": "detected: tests changed the frozen packet: ['rehearsal-hostver.json']",
+  "rehearsal": "168 passed, 1 deselected",
+  "test_host": "83 passed; packet before/after sha identical"
+ }
+}

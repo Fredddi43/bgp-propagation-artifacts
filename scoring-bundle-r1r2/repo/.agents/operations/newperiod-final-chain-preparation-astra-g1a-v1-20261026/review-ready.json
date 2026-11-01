@@ -1,0 +1,30 @@
+{
+  "author": "astra-g1a",
+  "author_session": "<SESSION_ID>",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "4856ca3ea01cce3c7cb0ca4f921caf7319d4dea2486f336eb334b0633aa39e64",
+    "prepare.py": "0d604f2627ec4f838a0e3a1722b1af9c891f88e40b98b3b53c38e602779ffa4e",
+    "prepared/g1-freeze.PENDING.json": "8086d01942c5c80890b66f856051574c46238fdf42979cc20090d6f3f47fbb61",
+    "prepared/g1-inventory.PENDING.json": "8263bff77f4b9bf8cd0e9a2ec8dff3369013a7114082749d3252235397238ffb",
+    "prepared/g1-slots.PENDING.json": "a5ef7d372021e7f655265597abd76872263fcf4636c92b3a6e7f30fbe8f80798",
+    "prepared/paper-generator.PENDING.json": "d74af0143b87ef9a4dee98b616599b10265e40b434926c6574ef9d0ad9271b92",
+    "prepared/single-r2.PENDING.json": "8305a91faf597d94f902d0e906c6806d32fdaee54a14e564d8da69899eaf1d02",
+    "prepared/summary.json": "d3b5bfd3bd894d642569d947277ae70f43e29a51cf4f33d5128741378c685583",
+    "sources.json": "8de52ff44e4fb9bbada03bea74c30336e87ccf8f5049a4a9c12551f8cce692a0",
+    "test_prepare.py": "0c3e3b4c6604a64161db7e0a68bb99f87b6c1ff95abdeb2003764bd09bc4653e"
+  },
+  "independent_reviewer": "sol-g1",
+  "kind": "AUTHOR_FINAL_CHAIN_PREPARATION_REVIEW_READY",
+  "protected_reads": 0,
+  "remote_operations": 0,
+  "scope": "Reference-only frozen metadata, R2 pending template and reuse of reviewed paper generators",
+  "sources": {
+    "path": "<REPO>/.agents/operations/newperiod-final-chain-preparation-astra-g1a-v1-20261026/sources.json",
+    "sha256": "8de52ff44e4fb9bbada03bea74c30336e87ccf8f5049a4a9c12551f8cce692a0"
+  },
+  "validation": {
+    "existing_synthetic_r2_projection_latex_tests": "running; result supplement will follow; no source edits to those components",
+    "focused_preparation_tests": "10 passed in 0.53s"
+  }
+}

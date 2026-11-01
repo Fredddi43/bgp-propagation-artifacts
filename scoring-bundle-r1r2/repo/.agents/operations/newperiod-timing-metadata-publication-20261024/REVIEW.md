@@ -1,0 +1,11 @@
+# Four fixed timing metadata publications
+
+Prospective sibling of the independently reviewed H1 publisher. It uses the unchanged approved timing derivative and pooled selector. Both core horizons undergo original validation/release authorization; four timing candidates bind the already adopted cohort and commitment. Independent exact draft/publication authority is required before any passed boundary/source/gate is emitted. It reseals each manifest with its actual published boundary hash and checks the unchanged original `supervised_graph_build` authorization for all four before writing any output. No source payload/graph/fit/prediction/label read, selection, or new scientific arithmetic.
+
+`original_guard.py` copies the reviewed H1 original-authorize I/O seam, with `core_metadata.PINS` supplying the already approved timing manifest validator identity. The other three copied modules are byte-identical to the reviewed timing construction candidate. Actual supervision/finite I/O/large-access-log policy must reuse newperiod-h1-metadata-execution-r2; this module does not authorize or launch itself.
+
+One isolated integration test covers all four original derivations and downstream original authorize+graph builds, 16 published documents, unchanged source failures, wrong author/alias/draft/scope refusal and fresh-output enforcement. The fixture deliberately supplies a small synthetic external cohort admission and injects only that prepared draft at the publisher seam; it does not claim production cohort admission from the small fixture. The existing original timing derivative's four complete tests remain applicable unchanged.
+
+`actual-local-v1/prepare.py` additionally exercises the complete real draft path on existing independently accepted LOCAL captures only, including both original core guards/five hash-only release artifacts and the original full fixed cohort. It succeeds for 13,096 rows at each horizon, draft SHA f0e0d53f24a2950e9e3b5bc3192da5f4c1c29b0fa12f20ea3bc1a535f5d74256. No host calls or nested unknown refs; no authority inferred. Actual output is prospective metadata, not new graph data. Exact source/runtime/resource/publication/execution reviews remain required.
+
+Test: `.venv/bin/python -m pytest -q .agents/operations/newperiod-timing-metadata-publication-20261024/test_publish.py`.

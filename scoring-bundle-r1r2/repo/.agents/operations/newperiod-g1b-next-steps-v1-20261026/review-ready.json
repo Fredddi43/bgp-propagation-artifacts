@@ -1,0 +1,76 @@
+{
+  "author": "astra-g1b",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/REVIEW.md",
+      "sha256": "6453ffc2ce2ee89224d8b3338a6cf791c9da37217a9c0fc0edf245df1f633361"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/configs14.capacity.TEMPLATE.json",
+      "sha256": "7f904732e2e9bff668751159502ea50bf7b3f8aa9254f431b4aad432a769bc2e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/configs14.plan.json",
+      "sha256": "31a846cdd20c83808692089a7a8127f385171b06dc9ca799b28f687aa455bd10"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/configs14.request.TEMPLATE.json",
+      "sha256": "2d7de2f481b82c975e410cb96b29d88fff7903f6ed334642ad7028624e4f970d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/configs14.review.UNSIGNED.json",
+      "sha256": "d3f794bc9ee9ccdc681d38f295fd9a69b6ec4964e3011e5d9817f23c9dda6b36"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/configs14.root-once.TEMPLATE.json",
+      "sha256": "0c37d6b9dcb9161932c72d7c9e52354cf3767bc1cbd3d395580d5e63fe1d3520"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/gru10.capacity.TEMPLATE.json",
+      "sha256": "9830071d7db78e313acc38674646e1b77b3299fdcd2ab51f36e70034c1f18d9c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/gru10.plan.json",
+      "sha256": "32c6c3bcb64d6930f03ef8e3259ca6a01fa42319b3c08bc336f89c705c1c5a01"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/gru10.request.TEMPLATE.json",
+      "sha256": "ca89aea82a53f94e664aba7d20de530d50a2ca6c243e5810d7b1cc0135bb7a7a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/gru10.review.UNSIGNED.json",
+      "sha256": "9206c0e9658af6fea9e69c893bb3ba8dfd8f61910d81d7b4622fea8d57a5e695"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/gru10.root-once.TEMPLATE.json",
+      "sha256": "392612fa2df353353e91a29ceb3d942fd6238db35a3cebaf5b719d4f08d9f00c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/operate.py",
+      "sha256": "a7389e2a1c2228ef043d48ae374afbb0db854d8d8523c43e5d3e49fd29f20859"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/test_next.py",
+      "sha256": "b0c09993db8899583b434f51cca48d154dd1060861d1342a4b6e21ffdc0345dc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-next-steps-v1-20261026/worker.py",
+      "sha256": "13fcc1897e9cb9c4514727d2db8fc6a1a1d3e5a56f1d78a3db2c19c95e494b89"
+    }
+  ],
+  "full_scope": 400,
+  "kind": "AUTHOR_G1B_NEXT_PREPARATION_SOURCE",
+  "protected_payload_reads": 0,
+  "remaining": [
+    "Independent source review",
+    "Two distinct current-phase1MiB reservations",
+    "Exact filled-request reviews and root once per task",
+    "Independent actual acceptance",
+    "Typed core/library/custody actuals via astra-final and complete400 G1"
+  ],
+  "remote_actions": 0,
+  "reviewer": "sol-g1",
+  "shared_custody_appends": 0,
+  "tests": "python3 -I -B test_next.py: 6 passed; 26 authority mutations"
+}

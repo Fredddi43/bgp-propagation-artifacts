@@ -1,0 +1,15 @@
+{
+  "automatic_retry_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "outcome_capture.py": "854e3f1a2fbff58ccd28eaf341bb850a4a69261652fb89db78f95c5f99a91ee5",
+    "test_outcome_capture.py": "24c9cea5c2c251b1493b56077c1b4a3033c8af3cfe7567b5fd2434dab7062269"
+  },
+  "passed": true,
+  "review_ready_sha256": "1c15b2b79c2b641efffcefea823420b32d98302b4e270130869281741040d310",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Code only: originalsupervision intent+terminal and builddone schema match originaljob/kernel. Fullcumulative16/32/48/64, boundedmetadata projection preservingfailures/missing; noeventrows exported orrefs followed. Actualjob/request/terminal stillpending.",
+  "tests_passed": 5
+}

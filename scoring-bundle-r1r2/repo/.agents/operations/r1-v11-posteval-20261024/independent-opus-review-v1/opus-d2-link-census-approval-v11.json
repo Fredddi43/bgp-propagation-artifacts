@@ -1,0 +1,44 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "conditions": [
+  "metadata only: lstat/readlink/realpath/stat; no open() of any target",
+  "any bad entry: output preserved, D2 stays blocked, no workaround; reported for independent assessment",
+  "the actual link-census output is independently assessed before any d2 change or D2 sizing"
+ ],
+ "content_read_authorized": false,
+ "execution": {
+  "command": ".venv/bin/python -I -B .agents/operations/r1-v11-posteval-20261024/d2-fix-v2/link_census.py census --approval <this> --approval-sha256 <sha>",
+  "host": "<BATCH_HOST>",
+  "python": "<RESULTS_ROOT>/work/vllm/miniforge/bin/python3.12 -I -S -B",
+  "records": "d2-fix-v2/capture-records/link-census-{intent,result}.json; output d2-fix-v2/evidence/link-census.json (exclusive)",
+  "ssh_timeout_seconds": 600
+ },
+ "host_write_authorized": false,
+ "inputs": {
+  "capture": "classd-host/evidence-d0d1.json.gz e5e08ddd",
+  "census": "7b746087",
+  "hop_cap": 4,
+  "paths": 7086,
+  "plan": "6e18854b",
+  "root": "<FORECAST_ROOT>/"
+ },
+ "kind": "r1_v11_d2_link_census_approval_v1",
+ "label_read_authorized": false,
+ "not_authorized": "any tensor/label/prediction/per-event content read, D2 rescoring, d2 code change, N admission, retry",
+ "passed": true,
+ "payload_sha256": "4cc45b9690e5444970d6e8c42938bcba88f7f12b93ee4616f14000a4f676f129",
+ "prediction_read_authorized": false,
+ "review_ready_sha256": "143fac090373dcecb626cbb6df744f839079f1679175bfe7737010d6eb8780ce",
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-d2-link-census-v1",
+ "test_sha256": "2a690e6bc1d1981ece48f92c7f147ff128f9d797488017de866f6db20318f365",
+ "tool_sha256": "6481cd4ffb9f0752f6441feb0081c9e6c7bede0d382f5669f1a684726af2ce28",
+ "verification": {
+  "payload_recomputed": "4cc45b96 (7086 paths)",
+  "tests": "5 passed in place (exact author command, -B, no cache); isolated copy 4/5 only because test_root_is_the_adapter_root_filter reads sibling adapter-r2"
+ }
+}

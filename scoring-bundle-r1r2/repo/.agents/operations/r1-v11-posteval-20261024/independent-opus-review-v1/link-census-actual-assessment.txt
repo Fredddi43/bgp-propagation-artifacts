@@ -1,0 +1,37 @@
+ACTUAL ASSESSMENT: D1b link census (approval ded3cf10)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+Execution: VALID.
+  - intent binds approval ded3cf10, tool 6481cd4f, retry false.
+  - result rc 0, stderr empty, stdout sha 1006393e.
+  - Output d2-fix-v2/evidence/link-census.json 2890fcee (5,742,990 B). It binds the same approval, tool and
+    payload 4cc45b96.
+  - One attempt.
+
+Result (metadata only, nothing opened):
+  - 7086 of 7086 entries: lstat symlink, 1 hop, no cycle, chain_in_root, realpath in root, target a regular file.
+    bad = {}. max_hops 1 (cap 4). No errors.
+  - Each link is the absolute path
+    .../occurrence-final-v1/graph-shards/2025-v6/d{30,60}s/<0-7>/<same basename>.pt
+    with readlink == realpath. 7086 distinct targets in 16 shard directories (8 per horizon), all under
+    ROOT_FILTER. This explains the lstat size = len(path)+8: "graph-shards" is 6 longer than "graphs", plus "/N".
+  - Sizes:
+      * d30s: 3543 files, 2,850,853,625 B, max 3,375,086 B;
+      * d60s: 3543 files, 2,886,120,495 B, max 5,256,485 B;
+      * total 5,736,974,120 B (min 249,254 B).
+  - The D1 not_regular alert is fully RESOLVED as benign sharded-store links. No data is missing or outside the
+    root. Content identity stays pinned by the plan's tensor sha256 values (gate), which D2 checks through
+    load_partition expected_hashes.
+
+Consequence for D2 (not yet approved):
+  - The d2 change must accept exactly these 7086 resolved links:
+      * bound to link-census 2890fcee;
+      * each real path equal to the census real;
+      * the set equal to the census not_regular set;
+      * anything else still refused.
+  - D2 sizing must use 5,736,974,120 B of tensors plus the 106 regular files (28,570,374,661 B).
+  - Route the d2 code change, its tests and the exact D2 job script with derived resources, for review and an
+    exact one-attempt approval.
+
+R1 status: class (a)/(b) verification PASS (vrun-r2 d2a18c6f). Class (d) D2 is outstanding.
+R1 is NOT verified. No release, no N admission.

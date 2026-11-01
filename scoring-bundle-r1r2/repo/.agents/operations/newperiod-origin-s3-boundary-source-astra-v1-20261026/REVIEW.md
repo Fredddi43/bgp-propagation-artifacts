@@ -1,0 +1,11 @@
+Origin S3 boundary replay/writer source preparation
+
+Continues the accepted exact-reader fix with a concrete four-group private boundary callback. It reconstructs original onset/actor/error metadata from the immutable projection partitions and replays the pinned original protocol for invalid/valid at30/60. Exact complete manifest equality verifies original incidents/windows/maturity/clock/included/excluded/source-error accounting. Unknown IDs remain private/disjoint. This is deterministic replay relying on accepted producer/source ancestry, not a new raw-source completeness claim.
+
+The boundary evidence has passed=true only for computed checks, independently_accepted=false; no release/input gate/execution authority is minted. It preserves the exact reference_rows/population fields consumed by family.construction. Independent actual boundary acceptance and an actual retrospective release must precede construction; this source does not run construction early or invent those prerequisites.
+
+Private writer streams exactly4fixed artifacts into an exclusive fresh directory.128MiB each,256MiB total; fsync files/directory. Partial failures are retained; no rewrite or retry. Public output only fixed group keys+artifact refs/sizes andflags. Twelve synthetic cases pass, retaining both crossing exclusions and source failures; mutated clocks/maturity/actors/partitions/branch/duplicate/unknownoverlap refuse.
+
+Planning row origin_s3_boundary_metadata=1GiB. Qualified same-export model private256MiB/4files/1dir+512MiBmargin gives873529344B; controls4MiB/32files/8dirs+64MiBmargin gives81264640B; total954793984B leaves118947840B. Resource transfer/control inventory and current funding are NOT admitted. No borrowing from existing retained projection row or cleanup credit. Root/phase owner may schedule this row after critical timing funding; this packet claims no issuance.
+
+Reader6GiB screen+2GiB import/transient+8GiB sequential four-group work allowance retains proposed16GiB AS. Exact operational source/runtime/std library closure, task/release binding, stream/error/failure accounting, current phase/adoption and root once still pending. No actual projection/ledger/gate/labels read and no remote action. Preserve full40origin/400/G3/G4/singleR2.

@@ -1,0 +1,7 @@
+{
+ "authorizes_nothing": true,
+ "kind": "review_ready",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/attempt3-probe",
+ "pins_sha256": "0bc9b3a059b186c47193e6534ae3039a17f5eccea3534177a22cd330c2f2b53d",
+ "requested": "review of the capture-r2 evidence analysis and code review of the read-only host probe; any run needs its own exact approval"
+}

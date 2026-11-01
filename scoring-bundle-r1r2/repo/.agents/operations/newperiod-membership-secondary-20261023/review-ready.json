@@ -1,0 +1,29 @@
+{
+  "actual_execution_authorized": false,
+  "author_agent": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    "REVIEW.md": "20f15284dac9d134efcae6200ddaaaceb348fe5cb2857ba305e81571e4c93860",
+    "consumer.py": "59c63183b62c4aa789d79afc07d85717751a252d4ad1114aab29ed1510d8fed1",
+    "reviewed_target_scope.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "test_consumer.py": "a7ca7ff0d19e09b353c7d4697335bd8ce43f678d0b1dffa2f354a94ca87e22d0"
+  },
+  "kind": "newperiod_membership_secondary_code_candidate_v1",
+  "label_reads_performed": false,
+  "protected_reads_performed": false,
+  "scientific_source_pins": {
+    "src/bgbench/forecast_custodian_eval.py": "1619b3286cc5a61c6ceb4aee1ae7bb32c78262c47faf5ea4730c3b647f6fe078",
+    "src/bgbench/forecast_history.py": "2e11cafa63b45c51fab76b7dc53728099b88ecc40a83108d0dd95983d82b0a8c",
+    "src/bgbench/forecast_numeric.py": "478dd41883d8b7a5497f075911a397f9184ddb1d7623a494082190699d1947df",
+    "src/bgbench/forecast_panel.py": "ac9468bceb62020da660993f2fdc80e4efbdca2297de4e7dcdfbfa348b876290",
+    "src/bgbench/forecast_panel_scoring.py": "b7374f69c5c0d88d66ef3e8454fb4529f73ec7155be1791904b4c7aa27f168db",
+    "src/bgbench/forecast_ranking.py": "4cea491ad7665b3ca57c4b07b2376b41643452dbe44734f7781b49540d840c97",
+    "src/bgbench/forecast_retrospective_scoring.py": "740bf610afc2d2cdaae40e8726ab6bd8ab9b38d5e6db262a4f0b7f7a14bc4c3d",
+    "src/bgbench/forecast_train.py": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3",
+    "src/bgbench/graph_metrics.py": "974d049184d7de6ab2d4327390236b7d46d1e2236545f8051897a09368e7b385"
+  },
+  "tests": {
+    "passed": 38,
+    "seconds": 5.23
+  }
+}

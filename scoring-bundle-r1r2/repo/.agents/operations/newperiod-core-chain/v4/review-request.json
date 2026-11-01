@@ -1,0 +1,22 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "9861e3951ee97629ee2399b332c8fb46c31f9296c776aee06ffbae6d13591676",
+    "forecast_gpu_placement.py": "2a82b27f20a9eaa56acdac4e0246965e0c83b268efcf9fe2a3c9e8b7078f20e8",
+    "make_package.py": "f15bfc078d633a2385d7342e56cab3a3f1ae16c4d457eb8fa105efc920e46755",
+    "newperiod_core_chain_v4.py": "0e310d46b31ebf9ea755fbb38b559cac72f0bb59cd30946a15945c9307aa81b7",
+    "opus-newperiod-core-chain-v4-approval-TEMPLATE.json": "a9054f40a9f7dd077cf60c8569c91343e250e3d0d62a41ded096d2211f17806e",
+    "opus-newperiod-core-chain-v4-spec.json": "05d302e0574d1c0d9390ddacf317d9936253951c77b63574d72e28604484fb61",
+    "opus-newperiod-core-chain-v4.sbatch": "9384b9ddb063bc916b8b0f6c9eafc34486cf829a784cc54fcd9c377a0eed8760",
+    "test_opus_newperiod_core_chain_v4.py": "35afd2b1ace87367dbb2b0051609bd7bab43448f1121939576e6347527ce71e5"
+  },
+  "kind": "newperiod_core_chain_v4_policy_candidate",
+  "original_v3_review_request_sha256": "3575d8ad69616f77ce86682821ec214352c3d13a37605ffed39a3413242d9d3f",
+  "retrospective_release": {
+    "path": null,
+    "sha256": null,
+    "status": "pending"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "native_ledger_join_code_review",
+  "files": {
+    "ledger_join.py": "43614e2c568b67851669fb427c14f93850dafd61ce923867e8fa46423bebf7d4",
+    "test_ledger_join.py": "b8b4dcb8f2cfa356ba5de2a9bcfd649214d25d6da71c0cdbf3459de7c879a9b1"
+  },
+  "tests": "15 passed",
+  "scientific_admission": false,
+  "remote_reads": false,
+  "actual_capture": ".agents/operations/newperiod-ledger-metadata-20261023/execution-r2/capture.json.gz",
+  "actual_capture_sha256": "bbcc6ae49ca012c6b8a054c7aa4cda6a14c32aa2b9fd9675046a1f185d99f7a0",
+  "requested_action": "Build local full-row address inventory from six already captured ledgers; no manifest population inference or referenced payload reads."
+}

@@ -1,0 +1,24 @@
+{
+  "author": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "README.md": "915f6f9569ba916617017fca9f2ec3033856332b408e6dfd64ed86631f7a9c98",
+    "prepare.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "test_count_truth.py": "d382099b57906495076491d6bc85682e998a707235e2fef52535ae832a573ada",
+    "test_pooled.py": "be3e148655529a3d19c794f4ce53ba3ee6fd4b61d4c764e514008d1f01b6845a",
+    "test_prepare.py": "73e72708cd35fa53ca2dd3cde19169d99ce8c8f5eb58229f1a6ef7703565a16a"
+  },
+  "kind": "newperiod_four_count_truth_candidate_v1",
+  "original_prepare_sha256": "bb4afc4357af76c80afbd318ed0129049512883d130f4d78f0e725e005c25dfd",
+  "original_set_helper": {
+    "path": "<REPO>/scripts/custodian_multipart_acceptance_2026.py",
+    "sha256": "507e22beb0f5e21997f486075322adcd58adb8f60d48d171034a791e0d8d3f8d"
+  },
+  "target_counts": [
+    "300",
+    "900",
+    "3600",
+    "7200"
+  ],
+  "tests_passed": 61
+}

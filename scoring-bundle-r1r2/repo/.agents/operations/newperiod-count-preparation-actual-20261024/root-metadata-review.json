@@ -1,0 +1,13 @@
+{
+  "author_worker": "/root/deadline_audit",
+  "automatic_retry_authorized": false,
+  "capture_authorized": false,
+  "passed": true,
+  "review_ready_sha256": "101168d8ae2defce875bc02ecdf0cf06d9fab6be892ae28a4699958bf2ed6ffc",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scientific_execution_authorized": false,
+  "scope": "Pure sealed-manifest ledger rebind and nominal source-question inventory. Original346893rows and14787events retained; no missing-source/parse completeness inferred, outside-window notes are questions only. No new host read or coverage admission.",
+  "tests_passed": 3
+}

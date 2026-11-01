@@ -1,0 +1,29 @@
+{
+  "actual_results_read": false,
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "compiled": true,
+  "files": {
+    ".agents/operations/paper-methods-integration-r2-20261024/README.md": "0d3b6c48e32e516edeef26a0042c40e2268dccb0fd63ba458b9a911e962893ee",
+    ".agents/operations/paper-methods-integration-r2-20261024/methods.tex": "93f3ef25d4874778dc7707921e96300e3e9d0003d2c5ee9475beb28bdcd7bb41",
+    ".agents/operations/paper-methods-integration-r2-20261024/preview.tex": "be8bf28b47c42bc0ac90167db7120595105ee534dfddb868c8a34b08fcd9b21f"
+  },
+  "independent_review": "pending",
+  "kind": "paper_methods_f1_integration_candidate_v2",
+  "manuscript_changed": false,
+  "preview_bytes": 310179,
+  "preview_class": "acmart[sigconf,anonymous,review,nonacm]",
+  "preview_pages": 2,
+  "preview_warning": "page 1 overfull vbox 1.299pt",
+  "source_references": {
+    ".agents/operations/newperiod-single-r2-execution-20261023/runner.py": "a990908d9c0555816c20e1d24b64c1c1cf4d6555af2c0eb871c53df3d0947675",
+    "docs/paper/forecasting-improvement-20261017/MANUSCRIPT-DRAFT-METHODS.md": "749ccb1cb7df0ca7be966861df1399df3637e4dc00930f0f013e50134b572852",
+    "docs/paper/forecasting-improvement-20261017/RETROSPECTIVE-RELEASE-SCOPE.md": "9fd81c7fa3cdeebf93f930a65586df7ef9b3b14b9d42240c265eb1827d826b85",
+    "docs/paper/forecasting-improvement-20261017/figures/f1-protocol-timeline-r3/README.md": "a9b2820dfe338b679ed2e982c6f9c609cb45593bd4415fd4895040655d6fc9b0",
+    "docs/paper/forecasting-improvement-20261017/figures/f1-protocol-timeline-r3/f1-protocol-timeline.pdf": "ea5e0646596166ebeebaf956521d672c4ec07268e55a952bf4a2e428ef5b03dd",
+    "src/bgbench/eventset.py": "d1a8f11648aa41e5e2b2ed8c500b2af11ce319528b38bcdb51402920f1692439",
+    "src/bgbench/extent.py": "09d616606a9fda99ff097f6b3cdd84f88e636fa5b0d6489cae386fbbfac42a04",
+    "src/bgbench/tgn_data.py": "12dbc1c0543560d93d95ad5f72c46003f7703d9da5c7096f7353ea94e08af6b1"
+  },
+  "visual_reviewed": false
+}

@@ -1,0 +1,60 @@
+ACTUAL ASSESSMENT: D0/D1 fetch capture and vrun-r2 DEST2 transport
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+1. vrun-r2 DEST2 transport (approval efde9bee, tool cdaf65df): VALID.
+   - Each of stage-intent and readback-intent binds approval efde9bee, tool cdaf65df and retry false.
+   - stage rc0. All 3 files exact, mode 0444, owner <USER>:
+       * pins 7c474f00;
+       * run_verify 7392ef6f;
+       * verify_r1 5ed5229f.
+     stage-complete 82b192aa.
+   - readback rc0: the same 3 files plus stage-complete.json 82b192aa (0444).
+   - Records:
+       * stage-intent cca61fc9;
+       * stage-result 347edc1c;
+       * readback-intent cca61fc9;
+       * readback-result 4cf82ac5.
+   - This is code transport only. It is not numerical verification.
+
+2. D0/D1 fetch capture classd-host/evidence-d0d1.json.gz (approval c7e1fab0): CONTENT VALID, RECORDS MISSING.
+   - The output is e5e08ddd, 712,936 B. It holds exactly the 2 approved paths:
+       * plan.json: 2,065,679 B, sha 6e18854b (matches);
+       * census.json: 2,396,634 B, sha 7b746087 (matches).
+   - No intent/result record for this capture exists anywhere under r1-v11-posteval-20261024. The author must
+     route the actual execution records (intent binding c7e1fab0 and tool f19d1066, rc, stdout/stderr shas). The
+     content binding is enough for the assessment below. The approval stays consumed: no second capture.
+
+3. D1 not_regular: EXPLAINED (no data missing). D2 is still NOT admissible.
+   - The plan has tensors {30: 3543, 60: 3543} = 7086. The census has 7192 entries:
+       * 106 type=file (predictions and decision rules): 28,570,374,661 B in total, max 453,708,128 B;
+       * 7086 type=other: every planned tensor, i.e. occurrence-final-v1/graphs/2025-v6/{d30s,d60s}/*.pt;
+       * 0 missing.
+   - Cause: every planned tensor path is a symlink. For all 7086 entries the lstat size equals len(link path)+8,
+     which is the signature of uniform absolute symlinks into a sibling store. adapter.census uses os.lstat and
+     does not follow links. So it recorded link sizes, not tensor sizes.
+   - What is still unknown, and needed before D2:
+     a. the resolved target of each link, and whether that target lies under the reviewed root
+        <FORECAST_ROOT>/ (ROOT_FILTER);
+     b. that each target is a regular file, and its size, so the D2 read volume and the memory/time admission
+        can be computed;
+     c. that no link chain leaves the root.
+     Content identity is already pinned per tensor (plan tensors[*].sha256 from the gate). D2 checks it through
+     load_partition expected_hashes, so a follow-the-link census needs no content read.
+
+REQUEST TO AUTHOR (precise, metadata only):
+  D1b census: a new reviewed tool or phase. It must:
+    - take plan 6e18854b;
+    - for each planned tensor path, record:
+        * os.readlink (raw target);
+        * os.path.realpath;
+        * the number of link hops;
+        * os.stat (following) S_ISREG and st_size;
+    - refuse when the realpath is outside ROOT_FILTER, the chain is longer than a small fixed cap, the target is
+      not a regular file, or it is missing;
+    - output per-horizon file count, total bytes and max bytes, plus the list of distinct target directories;
+    - read no content, use exclusive output and allow no retry;
+    - come with tests and a pinned packet.
+  Then: route the D2 job script plus resources derived from the D1b sizes, for an exact D2 approval.
+  Also route the missing fetch execution records (item 2).
+
+R1 is NOT verified. No release, no N admission. All 1156 statuses and science are unchanged.

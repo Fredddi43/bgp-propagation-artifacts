@@ -1,0 +1,13 @@
+{
+  "author_agent": "/root",
+  "utc": "2026-10-24T03:34:22.542322+00:00",
+  "execution_authorized": false,
+  "predecessor_source_sha256": "c72cd342e417d33c988483f26da5bf8d1cdaac06255b685d5801bd883037fe3e",
+  "delta": "Only v1\u2192v2 namespace and job52461068\u219252473649; projection/caps/access-log same",
+  "files": {
+    "capture.py": "0e69fcc7b538165349abe416a837664064f7fc747cb09f87347c791e0e9fff0e",
+    "test_capture.py": "a6e4e867487e459b1a4c6cea7754624b5daa2d152b7701aac90af857391f2f3d",
+    "request.json": "549f0ae8eea84f322e6f3977f20a1b5ae9f27f8d1fd0a283500f6a7d5e6f2957",
+    "scheduler-status.txt": "c55b81badbcfda2549b798d2ef111ba92c1aca097e4395cca7a6612137ffdadb"
+  }
+}

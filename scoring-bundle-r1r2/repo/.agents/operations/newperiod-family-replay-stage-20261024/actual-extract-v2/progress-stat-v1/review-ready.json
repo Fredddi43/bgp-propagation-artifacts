@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "probe.py": "055c8ef455da88de93ed98fd1f545e804643e28a71c5fca6ee9fb0fd4cd8142a",
+    "request.json": "c59805f503649c1665bc5c51016b11e1a0784f3746b4ba223d505cd918fc5db6",
+    "test_probe.py": "028e30e6c33d74eb9d9a5c5433453293d32869d9e4a27d219b6875f36d28d12f"
+  },
+  "kind": "replay_progress_stat_code_candidate_v1",
+  "tests": "3 passed"
+}

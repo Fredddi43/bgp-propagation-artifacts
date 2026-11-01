@@ -1,0 +1,7 @@
+# Held H3 coverage probe52518335 approval request
+
+Exact existing four-file held stage, probe f81ca233 and logged wrapper b4fff265 unchanged. Independent scope approval requested for three already-pinned JSON metadata sources only:512MiB coverage,128MiB each primary30/60. Counts only; no event identifiers exported. Presence of current_windows is not semantic coverage certification. One1CPU8GiB30min allocation,64KiB bounded output,2MiB existing h3_draft earmark retained until accepted terminal.
+
+Actual job bound in root template and additionally in approval. The consumer requires the exact external approval ref in root, fixed wrapper/log bindings and actual Slurm job ID before protected access. Write approvals using sorted JSON exact bytes and bind their sha; digest files exactly64ASCII bytes, no added newline. No root authority has been issued here. No protected read has occurred.
+
+After approval, author must build a separately reviewed once control-upload/held-check/release operator and a separate terminal counts/failed-receipt capture scope. All operation records and consumed marker must be in fixed fresh siblings, never this frozen package; mandatory six-dir rescan, latest issued joint phase/fresh df and stat-only custody-log margin before release. Never repeat stage/submit, never read raw job stderr. Capture only bounded canonical intent/counts/failed receipts under the exact attempt plus scheduler metadata; no arbitrary output traversal. Exact final controls must pass the real wrapper/probe before root issue.

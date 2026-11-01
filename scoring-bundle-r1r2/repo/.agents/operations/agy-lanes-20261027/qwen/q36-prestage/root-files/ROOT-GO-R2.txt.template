@@ -1,0 +1,46 @@
+ROOT-GO-R2  (TEMPLATE - q36-prestage draft 2026-10-28T04:40Z, PENDING_ROOT)
+
+=================================================================
+HOW TO USE (root): copy to .agents/operations/agy-lanes-20261027/g2r2/ROOT-GO-R2.txt AFTER: G2 complete +
+G3 seal written + evidence docs + full_retention_review signed + extension decision written + R2 rehearsal
+(r2-rehearsal/R2-REHEARSAL-PLAN.md) passed. Replace every {{PENDING_ROOT:...}}, delete this block and the
+PENDING_ROOT line. ONE FILE GATES TWO ONE-SHOTS: chain/g4_labels.py (the single label opening) and
+chain/r2_exec.py (the single R2). It records its own sha256 in g4's .g4-receipt.json (go_file_sha256) and in
+R2's approval.json review. NEVER create this file before you have read the values below from the artifacts.
+=================================================================
+PENDING_ROOT
+Approval: I approve (1) G4: ONE four-scope label opening via g2r2/chain/g4_labels.py with the plan pinned
+below, and (2) R2: ONE singleton run of the PINNED persistence runner
+(newperiod-single-r2-persistence-20261024/runner.py, sha256
+cf90e07d314c481849f22297d3a6815de5b6fa7aded60cd5797810c654f913df) in the namespace
+<FORECAST_ROOT>/data-custodian/single-R2-v1.
+No retry, no refit, no seal rewrite, no outcome release (r2_exec FALSE_FLAGS; reviewer identity is derived
+as "go-file-" + sha256(this file)[:16]).
+CLUSTER SIDE (review R2, same class as ROOT-GO-G2): g4_labels and r2_exec read this file WHEREVER THEY
+RUN — on the cluster. The repo copy lives at the <HOME> path, which compute nodes DO NOT have: after
+saving locally, make the file available at the exact path the spec/plan references (re-run
+g1/sync_for_rk02.sh so the cluster repo copy carries it, or write it under the work dir on <CLUSTER_STORAGE>), and
+put THAT path in root-files/r2-exec-spec.PENDING-ROOT.json go_file. prestage_check.py --gate r2 (R2-04)
+probes it and NOGOs while absent.
+
+CHAINED ANCHORS (every value only root can confirm at this moment; read them from the artifacts):
+  freeze.json sha256:        {{PENDING_ROOT: == freeze.anchor.json == arm-spec custody_spec_sha256}}
+  G3 seal sha256:            {{PENDING_ROOT:sha256 of <S>/seal.json from g3_seal.receipt.json seal_sha256}}
+  seal verified arms == :    {{PENDING_ROOT:expected-arms count used for the seal}}
+  timing_label_equivalence:  {{PENDING_ROOT:true|equivalent}}  <- root condition on DECISIONS item 8: STOP if not equivalent
+  G4 plan sha256:            {{PENDING_ROOT:sha256 of the label-binding plan (build.assemble output)}}
+  G4 plan output path:       {{PENDING_ROOT:plan.base.ordinary.output (must NOT exist yet - one preparation)}}
+  arm-spec sha256:           {{PENDING_ROOT:printed by chain/make_arm_spec.py (repetitions 10000, seed 1701, alpha 0.05)}}
+  extension decision: <FORECAST_ROOT>/occurrence-final-v1/sizing-binding-v6b/extension-decision.json sha 3f5bb81128769cb815ced7be05d83fba23be527d78f3f646696688d831d57dd7 extend=false end=2026-10-16 (already binding per NEW-PERIOD-SIZING-BINDING.md; re-verify the cluster sha now) {{PENDING_ROOT:confirmed}}
+  full_retention_review ref: {{PENDING_ROOT:path + sha of the signed_review-derived document (plan['full_retention_review'])}}
+  R2 template sha256:        {{PENDING_ROOT:sha256 of the r2 template file (kind newperiod_single_R2_execution_v1)}}
+  R2 inventory files:        {{PENDING_ROOT:count of entries (built AFTER all predictions exist)}}
+  r2 exec spec path:         {{PENDING_ROOT:.../r2-exec-spec.json (go_file/work/template/inventory/runner)}}
+  custody access log:        {{PENDING_ROOT:path; stat <= 12 GiB and log+access_log_bytes <= output_file_bytes (q23)}}
+  R2 rehearsal passed at:    {{PENDING_ROOT:UTC + sandbox path from R2-REHEARSAL-PLAN.md (Tier A/B rows all PASS)}}
+  ROOT-GO-R2 written:        {{PENDING_ROOT:UTC time you saved this file}}
+
+SHAPE I APPROVE: singleton (no array), partition cpu, --cpus 64 --mem-mib 1000000 --wall 1-00:00:00,
+--export-env CUSTODIAN_ACCESS_LOG=<log>, python = the cluster venv; outputs single-R2-v1/arms/000/attempt/
+{complete-result.json, primary-scores.json, done.json}; models-tree free at submit >= 164 GiB (q23).
+Storage floor breach, OOM, or SIGALRM: STOP - do not rerun; a second attempt cannot be authorized (one-shot).

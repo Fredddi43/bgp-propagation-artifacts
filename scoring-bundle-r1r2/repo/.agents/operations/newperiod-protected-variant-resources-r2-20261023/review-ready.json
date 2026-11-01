@@ -1,0 +1,19 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "1d1148509b9104d909f9a6ac8cf2167444c60f7c8910eed41bfbd9f08a04410f",
+    "build_package.py": "7c3a2703ee65627e1d8534d257d3e1752da0bb14d4efe338f92b2279bcfc19d9",
+    "controller.py": "4caf1d28d9165d5662e45bc6bed51021649517d9887a85e8535632671cde4745",
+    "producer_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "runner.py": "f1166edb4ac6073a942e045d3a89eae8d60afd79faf03b99cd6a81baddf99791",
+    "test_resource_delta.py": "18f17e0224cdc141bc006d005d9b6f27617e2961377a44fbe43e66579e19f941",
+    "test_runner.py": "9b4ece5f2bf455496f5f8360a739582df7de77f99e47e65550ee5991094932fc"
+  },
+  "kind": "protected_variant_storage_resource_delta_v1",
+  "original_review": {
+    "path": "<REPO>/.agents/operations/codex-takeover-20261023/protected-variant-runner-code-review.json",
+    "sha256": "2d9d929fda362854178aaa896bd24bbf2ee6d453ff05decc1ebb2b62c5b91bb1"
+  },
+  "review_delta": "Exact v2 remote stage/claim allowlists fixed;6 real generated-wire subprocess regressions cover all3namespaces,newsuccess/oldrefusal/duplicateclaim",
+  "tests_passed": 35
+}

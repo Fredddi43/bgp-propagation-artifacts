@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_a3_capture_proposal_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/a3-predecessor-capture",
+ "pins_sha256": "ff624ad9a43fa5fc1690d34ac5c85ee27784b27a55196c12a519241ed3ebfdc7",
+ "requests": [
+  "review the capture scope (6-7 v7 control-root JSON records via f19d1066, after K1 non-success only)",
+  "decide launch.err A (size-only; needs narrow failed_v7 revision) or B (eval_status.sh tail bytes)",
+  "if acceptable: exact scoped approval for one f19 capture with this request derivation, usable only after v7 terminal failure"
+ ]
+}

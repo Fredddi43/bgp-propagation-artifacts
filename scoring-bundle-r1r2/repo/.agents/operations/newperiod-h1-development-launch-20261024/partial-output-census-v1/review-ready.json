@@ -1,0 +1,9 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "787cb1b3a7549ceb067765c843e7c03c2a23b452992af2b9f50f4e291dc7a598",
+    "request.json": "9b188d2346fdf80c08c79cf65403cefac0440fcb3a0a7d251e5ae86180cff043",
+    "test_capture.py": "259e0699d9167452e457d7b5698126f98bea944f9fdd15a5ab372db8f864d342"
+  },
+  "tests": "5 passed in 0.09s"
+}

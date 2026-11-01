@@ -1,0 +1,12 @@
+{
+  "actual_sha256": "9a631f1f6c500e7a5fac6ca8f1e982d5edbb637ec1a1bcee9855566cf9a68c01",
+  "assessment": "Exactcaptured3metadata hashed and aggregate reconciliation independently reproduced. H3all14787present,14671sameonset/116changed2026onsets. Timing4fixedhorizon13096rows matchcurrentcoreactor/split/onset/maturity, issueclocks consistent. Originalexcluded/failurestatuses preserved; no eligibilityselection, payloads or nestedrefs followed.",
+  "h3_old_coverage_reuse_authorized": false,
+  "independently_reproduced": true,
+  "passed": true,
+  "readiness_sha256": "c4bad98ceaad5112f07e28bd56309f00eb3a8d988d279d248916e95913e3901a",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scientific_execution_authorized": false,
+  "utc": "2026-10-24T07:58:33.941042+00:00"
+}

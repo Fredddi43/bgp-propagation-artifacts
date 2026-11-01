@@ -1,0 +1,21 @@
+{
+ "dir": "<REPO>/.agents/operations/newperiod-h1-audit-only-v4-release-20261025",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "RELEASE-COMMAND.md": "2acb7be6b9c272caf9c4b9d3d3264992a2dcd561f01957d8e300f70d581d2190",
+  "build_release_v4.py": "6a40c8dd7b87eb9066b481fb837d2fb65a5e291e514db3fea819acc403139488",
+  "mutation-proof.txt": "90e57fe938a88ebcada25625e8bb2f3387cc4f9c63c275760e6e3a3c8a75b6a9",
+  "release-authority.TEMPLATE.json": "052cd0a9accaebfbb6cc3ee3b01b50523615c63ab13b3f3a70b7062bc7f5a9b8",
+  "release-binding.TEMPLATE.json": "699293f173b1e950bccce78b14d31eadfe5b050753fb03bb0da3dc8278543d9e",
+  "release_v4.py": "efb71b8278097e9bdfc1010f30d2d483bd20e943c9f6b180170ac37f2559fdda",
+  "test-run.txt": "7aa732bd0d63c8b22e6a0a50db3a67f01935a4da4966103bce654da16c51c01d",
+  "test_release_v4.py": "bbd81b7748148fdbd3dc53a455d952f7af2f4e9f7b0e511f2f1da4af4bc9764d"
+ },
+ "kind": "h1_v4_release_tool_review_ready_v1",
+ "replaces": "G3-COMMANDS step 4 (controller admit/release). Steps 5-6 (waiter, capture) unchanged.",
+ "templates": "release-binding.TEMPLATE.json (admission over the actual submission jobs; approval in controller.authority release shape; review = staged review.txt text 93032c12) and release-authority.TEMPLATE.json; RELEASE-COMMAND.md (exact invocation, then waiter add9f894 + capture c048aa36).",
+ "tool": "release_v4.py efb71b82 = r3 waves.py bbce2da6 with closed edits (build_release_v4.py; diff in the post): v4 controller pin 495ccf5b; 2 phases; authority kind h1_v4_audit_only_release_v1 + predecessor + reservation = plan reservation; previous=0; all v4 phases held-checked and released; first release writes the execution binding (admission kind newperiod_h1_v4_audit_admission_v1, whole audit-only reservation) via the reviewed BIND_REMOTE; ONE scontrol release. held()/accounting()/space check/wire calls byte-identical to r3.",
+ "verified": "held() passes on the ACTUAL read-held captures of 52513850/52513851. End-to-end release() with a fake runner releases exactly both jobs once, after the bind. 9 refusal cases release nothing. 4/4 mutations caught.",
+ "why": "The staged v4 controller release cannot pass: held_job rejects \"afterok:52513850_*(unfulfilled)\" (proven on the actual captures). r3 released through waves.py for this reason."
+}

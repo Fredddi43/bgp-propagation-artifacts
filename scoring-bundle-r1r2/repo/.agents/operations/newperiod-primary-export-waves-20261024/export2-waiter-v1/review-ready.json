@@ -1,0 +1,14 @@
+{
+  "condition": "Once after successful exact export2 release and identity/no-duplicate checks. No later release authority.",
+  "files": {
+    "request.json": "c51aeefb12c7843b9b757f39e2a93c7e87ee4bce7e0cf73d4c2974c869561508",
+    "test_wait.py": "c29007c47dbf8f4635213dd3d1e6a0d89532e5f6166d68035df9eedb1e5b2df9",
+    "wait.py": "6a95e750ac3ab8d203cde54c93f4363b093f48b34304dd537a2871f94208e8b9"
+  },
+  "kind": "primary_export2_waiter_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-export-waves-20261024/export1-waiter-v1/wait.py",
+    "sha256": "0cac1749de668d32a2d28803401739b534ffb5d8891064c313d4a2e52ac51df6"
+  },
+  "start_authorized": false
+}

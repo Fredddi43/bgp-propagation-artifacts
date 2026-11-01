@@ -1,0 +1,138 @@
+% round 4 (panel-r4 NEW-16 / T12): a \clearpage kept the heading off the foot of a page. Round 5 (panel-r5 NEW-7, EIC B1): that
+%   \clearpage left a nearly blank page and a page with the heading alone, because two-column floats cannot sit under a heading. It is replaced
+%   by a short roadmap, so the heading always has text under it.
+% round 7: the roadmap of these tables is the paragraph "Supplementary tables" at the start of sections/app-protocol.tex.
+\begin{figure*}[h]
+\centering
+\includegraphics[width=\linewidth]{figures/rpki/recovery_pairs}
+\caption{Matched outward and return transitions, 2022--2026. (a) Cumulative distributions of $t_{90}$, pooled over links, with thin lines for single years. (b) Per-link 30-s \floor, outward against return, with a logarithmic density scale, the marginal medians and the diagonal of equal floors. (c) Per-link ratio of return to outward extent by year. Links with undefined timing or ratios are excluded and counted. \Cref{tab:recovery-summary,tab:recovery-gap,tab:recovery-dayblock} give the values by year and by identifier gap.}
+\Description{Three panels compare outward and return transitions: timing distributions overlap; per-link early floors scatter on both sides of the diagonal; the return-to-outward extent ratio has medians slightly above one in every year.}
+\label{fig:pairs}
+\end{figure*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Matched transitions by identifier gap and year. Share of links: of all links of that year. $\Jac_{30}$: 30-s \floor of the outward ($O$) and return ($R$) footprint. Paired $\Delta\Jac$: $R$ minus $O$. Return slower: as in \Cref{tab:recovery-summary}. Intervals: 95\,\% component bootstrap. Row labels: $<1$\,min is below 1\,min, 1--15\,min is at least 1 and below 15\,min, and $\geq 15$\,min is at least 15\,min and below 24\,h.}
+\label{tab:recovery-gap}
+\setlength{\tabcolsep}{4pt}
+\input{generated/recovery_gap_wide.tex}
+\end{table*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Recovery intervals with dependence between links (revision analysis). Component: the published bootstrap over connected components of shared events. Day block: UTC days of the outward identifier as resampling units, with days joined by a shared event merged, 10,000 draws. $^{*}$: the pooled extent ratio has no published interval, so this row uses the component bootstrap with 10,000 draws (seed 1701). Gap labels as in \Cref{tab:recovery-gap}: $\geq 15$\,min is at least 15\,min and below 24\,h. Largest units: in 2025, one day holds \num{1013} of the \num{4306} links with a gap under 1\,min. With a gap of at least 15\,min, 116 of \num{1259} links fall on 2024-10-17, with a mean $\Delta\Jac$ of $-0.55$, and 107 of 809 on 2026-08-01, with $-0.18$. Without these days, the means are $+0.09$ and $+0.10$, a post hoc check of these two years only.}
+\label{tab:recovery-dayblock}
+% round 7 (review-r6 W5, Tables 11-12): the generators (scripts/paper_recovery_dayblock.py, scripts/paper_measurement_checks.py,
+%   tools/recovery_gap_wide.py) now print ">= 15 min" for [900, 86400) s; a rerun changed only these labels.
+% src: generated/recovery_dayblock.tex header comment (component CI*: 10,000 draws, seed 1701); scripts/paper_recovery_dayblock.py GAPS
+%   (gt15min = [900, 86400) s); recovery_dayblock.json years.2025.lt1min (links 4,306, max_links_per_unit 1,013) and years.{2024,2026}.gt15min
+%   (links 1,259 / 809, max_links_per_unit 116 / 107). Dates and means: recovery_dayblock.json years.{2024,2026}.gt15min.largest_day
+%   (see the src comment in sections/06-recovery.tex): -0.5452 / -0.1827; without the day +0.0924 / +0.0989 (round-3 review NEW-8, X8).
+\setlength{\tabcolsep}{4pt}
+\input{generated/recovery_dayblock.tex}
+\end{table*}
+
+% layout (second reviewer round 3, item 6: the month-boundary table was hard to read): the generated file sets \scriptsize; it is typeset here at
+%   \footnotesize by rebinding \scriptsize inside a group. generated/month_boundary.tex itself is unchanged.
+{\let\scriptsize\footnotesize\input{generated/month_boundary.tex}}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Leaker dependence of the C2 and native AP contrasts (revision analysis). Paired AP difference over eligible events, mean over five training seeds, as published. Ordinary 95\,\% intervals resample training seeds and then one of three units: UTC-day blocks with each incident in the day of its first onset (the published intervals), whole leaker ASes, or leakers and days drawn independently, with each event weighted by the product of the multiplicities of its leaker and its day (leaker $\times$ day). The leaker is the AS that leaks the route, read from the event identifier. 10,000 repetitions, seed 1701. Leakers: distinct leaker ASes among the eligible events, with the share of events of the largest leaker. Native: SAGE with history minus online history on its native candidates. Descriptive, no test family.}
+\label{tab:actor-bootstrap}
+% src: paper/generated/actor_bootstrap.json and .tex (scripts/paper_actor_bootstrap.py; source_sha256 4f108dfb...; confirmatory false,
+%   replaces_published_values false; day_blocks reproduce the published intervals exactly, reproduced_exactly true in every cell).
+\setlength{\tabcolsep}{4pt}
+\input{generated/actor_bootstrap.tex}
+\end{table*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Set errors and absolute precision at ten of the R1 and R2 forecasts (revision analysis, descriptive, no test family). A: ASes added to the seeds, R1 only, because the R2 records hold no forecast sets. Added: mean number of added ASes per event. Adds none: share of events whose forecast equals the seed set. B: P@10, the share of new members among the first ten ranked candidates, over eligible events. $J -$ persistence: paired difference with an ordinary 95\,\% interval over training seeds and day blocks (10,000 repetitions, seed 1701), unadjusted. In R2, the Jaccard of persistence is $s/(s+R)$ for $s$ seeds and $R$ new members, and a forecast with Jaccard $J$ adds $s(1/J-1)$ ASes to an event without new members. In R1, both identities hold on every record. Both panels: no-growth events have no new members, and every addition on them is false. Any: share of them with an addition. Mean: additions per such event. $J$: Jaccard against the full target, over all scored events. Learned arms: mean over five training seeds. Under each horizon: scored events, events without new members and, in B, eligible events. The frozen 2025 SAGE exists in R2 at 60\,s only.}
+\label{tab:set-errors}
+\label{tab:set-errors-r2}
+% src: paper/generated/set_errors.json and .tex (scripts/paper_set_errors.py; confirmatory false, replaces_published_values false):
+%   results.R1.{30,60}.{sage_on,online_history,history_median}.minus_persistence (difference, ci95; 10,000 repetitions, seed 1701);
+%   published Jaccard values reproduced (results.*.published_reproduced). R2 missing fields: set_errors.json r2_missing_fields.
+% round 4 (NEW-3, second reviewer W2): the R2 persistence Jaccard, the R2 no-growth false additions and the R2 differences to persistence with their
+%   intervals are in tab:set-errors-r2 (paper/generated/set_errors_r2.json, scripts/paper_set_errors_r2.py); the caption above points there.
+%   The R2 rows of generated/set_errors.tex come from scripts/paper_set_errors.py and are not edited here.
+% src: paper/generated/set_errors_r2.json and .tex (scripts/paper_set_errors_r2.py; confirmatory false, replaces_published_values false):
+%   derivations.persistence_jaccard ("Equals the recorded jaccard_persist on every R1 record"), derivations.no_growth_false_additions
+%   ("Equals the recorded new_fp on every R1 no-growth record of every arm and seed; integer within 1e-6 on every R2 no-growth record");
+%   intervals (10,000 repetitions, seed 1701, ordinary 95 %, unadjusted); reproduced (every published P@10 contrast of R1 and R2, the R1 values
+%   of set_errors.json). unavailable_for_r2: added counts, adds-nothing share and false additions on growth events.
+% round 5 (panel-r5 NEW-7, EIC B2; review-r5 item 6): the former tab:set-errors and tab:set-errors-r2 are one float with two panels,
+%   and both labels point to it. The R1 differences to persistence that the former tab:set-errors caption listed are column "J - persistence"
+%   of panel B (same values: +0.000177 [+0.000061, +0.000301], -0.3186, -0.1160 at 30 s; +0.0000083, -0.3233, -0.0721 at 60 s).
+\setlength{\tabcolsep}{4pt}
+\emph{A. Added ASes}\par
+\input{generated/set_errors.tex}
+\par\emph{B. Precision at ten, Jaccard and false additions}\par
+\input{generated/set_errors_r2.tex}
+\end{table*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Month-boundary subsets under leaker resampling (revision analysis). Paired AP difference over the kept eligible events, mean over five training seeds, with ordinary 95\,\% intervals over training seeds and then one of two units: whole leaker ASes, or leakers and days drawn independently (leaker $\times$ day). \Cref{tab:month-boundary} gives the day-block intervals of the same subsets. 10,000 repetitions, seed 1701, unadjusted. No d1: events whose identifier date is the first of a month removed; no d1--3: first to third removed. Native: SAGE with history minus online history on its native candidates. Descriptive, no test family.}
+\label{tab:month-boundary-actor}
+% src: paper/generated/month_boundary_actor.json and .tex (scripts/paper_month_boundary_actor.py; confirmatory false, replaces_published_values false;
+%   R1/R2 contrasts.*.reproduced: published_all, month_boundary_day_blocks_all_subsets and actor_bootstrap_all true in every contrast).
+\setlength{\tabcolsep}{4pt}
+\input{generated/month_boundary_actor.tex}
+\end{table*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Leaker recurrence (post hoc revision analysis, \Cref{app:protocol}). A: C2 and the native contrast by leaker class. A repeat leaker led at least one completed earlier event of the history library, and a first-seen leaker did not. Paired AP difference over the eligible events of the class, mean over five training seeds, with ordinary 95\,\% intervals over training seeds and then day blocks, or leakers and days drawn independently (leaker $\times$ day). Repeat $-$ first: difference of the two class contrasts, from one joint draw. B: rankings of the native candidates of online history in R1, without training. Same leaker: same-leaker-only ranking, by completed earlier events of this leaker. Same leaker, then all: same-leaker-first ranking, ties broken by all completed earlier events. All rankings use the released seed sets, and $n$ counts the eligible events that keep a new member under them. AP $-$ SAGE compares complete systems on the exact-input events, a selected subset. 10,000 repetitions, unadjusted, no test family.}
+\label{tab:leaker-split}
+% src: paper/generated/leaker_split.json and .tex (scripts/paper_leaker_split.py; confirmatory false, replaces_published_values false):
+%   definitions (leaker, repeat, library, intervals); same_leaker_baseline_scope (candidates, ties, input_gap, populations);
+%   R1.split.*.reproduced_exactly and R2.split.*.reproduced_exactly true (published contrasts reproduced on the full eligible cohort);
+%   R1.same_leaker_baseline.{30,60}.input_gap.exact_input_events_reproduced_1e-12 = exact_input_eligible_events (1,866 / 1,814);
+%   R2.same_leaker_baseline: "not computed: R2 records name only the seeds, not the target or new members".
+\setlength{\tabcolsep}{3pt}
+\input{generated/leaker_split.tex}
+\end{table*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Set forecasts against persistence on the prespecified issue-time slice (revision analysis). The slice and its threshold are as in \Cref{tab:recipe}: early growth of at least 12 at 30\,s or 22 at 60\,s, slice Jaccard with the threshold calibrated on validation slice events. Persistence forecasts the seed set, with the Jaccard $s/(s+R)$ in R2. $J$: slice Jaccard, mean over five training seeds for the learned arms. $J -$ persistence: paired difference over the slice events, with an ordinary 95\,\% interval over training seeds and then day blocks, 10,000 repetitions, seed 1701, unadjusted. The slice is prespecified, but this contrast is not. A row whose values are all below 0.001 in magnitude prints more decimals. The published slice C2 is SAGE with history minus online history, so it is about the distance of online history below persistence.}
+\label{tab:slice-persistence}
+% src: paper/generated/slice_vs_persistence.json and .tex (scripts/paper_slice_vs_persistence.py, first commit b644cf6b 2026-10-31 17:47 UTC;
+%   kind slice_vs_persistence_revision_analysis, confirmatory false, replaces_published_values false, prespecified "no: the slice and its threshold
+%   are prespecified, this contrast (arm minus persistence) is not"); reproduced "every published slice-Jaccard contrast (R1 C1-C4, R2 C1-C6) to
+%   1e-12"; definitions.persistence (R1 jaccard_persist checked on every record; R2 s/(s+R) from seed_asns and new_members).
+\setlength{\tabcolsep}{4pt}
+\input{generated/slice_vs_persistence.tex}
+\end{table*}
+
+\begin{table*}[h]
+\footnotesize
+\centering
+\caption{Audit of R1 test leaks (revision analysis). A script applies fixed rules, without human labels or arm results. It tests consistency with CAIDA relationships, not ground truth, so it does not measure the precision of the identifier. A: 30 events per stratum, drawn without replacement (seed 1701). Radar: matched to a Radar leak label. Volume: selected by message volume. Day 1: the identifier date is the first day of a month. Relationship-consistent: as defined in \Cref{app:protocol}. Relationship changed or missing: no triple violates in the next month, because a relationship type changed or an adjacency is missing, and Radar did not match the event. Ambiguous: no violating triple, a Radar match without a triple that violates in the next month, or a route seen from the start of the look-back whose triples were already new in the previous month. Counts with shares and Wilson 95\,\% intervals. Cohort: shares weighted by stratum size, with the same weights on the stratum Wilson limits (conservative, descriptive, not a joint interval). B: C2 and the native contrast (SAGE with history minus native history) in AP at 30\,s over the eligible events of each population, with ordinary 95\,\% intervals over training seeds and day blocks (10,000 repetitions, seed 1701), unadjusted and descriptive over nine populations. The day-1 strata have only 6 and 7 day blocks. Only sampled events carry a class, so the row without the sampled changed or missing events removes only some such events. C: the same sample by evidence without CAIDA relationships (\Cref{app:protocol}). Independently supported: a Radar label names the same ASes, or a new route ends within two hours in RIS. Independently contradicted: every triple joins two ASes of one organisation. Uncertain: all other leaks, including IPv6-only leaks without Radar support.}
+\label{tab:leak-audit}
+% round 6 (panel-r6 NEW-2, NEW-9, T2; review-r6 W1): rules applied by script (scripts/paper_leak_audit.py classify(): triples, Radar match,
+%   replay lag; no forecast or arm result is read before the classes exist); precision disclaimer restored; round 7: the generator now prints
+%   "Relationship-consistent" and "Relationship changed or missing" in the header and rows; the rule of the
+%   class is in sections/app-protocol.tex "Leak audit" (caption shortened so that tab:slice-persistence and tab:leak-audit share a page). Blocks:
+%   leak_audit.json sensitivity["C2@30"].stratum_radar_day1.blocks 6, stratum_volume_day1.blocks 7. Nine populations: the eight rows of panel B.
+%   "Bounded" (a third sense of bound) dropped from the title; "bound" -> "limits" for the weighted Wilson values.
+% src: paper/generated/leak_audit.json and .tex (scripts/paper_leak_audit.py, first commit b644cf6b 2026-10-31 17:47 UTC; kind
+%   leak_benchmark_validity_audit_revision_analysis, confirmatory false, replaces_published_values false); rules (C1_stable_violation, F1_rel_changed_next,
+%   F2_rel_missing_next, A0_no_triple, A1_radar_conflict, A2_preexisting_path; siblings: an AS2Org descriptor since round 7, classes unchanged); sampling (30 per stratum, numpy
+%   default_rng(1701), event_ids sorted, choice without replacement); cohort_estimate.note; sensitivity_note ("excluding the sampled likely false
+%   positives removes a lower bound of the cohort's likely false positives"); sensitivity.*.published reproduced_exactly true; manifest_check 120 of 120.
+%   Sample rows: paper/generated/leak_audit_sample.csv (120 events).
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.94}% keeps the float within the page (overfull vbox, round 7)
+\input{generated/leak_audit.tex}
+\end{table*}
+
+{\renewcommand{\arraystretch}{0.94}\input{generated/newperiod-lanes.tex}}% keeps its float page within the text height (round 7)

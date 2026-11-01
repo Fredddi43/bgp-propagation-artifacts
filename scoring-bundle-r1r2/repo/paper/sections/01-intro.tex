@@ -1,0 +1,91 @@
+\section{Introduction}\label{sec:intro}
+
+The Border Gateway Protocol (BGP) lets Autonomous Systems (ASes) exchange routes to IP prefixes.
+An announcement alone does not show whether its origin AS may announce the prefix.
+The Resource Public Key Infrastructure (RPKI) supplies this information through Route Origin Authorizations (ROAs).
+Route origin validation (ROV) compares announcements with the ROAs and lets operators reject invalid routes~\cite{rfc6811}.
+Earlier work shows that ROV limits how far invalid routes travel~\cite{testart2020filter,li2023rovista}.
+
+Reach is only one part of the picture.
+When an origin changes, the new route spreads over seconds to minutes, and the previous route can return later.
+How fast the route spreads decides how much an operator or a detector sees early, and what is still to come.
+Controlled experiments measure this for induced hijacks~\cite{sermpezis2018artemis}, but few studies follow it for the origin changes and leaks that occur in practice.
+We measure the time course from public archives, for every RPKI state and for the return of the previous origin.
+
+We ask two questions.
+First, how do origin changes with different RPKI states spread, and how does the previous route return?
+Second, how well do the first seconds of an event forecast the ASes that it reaches later, and which methods add to simple baselines?
+Both answers depend on when the clock starts, which events a study selects, and what the collectors see.
+If most of the final AS set is already visible early, persistence, the forecast that keeps the observed set, is hard to beat.
+If the event keeps spreading, past events and the AS graph can help to find the ASes that join later.
+
+\paragraph{Approach.}
+We replay the archives of ten RIPE RIS and RouteViews collectors from January 2022 to August 2026 (\Cref{sec:data}).
+The replay selections hold \num{66026} origin-change candidates and \num{17247} route-leak candidates.
+A separate stratum of \num{13844} RPKI-invalid origin changes, drawn without labels, tests how catalogue selection shapes the results.
+
+Historical ROAs classify the new and the previous origin of each event.
+For each event we rebuild the set of ASes on observed paths over two hours.
+This set is what the collectors see, not the complete set of affected networks~\cite{oliveira2009completeness}.
+An invalid origin alone is not evidence of an attack, so we call these events origin changes, not hijacks.
+
+For the forecasts, we use three setups of increasing rigour, and the first, on large leaks, is exploratory (\Cref{tab:forecast-setups}).
+R1, a retrospective evaluation, covers selected leak candidates of late 2025, matched to Cloudflare Radar or high-volume.
+It is descriptive, because we developed the methods while its period was open.
+A prespecified replication on a new period, September to October 2026 (R2), repeats R1 with its arms, tests and outcome wording fixed in advance.
+We operated its seal ourselves, no third party timestamped it, and an AI session took part in its decisions (\Cref{sec:genai}).
+
+\paragraph{Contributions.}
+Our four contributions show how the clock, the selection or the collectors shape early observations.
+\begin{itemize}
+\item \textbf{The clock and the selection decide class comparisons (\Cref{sec:prop}).} From the first observation of the new origin, invalid-origin events show the largest share of their two-hour AS set at 30\,s.
+It is 0.61--0.74 in 2023--2026, against 0.32--0.42 for valid origins.
+The new origin was visible more than a minute before the identified change for 54--72\,\% of valid events, but for only 6--16\,\% of invalid events.
+For events first observed near the change, class differences in 2023--2026 shrink, but this rule keeps 84--94\,\% of invalid and 28--46\,\% of valid events.
+In 2023--2025, a label-free sample shows that catalogue selection also raises the 30-s share of invalid events.
+\item \textbf{The return differs by identifier gap (\Cref{sec:recovery}).} For pairs with an identifier gap of at least 15 minutes, the return shows more of its final set at 30\,s.
+Its day-block intervals are above zero in 2022, 2023 and 2025.
+Most of the \num{20256} matched pairs, 55--65\,\%, are flips less than one minute apart.
+In these flips the observed return set is larger than the outward set.
+An early end of the outward change, ROV or path exploration may explain it, and we did not test which.
+\item \textbf{The collectors see a changing share of invalid routes (\Cref{sec:beacons}).} The relative reach of a controlled invalid beacon fell by about half between January and May 2024.
+Two upstream changes in April coincide with the steps of this fall, on top of an earlier decline.
+\item \textbf{Forecast comparisons depend on the selection and the setup (\Cref{sec:forecast}).} On large leaks selected by final size, graph models gain up to $+0.20$ Jaccard over persistence in exploratory tests, and history almost as much.
+In R1, which differs in selection, training and calibration, the set forecast of SAGE with history equals persistence for 95\,\% of events at 30\,s.
+A revision analysis finds it within 0.001 Jaccard of persistence by point estimate also on fast-growing events.
+% round 6 (panel-r6 NEW-4(b) / X5; review-r6 "add by point estimate"): the slice intervals reach -0.0028 and +0.0014, and the R1 30-s
+%   interval [+0.0003, +0.0014] excludes zero (sections/08-forecast.tex "Secondary metrics", tab:slice-persistence); "events that grow by issue time"
+%   -> "events with fast early growth" (the slice: early growth >= 12 at 30 s, >= 22 at 60 s; 966 of 3,543 R1 events at 30 s).
+
+Message passing and history each add about 0.06 average precision (AP) alone, and 0.01--0.02 given the other.
+On the same candidates, we detect no AP difference between SAGE with history and online history.
+Online history with its own, nearly complete candidate set reaches a higher AP, in a comparison of complete systems.
+A prespecified replication on autumn 2026 (R2) repeats these Holm decisions, and its other rejections favour history in ranking and SAGE in Jaccard.
+\end{itemize}
+
+We release the code and the derived data (\Cref{sec:openscience}).
+% src: see sections/00-abstract.tex; recovery strata from paper/generated/recovery_gap.tex; R1 from paper/generated/r1-comparisons.json.
+% src: R1 two-by-two at 30 / 60 s (tab:r1, r1-comparisons.json): history alone C4 +0.063 / +0.059; message passing alone C1 + C4 - C3 = +0.068 / +0.063
+%   (r1-arm-levels.json sage_off - none_off 0.0679 / 0.0635); given the other: C1 +0.018 / +0.017, C3 +0.014 / +0.013.
+%   month boundary: month_boundary.json R1 C2@30 no_day1 +0.0066 [+0.0008, +0.0118] (identifier date); R2 test events 1,289 (tab:forecast-setups).
+%   return hypotheses: sections/06-recovery.tex "By identifier gap" (round-3 review NEW-7: truncation, ROV, path exploration).
+% src: near-onset retention 84--94 % invalid, 28--46 % valid: paper/generated/onset_sensitivity_ci.json share_near, 2022--2026 (sections/05-propagation.tex);
+%   R2 repeats the Holm decision of every common AP contrast: newperiod-table.tex vs r1-comparisons.json (C2 at 60 s changes sign, +0.0022 to -0.0042).
+% src (round 4, 2026-10-31; panel-r4 T2 / NEW-1, NEW-2, NEW-5, NEW-12, Q24): gap >= 15 min, day-block intervals of paired Delta J above zero in
+%   2022 [+0.093, +0.171], 2023 [+0.060, +0.141], 2025 [+0.035, +0.145], including zero in 2024 and 2026 (paper/generated/recovery_dayblock.tex);
+%   heading "shapes" -> "differs by" (causal wording, NEW-12). Set forecast = persistence: set_errors.json R1.30.sage_on.adds_nothing_share 0.9463.
+%   R2 P@10: facts.json p_at_10 C2@30 -0.0239, Holm 0.0024 (tab:secondary). The first-of-month sentence (+0.007, post hoc) left the bullet (NEW-1);
+%   "ranks better" is kept for Holm rejections of ranking quality, and the native comparison now reads "reaches a higher AP" (NEW-5).
+% Round 5 (2026-11-01; panel-r5 NEW-2, NEW-3, NEW-5, NEW-17; review-r5 items 2, 3, 6):
+%   "but not for the origin changes and leaks" -> "few studies follow it" (prior-work claim narrowed; Argus, Shi et al. IMC 2012, not in refs.bib).
+%   Return bullet: the larger return set is descriptive; the three hypotheses are untested (sections/06-recovery.tex).
+%   Bullet 4: the slow regime and R1 also differ in training population (large leaks vs all selected candidates) and threshold calibration
+%   (slow regime: threshold tuned on the training split of large leaks, sections/08-forecast.tex "Methods"; R1: validation mean Jaccard over all
+%   events, tab:recipe "Learned set forecast"), so the contrast is not a within-pipeline estimate of the selection (review-r5 W2).
+% src (round 5, panel-r5 A-R2; revision analysis, confirmatory false): paper/generated/slice_vs_persistence.json results.{R1,R2}.{30,60}
+%   .arms.sage_on.minus_persistence.difference: R1 +0.000828 [+0.000255, +0.001387] (30 s), +0.0000387 (60 s); R2 -0.000837 [-0.002793, +0.000727]
+%   (30 s), -0.0000119 (60 s); all |x| < 0.001. Slice: early growth >= 12 at 30 s, >= 22 at 60 s (definitions.slice; tab:recipe). The slice is
+%   the look-ahead-free analogue of the slow regime: an issue-time selection of growing events alone does not move the set forecast off persistence.
+%   The bullet is split into a set-forecast and a ranking paragraph (six sentences at most per paragraph).
+% src: R2 rejections by direction: sections/00-abstract.tex round-5 src comment (facts.json holm_rejects): AP C5@60 and P@10 C2@30, C5@60 and the
+%   three native-family AP contrasts favour online history; full-target and slice Jaccard C2@30, C2@60, C5@60 favour SAGE.

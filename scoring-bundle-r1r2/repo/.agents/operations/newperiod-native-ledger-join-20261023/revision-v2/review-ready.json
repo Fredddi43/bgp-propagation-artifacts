@@ -1,0 +1,8 @@
+{
+  "files": {
+    "ledger_join.py": "0a0d4c8ee39ebd19fb9f10fecd294774a3b08e4c9e013206a059722036f2dd96",
+    "test_ledger_join.py": "a90da3eb9124148e94f9771bde52c0e701bff7cc701c41965e7f553f23fc5dcf"
+  },
+  "tests_passed": 18,
+  "change": "Preserve pooled selector without character iteration or inferred collector panel; require explicit manifest kind/horizon; distinct prospective construction join, no sealed-population claim. Inventory code unchanged."
+}

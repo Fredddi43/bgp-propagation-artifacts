@@ -1,0 +1,17 @@
+{
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "c2706805b048e6745cc1c0531c6237a16707f0edb581491508838be6797ee502",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "core_metadata.py": "b3fb7a3b52bd8f0c5c7ecacafbe3ab091f1b746da8b781edd20b3f0228474eb1",
+    "test_timing.py": "3dd2f3b05fb517f956e9fa49ddfa3ac6d33c5112e5ef33862793387dcaf50c80",
+    "timing.py": "7a151a1a3a3bf1d755d2c88bbc9e24601a5a5ef8d0c3059f2d7556e1d8fd38a5"
+  },
+  "kind": "newperiod_timing_construction_derivation_review_v1",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q .agents/operations/newperiod-timing-construction-binding-20261024/test_timing.py",
+    "passed": 4
+  }
+}

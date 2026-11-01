@@ -1,0 +1,12 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "automatic_retry_authorized": false,
+  "execution_authorized": false,
+  "passed": true,
+  "review_ready_sha256": "e025cf3702a56ebf0fa4cbb38453a5824b801f7d5c628969733bbaaad777aa1a",
+  "reviewer_agent": "/root",
+  "reviewer_session": "<SESSION_ID>",
+  "scope": "Narrow exact four-horizon source identity compatibility and corresponding immutable pins; original scientific/guard behavior unchanged. Root independently inspected changes and executed full listed suites.",
+  "source_pins_verified": 169,
+  "tests_passed": 102
+}

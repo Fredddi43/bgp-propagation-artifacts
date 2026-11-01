@@ -1,0 +1,22 @@
+{
+ "M1": {
+  "chain_wait.py": "fdf2937c4635d9be8330565b90cbad84e8d0cd3bbe33781f8728dfa517a88d9a",
+  "delta_vs_reviewed": "wave-waiter-v3/wait.py b4751c05: same sacct/identity/one-shot/deadline machinery; JOB constants -> build/assemble/audit/finalize ids; terminal_state = finalize terminal OR upstream (assemble/any audit) terminal non-zero; build 0..63 must stay COMPLETED 0:0; wake text names the chain",
+  "test_chain_wait.py": "4f5b7aef4f43e797549dd1ddc5c920f3cd845f14b7285d7d60c115bf3d4b0b1a",
+  "tests": "8 pass",
+  "wait-request.TEMPLATE.json": "dd2656aadd802c4cc974222c0a647ff82abe315f91c4bc29163fa93d6602fcce"
+ },
+ "M2": {
+  "allow_lists": "supervision slot/intent/terminal exact shapes; construction-receipt: graphs, excluded_inputs, shard count, builder/adapter shas, gate false, manifest sha (path must be own development_manifest.json); audit done: kind, passed, index, count, plan sha, record_count, 2 flags; summary: SUMMARY_FIELDS (13 booleans + kind, candidate_history_k, policy, delta_s, events_checked, population_sha256, capacity_max_train_validation_nodes, events_sha256) + manifest/base_manifest/plan as sha only; slice_rule/builder_sources/shards never exported (counts only); any unexpected summary key refuses",
+  "capture-request.json": "ba668ebe87f342a070a920841ebc762e514746d5354b4827206d4fe333218b7d",
+  "census": "os.walk lstat counts/bytes per assembly, audit-0000..0031, audit-final; no names; <= 70k entries per root",
+  "chain_capture.py": "1a9ff71bd7480c84e9d09a30b0d5ee068dc26b4e3d1ac615e7cf5131ccc15779",
+  "test_chain_capture.py": "6d13b950889753913462bbbc68798565c807ccc94a064f9f8ff42b826a696049",
+  "tests": "4 pass (incl. no-leak: secret event ids/labels in records, manifest, slice_rule, builder_sources, events.jsonl never appear)"
+ },
+ "answers": "55ef audit-chain readiness 22dddd9a M1+M2; root ROOT-ASSIGN-H1-AUDIT-M1-M2-LOCAL",
+ "author": "f4d75bb1 (claude-opus-5-5, /root/opus_implementation)",
+ "execution_authorized": false,
+ "kind": "h1_audit_chain_m1_m2_review_ready_v1",
+ "run_order": "after through-64 accepted + root audit-chain authority + release: M1 waiter once; M2 capture once after terminal"
+}

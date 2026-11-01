@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "driver_sha256": "33011eeda7fd1843d79869435263a90cecf6974ae74d3149c595772b67225082",
+ "kind": "r1_v8_1_o1_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/driver-v8-1-o1",
+ "pins_sha256": "7e1a7d1f15ec9106386fc25ce5428b4bb3b4d08c66ff9b5837170b1a448736cc",
+ "requests": [
+  "independent CODEPASS review of driver v8.1 against o1-static-assessment T1-T7 / FM1-FM5",
+  "if passed: root decides whether the v8 assembly is rebuilt with the v8.1 driver (constants only) before any driver-bound record is issued; otherwise launch stays on D-1 bb7f7e00"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+  "data_reads": 0,
+  "kind": "h3_v35_retirement_review_ready",
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v35-retirement-proposal-20261025/prepare.py",
+      "sha256": "b33354417ec89868939407fe50c7c4c6b3ef952ffa1ea3e3e1902879a2053098"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v35-retirement-proposal-20261025/proposal.json",
+      "sha256": "bced95217613c0a3c16d7407f49ea3d60034d7a469baad88b5b87ff1c542391e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-v35-retirement-proposal-20261025/root-phase.TEMPLATE.json",
+      "sha256": "d1faa78b3f0fdc7f11bc0f5400846328aa86a45a0739e84d7f68c0d23fdfa05e"
+    }
+  ],
+  "remote_actions": 0,
+  "root_issued": false
+}

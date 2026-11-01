@@ -1,0 +1,65 @@
+{
+  "approval_claimed": false,
+  "author": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>",
+    "worker": "/root/opus_implementation"
+  },
+  "census_tool_sha256": "4229ec2cb74468497b1f17fd46668f42b393b5f1c9ca75b75ab9596d2e3a56e5",
+  "execution_authorized": false,
+  "execution_spec_sha256": "2233750ea0847b1034e6a7bf25e569026a72320bde866bf32e136fc1a7a238c5",
+  "files": {
+    ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47",
+    "REVIEW.md": "e75f0460c667d90202072cf7821e6caa04be09faef2a355b9e57ada83fb414aa",
+    "adapter-r2/adapter.py": "4f1d0e4a53cd0693ce72e2672927440a32dd2c0c3313104ee9c89b305293743a",
+    "adapter-r2/pins.json": "00d1391746b73d10b8f721343ecf681eba1ac471639c1033e016400ace7ad17a",
+    "adapter-r2/run_adapter.py": "33289bba1140662fb01485a45bc240f4c38bc5eaff38b253f10b63b77afd4fc2",
+    "adapter-r2/test_adapter.py": "768e33adb8e9ada3d95a0c29f4d948a1daa046cef59388ea069529103d1e845a",
+    "build_v11.py": "785e2031f004e9e05f05029b530c353812619ddc8aa0e6fb1390917956bdc001",
+    "census.py": "4229ec2cb74468497b1f17fd46668f42b393b5f1c9ca75b75ab9596d2e3a56e5",
+    "classd-host/phases.py": "72a6d837c24a86ce5e96320504b8f1bab13f03400cfaf97bb87c759c9feff793",
+    "classd-host/stage_code.py": "433ddff6415d9a6f815b199b3cfa30157dfa378b125610b8df331231031ca8fa",
+    "classd-host/test_host_phases.py": "2bbb635ec679178515f42f74b7505195b11b7dca9174c062a38b624d99b84842",
+    "d2-host-r2/d2.py": "e254fe79aa6614b924516d815fe4b68a211e6915cc8ce0d6ef4a75ca3b075878",
+    "d2-host-r2/test_d2.py": "3ce3c2a40617b40adeaeb05543ffefa6c172ecd40cdfcfbdd5af46019a2522ce",
+    "derived-metadata/ledger.json": "5575ebb3ad13b117ce02de2f342da321c3fa4c7b836b04be3df39766960e70c6",
+    "derived-metadata/seal.json": "1cad501a3fab90abc3f2eb8cd0f2ffd29f193c435e77c4ded27bc447d41e2b5c",
+    "derived-metadata/spec.json": "134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887",
+    "implementation-diff.json": "a6652d6c575a3dc40e6b243e226d54248e5e0132e2baf6f4b27fefa4cbf0eabc",
+    "implementation-pins.json": "72bef3d8a771175d96e7f0bfd141a452d077052e96e50d1f044d509a711874c0",
+    "k1-request.json": "eb151faa77d5764e27642765be505be04cee8bbb03d5cd8bbddbe86012e06dc4",
+    "k2c/extract_k2c.py": "5e08facba885f16919806736b771584e87b18a8e07a4345a18f999c2329797ce",
+    "k2c/request-k2c.json": "ab53829dac98f051729508f89c533137fceb6ac276c28dd501ca9ab27c6d86a5",
+    "k2c/test_k2c.py": "ded5d42ae6f3bb58d3075e7d5093b0ab628d0548e40cb36afc9ff8d8498697e4",
+    "requests.py": "bf23107e0781df8445ea7c338eacf5f27efeb6e4b2ae46d2539aa1605aa71688",
+    "test_capture.py": "85f83d1a1647da4872fd3941ad74ed1a8d4302936b288a95af2299808bc7367b",
+    "test_v11.py": "96b2554aa2cf99d511edd2373f3f22be8bbd66276fbabd299f4db5093cb1a50f",
+    "verifier-r2/pins.json": "79cb199fbd4c233fa052d9d3c5fb1c25ec8ce123714452d5a5850fb671ada752",
+    "verifier-r2/run_verify.py": "c02ecb9f0e4683aec3e7f8e5bc68b5d12934172ecf81c30d1fdb9dbd84f114d9",
+    "verifier-r2/test_verify.py": "44bb0e03d242a72975e2da53239465bad854e16e71e6c38be6ae468e5a110645",
+    "verifier-r2/verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf",
+    "vrun-host/test_vrun.py": "7ad5103cc724f67573ad6e22018ddd152cb1638457f7e94d1d62db213dbc5314",
+    "vrun-host/vrun.py": "2dee908be0134113917fae36de2376b70ec74c20fbd6822fd3a1a4930ffa7436"
+  },
+  "host_actions_performed": false,
+  "k1_request_sha256": "eb151faa77d5764e27642765be505be04cee8bbb03d5cd8bbddbe86012e06dc4",
+  "kind": "r1_v11_posteval_rebinding_review_ready_v1",
+  "predecessor": {
+    "v10_review": "codex-takeover-20261023/r1-v10-posteval-code-review.json",
+    "v10_review_ready_sha256": "fb023c7baad30e436c240d9056fdc7b8de1755107f4fb9bfc6bd7f20001d4414"
+  },
+  "protected_reads_performed": false,
+  "requested_review": [
+    "PASS_CODE_ONLY of the rebinding (exact delta vs v10)",
+    "independent K1 census approval accepted by census.py checked_approval, if PASS"
+  ],
+  "reviewer_expected": {
+    "model": "claude-opus-5-5",
+    "session": "<SESSION_ID>"
+  },
+  "supervisor_pid": 788181,
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q -p no:cacheprovider .agents/operations/r1-v11-posteval-20261024",
+    "passed": 282
+  }
+}

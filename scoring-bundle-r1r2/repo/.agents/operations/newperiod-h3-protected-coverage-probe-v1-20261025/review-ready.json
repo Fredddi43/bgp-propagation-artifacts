@@ -1,0 +1,19 @@
+{
+  "actual_refs_source": {
+    "path": "<REPO>/.agents/operations/newperiod-h1-protected-inputs-execution-20261025/protected-primary-refs.json",
+    "sha256": "11917ad7ce8c6b09fb9814ca4983c6c0906b415661e41d7b218083accbe0a5a4"
+  },
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "74e70ef4ef60190414fa81793925581f66d5faccbff064523c816e17a47b29b9",
+    "plan.json": "b17afde4ae28d34e3de6fde3fd377756305cdee86178985901acf98363d58bc8",
+    "probe.py": "f81ca233c614531e25f63d5578686c006593202968e0f8f225f7f01c4c55f1de",
+    "test-run.txt": "71808535af46fe626b2fea83bedf237f0912b36bb6b3a50d553c8d93e57f99a8",
+    "test_probe.py": "2777f2e41b96369b279398df825f50ec36114ddb86bb9a86a05e462bfe2b701a"
+  },
+  "kind": "h3_count_only_coverage_probe_review_ready_v1",
+  "protected_reads_performed": false,
+  "reviewer": "sol-h3t",
+  "tests_passed": 9
+}

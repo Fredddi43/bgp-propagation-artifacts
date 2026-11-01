@@ -1,0 +1,15 @@
+{
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "7e30df63593f38d31b9518301ebfc80789467c2317c2035af35f540dfdfe59bd",
+    "capture.py": "13d0706dfb23a2a1e4d370fb8e394165316a74f312b5ed2d0df17a1abf9d45c4",
+    "request.json": "01703de86ddec98762fa663064dc951b991c1f39d7dc3482944096c52dd623a4",
+    "test_capture.py": "19a8cf66a60994ccc48f196b2d5980c8d8aa6cd1b917f2a8d8eca49bf35a3fd1"
+  },
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q .agents/operations/newperiod-temporal-completion-capture-20261024/test_capture.py",
+    "passed": 8
+  }
+}

@@ -1,0 +1,7 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "subject":"cold-prefix backup 52477689 terminal metadata capture (task0 COMPLETED, 1-9 FAILED)",
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/review-ready.json","sha256":"339f050b503327c735233a3591333b0369b5933804dbb0220b4cd1fecab05af5"}},
+ "asks":["Review capture.py scope/bounds (exact emitter paths, receipts<=16KiB, sha-only manifests, stat-only temp archive, log head/tail 32KiB with token redaction, staged pins, sacct).","If PASS, issue an exact one-attempt approval naming output newperiod-storage-prefix25-terminal-20261024/capture-v1; I execute once, then route the capture with a failure diagnosis and recovery proposal."],
+ "not_requested":["retry","prune","source/archive/HF payload reads"],
+ "utc":"2026-10-24T07:58:16Z"}

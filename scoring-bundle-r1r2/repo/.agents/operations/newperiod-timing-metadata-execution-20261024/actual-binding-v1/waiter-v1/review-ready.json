@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root/deadline_audit",
+  "author_model": "codex",
+  "files": {
+    "wait.py": "02bb67e2c7953995492eb3c4cc4e4de29b1c393a1ed2557f7fe21fb59e86e745",
+    "test_wait.py": "2b39fb61dff8dda37545521daeba6fe1d660a45d4ae4c4abb0a4b6e57e407911",
+    "request.json": "6adb361fedf6a5ffcaf29e0c5759c986836d218d86d95936ba5d6a62505e0f67"
+  },
+  "scope": "Exact singleton52479250 scheduler-only terminal wake; inherited reviewed GRU watcher, only job/text/deadline changed. Root reviews/starts once; no retry or downstream authority.",
+  "execution_authorized": false
+}

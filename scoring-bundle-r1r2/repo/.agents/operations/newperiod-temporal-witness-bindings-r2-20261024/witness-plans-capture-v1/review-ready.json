@@ -1,0 +1,25 @@
+{
+  "actual_binding_capture": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-witness-bindings-r2-20261024/actual-binding-v1/execution-v1/stdout",
+    "sha256": "594f9d5fb3115ede60bd118381c7fcf42f062d34d94064daba86859adf344424"
+  },
+  "bounds": {
+    "per_file_bytes": 67108864,
+    "stderr_bytes": 65536,
+    "stdout_gzip_bytes": 33554432,
+    "total_bytes": 134217728,
+    "transport_seconds": 150
+  },
+  "delta": "Only exact ROOT path changed to actual temporal binder output; inherited metadata kind retained as transport schema, not claim core input_profile. Rawplan exactsamekeys; no references followed.",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "c1cff4e8391396e00671b5186d1c86d49bfbcf680ce0a8fda3dace3a88c56ffb",
+    "request.json": "d51da6e41c6f5b95bc147afc5d16503a5859160450fff092f5be71858fc42079",
+    "test_capture.py": "e92b6e9ee2e6708c5a02e257164bd764e09598ea96049b831145e22c5ac0416c"
+  },
+  "kind": "temporal_two_witness_plan_capture_path_delta_v1",
+  "source_predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-export-waves-20261024/witness-plans-capture-v1/capture.py",
+    "sha256": "6fd3019ce8b3710fd467421bfb1e44e28d27d06a3e5c7925c589125df968939c"
+  }
+}

@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_assembly_r2_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/v8-assembly-r2",
+ "pins_sha256": "d589b3103301059360bf430b13ea7d654d5f41c9533933efde5b5f72d191789d",
+ "requests": [
+  "code review of A1 check_u2 (masked prerequisites), A2 repin inventory (whole chain + exhaustive accounting), A3 failed_v7 tooling",
+  "decisions: launch.err byte-exact capture route for A3; whether the newperiod host stage must also gate on v8 terminal records; transition OPERATIONAL leaves for v8"
+ ]
+}

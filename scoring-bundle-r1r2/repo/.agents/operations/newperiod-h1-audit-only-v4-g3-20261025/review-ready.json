@@ -1,0 +1,25 @@
+{
+ "contents": {
+  "G3-COMMANDS.md": "exact stage / submit-held / read-held / snapshot+admit+release (300 s window) / waiter / capture sequence; records under newperiod-h1-audit-only-v4-execution-20261025",
+  "snapshot_space.py": "fresh df -> exact controller.storage_admission snapshot shape; tested against the v4 controller (required = reservation + floor); 2 tests",
+  "wait_v4.py": "M1 chain_wait fdf2937c successor via closed edits (build_wait_v4.py): job ids bound once from request.json, no build/assemble rows, audit array + finalize terminal logic unchanged; 7 tests"
+ },
+ "dir": "<REPO>/.agents/operations/newperiod-h1-audit-only-v4-g3-20261025",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "files": {
+  "G3-COMMANDS.md": "3ef1662b98025bf685f7eed76ba26fa4252412d86ecb68d7f7fd72c4b141a44e",
+  "build_wait_v4.py": "30b55763b951b5cdf98d6bc72392e07c1d1b880436119471191f9b6b996f8b87",
+  "snapshot_space.py": "4deb15c65b5caca1d48b1c56be3c83f7f5e32d581a02a4647abaa21528705056",
+  "test-run.txt": "4ce01714d1dea3a099ab9f7cf6354742e29f6c12ef5a24e7e4c1a47df5f08fe2",
+  "test_snapshot_space.py": "76bac453837ad4dc550abf41e0ade7b7b020ef5741d9189cdc6a1c488f628898",
+  "test_wait_v4.py": "5fe4b98ef797b7f291362567440dd54718b47b42d8f17903ba2d765a71a9f0da",
+  "wait_v4.py": "add9f894cc5f80a83a3ede1cf8d11dba26fab5282d78571e9bd9c1c84a573245"
+ },
+ "kind": "h1_v4_G3_execution_packet_review_ready_v1",
+ "notes": [
+  "The controller release path needs approval.admission_sha256 to equal the admission computed from a <= 300 s old snapshot. Root must issue release approval R inside that window, after the operator posts the admission sha. r3 avoided this via waves.py; v4 has no waves.",
+  "Stage approval S and its review text are root/55ef artifacts. The review must bind plan c3f372e3 (55ef: after G1+G2, both now answered)."
+ ],
+ "tests": "9 passed in 0.09s"
+}

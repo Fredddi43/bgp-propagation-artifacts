@@ -1,0 +1,18 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "base": {
+  "coverage.py": "1437dbf45f86316440377db8d5754462bcce058d3d1100cc397ba2b0d813ae44"
+ },
+ "delta": "2 lines: summary onset uses original eventset.py:72 rule first_observation if truthy else t0 (as history-r3 build_r3 summary_onset fix accepted by root/reviewer); still must equal adopted core onset; error must be None",
+ "files": {
+  "r2/coverage.py": "07540088f8e4f463ca468a598ea4245175194a6bb3b6673dc21a327c60dfbb0a",
+  "r2/test_coverage.py": "faf94a945aabf14b28a2d2e11de6a405c763fd41695f11300c80d2941f47669e"
+ },
+ "kind": "h3_coverage_reconcile_r2_supplement",
+ "tests": "13 passed (8 original + 5 fallback cases)",
+ "utc": "2026-10-24T08:34:33.509034+00:00",
+ "why": "staged dev summaries are not captured locally; a summary without first_observation would fail the whole reconcile exactly as history r2 52473649 failed. Dev staging receipt a7ed6ae8 (local capture newperiod-count-metadata-20261021) binds 14823 summary.json files individually."
+}

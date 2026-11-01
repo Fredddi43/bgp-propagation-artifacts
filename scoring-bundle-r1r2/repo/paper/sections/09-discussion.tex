@@ -1,0 +1,126 @@
+\section{Discussion and limitations}\label{sec:disc}
+
+\paragraph{What the AS sets measure.}
+An AS counts as reached when it appears on an anomalous path that a peer exports to a collector.
+Routes that no peer exports stay invisible.
+Five of the ten collectors are at European IXPs and one at IX.br, so routes seen only at other IXPs are missing.
+A path observation does not show the selected route or the forwarding state of its ASes, and a missing AS does not prove an outage.
+
+\paragraph{Labels come from identifiers.}
+The onset $t_0$ is the first observation at a collector, not the true start of an event.
+The leak identifier misses leaks whose path triple was already seen in the same month, and it inherits the errors of inferred AS relationships~\cite{gao2001relationships,luckie2013relationships,jin2019problink}.
+An adjacency that CAIDA does not list gets no relationship and is missed, and an outdated relationship type can create a false leak.
+
+Novelty restarts every calendar month, so a recurring triple looks new on the first day of each month.
+In 2025, the identifier date of \num{1174} of \num{8412} leaks is the first day of a month, against about 277 expected.
+Of the \num{1346} leaks with 200 or more ASes, 278 have such a date, and 106 of the \num{1116} after the onset rule of \Cref{sec:prop}.
+The onset rule removes 172 of these 278 leaks but 58 of the \num{1068} others, and R1 and R2 neither apply nor test it.
+Without such leaks, C2 moves toward SAGE with history in a descriptive revision analysis (\Cref{app:protocol}).
+% round 6 (layout, page limit): pointer to the paragraph "Month boundary", moved from sections/08-forecast.tex to sections/app-protocol.tex;
+%   month_boundary.json C2 all -> no_day1: R1 +0.0054 -> +0.0066 (30 s), +0.0022 -> +0.0037 (60 s); R2 +0.0003 -> +0.0013, -0.0042 -> -0.0012
+%   (both periods, both horizons). It removes first-of-month leaks, not the events that the onset rule removes, so it is not a test of that rule.
+% src (round 6, panel-r5 NEW-13 / panel-r6 S8; review-r6 W5 item 5, question 6): arithmetic on the counts of the src comment
+%   below (2025_leak/events.parquet): first-of-month 278 -> 106 kept, 172 removed = 61.9 %; other dates 1,346 - 278 = 1,068 -> 1,116 - 106 = 1,010
+%   kept, 58 removed = 5.4 %. R1/R2: src/bgbench/forecast_protocol.py records observation_lag_s in the manifests without a filter; only the slow
+%   regime filters observation_lag_s >= -60 (src/bgbench/baselines_eventset.py, curve_eventset.py). The audit sample shows such events directly:
+%   leak_audit.json proportions.volume_day1.descriptors.route_visible_from_lookback_start 20 of 30 (radar_day1 0, radar_other 1, volume_other 2).
+% src: paper/generated/onset_share_r1.json r1_cohort: observation_lag_s < -60 in 199 of the 3,543 R1 test events (manifest split == test joined to 2025_leak/events.parquet, exact cohort); R2 not computed because it needs the custodian event table, which is not read.
+The month restart may favour repeat leakers, on which native history gains more by point estimate in a post hoc split (\Cref{sec:forecast-r1}).
+% round 5 (panel-r5 NEW-4(c), NEW-16 / X2; domain B4, B7): "by point estimate in a post hoc split": the repeat-minus-first-seen native
+%   difference includes zero under leaker x day ([-0.0309, +0.0009]) and in R2. The pointer now goes to the onset rule (sec:prop): the 1,116
+%   events are 693 training and 423 test events, while sec:forecast-legacy prints 692 training events at 30 s (one has no 30-s input).
+% round 4 (T6, A2): "may favour" stays. paper/generated/leaker_split.json measures where the gains sit (native@30 R1: first-seen -0.0112,
+%   repeat -0.0260; class difference day blocks [-0.0236, -0.0062], leaker x day [-0.0309, +0.0009]), but no generated file crosses the
+%   leaker class with the first-of-month identifier date, so the month effect on repeat leakers itself is not measured.
+%   "recurring leakers" -> "repeat leakers" (one term, sections/08-forecast.tex "Repeat leakers").
+
+We did not measure the precision of the identifier.
+A revision audit of 120 R1 test leaks rates 95.7\,\% of the cohort relationship-consistent (\Cref{tab:leak-audit}).
+This class re-runs the relationship test of the identifier one month later, so it does not measure precision (\Cref{app:protocol}).
+% round 7: the sibling count (96 of 97) moved to app-protocol "Leak audit"; the independent-evidence sentence below replaces it here.
+Without CAIDA relationships, a Radar label with the same ASes or a short new route supports 71 of the 120 audited leaks.
+% src (round 7, review-r6 W1 item 1): leak_audit.json independent.sample_totals.supported 71 (I3 50, I5 21); rules in app-protocol "Leak audit".
+% src (round 7, review-r6 W1): paper/generated/leak_audit.json siblings.sample_totals.credible.independent 96, .sibling_only 1;
+%   snapshots 20250901..20251201 (siblings.snapshots). Limits (AS2Org misses AS3356~AS209; intent not shown) in app-protocol "Leak audit".
+Of the 60 audited volume-selected leaks, 10 have a changed or missing relationship and 11 are ambiguous.
+R1 and R2 therefore describe the leaks that the identifier finds, matched to Radar or selected by volume.
+% round 6 (panel-r6 NEW-2, NEW-9, W14 MADE_WORSE; review-r6 W1, item 1): the precision disclaimer of 2d0f7ef4 is restored; the class
+%   "credible" is renamed "relationship-consistent" (round 7: the generated header and rows also use the new names);
+%   scripts/paper_leak_audit.py gather() requires the event-month relationships to equal the identifier's classification, so the class re-runs the
+%   identifier's own test one month later. "bounded" (a third sense of bound) is dropped. For the page limit, the weighted Wilson limits (82--99 %)
+%   stay in tab:leak-audit, the 10-event sensitivity is its row "Without sampled likely FP", and the examples and the Radar-only strata are in
+%   sections/app-protocol.tex "Leak audit".
+% src (round 6): leak_audit.json cohort_estimate.weighted_by_stratum_size.credible 0.9571; proportions volume_day1 likely_false_positive 2 /
+%   ambiguous 11, volume_other likely_false_positive 8 / ambiguous 0 (10 likely false and 11 ambiguous of the 60 audited volume-selected leaks).
+% src (round 5, review-r5 W1, item 1; revision analysis, confirmatory false): paper/generated/leak_audit.json (scripts/paper_leak_audit.py,
+%   first commit b644cf6b 2026-10-31 17:47 UTC; sample paper/generated/leak_audit_sample.csv, 120 rows). strata population/sampled: radar_day1
+%   476/30, radar_other 2,968/30, volume_day1 65/30, volume_other 34/30 (cohort 3,543). cohort_estimate.weighted_by_stratum_size: credible 0.9571
+%   (wilson_weighted_bounds [0.8225, 0.9879]), likely_false_positive 0.0038 [0.0017, 0.1185], ambiguous 0.0391 [0.0098, 0.1731] (the stratum
+%   Wilson bounds with the same weights, "conservative descriptive bounds, not a joint 95 % interval"). proportions: radar_day1 and radar_other
+%   29 credible + 1 ambiguous (A1_radar_conflict); volume_day1 17 credible, 2 likely FP, 11 ambiguous (A2_preexisting_path: route visible from
+%   the look-back start, triples already new in the previous month); volume_other 22 credible, 8 likely FP (F1 5, F2 3).
+%   sensitivity.C2@30 all +0.005436 -> excluding_sampled_likely_fp +0.005467; native@30 -0.023669 -> -0.023380 (both |change| < 0.001; published
+%   values reproduced exactly). Round 6: the premise "We did not measure the precision of the identifier" is printed again (the audit does not
+%   measure precision against ground truth), and the selected-candidate reading opens the next paragraph.
+% Paragraph split (round 5): the audit and the catalogue checks form two paragraphs of at most six sentences.
+
+For 83.7\,\% of the matched 2024 leaks, our reconstructed prefix count equals that of Radar.
+The catalogues have known limits~\cite{grip,cloudflare2023hijack,liu2026}, so we use them to validate identifiers, not as ground truth.
+Leaks that last longer than ten minutes are 3\,\% of 2024 events and carry thousands of prefixes.
+Radar rarely labels them, so some may be policy changes, not leaks.
+% src: final analysis/nongraph/2024/097_radar_prefix_agreement (971 of 1,160); propagation-facts.json leak_long_identifier
+% src (round 4, panel-r4 NEW-9 / X2; author definition of 2026-10-31): data/corrected-release-20261016/eventset/2025_leak/events.parquet
+%   (sha256 72e8b135...7163, read-only on 2026-10-31): 8,412 usable leaks (error null); asns_final_2h >= 200: 1,346, of which 278 have identifier date
+%   event_id[6:8] == '01'; of these, observation_lag_s >= -60 (observed onset at most 60 s before the identifier, the onset rule of sec:prop):
+%   1,116 events (693 train + 423 test splits), 106 with a first-of-month identifier date. 1,116 = forecast-facts.json
+%   nongraph/2025/062_prefix_floor_boundary_v2 prefix_floor_summary.json large_leaks_ge200.events (test 423). The round-4 reviewer's 278 of 1,346 is
+%   the population without the onset rule; both are printed now. Expected at uniform dates: 1,346 x 12/365 = 44 and 1,116 x 12/365 = 37.
+%   "start on" -> identifier date; "This favours" -> "This may favour" (round-4 T6: no recurrence analysis yet).
+
+\paragraph{Onset rules decide class comparisons.}
+For valid and unknown origins, the first observation often marks an earlier, partial presence of the origin (\Cref{sec:prop}).
+A comparison of early visibility between classes therefore needs an onset rule that neither differs by class nor selects by class.
+% layout (round 5, page limit): "The first observation of a new origin is a natural onset, but its meaning differs by class" is folded into
+%   the next sentence; sections/05-propagation.tex "Where the onset falls" gives the lags.
+Our near-onset rule keeps different shares of each class, and a per-session clock as in \Cref{sec:recovery} exists only for the matched pairs.
+We therefore report a sensitivity to the event definition, not a class difference that the onset explains.
+In R1, 5.6\,\% of test events were first observed over 60\,s before the identifier.
+For R2 this share needs the custodian table, so we did not compute it.
+% src: sections/05-propagation.tex "Events with the onset near the change" (retention 84--94 % invalid, 28--46 % valid; fixed horizons only);
+%   docs/paper/camera-ready-20261030/reviews-20261030/RESPONSE-ROUND1.md (re-anchoring t0 for all events not possible); round-2 review W1.
+
+\paragraph{Selection shapes the RPKI classes.}
+The label-free stratum removes the catalogue selection from invalid events only (\Cref{sec:prop}).
+No similar stratum exists for valid and unknown origins, so we cannot remove it from those classes.
+% layout (round 5, page limit): "Catalogues label invalid events far more often than valid ones, and the label-free stratum shows that this
+%   selection raises the persistence floor of invalid events" is shortened; sections/05-propagation.tex "The catalogue shapes the invalid class"
+%   gives the labelled shares (96--99 % against 10--36 %) and the floors.
+% the frontier and RoVista-share caveats stay in sections 4 and 5 (consistency check, not evidence that a given AS filters); removed here for the page limit.
+
+\paragraph{What the forecasts learn.}
+The target sets hold ASes on paths to collector peers, so they can reflect these peers and their upstreams more than the wider topology.
+A history of past events captures these recurring ASes, which can explain why it is hard to beat.
+In a post hoc R1 analysis on reconstructed inputs, the same-leaker-first ranking adds 0.073 AP to it (\Cref{sec:forecast-r1}).
+We did not separate forecasts of recurring ASes from forecasts of other ASes (\Cref{app:protocol}).
+% src: paper/generated/leaker_split.json R1.same_leaker_baseline["30"].released_inputs.contrasts.same_leaker_then_history_minus_online_history_native
+%   .ap.all 0.072939 (sections/08-forecast.tex "Repeat leakers"; post hoc, R1 only).
+
+Every forecast uses an oracle trigger, the observed onset, so we do not show that a deployed detector could issue the forecast in time.
+At 30\,s, 27 to 30\,\% of the first ten ranked ASes join (\Cref{tab:set-errors}).
+Such a list could help an operator warn these ASes first, but we did not test this use.
+% src (round 7, criterion M23(c)): set_errors_r2.tex P@10 at 30 s: R1 0.270-0.271, R2 0.271-0.295 (SAGE with history, online history
+%   mean/median/native).
+This works only if a detector fires within seconds of the onset.
+% layout (round 5, page limit): "For the top ten, the native candidates of history add nothing" left; sections/08-forecast.tex "Secondary metrics" keeps it.
+% src (round 4, NEW-5): paper/generated/set_errors_r2.json p_at_10_native_contrasts online_history_native_minus_online_history at 30 s:
+%   R1 -0.0002 [-0.0013, +0.0011], R2 -0.0041 [-0.0070, -0.0012] (sections/08-forecast.tex "Secondary metrics", sections/app-protocol.tex).
+% removed for the page limit (round-2 revision): a speculative sentence on graph models with a true-onset trigger or more collectors.
+
+\paragraph{Event classes not covered.}
+Link failures need last-seen times per edge, which our retained tables do not hold.
+Our identifier compares the origins of the same prefix, so it misses a new more-specific prefix that no peer announced before.
+% src (round 5, review-r5 W4 / item 4, panel-r5 W6(a)): src/bgbench/prefix_events.py origin_changes (an announcement whose origin
+%   differs from the previous origin of the same peer and the same prefix; prev_origin = shift over (peer_ip, prefix)). An already observed
+%   more-specific prefix can still have an origin change, so sub-prefix events are not all excluded.
+Forged-origin hijacks keep the legitimate origin and have no label source, and DFOH~\cite{holterbach2024dfoh} would be the external check.
+% DFOH detects forged-origin hijacks (refs.bib title "A System to Detect Forged-Origin BGP Hijacks"); round-3 review NEW-16 / R2 C10.

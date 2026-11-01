@@ -1,0 +1,13 @@
+{
+  "actual_request_pending": true,
+  "files": {
+    "test_wait.py": "07e10eee63285eeda922a64539f1449a0040acc2b3d19f724aa9a2cdc2bf92b3",
+    "wait.py": "4c189a69560ed4f5ea05c79636abbb3e2f77d0af1cf5847c401915a7eeef5bfd"
+  },
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/r1-parallel-execution-v10-20261023/waiter/wait.py",
+    "sha256": "e02587342aaf3c18768d354228ffbb646ea8aacdd6a285363f0ee132c7435f31"
+  },
+  "scope": "Only fixed corewitness launched.json/execution-exit.json <=4KiB each; exact actual supervisor/spec/launch hashes required later. Root+message-only substitution from reviewedv10 waiter. No source/payload reads or mutation.",
+  "start_authorized": false
+}

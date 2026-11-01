@@ -1,0 +1,13 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_v8_postprep_resolved_tree_review_ready",
+ "pins_path": ".agents/operations/r1-critical-path-speedup-20261022/v8-postprep-resolved/pins.json",
+ "pins_sha256": "ef2febff153b38cd11f63a76fdefde1ec6d053af527acb582fc71abdbdd4b544",
+ "request": [
+  "resolved-tree delta check (marker text only + the 8 copied bytes)",
+  "then, if sound, an exact once-only stage_b8 transport approval (scope r1-b8-evidence-transport-v1) binding the resolved stage_b8.py sha and DEST r1-b8-evidence-v8-20261022"
+ ],
+ "reviewer_session": "<SESSION_ID>",
+ "stage_b8_resolved_sha256": "d2143c957833d05e89804c5923f46f2529b40a276726de1ae81e66f5dd3b83d7"
+}

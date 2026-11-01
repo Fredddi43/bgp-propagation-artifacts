@@ -1,0 +1,28 @@
+{
+  "actual_execution_performed": false,
+  "admission": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-development-launch-20261024/first-wave-release-v1/admission-candidate.json",
+    "sha256": "e2315c6725a17cbbed5ca9328da91e9a5e4eb586a004a8f3fc698a8555919018"
+  },
+  "admission_canonical_sha256": "e2315c6725a17cbbed5ca9328da91e9a5e4eb586a004a8f3fc698a8555919018",
+  "approval_schema": "Original controller.authority(...,release=True), exact plan/files/resources/storage, admitted_groups and admission_sha256. Review must explicitly limit actual first wave while preserving full campaign identities; no retries/fits/predictions/protected/score/input_gate issuance. Original complete immutable binding is installed only with root exact wave authority.",
+  "author_worker": "/root/deadline_audit",
+  "kind": "timing_actual_initial_wave_execution_review_request_v1",
+  "plan": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-development-launch-20261024/actual-candidate-v2/package/plan.json",
+    "sha256": "7c9007150375c53610c4ae81051576574e3940861b890ce43bf6a18da33b4d2d"
+  },
+  "prior_operation_approval": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-development-launch-20261024/stage-proposal-v1/execution-approval.json",
+    "sha256": "ac30e9d02e3b1f9d056ebf69a22a68d7e20602e4d42d936213b956a43ac506c9"
+  },
+  "remote_plan": {
+    "path": "<FORECAST_ROOT>/newperiod-development-v1/sensitivity-parallel-v1/controls/timing-d10__timing-d300__timing-d5__timing-d900/plan.json",
+    "sha256": "7c9007150375c53610c4ae81051576574e3940861b890ce43bf6a18da33b4d2d"
+  },
+  "requested_initial_release": "Only timing-d10 build52480019 indices0..15; all other255build tasks and all downstream phases remain held. Preserve original full64 per horizon, four horizons,16concurrentwriters and all audits. Whole652GiBcampaign not admitted. Root issues exact wave authority and fresh474GiB check separately.",
+  "waves_source": {
+    "path": "<REPO>/.agents/operations/newperiod-timing-development-launch-20261024/waves.py",
+    "sha256": "fe1d54c53a388a22655ff2dbd6dcf29dca51a1286362ddb8c93b06e2e0adb0c1"
+  }
+}

@@ -1,0 +1,46 @@
+INDEPENDENT FINDING: vrun job 52473761 failure (diagnostic a1fbb93e, output ae38706c, result 51e77d8e)
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review.
+
+Facts from the diagnostic:
+  - Staged verifier code re-hash OK: pins.json, run_verify.py and verify_r1.py all OK.
+  - Traceback: run_verify.verify -> verify_r1.integrity line 623, KeyError 'population_sha256'.
+  - DEST/out: plan.json (2,065,679 B, mode 644, mtime 1792810963 = 03:02:43Z, the single D0 run) and the Slurm log
+    (1348 B). No verify-r1.json, so no findings were produced.
+
+Root cause, a verifier defect, not a data or evaluation defect:
+  - integrity() B4 compares population_sha256(per-event ids) with seal['cells'][id]['population_sha256'] for EVERY
+    scored cell.
+  - In the v11 seal (1cad501a, equal to v7/v8 for cells), 22 committed cells carry no population_sha256: the TSFM
+    finals, payload curve_npz, families tsfm-zeroshot-test-v6b (12) and chronos-adapted-test-v6b (10).
+  - Custody (forecast_retrospective_custody.py:840-856) commits them with population_events = R1_EVENTS (3543) and
+    partition_sha256, but no population_sha256.
+  - Count cells (:915-926) carry population_sha256 = R1_POPULATION_SHA256 f5f212ba with the same population_events.
+  - The seal-level r1_event_ids_sha256 is f5f212ba.
+  - 88 other committed cells legitimately carry subset populations (not f5f212ba). The 90 failed cells are not
+    scored.
+  - verify_r1.py was carried byte-identical from v8; the verifier had never run before. REVIEWER MISS, recorded:
+    no earlier review exercised integrity() on the real seal.
+
+Acceptable resolution (author implements; reviewer reviews), smallest change, no weakening:
+  R1 verify_r1 B4: for a committed cell WITHOUT population_sha256, require ALL of:
+       * cell['population_events'] == len(ids);
+       * population_sha256(ids) == seal['r1_event_ids_sha256'];
+       * cell['payload'] == 'curve_npz'.
+     Cells WITH the key keep the existing exact check. Any other missing-key case still fails as a finding or
+     refusal. Never skip B4.
+  R2 Tests on the REAL v11 seal metadata (local derived-metadata):
+       * B4 passes for all 1044 keyed cells with synthetic matching ids;
+       * B4 passes for the 22 curve cells with 3543 R1 ids;
+       * mutations are caught: a wrong count, a wrong id set, a non-curve keyless cell.
+     Plus the inherited verifier tests.
+  R3 Code path:
+       * verify_r1.py changes, so verifier pins change.
+       * The transported DEST r1-posteval-classd-v11-20261024 is immutable (0444; stage_code asserts absence), so
+         the new verifier needs a NEW DEST, e.g. a verifier-only r1-posteval-verifier-v11-r2-20261024, plus
+         vrun-r2 bound to it.
+       * Keep the D0/D1/D2 path on the existing DEST unchanged: the adapter does not call integrity(), and D0 has
+         already run there. Do not cascade adapter changes unless strictly required; if they are required, explain.
+       * The existing reviewed numeric functions in verify_r1 stay byte-identical (AST check).
+  R4 Then: exact transport approval for the new DEST, readback, and an exact vrun-r2 approval (same 174G/12h/4 CPU
+     unless re-justified), once. No resubmission under ca215b27.
+No approval is issued by this finding.

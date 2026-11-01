@@ -1,0 +1,11 @@
+# Core52518118 phase B operator successor (source only)
+
+Scientific97-file stage, wrapper ba4021aa, packet339f3f0f and producerb8265789 are unchanged. Exact existing held job only, no staging/submission. Original upload/readback/df/release/terminal loop preserved; stronger held owner/singleton/placement checks added. Fixed sibling actual dir is the atomic once lock before any remote call, followed by an exclusive consumed marker. A different --records cannot bypass it. Source package receives no execution records.
+
+Before control upload, held query, df, release and capture: rescan all six current/old control directories, reject unhandled stop filenames and newer issued joint phases, stat only canonical <USER> custody log (+64MiB<2GiB), fresh models/results joint minima, then rescan again immediately before action. Exact current2GiB core_calibration row required. Scan acknowledges use existing owner-managed handled list; never add active timing stop merely to unblock an unrelated actor without scope handling.
+
+Exact immutable wrapper.authority is called locally on actual plan plus signed approval and exact review bytes before consumption/network. Source files all verified, producer and execution reviewer identities must match codex,/root/sol-h3t2. Root binds all docs. No live approval is fabricated. Template remains false with absent independent execution artifacts; current joint phase binding must be finalized after review.
+
+Capture reads ONLY exact canonical execute.stdout <=64KiB, validates strict top-level and publication/completion schemas,40rules, producer/wrapper and exact plan/approval refs, and exports publication/completion hashes and fixed metadata. It never opens stderr contents: lstat metadata only. Parse/size/schema failures emit one static category, no raw values/exception text. It reads no calibration artifact content, thresholds, labels or predictions. Actual content acceptance/freezing remains independent.
+
+12synthetic tests PASS0.37s: real wrapper acceptance/negative approval, fixed sibling/partial-consumption replay refusal, genuine phase_b flow with fake transports proving one upload/release/capture and no package writes, real held metadata plus owner/array/node mutations, bounded capture including private-text/oversize/changedrefs/wrongcounts and empty stdout. No remote or scientific data reads.

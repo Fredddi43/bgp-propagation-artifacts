@@ -1,0 +1,23 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author": "/root",
+  "author_model": "codex",
+  "files": {
+    "REVIEW.md": "0275dc4a37b8d62c7331a88e19e52e2379c7067e370b6893bccdcde805d58d16",
+    "helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "kernel.py": "5bf4f721b552743aa5634363582f9fe4fdcab02422ae86d89e6fce9f00e81e0d",
+    "original_access.py": "96d89191e7c0d69b40e466da4da5129713d4f1e12e9115f408beb3b3d0035806",
+    "original_adapt.py": "540345344cf816e81398854c8e64320827854de5130f88b481a92ed325eb204a",
+    "original_common.py": "dd1503f5342fe89ba266e559409b963dcf6fd5b66c35b301bf1cbf37252db737",
+    "original_counts.py": "356c0f5b5abe88cce01cf04a7de71b6547d50b7cf9b30ddfd797542103da9745",
+    "original_custody.py": "a462576977e52e534f8e09787df29501ed5a0de178f216ae726a7be51f5c0f06",
+    "original_tsfm.py": "96ffc8979cd037a26c8ab9a0358c750eb4776d2e2ef0cb27f43b1ba1a5d515d5",
+    "pins.json": "a379dc696b9c2a5885162786de7f233c3b0b8d35ecf116bb98617aed8b14b3de",
+    "runner.py": "8a6335d0d71c1878c34c1c855a46cc0b385420f0c5f6d69401d3781facd67f94",
+    "test_count.py": "fdb6ca3fa558b6cff9b55fc79f6e2cab49330f208b634981b2c8b677af8242de"
+  },
+  "kind": "newperiod_count_inference_code_candidate_v1",
+  "retained_cells": 34,
+  "tests_passed": 63
+}

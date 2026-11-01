@@ -1,0 +1,10 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "probe.py": "8ccefb67c42eba656c845b42c8c3c64ad5041466812806eac75df51ea77c2df1",
+    "request.json": "a58590df2a93672e9072f1947bb0139a5b54ae4bf0bcd9e631876e995a2325d5",
+    "test_probe.py": "99b4174e3698fada68d9e2ae16eba5b1c770ec1dab95faf7e59bc47df2743ce0"
+  },
+  "kind": "origin_acquisition_metadata_review_ready_v1",
+  "tests_passed": 6
+}

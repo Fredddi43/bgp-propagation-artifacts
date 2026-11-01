@@ -1,0 +1,23 @@
+{
+  "assessment": "Exact source transport specialization to reviewed input-audit producer, all source pins checked. Eleven genuine refs, only allowed binding/status fields vary; original independent approval predicate invoked unchanged; exclusive bounded tar and one held CPU4/128GiB6h job, no release/subprocess inbuilder. Source staging check removed because input spec has no staging_receipt field; original input requirements retained.",
+  "conditions": [
+    "Require actual successful source-audit four outputrefs and independently reviewed actual resources.",
+    "Actual original eligible approval, transport review, held verification and fresh jointstorage needed before release; no newresources reserved bycodepass."
+  ],
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "f4b9cf6876d71004f962f39bb2e2c9a4506bfd115f2ab9078ffa215a10cf2365",
+    "build.py": "63f92019c7b07fed0cf15c5708b7ec36fb1571af3dc8d8ddbd2ff24f518cdd20",
+    "source-pins.json": "bd2e6646c11ced7471badc45d2bb4a95662569dc112788661df813010020f81c",
+    "test_build.py": "5c27e7f406aa485f4beabdd6b289262e3d9ebbda650c387d401441024807e1d9"
+  },
+  "passed": true,
+  "retry_authorized": false,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "source_file_count": 162,
+  "tests": "12testsPASS0.83s",
+  "utc": "2026-10-24T07:34:28.807448+00:00",
+  "verdict": "CODE_ONLY"
+}

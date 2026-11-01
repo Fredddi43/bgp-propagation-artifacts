@@ -1,0 +1,9 @@
+H1 metadata publication operational recovery candidate, no actual execution authority.
+
+The preserved v1 worker failed before the publication kernel: exact stderr errno 27 (EFBIG), while the shared append-only custody log was 880643653 bytes and the worker set an absolute 536870912-byte RLIMIT_FSIZE for every file. Evidence is the reviewed errno-stat-v1 capture under the original actual-binding-v1. The original source, metadata, draft/population and failed attempt remain intact.
+
+This sibling uses a fresh h1-metadata-publication-v2 namespace. It installs a finite file-size selector before the first worker log append. The exact existing canonical regular shared log may be opened only for append, retaining its inode and a 2 GiB ceiling; aliases, truncation, read/write modes and unbound descriptors refuse. Every new output write-open reinstates the original per-file soft OS cap (production 512 MiB); the unchanged original Budget retains its 2 GiB cumulative reservation and final reconciliation. The fixed single-threaded JSON metadata kernel closes its log appends before opening output files. No log content is read, truncated or rotated. Kernel, reader, original supervisor/runtime verifier and scientific source bytes are unchanged.
+
+Validation: genuine isolated staged original draft and dual publication guards pass with a preexisting 9 MiB log and an 8 MiB output limit; ordinary small-log fixtures also pass. Separate actual OS subprocess tests prove append succeeds above output cap while output growth fails at the original cap, and log aliases/nonappend/unattributed descriptors refuse. These are local synthetic tests only.
+
+Actual recovery requires exact independent code review, fresh namespace/draft-root and eligible publication binding, resource/execution authority, original preflight and one new held job. No automatic retry is authorized.

@@ -1,0 +1,20 @@
+{
+  "actual_execution_authorized": false,
+  "actual_protected_reads": false,
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "599cc9e59aecf20741a6be7e98bf5d3d677ea83e423d1d1e61f2076b8c07b34b",
+    "identify.py": "595dd3818e1539c80035fd98d2d1f3a5f4fa3f1ad53500c51a1e77f7938aa8d2",
+    "source-pins.json": "8f990ec9b34ebb8681fb4882e686e5865e14ce9cbf1c87564ab1f05e657d9263",
+    "test_identify.py": "ac57716717cca689aebb0771e0db5b797e7ae8a8489edcea09188f98c51361e2"
+  },
+  "kind": "newperiod_origin_identification_preparation_v1",
+  "scientific_amendment_acceptance_pending": true,
+  "tests": {
+    "passed": 15,
+    "polars": "1.44.1",
+    "python": "/tmp/np-hostver-venv/bin/python",
+    "seconds": 3.33
+  }
+}

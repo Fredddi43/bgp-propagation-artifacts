@@ -1,0 +1,56 @@
+{
+ "actual_resource_job_bound_now": false,
+ "assignment": {
+  "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-ASSIGN-CORE-V3-AND-CORRECTIVE.json",
+  "sha256": "c6b0923a59e4fd4923c4b0d91f369adbf51b753e48c8316cabd7c91339ce2628"
+ },
+ "author_session": "<SESSION_ID>",
+ "author_worker": "astra-final",
+ "cluster_actions": 0,
+ "derivation": {
+  "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-source-astra-v1-20261025/source-derivation.json",
+  "sha256": "54144d290591be7bb251efa8d01681e84da121f541b41ae09fcc14c07ff53caf"
+ },
+ "execution_approval_template": {
+  "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-source-astra-v1-20261025/execution-approval.TEMPLATE.json",
+  "sha256": "290afff805d22c71a352c402088124133fc2ac4ae85e8a01e6ed7a46684afd45"
+ },
+ "execution_authorized": false,
+ "execution_requested": false,
+ "kind": "AUTHOR_CORE_CALIBRATION_PRELOAD_SOURCE_REVIEW_ONLY",
+ "plan_template": {
+  "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-source-astra-v1-20261025/plan.TEMPLATE.json",
+  "sha256": "584bc6eb957260fe92a3be6fc555a1cf12eb7b8c37a1f4ef7f52f735d1f4f021"
+ },
+ "producer_approval_bound_now": false,
+ "producer_approval_template": {
+  "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-source-astra-v1-20261025/producer-approval.TEMPLATE.json",
+  "sha256": "e444470e0fca0203cbe5cd27945212390ea66b82a94f30551ef216fb6a80ac7f"
+ },
+ "prospective_layout": {
+  "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-source-astra-v1-20261025/layout.PROSPECTIVE.json",
+  "sha256": "019993212757526d82d24ab065b8c21a050b4ad5689db4d249c431735e6f13bc"
+ },
+ "protected_payload_reads": 0,
+ "remaining_gates": [
+  "Exact synthetic v3 source review, root once run, and independent actual acceptance; local controlled mechanism is not historical cluster cause proof.",
+  "Independent review of this exact source closure; source-only PASS must not be used as execution approval.",
+  "Fresh separately reviewed stage/held-job/execution/capture operators in sibling records, new resource admission/current phase, custody-log stat-only 2GiB guard and64MiB margin, bounded output/log transport.",
+  "Fresh remote namespaces verified absent; original job52518118/source/control/output and all consumed authorities preserved.",
+  "Actual held job and source/producer/plan/review/approval canonical hashes bound with actual separate sol-h3t2 model/session identities.",
+  "Future outer operator must reject every author identity (astra-final/session01a17250-ee94-7722-a23c-ac634b6fb277 plus original astra-h3t/session55ef4bc5-9612-4ce8-95ed-1d890bd3a5a4 and root). Original inner checker is preserved and alone does not reject new author.",
+  "Fresh six-directory control snapshot immediately before each once operation, independent exact verdict, unconsumed ROOT once authority and minimal GO, real consumer positive check, root detached launch.",
+  "Independent actual acceptance before any downstream use; validation calibration authorization never opens final labels/R2."
+ ],
+ "reviewer_worker": "sol-h3t2",
+ "scientific_scope": "All original40 immutable fitted models and40 calibration cells; no model fitting or prediction rerun; full400 downstream scope unchanged.",
+ "source_manifest": {
+  "path": "<REPO>/.agents/operations/newperiod-core-calibration-preload-source-astra-v1-20261025/source-manifest.json",
+  "sha256": "20216ac6624ff757cd23cb4f327eacf48d880dc0a04ef9c91981812973df6b9a"
+ },
+ "synthetic_proof_request": {
+  "path": "<REPO>/.agents/operations/newperiod-core-synthetic-proof-astra-v3-20261025/request.json",
+  "sha256": "46d7b8f1e56e7652d71061fca35a26557cd06fccefaffd9a47f65502c511117a"
+ },
+ "torch_imports": 0
+}

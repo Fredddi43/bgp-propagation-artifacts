@@ -1,0 +1,178 @@
+{
+  "author": "astra-g1a",
+  "control_snapshot": {
+    "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/control-snapshot.json",
+    "sha256": "0f3b19f90a91275ce750f87291fa274a32da5682216f79a7fd224d9a34d802ee"
+  },
+  "evidence": {
+    "AUTHOR-astra-storage2-WITHDRAWAL-OWNER-ROWS-DELTA-V2.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/AUTHOR-astra-storage2-WITHDRAWAL-OWNER-ROWS-DELTA-V2.json",
+      "sha256": "835ec4a16b101675d2d2b940f5e3ac30c8ff2aea736ca5449508c45b3be03bc8"
+    },
+    "REVIEWER-sol-g1a-ORIGIN-FIT-CALIBRATION-V1-PASS-PREPARATION.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-ORIGIN-FIT-CALIBRATION-V1-PASS-PREPARATION.json",
+      "sha256": "5403b82f95eb506b67a6845b7dc3777e0d1f31a3f2ec5289f04a5c526e695e7c"
+    },
+    "REVIEWER-sol-g1a-ORIGIN-PROJECTION-V1-PASS-PREPARATION.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-ORIGIN-PROJECTION-V1-PASS-PREPARATION.json",
+      "sha256": "441ac6606f544341df3febb9cdd8d6bb25fbb2ce47eaec8b445865eb0fb35ae4"
+    },
+    "REVIEWER-sol-g1a-ORIGIN-SCIENTIFIC-AUDIT-V3-ACTUAL-ACCEPTED.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-ORIGIN-SCIENTIFIC-AUDIT-V3-ACTUAL-ACCEPTED.json",
+      "sha256": "9e96888c709640d9822703c59a9c6d1dc5e9cd1ab16ae818a868795c88fbad05"
+    },
+    "REVIEWER-sol-g1a-OWN-ORIGIN-STAGE-ANCESTRY-ADMISSION-DELTA-V1-ACCEPTED.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-OWN-ORIGIN-STAGE-ANCESTRY-ADMISSION-DELTA-V1-ACCEPTED.json",
+      "sha256": "0e8c181d158e527972172d648ef550e19dafba15ee3229197fe2fdc06e695514"
+    },
+    "REVIEWER-sol-g1a-STABLE-SCIENTIFIC-AUDIT-V4-ACTUAL-ACCEPTED-V2.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-STABLE-SCIENTIFIC-AUDIT-V4-ACTUAL-ACCEPTED-V2.json",
+      "sha256": "8a7bf2141b05524ab35c0faab3275e81de106ddbd150aba2cb383d621a9b42a1"
+    },
+    "REVIEWER-sol-g1a-STABLE24-BINDINGS-V1-PASS-PREPARATION.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-STABLE24-BINDINGS-V1-PASS-PREPARATION.json",
+      "sha256": "ab599ab4198135b1060c2e9234674b64e2a43d6fad87c7bd71fe97c58117b9fb"
+    },
+    "ROOT-ASSIGNMENT-SOL-G1A-1845.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-ASSIGNMENT-SOL-G1A-1845.json",
+      "sha256": "2a93ebfb0c6df604dd5446dabdf6e53c8339413d09983e51661626b3026bcfda"
+    },
+    "ROOT-GO-CORE-REMOTE49-V36.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-GO-CORE-REMOTE49-V36.json",
+      "sha256": "7256b514be9ed34234b7ba9153dd3839c06dfcc4987b1c55dc3c7c8f47db6ca5"
+    },
+    "ROOT-H3-RESTRICTION-CLEARED-2000.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-H3-RESTRICTION-CLEARED-2000.json",
+      "sha256": "6948c6daa5781d389d379f7a4d710c91b195dbede50189169a77710be5db9771"
+    },
+    "ROOT-QUIET-WINDOW-2046.json": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-QUIET-WINDOW-2046.json",
+      "sha256": "0ce16f2f8cfc0952f72e5ee9a2ee54ecc7face7ffed58cd3a427051d7aaa8adf"
+    },
+    "origin-export-gate-custody.PENDING.json": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-downstream-astra-g1a-v1-20261026/output-v1/origin-export-gate-custody.PENDING.json",
+      "sha256": "db595338a0b05f295a3112587dba3c1193b81038a94b79386c8b91247ede94d2"
+    },
+    "origin-fit-calibration.PENDING.json": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-downstream-astra-g1a-v1-20261026/output-v1/origin-fit-calibration.PENDING.json",
+      "sha256": "c9e92aafd0e7e8858aa8fac5af466fad5772432b67307733ba98259fdb0770ec"
+    },
+    "origin-projection.PENDING.json": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-downstream-astra-g1a-v1-20261026/output-v1/origin-projection.PENDING.json",
+      "sha256": "bc399b1a807413fe95ce4375312a3fa0f8b3310c17b032f9e1bf62aa2b61f70d"
+    },
+    "origin_actual_stdout": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v3-20261026/origin/actual-once/stdout.json",
+      "sha256": "aca1863e72bc680548ef08c01c887c5585099773331086213d0f184847b60100"
+    },
+    "stable24-bindings.PENDING.json": {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-downstream-astra-g1a-v1-20261026/output-v1/stable24-bindings.PENDING.json",
+      "sha256": "e1dc00f541634c2d594b0273c8c53b3bbfc5a6f831528721d6dfa95045507fb8"
+    },
+    "stable_actual_stdout": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-scientific-audit-astra-g1a-v4-20261026/stable/actual-once/stdout.json",
+      "sha256": "5fb54133b38b616e38c28026bbd5722870c6b30a5a35a6ac2e2d0f54d081ba8f"
+    }
+  },
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/build_packets.py",
+      "sha256": "48d1201ea459b6ecc6c5acfe46138f23017ded0a5b9fcd8e2be215d934f94327"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/verify.py",
+      "sha256": "7ae9168aa32d435775d0e0ac169fc8c85f1a9aea876a5b905d860547522c0062"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/REVIEW.md",
+      "sha256": "ee9e3601e347a5255fa09f1c7ce6e9f674cd4be01be8e24c559efe26752c97ab"
+    }
+  ],
+  "full400_singleR2_preserved": true,
+  "kind": "G1A_CERTIFICATION_EXECUTION_SUCCESSORS_REVIEW_V1",
+  "packets": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/stable-certification.json",
+      "sha256": "2e6e75444cbc4784ef3efc7e83a6b83f672198b87fc0a4b5618bd69de70d3bc4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/stable-source32.execution.json",
+      "sha256": "0995eb5f84e96986ab27c43033d753e986375bdc24f6e8dd4d9e756e63079cda"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/stable-dual32.execution.json",
+      "sha256": "084e9983af4e8bca55c41565ed68ed154196bb3e4a79661ef770280a9e2d0b7e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/origin-projection.execution.json",
+      "sha256": "040271bf88b0f1b6b8591126be1d4e38d5e35a88dfbc50cdec4bde91ff0d2a9a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/origin-fit.execution.json",
+      "sha256": "6d97f466b9d4e7e3153dbafe0d7308a04c255306cb8ebe974e7cdb7c1107d8a1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1a-certification-execution-successors-v1-20261026/origin-calibration.execution.json",
+      "sha256": "8a2a32ed9157bf0c86ed35f42426143f5bd459aa66a49644d60899ddc67268a3"
+    }
+  ],
+  "preparation_only": true,
+  "reviewer": "sol-g1a",
+  "scientific_failure_assigned": false,
+  "scope": "Six blocked execution specifications, no concrete launch request or scientific acceptance",
+  "sources": {
+    "build.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/build.py",
+      "sha256": "d25e9737a666975705d73795567baf7fe668addbbf985afb1691a1f3cfbc0156"
+    },
+    "cohort.py": {
+      "path": "<REPO>/.agents/operations/newperiod-family-metadata-20261023/cohort.py",
+      "sha256": "ab43142596175ab5070696768f1740cabb91c79522b4e3d8640727f33940091c"
+    },
+    "derive.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/derive.py",
+      "sha256": "165d94308f70741a437f20f1bca9f8b9c265788d1ae9e6fb3a58a9d0be81791d"
+    },
+    "entry.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/entry.py",
+      "sha256": "33495d99b3f2fd0fd77ceca53a10e0263cf92d26ecb64bbc997d29f1a39394f6"
+    },
+    "family.py": {
+      "path": "<REPO>/.agents/operations/newperiod-family-development-r2-20261023/family.py",
+      "sha256": "aa7f633d9dfa26f3784d7c373dc2c24af38d10b304c9c36bb7e479013e9e501b"
+    },
+    "forecast_development.py": {
+      "path": "<REPO>/src/bgbench/forecast_development.py",
+      "sha256": "4061b531ca1c95ff12aa6edf0330f20d9159b3bde4b7ed9cad1d66276e270b3e"
+    },
+    "forecast_stable_peer.py": {
+      "path": "<REPO>/src/bgbench/forecast_stable_peer.py",
+      "sha256": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+    },
+    "forecast_train.py": {
+      "path": "<REPO>/src/bgbench/forecast_train.py",
+      "sha256": "ebf066a2e6c87aa429bc786a2281c97e5eb2c47f2809c967f7c351b946d6f9b3"
+    },
+    "graph_controller.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/graph_controller.py",
+      "sha256": "34e3e9d3839cf8ae3cd80e9ec9055d6635f2bf21cce5088d85e5ab21d428a380"
+    },
+    "graph_runner.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/graph_runner.py",
+      "sha256": "b5229c123af97f379d2971547e0d6f287c4377a954a2a1e42fb321168dacb575"
+    },
+    "original_stage.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/original_stage.py",
+      "sha256": "0ef0431f38692da836dc6aead4ecc43533a15a933ce777972fad4aa122b2d85d"
+    },
+    "source_runner.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/source_runner.py",
+      "sha256": "3ff9d243a9c792235bc10e5b381f26b895518b6e52738b3473b46a8b3c52763e"
+    },
+    "stage.py": {
+      "path": "<REPO>/.agents/operations/newperiod-stable-inputs-20261023/stage.py",
+      "sha256": "5c58c1a4b861ec079dfd98bcc316f51e089dbfb5607861d534548d38a1165358"
+    }
+  }
+}

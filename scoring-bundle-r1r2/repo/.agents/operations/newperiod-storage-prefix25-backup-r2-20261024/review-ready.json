@@ -1,0 +1,26 @@
+{
+  "kind": "prefix2025_backup_only_resource_successor_v2",
+  "author_worker": "/root",
+  "files": {
+    "job.sh": "d11d2eae9b4ed510d75f80338f8d09d6d3343c190cc83df962671cc322b0ca7e",
+    "request.json": "fb07336312837e5ad7a9927f318476eac70ed85a48445a059937832af440af1f",
+    "test_transport.py": "ec60d756be46d8e20bae2261adc5c87acf482c02c32a9cf283efd2ecddcdd7a0",
+    "transport.py": "6e1cdb8130017073261990d28e2bd143d7c401a2ab7d17e96612b7e8615aa8f0",
+    "archive.py": "6a397277494baa2c21b2a0334d1261edb21be634d339d811c80914af56b180fe",
+    "test_archive.py": "4669df10ff4966f2febb3fd4c8518b375cb1f0e8fc46f936fdc7c178c385bdd8",
+    "REVIEW.md": "631a157c4a4748cf7550e1d1473dcb42724fe415475aff7b41c689199c825a16"
+  },
+  "predecessor_ready_sha256": "6dcf30be3ee5276c4bb7143be2da6dc6a4e72db667b97d4d609b493b3b6501e5",
+  "prior_stage_failure": {
+    ".agents/operations/newperiod-storage-prefix25-backup-20261024/execution-v1/stage.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".agents/operations/newperiod-storage-prefix25-backup-20261024/execution-v1/intent.json": "d9218af88bf96d22e46eaec9116e8616b057f9f8d4d53006057d26451b395015",
+    ".agents/operations/newperiod-storage-prefix25-backup-20261024/execution-v1/stage.result.json": "64a1526b099d75eed9d9da41a5562dcc164b6ffddeb729dd371c4496bbcded05",
+    ".agents/operations/newperiod-storage-prefix25-backup-20261024/execution-v1/stage.stderr": "40cefbb8c2ce462661aef62b5ebc2636fdbd3baafe1e9ecabce295e77d2b1ca5"
+  },
+  "execution_authorized": false,
+  "prune_authorized": false,
+  "requires_reviewed_primary_four16_dispatch": true,
+  "models_admission_gib": 500,
+  "results_admission_gib": 52,
+  "utc": "2026-10-24T06:52:48.928129+00:00"
+}

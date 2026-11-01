@@ -1,0 +1,19 @@
+{
+ "approval_claimed": false,
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "frozen": "no edits while under review",
+ "kind": "newperiod_gate_launcher_review_ready_v1",
+ "pins": {
+  "path": ".agents/operations/newperiod-gate-launch-20261022/pins.json",
+  "sha256": "1c92db003b3a98c72cc93bf6d9bfd90bc2ecc12ea6e3b078a1c36c92fba1bd1c"
+ },
+ "requested": [
+  "code review of the launcher",
+  "acceptance of the two-phase design point (or choose the rejected alternative explicitly)"
+ ],
+ "review_md_sha256": "2b82b03c0c1e872ea676f88d38ce94299a2476674c8f30c5d8a5893d04edc503",
+ "reviewer_session": "<SESSION_ID>"
+}

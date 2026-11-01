@@ -1,0 +1,14 @@
+{
+  "condition": "Start once after independently approved actual master release and exact coordinator/no duplicate check; metadata-only wake is not export authority",
+  "files": {
+    "request.json": "23edff7cd3cd9515ed2b467fd4c7fda46f50493c9b4f46eb842669bbcd56fa77",
+    "test_wait.py": "2976168d8b66661085e2cfd97654e0fe7882782283d8e21d8f01422533869dae",
+    "wait.py": "42f6cdb2d6a547191fd973cb0f1fd59bb2827991151b808e888f57d4409d20e1"
+  },
+  "kind": "primary_two_master_waiter_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-primary-construction-four-waves-20261024/final-waiter-v1/wait.py",
+    "sha256": "2fa00ac8702c9cea979d822d8d1f8ee6ded230b6baeef546b19371d0ff70f5e9"
+  },
+  "start_authorized": false
+}

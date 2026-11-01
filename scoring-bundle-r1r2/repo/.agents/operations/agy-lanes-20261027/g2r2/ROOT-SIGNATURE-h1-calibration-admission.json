@@ -1,0 +1,10 @@
+{
+ "kind": "ROOT_SIGNATURE_H1_CALIBRATION_ADMISSION_V1",
+ "reviewer_model": "claude-sonnet-5-5",
+ "reviewer_worker": "/root/claude-sonnet-5-5-root",
+ "reviewer_session": "root-session",
+ "verdict": "PASS",
+ "attests": "root read qwen/q16-calibration-admission/CHECKLIST.md section A (A1-A5) and re-ran verify_admission_evidence.py: RESULT PASS (47 checks): H1 calibration publication bb5b8586 complete (20 rules, exact 23-file dir), producer b8fc3bc3 equals the runner's own pin, plan 2d5f2e5e, protected-input/slice equivalence reviewed with slice rule 0291d789, 20 bound arms' fit receipts complete without failed.json and equal to the frozen arms",
+ "scope": "newperiod-h1-calibration-output only; NOT the learned E1-E5 admission (E5 needs the published G1 freeze)",
+ "root_signoff_utc": "2026-10-27T09:16:13Z"
+}

@@ -1,0 +1,98 @@
+{
+  "artifacts": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/request.json",
+      "sha256": "2f2f655d9981e6e213ad4e3d0c3318223515117a67340242058e83455204d93d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/execution-review.TEMPLATE.json",
+      "sha256": "4fcb663ea8fbc9fa2ff79df534b1f95465842fddf25eb83d7c21d6a0141382ec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/root-once.TEMPLATE.json",
+      "sha256": "2ecd92263d04e763e498d235a672a95139bf2dd5aafbfa8908abbac95e03506a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/control-post-snapshot.TEMPLATE.json",
+      "sha256": "c2600f69ea3f065c1199c42596486bdd048cdb74fa41495ec3c7a530f6090616"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/verify_binding.py",
+      "sha256": "f301f7de0de88253a0f7e1695c85e3c0786e1ea06bfb3a8d5a4e60b3c8634a65"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/verification.json",
+      "sha256": "bb9f0168a7309cbce8cb925536ccc4b4cf4574e43f4d98c6a0f2142be3fd4a3d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/operating-admission.PROPOSAL.json",
+      "sha256": "48ad900634ee99d081848bd5ee61d42be3bb30f4d3f0f6302173317510f73b62"
+    }
+  ],
+  "author": "astra-final",
+  "binder": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v1-20261026/bind.py",
+    "sha256": "5c2ba0d3e99393883ceb7c7f2e4f9dbc06ccd2dd5acfed12004ec1bf56ffd0a4"
+  },
+  "current_context": [
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-final-CORE-LOCAL-METADATA-ONCE-V1-ACTUAL-ACCEPTED.json",
+      "sha256": "144e56983b81ba0f241685d880020df81190b273386bf4727f34878418a5a3d9"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-final-CORE-REMOTE-METADATA-ONCE-V1-PASS-PREPARATION.json",
+      "sha256": "b9e58ba5e6643170f9fd4dbec3ddcdb51a241f2f4677657d377da3d1c05aa61b"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-SEQUENCING-V37-AFTER-V36-ONCES-2009.json",
+      "sha256": "e18e016c3334ba0423abcd07154cea5d18e667365d099a61425bc441a2f2549b"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-H3-RESTRICTION-CLEARED-2000.json",
+      "sha256": "6948c6daa5781d389d379f7a4d710c91b195dbede50189169a77710be5db9771"
+    },
+    {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-ASSIGNMENT-STORAGE-SPLIT-2037.json",
+      "sha256": "6f3c3e0ef6b07e1c3ae5fa8a51d477b11dede82f4664ad52553cae4965e27e0c"
+    }
+  ],
+  "custody_appends": 0,
+  "execution_authorized": false,
+  "fresh_authority_requirements": "Independent exact execution PASS, root canonical once with attempt_limit integer1/current-phase/exclusive-capture acknowledgments/all forbidden flagsfalse; fresh exact eight-directory snapshot and unconsumed records immediately before single capture. No execution from this packet.",
+  "full_roles": 400,
+  "kind": "AUTHOR_EXACT_CORE_REMOTE_METADATA_V36_EXECUTION_REVIEW_REQUEST",
+  "local_acceptance": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-final-CORE-LOCAL-METADATA-ONCE-V1-ACTUAL-ACCEPTED.json",
+    "sha256": "144e56983b81ba0f241685d880020df81190b273386bf4727f34878418a5a3d9"
+  },
+  "local_actual": {
+    "path": "<REPO>/.agents/operations/newperiod-core-local-metadata-actual-astra-v1-20261026/core-local-metadata.json",
+    "sha256": "0293071d17aec3d17c5e839986c4bed6f5600285bbb9d06d72ba4e5fb299dd7b"
+  },
+  "operator": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v1-20261026/once.py",
+    "sha256": "c1038bd74a664b25af3bb471e1a5eb8d839e596971b33144d12ab58ee1e28e77"
+  },
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v36-20261025/root-joint-storage-phase-v36.json",
+    "sha256": "64b304bc82f78c3ebd9329caa3f34cab31ab881f8af3edf50463ca63c1b1bfd4"
+  },
+  "preserved_failure_chains": 54,
+  "remote_filesystem_writes": 0,
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v1-v36-20261026/request.json",
+    "sha256": "2f2f655d9981e6e213ad4e3d0c3318223515117a67340242058e83455204d93d"
+  },
+  "review_scope": "Exact generated request/source/phase/accepted-local binding, 49 metadata paths and modes, full40updated+10originalfrozen, rule provenance, explicit zero-write admission proposal and native runtime bounds. Source remains independently passed and immutable.",
+  "scientific_ready": false,
+  "single_capture_attempts": 1,
+  "source_preparation": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v1-20261026/review-ready.json",
+    "sha256": "540f2a43583d8ab3f2fe287119c4d2768fcc0861a202e81d5cde8d87829993ba"
+  },
+  "to": [
+    "root",
+    "sol-final"
+  ],
+  "utc": "2026-10-25T20:39:32.168855+00:00"
+}

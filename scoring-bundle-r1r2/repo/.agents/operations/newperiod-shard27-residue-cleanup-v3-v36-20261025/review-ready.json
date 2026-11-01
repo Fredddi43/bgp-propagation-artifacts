@@ -1,0 +1,97 @@
+{
+  "author": "astra-v28 queue",
+  "author_session": "<SESSION_ID>",
+  "c3_delta_review": {
+    "reason": "New source removes measured empty failed-v2 quarantine rather than retaining it, per ROOT queue. Original C3 pass does not authorize changed source. Review exact three-target closure/provenance and all new guards.",
+    "reviewer_session": "<SESSION_ID>",
+    "reviewer_worker": "sol-final",
+    "scope": "C3_retention_disjointness_shard27_cleanup_v3_v36"
+  },
+  "deletion_authorized": false,
+  "execution_authorized": false,
+  "full_review": {
+    "after": {
+      "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-h3t-V36-DESIGNATED-COMPOSITION-PASS-session<SESSION_ID>.json",
+      "sha256": "fe092b294fad83070aab1ec6d104970e832c611f7018ec9c824a546cbc6d45c1"
+    },
+    "reviewer_session": "<SESSION_ID>",
+    "reviewer_worker": "/root/sol-h3t",
+    "scope": "Exact new v36 source/operation/resources; accepted stat/COMPLETE/tenfiles/three-directory/quarantine binding; once/quiet-window/control/exclusivity/termination and retention gates."
+  },
+  "kind": "SHARD27_CLEANUP_V3_V36_FULL_AND_C3_DELTA_REVIEW",
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/REVIEW.md",
+      "sha256": "3c4601d9edb76fe58bb9481aabaab54dc39cac3bdeca406a5685b216364ad0b1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/c3-delta-review.FALSE-TEMPLATE.json",
+      "sha256": "72270c8f737956874192379b6d86efd4d3d36140b8eff0be8f8b00319d7c9f80"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/cleanup_remote.py",
+      "sha256": "9b4af6bf4b209f845827fa16b44ee0182e5ba3be0de352198dbcd918ba18b057"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/control-snapshot.FALSE-TEMPLATE.json",
+      "sha256": "45a3bf79133f95e7ae2c1bdfbc24c34ca265fc9c98848c829ab1a45d0b9b73f0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/operate_cleanup.py",
+      "sha256": "f125ff6ca38092a655d4c881abe0461f8c25b631c1fbc8a015e08fb239082002"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/operation-review.FALSE-TEMPLATE.json",
+      "sha256": "67809c0791ac1de8c96f2a3225923375af0e7315a7cdf3355ad059328ad16c2c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/predecessor-preservation.json",
+      "sha256": "56ff5f24ffb72b63aa90e51c7086d0ff438cd8d4392ddfa5552ec77b3393e6c8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/preflight.json",
+      "sha256": "a48f98a0ff34fc886ed8e4bfba9f0b14c19a495abded907c29bcd867e6d1176f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/preflight_actual.py",
+      "sha256": "92929906811511d7c84c7a4ad06efe5e127f4fc88405706fd89797e59d80f3f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/resource-proposal.json",
+      "sha256": "6f28a0699c5eab9ef8b38391d3cb1d3f1944cec66ac4038ecb2d16cdeb95358c"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/root-authority.FALSE-TEMPLATE.json",
+      "sha256": "432ba0ee19cf550501c5159d5138032c6d4e94552f04df444d1738c23681e795"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/source-binding.json",
+      "sha256": "3696675727686ed184ea9333d918e1843d0b718adec87539be6e04fe78a2e445"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/source-delta.diff",
+      "sha256": "872b047b677d1c059427bed065b9ad7ce2217cb1243f6a85cb09320b359f6ff4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/test_cleanup.py",
+      "sha256": "1389ec778c332e53a062bc7cc64ccee86db505f727957c6dcba84e6ec76a6131"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-shard27-residue-cleanup-v3-v36-20261025/tests.txt",
+      "sha256": "50c7152cf80c7ad00bfa60698fbf5ad4fdca67a87f35d9d0adbc31c5cd298be2"
+    }
+  ],
+  "remote_actions": 0,
+  "resource_retirement_authorized": false,
+  "self_approved": false,
+  "supersedes_execution_preparation_request": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/AUTHOR-astra-v28-CLEANUP-V3-EVIDENCE-BINDING-V1-REVIEW.json",
+    "sha256": "afeb894dc12f59711ab753617a4184ec04dc87d8bab48ef7b46a66616e315998"
+  },
+  "to": [
+    "root",
+    "sol-h3t",
+    "sol-final"
+  ],
+  "utc": "2026-10-25T16:41:14.962124+00:00"
+}

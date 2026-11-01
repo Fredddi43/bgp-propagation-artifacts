@@ -1,0 +1,69 @@
+{
+ "attempt_limit": 1,
+ "author_session_excluded": "<SESSION_ID>",
+ "automatic_retry_authorized": false,
+ "commands": [
+  ".venv/bin/python -I -B .agents/operations/r1-v11-posteval-20261024/vrun-fix-v1/vrun_r2.py submit --approval <this> --approval-sha256 <sha>",
+  "... queue-check (read-only)",
+  "... fetch-request --approval <this> --approval-sha256 <sha> (only after sacct COMPLETED 0:0)"
+ ],
+ "complete_sha256": "03d1c73ef8bfe07450392d31830342397c1fb30c0f265dd4780822a3ee1ac9cf",
+ "conditions": [
+  "one submit; job re-hashes the staged verifier code (sha256sum --strict) and refuses an existing out file",
+  "verify_r1 reads complete/report/per_event in place on the host and writes findings only to DEST/out/verify-r1.json",
+  "failure/timeout/OOM: preserve logs and records, stop; no retry or resource change without new review",
+  "the fetched verify-r1.json findings are independently assessed before any release/N decision; a failing verdict is reported, never worked around",
+  "the failed v1 job 52473761 records/logs stay preserved; this is a distinct reviewed run in DEST2, not a retry of v1"
+ ],
+ "inputs": {
+  "arm-spec": "<FORECAST_ROOT>/r1-analysis-arm-binding-v1-20261020/arm-spec.json",
+  "complete": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/complete.json",
+  "ledger": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/evaluation/ledger.json",
+  "manifest-d30": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d30.json",
+  "manifest-d60": "<FORECAST_ROOT>/occurrence-final-v1/manifests/retrospective-2025-v6-d60.json",
+  "per-event-dir": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/per_event",
+  "report": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/results/report.json",
+  "seal": "<FORECAST_ROOT>/occurrence-final-v1/custody/r1-access/r1-seal-134d74fb72dd8d4940adb52bb0bdc11d0f7948cfad0560324275d711a219f887.json",
+  "slice-rules": "<FORECAST_ROOT>/occurrence-final-v1/slice-rules/issue-time-slice-rule-v6b.json",
+  "spec": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/derived/spec.json"
+ },
+ "job_script_sha256": "657d47fa73281989fda91167335968e08a2d88bfb535fe7885a2df1dc3be1acf",
+ "kind": "r1_v11_verifier_run_approval_v2",
+ "label_read_authorized": false,
+ "manuscript_use_authorized": false,
+ "measured_bytes": 18195546666,
+ "n_or_2026_authorized": false,
+ "not_authorized": "label/prediction/tensor read, D2 rescoring, N admission, manuscript use, retry, resource change, a second submit",
+ "out": "<FORECAST_ROOT>/r1-posteval-vrun-v11-r2-20261024/out/verify-r1.json",
+ "passed": true,
+ "per_event_in_place_read_authorized": true,
+ "prediction_read_authorized": false,
+ "report_sha256": "049c7a9c433de1f4d03c4b5a3f7194316fc991f2c56e41ec64aac5c05b96339d",
+ "resources": {
+  "cpus": 4,
+  "mem": "174G",
+  "node_pin": null,
+  "partition": "cpu",
+  "requeue": false,
+  "time": "12:00:00"
+ },
+ "result_fetch_authorized": true,
+ "reviewer": "claude-opus-5-5",
+ "reviewer_session": "<SESSION_ID>",
+ "reviewer_worker": "/root/opus_review",
+ "scope": "r1-posteval-verifier-run-r2",
+ "supersedes": {
+  "failed_run": "job 52473761 under approval ca215b27 (preserved; finding 46cc418a)"
+ },
+ "tool_sha256": "82caae790ac8bffa5fa3ed112d18a0457847be68272610f1867c0757fdfb3d83",
+ "transport": {
+  "approval": "efde9bee1eae5852624111a61f6a44a5e79021d591e059e72c2cb80dfa4210eb",
+  "readback": "VALID (d0d1-capture-and-transport-assessment 287b1e58)",
+  "stage_complete_sha256": "82b192aadddcfae033c8621312e26836b3eb945ac80ee6da627001faec115ae5"
+ },
+ "verifier_code": {
+  "pins.json": "7c474f00f4b10cc10ee0e1efc573d1a8d535e323b688d246612ba35ef1333325",
+  "run_verify.py": "7392ef6f67563ae0e4906b83354e5f3d0ebdcd9c748403b5524876dea015ffe0",
+  "verify_r1.py": "5ed5229fe571a6a58c2274a34bbbd6bfa8fb20f53468672d59c0a4938bcd9ebf"
+ }
+}

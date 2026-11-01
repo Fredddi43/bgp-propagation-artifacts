@@ -1,0 +1,37 @@
+INDEPENDENT REVIEW: vrun-fix-v1 (ready ad1b66c1), d2-fix-v1 (ready b71e0410), and the D0/D1 fetch re-binding
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+vrun-fix-v1: PASS_CODE_ONLY. It meets resolution criteria R1-R4 of finding 46cc418a.
+  - Pins 10/10. An unpinned __pycache__ pyc left by the author's test run is not read by staging (non-blocking).
+  - vrun_fix.diff equals the real diff of 4 files:
+      * run_verify.py adds r1_population_cells(seal):
+          - asserts seal r1_event_ids_sha256 == R1_POPULATION_SHA256 (f5f212ba);
+          - maps ONLY committed retro_finals_v1 cells with population_events == 3543 and no population_sha256;
+          - refuses any other keyless committed cell;
+          - records the mapped ids in the output.
+        B4 then runs unchanged: an id-set sha equal to the full R1 population also implies the count.
+      * verify_r1.py is byte-identical (5ed5229f).
+      * pins.json is r2 (7c474f00).
+      * stage_vrun.py (cdaf65df) is stage_code with a verifier-only DEST2 r1-posteval-vrun-v11-r2-20261024 (3 files).
+      * vrun_r2.py (82caae79) is vrun with DEST2, the new code shas, scope r1-posteval-verifier-run-r2 and its own
+        transport record. Job script, memory, CPU and time are unchanged.
+  - My check of the real seal: exactly 22 keyless committed cells, all retro_finals_v1/curve_npz with
+    population_events 3543 (12 tsfm-zeroshot-test-v6b, 10 chronos-adapted-test-v6b). The 88 keyed subset-population
+    cells are untouched.
+  - Tests: test_vrun_fix 12 passed (isolated). The relocated verifier-r2/test_verify.py cannot collect from one
+    directory deeper (relative paths). It is byte-identical (44bb0e03) to the passing v11 copy, and verify_r1 is
+    unchanged, so this is non-blocking.
+  - The classd DEST and the D0/D1/D2 path are unchanged.
+  TRANSPORT APPROVED, T1 then T2 once: opus-vrun-r2-transport-approval-v11.json efde9bee (tool cdaf65df, DEST2).
+  The vrun_r2 run approval follows only after the actual T1/T2 readback and the routed job-script sha.
+
+d2-fix-v1: PASS_CODE_ONLY.
+  - Pins 5/5. d2_fix.diff equals the real diff.
+  - Only recorded() changes: the same d0-readback rule and 64-hex validation as phases_r2; `re` is imported.
+  - Tests: 3 passed (isolated).
+  - No D2 run approval yet: it waits for the D0/D1 capture and the explanation of D1 not_regular, then its actual
+    job script.
+
+D0/D1 fetch: re-bound to the author's actual request file d0d1-fix-v1/fetch-request-d0d1.json (bytes 7d2643c7,
+  identical): opus-d0d1-fetch-approval-v11-r2.json c7e1fab0. Output classd-host/evidence-d0d1.json.gz. Supersedes the
+  unused 4a2fd4e9 and the void draft 3f8addba; at most one capture under any of them.

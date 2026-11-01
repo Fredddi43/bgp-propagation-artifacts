@@ -1,0 +1,15 @@
+{
+  "automatic_retry_authorized": false,
+  "condition": "Once after successful independentlyapproved exactexport2 release and coordinatoridentity/no-duplicate checks.",
+  "files": {
+    "request.json": "c51aeefb12c7843b9b757f39e2a93c7e87ee4bce7e0cf73d4c2974c869561508",
+    "test_wait.py": "c29007c47dbf8f4635213dd3d1e6a0d89532e5f6166d68035df9eedb1e5b2df9",
+    "wait.py": "6a95e750ac3ab8d203cde54c93f4363b093f48b34304dd537a2871f94208e8b9"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Diff against reviewed export1 only exactjob52479037_2/message/deadline. Three tests independentlypass0.07s. No laterrelease/scientificauthority.",
+  "start_authorized": true
+}

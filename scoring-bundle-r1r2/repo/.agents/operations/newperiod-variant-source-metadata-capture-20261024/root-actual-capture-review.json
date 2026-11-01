@@ -1,0 +1,36 @@
+{
+  "automatic_retry_authorized": false,
+  "capture_sha256": "e0bf8c04c706e981a395b507c7ec28e9eeb9d8a4ea967552073fa4385c874790",
+  "files": [
+    {
+      "bytes": 267311482,
+      "local": "<REPO>/.agents/operations/newperiod-variant-source-metadata-capture-20261024/execution-v1/decoded/h3-event-source-coverage-v2.json",
+      "remote": {
+        "path": "<FORECAST_ROOT>/data-custodian/inventory/h3-event-source-coverage-v2.json",
+        "sha256": "3aa8b404c04a2da72d5893cedd51197edac95ec2d7a8ef14049735e27842c0e1"
+      }
+    },
+    {
+      "bytes": 66000120,
+      "local": "<REPO>/.agents/operations/newperiod-variant-source-metadata-capture-20261024/execution-v1/decoded/cohort.json",
+      "remote": {
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/timing-cohort-canonical-v1/cohort.json",
+        "sha256": "0deeb97d6e1be9a7d105d42fdff6b83f4fb7ff939050e79891dd1f53cf06f814"
+      }
+    },
+    {
+      "bytes": 1917,
+      "local": "<REPO>/.agents/operations/newperiod-variant-source-metadata-capture-20261024/execution-v1/decoded/commitment.json",
+      "remote": {
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/timing-cohort-canonical-v1/commitment.json",
+        "sha256": "8bd89c08705b5fdb41ba0ea9a6bbb4cb779babc512ebcc11f3a27cd5944ad073"
+      }
+    }
+  ],
+  "passed": true,
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scientific_reuse_authorized": false,
+  "scope": "Exact three immutable development metadata documents captured and byte hashes verified; no references followed. Old H3 source coverage not approved for revised2026onsets; timing adoption unchanged.",
+  "utc": "2026-10-24T07:46:51.369771+00:00"
+}

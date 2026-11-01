@@ -1,0 +1,7 @@
+{
+  "source_sha256": "7ef1d0eef06ed4725ad5919b07461b20d2a0d15a1143a6b8c97cd7c1c3f8580e",
+  "request_sha256": "e77d63bc6fd66a5fd7ef8bd15bcd499d0baf1a80d1c2d0e5b6788d3fd3f53c5c",
+  "original_source_sha256": "1ec664920200f06bb6ef00018f8cdc377699b8c3dee8a0d54ce52a66f87a7b82",
+  "delta": "Only exact job id52474611, taskcount10 and requestdeadline; all identity/durable wake/read-only semantics preserved",
+  "execution_authorized": false
+}

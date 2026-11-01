@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/once.py",
+      "sha256": "cfa04262f536b23b0bc4e4a6e708722db1f2660a406b8c65cd51f46e57afbee5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/remote_reader.py",
+      "sha256": "6611bdb4f60c9e4b332c6b03b0d7f9a2eb176ff0ab2d789cc6e089a020e756e1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/bind.py",
+      "sha256": "73875f7e4522807a38e7489492484ed8aa7c3c1dffd72f1c769610894c0e3081"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/base.json",
+      "sha256": "a2400a005a9dbbaaaed4a9ad26850fad9c90419c1177ef394a62e88c5657a239"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/predecessor-failure.json",
+      "sha256": "c3f5935fd392a07051986408a590b3774e84f246d505402b8379ae68c9a61177"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/diagnosis.json",
+      "sha256": "4bcf8a7cbef8e7cbd8b38cd8d7a3d571be5322c64763c0f676b5e32fc49084e2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/guard-locations.json",
+      "sha256": "a39f312d34e7e6c365ca6aac2e62d7c285f4cd4c1c39d64b7c3e493f12a0ff8a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/test_once.py",
+      "sha256": "61e3a3c2d73ff2ae7448c520c44e0518cb350776aa341332f75ca3f5b9ee254b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/test_remote.py",
+      "sha256": "2c5bd8f3542048d575c8115a7be1f6577a6f21bed8de2852b3f2ddefbec64321"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/test_diagnostics.py",
+      "sha256": "7d38ce831c05017f06c83b7e7274469ad4ea56936686bbc02885636004c38635"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/prepare_libraries.py",
+      "sha256": "500af43bd167eb26fdae2d2942bc6dc391a20f85eefa01be1b7a01a013313027"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/REVIEW.md",
+      "sha256": "14b249a0094b0fc19f232e43c1f61eb4321f29f2512b2dceb85a3091aa2b9dd1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/request.json",
+      "sha256": "0132ce63730ae0506372e11a5cd211ca658e91dfdf1abd049b189aad400c9e82"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/execution-review.TEMPLATE.json",
+      "sha256": "deb8661b37e18d5600a8028fc9a8de7111d4d2864b47ce21517a7f67d2c3a1e5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/root-once.TEMPLATE.json",
+      "sha256": "4b33ea45719163af456c9fe25c20515d4fde4c80b83b9b7a6edddfb6375e6888"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/control-post-snapshot.TEMPLATE.json",
+      "sha256": "c2600f69ea3f065c1199c42596486bdd048cdb74fa41495ec3c7a530f6090616"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/verification.json",
+      "sha256": "2e04cab36173469faa53ecb04527aea8db4f0a8766485d45ea2a9a2e4a6aa449"
+    }
+  ],
+  "author": "astra-final",
+  "diagnosis": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/diagnosis.json",
+    "sha256": "4bcf8a7cbef8e7cbd8b38cd8d7a3d571be5322c64763c0f676b5e32fc49084e2"
+  },
+  "execution_authorized": false,
+  "full_roles": 400,
+  "independent_original_failure_disposition_required": true,
+  "kind": "AUTHOR_CORE_REMOTE49_V2_FAILURE_DISPOSITION_AND_SUCCESSOR_REVIEW",
+  "operator": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-once-astra-v2-20261026/once.py",
+    "sha256": "cfa04262f536b23b0bc4e4a6e708722db1f2660a406b8c65cd51f46e57afbee5"
+  },
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v36-20261025/root-joint-storage-phase-v36.json",
+    "sha256": "64b304bc82f78c3ebd9329caa3f34cab31ab881f8af3edf50463ca63c1b1bfd4"
+  },
+  "preserved_failure_chains": 54,
+  "prior_operating_evidence_only": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/ROOT-ADOPTION-CORE-REMOTE49-V36-2049.json",
+    "sha256": "7ec2fbe1e05ccddc8ff7bad6bc264384f1de30ac1f7056164459e5f1bf3cdbf6"
+  },
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/request.json",
+    "sha256": "0132ce63730ae0506372e11a5cd211ca658e91dfdf1abd049b189aad400c9e82"
+  },
+  "request_specific_operating_adoption_required": true,
+  "scientific_guard_change": false,
+  "to": [
+    "root",
+    "sol-final"
+  ],
+  "uncertain_prior_read_overlap_admitted": false,
+  "utc": "2026-10-25T21:13:11.375365+00:00",
+  "verification": {
+    "path": "<REPO>/.agents/operations/newperiod-core-remote-metadata-binding-astra-v2-v36-20261026/verification.json",
+    "sha256": "2e04cab36173469faa53ecb04527aea8db4f0a8766485d45ea2a9a2e4a6aa449"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "author_agent": "/root/temporal_guard_recovery",
+  "author_approval": false,
+  "kind": "newperiod_gbdt_prospective_code_review_request_v1",
+  "package_sha256": "36e6d0b6616f0045fbc98a384a3f02b41138c18a8d60d8b8cd915e9e96604d6d",
+  "pins_sha256": "5522a1ec4ebe2382772335560c0a994e37b17f8daacc6adf9f482942c3290b89",
+  "required_verdict": {
+    "development_fit_authorized": false,
+    "execution_authorized": false,
+    "n_unseal_authorized": false,
+    "package_sha256": "36e6d0b6616f0045fbc98a384a3f02b41138c18a8d60d8b8cd915e9e96604d6d",
+    "passed": "reviewer verdict",
+    "pins_sha256": "5522a1ec4ebe2382772335560c0a994e37b17f8daacc6adf9f482942c3290b89",
+    "prediction_authorized": false,
+    "protected2026_authorized": false,
+    "r1_release_authorized": false,
+    "remaining_blockers": "actual R1 release, sealed manifests/core gates, resource readiness, runtime recapture, independent operation/execution review, owner staging and held scheduler admission",
+    "retry_authorized": false,
+    "reviewer_agent": "actual distinct reviewer identity",
+    "reviewer_model": "actual model",
+    "test_inputs_authorized": false,
+    "test_scoring_authorized": false
+  },
+  "scope": "Code-only prospective operational package around unchanged adapter"
+}

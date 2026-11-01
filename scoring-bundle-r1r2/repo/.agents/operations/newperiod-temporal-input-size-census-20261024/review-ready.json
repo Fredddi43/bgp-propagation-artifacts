@@ -1,0 +1,11 @@
+{
+  "execution_authorized": false,
+  "files": {
+    "README.md": "a1c05b3df90547989924be2400a295c783695ab375beccba494eb4e97ba10545",
+    "capture.py": "09ca8b523cfd755d9aa9c87113043d5556869cbb10005ad886c1292a92add053",
+    "request.json": "1e8271384416bb09f2867416256ba5309054be7b62f87a88979bfc264860e6a5",
+    "test_capture.py": "e88bb844499b578a330e3627a36b5511f341b68f5400f2fc88267ffcdf4c22dc"
+  },
+  "kind": "temporal_input_size_census_readiness_v1",
+  "tests": "6 passed in 0.12s"
+}

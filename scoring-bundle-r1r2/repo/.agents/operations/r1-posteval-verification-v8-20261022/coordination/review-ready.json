@@ -1,0 +1,21 @@
+{
+ "author_session": "<SESSION_ID>",
+ "authorizes_nothing": true,
+ "commands": [
+  "python3 -B build_posteval.py  (refuses: outputs exist; regenerate in a copy)",
+  "<REPO>/.venv/bin/python -B -m pytest -q -p no:cacheprovider test_posteval.py",
+  "python3 -B mutation_controls.py"
+ ],
+ "kind": "review_ready",
+ "not_run": [
+  "census",
+  "K2/K3/K2c capture",
+  "class (d) transport",
+  "D0/D1/D2",
+  "vrun",
+  "any host step"
+ ],
+ "packet": ".agents/operations/r1-posteval-verification-v8-20261022",
+ "pins_sha256": "843d54e9e2cf1bd4d5c4fb53cd362f0a4cee04a8c9574b57babb4ac5d3c0af1a",
+ "requested": "independent code review of the constants-only v8 re-pin of the 13 post-evaluation tools, the pin cascade and the --resolve interface"
+}

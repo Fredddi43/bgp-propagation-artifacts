@@ -1,0 +1,12 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "bind.py": "17ee034fbb9d52c2a7823f502e6faac90bec2a97a5ebfa1b93081c81178b598a",
+    "probe.py": "4b12ccfb222d37c1ef8ef99c6da4b203d638c63d2ca38af25caae94a5888df58",
+    "request-460.json": "51bdb305c2adcc74c09bda30b0a1fe0da28c75893e92def7f183ff6de1f65235",
+    "test_probe.py": "fdc8768856087f03221e28d72965004ab83c08652a8a30408087de899529d22c"
+  },
+  "kind": "archive_size_metadata_candidate_v1",
+  "tests": "5 passed; exact460scope/allprelogged, nofollow, shape/hash/size/missing refusals and10 acquisition proof"
+}

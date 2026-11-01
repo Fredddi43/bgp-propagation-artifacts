@@ -1,0 +1,19 @@
+{
+  "actual_aug31_output_reserve_admitted": false,
+  "actual_core_output_reserve_admitted": false,
+  "actual_execution_authorized": false,
+  "actual_release_available": false,
+  "author_session": "deadline_audit",
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "README.md": "2a39f4aa1589544dfac2a91be77bee53b3150d7112f7de9970b41467ea36a301",
+    "budget.py": "fdcb2f5396ada89179d1c5e0f8119036bf3a2abe40c2a938e3ceabb07e3273df",
+    "pins.json": "0cd5b2cb6c8014080a91d760aa48890af0fd531def03235188b77ca13ab9312a",
+    "prepare.py": "63c23d2502ebf74f0c5b7c2277f77c9c17ae9ad9fe64331a9517818330c4fc89",
+    "shared-budget-proposal.json": "977f618c588e682ec36378c514a59402f3a28dcf3e95c11c37260c4392b2e28a",
+    "test_prepare.py": "e30422a7d707f64c8f2a0b23b7745ba74eb118ddc4badb3ef73f7182cd5b3dd7"
+  },
+  "kind": "newperiod_first_launch_binding_readiness_v2",
+  "predecessor_readiness_sha256": "f534818a4cec0c0f69056a6f095164d083390001e1fc47ac31c7febb96047c27",
+  "tests_passed": 12
+}

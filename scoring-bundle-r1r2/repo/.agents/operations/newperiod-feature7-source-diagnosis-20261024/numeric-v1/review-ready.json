@@ -1,0 +1,15 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "4678433c8a221ee01da5039aed2f2a4e1c6c4d91980d3b1bab2d70987bd6491f",
+    "diagnose.py": "550aadabe395e524aac8c2bd9f7d179389ff237ded7c6d1790eb8888297eb651",
+    "original_builder.py": "316f36209290a04b357a804e48cd2b1fc2f59e03979198777e3f04f0e0edbc5d",
+    "original_dynamic.py": "3a634a394db99d6f6b590a806a0de1edc98b8a2909b0af7ba996f8094ce50934",
+    "original_protocol.py": "f0d3d2309093c098af650a695ddd488f53888bc3c76b373e1f4a0829b88b9af7",
+    "request.json": "91ba5b4c077afeba23e030a8b7010974c160a3bcc2079744ab477353d0dff971",
+    "test_diagnose.py": "1985e13c430049fd31a4d1319740c70c712ea173fc06177dc604b379312dddb3",
+    "witness-plan.json": "29b8f67e9f25ab6c7839dc7a3d07c42711f8b47011fdd8668dbf70452be3fbb0"
+  },
+  "tests": "6 passed6.80s including full1289 genuine synthetic input-only run"
+}

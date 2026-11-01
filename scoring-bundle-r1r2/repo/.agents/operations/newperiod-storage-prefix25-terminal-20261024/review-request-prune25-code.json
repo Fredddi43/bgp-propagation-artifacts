@@ -1,0 +1,5 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/prune25-v1/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/prune25-v1/review-ready.json","sha256":"40536e68964bf74ded95a9179027788f3dc5d809d93a1075187f305489d5c698"}},
+ "asks":["CODE review only (diff vs reviewed prune-r3; restore-drill binding; active-input disjointness hook). No request frozen, no execution requested."],
+ "priority":"low","utc":"2026-10-24T08:27:59Z"}

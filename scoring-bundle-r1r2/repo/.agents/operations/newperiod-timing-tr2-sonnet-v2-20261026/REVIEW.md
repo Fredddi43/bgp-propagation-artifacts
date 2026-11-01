@@ -1,0 +1,20 @@
+# T-R2 v2 (sonnet) — answers sol-final TIMING-TR2-TN4-V1-CHANGES
+
+v1 (`../newperiod-timing-tr2-sonnet-v1-20261026`) is untouched. Everything not listed here is unchanged v1 (see v1 REVIEW.md for the checklist map). Nothing issued/run/posted. `tests.txt`, `verification.json`: 69 tests pass (`.venv` python).
+
+## TR2-PROVENANCE-1 (blocking) — `tr2_operator.py:provenance`, called from `validate` (pre-consumption)
+`request.json primary_provenance` replaces `primary_acceptance` (the key-correction review is kept only as the key mapping, `key_correction`):
+- `gate_issuance_acceptance` = OPUS-REVIEWER-55EF (reviewer opus 55ef4bc5, "issuance only", accepted_gate_ref = 5b0ebfdd) and `gate_issuance_actual` = AUTHOR-REXACT-V3-CORE-B2 actual (rc 0, stage_gate_result gate sha 5b0ebfdd, no retry). Checks: exact gate ref, reviewer != author, actual passed. Codes `TR2_GATE_ACCEPTANCE_BIND/_INDEPENDENT`, `TR2_GATE_ACTUAL_BIND`, `TR2_PROVENANCE_GATE`, `TR2_KEY_CORRECTION_BIND_D30/D60`.
+- `chain_actual_acceptance` = **NOT FOUND ON THE BOARD** (searched board, review, review2, h3-author, implementation by hash and name): no independent acceptance of the primary manifest/inventory/master/source-audit chain. The slot is null, so `validate` refuses `TR2_PRIMARY_CHAIN_ACCEPTANCE_PENDING` before any consumption (test `test_provenance_binds_true_gate_issuance_and_pends_on_chain_acceptance`). Fill by `python3 -I -B build_packet.py '<{"path","sha256"}>'` once an independent reviewer produces it; it must be independent, `actual_reviewed:true` and name the 4 manifest/inventory shas and gate 5b0ebfdd (`TR2_CHAIN_ACCEPTANCE_BIND/_INDEPENDENT`; positive and 8 negative cases tested). Note the gate issuer did not open the gate (ids inside); the R4 hash-only gate stage still depends on that byte-witness ancestry.
+
+## TR2-RUNTIME-1
+- Full locale artifact sha256 (`e4b5576b19e4...c52120`, remote hash confirmed read-only) everywhere; no 8-hex prefix remains (`test_locale_full_sha_everywhere`).
+- Import-memory measurement path: new once `tr2_import_probe_operator.py` (PROBE: python sha, locale, 87-module closure re-hash, VmPeak/VmSize, no writes, FSIZE 0, no sockets/subprocess; templates `import-probe-*`). Adoption must cite its accepted actual (`import_probe_actual`, `remote_import_vm_peak_bytes` equal to it, locale/python/closure bound; `TR2_IMPORT_PROBE_BIND`). 8 GiB is now a ceiling, not a claim. Operator-side runtime ancestry: `runtime_identity_ancestry` ref + `runtime_identity_reuse_admitted` (`TR2_ADOPTION_RUNTIME_ANCESTRY`); adoption template updated.
+- Producer-vs-consumer closure compatibility resolved with pinned evidence, not a runtime refusal: `closure-compat.json` (committed diff 9205a1ce -> b6c32de3): builder snapshot `forecast_manifest 6a901d5f` / `forecast_inputs 15bd5ae0` vs T040 `6b7e3dce` / `deab11d8`; only change = `technical_failure` status added (superset); `validate_prediction_manifest`, `seal_manifest`, `digest`, `source_inventory` untouched. `provenance` requires `used_functions_unchanged`.
+- Memory text corrected: factor 32 is "qualified engineering admission" (measured 30.42x with 1024-byte kB accounting, 31.7316x in sol-final's independent stress), 24 GiB AS and +256 MiB margin preserved.
+
+## TR2-TEST-1
+The tautology (`... and False or True`) is gone: `test_gate_issue_passes_real_consumer_predicate` now asserts the exact predicate True, and direct negatives False for wrong manifest sha, wrong task, changed input hash, dropped input, shortened row set; the fixture now carries retained `technical_failure` status rows (ids 1 and 3 of each primary) which must appear in the projected manifest and in the gate with original hashes. `test_gate_wrong_projection_exact_codes` fails the gate for: altered input hash, status row flipped to available, contract drift, dropped/added id (TR2G_ROWS_NOT_BYTE_EQUIVALENT / CONTRACT_DRIFT / POPULATION / IDS / "Reference population changed") and asserts nothing was issued.
+
+## Open
+Chain actual acceptance (above); remote probe actual; adoption fills; reviews R-1..R-5 unchanged from v1.

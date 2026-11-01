@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_independent_verifier_r2_review_ready_v1",
+ "packet": ".agents/operations/r1-posteval-verification-20261022/verifier-r2",
+ "pins_sha256": "2a861eb0490e2b9b364c6130f1872a8c6b0663605455197c00cf07249a3459eb",
+ "real_inputs_read": false,
+ "requests": [
+  "delta review of V1-V6 + N2"
+ ]
+}

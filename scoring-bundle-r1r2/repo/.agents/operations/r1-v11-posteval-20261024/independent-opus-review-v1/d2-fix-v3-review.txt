@@ -1,0 +1,37 @@
+INDEPENDENT REVIEW: d2-fix-v3 (review-ready ad69b6f4)
+Tool d2_r3.py 4b8ccda6; tests 88ad297d; job script 733a6676.
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review. Author f4d75bb1 is excluded.
+
+VERDICT: PASS. Exact one-attempt D2 run approval opus-d2-run-approval-v11.json 2bf740ce is issued, and the
+tool's own checked_approval accepts it.
+
+Code
+  - The base d2_r2.py is 1b7d51e9, equal to its approved pin in d2-fix-v1. d2_r3.diff equals the real diff.
+  - The only change is new resolved_links(), called from captured_inputs() in place of `not_regular == []`.
+  - resolved_links():
+      * binds link-census 2890fcee and requires kind and bad == {};
+      * requires D1 not_regular == exactly the sorted census entries;
+      * requires per entry: symlink, 1..hop_cap hops, chain_in_root, in_root, target file, int size > 0, and D1
+        type other;
+      * re-sizes in memory only.
+    Any other non-regular input still refuses.
+  - DEST, code shas, INPUTS, OUTS and the approval predicate are unchanged.
+  - Tests: 9 passed (exact author command, in place, -B, no cache).
+Job script (reproduced locally from the captured evidence = 733a6676)
+  - Slurm: 2-task array (d30, d60); cpu partition; 1 CPU, 14G, 2h; no requeue.
+  - Code: sha256sum --strict over the staged classd code, which equals the classd transport readback (0444):
+      adapter 4f1d0e4a, run_adapter 33289bba, verify_r1 5ed5229f, pins 79cb199f.
+  - Cells: per-task cells.json with an in-job sha check (33 + 33 = 66 unique fixed cells).
+  - Output: `test ! -e OUT`, then an exclusive write.
+  - It runs run_adapter rescore with plan 6e18854b and report 049c7a9c.
+Resources (derived from real bytes)
+  - Tensors: d30 2,850,853,625 B and d60 2,886,120,495 B, i.e. the resolved links.
+  - Max predictions 453,708,128 B; max per-event 27,635,261 B.
+  - mem = 2*tensors + 10*(pred + per_event) + 4 GiB = 14 GiB per task.
+  - load_partition (staged ebf066a2, = repo 2a4e16f) keeps every decoded event of the horizon. Its
+    clone/long/float conversions are bounded by about 2x the stored bytes, so the factor is adequate. Margin
+    is about 4 GiB.
+  - Time: the read volume at the 66 MB/s floor is a few minutes, against 2h.
+  - On OOM or timeout the task fails finally: preserve, no retry, new review.
+Scope: label, prediction and per-event reads happen in place inside the job only. Only the two findings files are
+fetched, after both tasks are COMPLETED 0:0. There is no N, manuscript or other-cell authority.

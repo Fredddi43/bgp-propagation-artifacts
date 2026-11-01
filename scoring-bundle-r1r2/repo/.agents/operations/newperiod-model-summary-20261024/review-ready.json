@@ -1,0 +1,14 @@
+{
+  "actual_data_read": false,
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "168232d9144ae6d13ae8f614b7dd2722ab12f7e6a91ecc2ce292afdd20f68bd1",
+    "summary.py": "db4f0c9dc3f509670fe58bdcc4ff46ee42dffd76b2415d65834f256dbf83215f",
+    "test_summary.py": "c20c07b5b984ef6b10af51f63f6d90557590dc62bad48a03dadefa5238aa6526"
+  },
+  "formal_tests": false,
+  "intervals_computed": false,
+  "kind": "descriptive_model_summary_code_candidate_v1",
+  "tests": "15 passed"
+}

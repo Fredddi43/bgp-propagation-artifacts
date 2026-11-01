@@ -1,0 +1,28 @@
+{
+  "author": "gpt-6-astra",
+  "author_worker": "/root/impact_consumer_review",
+  "automatic_retry_authorized": false,
+  "baseline_driver_sha256": "6aeab80955cf4a9216ecc1fadbaee4ea450dc10491980a9558d869bf7892266f",
+  "execution_authorized": false,
+  "files": {
+    "RESOURCE-READINESS.md": "0475956026c718ca2814ed0be3be788eeeb5c7675be94697612b8e6681831721",
+    "REVIEW-PACKET.md": "c7a33a20c340b27a01284b65f2dbd52f39b5739ec550cb472dac8dee9e0ca31e",
+    "forecast_retrospective_release.py": "1d3ffbb49328da2aab98d7728884fae4d6bc9dd3312dbec0701cbe2ebb38335f",
+    "inherited-tests.txt": "c7d2e81f9a22c7916a8f30fe94cbee63586880d6f3c72556a47d60f42e7e59d8",
+    "probe_synthetic.py": "bc8483b7223ad2c424bfed30d26e1b75be37ea333efba918c1a05aee0e789a75",
+    "release-skeleton.json": "2318f10e00e447347dbf0fa21f5eedd30fdbb7e4cc19698c8768c2a522eff936",
+    "synthetic-memory.json": "c84d13d7dc6ee9786c195cf4f1cdc867bff98f19657c158b9dfe1da51ae8d6c7",
+    "test_memory.py": "8ea14997bcfcf1a45d1ca7551eb9f061082e6323e6deaa33bfdd837fa06d2029"
+  },
+  "focused_tests_passed": 4,
+  "freeze_authorized": false,
+  "inherited_tests_passed": 75,
+  "kind": "r1_release_memory_code_review_v1",
+  "labels_authorized": false,
+  "newperiod_authorized": false,
+  "production_memory_sufficiency_proven": false,
+  "protected2026_authorized": false,
+  "r1_authorized": false,
+  "scoring_authorized": false,
+  "seal_authorized": false
+}

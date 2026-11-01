@@ -1,0 +1,20 @@
+{
+  "actual_execution_authorized": false,
+  "files": {
+    "REVIEW.md": "aec4c15723d27b86c7835f7520f80fe4fd16637d7c49d165f6b7e79ec226641f",
+    "dispatch.py": "744308e188c225f049350f73105ddc7ef90cddce9c421a7146bb509075a8488b",
+    "test_dispatch.py": "63d650376f13b231cd4a6aa97ca2ee5b6bfd41e5edbe05ed7ca7a4ca4b3a5182"
+  },
+  "kind": "primary_export_held_phases_code_v1",
+  "source_dependencies": {
+    "construction_waves": {
+      "path": "<REPO>/.agents/operations/newperiod-primary-construction-four-waves-20261024/waves.py",
+      "sha256": "6167c31b2f7e84507f457b26b13bd13325702f9369c91a96c778299542e4f5e3"
+    },
+    "export_client": {
+      "path": "<REPO>/.agents/operations/newperiod-primary-export-chain-r3-20261024/package-v1/client.py",
+      "sha256": "c943073246e52f902391ff64ce222d0b4abc89869e64b22fec663fcf1a554c32"
+    }
+  },
+  "tests_passed": 14
+}

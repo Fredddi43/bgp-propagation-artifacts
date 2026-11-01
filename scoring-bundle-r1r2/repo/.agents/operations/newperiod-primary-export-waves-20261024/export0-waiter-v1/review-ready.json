@@ -1,0 +1,14 @@
+{
+  "condition": "Once after exact successful export0 release, coordinator identity and no existing exact waiter. No later export release authority.",
+  "files": {
+    "request.json": "978ce792f7f74537dec2d9b26612766bb4a4aad48410eaae4e220457274fadd5",
+    "test_wait.py": "fa636efc5bc8e19acfd8a5a3e812415110be5afa15fa24e8d5703a7f987b17e8",
+    "wait.py": "93f25b710f81c04c547d93e8ad0de27b213f0c03ccc3b0a3a0e97427d9863a95"
+  },
+  "kind": "primary_export0_waiter_v1",
+  "predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-h1-metadata-execution-r2-20261024/actual-binding-v1/waiter-v1/wait.py",
+    "sha256": "d759a10395abadda2b605692399971fdaaa3f09bbbe397a810c27f9788d0dd96"
+  },
+  "start_authorized": false
+}

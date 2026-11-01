@@ -1,0 +1,12 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "c3d85de0d4322e427aad99af8dd4e51325b613f9e56ab7b2b302782db815d9b4",
+    "request.json": "c7bb0a68df4301aabb60e96851ae04bb9d03c22ba1db4a23ec67aa4681072f64",
+    "test_capture.py": "46ba7f9eb98b82cfefcb65038c390eb361e96894072e4b3a82d73a85614fd661"
+  },
+  "kind": "replay32_outcome_capture_review_ready_v1",
+  "source_payload_reads": false,
+  "tests": "4 passed"
+}

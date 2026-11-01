@@ -1,0 +1,42 @@
+{
+  "author_sessions": [
+    "<SESSION_ID>"
+  ],
+  "author_worker": "root",
+  "execution_authorized": false,
+  "kind": "timing_tr2_import_probe_review",
+  "operating_adoption": null,
+  "operating_adoption_note": "fill with exact ref of the ISSUED probe adoption",
+  "passed": false,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v48-20261027/root-joint-storage-phase-v48.json",
+    "sha256": "913754c6c095bf1b0eb542a1d33d721318ccdc4934659bc4728a3d36f7b07baa"
+  },
+  "pins": {
+    "request.json": {
+      "path": "<REPO>/.agents/operations/newperiod-timing-tr2-sonnet-v6-20261027/request.json",
+      "sha256": "0fd4bcd6a2d9f64c8577f96cb154e82dc975f4ed2e26993ca874b6e3cae120d0"
+    },
+    "tcommon.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing-tr2-sonnet-v6-20261027/tcommon.py",
+      "sha256": "dd8b00b0b032c06f7397ed9f0631a12a920ab8d5248b89fec33410384711a6a5"
+    },
+    "tr2_import_probe_operator.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing-tr2-sonnet-v6-20261027/tr2_import_probe_operator.py",
+      "sha256": "7d75abe1f87e6ecf6641cde37c6ee76439e9737751d58f772c785b8f699bafc8"
+    },
+    "tr2_operator.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing-tr2-sonnet-v6-20261027/tr2_operator.py",
+      "sha256": "a166a224d23d4d65635fc9ee87c2197b2ec98129449487d4ea4962478bbca137"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-timing-tr2-sonnet-v6-20261027/transport.py",
+      "sha256": "a418543d362479fa14ca8d15559ccae24a48c79a9443bf8dbf0e0fa06acb5507"
+    }
+  },
+  "reviewer_model": "claude-sonnet-5-5",
+  "reviewer_session": "root-session",
+  "reviewer_worker": "claude-sonnet-5-5",
+  "scope": "timing-TR2-import-probe-v2",
+  "status": "PENDING_ROOT - independent reviewer fills and issues; authors may not sign"
+}

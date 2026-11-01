@@ -1,0 +1,67 @@
+{
+ "approval": "root-stage-held-approval-r2 77d00693 (path-corrected; v1 attempt refused locally, preserved in stage-held-execution-v1)",
+ "author_operator": "f4d75bb1",
+ "execution_authorized": false,
+ "held": {
+  "dir": "<REPO>/.agents/operations/newperiod-h1-development-budget-r3-20261025/stage-held-execution-v2",
+  "files_sha256": {
+   "precheck.txt": "854cf158b80e6f103a0e4714ce28507be704c245b061c06658e5241d8307c8db",
+   "read-held-intent.json": "87e1734b5d86bd6dcb1d6a3e08f3a27341e9c4b4621ae265e2c441bf85e8c68c",
+   "read-held-result.json": "6827bf1b3ca1e4719607f15c01304ec230226ad687c0c059a8d876d152438739",
+   "read-held.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "read-held.stdout": "58489351ae690f444b18df76413e29d0b019cadf629c17826783f4c35453da67",
+   "read-held/captures.json": "58489351ae690f444b18df76413e29d0b019cadf629c17826783f4c35453da67",
+   "read-held/intent.json": "cda98be3116c3d848d4991147f2089deed12da56c43f5e2a0655d20cfb1f2a3b",
+   "read-held/result.json": "df4d721d233a2334088d2d2e0110346ae9e509ff46bf0b379fbcfa85c715af4d",
+   "read-held/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "read-held/stdout": "af7610b64c18a20cfbb70a6e51e5fd693a2677519723e8e82e4510be262dc820",
+   "stage-intent.json": "0c870f15a46d8b3b419f33c123dbd341eb698663de4e0201ddffa9191a76ff85",
+   "stage-result.json": "802f3aeb975489964d8b7393297001ec19e00e997b6d7466692b573ffe979680",
+   "stage.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stage.stdout": "f9e34a8809da26245a067794d5eaa8cd049b1dd266c9e64b1c51b81f99be2aba",
+   "stage/intent.json": "5c5ae585a624f9196c33a34536bf0ab12e32df161d77ec2960e8dd68ea17f847",
+   "stage/result.json": "21376bf5005f08ca5a44bfca642061b6b225e4f1fe8d3c245591ac92a58be797",
+   "stage/stage.json": "f9e34a8809da26245a067794d5eaa8cd049b1dd266c9e64b1c51b81f99be2aba",
+   "stage/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stage/stdout": "f9e34a8809da26245a067794d5eaa8cd049b1dd266c9e64b1c51b81f99be2aba",
+   "submit-held-intent.json": "00a0c6e539ad7d2cc7bd3f658d0cc7e93ec7711549ac534adaaa47259936d38f",
+   "submit-held-result.json": "eb5b38ccdf58bcb82b7332eb1f9a51ae778921679d5f27552e7eef672dc2d67a",
+   "submit-held.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "submit-held.stdout": "f67bf738b0b8ce6007a1e5e6819467a20d78b2704bfd2ff9438f37f6928b82bd",
+   "submit-held/claim.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "submit-held/claim.stdout": "f84f98a4b78473eadb07d1ff03e3d7d706bbb97e049153cc92a3f09bb3eba804",
+   "submit-held/h1-d30-assemble-submitted.json": "4a77276de982f4e8c8fd7a53a696ce6d0501bd5bb0b3b5dd81e9a95035e77a02",
+   "submit-held/h1-d30-audit-finalize-submitted.json": "4119ab2251827f28115ca46ccc728b2633ada880f84e9c468286df1532857a26",
+   "submit-held/h1-d30-audit-submitted.json": "24523fe89a3cca6be1fcaa2a3abd2f623ca76dd707207fc20a8528c0c965d414",
+   "submit-held/h1-d30-build-submitted.json": "471c4cd05be47ca8e7460115cb6416365bb3261843b81c6a54166a4e4d7b0d4c",
+   "submit-held/intent.json": "fbde3461bce0c24c2c8413d4d7e591a431c4038f1c17392dc972e19e8c3697d5",
+   "submit-held/submission.json": "f67bf738b0b8ce6007a1e5e6819467a20d78b2704bfd2ff9438f37f6928b82bd",
+   "submit-held/submit-result.json": "df4d721d233a2334088d2d2e0110346ae9e509ff46bf0b379fbcfa85c715af4d",
+   "submit-held/submit.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "submit-held/submit.stdout": "2a19eb5f6d6d1758e4e298a5c6c2666c1257d98766e88712e93f7b5d8bb79d06"
+  },
+  "jobs": {
+   "assemble": "52512132",
+   "audit": "52512133 [0-31%8]",
+   "audit-finalize": "52512134",
+   "build": "52512131 [0-63%16]"
+  },
+  "precheck": "models 686,264,680,448 >= 682,899,800,064; results 48,866,787,328 >= 45,231,374,336; v3 absent (00:50:57Z)",
+  "squeue": "all PENDING JobHeldUser"
+ },
+ "kind": "h1_r3_held_and_waiter_successor_review_ready_v1",
+ "not_done": "no initial binding, no release; wave0 needs root wave authority + plan hard check >= 656,056,254,464 B",
+ "waiters": {
+  "builder": "af3b8045d355d92b574feb15473f84b9457832c1e295fb39d802f3cd7d93377a",
+  "delta": "JOB 52499340 -> 52512131 only, in both r2 waiters (wave0 84c0b1c3, waves1-3 2768195a); tests r2 bytes; 6+8 pass",
+  "result": {
+   "job": "52512131",
+   "submission_sha256": "f67bf738b0b8ce6007a1e5e6819467a20d78b2704bfd2ff9438f37f6928b82bd",
+   "wave-waiter-v3/test_wait.py": "92f147ce854dc2755790159a1583c41de3031256c6f334a480f52e0baabc2ff5",
+   "wave-waiter-v3/wait.py": "b4751c0549240e3f80ce3d430bf4984cd39a7ba9c28e7a2f8e0769ea66329004",
+   "wave0-waiter-v1/request.TEMPLATE.json": "92336079618c16ccdf6b95a1f92a65696001862bddd6c3fa50b7fa7b60a68d6e",
+   "wave0-waiter-v1/test_wait.py": "3b7cef1d6ac4bc8bdd8983786bc8683d883e601dd4450721ed2f4c9e0b1562d0",
+   "wave0-waiter-v1/wait.py": "49face513c4fa260a16de32530beab2bac203609aebabed70ad946253ed7b125"
+  }
+ }
+}

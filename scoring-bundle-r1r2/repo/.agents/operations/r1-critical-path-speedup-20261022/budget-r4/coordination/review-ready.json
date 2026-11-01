@@ -1,0 +1,21 @@
+{
+ "also": {
+  "h3-stable-timing pins": "eebd92a4f8c2e8ec4d20b9b3c84aff1ca2870a7a0deee6dd7e9d30bdfa0b32ec"
+ },
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "derived_limits_for_review": {
+  "approved": false,
+  "cap_hours": 168,
+  "cpu_seconds": 1627200,
+  "supervisor_timeout_seconds": 407100,
+  "walltime_hours": 113,
+  "walltime_seconds": 406800
+ },
+ "kind": "r1_budget_r4_review_ready_v1",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/budget-r4",
+ "pins_sha256": "3e7a6880109782ba9a5b02737492d55f1b253f0dd6d0eef9f72fc35de72e7dee",
+ "requests": [
+  "review the H3/stable local timings and budget r4 terms; if acceptable, the limit values for the v8 execution spec are the reviewer decision"
+ ]
+}

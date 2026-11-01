@@ -1,0 +1,43 @@
+{
+  "answer": {
+    "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/owner-answer.json",
+    "sha256": "f3da92261978f9c0381bf67ef898e1c5dfe7019f57af9bdf89c917a09d25bfcc"
+  },
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/exact-ten-targets.json",
+      "sha256": "4fa1764d829b873faf76845b8e76f15860e160409108c4682d7f65d3b4d1662e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/known-current-input-controls.json",
+      "sha256": "baead215d8fb8aec670d3110f462d711b43072132d61007dc25a25c60b599dd5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/owner-answer.json",
+      "sha256": "f3da92261978f9c0381bf67ef898e1c5dfe7019f57af9bdf89c917a09d25bfcc"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/prepare.py",
+      "sha256": "ed036c3eedb5cb429fa51eb96082bcc809b294841ad5aa1fbd7843dacb52cab1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/source-callsite-catalog.json",
+      "sha256": "24229f5251f29e88e0f3170132e85ceaa878d685ea413bcecaf613be82072b54"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/source-derived-read-rules.json",
+      "sha256": "03154ac9647f72c9505c41b7d7d24deeedb3504351a8ca10014525b2d0bf60c2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/verification.json",
+      "sha256": "8ad2760318b07f6e57b620e70425f7ec0fb02d1cfc700fbb96b79f01c4adc4d8"
+    }
+  ],
+  "kind": "AUTHOR_REVIEW_READY",
+  "self_approved": false,
+  "verification": {
+    "path": "<REPO>/.agents/operations/newperiod-h3t-parsed-owner-holds-v1-20261026/verification.json",
+    "sha256": "8ad2760318b07f6e57b620e70425f7ec0fb02d1cfc700fbb96b79f01c4adc4d8"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "original_roa_acquisition_review_ready_v1",
+  "author_worker": "/root",
+  "files": {
+    "acquire.py": "4d43aa1dbf8a0a3345e67a4a60ffe95b9095eedc81138c024e48f81044b7b5a6",
+    "original_fetch_roas.py": "268a38ed211b64844ad29f55967cbf731db27131e2b6ccbfdf632e6338b509fc",
+    "run.py": "8155af1d9ab788dc34e5577d95512bfbde632ad5cb12a065fc6cebbcc972784f",
+    "test_acquire.py": "0480853d5144a61f3ffe241802c58d87efd4c7858567af3a2bdf3f8abd0dca9c",
+    "test_run.py": "ef4065c122b407e128e9631b24cd4405f093f539c3e2445a3b7d79273e8e85a3"
+  },
+  "tests": {
+    "passed": 22,
+    "seconds": 1.93
+  },
+  "actual_execution_authorized": false
+}

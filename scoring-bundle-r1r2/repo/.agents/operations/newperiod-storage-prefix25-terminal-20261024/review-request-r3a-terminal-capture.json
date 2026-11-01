@@ -1,0 +1,5 @@
+{"kind":"review_request","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/terminal-r3a/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-storage-prefix25-terminal-20261024/terminal-r3a/review-ready.json","sha256":"c630cd3e2ef32cd21d279d72c7891da70ee5a3cfe6a2eec392e2351831e183a0"}},
+ "asks":["Approve the r3a terminal capture (same scope as d23a6a2e; delta: job id, r3 roots, r3a staged pins, tasks 1-9) for one run after all 9 tasks are terminal.","Still pending from the previous request: the read-only waiter approval (waiter-r3a ready 6882acdc)."],
+ "utc":"2026-10-24T08:18:06Z"}

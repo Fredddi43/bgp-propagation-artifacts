@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "host_actions": "none",
+ "kind": "newperiod_gate_host_runtime_capture_review_ready_v1",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/runtime-capture-v1",
+ "pins_sha256": "fc6dea02e83d98b35f316d3d391ad374c264ce6b8075ec433849627aaaed1430",
+ "r1_final_eval_touched": false,
+ "request": "code review of capture_runtime.py and, if acceptable, an exact once-only read-only capture approval (fields in REVIEW.md)",
+ "tool_sha256": "64c1ce39e6b605fa0b28fc4c7e3fd780abfed795d43d04d5b3b7d880a27d3948"
+}

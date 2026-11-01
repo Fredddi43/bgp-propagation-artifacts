@@ -1,0 +1,20 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>"
+ },
+ "files": {
+  "test_wait.py": "9e010168c685e2eb60d2baee2d0fa77f01434c759eb4d0d3d645ad40c523888e",
+  "wait.py": "3aa4f2dc32a65ea45c1124a368e8bdb677184b9d519a9105f5877e83a30f2357"
+ },
+ "host_calls": [
+  "once: ssh <SUBMIT_HOST> squeue -h -j 52479088 -o \"%i|%T|%r\" (~30 s after start)",
+  "every 300 s: ssh <SUBMIT_HOST> sacct -n -P -X -j 52479088 -o JobID,State,ExitCode, until all 9 terminal or 2026-10-25T18:00Z"
+ ],
+ "kind": "r3a_waiter_review_ready_v1",
+ "no": "retry, cancel, release, file reads, HF calls",
+ "proposed_execution": "cd waiter-r3a && python3 -B wait.py run-v1 (once, background)",
+ "tests": "4 passed",
+ "utc": "2026-10-24T08:16:02.193302+00:00",
+ "writes": "local only: run-v1/log.jsonl, run-v1/terminal.json"
+}

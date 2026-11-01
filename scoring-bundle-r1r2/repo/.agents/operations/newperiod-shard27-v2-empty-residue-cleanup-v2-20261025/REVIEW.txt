@@ -1,0 +1,29 @@
+V2 corrects the independently reproduced cleanup-v1 final-check/rmdir race.
+The v1 packet and its failed review are preserved. No v1 execution was authorized.
+Threat model is explicit cooperative writers, not hostile same-UID mutation. ROOT
+must substantiate exclusive control of the exact old residue and private quarantine
+namespace throughout the operation and terminated prior v2 operators. These are
+separate required flags beyond no timing builds. Without them, --check refuses.
+Two calls: exact old directory inspection, then bounded quarantine-and-removal.
+Before second transport, local operator generates128random bits, persists exact
+quarantine name in fsynced intent, then sends it to remote source. Remote validates
+one fixed name prefix+32hex; exclusively mkdir0700 (inherited setgid allowed),
+checks ownership/group/mode, holds dirfd and uses renameat2 RENAME_NOREPLACE to move
+old name to fixed child residue. Unsupported syscall/export or destination collision
+refuses without fallback. After move, open with O_NOFOLLOW|O_DIRECTORY and recheck
+inode against original held fd+inspection, uid/gid/mode/mtime, and emptiness. Rename
+can change ctime, so ctime is only checked before move. Unexpected moved object is
+preserved in quarantine, with no rollback, retry, unlink or adoption. Only matched
+empty child is rmdir-ed through the private parent fd. This is NOT an atomic
+inode-conditional rmdir: exclusive private namespace is a substantive ROOT condition.
+Original BASE name is never mutated after move. Retain empty quarantine as a small
+control artifact, reporting name/identity/allocation. Do not attempt a second rmdir
+of the quarantine name in mutable BASE. Late original path reappearance stops and
+is preserved. Exact failed-v2 evidence and independent actual acceptance gate remain.
+No protected payload reads, file unlink, recursive deletion or probe rerun. Same
+exclusive18GiB row and64MiB controls; independent cleanup/termination acceptance
+required before release. NFS deadline limitation and no automatic retry retained.
+61 tests pass, including reviewer race before rename/after move (replacement saved),
+nonempty arrival, collision, unsupported rename, exact mutation intent, and authority
+flags. Actual-inventory CLI passed with in-memory synthetic ROOT/review only.
+Persisted templates stay false. No SSH/remote mutations/real ROOT authority occurred.

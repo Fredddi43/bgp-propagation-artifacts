@@ -1,0 +1,10 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "capture.py": "23ea2a3feacd1cf17c9a4ce2952801c4b97d2c69eaa0a4adfbcfc4363f1edc8c",
+    "request.json": "e39f240527a45c49fc9bac5abb8d76f3090f4cfdb3031f492a923d2938e66ef7",
+    "test_capture.py": "c1ec48ff877dbd4f3aec619bed6824f20d41d64a7f6729b5563822344c693484"
+  },
+  "kind": "origin_candidates_outcome_ready_v1",
+  "tests_passed": 3
+}

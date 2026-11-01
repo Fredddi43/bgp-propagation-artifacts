@@ -1,0 +1,41 @@
+{
+  "author": "opus-science",
+  "change": "F2 one-pin successor: runner.py:237 FIT_RUNNER_SHA 6379ba41 (timing fit run_package v1) -> bded5e0e (fit run_package r2, the one every staged timing development package ships). test_runner.py fixtures point to newperiod-timing-client-r2-20261024/policy-candidate.",
+  "execution_authorized": false,
+  "files": {
+    "pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "runner.py": "df758f8ca21bda368766195534f9dc5a3dc23e8e42c48b0a327668f8dc90454e",
+    "test_runner.py": "fb2d17533b651fcc225e92acc07e7d451dffc097c5018bbfaf7f413166834a1e"
+  },
+  "kind": "newperiod_timing_inference_prospective_code_v1",
+  "predecessor_review_ready_sha256": "e0bdb50958a14b4cf5393d7a8e58f31053816fe306ba7c4ddbdda542bbef114f",
+  "scientific_grid": {
+    "history": "on",
+    "models": [
+      "sage",
+      "none"
+    ],
+    "new_horizons": [
+      5,
+      10,
+      300,
+      900
+    ],
+    "new_predictions": 40,
+    "reused_core_predictions": 20,
+    "reused_horizons": [
+      30,
+      60
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "tests_passed": 45
+}

@@ -1,0 +1,27 @@
+{
+  "assessment": "Assembler and transport differ from reviewedv1 by exactROOTv2 only. Originalmetadata closure/inheritedpreflight/resources andexclusiveheldtransport unchanged. Newcaller includes separately reviewed file_limits; no publication approval synthesized.",
+  "conditions": [
+    "Actualeligible v2publication approval andresourcebinding before concretefinalplan.",
+    "Exact finalplan/transport/held/freshspace independentapproval before once recovery."
+  ],
+  "execution_authorized": false,
+  "files": {
+    "assemble_finalize.py": "6eaf0991becf23c9a0d5c57b22ff5a8d6a87f7ac7f02219c9c4fd132f9bd8ea7",
+    "complete-local-evidence.json": "b00481f68ac7f9623fdb1e8318356dadbd1f33a2bda62ca7a7d6aedd6c89d119",
+    "derive_recovery_draft.py": "23f3fddab3e3523c2f3d83ebdb15b0a8091d56fac7f5ac40e01fd270c9068572",
+    "inherited-preflight-scope.json": "a6f91175f6412c9efb8f7f3e577ac5afb4f7f83e5c525d38a5df5370ab5fae0e",
+    "kernel-plan.json": "57bf3d5e683f55836e21e136704345efdfd90f863b915902fbccfc0146e87ed5",
+    "local-draft.json": "dd26f5a22a9b40f74d12e7bfc37e083e5f02d2536f6f18f0fbac3d87c34548d8",
+    "publication-review-request.json": "c686ec86a719fb7bf3839933251d05fd53321fcc622c128de61bf65320432f4d",
+    "test_assembly.py": "b0c06bbb8099a578239e6853a5091a571147f965deecee0085332fe7c5f50f71",
+    "transport_packet.py": "9ff09725c763013b551d8cb9cd46c79d8f106437f8a79f8880d1b70fe5ec2e01"
+  },
+  "passed": true,
+  "retry_authorized": false,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "tests": "7testsPASS0.54s",
+  "utc": "2026-10-24T07:40:02.222374+00:00",
+  "verdict": "CODE_ONLY"
+}

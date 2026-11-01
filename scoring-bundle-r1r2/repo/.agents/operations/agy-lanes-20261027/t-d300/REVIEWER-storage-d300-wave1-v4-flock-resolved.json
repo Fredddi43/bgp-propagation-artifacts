@@ -1,0 +1,36 @@
+{
+ "checks": [
+  "Empirical Slurm probe 52580841 confirmed NFSv4.1 cross-client flock coherence across distinct nodes <COMPUTE_NODE> and <COMPUTE_NODE>.",
+  "Mount options confirm vers=4.1 and local_lock=none (non-local kernel lock RPCs handled coherently by server).",
+  "WaveLedger 64 KiB fixed record locking premise is verified on the target export."
+ ],
+ "evidence": {
+  "cross_client_flock_verified": true,
+  "events": {
+   "blocking_lock_acquired_after_release": true,
+   "nonblocking_lock_correctly_blocked": "[Errno 11] Resource temporarily unavailable",
+   "task0_node": "<COMPUTE_NODE>",
+   "task1_node": "<COMPUTE_NODE>"
+  },
+  "evidence_files": [
+   "<REPO>/.agents/operations/agy-lanes-20261027/t-d300/evidence/flock_probe_task_0.json",
+   "<REPO>/.agents/operations/agy-lanes-20261027/t-d300/evidence/flock_probe_task_1.json"
+  ],
+  "finding_resolved": "D300-W4-STORAGE-FLOCK-1",
+  "mount": "<INSTITUTION_HOST>:<CLUSTER_EXPORT> on <MODELS_ROOT> type nfs4 (rw,nosuid,relatime,vers=4.1,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=139.19.15.12,local_lock=none,addr=139.19.90.186)",
+  "nodes": [
+   "<COMPUTE_NODE>",
+   "<COMPUTE_NODE>"
+  ],
+  "slurm_job_id": "52580841"
+ },
+ "execution_authorized": true,
+ "kind": "INDEPENDENT_D300_WAVE1_V4_STORAGE_MODEL_REVIEW",
+ "passed": false,
+ "reviewer_model": "claude-sonnet-5-5",
+ "reviewer_worker": "claude-sonnet-5-5",
+ "root_signoff_utc": "2026-10-27T04:25:28Z",
+ "scope": "continuation_wave1 measured_density_live_v1 + shared flock ledger",
+ "target_packet": "<REPO>/.agents/operations/newperiod-timing-d300-continuation-wave1-sonnet-v4-20261027",
+ "verdict": "PASS"
+}

@@ -1,0 +1,10 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "files": {
+    "request.json": "c866b382df12749a5d5e7bae992b9abf7783700c9eea83f51b081d3b099ca3bd",
+    "test_wait.py": "0e8f79ae17b9c6cf7f9d43788d303ee3ab9cb2bc02c0ded678906c4b0cab62f8",
+    "wait.py": "a60509b04d77536024168b684e897a86744b3acc23907a577db56ef4499a1ad9"
+  },
+  "start_authorized": false,
+  "tests_passed": 10
+}

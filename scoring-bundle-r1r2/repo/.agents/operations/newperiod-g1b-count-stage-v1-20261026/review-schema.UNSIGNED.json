@@ -1,0 +1,17 @@
+{
+  "independent_from_author": false,
+  "operator_source": {
+    "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/operator.py",
+    "sha256": "08cfb12658c026c65bf4979225ef7eeebbc45d6b48a9a35650dffc7a6fa547ae"
+  },
+  "passed": false,
+  "request": null,
+  "reviewer_model": null,
+  "reviewer_session": null,
+  "reviewer_worker": null,
+  "scope": "g1b-count-stage-v1-once",
+  "worker": {
+    "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/worker.py",
+    "sha256": "9c1642741238da2afca99449d4e836664f1a3357aa7e46983520b458ccdcbd90"
+  }
+}

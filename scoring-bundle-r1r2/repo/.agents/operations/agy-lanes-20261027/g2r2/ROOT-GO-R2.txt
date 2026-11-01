@@ -1,0 +1,20 @@
+ROOT-GO-R2
+Approval: I approve (1) G4: ONE four-scope label opening via g2r2/chain/g4_labels.py with the plan pinned below, and (2) R2: ONE singleton run of the PINNED persistence runner (newperiod-single-r2-persistence-20261024/runner.py, sha256 cf90e07d314c481849f22297d3a6815de5b6fa7aded60cd5797810c654f913df) in the namespace <FORECAST_ROOT>/data-custodian/single-R2-v1. No retry, no refit, no seal rewrite, no outcome release.
+Amended retention spec in force (deviation D-A22): 345 arms, 55 retained failures; the frozen-2025 reference is evaluated at d60 only (d30 seed-0 cell cannot run under the pinned predictor).
+Seal produced by the sharded memoised verifier (deviation D-A24), every arm verified by the unchanged forecast_custody.verify_arm.
+
+CHAINED ANCHORS (read from the artifacts at write time):
+  original freeze.json sha256:  0164b1da3462affe180f900faa7a27f37b31da4d4af40b46f6b895be5b511127
+  amended freeze sha256:        921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa
+  G3 seal sha256:               8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f  (seal.json in g3-seal-sharded-20261029T013648Z; 345 arms verified; outcome_files_opened false)
+  timing_label_equivalence:     equivalent (1124 events, no differences; r2-evidence-20261029T0525Z/timing-label-equivalence.json)
+  G4 plan sha256:               07b38b6bce08d742833ba9938de0e5c4be6b172e9d13ec4e2f1e5eca08816b84  (g4-four-scope-preparation-20261029/write-20261029T005715Z/kernel-plan.json)
+  G4 plan output path:          <FORECAST_ROOT>/data-custodian/complete-label-preparation-v3-retained/arms/000/attempt/output/labels.json (absent at write time)
+  arm-spec sha256:              f8f30b3525bc602012b0e0c76ebb0349890d42bed7f628bbba18fa315a1aa6ec
+  extension decision sha256:    3f5bb81128769cb815ced7be05d83fba23be527d78f3f646696688d831d57dd7 (extend=false end=2026-10-16)
+  full_retention_review sha256: fe36f5980c84be03e33d8d7d9d14d100f0ed66f006e38bdb457573334be51bbe (root-signed)
+  R2 template / inventory / exec spec: built after the label artifact exists; bound by the r2_exec spec, which records this file's sha256.
+  ROOT-GO-R2 written:           2026-10-29T05:24:20Z
+
+SHAPE I APPROVE: singleton (no array), partition cpu, --cpus 64 --mem-mib 1000000 --wall 1-00:00:00, --export-env CUSTODIAN_ACCESS_LOG=<log>, python = the cluster venv.
+Storage floor breach, OOM, or SIGALRM: STOP - do not rerun; a second attempt cannot be authorized (one-shot).

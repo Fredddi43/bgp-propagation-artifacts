@@ -1,0 +1,18 @@
+{
+  "automatic_retry_authorized": false,
+  "capture_source_sha256": "c065360e6beb4587409a4efdc1de49f778aded3b0a296f44ee449c513da5c611",
+  "conditions": [
+    "Exact job terminal scheduler state before capture; only exact two bounded completion/failure receipts.",
+    "Expected four hashes independently recomputed from reviewed draft and eligible publication review, no prospective output claimed as completed.",
+    "No reference following, graph/event/model/label/result reads or automatic retry."
+  ],
+  "execution_authorized": true,
+  "job_id": "52477896",
+  "maximum_invocations": 1,
+  "passed": true,
+  "request_sha256": "e6659ea7e5cb532e921186b5ba1c21aa2fdb1452ed9d84f9fe1aebfcab7bc0af",
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "utc": "2026-10-24T07:20:22.468558+00:00"
+}

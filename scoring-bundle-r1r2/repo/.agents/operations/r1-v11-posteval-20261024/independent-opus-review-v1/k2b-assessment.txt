@@ -1,0 +1,13 @@
+INDEPENDENT ASSESSMENT: actual K2b capture (approval 9f79a24d) and local extract
+Reviewer: claude-opus-5-5, session <SESSION_ID>.
+  - evidence/capture-k2b.json.gz d5e80d64: requests.captured() holds exactly the 3 request-k2b paths, each matching
+    its sha:
+      * report.json 049c7a9c, 15,327,863 B;
+      * d30 manifest 45865cdf, 5,183,175 B;
+      * d60 manifest f885a805, 5,183,175 B.
+  - evidence/released/{report.json, retrospective-2025-v6-d30.json, retrospective-2025-v6-d60.json} are byte-equal
+    to those shas and sizes.
+  - One capture. Approval 9f79a24d is CONSUMED.
+  - No per-event, label or prediction content was captured. The report remains unverified until the vrun verifier
+    (approval ca215b27) and D2 complete and are independently assessed.
+  - Not approved: K3 projection, manuscript use, N admission.

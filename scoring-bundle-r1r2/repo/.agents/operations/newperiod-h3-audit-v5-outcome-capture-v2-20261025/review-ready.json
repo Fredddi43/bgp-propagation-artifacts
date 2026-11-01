@@ -1,0 +1,93 @@
+{
+  "author": "astra-h3t",
+  "buffer_and_custody": "Includes exact transmitted source-buffer hash and same e516a3d8 immutable campaign baseline as corrected releasev2. No pergroup custody reset.",
+  "execution_authorized": false,
+  "kind": "h3_v5_finite_outcome_capture_source_review_request",
+  "payload_reads": 0,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/author-checks.json",
+      "sha256": "4a6541c07bd7ce614e9b323d1ecbf4df6cf2705888f0906643372cf59fc4a29f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/build_packet.py",
+      "sha256": "6d942cd374041c26d4db1271137b73a6630712341bb3a129bd896bb11cd1ad00"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/capture_once.py",
+      "sha256": "95c36ce43e0e29db7a1c172b806221117d092fb223859e76143d01f1add8f102"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/capture_remote.py",
+      "sha256": "59b292bfc8d2b24894d981c901ea367a2c9c6453176c145b114ae9e99cbc3df0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/mixed7-d30-exact-scope.json",
+      "sha256": "04fec9af2c17abcb786c2047c8cb46640304317f394a1c5a7509a8c8a6e60b80"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/mixed7-d30-request.PENDING.json",
+      "sha256": "80452bb7b6c3ec09f0e13ad636bfa97f518357e54fe5c28449c1d5ea7c8c2b4d"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/mixed7-d30-root-once.FALSE-TEMPLATE.json",
+      "sha256": "12c185997e819931ecd63dce3f897d28f6057d3cb8bc897cdd2fd6e705eda085"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/mixed7-d60-exact-scope.json",
+      "sha256": "8c111a6e9204bc05a0de985ab7d517d8fea891ed19e948178b8d684ff37f57c6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/mixed7-d60-request.PENDING.json",
+      "sha256": "8b56b6723b2d46d2e66a4b92b7d7ad3bd1ad0fd61ee32aead1c65e5bfdd92d62"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/mixed7-d60-root-once.FALSE-TEMPLATE.json",
+      "sha256": "074ff3c72cce89b8b56af6d64cc4078d75e1e6703bfd48ac581415b831aaa1f6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/packet.json",
+      "sha256": "3ac3eb12c7d8f07a76e4e741dd938aa914c2e73067fc252b2a627c35871c9828"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/ris7-d30-exact-scope.json",
+      "sha256": "3da0322dfe0a450f028c175e41fd1f0ba5c8f25ea11d19cb1a9327e6f3706f4b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/ris7-d30-request.PENDING.json",
+      "sha256": "fc8c8bcd404d2f1eb532171cf6eee6336ee3c9c327b763e7baa6ef0b6d301efd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/ris7-d30-root-once.FALSE-TEMPLATE.json",
+      "sha256": "437afcb1c4dc510d44715450d3a9292be53786bc539ff8a9ccd949117c8b778f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/ris7-d60-exact-scope.json",
+      "sha256": "9d31488dbcca45de5e3a490def7d2475e655afc689fcd09405c0fa9532c4d52b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/ris7-d60-request.PENDING.json",
+      "sha256": "fa10e63b0ede263333d960a01259d3030027cfa1db794f6e73b728ae3291e6b7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/ris7-d60-root-once.FALSE-TEMPLATE.json",
+      "sha256": "c2ebd8820854948f147c8051b1cc661686abd4ccda3d7d442446765e1d65d297"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/test_capture.py",
+      "sha256": "068ef4d7085f0ed15c7b56df70676f599801a61166a9bf901905223273266e76"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-v5-outcome-capture-v2-20261025/tests-final.txt",
+      "sha256": "976a3836ac738334c43e6e12a9b370fcb3dcf7ee559987f2d6e63d71e6b9badb"
+    }
+  ],
+  "remaining": "Independent source/read/resource/operator review. Actual release/independent acceptance and final captured-request binding do not yet exist. No execution authority.",
+  "remote_actions": 0,
+  "scope": "Exactly100own metadata files, bounded aggregate160MiB and4GiB addressspace; no referred sources/gates/graphs opened;14787refs/exclusions preserved; hashes/counts only. Serial root-operated onecapture after33terminal tasks, nextrelease independent/root gate.",
+  "tests": "18 synthetic tests passed in1.79s; no production authority/capture",
+  "to": [
+    "root",
+    "sol-h3t"
+  ]
+}

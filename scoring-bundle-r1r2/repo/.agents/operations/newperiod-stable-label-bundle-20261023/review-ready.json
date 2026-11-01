@@ -1,0 +1,25 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_session": "/root/metadata_check_review",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "REVIEW.md": "565099d309556a0fed0b39b2838c06aa2ddb892c5b9ce5b172c83c5a34b216e2",
+    "bundle.py": "6562d0203367987e9a8840239c222d3e5e6fc7c85dd602456c96528440db46c8",
+    "reviewed_reader.py": "6ab9a70374fd1f7c31c7959934d0b90d1b4ffec7bcb3697e43789189816d9cca",
+    "test_bundle.py": "c21125b14b8516fd51dded6f74fcb858bbaab26202ed35c449530ebd64951d3a"
+  },
+  "kind": "newperiod_stable_label_bundle_code_candidate",
+  "protected_reads_performed": false,
+  "retained_secondary_cells": null,
+  "scientific_dependencies": {
+    ".agents/operations/newperiod-custodian-count-truth-20261023/prepare.py": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474",
+    "docs/paper/forecasting-improvement-20261017/ALL-RECIPES-DRAFT.json": "6d851282e4036a6323a24ef41740207c75b839a72a960604cb1404d593ae0917",
+    "scripts/custodian_access_log.py": "4e84e4c8f3ad3922bb7fd0dcd65d1ae1fe04d80acfe31ea98d98c6f63679e5b4",
+    "src/bgbench/forecast_stable_peer.py": "a8209bc01ccfdbbdc9b6bcb48042f4d132e3f2aa680e98f6423fffb9f3db2f09"
+  },
+  "tests": {
+    "combined_passed": 10,
+    "seconds": 28.67
+  }
+}

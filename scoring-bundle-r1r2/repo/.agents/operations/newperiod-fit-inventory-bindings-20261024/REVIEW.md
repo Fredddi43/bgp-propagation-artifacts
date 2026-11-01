@@ -1,0 +1,9 @@
+# Two fixed development-fit inventory bindings
+
+Local metadata-only composer for N-gbdt/N-temporal. It reads only an explicit mapping of already independently captured SHA-bound metadata. No network, directory walk, tensor/source data, model or score read. Exact original bound_selector.py f2985250 is source-compiled and invoked before output; it validates recipe/dual-manifest/core-gate source-audit/staging lineage and expected fixed collector universe. No collector list is inferred from nonempty/successful rows. Output is exactly existing newperiod_source_collectors_v1 schema, without gate, approval or passed fields.
+
+The actual four manifest/gate references, source audit and staging receipt must be captured under their existing/new reviewed metadata scope. Captures require exact hashes, canonical nonsymlink regular files,128MiB/file and stable descriptor metadata. Only those refs can be followed. No actual configuration or output is fabricated while core52476269 seals are pending. Original fit producer still applies its full core release/manifest/gate authorizations before any fit.
+
+CLI: python3 -I -B prepare.py --config actual-config.json --output fresh-inventory.json. Config contains exactly arm, manifests{30,60},gates{30,60},recipe{path,sha256},captures[{reference:{path,sha256},local_path}]. This copies identities for actual host refs while reading their approved local evidence bytes. Inventory can be staged later under separately reviewed exact transport; its destination path/hash becomes the existing fit prerequisite. Exclusive output prevents replacement.
+
+Nine tests pass0.47s: both exact fixed recipe outputs, original full lineage verifier; failed/mismatched/missing/changed metadata and unsupported arm refusal; actual isolated CLI→existing verifier then exclusive-repeat refusal. Genuine fixture schemas come from accepted selector-compat tests. No host or scientific execution.

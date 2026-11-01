@@ -1,0 +1,11 @@
+{
+  "author_worker": "/root",
+  "files": {
+    "request.json": "37fdc4466adca8df666d0862bb82676207abbfae137092460b6a4dd0df6f94ee",
+    "wait.py": "e40a400a204690abdabd9161855a018929f19b37263f0d872fa9e32468fd3cee",
+    "test_wait.py": "e9adbc6dabef2d19e99e9a85a840b5026528b5a92d6ae9f50c0fec35b346ed0b"
+  },
+  "scope": "Exact10-task archivearray52477689 scheduleronly terminal/deadline identityboundwake. No sourcepayload/remoteverificationreads/prune/retry.",
+  "execution_authorized": false,
+  "actual_launch_sha256": "2eafcb37697f6d3b0c5677cd03375d3862f38977762e7ad79024f869128fdd48"
+}

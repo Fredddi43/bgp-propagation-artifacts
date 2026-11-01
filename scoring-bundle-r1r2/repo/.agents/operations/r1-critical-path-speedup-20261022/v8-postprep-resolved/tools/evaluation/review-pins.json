@@ -1,0 +1,45 @@
+{
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "base": {
+  "v7_codepass_verdict": "360ab81f",
+  "v7_review_pins_sha256": "4d9a37b457597386c35cee456ae98916ab8c0191b5dd38cc53417c56328617f5"
+ },
+ "kind": "r1_evaluation_v8_package_pins_v1",
+ "package": {
+  "execute.py": "805d61366c1a5d380b8193f9edf238846b74acea9b7fd18148e6155b701ae5c2",
+  "execution-approval-TEMPLATE.json": "1af154312c1a3ad0d5c1d959bd6b42a884455c218d399f48f90cc2df98383360",
+  "execution-spec-TEMPLATE.json": "fcad14fce34ffab71af6f25fc54ea877309fd92ad3a0ed93f68aac68be93c22d",
+  "launch.py": "716bbb7b13cc0bca9ecc4690d857fe3b21d098b24b23bdbdaa5334baa2bea84f",
+  "r1-authorization-TEMPLATE.json": "7f67f5846f67d4b53f8e21489426c5d4e859f783028ea4d0a2e1bf68b0967379",
+  "run.sh": "7568e5b5fd8af0ee1274334d8bf8b2ad001d006641fbfeea4e4e99e04dac6cc0",
+  "supervise.py": "b48e37c53a0d1c99bb1b03651f0ebeb859c5c6ffe35721daaae3a7f840aab803"
+ },
+ "prepared_refs": "all null until an actual successful v8 preparation",
+ "render": {
+  "bindings": {
+   "ASSEMBLY_DIR": "r1-release-assembly-v8-20261022",
+   "ASSEMBLY_LABEL": "v8",
+   "CPU_SECONDS": "452 * 3600",
+   "WALLTIME_SECONDS": "113 * 3600"
+  },
+  "budget_r4": {
+   "cpu_seconds": 1627200,
+   "supervisor_timeout_seconds": 407100,
+   "walltime_seconds": 406800
+  },
+  "r2_pins_sha256": "64d0f7a7ab2537ad8ee55a1ca637de6fc592e618af92fac9aa0debae233e3849",
+  "render_py_sha256": "f30ac6b51d6cb80fce65ddc75f416336b4e2f8513c4fc02d8a8aacbdd1504600"
+ },
+ "status": "code_only_candidate_ready_for_independent_review",
+ "v8_preparation": {
+  "custody_sha256": "409e1171d982c8e13bd3065403797083195339a97b2aed247e21dba8a7732dc0",
+  "draft_sha256": "d0f95301ca9b9397076d5aae2020208c7f5114cc4dd8d65e153d45843af4d1a5",
+  "launcher_sha256": "87457a2a6330a99b8bbd70dcf0d2594301cae5f2b6ccace302141d4158e8308e",
+  "release_driver_sha256": "33011eeda7fd1843d79869435263a90cecf6974ae74d3149c595772b67225082",
+  "source_manifest_sha256": "6a9a325f66582b27684fe71fd93922f73a9bae483065fe632af2f5dab7b808a6",
+  "spec_sha256": "caafc95da19f808dcc031f56dccba26f117783df0bcd30ff1d5fb403a66bdda2"
+ }
+}

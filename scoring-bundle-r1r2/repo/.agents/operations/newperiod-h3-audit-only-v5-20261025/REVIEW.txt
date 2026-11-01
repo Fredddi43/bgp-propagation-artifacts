@@ -1,0 +1,11 @@
+H3 audit-only v5 exact local candidate; independent review required; NOT authorized for stage or release.
+
+All four actual assembly captures were independently accepted by sol-h3t (d708e4d0). This unlocks local package preparation. The previous pre-freeze design is superseded only as to assembly/freeze status; resource/operator gates remain.
+
+Closed deltas from v4 generated with accepted predecessors: fresh v5 namespace; explicit64MiB source-bound scratch reservation (21 synthetic tests); one job constructor keyword; captured audit-plan SHA added to per-group predecessor schema and checked before audit execution; path/controller pin adaptation in release transport. Every scientific kernel/source_io file and the v4 audit.py bound_base wrapper is byte-identical. Unadmitted groups remain planned. All four full populations14787 and all exclusions preserved. Source map272files; plan canonical bytes verified by real controller.11 candidate tests additionally pass, including wrong/missing audit-plan binding and unexpected build release refusal.
+
+Stage approval template is canonical controller.encoded and passed:false. Real controller rejects it; a temporary in-memory positive schema fixture passes, but no positive authority is saved. This is author validation, not independent approval. Final review text/session hash and separate root once/operator must be bound before any stage.
+
+The release transport deliberately preserves legacy v4 admission-kind strings; behavior is unchanged except new controller path+hash, and it still releases one group's audit+finalizer only. The captured audit-plan SHA is part of the exact predecessor equality in its authority. Original held jobs52511963/64/67/68/71/72/75/76 are never targets.
+
+Pending: independent v5 source/full-delta and scratch review (root routes scratch to sol-h3t2); allocated-basis resource admission; new exact v5 metadata-capture namespace + chain/stage once operators with six-dir control snapshots; source/stage-held review and root detached once; actual held8job review then canonical binding/release review and ROOTonce. Existing v34 rows35GiB live group+4GiB controls are reservations, not standalone execution authority. v35 retirement remains a separately reviewed candidate. No automatic retries, duplicate jobs/captures, original-job releases or source/data read expansion.

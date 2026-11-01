@@ -1,0 +1,55 @@
+\section{Background and related work}\label{sec:back}
+
+\paragraph{Origin validation.}
+RPKI lets prefix holders authorize an AS to originate a prefix through a ROA~\cite{rfc6480}.
+Route origin validation compares an announcement with these ROAs~\cite{rfc6811}.
+An announcement is \emph{valid} when a covering ROA permits both its origin and its prefix length.
+It is \emph{not found} when no ROA covers the prefix, and \emph{invalid} when covering ROAs exist but none permits it.
+We call the not-found state \emph{unknown}.
+Configuration errors can make announcements invalid~\cite{chung2019rpki,li2026demystifying}, so invalidity alone does not show a hijack.
+
+\paragraph{ROV and observed reach.}
+ROAs limit propagation only where networks use them to reject invalid routes~\cite{gilad2017}.
+Passive data make ROV deployment hard to infer, and controlled announcements separate origin validation from other route preferences~\cite{reuter2018rov}.
+Testart \etal count the collector peers that carry invalid announcements~\cite{testart2020filter}, and the Kentik reports measure how far invalid routes propagate~\cite{madory2022kentik,madory2024kentik}.
+RoVista measures ROV per AS with data-plane probes~\cite{li2023rovista}, and RScope tracks the visibility of invalid routes over years~\cite{li2026rscope}.
+These studies measure reach, not how a single event spreads after its first observation.
+We measure this time course for all three RPKI states and for the return (\Cref{sec:prop,sec:recovery}), and public RPKI beacons repeat their static result (\Cref{sec:beacons}).
+% src (round 4, panel-r4 Q21 / T11 "positioning"; review-r4 section 8 item 6): docs/research/2026-09-09-rpki-rov-propagation-prior-art.md
+%   section 5 ("Already known, with numbers": ROV halves invalid reach in Testart 2020, Kentik 2022 and 2024, RScope 2026; "Genuinely new ...
+%   (a) Time dynamics. No source reports how an invalid announcement's AS set evolves over seconds and minutes"; "Must cite and contrast" list);
+%   docs/research/2026-09-09-rpki-headline-notes.md "Prior-art verdict". Beacons: sections/07-beacons.tex (0.29--0.55 of the valid twin, "in line with
+%   earlier reports"). RoVista use: sections/05-propagation.tex "The ROV frontier" (descriptive only, round-3 reviews M7 / second reviewer W3).
+%   Argus (Shi et al., IMC 2012) is compared in the paragraph "Route leaks" below (round 7, verified bib entry).
+
+\paragraph{Convergence and recovery.}
+After a route change, BGP can explore other paths before it converges~\cite{labovitz2000delayed}, and BGP beacons make this process observable~\cite{mao2003convergence}.
+Route flap damping can suppress a route that is withdrawn and announced again~\cite{mao2002damping}, and some withdrawn routes stay as zombies~\cite{fontugne2019zombies}.
+ARTEMIS measures recovery in controlled hijacks with active mitigation, from the arrival of the hijacked route until the legitimate route returns~\cite{sermpezis2018artemis}.
+Our pairs of archive transitions each start at their own first observation (\Cref{sec:recovery}), so our times do not compare directly with these delays.
+
+\paragraph{Collector visibility.}
+Collectors see only the routes that their peers export, and a hijacker can keep its route away from these peers~\cite{milolidakis2023}.
+Collector placement and redundant peers shape what an analysis can see~\cite{zhang2007,alfroy2024mvp}, and correlated peers can bias estimates of the affected share of ASes~\cite{sermpezis2021impact}.
+Our target is therefore the AS set on observed paths, and we check results per collector.
+RIPE NCC announces beacon prefixes with valid, invalid and unknown states~\cite{ripe2011beacons}, which we compare at the same collectors (\Cref{sec:beacons}).
+A missing invalid route does not show that a peer applies ROV, because an upstream AS or a route server may have rejected it~\cite{reuter2018rov,hlavacek2023rov}.
+
+\paragraph{Route leaks.}
+A route leak propagates a route beyond its intended scope~\cite{rfc7908}.
+Detectors compare paths with inferred customer, provider and peer relationships~\cite{gao2001relationships,cloudflare2022leakdetection}, so errors in these relationships cause false detections.
+Inference methods such as ProbLink and TopoScope reduce these errors~\cite{jin2019problink,jin2020toposcope}, and RFC~9234 adds roles to BGP sessions to prevent leaks~\cite{rfc9234}.
+Our leak identifier inherits the uncertainty of the relationships it uses (\Cref{sec:data}).
+
+\paragraph{Detection, early forecasts and baselines.}
+Argus detects hijacks by joining control-plane anomalies with data-plane reachability~\cite{shi2012argus}, and DFOH detects hijacks with a forged origin~\cite{holterbach2024dfoh}.
+Such detectors decide whether an event is an attack, while we measure and forecast the AS set that an event reaches over time.
+
+% round 7 (review-r6 W9 / W5 "Background: Argus"; panel-r5 NEW-17): Argus entry verified via api.crossref.org (refs.bib annote);
+%   DFOH as in sections/09-discussion.tex (forged-origin hijacks).
+Earlier work estimates the impact of a hijack from observations, or simulates propagation under assumed routing policies~\cite{sermpezis2021impact,furuness2023}.
+SWIFT infers the extent of a remote failure from the first messages of a withdrawal burst~\cite{holterbach2017swift}.
+We forecast the AS set of an event at two hours from its first seconds.
+On temporal graphs, memory baselines such as EdgeBank are hard to beat~\cite{poursafaei2022,huang2023tgb}.
+These tasks differ from ours, but they motivate our comparison with persistence and with a history of past events (\Cref{sec:forecast}).
+Some networks also hijack again and again~\cite{testart2019serialhijackers}, so past events can carry information about future ones.

@@ -1,0 +1,110 @@
+{
+  "addressed_review": {
+    "path": "<REPO>/.agents/workers/opus-takeover-20261021/board/REVIEWER-sol-g1a-ORIGIN-STABLE-SCIENTIFIC-AUDIT-V1-CHANGES.json",
+    "sha256": "6858aeda3af23871e93b6bd0749f15d1ad08226e243214e144ef36af0b5c618c"
+  },
+  "artifacts": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/REVIEW.md",
+      "sha256": "d369de30107ae966a496ba989c9e1fce2b3151bdc37cc99e30562a81e7608773"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/audit.py",
+      "sha256": "d17029b07b212ae1aba59100741dfb3dafe33f8cf4fc1645b783a475956ea6f2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/author-control-scan.json",
+      "sha256": "01e9e1c2c11ff8ea56f4444e4ee57d44a3b7f0ef7fb864181de74066b1ce4d55"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/control_scan.py",
+      "sha256": "27ca457df11f15c607c953427d313b879fb06fb90a43afbc1c740f932e9c7098"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/once_operator.py",
+      "sha256": "b1f7e3e0a227222c5264a5f282191c719d11406923d96c19724deb2d74cd67d2"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/origin/remote-command.txt",
+      "sha256": "df72dcbbf3e6bcfa1935824aa3c44dd830c441b22b19e044eeb16d13be4d2d3f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/origin/request.json",
+      "sha256": "c67176dac119a26ac2227eec81c309de9f1e24fe631593fb29b050ff4d34bef8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/origin/root-authority.TEMPLATE.json",
+      "sha256": "4bb9736b6b6310bb25e817c32bc4730f36bea3ae9d6f72e084ba4f50f003841b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/origin/runtime-admission.TEMPLATE.json",
+      "sha256": "3de6268ff74f970baf89f935dca82db8c0f2cc1de1c71171e76ff035376e6ac9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/origin/worker.py",
+      "sha256": "f7436e4961a471d24e2b7cd8a613897de6615ba6a2181175f58d2311ab2e2883"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/prepare.py",
+      "sha256": "2ef7c8dd0bc8e493366bbedbbaa9366677b7106ad4294c968715bb4d5f5ad6d7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/stable/remote-command.txt",
+      "sha256": "df72dcbbf3e6bcfa1935824aa3c44dd830c441b22b19e044eeb16d13be4d2d3f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/stable/request.json",
+      "sha256": "e430c98baab11322a75214dec6e4dfdaac5afedf19228a067d3bb07d33ccef74"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/stable/root-authority.TEMPLATE.json",
+      "sha256": "ef00fcd07187573a3285aa2cdca10b76e9787cecd33fdd9524452806d22d339e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/stable/runtime-admission.TEMPLATE.json",
+      "sha256": "429ba51ff596a4dc03bf9d74d22752da44df9b4dbee7fee9af22f7b83eaa3b4f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/stable/worker.py",
+      "sha256": "7efda08f47e2b6e06abc81395101f54463d73214b741362ffc00a30efe547559"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/test_audit.py",
+      "sha256": "107bf5e20c6258237ae33c251b2f75be8c7dc3e593fa57a3805f56718ec487d0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/tests.stderr",
+      "sha256": "91f812ca69e906e968080c0e305b6c580abf27d5ed0ea1c705a353b7b5a14add"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/wrapper.py",
+      "sha256": "9b27bd2a60757c2c7a446dceed38213cbbf0954205cdc4a66a4bc98c3ca20b77"
+    }
+  ],
+  "author": "astra-g1a",
+  "custody_log_appends": 0,
+  "execution_authorized": false,
+  "kind": "origin_stable_scientific_audit_preparation_v2",
+  "private_metadata_reads_executed": 0,
+  "remote_operations": 0,
+  "requests": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/origin/request.json",
+      "sha256": "c67176dac119a26ac2227eec81c309de9f1e24fe631593fb29b050ff4d34bef8"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v2-20261026/stable/request.json",
+      "sha256": "e430c98baab11322a75214dec6e4dfdaac5afedf19228a067d3bb07d33ccef74"
+    }
+  ],
+  "reviewer": "sol-g1a",
+  "supersedes": {
+    "path": "<REPO>/.agents/operations/newperiod-origin-stable-scientific-audit-astra-g1a-v1-20261026/review-ready.json",
+    "sha256": "411200a1be6964f6cb4996f3d401cbb60bfc29858d10760590573cb026fbfbbb"
+  },
+  "tests_passed": 17
+}

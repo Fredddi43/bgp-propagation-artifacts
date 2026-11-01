@@ -1,0 +1,14 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "d9c15c0815049349fbb1bb7edc8d8524e94368ca9f9c3cf46067705dfe19cac6",
+    "build_preflight.py": "87e7d87eb0c14a19e77d9ff8de74975ecd849c934f2337f015b5d16a54c2930b",
+    "preflight.py": "6bfa72a2fc05d771c190db54518f0c6f891a9b6c126a649244223c467d1e6831",
+    "test_preflight.py": "335575b391f5695cb5fdf9881835eba113f22382a5fdc72c12d0936403708622"
+  },
+  "kind": "r1_worker_bootstrap_preflight_code_candidate_v1",
+  "runtime_changes_made": false,
+  "tests_passed": 8
+}

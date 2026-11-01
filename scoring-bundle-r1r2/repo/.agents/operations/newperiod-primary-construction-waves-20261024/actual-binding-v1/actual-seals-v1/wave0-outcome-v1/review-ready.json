@@ -1,0 +1,9 @@
+{
+  "files": {
+    "capture.py": "633444b1498c398eaa05b9725a4e6f0e36fd1171ce4551fb190568a150091488",
+    "request.json": "603c9e40325ff56aa183f93be275f3a26fc644aa7340d2c4fe51f1faae00d162",
+    "test_capture.py": "b6eee21dd48ea04c3bfaca7d1fda01587c24bc8c80f23c50ca1bf67a3fe28d29"
+  },
+  "scope": "Exact66 done/failed paths only; original manifest+first32 build completion emitter schemas; no referenced outputs followed. Conditional all33terminal before one capture. No release authority.",
+  "tests": "4 passed in0.11s"
+}

@@ -1,0 +1,48 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "b81fed106e29d80d5f533e6eac5968997303d7aa5f948d19acbcd488b54d7cc5",
+    "build.py": "ca110fb0c0a99aeaacd5cc06fc2a738630b0cb288a7d169f5abe8f91ed043122",
+    "count-candidate/binding.json": "dcc4ad0cdc0e480cb3a83520599129d31785543ab72f87b38204a7c73d8f0cac",
+    "count-candidate/bootstrap.py": "f48ca9da844677a859c27d249b4e48121e38bc238f16a06d258234caa6ca7830",
+    "count-candidate/client.py": "755d5f32af0825c43381ec71b50d73412e1645985eef4886ed77fd4ea30fe9e0",
+    "count-candidate/helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "count-candidate/kernel.py": "5bf4f721b552743aa5634363582f9fe4fdcab02422ae86d89e6fce9f00e81e0d",
+    "count-candidate/original_access.py": "96d89191e7c0d69b40e466da4da5129713d4f1e12e9115f408beb3b3d0035806",
+    "count-candidate/original_adapt.py": "540345344cf816e81398854c8e64320827854de5130f88b481a92ed325eb204a",
+    "count-candidate/original_common.py": "dd1503f5342fe89ba266e559409b963dcf6fd5b66c35b301bf1cbf37252db737",
+    "count-candidate/original_counts.py": "356c0f5b5abe88cce01cf04a7de71b6547d50b7cf9b30ddfd797542103da9745",
+    "count-candidate/original_custody.py": "a462576977e52e534f8e09787df29501ed5a0de178f216ae726a7be51f5c0f06",
+    "count-candidate/original_tsfm.py": "96ffc8979cd037a26c8ab9a0358c750eb4776d2e2ef0cb27f43b1ba1a5d515d5",
+    "count-candidate/pins.json": "a379dc696b9c2a5885162786de7f233c3b0b8d35ecf116bb98617aed8b14b3de",
+    "count-candidate/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "count-candidate/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "count-candidate/runner.py": "8a6335d0d71c1878c34c1c855a46cc0b385420f0c5f6d69401d3781facd67f94",
+    "history-candidate/binding.json": "412c18bd179e1dc75116ef3bcdbeae9eba03466e8d364debc9b09392d1f29976",
+    "history-candidate/bootstrap.py": "2acc94c190bc7247bd3fb1553983bd4aadf40f731452a67e6ef3a6698087d98c",
+    "history-candidate/client.py": "9bda1e877ee7119b0e5876eb05b914880f43783edc2779fcc90bd8c5ce1c3e12",
+    "history-candidate/history.py": "433d2d6356920f62f70b0ae5c338f9a1b003052c32db75fa32c2f0e4851e3f6e",
+    "history-candidate/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "history-candidate/reviewed_baseline.py": "71731649caaba4a0954a4853a012a6d98058c9a96c6ddb082d259e6bfff32158",
+    "history-candidate/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "history-candidate/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "history-candidate/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "history-candidate/runner.py": "06eefa377630f58b5085eff661bd6a8030e4ca294158c6d4d6ce28a6c28c5a24",
+    "original_bootstrap.py": "281b3b608dcd826b2ac0b6b18c34d3756836d32c29c8b1421bb2318d6b8e5c13",
+    "original_client.py": "1eeeea1d7e08a332a26384049d2061bc2d2b6198bd3dd48999758e0faf4c28fc",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "test_build.py": "3cced56440464a4cbe0fbf253c625d24dc642b40e14b4d364e723cff042d8fdd"
+  },
+  "kind": "newperiod_history_count_transport_code_candidate_v1",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 71,
+    "seconds": 46.17,
+    "typed_gpu_delta": {
+      "passed": 5,
+      "seconds": 1.62
+    }
+  }
+}

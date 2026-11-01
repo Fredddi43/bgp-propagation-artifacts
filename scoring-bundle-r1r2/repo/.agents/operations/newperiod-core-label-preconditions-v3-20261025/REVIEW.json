@@ -1,0 +1,39 @@
+{
+  "approval_needed": "Independent request-bound passed review with distinct reviewer_worker/reviewer_session; root then fills new control snapshot and canonical authority. Root launches detached only. No remote launch by author.",
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "kind": "AUTHOR_REVIEW_NOTES",
+  "minimal_go_kind": "ROOT_GO_CORE_LABEL_PRECONDITIONS_V3_ONCE",
+  "operator_check": [
+    "python3",
+    "-B",
+    "<REPO>/.agents/operations/newperiod-core-label-preconditions-v3-20261025/operate.py",
+    "check",
+    "--authority",
+    "<fresh root authority>"
+  ],
+  "operator_run": [
+    "python3",
+    "-B",
+    "<REPO>/.agents/operations/newperiod-core-label-preconditions-v3-20261025/operate.py",
+    "run",
+    "--authority",
+    "<fresh root authority>"
+  ],
+  "records": "<REPO>/.agents/operations/newperiod-core-label-preconditions-actual-v3-20261025",
+  "request": {
+    "path": "<REPO>/.agents/operations/newperiod-core-label-preconditions-v3-20261025/request.json",
+    "sha256": "fa68ffef7d04de706e033d7826aff11462d718d6c32f245c4cd813c505fc5867"
+  },
+  "required_review_shape": {
+    "passed": true,
+    "request": {
+      "path": "<REPO>/.agents/operations/newperiod-core-label-preconditions-v3-20261025/request.json",
+      "sha256": "fa68ffef7d04de706e033d7826aff11462d718d6c32f245c4cd813c505fc5867"
+    },
+    "reviewer_session": "<independent session>",
+    "reviewer_worker": "<independent reviewer>"
+  },
+  "reviewer_requested": "sol-h3t2",
+  "scope_delta": "Fresh v3 bounded materialization and exact original torch.load; finite counts only. Verify original stage source closure before/after and replicate scripts/src path precedence; do not import/run producer. Uses v2 immutable path/identity/once/control policies."
+}

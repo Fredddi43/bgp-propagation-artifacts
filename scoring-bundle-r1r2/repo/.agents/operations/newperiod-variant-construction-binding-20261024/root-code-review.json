@@ -1,0 +1,35 @@
+{
+  "author": "/root/deadline_audit",
+  "checks": [
+    "Exact core seal/construction/source/staging/boundary/release lineage and frozen recipe validated.",
+    "Original library bytecode recomputes genuine panel digests; independently recomputed baseline digest plus historical event/onset/maturity/full-reference target population equality.",
+    "Original coverage_extract applied to all fixed development events, onset equality; no copied empty coverage.",
+    "Source and gate are explicitly prospective without passed flags, core build evidence clearly inherited.",
+    "Receipt-bound canonical original source reads; encoded closure/per-file/events limits explicit, not falsely advertised as decoded-memory bound."
+  ],
+  "conditions": [
+    "Actual fixed coverage receipt must be admitted and full event coverage checked; no count-based substitute.",
+    "Actual source caller requires exact read closure, private runtime/access logging, concrete memory/wall/storage admission and independent execution review.",
+    "Actual source publication and new graph audits remain necessary; do not authorize fits or claim actual outputs from fixtures."
+  ],
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "158df139432e01e0f064805ad0b4db557f12d3587cdd8aefdb3833ca398db4b2",
+    "bound_selector.py": "f2985250556fce5831bdac33cbac3281901b20f6af72cfa91866755492f9aa37",
+    "core_metadata.py": "cc45d828994efd49d7188f25c5d64287249aca4a62fab6e72fb5c3c6bf955f20",
+    "h3.py": "b578690b87a279fd7f99f6d71d74837d56bba49fbb3e6b034f4a351d3dcedc37",
+    "history.py": "7c946614b1630e5f9ed1665182b64f8a911f41d61e1c616dd3ca8301fe7729b2",
+    "source_io.py": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0",
+    "test_h3.py": "b0f01d6f0c2ff9fbed043036be3589b54539642d3deb0a2dfa61b66455c35a26"
+  },
+  "gate_publication_authorized": false,
+  "passed": true,
+  "request_sha256": "737da5fbf8aba2518dd537ef818fbda3108f0b2842857d0070f7171d12f11c6e",
+  "retry_authorized": false,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "tests": "2 isolated end-to-end cases PASS4.60s, both horizons/both panels with original authorized builds and negative metadata/coverage/resource cases.",
+  "utc": "2026-10-24T07:20:45.253891+00:00",
+  "verdict": "CODE_ONLY"
+}

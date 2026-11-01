@@ -1,0 +1,48 @@
+{
+  "author": "/root/remaining_work_audit",
+  "changed_predecessor_files": [
+    "output_budget.py"
+  ],
+  "execution_authorized": false,
+  "files": {
+    ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47",
+    "REVIEW.md": "43528631ed7b2f06419940ad7c9ea77d3892a6a4966f82713b7e1ed5074e5b92",
+    "REVISION.md": "cc91c31600d2a0373127146edddc87fec4c9ba764e7285ab341da94e038941a1",
+    "additional-evidence/test_family_packaging.py": "fabbf93b4cc9e405343b7ad05b96b10db5c0515e8f0ba384f8d4f69db4e36350",
+    "build_package.py": "8f55de652a20b3c271bd71cc144f071e532ac723fab60df885fd68fb5e253368",
+    "controller.py": "027b7a688c7b23a97cf446d94141d6080e036ba9127a3c0b8c6293593d7399a7",
+    "development_build.py": "32c5b92ae21c59f564a7d896dc46060302c5416c66232e141c17ad66ae0cd59e",
+    "h1/audit_candidate_expansion.py": "33fee4ea193b5a0603838bc1873dd53b012ad80d8d83bf53835195f1d44c335b",
+    "h1/original_audit.py": "e0d266111f76d56c9b28090b40e5333b157ff1ee4f1c1509997ea6c6f317cf72",
+    "h1/verify_candidate_topk_sample.py": "5d8c1301c4d8ea450abb5efa3e14f054472bef1caed9a0ed0c0a910d15db61c0",
+    "h1/wrapper.py": "5b7494980006d8c968ae94a7c4276381b32d03fa3f0d92ba12896e8624eb171f",
+    "h3_audit.py": "27c2601f584738b13b4adc4df2d3c8a502e9392bae761c996fcf824d37d509a2",
+    "job.py": "6f54cc51182d00903ce508e48578713e9739e875bba200214a84b228f932a228",
+    "kernel-review-ready.json": "16d6e6c0dc2cb7dd0108be93d15fb54c285ace76a4c0bb5753a10960cef4201b",
+    "original_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "output_budget.py": "9e122a6ff46e7d0566cea3e8868c7ce17f3e0a329decd56bb4316919fb2a0b51",
+    "private_runtime_verifier.py": "20de55b7a14202287dab5ef615f4780603b13f2bdf6b84458d95fe7822d598fd",
+    "runtime.py": "5e8571180c025605681d94b8b9ad7e761c8f0a199199133e27a4f50daac0f716",
+    "test_budget.py": "51683866a5dd89c5bffe47e65713cedaaa47eb65ac84dd4b9bac5b976405e52a",
+    "test_build.py": "097d7d2173b1d3eefbcb99fa7ab1ad38bf4006c601ebb7450e5b7ac736749c83",
+    "test_controller.py": "7c4cd58211668a94330e105303c2282855ae82040baf441505f92c6bc5d5a08a",
+    "test_h1_wrapper.py": "9415fca6f8cb59fea62c6e25f7f7f292967e542ec9a466e686a8642f76fc3b7b",
+    "test_h3_audit.py": "9b3eca70f4c4f638da8664d0d573a95d18768aa3fdb876d2bad6479fc1851648",
+    "test_job.py": "c4a84c0c321944521a015e060e501904919f2754fb479bab0682d9346fb9c8a6",
+    "test_package.py": "0542e3a64dd3355f12ec1efe1ba2cb6da0d7ffcfc5e33a72d8ea940cb9dd2497",
+    "verify_h3_panel_completeness.py": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0",
+    "verify_h3_panel_features.py": "3529b9800016ec798b463683cdf768ffecad2a0a7b14630a78adeb6c00119f2f"
+  },
+  "kind": "newperiod_development_parallel_review_v2",
+  "predecessor_sha256": "da230d340ea074dd2300f637990f293383693ff378fb00992c48754939830ce8",
+  "remaining": [
+    "actual source/gate/release metadata",
+    "separate exact operation authority",
+    "resource and concurrent storage admission",
+    "held scheduler identity/release binding"
+  ],
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q .agents/operations/newperiod-development-construction-r2-20261023",
+    "passed": 67
+  }
+}

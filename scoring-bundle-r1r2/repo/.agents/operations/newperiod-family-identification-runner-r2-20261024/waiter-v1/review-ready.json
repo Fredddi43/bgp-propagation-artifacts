@@ -1,0 +1,11 @@
+{
+  "kind": "origin_identification_waiter_readiness_v1",
+  "author_worker": "/root/deadline_audit",
+  "previous_waiter_sha256": "1ec664920200f06bb6ef00018f8cdc377699b8c3dee8a0d54ce52a66f87a7b82",
+  "files": {
+    "request.json": "8035e10e21376d4d1d2201b5e3b4a7face756d2bf4ee6d68cd23328d0e586ede",
+    "wait.py": "dc1d6c1eb0cbb394470bb1f4d396198a0b9478e40373fec1191a3f7f7b3ff0ae",
+    "test_wait.py": "e528a165de4bdb81be612239fd43987c67ec315ddd608a01efba280afa505f1a"
+  },
+  "scope": "Exact3job scheduler metadata only; one local durable coordinator wake, no data/results or retry"
+}

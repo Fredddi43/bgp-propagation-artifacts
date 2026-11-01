@@ -1,0 +1,15 @@
+{
+ "approval_claimed": false,
+ "author_model": "claude-opus-5-5",
+ "author_session": "<SESSION_ID>",
+ "author_worker_label": "/root/opus_implementation",
+ "authorizations": "none",
+ "frozen": "no edits while under review",
+ "kind": "newperiod_validation_calibration_revision_v2_review_ready_v1",
+ "pins": {
+  "path": ".agents/operations/newperiod-validation-calibration-20261022/revision-v2/pins.json",
+  "sha256": "f91e58879bbd488902ae02d2a7dfadc054a355fb1bc4a377fa4ce3f1525d690a"
+ },
+ "review_md_sha256": "9a5fd343f990234ef8407a0e4c3a0f9310ce860b5b327cee93f0de3553e74bba",
+ "reviewer_session": "<SESSION_ID>"
+}

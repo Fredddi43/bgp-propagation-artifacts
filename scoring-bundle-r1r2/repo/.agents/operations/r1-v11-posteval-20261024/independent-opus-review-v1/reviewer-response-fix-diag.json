@@ -1,0 +1,5 @@
+{"kind":"reviewer_response_v1","reviewer":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "d0_readback_d1_approval":{"path":"opus-d0-readback-d1-approval-v11-r2.json","sha256":"b96c4c6fdc00f79c5c9b48189b1611529beb257e733f795b187dee9e88c0ca07","tool":"d0d1-fix-v1/phases_r2.py 66c51a11"},
+ "vrun_diagnostic_approval":{"path":"opus-vrun-diagnostic-approval-v11.json","sha256":"a1fbb93e280828a3195f4a0f1ac99c7c642e2a599c7dc277c6767e95f6332046","output":"k2-v1/vrun-failure-diagnostic.txt (+ -result.json)"},
+ "history_release_actual":"VALID (ecbd97dd consumed; job 52473649 released)",
+ "review":"d0d1-fix-and-vrun-diagnostic-review.txt 1f9857ce"}

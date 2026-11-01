@@ -1,0 +1,14 @@
+{
+  "author_worker": "/root/deadline_audit",
+  "execution_performed": false,
+  "files": {
+    "README.md": "6cf3f87bcdb245b67e3f266029ef99cf9190de5a0776a919b7622c73708ff393",
+    "outcome_capture.py": "90d1eeeb0797ccc44eefadff9f92665fd8cdd72f381516ddbd85fec7039f1a30",
+    "request.json": "0f90118bf891cd6a4edeb091fa5322299656685f95223ca3464f09bd09a2b0ef",
+    "size_capture.py": "e04853fa7bfcae3f7176b31639c735395c3b8df1e613085001a58c33680a48ff",
+    "test_outcome.py": "e8af1308223a75e356fd251e2e69ad96e3914424ba2296460ec8d25c3d13ddcf",
+    "test_sizes.py": "da16a285f044d85b44da2ee747817138b6769d677f63f37a42fb3f611363fad3"
+  },
+  "kind": "timing_first16_outcome_size_review_v1",
+  "tests": "10 passed"
+}

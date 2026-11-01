@@ -1,0 +1,18 @@
+{
+  "author": "astra-final",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "a0555d202af9be6bf473f0428e25da87fabc6eae0d7e3f0311fa310010c0de29",
+    "bind_profile.py": "f4b2ddcbaeb51aa2f383be277070234abe7c5e1ac677ab5c57b24e550b72d9b4",
+    "binding.TEMPLATE.json": "8219ee5cc838014d6a2138867b4782a5b2195c204262b567ac5e18c4830ab882",
+    "local-validation.json": "ea4e3de4c8027b28129b309682bb36c25ee2c0fb670b009c30415faa772184df",
+    "operating-contract.TEMPLATE.json": "56d70282896e7ada41f0f1afa076750a8ba2d48473381e0b5304f50082d5a8ce",
+    "operational-budget.json": "12501dc9c047ca10eba063441c344133cc69c6d5abf7bfa99820f06d36795e61",
+    "physical-profile.TEMPLATE.json": "776d208a8447652054e2a36dfb5677abe6c0238ed3073594b143a10743a88cf2",
+    "sources.json": "d5a5a293f5d16ad0a400f1b663706e967ea99010fcb1537d32f6527493378b9a",
+    "test_contract.py": "4240b3deb7208c71403feba63f0a92de118a910257cf96c58c2d48aac5a634de"
+  },
+  "full_roles": 400,
+  "kind": "AUTHOR_H3_FIRST_MANIFEST_CONTRACT_REVIEW_REQUEST",
+  "reviewer": "sol-final"
+}

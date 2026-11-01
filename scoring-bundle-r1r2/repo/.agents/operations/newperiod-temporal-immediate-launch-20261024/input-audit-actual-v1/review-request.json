@@ -1,0 +1,49 @@
+{
+  "actual_bindings": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-immediate-launch-20261024/input-audit-actual-v1/actual-bindings.json",
+    "sha256": "b9ad2742f30ce6dab408f5acc7211114774ab0feb2bb263bbaf1ca8ed2903e25"
+  },
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "kind": "newperiod_temporal_input_actual_resource_and_execution_review_request_v1",
+  "next_step": "Author binds actual resource-readiness into reviewed transport.bind, emits exact complete source candidate, then reviewer issues exact spec-bound original execution approval. No placeholder authority or actual staging yet.",
+  "remaining_dependency": "Independent resource readiness; exact candidate operation/execution review follows.",
+  "resource_limits_note": "Original4CPU128GiB/112GiBAS6h and100GiBproducer free floor unchanged; root current450GiB joint phase separately enforced before actualrelease. Sequential graph decoding retains input clone and train feature/tie statistics. Output includes2largestinput tensors+2normalization tensors+2metadata audits;1GiBsource-audit reservation is not assumed an input-audit bound.",
+  "resource_output_path": "<REPO>/.agents/operations/newperiod-temporal-immediate-launch-20261024/input-audit-actual-v1/resource-readiness.json",
+  "resource_readiness_schema": {
+    "manifests": {
+      "30": {
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1/development-newperiod-v1-d30.json",
+        "sha256": "74ff724ead9eca4bc36a8015c223587484a3ac423efcff6ac95025189281e079"
+      },
+      "60": {
+        "path": "<FORECAST_ROOT>/newperiod-development-v1/sealed-core-v1/development-newperiod-v1-d60.json",
+        "sha256": "1dad255b832a0403f985d594b0da0d15202b380334871e79b326e358bf3d2e07"
+      }
+    },
+    "passed": "reviewer decision",
+    "resources": "exact resources above",
+    "retrospective_release": {
+      "path": "<FORECAST_ROOT>/r1-release-parallel-v11-20261024/control-v1/release-native-v2/r1-release.json",
+      "sha256": "ba2a1e2e6e46b6253e85972f46b13e607ce0f32c013a07955a8408417caedba6"
+    },
+    "reviewer_agent": "separate eligible original nonauthor",
+    "reviewer_model": "truthful reviewer identity",
+    "reviewer_session": "separate eligible session"
+  },
+  "resources": {
+    "address_space_bytes": 120259084288,
+    "cpu_threads": 4,
+    "free_floor_bytes": 107374182400,
+    "max_concurrent_audits": 1,
+    "memory_mib": 131072,
+    "walltime": "06:00:00"
+  },
+  "source": "<REPO>/.agents/operations/newperiod-temporal-input-audit-pooled-r2-20261024/review-ready.json",
+  "source_code_review": "<REPO>/.agents/operations/newperiod-temporal-input-audit-pooled-r2-20261024/independent-root-review.json",
+  "source_completion_capture": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-completion-capture-20261024/execution-v1/stdout",
+    "sha256": "d4b8ed10d3b578250bf550afbc5214edcb343419ebc32585c77ba172a4d161c3"
+  },
+  "transport_code_review": "<REPO>/.agents/operations/newperiod-temporal-input-transport-20261024/root-code-review.json"
+}

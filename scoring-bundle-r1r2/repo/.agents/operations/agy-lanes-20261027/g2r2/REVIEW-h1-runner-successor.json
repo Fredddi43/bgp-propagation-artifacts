@@ -1,0 +1,17 @@
+{
+ "changed_vs_original": "reviewed_fit.py STAGE/OUTPUT constants (v1 -> v2-G049) and runner.py PINS['reviewed_fit.py'] only",
+ "checks": "read-only cluster precheck (g2/precheck_h1_v2.py) all OK; 31 original tests + 31 against successor pass",
+ "files": {
+  "h1-successor/reviewed_fit.py": "97fd9fcec1b68a24861bdb18dcf00709c8a4fb358423176c709ea4197d88609e",
+  "h1-successor/runner.py": "8c639fba75e9b9c1a29723cbc2fd7e18634cc9bbaf0eba3c9de83c322d109aa9"
+ },
+ "kind": "G2_H1_RUNNER_SUCCESSOR_DRAFT_REVIEW",
+ "packet": "<REPO>/.agents/operations/agy-lanes-20261027/g2r2/H1-RUNNER-SUCCESSOR.md",
+ "reviewer_model": "claude-sonnet-5-5",
+ "reviewer_worker": "root-orchestrator-claude-sonnet-5-5",
+ "risks": "first real execution untested; fixtures do not exercise STAGE/OUTPUT",
+ "root_signoff_utc": "2026-10-27T07:46:09Z",
+ "scientific_change": false,
+ "scope": "namespace-only successor of newperiod-h1-inference-20261023 for the v2-G049 H1 chain",
+ "verdict": "PASS"
+}

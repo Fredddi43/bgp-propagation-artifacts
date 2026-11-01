@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "verdict": "PASS_CODE_ONLY",
+  "reviewer_worker": "/root",
+  "reviewer_session": "/root",
+  "reviewer_model": "codex",
+  "utc": "2026-10-24T06:50:57.048908+00:00",
+  "review_ready_sha256": "f067ffb3c96d78ddf7916decafd7909e629621b15d75d6a9b52f87dd4d435304",
+  "source_bindings": {
+    "REVIEW.md": "f5ea75be7a3cd5882aecb7978abbe3c0349f757215a78fac720feda241a5dbb0",
+    "publish.py": "192ab130bd5b4995d242f8bd04d8c9982794a729241026b5a8a494c9806164c5",
+    "reviewed_prepare.py": "a9c5f17236609c3e8f18a19c504811928306c0d8f6c9a19d8be7dfae28d11ab4",
+    "test_publish.py": "0302ad73d5a904944768252f05029df99e562c0472ec4c0109ab6805157c4d88"
+  },
+  "tests": "21 combined tests passed in2.55s",
+  "findings": [],
+  "actual_execution_authorized": false,
+  "gate_publication_authorized": false,
+  "scope": "Original authorize/verify_release function bodies retained; exact16input refs and five streaming artifact hashes; dual guards before any passed gates; publication excludes both prepare/publisher authors. Caller finite scope/logging/runtime/supervision/output budget verified. Actual metadata sizes/resources and independent publication authority remain required."
+}

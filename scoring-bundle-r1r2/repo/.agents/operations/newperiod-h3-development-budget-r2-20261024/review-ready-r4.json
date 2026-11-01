@@ -1,0 +1,24 @@
+{
+ "author": {
+  "model": "claude-opus-5-5",
+  "session": "<SESSION_ID>",
+  "worker": "/root/opus_review"
+ },
+ "basis_review": {
+  "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/independent-review-f4d75bb1/review.txt",
+  "sha256": "b05532ba781736e264c4fd0e891c65e13b8e1b17045fad85db366cb9812e91ad"
+ },
+ "execution_authorized": false,
+ "files": {
+  "REVIEW-R4.md": "676fd580633c16e175d1a9c337470a276ea7d9e35eca1fef0c4eafe2d3a60513",
+  "build_stage_proposal.py": "fb4e478d281c7e665d6996ac4f07fb4d3eae561b4e72dab1a834325c3ae246eb",
+  "stage-proposal-v1/request.json": "4217e88fa81bdaeb644db991137d78448bcb2474c369889f016251c4bf51d304",
+  "test_stage_proposal.py": "57a7c6b77095de59ad77d89f0c3d3dfd8a22e35e715211e8319b4409e2529dbe",
+  "wave-waiter-v1/test_wait.py": "602226dbed9cb202b22dc7d27dc55971af382596402172aab11f22b3dd13ef9e",
+  "wave-waiter-v1/wait.py": "035a5b6aab1e903bb08d25ed7ffaf2dec29b58f65fb7c7bce626c30bb31ecc1e"
+ },
+ "kind": "h3_development_r4_preparation_review_ready_v1",
+ "required_independent_reviewer": "f4d75bb1 /root/opus_implementation",
+ "tests": "wave-waiter-v1 10 passed; test_stage_proposal 3 passed (all H3 suites together 54 passed)",
+ "utc": "2026-10-24T18:35:06.328323+00:00"
+}

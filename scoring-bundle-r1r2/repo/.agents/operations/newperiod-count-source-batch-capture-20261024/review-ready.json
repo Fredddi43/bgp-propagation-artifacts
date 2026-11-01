@@ -1,0 +1,16 @@
+{
+  "actual_capture_executed": false,
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "REVIEW.md": "5bc7a6fe1ace031bce800dd709bbc974bc9dcc2e2e1778295a8d5be04d0fbb40",
+    "build_request.py": "36515f732c501dd4a523fd8578b6fd1c3163297f331983b323873f14fae81258",
+    "capture.py": "3a7aefd79ddf0cbc70c68a5f438f0af60c5de8239d4e2091cc41c4e3ea5682c1",
+    "files.json": "dbcd637eaa9eb2720e8101d788d8810e6f0665daacc5711e0aec7d206c6e8698",
+    "provenance.json": "cc22b45d97765ccff61f595d79119d72aee46c715efa9d9a59f4de1d70be1c64",
+    "request.json": "e47d4a97f2f358902dee29e41e5cc9b0017a887863386b41a739a36d95ee4af9",
+    "test_capture.py": "c587849b297009fa78ec38b329142348ad73c9f6481c4fecee588bdf258ef396"
+  },
+  "kind": "count_source_batch_capture_review_ready_v1",
+  "request_sha256": "e47d4a97f2f358902dee29e41e5cc9b0017a887863386b41a739a36d95ee4af9",
+  "source_sha256": "3a7aefd79ddf0cbc70c68a5f438f0af60c5de8239d4e2091cc41c4e3ea5682c1"
+}

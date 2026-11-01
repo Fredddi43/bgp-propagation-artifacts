@@ -1,0 +1,15 @@
+{
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "922d6b4f7d1fbfeb92a8b0aac3b94770099ca022554e0e537fd5771a0aa91421",
+    "chain-authority.DRAFT.json": "749ff337accaca04966399df638421f448c2bf4da96068862a47813f7425c936",
+    "chain_h3.py": "e6f5a48ea591f03eb3ce91ccb14523de231ff69033ba60170845c05618bded4c",
+    "resume-evidence.json": "23d345eb5b7d5c77c8f0297086186474130250ee40d5ce560f01b27b4f4b6ad0",
+    "test-run.txt": "33804d7d1a279a77352d4fae255e9ebdb1a7be19aee6746bad5c81ede0408fb8",
+    "test_resume.py": "698532381590826d542efe7eb1c4f26e777c97234119b0f3596a0d6c3948823a"
+  },
+  "kind": "h3_fixed_wave3_resume_candidate",
+  "reviewer": "sol-h3t",
+  "tests": "17 passed"
+}

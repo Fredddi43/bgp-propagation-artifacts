@@ -1,0 +1,13 @@
+{
+ "automatic_retry_authorized": false,
+ "execute_once_after_approval": "cd receipt-reader-v1 && python3 capture_receipt.py ../receipt-capture-v1/capture-r.gz ../receipt-capture-v1/r-result.json; then python3 summarize_receipt.py ../receipt-capture-v1/capture-r.gz > ../receipt-capture-v1/l6-summary.json",
+ "files": {
+  "capture_receipt.py": "9db70b829daa535400e60b2665b6826bc214d5943b6b0a6972a94c1302ae5318",
+  "size-finding.json": "c52e0a0665d4ec3e511824f502ff8334992faa474765a250a40726c1a3f34f5c",
+  "summarize_receipt.py": "0bb080588318409bafb5bc3bf04e29eabeae07e12adc616b6b7ad102529065a5",
+  "test_reader.py": "6b9a201def597a452db329e0f39950442569bded545ed1ad3350e8a38fd7f952"
+ },
+ "host_contact": "one ssh to <BATCH_HOST>, read-only, one file",
+ "kind": "history_r3_receipt_reader_review_ready_v1",
+ "tests": "python3 -m pytest -q -p no:cacheprovider test_reader.py -> 11 passed"
+}

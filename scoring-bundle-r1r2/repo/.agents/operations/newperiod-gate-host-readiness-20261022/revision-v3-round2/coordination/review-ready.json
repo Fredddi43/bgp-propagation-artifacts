@@ -1,0 +1,12 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "host_actions": "none",
+ "kind": "newperiod_gate_host_v3_round2_review_ready_v1",
+ "packet": ".agents/operations/newperiod-gate-host-readiness-20261022/revision-v3-round2",
+ "pins_sha256": "4d852a2dedc86c2956261271711be71fdd2eb1e9fec42eaa1050ab936371e05c",
+ "requests": [
+  "delta review of C1",
+  "note proposed attempt-3 preflight (not requesting approval now)"
+ ]
+}

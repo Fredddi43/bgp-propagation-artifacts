@@ -1,0 +1,47 @@
+{
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_session": "/root/metadata_check_review",
+  "author_worker": "/root/metadata_check_review",
+  "delta": "Exact package reader no longer requests unrelated baseline pins.json; genuine assembled directory loader regression.",
+  "files": {
+    "README.md": "deeab3d7639a7b61c321e0bdae0d59bd95704883c6db83867f98c0050eb2e43a",
+    "bootstrap.py": "8f11d3d7c5d715845a4d921721402371f32ef1d92f151ff3fe1bda40760bfe6a",
+    "build.py": "f805c284c2b08d89f3b9c69cf8e01a4f98e4df97a037ac91ad210703287acd07",
+    "client.py": "30d1a798ab517bd630e3788fb50f17c3f8f2adc893306e779134be4cd5cae8c2",
+    "construction/client.py": "50f98af8c9f8b73ecc2304c20363c1e6440265b95fb046c5ebb018d894f59344",
+    "construction/common.py": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d",
+    "construction/job.py": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8",
+    "construction/runtime_verifier.py": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc",
+    "original_metadata_runner.py": "449b2c087af556edf837ff40600c55cc686d453f8cb58e3bad5c7cbdf4de9fdc",
+    "overrides.py": "f0f1008940dc087cac35d96e5dd142419b5cda1cb4be3511bbf846a90f5b45f3",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "runner.py": "4dd54d48b2720a64990f89a1661e2174f98f3ef5c39bbef7ddb6b1f9f85c2a93",
+    "test_execution.py": "a2495f7bbb53c806f128aff21f468fd36b8c214ee20999e68f2fb405a592c41a",
+    "tests.txt": "29a64d4ca403d73d0d57b91f372310dda68b49661d6e1526ea67d469570b5c10",
+    "transport_overrides.py": "2eec2ab7ef5a8eea4ab1d07313f8d6fec2f82aad3e201b414efa3f79b73df7a9"
+  },
+  "kind": "newperiod_complete_label_execution_code_candidate",
+  "operation": "prepare_labels",
+  "predecessor": {
+    "path": ".agents/operations/newperiod-complete-label-execution-20261024/review-ready.json",
+    "sha256": "174fbfc3a5efd97388583ca071e491135b97a9b8ff5362bbd04add8f8ccf5836"
+  },
+  "protected_reads_performed": false,
+  "tests": {
+    "log": "tests.txt",
+    "passed": 20,
+    "seconds": 3.48
+  },
+  "upstream": {
+    "bundle": {
+      "path": ".agents/operations/newperiod-complete-label-bundle-20261023/review-ready.json",
+      "sha256": "aff8146c4b407b983e936ed722ba1eb898d265c280b5df06fb098b884c5aa614"
+    },
+    "transport": {
+      "path": ".agents/operations/newperiod-single-r2-execution-20261023/review-ready.json",
+      "sha256": "87a72e153d9856b5006fe760648d25218c05851c8fa3213fc44c0e637b6d9a6f"
+    }
+  }
+}

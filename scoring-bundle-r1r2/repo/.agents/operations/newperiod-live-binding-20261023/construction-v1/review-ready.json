@@ -1,0 +1,18 @@
+{
+  "actual_cohort_manifests_created": false,
+  "actual_execution_authorized": false,
+  "author_model": "codex",
+  "author_session": "/root/metadata_check_review",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "REVIEW.md": "f3e8a8b76d72e66f1e3d059f9b03b7b3569dc217f46fa30b740777c2089a541a",
+    "construction.py": "86773f48eb03ee4ef27faca0e2449a743c39be4a5d10b404759609c603066f4c",
+    "prospective-construction.json": "0e0e5c10802f101f8c50ded31a92b86d17331087af6e315c414da0e7c5a1bc76",
+    "test_construction.py": "59006e2bd6672e985571a6ba87dae76552726f55d073f02779a860a05eefe097"
+  },
+  "kind": "L_prospective_construction_binding_code_candidate",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 7
+  }
+}

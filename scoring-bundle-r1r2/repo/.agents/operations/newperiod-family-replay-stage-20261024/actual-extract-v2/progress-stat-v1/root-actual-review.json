@@ -1,0 +1,17 @@
+{
+  "kind": "independent_replay_progress_metadata_actual_review",
+  "passed": true,
+  "reviewer_worker": "/root",
+  "reviewer_model": "Codex",
+  "reviewed_utc": "2026-10-24T04:45:28.061648+00:00",
+  "execution_review_sha256": "6c43f4730e18f8a18728f1f9f91bb955851db3dd59418c43db9c8cd789b92d2b",
+  "stdout_sha256": "cc61453d3f1a9c45ad4235255e74893f379b35f6b2520b1dfbc10ba3cd89c31c",
+  "observed_epoch_ns": 1792817087670673252,
+  "regular_day_markers_present": 89,
+  "expected_day_markers": 470,
+  "lanes": 32,
+  "nonregular_or_errors": 0,
+  "scientific_completion_verified": false,
+  "interpretation": "Operational progress: all32lanes have2\u20134 markers. Unequal source days mean18.9% markers is not18.9% runtime; no guaranteed ETA or source-content assertion.",
+  "automatic_retry_authorized": false
+}

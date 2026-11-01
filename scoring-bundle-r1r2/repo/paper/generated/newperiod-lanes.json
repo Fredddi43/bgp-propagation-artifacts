@@ -1,0 +1,4681 @@
+{
+ "kind": "newperiod_r2_secondary_lanes_D-A39_D-A40_extract_v1",
+ "generated_utc": "2026-11-01T04:35:10Z",
+ "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39",
+ "run_log": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-logs/r2-d-a39-v2-52728251.out",
+ "job_id": "52728251",
+ "completion": {
+  "passed": false,
+  "blocking": {
+   "families_failed": [
+    "stable"
+   ]
+  },
+  "errors": [],
+  "label_reads": 1,
+  "outcome_release_authorized": false,
+  "utc": "2026-10-31T21:53:11Z",
+  "secondary_result": {
+   "bytes": 13811479924,
+   "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/secondary-result.json",
+   "sha256": "47479a9f8a337109ecc4dbb383d16da90fdbc749cf96459d022e1101db9e0d9e"
+  },
+  "raw_result": {
+   "bytes": 6027451047,
+   "format": "pickle5",
+   "name": "secondary-result-raw",
+   "parts": 1,
+   "sha256_of_concatenated_parts": "af5113d3193f7040c4c44b497e50d7c43684e7fb2a8da01097baaa6629ee968f"
+  }
+ },
+ "extraction": {
+  "cluster_dir": "<FORECAST_ROOT>/d-a40-lane-extract-20261101",
+  "scripts": [
+   "scripts/extract_lanes.py",
+   "scripts/stable_narrow.py",
+   "scripts/build_lanes.py",
+   "scripts/extract_stable_d40.py"
+  ],
+  "rule": "values are copied from the family pickles; per group the table shows min..max of the recorded per-seed mean_difference (range, not an interval); no metric is recomputed; labels were not opened"
+ },
+ "family_verification": {
+  "all_verified": true,
+  "families": {
+   "additional_baselines": {
+    "parts": 1,
+    "bytes": 4030290,
+    "sha256": "ab02ad43fea2240c387b8cae3066f4098b0c4bcc7aa87da696bcc3aa7fc8c847",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 73.8
+   },
+   "counts": {
+    "parts": 1,
+    "bytes": 11068,
+    "sha256": "c4c55f3e1edc2e4222ffce7b6230562e6f58a7ddd3a8d34965ce622af5744106",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 0.0
+   },
+   "membership-h1": {
+    "parts": 1,
+    "bytes": 39487002,
+    "sha256": "3a28e18109dc5b96725d3d0d3d460cb699eea3d0e7be817e9d0cf68e9d27eceb",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 843.6
+   },
+   "membership-h3": {
+    "parts": 1,
+    "bytes": 160948653,
+    "sha256": "487ca42482c7420c8c8c66340166fd1cf685fd6f0ad631076bc56cc48f9c5a70",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 3461.6
+   },
+   "membership-history": {
+    "parts": 1,
+    "bytes": 98253562,
+    "sha256": "833299bb4fb1fe4008d30a0ed44bea4f6d81ca62cca5ff37c307de4129e38217",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 1374.9
+   },
+   "membership-ordinary": {
+    "parts": 1,
+    "bytes": 22557356,
+    "sha256": "facdcfe876f8d398a9f5cb940b55fbc60553a9a2f6f28d11590967dfd1e60033",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 241.1
+   },
+   "membership-timing": {
+    "parts": 1,
+    "bytes": 99869355,
+    "sha256": "7568c569576d57808ecca03b0f60f4927c1d2847045b68b2399acc1a60815b28",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 2080.3
+   },
+   "origin": {
+    "parts": 1,
+    "bytes": 5357647410,
+    "sha256": "8d491a403b103849dad76c669f4507f0ac252f6a1021b053a0005853110df354",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "scored",
+    "run_log_seconds": 36396.6
+   },
+   "stable": {
+    "parts": 1,
+    "bytes": 2581,
+    "sha256": "f3801f061f0cd6b05fc609bd571b55dde1d5d5d262a59f68ebda8525f691adde",
+    "size_on_disk_matches_manifest": true,
+    "sha256sum_matches_manifest": true,
+    "manifest_equals_run_log_receipt": true,
+    "extraction_load_verified": true,
+    "run_log_status": "failed",
+    "run_log_seconds": 3.8
+   }
+  }
+ },
+ "validator": {
+  "path": "scratch/experiment-finish-20261030/audit/validate_final_data.py",
+  "sha256": "e1302c03c56fdab57092851cfbafeb007def814ff5be4560263395f5a214fad2",
+  "runs": {
+   "explore": {
+    "summary": {
+     "checks": 50,
+     "failed": [
+      "tierC:completion",
+      "tierC:completion-blocking",
+      "tierC:families",
+      "tierC:stage-binding-chain"
+     ],
+     "mode": "explore",
+     "pending": [],
+     "summary": "FAIL"
+    },
+    "checks_reported": 50,
+    "failed_checks": {
+     "tierC:completion": {
+      "blocking_keys": [
+       "families_failed"
+      ],
+      "errors": 0,
+      "kind": "newperiod_secondary_rescore_completion_D-A39_v1",
+      "label_reads": 1,
+      "passed": false,
+      "utc": "2026-10-31T21:53:11Z"
+     },
+     "tierC:completion-blocking": {
+      "blocking": {
+       "families_failed": [
+        "stable"
+       ]
+      }
+     },
+     "tierC:families": {
+      "entries": 9,
+      "problems": {
+       "duplicate": [],
+       "failed": [
+        "stable"
+       ],
+       "missing": [],
+       "not_persisted": [],
+       "persist_error": [],
+       "unexpected": []
+      },
+      "why": ""
+     },
+     "tierC:stage-binding-chain": {
+      "why": "Bad(\"every attempt-12 lane receipt must load from its attempt-12 checkpoint, violating receipts: ['baseline:c78b1cc51268:computed']\")"
+     }
+    },
+    "passed_checks": [
+     "tierA:amended_freeze",
+     "tierA:arm_spec",
+     "tierA:attempt-dir",
+     "tierA:chain-code-present",
+     "tierA:ckpt:baseline-ad753ced838eb812dcc44f64.pkl",
+     "tierA:ckpt:counts-959aaa80fd4471fa978b3e43.pkl",
+     "tierA:ckpt:members-125c784dc89ccc5380d85442.pkl",
+     "tierA:ckpt:members-1dc1eba251a8c5065f29ebdd.pkl",
+     "tierA:ckpt:members-41d7a100dc90759763379813.pkl",
+     "tierA:ckpt:members-51e89096eddb87691d10b61f.pkl",
+     "tierA:ckpt:members-84ddd286f969b77b98ef221e.pkl",
+     "tierA:ckpt:stable-8b2ded7e985a2611c5bbe7e6.pkl",
+     "tierA:dry-run-ready",
+     "tierA:evidence-baseline",
+     "tierA:evidence-h1",
+     "tierA:evidence-h3",
+     "tierA:evidence-history",
+     "tierA:evidence-ordinary",
+     "tierA:evidence-origin",
+     "tierA:evidence-stable",
+     "tierA:evidence-timing",
+     "tierA:full-retention-review",
+     "tierA:identity-arithmetic",
+     "tierA:labels-metadata-only",
+     "tierA:marker",
+     "tierA:marker-binding",
+     "tierA:primary",
+     "tierA:primary_scores",
+     "tierA:published_freeze",
+     "tierA:r2_checkpoint-sha",
+     "tierA:seal",
+     "tierA:seal-content",
+     "tierA:spec",
+     "tierA:template",
+     "tierC:approval-binding",
+     "tierC:d39-marker",
+     "tierC:decision-check",
+     "tierC:fixed-artifacts",
+     "tierC:header-parsed",
+     "tierC:header-refs",
+     "tierC:intent",
+     "tierC:marker-graph",
+     "tierC:primary-canonical",
+     "tierC:raw-result",
+     "tierC:release-flag"
+    ]
+   },
+   "require-complete": {
+    "summary": {
+     "checks": 54,
+     "failed": [
+      "tierC:completion",
+      "tierC:completion-blocking",
+      "tierC:families",
+      "tierC:stage-binding-chain",
+      "tierC:identity-coverage"
+     ],
+     "mode": "require-complete",
+     "pending": [],
+     "summary": "FAIL"
+    },
+    "checks_reported": 54,
+    "failed_checks": {
+     "tierC:completion": {
+      "blocking_keys": [
+       "families_failed"
+      ],
+      "errors": 0,
+      "kind": "newperiod_secondary_rescore_completion_D-A39_v1",
+      "label_reads": 1,
+      "passed": false,
+      "utc": "2026-10-31T21:53:11Z"
+     },
+     "tierC:completion-blocking": {
+      "blocking": {
+       "families_failed": [
+        "stable"
+       ]
+      }
+     },
+     "tierC:families": {
+      "entries": 9,
+      "problems": {
+       "duplicate": [],
+       "failed": [
+        "stable"
+       ],
+       "missing": [],
+       "not_persisted": [],
+       "persist_error": [],
+       "unexpected": []
+      },
+      "why": ""
+     },
+     "tierC:stage-binding-chain": {
+      "why": "Bad(\"every attempt-12 lane receipt must load from its attempt-12 checkpoint, violating receipts: ['baseline:c78b1cc51268:computed']\")"
+     },
+     "tierC:identity-coverage": {
+      "why": "Bad('stable: cells ? != 24 or declares_primary_finding')"
+     }
+    },
+    "passed_checks": [
+     "tierA:amended_freeze",
+     "tierA:arm_spec",
+     "tierA:attempt-dir",
+     "tierA:chain-code-present",
+     "tierA:ckpt:baseline-ad753ced838eb812dcc44f64.pkl",
+     "tierA:ckpt:counts-959aaa80fd4471fa978b3e43.pkl",
+     "tierA:ckpt:members-125c784dc89ccc5380d85442.pkl",
+     "tierA:ckpt:members-1dc1eba251a8c5065f29ebdd.pkl",
+     "tierA:ckpt:members-41d7a100dc90759763379813.pkl",
+     "tierA:ckpt:members-51e89096eddb87691d10b61f.pkl",
+     "tierA:ckpt:members-84ddd286f969b77b98ef221e.pkl",
+     "tierA:ckpt:stable-8b2ded7e985a2611c5bbe7e6.pkl",
+     "tierA:dry-run-ready",
+     "tierA:evidence-baseline",
+     "tierA:evidence-h1",
+     "tierA:evidence-h3",
+     "tierA:evidence-history",
+     "tierA:evidence-ordinary",
+     "tierA:evidence-origin",
+     "tierA:evidence-stable",
+     "tierA:evidence-timing",
+     "tierA:full-retention-review",
+     "tierA:identity-arithmetic",
+     "tierA:labels-metadata-only",
+     "tierA:marker",
+     "tierA:marker-binding",
+     "tierA:primary",
+     "tierA:primary_scores",
+     "tierA:published_freeze",
+     "tierA:r2_checkpoint-sha",
+     "tierA:seal",
+     "tierA:seal-content",
+     "tierA:spec",
+     "tierA:template",
+     "tierB:inventory-receipts",
+     "tierC:aggregate-envelope",
+     "tierC:approval-binding",
+     "tierC:d39-marker",
+     "tierC:decision-check",
+     "tierC:fixed-artifacts",
+     "tierC:header-parsed",
+     "tierC:header-refs",
+     "tierC:intent",
+     "tierC:marker-graph",
+     "tierC:primary-canonical",
+     "tierC:raw-result",
+     "tierC:release-flag",
+     "tierC:secondary-document-bytes"
+    ]
+   }
+  }
+ },
+ "lane_mapping": {
+  "source": [
+   "paper/sections/08-forecast.tex (five lanes: expand the candidates, seven of ten collectors, stable peers, input timing, origin changes)",
+   "docs/paper/forecasting-improvement-20261017/NEW-PERIOD-PROTOCOL.md (H3, candidate expansion, temporal models, timing and family arms; history delivery delay sensitivity at 900/1800 s)",
+   "CANDIDATE-EXPANSION.md (H1 = candidate expansion)",
+   "H3-PANEL-BUILDER.md (ris7 / mixed7 panels)",
+   "FAMILY-FEASIBILITY.md (RFC 6811 validity strata)"
+  ],
+  "map": {
+   "membership-h1": "candidate_expansion",
+   "membership-h3": "reduced_collectors",
+   "stable": "stable_peers",
+   "membership-timing": "input_timing",
+   "origin": "origin_changes (origin_change_invalid, origin_change_valid)",
+   "membership-history": "history_service (secondary, not one of the five lanes)",
+   "membership-ordinary": "ordinary_models (secondary, not one of the five lanes)",
+   "counts": "count_forecasts (secondary, not one of the five lanes)",
+   "additional_baselines": "additional_baselines (secondary, not one of the five lanes)"
+  }
+ },
+ "totals": {
+  "roles": 344,
+  "scored": 290,
+  "not_scored": 54
+ },
+ "lanes": [
+  {
+   "lane": "candidate_expansion",
+   "paper_name": "Candidate expansion (H1)",
+   "internal_family": "membership-h1",
+   "roles": 20,
+   "scored": 20,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 20
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     1289
+    ],
+    "60": [
+     1289
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": {
+    "definition": "H1 arm (original candidates plus the top-500 completed-history ASNs) minus the updated core arm with history, same message passing, horizon and training seed (original candidates)",
+    "metric": "full_target_jaccard and committed_two_threshold_jaccard",
+    "cohort": "full_reference",
+    "intervals_recorded": false,
+    "groups": [
+     {
+      "metric": "full_target_jaccard",
+      "cohort": "full_reference",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -4.566155859836806e-06,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        -4.566155859836806e-06
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "metric": "committed_two_threshold_jaccard",
+      "cohort": "full_reference",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -4.566155859836806e-06,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        -4.566155859836806e-06
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        -2.5352783989209767e-06
+       ]
+      ]
+     },
+     {
+      "metric": "full_target_jaccard",
+      "cohort": "full_reference",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -2.5352783989209767e-06,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        -2.5352783989209767e-06
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "metric": "committed_two_threshold_jaccard",
+      "cohort": "full_reference",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -2.5352783989209767e-06,
+      "max_recorded": 3.1086765607646596e-05,
+      "seed_mean_difference": [
+       [
+        0,
+        3.1086765607646596e-05
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        5.539595644769923e-06
+       ],
+       [
+        3,
+        -2.5352783989209767e-06
+       ],
+       [
+        4,
+        2.4795909457048983e-06
+       ]
+      ]
+     },
+     {
+      "metric": "full_target_jaccard",
+      "cohort": "full_reference",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.0005854725579660367,
+      "max_recorded": 0.00031054278936841224,
+      "seed_mean_difference": [
+       [
+        0,
+        0.00012351146081359405
+       ],
+       [
+        1,
+        -8.555824391672992e-05
+       ],
+       [
+        2,
+        -0.0005854725579660367
+       ],
+       [
+        3,
+        0.00031054278936841224
+       ],
+       [
+        4,
+        0.00014962526810444432
+       ]
+      ]
+     },
+     {
+      "metric": "committed_two_threshold_jaccard",
+      "cohort": "full_reference",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.0011851396162332974,
+      "max_recorded": 0.0003107689342787289,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0003107689342787289
+       ],
+       [
+        1,
+        -0.00024962893499742356
+       ],
+       [
+        2,
+        -0.00011574678902144573
+       ],
+       [
+        3,
+        -0.00026978996682127797
+       ],
+       [
+        4,
+        -0.0011851396162332974
+       ]
+      ]
+     },
+     {
+      "metric": "full_target_jaccard",
+      "cohort": "full_reference",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.00019977899649203487,
+      "max_recorded": 0.00019166304518128966,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.00019977899649203487
+       ],
+       [
+        1,
+        0.00010757265913213634
+       ],
+       [
+        2,
+        0.00019166304518128966
+       ],
+       [
+        3,
+        -3.956348838181214e-05
+       ],
+       [
+        4,
+        -3.8625525373622194e-05
+       ]
+      ]
+     },
+     {
+      "metric": "committed_two_threshold_jaccard",
+      "cohort": "full_reference",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.00025536978833595264,
+      "max_recorded": 0.0001474603846502785,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.00025536978833595264
+       ],
+       [
+        1,
+        0.00011207552069545752
+       ],
+       [
+        2,
+        0.0001474603846502785
+       ],
+       [
+        3,
+        -5.4509654942606e-05
+       ],
+       [
+        4,
+        -2.1555415777114404e-05
+       ]
+      ]
+     }
+    ]
+   },
+   "flags": {
+    "kind": "newperiod_membership_sensitivity_report_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "selection_performed": false,
+    "declares_primary_finding": false
+   }
+  },
+  {
+   "lane": "reduced_collectors",
+   "paper_name": "Seven of ten collectors (H3)",
+   "internal_family": "membership-h3",
+   "roles": 80,
+   "scored": 80,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 80
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     1289
+    ],
+    "60": [
+     1289
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": {
+    "definition": "seven-collector input arm (ris7: RIS only; mixed7: three RouteViews + four RIS; stage frozen = the matching ten-collector core checkpoint reused (producer checks checkpoint_sha256 equality), refit = refitted) minus the ten-collector updated core arm, same message passing, horizon and seed; both scored on the ten-collector target",
+    "metric": "full_target_jaccard",
+    "cohort": "full_reference, common_available, common_complete",
+    "intervals_recorded": false,
+    "groups": [
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10424086360893059,
+      "max_recorded": -0.10424021438951486,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10424086360893059
+       ],
+       [
+        1,
+        -0.10424086360893059
+       ],
+       [
+        2,
+        -0.10424021438951486
+       ],
+       [
+        3,
+        -0.10424086360893059
+       ],
+       [
+        4,
+        -0.10424086360893059
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10427882613014149,
+      "max_recorded": -0.10427815879056662,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10427882613014149
+       ],
+       [
+        1,
+        -0.10427882613014149
+       ],
+       [
+        2,
+        -0.10427815879056662
+       ],
+       [
+        3,
+        -0.10427882613014149
+       ],
+       [
+        4,
+        -0.10427882613014149
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10427882613014149,
+      "max_recorded": -0.10427815879056662,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10427882613014149
+       ],
+       [
+        1,
+        -0.10427882613014149
+       ],
+       [
+        2,
+        -0.10427815879056662
+       ],
+       [
+        3,
+        -0.10427882613014149
+       ],
+       [
+        4,
+        -0.10427882613014149
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12181451817578531,
+      "max_recorded": -0.12181451817578531,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12181451817578531
+       ],
+       [
+        1,
+        -0.12181451817578531
+       ],
+       [
+        2,
+        -0.12181451817578531
+       ],
+       [
+        3,
+        -0.12181451817578531
+       ],
+       [
+        4,
+        -0.12181451817578531
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12201088439212834,
+      "max_recorded": -0.12201088439212834,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12201088439212834
+       ],
+       [
+        1,
+        -0.12201088439212834
+       ],
+       [
+        2,
+        -0.12201088439212834
+       ],
+       [
+        3,
+        -0.12201088439212834
+       ],
+       [
+        4,
+        -0.12201088439212834
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12201088439212834,
+      "max_recorded": -0.12201088439212834,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12201088439212834
+       ],
+       [
+        1,
+        -0.12201088439212834
+       ],
+       [
+        2,
+        -0.12201088439212834
+       ],
+       [
+        3,
+        -0.12201088439212834
+       ],
+       [
+        4,
+        -0.12201088439212834
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10396135719970896,
+      "max_recorded": -0.10336528267493693,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10339385281038065
+       ],
+       [
+        1,
+        -0.10396135719970896
+       ],
+       [
+        2,
+        -0.10393008521363672
+       ],
+       [
+        3,
+        -0.10336528267493693
+       ],
+       [
+        4,
+        -0.10379330256930187
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.1039915185053515,
+      "max_recorded": -0.10337558315655372,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.1034082312299109
+       ],
+       [
+        1,
+        -0.1039915185053515
+       ],
+       [
+        2,
+        -0.10395937369670144
+       ],
+       [
+        3,
+        -0.10337558315655372
+       ],
+       [
+        4,
+        -0.10381877335495697
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.1039915185053515,
+      "max_recorded": -0.10337558315655372,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.1034082312299109
+       ],
+       [
+        1,
+        -0.1039915185053515
+       ],
+       [
+        2,
+        -0.10395937369670144
+       ],
+       [
+        3,
+        -0.10337558315655372
+       ],
+       [
+        4,
+        -0.10381877335495697
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.1219692292833086,
+      "max_recorded": -0.12168772844497275,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12172269770717661
+       ],
+       [
+        1,
+        -0.12173925635900366
+       ],
+       [
+        2,
+        -0.12168772844497275
+       ],
+       [
+        3,
+        -0.1219692292833086
+       ],
+       [
+        4,
+        -0.12171826493770735
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12216853073015012,
+      "max_recorded": -0.12188168916444664,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12191732187510337
+       ],
+       [
+        1,
+        -0.12193419468317057
+       ],
+       [
+        2,
+        -0.12188168916444664
+       ],
+       [
+        3,
+        -0.12216853073015012
+       ],
+       [
+        4,
+        -0.12191280500565996
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12216853073015012,
+      "max_recorded": -0.12188168916444664,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12191732187510337
+       ],
+       [
+        1,
+        -0.12193419468317057
+       ],
+       [
+        2,
+        -0.12188168916444664
+       ],
+       [
+        3,
+        -0.12216853073015012
+       ],
+       [
+        4,
+        -0.12191280500565996
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07914605319871583,
+      "max_recorded": -0.07913999056557332,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07914605319871583
+       ],
+       [
+        1,
+        -0.07914605319871583
+       ],
+       [
+        2,
+        -0.07913999056557332
+       ],
+       [
+        3,
+        -0.07914605319871583
+       ],
+       [
+        4,
+        -0.07914605319871583
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07975896172423674,
+      "max_recorded": -0.07975272987884545,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07975896172423674
+       ],
+       [
+        1,
+        -0.07975896172423674
+       ],
+       [
+        2,
+        -0.07975272987884545
+       ],
+       [
+        3,
+        -0.07975896172423674
+       ],
+       [
+        4,
+        -0.07975896172423674
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07975896172423674,
+      "max_recorded": -0.07975272987884545,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07975896172423674
+       ],
+       [
+        1,
+        -0.07975896172423674
+       ],
+       [
+        2,
+        -0.07975272987884545
+       ],
+       [
+        3,
+        -0.07975896172423674
+       ],
+       [
+        4,
+        -0.07975896172423674
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09298884814261499,
+      "max_recorded": -0.09298678485753502,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09298884814261499
+       ],
+       [
+        1,
+        -0.09298884814261499
+       ],
+       [
+        2,
+        -0.09298884814261499
+       ],
+       [
+        3,
+        -0.09298678485753502
+       ],
+       [
+        4,
+        -0.09298884814261499
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09344668720889689,
+      "max_recorded": -0.09344458477848733,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09344668720889689
+       ],
+       [
+        1,
+        -0.09344668720889689
+       ],
+       [
+        2,
+        -0.09344668720889689
+       ],
+       [
+        3,
+        -0.09344458477848733
+       ],
+       [
+        4,
+        -0.09344668720889689
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09344668720889689,
+      "max_recorded": -0.09344458477848733,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09344668720889689
+       ],
+       [
+        1,
+        -0.09344668720889689
+       ],
+       [
+        2,
+        -0.09344668720889689
+       ],
+       [
+        3,
+        -0.09344458477848733
+       ],
+       [
+        4,
+        -0.09344668720889689
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07882581170769411,
+      "max_recorded": -0.07810415924594825,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07851753170189231
+       ],
+       [
+        1,
+        -0.07864046902595231
+       ],
+       [
+        2,
+        -0.07875719717969715
+       ],
+       [
+        3,
+        -0.07810415924594825
+       ],
+       [
+        4,
+        -0.07882581170769411
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07942978207357726,
+      "max_recorded": -0.0786879877967109,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07911289776139344
+       ],
+       [
+        1,
+        -0.07923926635047904
+       ],
+       [
+        2,
+        -0.0793592524670477
+       ],
+       [
+        3,
+        -0.0786879877967109
+       ],
+       [
+        4,
+        -0.07942978207357726
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07942978207357726,
+      "max_recorded": -0.0786879877967109,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07911289776139344
+       ],
+       [
+        1,
+        -0.07923926635047904
+       ],
+       [
+        2,
+        -0.0793592524670477
+       ],
+       [
+        3,
+        -0.0786879877967109
+       ],
+       [
+        4,
+        -0.07942978207357726
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09301399126640202,
+      "max_recorded": -0.09273861252844644,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09288911775463517
+       ],
+       [
+        1,
+        -0.09282971879945505
+       ],
+       [
+        2,
+        -0.09273861252844644
+       ],
+       [
+        3,
+        -0.09301399126640202
+       ],
+       [
+        4,
+        -0.09281088208544397
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09347230735637632,
+      "max_recorded": -0.09319170404157415,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09334506470288423
+       ],
+       [
+        1,
+        -0.09328453881100505
+       ],
+       [
+        2,
+        -0.09319170404157415
+       ],
+       [
+        3,
+        -0.09347230735637632
+       ],
+       [
+        4,
+        -0.09326534472060168
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "frozen",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09347230735637632,
+      "max_recorded": -0.09319170404157415,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09334506470288423
+       ],
+       [
+        1,
+        -0.09328453881100505
+       ],
+       [
+        2,
+        -0.09319170404157415
+       ],
+       [
+        3,
+        -0.09347230735637632
+       ],
+       [
+        4,
+        -0.09326534472060168
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10424086360893059,
+      "max_recorded": -0.10424086360893059,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10424086360893059
+       ],
+       [
+        1,
+        -0.10424086360893059
+       ],
+       [
+        2,
+        -0.10424086360893059
+       ],
+       [
+        3,
+        -0.10424086360893059
+       ],
+       [
+        4,
+        -0.10424086360893059
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10427882613014149,
+      "max_recorded": -0.10427882613014149,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10427882613014149
+       ],
+       [
+        1,
+        -0.10427882613014149
+       ],
+       [
+        2,
+        -0.10427882613014149
+       ],
+       [
+        3,
+        -0.10427882613014149
+       ],
+       [
+        4,
+        -0.10427882613014149
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.10427882613014149,
+      "max_recorded": -0.10427882613014149,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.10427882613014149
+       ],
+       [
+        1,
+        -0.10427882613014149
+       ],
+       [
+        2,
+        -0.10427882613014149
+       ],
+       [
+        3,
+        -0.10427882613014149
+       ],
+       [
+        4,
+        -0.10427882613014149
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12181705345418424,
+      "max_recorded": -0.12181451817578531,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12181451817578531
+       ],
+       [
+        1,
+        -0.12181451817578531
+       ],
+       [
+        2,
+        -0.12181451817578531
+       ],
+       [
+        3,
+        -0.12181705345418424
+       ],
+       [
+        4,
+        -0.12181451817578531
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12201346777067079,
+      "max_recorded": -0.12201088439212834,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12201088439212834
+       ],
+       [
+        1,
+        -0.12201088439212834
+       ],
+       [
+        2,
+        -0.12201088439212834
+       ],
+       [
+        3,
+        -0.12201346777067079
+       ],
+       [
+        4,
+        -0.12201088439212834
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.12201346777067079,
+      "max_recorded": -0.12201088439212834,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.12201088439212834
+       ],
+       [
+        1,
+        -0.12201088439212834
+       ],
+       [
+        2,
+        -0.12201088439212834
+       ],
+       [
+        3,
+        -0.12201346777067079
+       ],
+       [
+        4,
+        -0.12201088439212834
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.09744641429108643,
+      "max_recorded": -0.09441064991113607,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09454688885355525
+       ],
+       [
+        1,
+        -0.09744641429108643
+       ],
+       [
+        2,
+        -0.09441064991113607
+       ],
+       [
+        3,
+        -0.0963606591369754
+       ],
+       [
+        4,
+        -0.09630945126869353
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.09723493045972594,
+      "max_recorded": -0.09417424442642768,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09431434244175464
+       ],
+       [
+        1,
+        -0.09723493045972594
+       ],
+       [
+        2,
+        -0.09417424442642768
+       ],
+       [
+        3,
+        -0.09617545577183888
+       ],
+       [
+        4,
+        -0.09614167887062929
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.09723493045972594,
+      "max_recorded": -0.09417424442642768,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09431434244175464
+       ],
+       [
+        1,
+        -0.09723493045972594
+       ],
+       [
+        2,
+        -0.09417424442642768
+       ],
+       [
+        3,
+        -0.09617545577183888
+       ],
+       [
+        4,
+        -0.09614167887062929
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.115615001705757,
+      "max_recorded": -0.11137170544318459,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.115615001705757
+       ],
+       [
+        1,
+        -0.11137170544318459
+       ],
+       [
+        2,
+        -0.11187482909470842
+       ],
+       [
+        3,
+        -0.11262564891776256
+       ],
+       [
+        4,
+        -0.11162035268911692
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.1156934242130111,
+      "max_recorded": -0.11136994714918579,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.1156934242130111
+       ],
+       [
+        1,
+        -0.11136994714918579
+       ],
+       [
+        2,
+        -0.11186485400022765
+       ],
+       [
+        3,
+        -0.1126476808556925
+       ],
+       [
+        4,
+        -0.11162331181322277
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "mixed7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.1156934242130111,
+      "max_recorded": -0.11136994714918579,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.1156934242130111
+       ],
+       [
+        1,
+        -0.11136994714918579
+       ],
+       [
+        2,
+        -0.11186485400022765
+       ],
+       [
+        3,
+        -0.1126476808556925
+       ],
+       [
+        4,
+        -0.11162331181322277
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07915061935457565,
+      "max_recorded": -0.07914605319871583,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07914605319871583
+       ],
+       [
+        1,
+        -0.07914605319871583
+       ],
+       [
+        2,
+        -0.07915061935457565
+       ],
+       [
+        3,
+        -0.07914605319871583
+       ],
+       [
+        4,
+        -0.07914605319871583
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07976365532463812,
+      "max_recorded": -0.07975896172423674,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07975896172423674
+       ],
+       [
+        1,
+        -0.07975896172423674
+       ],
+       [
+        2,
+        -0.07976365532463812
+       ],
+       [
+        3,
+        -0.07975896172423674
+       ],
+       [
+        4,
+        -0.07975896172423674
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07976365532463812,
+      "max_recorded": -0.07975896172423674,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07975896172423674
+       ],
+       [
+        1,
+        -0.07975896172423674
+       ],
+       [
+        2,
+        -0.07976365532463812
+       ],
+       [
+        3,
+        -0.07975896172423674
+       ],
+       [
+        4,
+        -0.07975896172423674
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09299138342101392,
+      "max_recorded": -0.09298884814261499,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09298884814261499
+       ],
+       [
+        1,
+        -0.09298884814261499
+       ],
+       [
+        2,
+        -0.09298884814261499
+       ],
+       [
+        3,
+        -0.09299138342101392
+       ],
+       [
+        4,
+        -0.09298884814261499
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09344927058743933,
+      "max_recorded": -0.09344668720889689,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09344668720889689
+       ],
+       [
+        1,
+        -0.09344668720889689
+       ],
+       [
+        2,
+        -0.09344668720889689
+       ],
+       [
+        3,
+        -0.09344927058743933
+       ],
+       [
+        4,
+        -0.09344668720889689
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.09344927058743933,
+      "max_recorded": -0.09344668720889689,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.09344668720889689
+       ],
+       [
+        1,
+        -0.09344668720889689
+       ],
+       [
+        2,
+        -0.09344668720889689
+       ],
+       [
+        3,
+        -0.09344927058743933
+       ],
+       [
+        4,
+        -0.09344668720889689
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07424583633776016,
+      "max_recorded": -0.07314196716098066,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.0736692043313574
+       ],
+       [
+        1,
+        -0.07424583633776016
+       ],
+       [
+        2,
+        -0.07348241300032342
+       ],
+       [
+        3,
+        -0.07398701194121711
+       ],
+       [
+        4,
+        -0.07314196716098066
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07472534121029006,
+      "max_recorded": -0.07359066228774716,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07413260087148338
+       ],
+       [
+        1,
+        -0.07472534121029006
+       ],
+       [
+        2,
+        -0.07394053951570624
+       ],
+       [
+        3,
+        -0.07445592808714277
+       ],
+       [
+        4,
+        -0.07359066228774716
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 30,
+      "events": [
+       1254
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": -0.07472534121029006,
+      "max_recorded": -0.07359066228774716,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.07413260087148338
+       ],
+       [
+        1,
+        -0.07472534121029006
+       ],
+       [
+        2,
+        -0.07394053951570624
+       ],
+       [
+        3,
+        -0.07445592808714277
+       ],
+       [
+        4,
+        -0.07359066228774716
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.08664427069059331,
+      "max_recorded": -0.08431752378315387,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.08455222693916688
+       ],
+       [
+        1,
+        -0.08664427069059331
+       ],
+       [
+        2,
+        -0.08658216269465838
+       ],
+       [
+        3,
+        -0.08431752378315387
+       ],
+       [
+        4,
+        -0.08664010690507068
+       ]
+      ]
+     },
+     {
+      "cohort": "common_available",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.08698173832695542,
+      "max_recorded": -0.08461084760467129,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.08485000362688534
+       ],
+       [
+        1,
+        -0.08698173832695542
+       ],
+       [
+        2,
+        -0.08691845199750078
+       ],
+       [
+        3,
+        -0.08461084760467129
+       ],
+       [
+        4,
+        -0.08697122162539402
+       ]
+      ]
+     },
+     {
+      "cohort": "common_complete",
+      "stage": "refit",
+      "panel": "ris7",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1265
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": -0.08698173832695542,
+      "max_recorded": -0.08461084760467129,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.08485000362688534
+       ],
+       [
+        1,
+        -0.08698173832695542
+       ],
+       [
+        2,
+        -0.08691845199750078
+       ],
+       [
+        3,
+        -0.08461084760467129
+       ],
+       [
+        4,
+        -0.08697122162539402
+       ]
+      ]
+     }
+    ]
+   },
+   "flags": {
+    "kind": "newperiod_membership_sensitivity_report_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "selection_performed": false,
+    "declares_primary_finding": false
+   },
+   "h3_cohort_sizes": {
+    "30": {
+     "common_available": 1254,
+     "common_complete": 1254,
+     "full_reference": 1289
+    },
+    "60": {
+     "common_available": 1265,
+     "common_complete": 1265,
+     "full_reference": 1289
+    }
+   }
+  },
+  {
+   "lane": "stable_peers",
+   "paper_name": "Stable peers",
+   "internal_family": "stable",
+   "roles": 24,
+   "scored": 24,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 24
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     1286
+    ],
+    "60": [
+     1286
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": null,
+   "source": "D-A40 re-scoring (third label read, stable lane only)",
+   "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+   "family_receipt": {
+    "bytes": 45531285,
+    "format": "pickle5",
+    "name": "stable",
+    "parts": 1,
+    "sha256_of_concatenated_parts": "fc56d64e4a41edce673641632c73abc11856a9babd08cd12c5bc523d58d52540"
+   },
+   "flags": {
+    "kind": "newperiod_stable_secondary_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "declares_primary_finding": false
+   },
+   "not_scorable_rule": "D-A40: an event whose stable-peer target set and forecast set are both empty is not scorable in the stable lane; it is excluded from the cell's scored events (every metric) and counted; every other event is scored by the unchanged pinned code",
+   "not_scorable_per_horizon": {
+    "30": 3,
+    "60": 3
+   },
+   "input_available_cohort_sizes": {
+    "30": 1260,
+    "60": 1264
+   },
+   "contrast_note": "the stable report records per-event scores per cell only; no paired contrast is recorded",
+   "d_a39_failure": "ValueError('Empty target and prediction: Jaccard undefined on a scorable event')"
+  },
+  {
+   "lane": "input_timing",
+   "paper_name": "Input timing",
+   "internal_family": "membership-timing",
+   "roles": 60,
+   "scored": 60,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 60
+   },
+   "scorable_events_per_cell": {
+    "5": [
+     1124
+    ],
+    "10": [
+     1124
+    ],
+    "30": [
+     1124
+    ],
+    "60": [
+     1124
+    ],
+    "300": [
+     1124
+    ],
+    "900": [
+     1124
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": {
+    "definition": "timing arm at horizon d minus the same message passing and seed at 30 s (timing family), fixed cohort",
+    "metric": "full_target_jaccard",
+    "cohort": "fixed_timing",
+    "intervals_recorded": false,
+    "groups": [
+     {
+      "cohort": "fixed_timing",
+      "model": "none",
+      "horizon_s": 10,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-none-d30-s0",
+      "n": 5,
+      "min_recorded": -0.1694415665557271,
+      "max_recorded": -0.16943342265113676,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.16943342265113676
+       ],
+       [
+        1,
+        -0.16943633010118675
+       ],
+       [
+        2,
+        -0.1694415665557271
+       ],
+       [
+        3,
+        -0.16943633010118675
+       ],
+       [
+        4,
+        -0.16943633010118675
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "none",
+      "horizon_s": 300,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-none-d30-s0",
+      "n": 5,
+      "min_recorded": 0.2148183278850557,
+      "max_recorded": 0.214823564339596,
+      "seed_mean_difference": [
+       [
+        0,
+        0.214823564339596
+       ],
+       [
+        1,
+        0.214823564339596
+       ],
+       [
+        2,
+        0.2148183278850557
+       ],
+       [
+        3,
+        0.214823564339596
+       ],
+       [
+        4,
+        0.214823564339596
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "none",
+      "horizon_s": 5,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-none-d30-s0",
+      "n": 5,
+      "min_recorded": -0.21623631974820487,
+      "max_recorded": -0.2162216924055259,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.21623108329366453
+       ],
+       [
+        1,
+        -0.2162216924055259
+       ],
+       [
+        2,
+        -0.21623631974820487
+       ],
+       [
+        3,
+        -0.21622526839356454
+       ],
+       [
+        4,
+        -0.21623108329366453
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "none",
+      "horizon_s": 60,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-none-d30-s0",
+      "n": 5,
+      "min_recorded": 0.09886714296626051,
+      "max_recorded": 0.09887528687085084,
+      "seed_mean_difference": [
+       [
+        0,
+        0.09887237942080083
+       ],
+       [
+        1,
+        0.09887237942080083
+       ],
+       [
+        2,
+        0.09886714296626051
+       ],
+       [
+        3,
+        0.09887528687085084
+       ],
+       [
+        4,
+        0.09887237942080083
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "none",
+      "horizon_s": 900,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-none-d30-s0",
+      "n": 5,
+      "min_recorded": 0.2504430842433241,
+      "max_recorded": 0.2504483206978645,
+      "seed_mean_difference": [
+       [
+        0,
+        0.2504483206978645
+       ],
+       [
+        1,
+        0.2504483206978645
+       ],
+       [
+        2,
+        0.2504430842433241
+       ],
+       [
+        3,
+        0.2504483206978645
+       ],
+       [
+        4,
+        0.2504483206978645
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "sage",
+      "horizon_s": 10,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-sage-d30-s0",
+      "n": 5,
+      "min_recorded": -0.16777274553611277,
+      "max_recorded": -0.1664137879464441,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.16707546248162475
+       ],
+       [
+        1,
+        -0.16670716263043842
+       ],
+       [
+        2,
+        -0.16777274553611277
+       ],
+       [
+        3,
+        -0.1664137879464441
+       ],
+       [
+        4,
+        -0.16657404569823966
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "sage",
+      "horizon_s": 300,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-sage-d30-s0",
+      "n": 5,
+      "min_recorded": 0.21497999783153887,
+      "max_recorded": 0.21513914640421478,
+      "seed_mean_difference": [
+       [
+        0,
+        0.21513914640421478
+       ],
+       [
+        1,
+        0.21497999783153887
+       ],
+       [
+        2,
+        0.21501904189783003
+       ],
+       [
+        3,
+        0.2151274384595591
+       ],
+       [
+        4,
+        0.21499515417107878
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "sage",
+      "horizon_s": 5,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-sage-d30-s0",
+      "n": 5,
+      "min_recorded": -0.2133620044596074,
+      "max_recorded": -0.21165901033807868,
+      "seed_mean_difference": [
+       [
+        0,
+        -0.21219142486581763
+       ],
+       [
+        1,
+        -0.2133620044596074
+       ],
+       [
+        2,
+        -0.21212439271335967
+       ],
+       [
+        3,
+        -0.21165901033807868
+       ],
+       [
+        4,
+        -0.2131531455114298
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "sage",
+      "horizon_s": 60,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-sage-d30-s0",
+      "n": 5,
+      "min_recorded": 0.09882739560606792,
+      "max_recorded": 0.09913834497631586,
+      "seed_mean_difference": [
+       [
+        0,
+        0.09913834497631586
+       ],
+       [
+        1,
+        0.09889819235645153
+       ],
+       [
+        2,
+        0.09882739560606792
+       ],
+       [
+        3,
+        0.0991286531059182
+       ],
+       [
+        4,
+        0.09898926603459234
+       ]
+      ]
+     },
+     {
+      "cohort": "fixed_timing",
+      "model": "sage",
+      "horizon_s": 900,
+      "events": [
+       1124
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "timing-sage-d30-s0",
+      "n": 5,
+      "min_recorded": 0.2506047541898074,
+      "max_recorded": 0.25075788697678153,
+      "seed_mean_difference": [
+       [
+        0,
+        0.25075788697678153
+       ],
+       [
+        1,
+        0.2506047541898074
+       ],
+       [
+        2,
+        0.2506524973737325
+       ],
+       [
+        3,
+        0.2507521948178275
+       ],
+       [
+        4,
+        0.25061991052934723
+       ]
+      ]
+     }
+    ]
+   },
+   "flags": {
+    "kind": "newperiod_membership_sensitivity_report_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "selection_performed": false,
+    "declares_primary_finding": false
+   },
+   "broader_training_reused_at_30_60_seconds": true
+  },
+  {
+   "lane": "origin_changes",
+   "paper_name": "Origin changes",
+   "internal_family": "origin",
+   "roles": 40,
+   "scored": 40,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 40
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     14004,
+     135088
+    ],
+    "60": [
+     14004,
+     135088
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": null,
+   "strata": {
+    "origin_change_invalid": {
+     "roles": 20,
+     "cell_status_counts": {
+      "scored": 20
+     },
+     "scorable_events_per_cell": {
+      "30": [
+       14004
+      ],
+      "60": [
+       14004
+      ]
+     },
+     "incident_count": 7296,
+     "actor_day_collapsed_count": 4361,
+     "limited_independent_support": false,
+     "interpretation": "RFC6811 origin-validity stratum, not confirmed hijacks",
+     "flags": {
+      "intervals_computed": false,
+      "formal_tests": false,
+      "declares_primary_finding": false
+     }
+    },
+    "origin_change_valid": {
+     "roles": 20,
+     "cell_status_counts": {
+      "scored": 20
+     },
+     "scorable_events_per_cell": {
+      "30": [
+       135088
+      ],
+      "60": [
+       135088
+      ]
+     },
+     "incident_count": 45365,
+     "actor_day_collapsed_count": 21065,
+     "limited_independent_support": false,
+     "interpretation": "RFC6811 origin-validity stratum, not confirmed hijacks",
+     "flags": {
+      "intervals_computed": false,
+      "formal_tests": false,
+      "declares_primary_finding": false
+     }
+    }
+   },
+   "valid_family_branch": "fit_twenty",
+   "contrast_note": "the origin report records per-event scores per cell only; no paired contrast is recorded"
+  },
+  {
+   "lane": "history_service",
+   "paper_name": "History delay and withholding",
+   "internal_family": "membership-history",
+   "roles": 48,
+   "scored": 48,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 48
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     1289
+    ],
+    "60": [
+     1289
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": {
+    "definition": "history-service variant (delay900, delay1800, withhold) minus the matched updated core arm with history (neural, same message passing/horizon/seed) or the primary online history-knn-mean baseline (same candidates)",
+    "metric": "full_target_jaccard",
+    "cohort": "full_reference",
+    "intervals_recorded": false,
+    "groups": [
+     {
+      "cohort": "full_reference",
+      "variant": "delay1800",
+      "arm": "history-knn-mean/matched",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'matched', 30, None)",
+      "n": 1,
+      "min_recorded": -2.7120540473639416e-05,
+      "max_recorded": -2.7120540473639416e-05,
+      "seed_mean_difference": [
+       [
+        null,
+        -2.7120540473639416e-05
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay1800",
+      "arm": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay1800",
+      "arm": "history-knn-mean/matched",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'matched', 60, None)",
+      "n": 1,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        null,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay1800",
+      "arm": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay900",
+      "arm": "history-knn-mean/matched",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'matched', 30, None)",
+      "n": 1,
+      "min_recorded": -1.299451244019392e-05,
+      "max_recorded": -1.299451244019392e-05,
+      "seed_mean_difference": [
+       [
+        null,
+        -1.299451244019392e-05
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay900",
+      "arm": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay900",
+      "arm": "history-knn-mean/matched",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'matched', 60, None)",
+      "n": 1,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        null,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "delay900",
+      "arm": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "history-knn-mean/matched",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'matched', 30, None)",
+      "n": 1,
+      "min_recorded": 4.70097135637579e-05,
+      "max_recorded": 4.70097135637579e-05,
+      "seed_mean_difference": [
+       [
+        null,
+        4.70097135637579e-05
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "history-knn-mean/native",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'native', 30, None)",
+      "n": 1,
+      "min_recorded": 2.8590381745844404e-05,
+      "max_recorded": 2.8590381745844404e-05,
+      "seed_mean_difference": [
+       [
+        null,
+        2.8590381745844404e-05
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "none",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 30, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "sage",
+      "horizon_s": 30,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 30, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 2.001606807119625e-06,
+      "seed_mean_difference": [
+       [
+        0,
+        2.001606807119625e-06
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "history-knn-mean/matched",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'matched', 60, None)",
+      "n": 1,
+      "min_recorded": 4.3089025649450486e-05,
+      "max_recorded": 4.3089025649450486e-05,
+      "seed_mean_difference": [
+       [
+        null,
+        4.3089025649450486e-05
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "history-knn-mean/native",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('baseline', 'native', 60, None)",
+      "n": 1,
+      "min_recorded": 4.3089025649450486e-05,
+      "max_recorded": 4.3089025649450486e-05,
+      "seed_mean_difference": [
+       [
+        null,
+        4.3089025649450486e-05
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "none",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'none', 60, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     },
+     {
+      "cohort": "full_reference",
+      "variant": "withhold",
+      "arm": "sage",
+      "horizon_s": 60,
+      "events": [
+       1289
+      ],
+      "status": [
+       "scored"
+      ],
+      "comparator_example": "('neural', 'sage', 60, 0)",
+      "n": 5,
+      "min_recorded": 0.0,
+      "max_recorded": 0.0,
+      "seed_mean_difference": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        0.0
+       ],
+       [
+        2,
+        0.0
+       ],
+       [
+        3,
+        0.0
+       ],
+       [
+        4,
+        0.0
+       ]
+      ]
+     }
+    ]
+   },
+   "flags": {
+    "kind": "newperiod_membership_sensitivity_report_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "selection_performed": false,
+    "declares_primary_finding": false
+   }
+  },
+  {
+   "lane": "ordinary_models",
+   "paper_name": "Ordinary temporal models",
+   "internal_family": "membership-ordinary",
+   "roles": 32,
+   "scored": 12,
+   "not_scored": 20,
+   "cell_status_counts": {
+    "scored": 12,
+    "not_estimable": 20
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     1289
+    ],
+    "60": [
+     1289
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {
+    "not_estimable": "TGN and mean-aggregation roles (20): retained R1 failures (failure chain: retrospective-2025-v6b-tuning-r2 selection.json + ledger.json)"
+   },
+   "contrast": null,
+   "flags": {
+    "kind": "newperiod_membership_sensitivity_report_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "selection_performed": false,
+    "declares_primary_finding": false
+   },
+   "planned_seed_population": [
+    {
+     "completed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "horizon_seconds": 30,
+     "model": "gru",
+     "partial_seed_reporting": null,
+     "planned_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "status": "complete_planned_population"
+    },
+    {
+     "completed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "horizon_seconds": 60,
+     "model": "gru",
+     "partial_seed_reporting": null,
+     "planned_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "status": "complete_planned_population"
+    },
+    {
+     "completed_seeds": [],
+     "horizon_seconds": 30,
+     "model": "tgn",
+     "partial_seed_reporting": "descriptive_only",
+     "planned_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "status": "not_estimable"
+    },
+    {
+     "completed_seeds": [],
+     "horizon_seconds": 60,
+     "model": "tgn",
+     "partial_seed_reporting": "descriptive_only",
+     "planned_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "status": "not_estimable"
+    },
+    {
+     "completed_seeds": [],
+     "horizon_seconds": 30,
+     "model": "mean",
+     "partial_seed_reporting": "descriptive_only",
+     "planned_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "status": "not_estimable"
+    },
+    {
+     "completed_seeds": [],
+     "horizon_seconds": 60,
+     "model": "mean",
+     "partial_seed_reporting": "descriptive_only",
+     "planned_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "status": "not_estimable"
+    },
+    {
+     "completed_seeds": [
+      0
+     ],
+     "horizon_seconds": 30,
+     "model": "gbdt_membership",
+     "partial_seed_reporting": null,
+     "planned_seeds": [
+      0
+     ],
+     "status": "complete_planned_population"
+    },
+    {
+     "completed_seeds": [
+      0
+     ],
+     "horizon_seconds": 60,
+     "model": "gbdt_membership",
+     "partial_seed_reporting": null,
+     "planned_seeds": [
+      0
+     ],
+     "status": "complete_planned_population"
+    }
+   ],
+   "contrast_note": "no contrast is declared for ordinary models (consumer: 'Ordinary methods have no newly declared contrasts')"
+  },
+  {
+   "lane": "count_forecasts",
+   "paper_name": "Count forecasts",
+   "internal_family": "counts",
+   "roles": 34,
+   "scored": 0,
+   "not_scored": 34,
+   "cell_status_counts": {
+    "not_estimable": 34
+   },
+   "scorable_events_per_cell": {},
+   "censored_events_total": 0,
+   "not_scored_reasons": {
+    "not_estimable": "count and Chronos roles (34): retained failures, failure chain complete-retention-bindings-astra-v1/count-rb-disposition.json"
+   },
+   "contrast": null,
+   "flags": {
+    "kind": "newperiod_count_secondaries_v1",
+    "declares_primary_finding": false
+   },
+   "targets_s": [
+    300,
+    900,
+    3600,
+    7200
+   ]
+  },
+  {
+   "lane": "additional_baselines",
+   "paper_name": "Additional baselines",
+   "internal_family": "additional_baselines",
+   "roles": 6,
+   "scored": 6,
+   "not_scored": 0,
+   "cell_status_counts": {
+    "scored": 6
+   },
+   "scorable_events_per_cell": {
+    "30": [
+     1289
+    ],
+    "60": [
+     1289
+    ]
+   },
+   "censored_events_total": 0,
+   "not_scored_reasons": {},
+   "contrast": null,
+   "flags": {
+    "kind": "newperiod_additional_baseline_secondaries_v1",
+    "intervals_computed": false,
+    "formal_tests": false,
+    "declares_primary_finding": false
+   },
+   "contrast_note": "the additional-baseline report records per-event scores per cell only; no paired contrast is recorded"
+  }
+ ],
+ "stable_failure": {
+  "error": "ValueError('Empty target and prediction: Jaccard undefined on a scorable event')",
+  "raised_at": "forecast_custodian_eval.py:409 _jaccard, called from per_event_rows line 514 ('jaccard': _jaccard(truth, predicted)) via stable reviewed_membership.score_cell line 247 and stable consumer.evaluate line 135 (non-persistence branch)",
+  "event_id_recorded": false,
+  "why_not_recorded": "neither the failed family record (error + traceback) nor the run log names the event, horizon or arm",
+  "label_free_bound": {
+   "source": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-ckpt/stable-8b2ded7e985a2611c5bbe7e6.pkl",
+   "checkpoint_sha256": "3b057211e6fd1aacad37050e1dcd085bb9340e08cc426579a5526e055ef29b42",
+   "checkpoint_matches_run_log": true,
+   "scoring_order_first_cell": "stable-d30-history-knn-mean",
+   "empty_predictions_are_exactly_no_input_abstentions": true,
+   "abstention_sets_identical_across_cells_per_horizon": {
+    "30": true,
+    "60": true
+   },
+   "abstention_events": {
+    "30": 29,
+    "60": 25
+   },
+   "abstention_overlap_30_60": 25,
+   "possible_failing_cells": [
+    {
+     "order": 0,
+     "arm_id": "stable-d30-history-knn-mean",
+     "horizon_s": 30,
+     "candidate_events": [
+      "20260901T033052_leak_211181",
+      "20260901T033105_leak_212088",
+      "20260901T062147_leak_45250",
+      "20260901T100217_leak_36734",
+      "20260902T000546_leak_28323",
+      "20260905T021351_leak_45430",
+      "20260909T141207_leak_263656",
+      "20260911T130715_leak_45430",
+      "20260915T222054_leak_400587",
+      "20260915T225858_leak_48728",
+      "20260918T231501_leak_45430",
+      "20260928T134545_leak_38193",
+      "20261001T000000_leak_205996",
+      "20261001T001750_leak_327708",
+      "20261001T040038_leak_57043",
+      "20261001T060008_leak_45629",
+      "20261001T090156_leak_9304",
+      "20261001T135254_leak_6653",
+      "20261001T182223_leak_141607",
+      "20261001T193919_leak_28840",
+      "20261001T225125_leak_36874",
+      "20261004T235241_leak_38757",
+      "20261005T191403_leak_275808",
+      "20261007T181726_leak_47890",
+      "20261008T200305_leak_132372",
+      "20261009T165236_leak_136106",
+      "20261012T222115_leak_48728",
+      "20261014T130334_leak_37697",
+      "20261014T140259_leak_270814"
+     ]
+    },
+    {
+     "order": 12,
+     "arm_id": "stable-d60-history-knn-mean",
+     "horizon_s": 60,
+     "candidate_events": [
+      "20260901T033052_leak_211181",
+      "20260901T033105_leak_212088",
+      "20260901T062147_leak_45250",
+      "20260901T100217_leak_36734",
+      "20260902T000546_leak_28323",
+      "20260905T021351_leak_45430",
+      "20260909T141207_leak_263656",
+      "20260911T130715_leak_45430",
+      "20260915T222054_leak_400587",
+      "20260915T225858_leak_48728",
+      "20260918T231501_leak_45430",
+      "20260928T134545_leak_38193",
+      "20261001T000000_leak_205996",
+      "20261001T040038_leak_57043",
+      "20261001T060008_leak_45629",
+      "20261001T090156_leak_9304",
+      "20261001T135254_leak_6653",
+      "20261001T182223_leak_141607",
+      "20261001T193919_leak_28840",
+      "20261001T225125_leak_36874",
+      "20261004T235241_leak_38757",
+      "20261007T181726_leak_47890",
+      "20261009T165236_leak_136106",
+      "20261012T222115_leak_48728",
+      "20261014T130334_leak_37697"
+     ]
+    }
+   ],
+   "conclusion": "The trigger is a certified no-input abstention event (input_status unavailable_no_input, committed prediction empty by rule) whose stable-peer target is scorable and empty. The arm is stable-d30-history-knn-mean (the first cell scored) if any of its 29 abstention events has such a target, otherwise stable-d60-history-knn-mean (25 candidates). Which event cannot be fixed without opening the stable targets, which this extraction did not do."
+  },
+  "resolution_D-A40": {
+   "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+   "status": "scored",
+   "completion": {
+    "blocking": {},
+    "deviation": "D-A40",
+    "errors": [],
+    "job_id": "52750274",
+    "kind": "newperiod_stable_rescore_completion_D-A40_v1",
+    "label_reads": 1,
+    "not_in_scope": [
+     "counts",
+     "membership-h1",
+     "membership-h3",
+     "membership-timing",
+     "membership-history",
+     "membership-ordinary",
+     "origin",
+     "additional_baselines"
+    ],
+    "outcome_release_authorized": false,
+    "passed": true,
+    "raw_result": {
+     "bytes": 49026987,
+     "format": "pickle5",
+     "name": "stable-result-raw",
+     "parts": 1,
+     "sha256_of_concatenated_parts": "b0caf01072c12faece557d4f83161122d873d34def2283ea4fcbf975f8337306"
+    },
+    "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+    "scope": {
+     "prepared_not_scored": [
+      "additional_baselines",
+      "counts",
+      "membership-h1",
+      "membership-h3",
+      "membership-history",
+      "membership-ordinary",
+      "membership-timing",
+      "origin"
+     ],
+     "scored": [
+      "stable"
+     ],
+     "status_of_others": "not in D-A40 scope"
+    },
+    "stable_not_scorable": {
+     "stable-d30-history-knn-mean": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-none-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-persistence": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d30-sage-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 30,
+      "not_scorable": 3
+     },
+     "stable-d60-history-knn-mean": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-none-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-persistence": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s0": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s1": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s2": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s3": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     },
+     "stable-d60-sage-s4": {
+      "event_ids": [
+       "20260915T225858_leak_48728",
+       "20260928T134545_leak_38193",
+       "20261014T130334_leak_37697"
+      ],
+      "horizon_seconds": 60,
+      "not_scorable": 3
+     }
+    },
+    "stable_result": {
+     "bytes": 217788274,
+     "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/stable-result.json",
+     "sha256": "ef597d981c37a5304028996ac3c47953f62f78b9785f2551f476bd4ae8999fc9"
+    },
+    "utc": "2026-11-01T03:29:53Z"
+   },
+   "third_label_read_marker": {
+    "bytes": 749,
+    "content": {
+     "arm_spec_sha256": "f8f30b3525bc602012b0e0c76ebb0349890d42bed7f628bbba18fa315a1aa6ec",
+     "custody_spec_sha256": "921fc9bb06888e39b2399735cd2bc673506116375b5be84ce16dfee59b33beaa",
+     "labels_sha256": "20e3044fa439866512d618d540dcefad1516151bc3f63ac482ee480bb6303447",
+     "out": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/primary-recomputed-D-A40.json",
+     "seal_path": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/g3-seal-sharded-20261029T013648Z/seal.json",
+     "seal_sha256": "8ede1a58a437559ea1fb5259edd60141e1a8312ae286a978e7e4554e19a6014f",
+     "unblinded_utc": "2026-11-01T02:59:38.768596+00:00"
+    },
+    "sha256": "a8508a92111ce63f2a6e87fd53116ab48bc903a0e8be3afd5f3ed90317b695a0"
+   },
+   "done": {
+    "bytes": 10474,
+    "content": {
+     "bytes_read": 49972445477,
+     "completion": {
+      "bytes": 5409,
+      "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/completion.json",
+      "sha256": "245782aef96d6999074f11a91ee095a4257d379dca3825382c03a852da6c6a0f"
+     },
+     "completion_gate": {
+      "blocking": {},
+      "composition": {
+       "covered_secondary_families": [],
+       "membership_families": [],
+       "missing_key": []
+      },
+      "errors": [],
+      "expected_families": [
+       "stable"
+      ],
+      "expected_not_in_scope": [
+       "additional_baselines",
+       "counts",
+       "membership-h1",
+       "membership-h3",
+       "membership-history",
+       "membership-ordinary",
+       "membership-timing",
+       "origin"
+      ],
+      "families": {
+       "duplicate": [],
+       "failed": [],
+       "missing": [],
+       "not_persisted": [],
+       "persist_error": [],
+       "unexpected": []
+      },
+      "not_in_scope": {
+       "duplicate": [],
+       "missing": [],
+       "unexpected": []
+      },
+      "primary_equality": {},
+      "stable_not_scorable": {
+       "inconsistent_accounting": [],
+       "missing_record": [],
+       "unpaired_horizons": [],
+       "wrapper_records": []
+      }
+     },
+     "deviation": "D-A40",
+     "errors": [],
+     "failed_families": [],
+     "families": [
+      {
+       "family": "stable",
+       "persisted": {
+        "bytes": 45531285,
+        "format": "pickle5",
+        "name": "stable",
+        "parts": 1,
+        "sha256_of_concatenated_parts": "fc56d64e4a41edce673641632c73abc11856a9babd08cd12c5bc523d58d52540"
+       },
+       "seconds": 424.9,
+       "status": "scored"
+      }
+     ],
+     "label_reads": 1,
+     "not_in_scope": [
+      "counts",
+      "membership-h1",
+      "membership-h3",
+      "membership-timing",
+      "membership-history",
+      "membership-ordinary",
+      "origin",
+      "additional_baselines"
+     ],
+     "outcome_release_authorized": false,
+     "passed": true,
+     "primary_recomputation_identical_except_marker": true,
+     "primary_scores_identical_except_path": true,
+     "raw_result": {
+      "bytes": 49026987,
+      "format": "pickle5",
+      "name": "stable-result-raw",
+      "parts": 1,
+      "sha256_of_concatenated_parts": "b0caf01072c12faece557d4f83161122d873d34def2283ea4fcbf975f8337306"
+     },
+     "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40",
+     "stable_not_scorable": {
+      "stable-d30-history-knn-mean": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-none-s0": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-none-s1": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-none-s2": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-none-s3": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-none-s4": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-persistence": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-sage-s0": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-sage-s1": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-sage-s2": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-sage-s3": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d30-sage-s4": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 30,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-history-knn-mean": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-none-s0": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-none-s1": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-none-s2": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-none-s3": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-none-s4": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-persistence": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-sage-s0": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-sage-s1": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-sage-s2": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-sage-s3": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      },
+      "stable-d60-sage-s4": {
+       "censored_events": 0,
+       "event_ids": [
+        "20260915T225858_leak_48728",
+        "20260928T134545_leak_38193",
+        "20261014T130334_leak_37697"
+       ],
+       "horizon_seconds": 60,
+       "not_scorable": 3,
+       "reference_events": 1289,
+       "scorable_events": 1286
+      }
+     },
+     "stable_result": {
+      "bytes": 217788274,
+      "path": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/stable-result.json",
+      "sha256": "ef597d981c37a5304028996ac3c47953f62f78b9785f2551f476bd4ae8999fc9"
+     }
+    },
+    "sha256": "6fb123132a285ae1084b8ffbba4e614aca1bfdbd76f19ff1ea6a7917e7b9f2f0"
+   },
+   "exclusion_set_identical_per_horizon": {
+    "30": true,
+    "60": true
+   }
+  }
+ },
+ "validator_explanation": "Final-mode FAIL on five checks: tierC:completion, tierC:completion-blocking, tierC:families and tierC:identity-coverage follow from the stable-lane failure; tierC:stage-binding-chain expects baseline from the attempt-12 checkpoints, but the reviewed fix (chain-d39-v2/r2_rescore_secondary.py LEGACY comment) prepared baseline label-free in the dry run, saved it as a rolling checkpoint and loaded it byte-bound in the scoring run. Partial results: scored lanes verified; the evaluation is not certified complete. The validator covers the D-A39 record only. D-A40 re-scored the stable lane in its own records directory; its completion gate passed; no single check certifies the union of the two runs."
+}

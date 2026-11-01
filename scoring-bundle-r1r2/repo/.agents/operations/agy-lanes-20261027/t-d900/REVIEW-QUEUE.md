@@ -1,0 +1,2 @@
+# REVIEW-QUEUE t-d900
+See ../t-d300/REVIEW-QUEUE.md Entry 3 (shared bypass round). d900 drafts: t-d900/reviews/REVIEW-d900{build,assemble,audit,final}-{stage_science,allocation_premise}.json (PENDING_ROOT, claude-sonnet-5-5). Flip with signoff.sh <file>. Root decision needed (science/funding): d900 row 64 GiB (row-spec root-written) is not a V48 row; FILE-CAP-RISK addressed by the 2 GiB per-file cap.

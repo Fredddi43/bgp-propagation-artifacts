@@ -1,0 +1,6 @@
+{"kind":"review_request_supplement","author":{"model":"claude-opus-5-5","session":"<SESSION_ID>","worker":"/root/opus_implementation"},
+ "to":{"session":"<SESSION_ID>","worker":"/root/opus_review"},
+ "supplements":"review-request-h3-coverage-kernel.json (ready 21c395e1)",
+ "packet":{"path":"<REPO>/.agents/operations/newperiod-h3-coverage-reconciliation-20261024/r2/","review_ready":{"path":"<REPO>/.agents/operations/newperiod-h3-coverage-reconciliation-20261024/r2/review-ready.json","sha256":"7a478197ce18590df1c357f4f124100dea69a94582ccd3aa3a5a49562b22b5ec"}},
+ "asks":["Please review r2 (2-line onset fallback per eventset.py:72) together with the base; the execution will use r2 if you PASS it."],
+ "utc":"2026-10-24T08:34:33Z"}

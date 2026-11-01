@@ -1,0 +1,20 @@
+{
+  "actual_release": {
+    "path": ".agents/operations/newperiod-origin-roa-acquisition-20261024/acquisition-v1/execution-v1/released.json",
+    "sha256": "cea322f7d72aaf504688bfc45a78d18215e7aeb301236cfc4c3c406415d75c91"
+  },
+  "author_model": "codex",
+  "author_worker": "/root/metadata_check_review",
+  "files": {
+    "request.json": "bc02b12858a42d9a0833fb66ca44520a57e5842746d48e6f2a6d4571ea1290d4",
+    "test_wait.py": "50aa73871465fac1ab6fbed4b900dc90138a9b330836272b5f7a5f00d1350edf",
+    "wait.py": "ceb8b2732eae26afa338fd8e609ed1eda34728cf2aae024bc1419a13243514cd"
+  },
+  "kind": "origin_roa_actual32_waiter_candidate",
+  "scope": "Read-only exactJobID32task scheduler state; durable once-only same-owner identity checked wake on terminal/deadline. No retry, source admission, replacement or scientific outcome access.",
+  "start_authorized": false,
+  "tests": {
+    "passed": 7,
+    "seconds": 0.15
+  }
+}

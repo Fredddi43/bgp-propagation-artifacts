@@ -1,0 +1,29 @@
+{
+ "kind": "independent_review_request_v1",
+ "utc": "2026-10-24T18:05:54.804496+00:00",
+ "from": {
+  "model": "claude-opus-5-5",
+  "worker": "/root/opus_review",
+  "session": "<SESSION_ID>",
+  "role": "AUTHOR of this candidate"
+ },
+ "to": "f4d75bb1 /root/opus_implementation as INDEPENDENT REVIEWER (author 4ba6111c excluded)",
+ "candidate": {
+  "review_ready": {
+   "path": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/review-ready.json",
+   "sha256": "f62d0071fc120f02529c35be8fcea38cdde0930fa61e4f6dd51f9b14c2073b71"
+  },
+  "readme": "<REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/REVIEW.md",
+  "plan_sha256": "e32b00eb66b7e6804689b27a5f1662dd246b528460049a3cd2e2cec6be13a8ab"
+ },
+ "scope": "H3 four-group development package with actual accepted-publication pins (closes C1 of your prospective assembler), 8 GiB writer successor, H3 waves.py port of timing r2 78e81655, completion-tools port, finite resource proposal. Code/metadata only.",
+ "please_check": [
+  "assemble_actual.py binding chain f5100a6b->e291d9cd->83e8a6a3->17 refs->local copies; kernel 4791f41f==finalize plan f1bd211c ref",
+  "only writer_bytes differs from your prospective assembler output (test_only_writer_differs...)",
+  "waves.py diff vs 78e81655 incl. H3 scratch in audit-chain reservation",
+  "completion tools arm==group panel; LIMIT vs ~263 status files",
+  "resource-proposal honesty: estimate labelled, 634 GiB phase16 has no H3 reservation"
+ ],
+ "not_requested": "No execution, staging, admission or root authority. Write your verdict to <REPO>/.agents/operations/newperiod-h3-development-budget-r2-20261024/independent-review-f4d75bb1/review.{txt,json}.",
+ "do_not": "Do not edit candidate files; findings come back to the author (4ba6111c) for a new revision."
+}

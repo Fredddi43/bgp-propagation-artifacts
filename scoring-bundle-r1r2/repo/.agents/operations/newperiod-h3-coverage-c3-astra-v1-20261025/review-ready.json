@@ -1,0 +1,81 @@
+{
+  "actual_request_bound": false,
+  "author": "astra-final",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/NEXT.md",
+      "sha256": "e601eab13325c67c27baa834fbff6b4b7184dcc53edaf0b4b08bde5dc58a5009"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/actual-bindings-template.json",
+      "sha256": "c4d87f4b1c1c61f548497e8cea6ad6cb419982fd30cfbcb16ae12b1f682d443a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/author-tests.stderr",
+      "sha256": "0102f38acb788ccb5333b4e55ddbc3cbb6086389dcc04131d4315c214397aeec"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/author-tests.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/bind.py",
+      "sha256": "e0f46f164e31b9766b4c096f7f0490db57116d563dd4c9d700cf0f834fa88c37"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/c3.py",
+      "sha256": "34ef1e27e448d388848b7c541c8b841c9e2e2a8f539632003f6a36c28205a1cd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/constructor.py",
+      "sha256": "83ff71480c648a0cac0ca6a3d14dee845674574a8dbb5aeedebe51dc1e1af9f3"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/consumer.py",
+      "sha256": "6eacb4c92077a63d855e8ce6656fd9d8e82dd56717f9a0f711d5f5f20ffef3f0"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/finite_reader.py",
+      "sha256": "4ea5bf58505f04c23b2af462556171888d4f745609632a61ce7f44df3d3c9c86"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/independent-review-template.json",
+      "sha256": "ed907382446e92efe174cd313a8b6f2234c9205d838a0b3d3d7795c89a44e43a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/operate.py",
+      "sha256": "5b219129dfd40b3519c0ed5b0acbd9aae9a323c70166eac1d4d4131aa0f15f79"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/request-template.json",
+      "sha256": "b25a6a5532cafc37d64b6008bde6b603a784a256bb9a989149e69bf5d537b10a"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/root-authority-template.json",
+      "sha256": "02424aaf558cf9cfeab2cb1b02b0ac0e86f7886fa57dffdc775aae34f1013200"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/test_c3.py",
+      "sha256": "8070639eb32b240bace1ca7b6d1533a1b4c10eaf7bdbf5ba491286e5382e483e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/validation.json",
+      "sha256": "afa87ce5b7f900d74b881053e6050515bf7e61caf6ca803021c0dfb643fd8192"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-coverage-c3-astra-v1-20261025/worker.py",
+      "sha256": "0148d1291671d08e12d0fa1f1e5a7d7f53dd247da594f43117084b316978d190"
+    }
+  ],
+  "kind": "h3_coverage_c3_source_review_ready_astra_v1",
+  "remaining": [
+    "Independent source review; actual C2 result/projection/provenance/sizing acceptance.",
+    "Non-heuristic decoded-memory admission and canonical alias/retention proof for all1289.",
+    "Actual binder run, exact request review, current-phase root once authority and detached launch.",
+    "Independent actual receipt/scientific/original-consumer acceptance before protected graph binding/G1/downstream."
+  ],
+  "reviewer": "sol-final",
+  "source_only": true,
+  "utc": "2026-10-25T12:57:35.874670+00:00"
+}

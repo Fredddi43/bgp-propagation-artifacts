@@ -1,0 +1,17 @@
+{
+  "assessment": "Delta only fixed job/docstring/wake. Original terminal and coordinator predicates unchanged; running/completed/failed/foreign-job checks pass.",
+  "conditions": [
+    "Actual successful one-shot release required, no existing exact waiter, exclusive launch-intent and current coordinator identity before start.",
+    "Only passive scheduler; inherited one identity-bound wake/no resend; no scientific retry or approval."
+  ],
+  "files": {
+    "request.json": "5f27601476d1826fa93e3e955f4082fb070230e10a4374e1bb21e36a9268e511",
+    "wait.py": "3548b3db767e75b6afa7c70454b7fd4de91c9fab9e9c34b756ebe29f901adbc4"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "start_authorized": true,
+  "utc": "2026-10-24T07:20:22.468558+00:00"
+}

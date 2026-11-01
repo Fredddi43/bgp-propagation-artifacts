@@ -1,0 +1,82 @@
+\begin{abstract}
+What early observations of a BGP event show depends on when the clock starts, which events a study selects, and what the collectors see.
+We replay ten public collectors from January 2022 to August 2026 and follow \num{65934} origin changes and \num{17217} route leaks for two hours.
+
+From the first observation of the new origin, invalid origins show 0.61--0.74 of their two-hour AS set after 30\,s in 2023--2026, and valid origins 0.32--0.42.
+In 2023--2025, a label-free sample shows that catalogue selection raises this share for invalid origins.
+Valid and unknown origins often appeared long before the identified change.
+For events first observed near it, the lead shrinks to at most 0.24, but this rule keeps far fewer valid events.
+
+Of \num{20256} matched pairs of a valid-to-invalid change and its return, most are flips of under a minute.
+In these flips the return set exceeds the outward set, which an early end of the invalid route, ROV or path exploration may explain.
+A controlled invalid beacon lost about half its relative reach at our collectors in early 2024.
+
+We forecast the two-hour AS set of a leak from its first 30\,s.
+On large leaks selected by final size, persistence reaches Jaccard 0.509 in exploratory tests.
+A graph model (SAGE) reaches 0.708, the optimistic best of 13 or more variants, and past-event history 0.698.
+
+We also score selected leak candidates of late 2025 (R1, retrospective) and autumn 2026 (R2, prespecified replication).
+SAGE with history forecasts sets within 0.001 Jaccard of persistence by point estimate (intervals within 0.003), also on fast-growing leaks.
+Neither period detects an average-precision (AP) difference between SAGE with history and online history on shared candidates.
+On its native candidates, online history reaches 0.024 (R1) and 0.030 (R2) more AP than SAGE with history, as complete systems.
+
+In R2, online history is more precise at ten on shared candidates at 30\,s and beats the frozen model in AP.
+Its size rule forms worse sets than persistence, which SAGE matches.
+% Round 7 (review-r6 section 6: "Six prespecified rejections ... reads like an audit ledger; a short statement of the ranking/set
+%   distinction would communicate more"): same twelve rejections as the src list above (ranking: AP or P@10; sets: full-target and slice Jaccard).
+% Round 7 (panel-r7 DA #1/#3, methodology, EIC): the R2 sentence names its comparisons (P@10 C2@30 shared; C5@60 frozen in AP and P@10;
+%   native AP above); near-onset lead at most 0.24 (onset_sensitivity_ci.json near invalid-valid 2023 0.0968, 2024 0.2407, 2025 0.0682,
+%   2026 0.0421); slice intervals within 0.003 (slice_vs_persistence.json, -0.0028..+0.0014). Criteria M12, M23(f): 353 -> 329 words, then 337; comparators completed ("than SAGE with history", "than the outward set");
+%   "catalogue selection raises this share" scoped to 2023--2025 (tab:prop-summary: catalogue invalid 0.66 / 0.74 / 0.71 against label-free
+%   0.50 / 0.55 / 0.49; 2026 0.61 against 0.58). "so the difference also depends on the clock" left for length (the first sentence states it).
+We observe collector-visible paths, not forwarding or confirmed attacks.
+\end{abstract}
+% src: paper/generated/propagation-facts.json (65,934 / 17,217 usable = years.*.paper.events / leak.events; 13,800 usable stratum = invalid_stratum.events,
+%   tab:selection; floors); label-free stratum 0.49--0.58 in 2023--2026: tab:prop-summary "label-free invalid" (0.50 / 0.55 / 0.49 / 0.58);
+%   onset_sensitivity.json, onset_sensitivity_ci.json (2024 invalid-valid: all 0.4242, near 0.2407 [0.1211, 0.3498]; 2024 share near: invalid 94 %, valid 41 %);
+%   recovery_population.tex (20,256 retained links); recovery_gap.tex (gap < 1 min 55--65 %); beacon-trend-facts.json;
+%   slow regime: exploratory, selected by final size >= 200; figures/ladder-2025/ladder_leak200_2025.csv (persistence 0.509, SAGE 0.708, history 0.698;
+%   several SAGE variants scored on the 2025 test split, sections/08-forecast.tex);
+%   R1/R2 cohorts: Radar match or top 50 per month by collectors and messages (tab:forecast-setups); R1 = 3,444 Radar-matched + 99 volume (month_boundary.json R1.composition);
+%   month boundary: paper/generated/month_boundary.json R1 C2@30 no_day1 +0.0066 [+0.0008, +0.0118] (identifier date, event_id[6:8]);
+%   native candidates: R1 coverage 0.99957 / 0.99944 (r1-arm-levels.json), R2 1.000; facts.json (C2@30 +0.0003 [-0.0075, +0.0079];
+%   C2-native -0.0298 / -0.0287); r1-comparisons.json (C2 +0.0054 / +0.0022 not significant; native -0.0237 / -0.0243); SAGE not scored on native candidates (08-forecast.tex).
+% Round 4 (2026-10-31, panel-r4 T1 / NEW-1, NEW-2, NEW-15, NEW-16; review-r4 section 6): the post hoc first-of-month
+%   estimate (+0.007 AP, month_boundary.json above) left the abstract; it stays in sections/app-protocol.tex "Month boundary" (moved from sections/08-forecast.tex in round 6) with its caveats.
+%   Near-onset lead (onset_sensitivity_ci.json years.*.near invalid-valid): 2023 +0.0968 [0.027, 0.173], 2024 +0.2407 [0.1211, 0.3498],
+%   2025 +0.0682 [-0.0218, 0.1795], 2026 +0.0421 [-0.0322, 0.1205]; the former "falls from 0.42" (2024, all events) is dropped, because 0.42
+%   is also the upper valid floor (round-4 X8). Retention 84--94 % / 28--46 % in 2023--2026 (tab:prop-summary middle rows: invalid 87 / 94 / 91 / 84,
+%   valid 36 / 41 / 46 / 28; the same ranges as 2022--2026 in sections/01-intro.tex).
+%   Set forecast = persistence: paper/generated/set_errors.json results.R1.30.sage_on.adds_nothing_share 0.9463 (60 s: 0.996).
+%   R2 prespecified tests favouring online history: facts.json p_at_10 C2@30 -0.0239 [-0.0363, -0.0124] Holm 0.0024 (tab:secondary);
+%   C5@60 -0.0126 [-0.0190, -0.0060] Holm 0.0024 (tab:r2). "ROV, path exploration or an early end of the outward change may explain this"
+%   left the abstract for length (round-4 NEW-16); the three hypotheses stay in sections/06-recovery.tex and the intro.
+% Round 5 (2026-11-01; panel-r5 T3 / W11, NEW-2, NEW-3, NEW-14, NEW-17; review-r5 items 2, 3, 6):
+%   return hedge restored with the three hypotheses (sections/06-recovery.tex "By identifier gap"; untested, RESPONSE-ROUND1.md "Not done").
+% src: R2 prespecified rejections by direction, docs/paper/newperiod-final-20261030/facts/facts.json primary_projection.comparisons
+%   (holm_rejects true; families primary_ap, p_at_10, full_target_jaccard, slice_jaccard, whole_system_ap; = generated/newperiod-table.tex and
+%   generated/secondary-families.tex). Favouring online history (6): primary_ap C5@60 -0.0126; p_at_10 C2@30 -0.0239, C5@60 -0.0364;
+%   whole_system_ap C2-native@30 -0.0298, C2-native@60 -0.0287, C5-native@60 -0.0370. Favouring SAGE (6): full_target_jaccard C2@30 +0.2898,
+%   C2@60 +0.2918, C5@60 +0.2919; slice_jaccard C2@30 +0.0944, C2@60 +0.0837, C5@60 +0.0836. Other rejections compare SAGE arms with each other
+%   or history on/off (C1, C3, C4, C6), not SAGE with online history. "Two prespecified tests" undercounted (round-5 NEW-2 / X3).
+%   History's size rule: tab:recipe "History set forecast" (top candidates up to the mean final size of 20 nearest past events).
+% src: "at least 13 variants": SAGE variants scored on the 2025 large-leak test split (Sep--Dec), counted in docs/results/2026-09-12-plan-item-ablations.md
+%   ("All on the 2025 large-leak set ... test Sep--Dec": default k = 3,000 BCE, k = 1,500, k = 6,000, focal loss) and
+%   docs/results/2026-09-13-inventory-round.md ("2025 large-leak set unless stated": six edge classes; 18 features with and without 16--17;
+%   20 features (base) and without country; logistic curve head; separate encoders; ranking loss 0.3 and 1.0) = 13. A lower bound: no file lists
+%   every variant ever scored on that split. Replaces "several" (round-5 NEW-12 / W13; review-r5 item 4).
+% Prior-work sentence ("Previous work measures ... not how natural events spread over time") removed for length and breadth (review-r5 W6,
+%   panel-r5 NEW-17: Argus, Shi et al. IMC 2012, has no refs.bib entry); the narrowed claim stays in sections/01-intro.tex and 02-background.tex.
+%   "Without a size threshold" removed (review-r5 W2: the slow regime and R1 also differ in training population and calibration).
+%   Length (round-5 W12 / T3): 416 -> 351 words (same counting rule). The near-onset numbers (0.10--0.24 in 2023--2024, intervals including zero in
+%   2025--2026; retention 84--94 % / 28--46 %) and the 13,800 stratum count left the abstract and stay in the intro and sections/05-propagation.tex;
+%   "the lead shrinks ... far fewer valid than invalid events" uses the conclusion's wording. "Radar-matched or high-volume" stays in the intro.
+% Round 6 (2026-11-01; panel-r6 NEW-4(c), T4, T6): one clause on the issue-time slice, traded without growth (354 -> 353 words, same counting
+%   rule): "In R1, the set forecast of SAGE with history equals persistence for 95 % of events at 30 s" (kept in the intro and the conclusion) is
+%   replaced by "The set forecast of SAGE with history stays within 0.001 Jaccard of persistence by point estimate, also on fast-growing leaks";
+%   "public route collectors" -> "public collectors"; "reaches a Jaccard of 0.509" -> "reaches Jaccard 0.509" (as sections/08-forecast.tex).
+% src (round 6): full target: set_errors_r2.json results.{R1,R2}.{30,60}.arms.sage_on.set.minus_persistence +0.000177 / +0.0000083 / -0.000210 /
+%   -0.000082; slice: slice_vs_persistence.json results.{R1,R2}.{30,60}.arms.sage_on.minus_persistence.difference +0.000828 / +0.0000387 /
+%   -0.000837 / -0.0000119 (frozen R2 60 s -0.0000595); all |x| < 0.001 (point estimates; the slice intervals reach -0.0028 and +0.0014).
+%   Fast-growing leaks: the prespecified issue-time slice (early growth >= 12 at 30 s, >= 22 at 60 s; tab:recipe). "first seen" -> "first observed"
+%   ("first-seen" names only the leaker class).

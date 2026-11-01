@@ -1,0 +1,23 @@
+{
+  "automatic_retry_authorized": false,
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "66e68264739c319b1b4d987fe42cd6d547748d339931f61e901e59bc99bf247d",
+    "build.py": "a71992c27bb0503249bedf6847c483c4829db858e9fd6254b5416e1e42a06e76",
+    "construction/common.py": "265179efd5d033d2c85113963a90609dedf3c0f3bd1f47fe1ac88ccec61fe38d",
+    "construction/job.py": "576fc514ef9a7e332db4749ee35335ceb796875ed46770276d01a39544f0f6a8",
+    "construction/runtime_verifier.py": "b80e8fb7b9f6521216c62515265d16094aafe7dfcc5295c0a071e29d58eb66dc",
+    "file_limits.py": "c0207e4e91adf24f6108478ae1b6ade52fb2e1577b9f36ab1668d23c1119765f",
+    "finite_io.py": "7cbf9664baeb0503e1133d288aa15e29a73f05ccd677870f1aa800bf803a9fe8",
+    "reviewed_budget.py": "2c98b74b4b45f8c6d5e7880a69fbf5bfe9aec004cccb3a9b3e778e5ad26b1e42",
+    "runner.py": "0e3707528b693468cdfc5f29c62ac4d680dd6a1c19b34664307d2fbafd555e8c",
+    "test_execution.py": "56044c7a2c68e9204336f9d6b7de3bb63c339f6f7cb59aefee04bb6d7df2cdf1",
+    "test_file_limits.py": "6e30d630684aea1c03b1eb080f972ce63890c5e17cebf8db91c0dfa2b99b49f1"
+  },
+  "passed": true,
+  "reviewer_model": "codex",
+  "reviewer_session": "/root",
+  "reviewer_worker": "/root",
+  "scope": "Independent diff against H1r2: fixed timing names and core_horizons/cohort inventory, exact76file privateguard201adaaef; original primary source/budget/supervision/FileLimits remain unchanged. Separate actualdraftpublication reviewed. No actual execution from code approval.",
+  "tests_passed": 18
+}

@@ -1,0 +1,35 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "a7de50c963f1e2a59f373d7fd51d45fe6ceb56f1e7647b7c70256cd12129d9ae",
+    "build.py": "c9615dae40ea7deb90b3d54b6b7773c4c0ce97d06a54968584640456bfea5ba6",
+    "h3-candidate/binding.json": "c6e15a1d2ddb1640cf5f5a5a45677c52e3bab0ae853e5d867c07ec0231d1650d",
+    "h3-candidate/bootstrap.py": "4e015873fed61959fd19d3ae32a70fce9d38172a0a99b1423660b959dfb9f521",
+    "h3-candidate/client.py": "2b42c36f8ffddd2435eb076c4153dee7dd4a20c1fe4be5b36fdbbe75b7453f65",
+    "h3-candidate/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "h3-candidate/reviewed_h3_fit.py": "d2b88c413f9e895f539a9d084283f9822c87b1f0931a8902a766cad77bafc3a3",
+    "h3-candidate/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "h3-candidate/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "h3-candidate/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "h3-candidate/runner.py": "86e3731778b99cca49117a331a5f73c970d5515fae2ab84b3b5cfb767e46b9d8",
+    "original_bootstrap.py": "281b3b608dcd826b2ac0b6b18c34d3756836d32c29c8b1421bb2318d6b8e5c13",
+    "original_client.py": "1eeeea1d7e08a332a26384049d2061bc2d2b6198bd3dd48999758e0faf4c28fc",
+    "reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "test_build.py": "03e7d294a6bade0d19fb0bae95149ae15e340c1eeca52ae5e81ac765573819e7",
+    "timing-candidate/binding.json": "78649878b9169f9cf2567541a3248b9425aadd4cb098248d598c12bd3c15a77d",
+    "timing-candidate/bootstrap.py": "8c43b8dfb3091cfae043a0a464bc68804b88c03f5ca944571cbadcdcb86a6747",
+    "timing-candidate/client.py": "6ae5e51026bf894294bdf6b56d4bc6a75ee5bfb1962cc0b175bbc6e7127ee570",
+    "timing-candidate/pins.json": "b06fd04fcb91b7b432434a04a1eea08fa4b255fdb88e00ea0f9cbecb98b434a9",
+    "timing-candidate/reviewed_helpers.py": "9c41f26746205037f3561f836fa51e91c1ab609a18368caf1fcf57b57a3db307",
+    "timing-candidate/reviewed_runner.py": "ed420e4cab1b16401870e7d9b9e84a8811733a9cb77d9abefe11e48fb7f149c3",
+    "timing-candidate/reviewed_transport.py": "cdc41765f19cb045ad09345b30cd7f9da0a28a6d1f895ce4023aa5ce763a172e",
+    "timing-candidate/runner.py": "31dd8011a0422a558eb92820432deb4de2ca4ae9923a336269001d04b8abe1b7"
+  },
+  "kind": "newperiod_sensitivity_transport_code_candidate_v1",
+  "protected_reads_performed": false,
+  "tests": {
+    "passed": 24,
+    "seconds": 25.16
+  }
+}

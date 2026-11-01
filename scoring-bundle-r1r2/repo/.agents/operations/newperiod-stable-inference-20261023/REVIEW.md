@@ -1,0 +1,11 @@
+# Fixed N-stable inference
+
+This candidate emits the retained 24 N-stable commitments: matching updated N-core SAGE/no-MP checkpoints across two horizons and five seeds (20), plus persistence and online history-k20 at both horizons (4). It performs zero fits or calibration. The original normalization, checkpoint threshold, model inference, custody loading, baseline ranking and causal history predicates are reused.
+
+The full stable population, own rebuilt stable master/export/source inventory, original full input audit and separate actual input review are bound before tensor/library reads. Source failures, parser failures and certified-empty statuses remain distinct; no ordinary reference input or target substitution is permitted. All arms retain explicit dispositions. The protected source/graph producer is the separately reviewed `newperiod-stable-inputs-20261023` packet.
+
+Persistence uses the original stable commitment decision (observed seeds only) with the exact persistence mask in the custody ranking schema. The independently reviewed stable secondary consumer preserves the original empty-ranking/AP-zero persistence convention; no new ranking endpoint is claimed. The original stable decision source is `scripts/forecast_stable_peer_commitments.py`. History-k20 uses the original campaign ranking and detached mature own stable history.
+
+`runner.run(plan_ref, approval_ref)` is called by the existing supervised CPU transport. Finite source/history/graph/output bounds, actual private runtime, R1 release, exact retained freeze, actual per-arm memory and aggregate storage admission, and independent exact execution authority remain mandatory. This packet has no actual protected reads or execution permission.
+
+Validation: `PYTHONPATH=src .venv/bin/python -B -m pytest -q .agents/operations/newperiod-stable-inference-20261023/test_inference.py` — 26 passed in 18.07 seconds. Four genuine synthetic custody baseline chains cover both horizons and all status classes. Two tiny original N-core fits exercise unchanged provenance, normalization and both neural model inference outputs against the original predictor. Mutation tests cover complete retention, independent authority and own source/master/inventory evidence. Synthetic input metadata is not a claim that actual stable inputs already exist.

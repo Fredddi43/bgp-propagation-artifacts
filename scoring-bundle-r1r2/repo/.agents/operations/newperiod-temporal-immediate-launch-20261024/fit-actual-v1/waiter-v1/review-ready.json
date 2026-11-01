@@ -1,0 +1,14 @@
+{
+  "kind": "gru10_metadata_waiter_review_ready_v1",
+  "author_worker": "/root/deadline_audit",
+  "source_predecessor": {
+    "path": "<REPO>/.agents/operations/newperiod-origin-source-aug31-launch-20261024/waiter-v1/wait.py",
+    "sha256": "7ef1d0eef06ed4725ad5919b07461b20d2a0d15a1143a6b8c97cd7c1c3f8580e"
+  },
+  "delta": "Only exact job identity and explanatory text rebound from independently reviewed ten-task source waiter; same accounting, coordinator identity, exclusive single wake, no automatic action. Start only after actual release.",
+  "files": {
+    "wait.py": "b5067f136ec8af5fb67d24e75aef04a555999dabd56ff5e5b9c1f68b3c660146",
+    "request.json": "019c162b7de55d06b50d9d32bbc21b7ff7dced986979dc033fc81092bbb06f64",
+    "test_wait.py": "14453c26680ab31ff3a6ef233bef23aaf580d2fc0728935b7d49794c38fcb7e8"
+  }
+}

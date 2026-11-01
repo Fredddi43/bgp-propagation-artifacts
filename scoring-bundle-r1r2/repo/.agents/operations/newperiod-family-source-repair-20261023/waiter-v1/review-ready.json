@@ -1,0 +1,11 @@
+{
+  "kind": "origin_source_repair_waiter_review_ready_v1",
+  "author_worker": "/root/deadline_audit",
+  "previous_waiter_sha256": "26ce07c37beb6ac5fdde2b7166301904b8f19bdbf5e69e3e3e8aaf36953a41c6",
+  "files": {
+    "request.json": "810ed2f5697d564062ece9a9a197b2aa67e9560f7452cca2f998b5c13d988819",
+    "test_wait.py": "aa05a689e1a16cb79c8a858612c11634f0a09d4ac33ca6fe13ebdc5d2d21413f",
+    "wait.py": "1ec664920200f06bb6ef00018f8cdc377699b8c3dee8a0d54ce52a66f87a7b82"
+  },
+  "scope": "Metadata-only exact13 task accounting, one local durable coordinator wake; no automatic retries or cluster mutation"
+}

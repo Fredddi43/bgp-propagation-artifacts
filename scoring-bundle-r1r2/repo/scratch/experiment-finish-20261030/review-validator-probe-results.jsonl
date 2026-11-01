@@ -1,0 +1,5 @@
+{"actual_exit": 0, "actual_summary": "PASS", "pending": "tierC:rescore-records", "probe": "missing_D-A39_run"}
+{"actual": "JSONDecodeError", "probe": "valid_9MiB_json_header"}
+{"actual_tierC": "all checks PASS even with --deep", "checks": 3, "probe": "failed_completion_empty_science_duplicate_families_wrong_kind_no_aggregate"}
+{"actual": "pending only; no failure", "probe": "missing_secondary_json_and_split_parts"}
+{"actual": "PASS by following target stamps", "probe": "symlink_input"}

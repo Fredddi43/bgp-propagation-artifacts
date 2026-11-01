@@ -1,0 +1,32 @@
+{
+  "author": "astra-h3t",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "b2d94418712890b87a363370318236d11fca3fea40539d9e4d0623747b841b82",
+    "build_transport.py": "9e496f64ed190d1122a9dbe9063aada09f57368cf4559b6567b2f683e50f7eea",
+    "dry-run.json": "4ad3ef75d7fc5dcf2ef7c09e13787281962aa1a788f083e01186ca68e8337e64",
+    "dry_run.py": "09c0193db7b9b1300e2644e538d59553f9c89dae3ba2d5f54d165330df758858",
+    "job.sbatch": "580f9ebc6f90bd96567744d13413c9378390e165b2186be386f994d74d29f183",
+    "logged_probe.py": "b4fff26509f390242c355bad3e7c3bce96c508f72ba3ed05ba31b2ce6e75cd15",
+    "plan.json": "b17afde4ae28d34e3de6fde3fd377756305cdee86178985901acf98363d58bc8",
+    "probe.py": "f81ca233c614531e25f63d5578686c006593202968e0f8f225f7f01c4c55f1de",
+    "root-authority-template.json": "75b67fbca96503c3d96fed340c19b39bfa061b9d8eeef40356f5fd3b0ff95ddf",
+    "test-run.txt": "0d57c87c708b5a1bea27082187a9443defd993ca4de3b8b0fed0c01273272520",
+    "test_logged_probe.py": "fad4afb82c567c84483ac52633b15c9f0963e2995e305c4ab7e65a48a3dc137c"
+  },
+  "kind": "h3_coverage_logged_wrapper_review_ready_v1",
+  "original_plan": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-probe-v1-20261025/plan.json",
+    "sha256": "b17afde4ae28d34e3de6fde3fd377756305cdee86178985901acf98363d58bc8"
+  },
+  "original_probe": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-protected-coverage-probe-v1-20261025/probe.py",
+    "sha256": "f81ca233c614531e25f63d5578686c006593202968e0f8f225f7f01c4c55f1de"
+  },
+  "real_consumer_synthetic_dry_run": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-coverage-logged-wrapper-v1-20261025/dry-run.json",
+    "sha256": "4ad3ef75d7fc5dcf2ef7c09e13787281962aa1a788f083e01186ca68e8337e64"
+  },
+  "reviewer": "sol-h3t",
+  "tests_passed": 7
+}

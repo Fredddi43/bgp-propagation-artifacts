@@ -1,0 +1,96 @@
+{
+  "arms": {
+    "history_median": {
+      "30": [
+        "baseline-d30/history-knn-median_matched_d30"
+      ],
+      "60": [
+        "baseline-d60/history-knn-median_matched_d60"
+      ]
+    },
+    "none_off": {
+      "30": [
+        "core-gbdt/core-v6b--c3_none_history-off_d30_seed0",
+        "core-gbdt/core-v6b--c3_none_history-off_d30_seed1",
+        "core-gbdt/core-v6b--c3_none_history-off_d30_seed2",
+        "core-gbdt/core-v6b--c3_none_history-off_d30_seed3",
+        "core-gbdt/core-v6b--c3_none_history-off_d30_seed4"
+      ],
+      "60": [
+        "core-gbdt/core-v6b--c3_none_history-off_d60_seed0",
+        "core-gbdt/core-v6b--c3_none_history-off_d60_seed1",
+        "core-gbdt/core-v6b--c3_none_history-off_d60_seed2",
+        "core-gbdt/core-v6b--c3_none_history-off_d60_seed3",
+        "core-gbdt/core-v6b--c3_none_history-off_d60_seed4"
+      ]
+    },
+    "none_on": {
+      "30": [
+        "core-gbdt/core-v6b--c3_none_history-on_d30_seed0",
+        "core-gbdt/core-v6b--c3_none_history-on_d30_seed1",
+        "core-gbdt/core-v6b--c3_none_history-on_d30_seed2",
+        "core-gbdt/core-v6b--c3_none_history-on_d30_seed3",
+        "core-gbdt/core-v6b--c3_none_history-on_d30_seed4"
+      ],
+      "60": [
+        "core-gbdt/core-v6b--c3_none_history-on_d60_seed0",
+        "core-gbdt/core-v6b--c3_none_history-on_d60_seed1",
+        "core-gbdt/core-v6b--c3_none_history-on_d60_seed2",
+        "core-gbdt/core-v6b--c3_none_history-on_d60_seed3",
+        "core-gbdt/core-v6b--c3_none_history-on_d60_seed4"
+      ]
+    },
+    "online_history": {
+      "30": [
+        "baseline-d30/history-knn-mean_matched_d30"
+      ],
+      "60": [
+        "baseline-d60/history-knn-mean_matched_d60"
+      ]
+    },
+    "online_history_native": {
+      "30": [
+        "baseline-d30/history-knn-mean_native_d30"
+      ],
+      "60": [
+        "baseline-d60/history-knn-mean_native_d60"
+      ]
+    },
+    "sage_off": {
+      "30": [
+        "core-gbdt/core-v6b--c3_sage_history-off_d30_seed0",
+        "core-gbdt/core-v6b--c3_sage_history-off_d30_seed1",
+        "core-gbdt/core-v6b--c3_sage_history-off_d30_seed2",
+        "core-gbdt/core-v6b--c3_sage_history-off_d30_seed3",
+        "core-gbdt/core-v6b--c3_sage_history-off_d30_seed4"
+      ],
+      "60": [
+        "core-gbdt/core-v6b--c3_sage_history-off_d60_seed0",
+        "core-gbdt/core-v6b--c3_sage_history-off_d60_seed1",
+        "core-gbdt/core-v6b--c3_sage_history-off_d60_seed2",
+        "core-gbdt/core-v6b--c3_sage_history-off_d60_seed3",
+        "core-gbdt/core-v6b--c3_sage_history-off_d60_seed4"
+      ]
+    },
+    "sage_on": {
+      "30": [
+        "core-gbdt/core-v6b--c3_sage_history-on_d30_seed0",
+        "core-gbdt/core-v6b--c3_sage_history-on_d30_seed1",
+        "core-gbdt/core-v6b--c3_sage_history-on_d30_seed2",
+        "core-gbdt/core-v6b--c3_sage_history-on_d30_seed3",
+        "core-gbdt/core-v6b--c3_sage_history-on_d30_seed4"
+      ],
+      "60": [
+        "core-gbdt/core-v6b--c3_sage_history-on_d60_seed0",
+        "core-gbdt/core-v6b--c3_sage_history-on_d60_seed1",
+        "core-gbdt/core-v6b--c3_sage_history-on_d60_seed2",
+        "core-gbdt/core-v6b--c3_sage_history-on_d60_seed3",
+        "core-gbdt/core-v6b--c3_sage_history-on_d60_seed4"
+      ]
+    }
+  },
+  "kind": "frozen_evaluation_arm_spec",
+  "online_history": "history-knn-mean/matched/online",
+  "population": "retrospective_r1",
+  "seed_pairing": "training_seed"
+}

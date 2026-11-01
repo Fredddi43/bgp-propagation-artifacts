@@ -1,0 +1,21 @@
+{
+ "kind": "successor_review_draft",
+ "lane": "agy-lanes-20261027/qwen/q34-origin-par-infer",
+ "date_utc": "2026-10-28",
+ "subject": "In-process fork-pool inference for the origin G2 arms (exact-equivalent successor of the pinned retain runner)",
+ "baseline_runner_sha256": "af8c03eb979851a7fe5caa5207f13cae5d5222a48376363793f56962ee8bbd88",
+ "successor_runner_sha256": "cc63a91cc98c46dfc5928ee46977e6c7c4c2e311aa191d725f5eb9daefcde9d8",
+ "new_module": {"reviewed_parallel.py": "1222d49e575df39a3f3f3e67ae6dcf4f3c5efabe3c5f45f395c609be81e00c8c"},
+ "changed_vs_pinned": "runner.py only, 2 hunks verified pinned+diff==successor byte-for-byte: (1) import sys + 1 PINS entry for reviewed_parallel.py; (2) exec+sys.modules registration of reviewed_parallel.py and the single inference call site replaced by an env-gated dispatch (workers=1 with unset env is the pinned inline serial path; BGBENCH_PARALLEL_CUSTODY_LOAD=1 additionally fuses the pinned per-row custody read/sha/validate loop with prediction_rows in the fork workers, parent keeping every pinned pre-fork check). All scientific siblings, pins.json and both pinned test files byte-identical. No change to the frozen predict.py, src/bgbench, plan schema, freeze, custody or bounds.",
+ "exactness": {
+   "claim": "predictions.json bytes identical modulo the per-event wall-clock forward_seconds field (time.perf_counter: differs between ANY two runs of the original pinned code and is the only commitment field that is not a pure function of (model, inputs)); commitment.json identical modulo predictions_sha256; verify_arm passes per run; workers do zero reads/writes/log appends.",
+   "determinism": "row bytes bitwise identical across intra-op thread counts 1/2/4/8/16 (fresh env-pinned processes and runtime set_num_threads) on the frozen N-family configuration over big/small/max-node/no-edge/all-seed graph shapes -> 1-thread fork workers are an exact-equivalent parallelization.",
+   "tests": ["test_parallel_equivalence.py: original vs successor-inline vs successor-pool(4 workers, 1 thread) vs successor-fused(4 workers) byte gate on a shared 6-event and 500-event realistic-shape fixture (real fit, real custody export/gate/freeze/verify) — passed", "pinned suite (test_inference.py + test_retain_population.py, unchanged bytes) executed against the mirrored successor: 20 passed (see REPORT.md)"]
+ },
+ "root_actions_if_adopted": [
+   "place successor/ at .agents/operations/newperiod-origin-inference-r3-par-20261028/ (name at root's discretion)",
+   "update g2r2/templates/history-stable-origin pins: g2templates.py runner_dir origin dir + PINNED[origin][runner] + templates/origin.json spec_arm.runner {path,sha256}; re-run make_g2_plan/validate_g2_plan",
+   "stage the new sibling runners/reviewed_parallel.py beside origin-runner.py on the cluster",
+   "regenerate plans/specs (approval runner_sha256 is derived automatically from the spec by g2_exec.py:97-98)"
+ ]
+}

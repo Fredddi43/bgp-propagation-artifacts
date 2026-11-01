@@ -1,0 +1,20 @@
+# d300 chain packet: Assemble (64 receipts)
+
+Pins (sha256 prefixes): successor.py c731d1ae55ec, plan.json 282cf91ba684, prepare.py c0a559add388, operate.py 23b6ec55eaad, remote.py 71bf98333ae2.
+
+No execution authority; nothing here was staged, submitted, cancelled or released. Local tests only: `cd /tmp && python3 -I -B <packet>/test_chain.py` (22 tests; 4 replace_old flow tests run only in wave 1).
+Shared sources and regeneration: `newperiod-timing-d300-chain-sonnet-v1-20261027/` (build_packets.py regenerates the four packets; operator files are byte-identical across packets, tested).
+
+## Design decisions fixed by root (and what they mean in code)
+- Every new job: `--export=NIL`, absolute-path `job.sh` (only builtins plus /usr/bin/env, grep, sha256sum, cut), `env -i` exec of the pinned python; no dependencies between stages (release order and acceptance are root's, so no job can start by itself).
+- Workers reuse the original frozen kernel/runtime/budget/audit modules by sha (taken from the original plan's `files`), the original Budget and output_budget factories, original bounded_run and original `derived_audit_plan`. They add: a staged plan + one-shot release binding (independent concurrences, V48 phase, adoption), exact scheduler identity, per-slot intent files (a slot is never reused), RLIMIT_AS/FSIZE from the plan, and a stat-only terminal record. No scientific code is changed.
+- The original Budget has no mkdir/rename gate, so the CAIDA-cache mkdir that stopped successor v6 is not an issue here (the 32 original 2025 tasks ran under the same Budget).
+
+## Read-only evidence used (2026-10-27)
+- Old array 52515293: tasks 32-63 PENDING JobHeldUser (`ArrayTaskId=32-63%16`, SubmitLine `--array=0-63%16 --export=ALL --mem=131072M --hold`); tasks 0-31 COMPLETED except 27 FAILED. Real `sacct -P` shape is the compressed row `52515293_[32-63%16]|PENDING|0:0` (fixture `real-scontrol-52515293.txt`). 52515294/5/6 each carry `--dependency=afterok:<previous> --kill-on-invalid-dep=yes`.
+- Accepted 2025 shards (stat only): allocated 333.7-367.7 MB each (max 367,669,248; sum of 31 = 10,577,758,208; sixteen largest = 5,530,590,208), logical 2.5-3.2 GB, largest graph file 524,105,539 B (shard 17), shard 27 corrective 807,007,655 B. The original FSIZE 536,870,912 killed the first shard 27.
+
+## Packet: assemble (64 receipts)
+`successor.py`: singleton worker (`SLURM_JOB_ID` identity, no array variables) running the original `kernel.assemble` over exactly 64 receipts: logical 0-26 and 28-31 at `work/timing-d300/build-NNNN/done.json` (31 shas pinned in the worker, from read-only sha256 of the accepted receipts), logical 27 at `recovery/timing-d300-shard0027-astra-v8/build-0027/done.json` with sha b9891bef991429d0a1d93c5f15b2552879db85a8c0e99f6a5b14253e262f87f6 (pinned), 32-47 and 48-63 under the two wave namespaces (path pinned, sha supplied in the release binding after acceptance and re-hashed at run time). Output `recovery/timing-d300-assemble-sonnet-v1/assembly` including `audit-plan.json` (original `derived_audit_plan`). Original limits unchanged (512 MiB per file, 1 GiB total, memory 131072 MiB, AS memory-256 MiB). Binding extras: `receipts` (64), `upstream_acceptance_ref`, `continuation_tasks_accepted`.
+Funding: `timing_audit_chain` (36,503,615,488 B remaining after the d5 credit) vs chain allowance 33 GiB = 35,433,480,192 (1 GiB assembly + 32 x 1 GiB audit caps), headroom 1,070,135,296; measured d5 chain consumption was 3,606,528 B. V44/V48 list d300 downstream coverage as EXACT_COVERAGE_UNRESOLVED and ask for an independent adequacy review: this packet states the finite allowance but does not self-certify it.
+Review set: source + allocation concurrences; adequacy review of the `timing_audit_chain` binding; operation reviews (stage_hold, install_release); adoption refill (131,072 MiB, plan = assemble plan); held acceptance; acceptance of both continuation waves (all 32 new done.json shas) and of the shard-27 supplement; receipts mapping check by the reviewer.

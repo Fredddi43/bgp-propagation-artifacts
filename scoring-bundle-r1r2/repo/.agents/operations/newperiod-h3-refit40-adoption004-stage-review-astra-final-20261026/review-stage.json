@@ -1,0 +1,76 @@
+{
+  "action": "stage",
+  "adoption_support": {
+    "correction_verified": true,
+    "prior_census_review": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-adoption-review-astra-final-v2-20261026/verification.json",
+      "sha256": "d6fe24327cd75929874bf6c43299ac7f3e128c3018ce0e94e5242ba33af8598d"
+    }
+  },
+  "author_sessions": [
+    "<SESSION_ID>"
+  ],
+  "author_workers": [
+    "sonnet",
+    "sonnet-h3-refit40",
+    "root",
+    "/root",
+    "deadline_audit",
+    "remaining_work_audit",
+    "temporal_guard_recovery",
+    "history_recovery",
+    "opus-h3"
+  ],
+  "binding_acceptance": {
+    "path": "<REPO>/.agents/operations/newperiod-h3-refit40-review-astra-final-v2-20261026/binding-acceptance.json",
+    "sha256": "16245eb01254b329aa07ce2d3f76e6e8197bde1e5b846b634da2de898a790226"
+  },
+  "bundle_manifest_sha256": "e3c41e1203bae32c30e1a20dc00208903f394626987884a8799171de16547adf",
+  "conditions": [
+    "Root alone issues fresh stage once and latest complete control acknowledgment immediately before execution.",
+    "Retain the current no-release/no-update condition for all65 held jobs throughout this stage; any changed writer/floor/runtime premise requires fresh adoption/review.",
+    "Final operator rechecks newest compatible phase, exact pins/SSH trust, unused actual-stage, custody identity/no-shrink and EOF+all growth<2080374784 B plus full fresh filesystem floors.",
+    "All67 exact writer identities verified; stable_source_stage retains84322856 B growth. Compute-node evidence remains scheduler-side; root all-host/runtime/native-closure attestations and existing conditions persist.",
+    "No retry or automatic downstream action. Independently accept actual-stage before submit_held review. Full40 scope preserved."
+  ],
+  "execution_authorized": true,
+  "operating_adoption": {
+    "path": "<REPO>/.agents/operations/ROOT-H3-REFIT40/operating-adoption-004.json",
+    "sha256": "817f4f7ba063d1cb1fc2dfb0f698478853f7e25d9f1386c6bedc728837a379bb"
+  },
+  "passed": true,
+  "phase": {
+    "path": "<REPO>/.agents/operations/newperiod-joint-v44-20261026/root-joint-storage-phase-v44.json",
+    "sha256": "e5fab44a899b288627d28a67a536ed23535349ddbca43cb110ba75a0c2f2f302"
+  },
+  "pins": {
+    "client.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-client-r2-20261023/client.py",
+      "sha256": "ac0275b0808e3d85afc6bde2d8e1f2ccf66f4aec09e3ee08850ef0b09cbfe533"
+    },
+    "operate.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/operate.py",
+      "sha256": "5e9a0c6fd4dd3a8705cf0d97cadd5ca9910b095e06426310efaa0b7a0d0f72ad"
+    },
+    "prepare.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/prepare.py",
+      "sha256": "d8b64bd83009a336b132f1c44d78d2876a09ff628ee2926aa38b935a2c9714a9"
+    },
+    "remote.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/remote.py",
+      "sha256": "5d4753118005cf5435a5540b4b9cc13878cc6ea74a2886f23401befd4ac71b21"
+    },
+    "ssh_contract.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/ssh_contract.py",
+      "sha256": "d5103fae6c867cda8407943bead7cc02669800bb4e39a4761a91d252ee5e437f"
+    },
+    "transport.py": {
+      "path": "<REPO>/.agents/operations/newperiod-h3-refit40-execution-sonnet-v2-20261026/transport.py",
+      "sha256": "f9fd89f4e5f7e58b91af7ae51d5f94c7b4402df41f391b4fa99b70a894433823"
+    }
+  },
+  "reviewer_model": "codex",
+  "reviewer_session": "<SESSION_ID>",
+  "reviewer_worker": "astra-final",
+  "scope": "Exactly one v2 H3 refit40 stage action; no submit/admit/release/capture authority."
+}

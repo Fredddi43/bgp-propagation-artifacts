@@ -1,0 +1,55 @@
+{
+  "author": "astra-g1b",
+  "control_scan": {
+    "path": "<REPO>/.agents/operations/storage-astra-20261025/storage-control-scan-v1/control_scan.py",
+    "sha256": "5f7ed286cf69993c4e3b5d04c9971f7227a8eee2ba58ffedd7a2be9a306359fc"
+  },
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/REVIEW.md",
+      "sha256": "4ceeacea06f9dc2369fd1307fb9d287315bec49b71e7d816b5b2d8dee0513e30"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/capacity.TEMPLATE.json",
+      "sha256": "707830513a98a81af2e8f6a392522848e3d30e9828d6382c807ce05814a8cf47"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/operator.py",
+      "sha256": "08cfb12658c026c65bf4979225ef7eeebbc45d6b48a9a35650dffc7a6fa547ae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/request.TEMPLATE.json",
+      "sha256": "d2535b6600f85f21c45cdbeefd5ed3a4372906484350d45c7339b75d6654b0f4"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/review-schema.UNSIGNED.json",
+      "sha256": "6a789cbf517eea7462dda25dafb0ba019d9804505a00821acdd08d0af90cd425"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/root-once.TEMPLATE.json",
+      "sha256": "e37637794157e8b3478298ade4c94c8e7b776dd938f44c40b32a6ce667df8465"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/test-results.txt",
+      "sha256": "f956005d0fffd32ac4a36ab5c68098cf29abcd859b0dd83722c4ea73d78658fd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/test_stage.py",
+      "sha256": "c91ffbce6f2b1198e3c67bb2d49a30a0eef19af6853df7eb59b940504d6bb76e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-g1b-count-stage-v1-20261026/worker.py",
+      "sha256": "9c1642741238da2afca99449d4e836664f1a3357aa7e46983520b458ccdcbd90"
+    }
+  ],
+  "kind": "AUTHOR_COUNT_STAGE_SOURCE_PREPARATION",
+  "pending": [
+    "Root current joint-phase explicit1MiB capacity row",
+    "Filled request and independent exact execution verdict",
+    "Root acknowledged controls and consumer dry-run, fresh once authority"
+  ],
+  "protected_reads": 0,
+  "remote_actions": 0,
+  "test_result": "4 tests pass;10 mutation cases; no <CLUSTER_STORAGE> or network use"
+}

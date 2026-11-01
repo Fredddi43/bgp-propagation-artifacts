@@ -1,0 +1,16 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "315df9446d1314db2e44a3562acb6fed27da9f62dfcf5b2829d47aa8c90f7026",
+    "build.py": "8173dd492b835011fe21bb68cdef59875e518013cf12e2351f16f1713fb609f9",
+    "source-pins.json": "1d1e3bdd26393381f37e06bcac5a2a86c7a46ee676cbbce2292c2365f4810f50",
+    "test_build.py": "f4d644d002c7f5586a27df81246693102abfb52e6e4f168bb5525717d0bfcbc9"
+  },
+  "kind": "newperiod_temporal_source_held_transport_code_v1",
+  "predecessor_source_readiness": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-source-audit-pooled-20261024/review-ready.json",
+    "sha256": "662e2a4dc84c14d703f1a6554de3d1a6c6dc51bf0717174900d744b13b39888b"
+  },
+  "test_count": 12
+}

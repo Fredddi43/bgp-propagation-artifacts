@@ -1,0 +1,15 @@
+{
+  "deletion_authorized": false,
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-p07-operational-delta-astra-v1-20261025/prepare.py",
+      "sha256": "7c411f8a96496722247f88ee0f9930d51c6a20556ac6cddd70f0ddd00950a25e"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-parsed-p07-operational-delta-astra-v1-20261025/delta.json",
+      "sha256": "a05b05536a4274a5a7dd0e30ecda8707e3eb50264d1022d2080ec4304a1f62ca"
+    }
+  ],
+  "kind": "AUTHOR_METADATA_DELTA_REVIEW_REQUEST"
+}

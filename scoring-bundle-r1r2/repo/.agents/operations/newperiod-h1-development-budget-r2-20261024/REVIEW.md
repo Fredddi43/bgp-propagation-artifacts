@@ -1,0 +1,9 @@
+H1 resource-only successor, no execution authority.
+
+Same original 64 deterministic shards, 14,787 rows, 512MiB/file, CPU/RAM/time, scientific/audit/runtime source. Writer ceiling becomes8GiB. New sensitivity-parallel-h1-budget-v2 namespace; previous failed16 and held48 plus downstream retained and never released by this packet. Seven operational package files relocate; all scientific files byte-identical.
+
+Full campaign upper bound remains547GiB =512 build +1 assembly +33 audit +1 controls. Only four16 build waves are candidates for admission:129GiB future writes each. Before later waves, independently assessed cumulative completed-output bytes/full completed indices/maxfile must bind the exact plan. All completed files stay; fresh df already includes occupied bytes, so actual retained bytes are documented and NEVER added back or double subtracted. Joint admission reserves only remaining prospective writes plus competing obligations and floor. Audit-chain35GiB requires separate admission after all64 successful.
+
+8GiB is empirical, not a guarantee on unseen events; source failures and resource failures remain distinct. No automatic retry, pruning, prior partial reuse, fit, prediction, score or gate issuance. Original shared access log/output budgets untouched. Root exact resource/recovery and independent operation approval pending.
+
+Root proposed joint602GiB = current274 + live H1 wave128 + future projection contingency200 (existing H1control1 already accounted). The200GiB is an empirical future contingency, not a full512GiB writer guarantee. Actual completed bytes remain in df; update cumulative retained/projection evidence at every wave. Any completed shard >6GiB requires explicit separate root growth-review binding before nextwave. No automatic capacity credit or laterwave release.

@@ -1,0 +1,16 @@
+{
+  "execution_authorized": false,
+  "kind": "h3_audit_prefreeze_packet_review",
+  "new_data_reads": 0,
+  "pins": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-successor-prefreeze-v1-20261025/prepare.py",
+      "sha256": "201a92d29d4b3720dc51455d14c1126cb8e0a52ea42eedecf5ca74fcbe4441e5"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-h3-audit-successor-prefreeze-v1-20261025/execution-design.json",
+      "sha256": "04295923ffa05b6f422fdb9a011053bdd06ac1861f3d1c7afb0fdbe03a76f9f8"
+    }
+  ],
+  "remote_actions": 0
+}

@@ -1,0 +1,11 @@
+{
+  "files": {
+    "REVIEW.md": "e928fa901e119dec8a3c79b2aea23955aee14f447d1f58db0596b1f2178188b6",
+    "capture.py": "64d1bdefd54464748ca1ea3bae63b2066ee33a6f52604e0c17d4717f211dfe88",
+    "request.json": "d1e9aa02eab1900c1bf45aa67fa98de32eb22fb8b328bf70c20e4f3a8d20138d",
+    "test_outcome.py": "8b9316b087053b8d5cc0f49a3214ed547e36f029b40f2cc4c9ab5ef677fad6c9",
+    "wait.py": "55c3bb9c38c4afcb4a8720060d0478b2a3187152457ce41275b443c5ee7aea38"
+  },
+  "independent_review_pending": true,
+  "tests_passed": 25
+}

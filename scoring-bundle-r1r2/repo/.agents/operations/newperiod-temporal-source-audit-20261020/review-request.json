@@ -1,0 +1,28 @@
+{
+  "author": "/root/temporal_guard_recovery",
+  "author_model": "gpt-6-astra",
+  "kind": "newperiod_temporal_source_audit_code_review_request_v1",
+  "pins": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-source-audit-20261020/pins.json",
+    "sha256": "36d6297bad1f1ab635caae11975582293a2dd4a17ed0e38f0b152ac41702e34e"
+  },
+  "requested_authorities": {
+    "development_fit_authorized": false,
+    "development_source_audit_authorized": false,
+    "execution_authorized": false,
+    "issue_window_source_read_authorized": false,
+    "n_unseal_authorized": false,
+    "prediction_authorized": false,
+    "protected2026_authorized": false,
+    "r1_release_authorized": false,
+    "retry_authorized": false,
+    "supervised_container_decode_authorized": false,
+    "test_inputs_authorized": false,
+    "test_scoring_authorized": false
+  },
+  "requested_verdict_kind": "newperiod_temporal_source_audit_code_review_verdict_v1",
+  "spec": {
+    "path": "<REPO>/.agents/operations/newperiod-temporal-source-audit-20261020/spec.json",
+    "sha256": "fa9af2a7f063e0473c8c3c42da498e9140b577b79bc4103d5f1422f9f4c5c576"
+  }
+}

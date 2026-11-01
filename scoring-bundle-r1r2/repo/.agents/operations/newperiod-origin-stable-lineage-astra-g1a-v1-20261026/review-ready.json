@@ -1,0 +1,48 @@
+{
+  "author": "astra-g1a",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/prepare.py",
+      "sha256": "6293f815f1bad55f70d3d5d4527110c54127a2424527766bc1b7ec7362abcfb6"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/source-inputs.json",
+      "sha256": "f465446324a584220419cd1b7a945a99dd40f75ba2a20f660166b546e880c2bd"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/test_prepare.py",
+      "sha256": "0ccfb34c84d7e602c801dbf40b20546c38ac1eed0c8dff103503c839011bbf0f"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/REVIEW.md",
+      "sha256": "91a40a1a8dfc0bc8e49bd49bcc5cffab575ce2dddd92f957d75f0d0d73a34ae1"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/validation.json",
+      "sha256": "4713aca6bacabe9a1eb2df14d423e5f23137716f230e807e1e1aaf7c9f0b3fd7"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/output-v1/configs/stable-d30-history-knn-mean.json",
+      "sha256": "f583b67d600a3a942f9037a02d41dc305ec840c521efa9e70fb70f54d98465ba"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/output-v1/configs/stable-d30-persistence.json",
+      "sha256": "c57ce5d01ac8ffadaeb22d521011af70b45b40b9e0c20cf9fdf87708fcdbe5ad"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/output-v1/configs/stable-d60-history-knn-mean.json",
+      "sha256": "e91e5489062b51624d0c998475380fceedc3cb90ac3eaa7cd0e70f482939b8ae"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/output-v1/configs/stable-d60-persistence.json",
+      "sha256": "f7bfeb92279eb7870a5b77aa926ffdf38e7180e2b1ed90730dd5d57a4a6f267b"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-origin-stable-lineage-astra-g1a-v1-20261026/output-v1/lineage.PENDING.json",
+      "sha256": "16bd75cc6158ff6ba7a00ea4dff3f5039b173c4c8a75f00bac99f8f3416e673c"
+    }
+  ],
+  "kind": "origin_stable_lineage_review_ready_v1",
+  "reviewer": "sol-g1"
+}

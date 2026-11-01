@@ -1,0 +1,20 @@
+{
+  "author": "/root/remaining_work_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "f4e1a767627ea878b09030e79acef3219debe1616fda5f79c51c377ec2d7662d",
+    "reader.py": "6ab9a70374fd1f7c31c7959934d0b90d1b4ffec7bcb3697e43789189816d9cca",
+    "test_pooled_reader.py": "7b512d0bfc2e5cff220a57ca7f0cd347c1dd46adf4b7f40a3a402bfc3b5a4e69",
+    "test_reader.py": "65f24c93f07c3f05b3097dbd0e789e0b36d3ce3ece1f8813754c0c9a19846914"
+  },
+  "kind": "newperiod_pooled_count_reader_code_v1",
+  "original_reader": {
+    "path": ".agents/operations/newperiod-custodian-reader-20261021/revision-v3/reader.py",
+    "sha256": "defd89e2db652c68e18db147ca49d9c55b94dee85da8d8647d6cec288a3199ba"
+  },
+  "prepare": {
+    "path": ".agents/operations/newperiod-custodian-count-truth-20261023/prepare.py",
+    "sha256": "a932948e9226f1b9da3971f808e508a0137d0d5ba6b9dddb4955c8d630a68474"
+  },
+  "tests_passed": 49
+}

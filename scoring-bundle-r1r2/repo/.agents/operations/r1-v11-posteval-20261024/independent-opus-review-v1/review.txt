@@ -1,0 +1,79 @@
+INDEPENDENT REVIEW: R1 v11 post-evaluation rebinding + K1 census request
+Reviewer: claude-opus-5-5, session <SESSION_ID>, worker /root/opus_review.
+  The reviewer is distinct from author <SESSION_ID> (/root/opus_implementation) and from the
+  earlier authors 065d2f16 and f1d352ff.
+Packet: .agents/operations/r1-v11-posteval-20261024/review-ready.json
+  sha256 955199fefe7e011fe844fff2e49d614bd46e75b72231cd1a8c1d552de690c67b.
+Local only: no host command, nothing under results/, no label, prediction or score read, no author file edited, no
+commit. Tests ran on an isolated /tmp copy (deleted), except two tests that need real absolute paths, run read-only in
+place with -B and no cache; no pyc was left behind.
+
+VERDICTS
+  A. Rebinding: PASS_CODE_ONLY for all 31 pinned files.
+  B. K1 census: EXACT ONE-ATTEMPT APPROVAL ISSUED (opus-k1-census-approval-v11.json), metadata/stat only.
+  Nothing else is approved (section 5).
+
+1. Bindings
+  - 31/31 review-ready files match. No unlisted file in the packet.
+  - census.py 4229ec2c = review-ready census_tool_sha256. k1-request.json eb151faa.
+  - Baseline: v10 packet ready fb023c7b, PASS_CODE_ONLY by codex /root/deadline_audit
+    (codex-takeover-20261023/r1-v10-posteval-code-review.json 3bcb04db, 274 tests). The reviewed v10 bytes still hash
+    to the ready list (the builder enforces this).
+
+2. Exact delta (independent of the author's tests)
+  - Deterministic reproduction: build_v11.build(), run read-only against the actual v10 packet and the v10/v11
+    packages, gives 25 files, all byte-equal to the pinned ones.
+  - Anchor map, each re-hashed from the actual files:
+      exec bc42869b -> 2233750e;  spec fa86404a -> 134d74fb;  ledger b5a0755b -> 5575ebb3;
+      seal 9f769de8 -> 1cad501a;  R1 authorization 07e88de9 -> dd54f44f;  source manifest 96b033bb -> 0bdaf006.
+    The derived-metadata spec, seal and ledger are byte-identical (cmp) to v11 package-v1/control-v1/derived.
+  - Source delta v10 -> v11 is only src/bgbench/forecast_metric_bounds.py, the reviewed JSON-key bound. The builder
+    refuses any other delta.
+  - My own reverse-substitution diff (v11 text with the v11 -> v10 anchors and namespaces undone, against v10) leaves
+    only:
+      * pin cascades: adapter VERIFIER_PINS, stage_code PINS, d2 CODE_SHAS, vrun run_verify/pins;
+      * the two pins.json files: author fields, base provenance, kind v10 -> v11;
+      * AUTHOR_SESSIONS + f4d75bb1, in census, phases, stage_code, d2 and vrun;
+      * census SUPERVISOR_PID None -> 788181, plus its docstring;
+      * REVIEW, implementation and builder files.
+    run_adapter, run_verify, requests, all test files and verify_r1.py have 0 residual lines. k2c is byte-identical.
+    No numerical or logic line changed. The unchanged verifier kernels reuse the v8/v10 independent reviews.
+  - No stale v8/v10 identity (bc42869b, PIDs 531850/721018, v8/v10 namespaces) survives in runtime code; only
+    build_v11.py references them, as provenance.
+  - Class-(d) DEST is the new r1-posteval-classd-v11-20261024 in stage_code, phases, vrun and d2. stage_code asserts
+    DEST is absent at stage time.
+  - Actual-launch identity:
+      * execution-v1/launch-result 85e92767 stdout gives pid 788181, spec 2233750e;
+      * waiter/request 8921617e binds the same pid/spec;
+      * waiter/terminal-observed c4ac734a has returncode 0.
+  - Author exclusion: f4d75bb1 is in every AUTHOR_SESSIONS. census checked_approval also refuses worker
+    opus_implementation; vrun refuses opus_implementation and remaining_work_audit. This reviewer (4ba6111c,
+    /root/opus_review) is accepted.
+
+3. Tests
+  - 282 total = 267 inherited + 15 test_v11. 280 passed on the isolated copy. The remaining 2 (k2c f19 slice against
+    the v8 evidence path; K1 request absolute refs) passed in place.
+  - test_v11 covers reproduction, the anchor map against the actual files, AST preservation, change inversion, pins,
+    the census against the actual launch, author refusal / reviewer acceptance in all five checkers, the 66 fixed
+    cells, custody against the v11 driver, and the K1 request refs.
+  - `census.py check` (local, no ssh) prints tool 4229ec2c and payload root
+    .../r1-release-parallel-v11-20261024/control-v1, supervisor_pid 788181, entry_cap 5000, the d30/d60 manifests and
+    the shared registry.
+
+4. K1 census, scope and conditions
+  - Census content is stat-only: names, types, sizes, modes. The one exception is the <= 4 KiB execution-exit record
+    that the approved operational status script also reads. Nothing is read from results/, the manifests or the
+    registry markers.
+  - Runs: once via the command in k1-request.json. It writes only capture-records/census-{intent,result}.json and
+    evidence/census.json, new files in the author packet dir outside the pinned set. One attempt; output-exists
+    refuses a second.
+  - Precondition already met: R1 v11 terminal returncode 0 (terminal-observed c4ac734a, plus root's eval_status.sh
+    84fc9be9 check). The census re-checks every terminal predicate itself.
+  - The shared registry occurrence-final-v1/custody/r1-access may hold markers from earlier attempts. A
+    `terminal_success: false` judgement (for example a failure marker present) stops K2. It must not be worked around
+    and gets its own reviewed resolution.
+
+5. NOT approved by this review: K2a/K2b/K2c captures, class-(d) code transport, D0/D1/D2, the verifier job (vrun), any
+   result, label, prediction or score read, any retry, N admission, any manuscript use. Each needs its own exact
+   approval on the actual census sizes, with a fresh v11 DEST. No v8/v10 approval (K1 6c623c88, transport 30a82d47,
+   v10 census approvals) applies.

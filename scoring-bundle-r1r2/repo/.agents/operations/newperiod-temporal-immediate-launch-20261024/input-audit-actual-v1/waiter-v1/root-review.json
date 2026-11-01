@@ -1,0 +1,13 @@
+{
+  "author_agent": "/root/deadline_audit",
+  "automatic_retry_authorized": false,
+  "maximum_starts": 1,
+  "passed": true,
+  "request_sha256": "c866b382df12749a5d5e7bae992b9abf7783700c9eea83f51b081d3b099ca3bd",
+  "reviewer_agent": "/root",
+  "reviewer_session": "<SESSION_ID>",
+  "scope": "Only existing job52479671 terminal accounting and exact current root identity wake; after approved release.",
+  "source_sha256": "a60509b04d77536024168b684e897a86744b3acc23907a577db56ef4499a1ad9",
+  "start_authorized": true,
+  "tests_passed": 10
+}

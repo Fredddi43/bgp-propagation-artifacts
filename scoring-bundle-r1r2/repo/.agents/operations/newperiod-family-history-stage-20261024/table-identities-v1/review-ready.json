@@ -1,0 +1,9 @@
+{
+  "author_worker": "/root/remaining_work_audit",
+  "files": {
+    "probe.py": "fd4d65f46aa4c55459415f5d6ef5e4877ce93771a27827d187bd185eefaab734",
+    "request.json": "be93040a1d30ff64bc1352441915154959a6b331e944747a2193146d19b28853",
+    "test_probe.py": "3f63b07eb55301581bf80a9ed789dde53604454fa86e26814217b35e82d956e7"
+  },
+  "kind": "origin_historical_table_identity_hash_ready_v1"
+}

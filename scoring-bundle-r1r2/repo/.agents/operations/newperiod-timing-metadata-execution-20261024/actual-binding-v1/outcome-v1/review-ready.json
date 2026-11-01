@@ -1,0 +1,12 @@
+{
+  "author_model": "codex",
+  "author_worker": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "capture.py": "970033230a36f8b9775e7038c4d57c4d98d36d75e0937042396ea87a05dca14d",
+    "prepare_request.py": "b7ca315f347f1d0e937e0959c8c46fecf307fd6bbca3656f2743d9eec7e13209",
+    "request.json": "af05979a99537ca7472c8ddbece6a6266b07b24844125dfb394be1980ce2275c",
+    "test_capture.py": "8d840af8d97294664b388e834d3cdd15efc0adb417ee24811ae80bdbc0914edb"
+  },
+  "scope": "Exact done/failed twoJSON only after singleton52479250 terminal;16expected output refs are computed deterministically from approved draft/publication and neverfollowed. Original four-horizon guardproof shape checked. No gate/payload/labels read."
+}

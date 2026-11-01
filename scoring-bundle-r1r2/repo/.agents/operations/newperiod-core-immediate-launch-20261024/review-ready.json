@@ -1,0 +1,28 @@
+{
+  "actual_stage_or_submission": false,
+  "author": "/root/deadline_audit",
+  "author_model": "codex",
+  "execution_authorized": false,
+  "files": {
+    ".agents/operations/newperiod-core-immediate-launch-20261024/README.md": "b7072567229958dc9a8a256a0d4df3fc9a32d813d8180aa959a5aa07c33bccd8",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/metadata-intent.json": "df082076afdfa85285fac51e6dfc804c0d9b58b619b6cf38d8e2e45479e56106",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/metadata-result.json": "18c759ce4e7c3d0220fd326dda7b81a01a4453deef8e5f81dc7c2671e1f79b7f",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/metadata.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/metadata.stdout": "cae26648851e86a8820946a875af4722af48bbc18f2a998336720279dd53c189",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/metadata_probe.py": "28e8e34a08cb3d3a2a5f787d560df504e732eb68c888f4f863e4cbf60b94586d",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/review-request.json": "fd1a37107bd8ce551eb75fe11f4efba7767d830e64c6a67c4015e7cd266a87fa",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/shared-storage.json": "ec4455d8871b7f55e9a1da7e9c7cde3ef252d69315df6bc7e71d5e6bd5893bec",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/source-ready/forecast_gpu_placement.py": "2a82b27f20a9eaa56acdac4e0246965e0c83b268efcf9fe2a3c9e8b7078f20e8",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/source-ready/newperiod_core_chain_v4.py": "0e310d46b31ebf9ea755fbb38b559cac72f0bb59cd30946a15945c9307aa81b7",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/source-ready/opus-newperiod-core-chain-v4-spec.json": "05d302e0574d1c0d9390ddacf317d9936253951c77b63574d72e28604484fb61",
+    ".agents/operations/newperiod-core-immediate-launch-20261024/source-ready/opus-newperiod-core-chain-v4.sbatch": "9384b9ddb063bc916b8b0f6c9eafc34486cf829a784cc54fcd9c377a0eed8760"
+  },
+  "independent_review": "pending",
+  "kind": "newperiod_core_immediate_launch_preparation_v1",
+  "no_scientific_source_change": true,
+  "original_source_hash_checks_passed": true,
+  "review_request": {
+    "path": "<REPO>/.agents/operations/newperiod-core-immediate-launch-20261024/review-request.json",
+    "sha256": "fd1a37107bd8ce551eb75fe11f4efba7767d830e64c6a67c4015e7cd266a87fa"
+  }
+}

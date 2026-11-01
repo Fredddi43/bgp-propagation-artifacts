@@ -1,0 +1,11 @@
+{
+ "approval_claimed": false,
+ "author_session": "<SESSION_ID>",
+ "kind": "r1_serial_d1_recovery_review_ready_v2",
+ "packet": ".agents/operations/r1-critical-path-speedup-20261022/recovery-serial-d1-r2",
+ "pins_sha256": "64d0f7a7ab2537ad8ee55a1ca637de6fc592e618af92fac9aa0debae233e3849",
+ "requests": [
+  "delta review vs cca61e13: K5 (CPU = 4 x walltime), K6 (tail inside margin, 126 h), F3 (spec resources == memory_guard literal), nit",
+  "record check of a94243e2 corrections in evidence/live-observations-r2.json"
+ ]
+}

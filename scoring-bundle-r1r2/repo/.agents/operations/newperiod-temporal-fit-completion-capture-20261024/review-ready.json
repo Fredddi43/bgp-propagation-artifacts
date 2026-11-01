@@ -1,0 +1,13 @@
+{
+  "actual_execution_performed": false,
+  "author_worker": "/root/deadline_audit",
+  "files": {
+    "README.md": "f3667e728868eac9aa0f1c2d3539136030f4462af336d571abbb68e448206891",
+    "bindings.json": "d2e4bd86eb96dcb7874f3c118de97999ee45b1c502fa96b8cb71e1be7da11c1d",
+    "capture.py": "ecf6d0052472fa761733e706d5f7f15b21b80231682c9cf02f643b194457c696",
+    "request.json": "5acc5729734f58b69b0ef1c8f6d1ca8aea4d3e4d094273944661e9f14b6c858b",
+    "test_capture.py": "c48aab42db6afb51b5da950a1f9da2a5bc92765d6e822a8793d20dc50d78b242"
+  },
+  "kind": "newperiod_temporal_fit_completion_capture_review_v1",
+  "tests": "9 passed"
+}

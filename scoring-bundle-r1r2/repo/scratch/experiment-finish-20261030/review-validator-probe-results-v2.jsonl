@@ -1,0 +1,4 @@
+{"probe": "approval_missing_required_freeze_records_and_authorization_fields", "exit": 0, "summary": "PASS"}
+{"probe": "nested64digit_stage_receipts_differ_from_approved_ready_and_binding_is_invalid", "exit": 0, "summary": "PASS"}
+{"probe": "D-A39_marker_changed_without_updating_header_marker_receipt", "exit": 0, "summary": "PASS"}
+{"probe": "different_recomputed_primary_accepted_with_stale_true_equality_claim", "exit": 0, "summary": "PASS"}

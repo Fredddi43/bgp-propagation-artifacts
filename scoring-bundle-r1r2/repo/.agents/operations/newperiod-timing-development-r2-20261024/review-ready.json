@@ -1,0 +1,16 @@
+{
+  "author": "/root/deadline_audit",
+  "execution_authorized": false,
+  "files": {
+    "REVIEW.md": "8c187969a70170e62c1a4464c2c6b395bf9fab7159b53f86cd48f00d63353659",
+    "REVISION.md": "2f10e0485976f7320b6fc2616d59b7c559cea9351e1212af6d297e0ac3c19d61",
+    "audit.py": "9b34053a6ff600acca5bf224fb4d48ee0d37abab4656f6c6031630d05ca3d465",
+    "original_completeness.py": "59d782122183e4952401cc7dfbdf4683ff5d85fb0b52eb16fbd70154dff1dab0",
+    "source_io.py": "5c61a00e3d3c9e74787b7f9621818f8775ac6f851d16858be7e3d553d235b4e0",
+    "test_audit.py": "93497a0657e3bd40d042c4bf8fa998fcfe9cd5b969c5727eebb3706d8df1aac3",
+    "test_baselines.py": "54b5fb18030d57e38067210c68008794ebabee159fd2c29af3fdeecde07b0d50",
+    "test_selector_chain.py": "26d53c8992f63ceb556ec0231a26cadee86028be2ab26b2123db43554014b0ce",
+    "validation_baselines.py": "9e3722331a7cca486edaf1ccdef32f0d2be063b6b90a8220acd6a76b3c9dab36"
+  },
+  "tests_passed": 27
+}

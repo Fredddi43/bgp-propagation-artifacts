@@ -1,0 +1,33 @@
+{
+  "kind": "independent_r1_receipt_transport_code_review",
+  "verdict": "PASS",
+  "reviewer": {
+    "worker": "/root",
+    "model": "Codex"
+  },
+  "author": "/root/remaining_work_audit",
+  "reviewed_utc": "2026-10-24T04:41:40.459038+00:00",
+  "readiness_sha256": "0c15610cf21623f79bfe5fbad14838b0afb631525dcdbe88b09239d361f192f1",
+  "files": {
+    "REVIEW.md": "e5264a495ccefd70f330aca303b56a1404c2bc7a710c1659febd9760feb9c754",
+    "publish.py": "d70217e7d38cd6dcb756a310fc0ca2e9f141975c0729fbe96dbc388aa18ed38d",
+    "test_publish.py": "c65c830ff777fffae5405e0ae0c78b2a456202bbf33108ad3a46d289c0239edc"
+  },
+  "tests": {
+    "passed": 4,
+    "seconds": 0.16
+  },
+  "evidence": [
+    "Exact two regular tar members generated from bounded local bytes; canonical existing control path, exclusive new directory and no existing-path overwrite.",
+    "Receipt and approval SHA, transport and builder SHA, independent reviewer identity and no-retry/noscience flags checked before mutation.",
+    "File/directory fsync and exact two SHA256 OK readback; failure outputs retained and no retry.",
+    "Actual generated shell/tar/checksum test succeeds once and refuses duplicate without changing bytes."
+  ],
+  "execution_authorized": false,
+  "conditions": [
+    "Actual numerical release and exact emitted receipt must first pass existing independent Opus final assessment.",
+    "Separate exact publication approval must bind actual receipt SHA and frozen builder/transport hashes.",
+    "Run once; preserve any partial state, no automatic retry or new scientific execution."
+  ],
+  "scope": "Host receipt transport code only, no release or N admission granted."
+}

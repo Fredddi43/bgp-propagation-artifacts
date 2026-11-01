@@ -1,0 +1,22 @@
+{
+ "dir": "<REPO>/.agents/operations/newperiod-h1-development-budget-r3-20261025/audit-failure-diagnostic-v1",
+ "executed": "nothing",
+ "execution_authorized": false,
+ "exports": "per slot: stderr bytes/sha/lines, stdout bytes; last traceback block only: frames (category package|venv|other, file only if identifier-only .py path under that NAMED root, line, function if identifier), exception type, message ONLY if it equals one of 1,097 literal need()/raise strings from the staged package (build.py, ast); else message bytes + sha. No other stderr text.",
+ "files": {
+  "build.py": "c7f8cd35215fdb3d52774e349734f5ab7929b3de43337886c801c4b4064cf537",
+  "diagnose.py": "a0b7355a998b42b058bbd9140edb0ab70bc3b2e7b9eaee378351e3b68fe7aea0",
+  "diagnose_template.py": "c2bb9df3fac3ba2d779088ff6099c9f31f8693dc09c84ed33c44157f9a3ede37",
+  "mutation-proof.txt": "a19144c8288e59b5a4954b67a6d5432046a9ee49c1cf0396f9411cf99b959fe9",
+  "request.json": "5a787930f2640d68c407e38a3052274cefdd436af9972fd7532ddbd34175fcec",
+  "test_diagnose.py": "47c31cb2f9a3919d79b11124f388336bd9a7d95226686d1520d6f26b9f4c2174"
+ },
+ "indices_note": "0-7 only (the slots terminal at M2). Audit 8-31 slots are NOT read; if needed later, a new request with other indices needs its own approval.",
+ "invocation": "ssh -o BatchMode=yes <BATCH_HOST> \"python3 -I -S -B -c '<diagnose.py>'\" < request.json  (once; operator_step records in a fresh sibling dir audit-failure-diagnostic-execution-v1)",
+ "kind": "h1_audit_failed_slot_diagnostic_review_ready_v1",
+ "limits": "system python3.12 -I -S -B; AS 2 GiB; alarm 120 s; output <= 256 KiB; writes nothing but the custody record",
+ "program_size": "61,185 B (< 128 KiB single-arg limit)",
+ "reads": "after ONE custody record: audit-0000..0007-supervision/terminal.json (must be passed=false, exact shape) + stderr.txt (<= 4 MiB, stable read, O_NOFOLLOW) + lstat of stdout.txt. Running/pending slots refused (no terminal.json -> refuse). No other file.",
+ "tests": "13 pass (cwd repo root): listed/unlisted message, named-root frames, foreign/.. paths, chained exceptions, no traceback, odd tail, 7 refusals; secret marker never in output. 4/4 mutations caught.",
+ "why": "M2 (3c783aad) gives only ValueError = supervisor need(code==0) after a non-zero worker exit. The worker traceback is only in audit-000N-supervision/stderr.txt."
+}

@@ -1,0 +1,21 @@
+{
+  "designated_reviewer": "sol-h3t",
+  "execution_authorized": false,
+  "files": [
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v2-20261025/prepare.py",
+      "sha256": "d96146b8717730a700f1ab11892666af783b5547b473a013f3611c001b10d1e9"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v2-20261025/proposal.DRAFT.json",
+      "sha256": "92a6d3ac4526b038145de6b8138b06dee28af0dad017d49b198c4999e21c7ace"
+    },
+    {
+      "path": "<REPO>/.agents/operations/newperiod-joint-v37-composition-draft-v2-20261025/local-checks.json",
+      "sha256": "39ae7e654e60d43b85ebcbb14d65beeecc9045d22cf68b6a39e20fda9bfc15ec"
+    }
+  ],
+  "issued": false,
+  "kind": "V37_INITIAL24_COMPOSITION_DRAFT_REVIEW_REQUEST",
+  "physical_model_accepted": false
+}
