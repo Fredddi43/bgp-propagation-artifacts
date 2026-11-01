@@ -7,7 +7,7 @@ sidecar and the released per-event score tables, anyone can recompute AP, P@k, r
 event accounting of every covered R1 cell and event, using the released evaluator, and compare the results with the
 released values.
 
-**Status (2026-11-01):** built on the cluster, not yet part of any release. It covers 1,008 of the 1,032
+**Status (2026-11-01):** built on the cluster. Published in the scoring bundle on 1 November 2026 (anonymous repository, directory scoring-bundle-r1r2). It covers 1,008 of the 1,032
 committed R1 cells that report ranking metrics: 998 built, plus 10 alias cells that use their parent's rows. The
 other 24 are named gaps, because their committed forecasts are no longer on disk (see "What is missing"). The 34
 remaining committed cells (curve and count models) report no ranking metric. All three files together take

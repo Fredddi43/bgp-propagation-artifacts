@@ -50,6 +50,12 @@ Rule A04 keeps the word before the identifier (for example `session `) and repla
 
 Many records cite the SHA-256 of other files (seal, freeze, marker, receipts, family manifests, the R1 report's per-event digests, the deviation ledger). Those citations refer to the original bytes. Wherever redaction changed a file, `MANIFEST.json` keeps the original hash as `pre_redaction_sha256` (and `pre_redaction_bytes`) next to the hash of the released bytes, and its `hash_checks` show that the original bytes matched the cluster-side `sha256sum` and every recorded citation before redaction. The citations inside the records were left as written: a citation is verified against `pre_redaction_sha256`, not against the released bytes. Files without an entry for `pre_redaction_sha256` are byte-identical to the originals.
 
+## Editorial notes
+
+Besides the redactions, the released copy of a record whose status line went stale once this bundle was published carries a dated note in place of that line (the original line is kept in the original bytes, see `pre_redaction_sha256`; `MANIFEST.json` lists each replacement under `editorial_edits`):
+
+- `cluster/r1-rank-sidecar-20261101/README.md`: "**Status (2026-11-01):** built on the cluster, not yet part of any release." became "**Status (2026-11-01):** built on the cluster. Published in the scoring bundle on 1 November 2026 (anonymous repository, directory scoring-bundle-r1r2)." (1 time).
+
 ## Replacements per file
 
 958 files changed. Counts per rule:

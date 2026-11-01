@@ -13,7 +13,7 @@ This directory is the anonymized scoring bundle of the retrospective (R1) and ne
 - `leak-audit-data/`: the store inputs of the leak audit (`paper_leak_audit.py --data`): `leak_events/`, `triples/` and
   `labels/`. A path `<data>/x` in `leak_audit.json` is `leak-audit-data/x` here.
 
-**Size:** 3,288 files, 36,538,293,157 bytes (36.5 GB), including the four top-level documents
+**Size:** 3,288 files, 36,538,296,735 bytes (36.5 GB), including the four top-level documents
 (`README.md`, `MANIFEST.json`, `REDACTIONS.md`, `LICENSE`), which `MANIFEST.json` does not list.
 
 ## What is included
@@ -30,14 +30,14 @@ This directory is the anonymized scoring bundle of the retrospective (R1) and ne
 | `approvals` | D-A39 and D-A40 approvals, dry-run records, run logs; R1 authorization and publication approval | 19 | 164,631 |
 | `r1_results` | R1 report, cohort manifests, release records, arm spec, completion record | 7 | 24,782,903 |
 | `r1_forecasts` | R1 per-event score tables (1,066) and the R1 prediction ledger | 1,067 | 18,181,354,582 |
-| `r1_rank_sidecar` | R1 ranking file (121 MB): per R1 cell and event, the tie groups holding new members, plus target and input-seen sets; `scripts/r1_rank_sidecar_check.py` recomputes AP, P@k, recall@k and coverage and matches every released value (1,008 of 1,032 ranking cells; the forecasts of 24 history-baseline cells of the delay/withholding sensitivity no longer exist) | 18 | 121,554,537 |
+| `r1_rank_sidecar` | R1 ranking file (121 MB): per R1 cell and event, the tie groups holding new members, plus target and input-seen sets; `scripts/r1_rank_sidecar_check.py` recomputes AP, P@k, recall@k and coverage and matches every released value (1,008 of 1,032 ranking cells; the forecasts of 24 history-baseline cells of the delay/withholding sensitivity no longer exist) | 18 | 121,554,614 |
 | `r1_labels` | R1 seal and label-access records | 4 | 2,894,205 |
 | `evaluator` | R2 runner, chain code (attempt 12, D-A39, D-A40), G2 tools, validator, completion records, 90 closure sources | 243 | 2,806,050 |
 | `wrappers` | in-process wrappers of the evaluator | 23 | 124,243 |
 | `review_records` | review and approval records of the R1 and R2 steps | 1,689 | 6,568,490 |
 | `analysis_over_bundle` | paper analyses that read the bundle, and their outputs | 54 | 20,166,561 |
 | `leak_audit_data` | leak-audit store inputs: leak-event and new-triple tables (pipeline-derived), Cloudflare Radar route-leak labels (CC BY-NC 4.0) | 24 | 188,924,927 |
-| `paper_sections` | paper section source (`paper/sections/*.tex`) and `paper/refs.bib` at the repository's current commit | 15 | 307,548 |
+| `paper_sections` | paper section source (`paper/sections/*.tex`) and `paper/refs.bib`: a snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut. The submitted paper and its supplement differ; supplement.pdf at the top of the repository is the current supplement. | 15 | 307,548 |
 
 In detail:
 
@@ -94,7 +94,7 @@ In detail:
 - **Leak-audit inputs** (`leak-audit-data/`): the month leak-event tables of the identifier (`leak_events/`), the month
   new-triple tables (`triples/`), both derived by the pipeline, and the Cloudflare Radar route-leak labels with the replay
   selection (`labels/`; Cloudflare Radar, CC BY-NC 4.0). Each file that `leak_audit.json` cites matches its recorded hash.
-- **Paper sections**: `repo/paper/sections/*.tex` and `repo/paper/refs.bib` at the repository's current commit.
+- **Paper sections**: `repo/paper/sections/*.tex` and `repo/paper/refs.bib` are a snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut. The submitted paper and its supplement differ; supplement.pdf at the top of the repository is the current supplement.
 
 ## What is excluded, and why
 

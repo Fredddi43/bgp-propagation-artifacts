@@ -1,15 +1,15 @@
 {
  "schema": "bgbench-scoring-bundle/1",
  "status": "Anonymized copy of the R1/R2 scoring records; see README.md and REDACTIONS.md.",
- "written_utc": "2026-11-01T11:32:06Z",
+ "written_utc": "2026-11-01T13:49:18Z",
  "redaction_rules_sha256": "4243a42696e1bcb0486dc2fe94bc90af7cc375cb58923fec1905bdcbf5a8b830",
  "build": {
-  "mode": "incremental",
-  "reused_outputs": 3271
+  "mode": "patch: editorial notes and paper-snapshot roles only; no other file rebuilt",
+  "previous_manifest_sha256": "fd9b893101952c09bd69d491b03a4dd41d7176135034dda7ea1c2be924163228"
  },
  "totals": {
   "files": 3284,
-  "bytes": 36536119051,
+  "bytes": 36536119128,
   "redacted_files": 958
  },
  "summary_by_component": {
@@ -65,7 +65,7 @@
   },
   "r1_rank_sidecar": {
    "files": 18,
-   "bytes": 121554537,
+   "bytes": 121554614,
    "redacted_files": 8
   },
   "r1_results": {
@@ -24031,7 +24031,7 @@
    "bytes": 9883,
    "sha256": "90e43b9e642e63125fd4395a7c0a7d62d3cca2f596b55abf1a3b169cbb6c305b",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/00-abstract.tex",
    "kind": "text"
   },
@@ -24040,7 +24040,7 @@
    "bytes": 9408,
    "sha256": "4e7900919a8b34e3aedceb17104911a23fa304f2291947b3a010eacec02dcb66",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/01-intro.tex",
    "kind": "text"
   },
@@ -24049,7 +24049,7 @@
    "bytes": 5740,
    "sha256": "f907ada2e2f704bc1e135b44af8ea32733b191f790d9dda8df7bc3bc582d56cb",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/02-background.tex",
    "kind": "text"
   },
@@ -24058,7 +24058,7 @@
    "bytes": 16266,
    "sha256": "81719db6612708ccc3cb13a2ed5d07d859ca43aa76920bce1ff7f1c0d3b09231",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/03-data.tex",
    "kind": "text"
   },
@@ -24067,7 +24067,7 @@
    "bytes": 15756,
    "sha256": "4b5921252e85e4499ec76dfc65bbb74841fd6e42d0a6bd4aca332d012f3aa072",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/05-propagation.tex",
    "kind": "text"
   },
@@ -24076,7 +24076,7 @@
    "bytes": 10381,
    "sha256": "1779a80552a7c1fb1a4bc7f7df00545b943c0055dbb92cc7c1f414c08761c9fc",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/06-recovery.tex",
    "kind": "text"
   },
@@ -24085,7 +24085,7 @@
    "bytes": 6749,
    "sha256": "86cba6f0b09a0404058eebffbaa61a05ffa945deb1abb2229f9a17eb802161be",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/07-beacons.tex",
    "kind": "text"
   },
@@ -24094,7 +24094,7 @@
    "bytes": 41756,
    "sha256": "02be814a1576a6764848513d6061f65a464be33fe5df9fd627278991c97b26f1",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/08-forecast.tex",
    "kind": "text"
   },
@@ -24103,7 +24103,7 @@
    "bytes": 13869,
    "sha256": "5ce03a12b7926c8e76c16f690a366aaae43090626c0cc03590d0ad03e6c0c6f6",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/09-discussion.tex",
    "kind": "text"
   },
@@ -24112,7 +24112,7 @@
    "bytes": 9821,
    "sha256": "d9851dff278bc839800f15bb07e14c9ced84b1ed098196a7499104485ac1f4f9",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/10-conclusion.tex",
    "kind": "text"
   },
@@ -24121,7 +24121,7 @@
    "bytes": 891,
    "sha256": "3d47f1bf0016e9f83f4eaa29f4d2ed2d8aa77af3d961c6fd2afd6b0a03222ad4",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/12-appendix.tex",
    "kind": "text"
   },
@@ -24130,7 +24130,7 @@
    "bytes": 30987,
    "sha256": "cc16e0ee2c110b84b79fef01f342d08de010173bdd0ea05d41328863322dcb27",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/app-d.tex",
    "kind": "text"
   },
@@ -24139,7 +24139,7 @@
    "bytes": 76160,
    "sha256": "98ac4ee5820c279edc238956ef3aec828311db318f68b1916f401c8335e9d667",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/app-protocol.tex",
    "kind": "text"
   },
@@ -24148,7 +24148,7 @@
    "bytes": 17133,
    "sha256": "f3ace179ed04ae5c6c4aada9a9a13637caf6943f6a0935b2e2c5d60863d3f494",
    "component": "paper_sections",
-   "role": "paper section source (repository HEAD)",
+   "role": "paper section source: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/sections/app-tables.tex",
    "kind": "text"
   },
@@ -24157,7 +24157,7 @@
    "bytes": 42748,
    "sha256": "72c4336ed15b9da5209ff7ea0cfb688d3725f0da06687839abb28db61e03f03d",
    "component": "paper_sections",
-   "role": "paper bibliography (repository HEAD)",
+   "role": "paper bibliography: snapshot of the paper source at repository commit e5dc3896 (1 November 2026), before the appendix was cut; the submitted paper and its supplement differ",
    "source": "repository: paper/refs.bib",
    "kind": "text"
   },
@@ -27183,8 +27183,8 @@
   },
   {
    "path": "cluster/r1-rank-sidecar-20261101/README.md",
-   "bytes": 15422,
-   "sha256": "10da85fda2f34d6ca8b5aa65c0f1adc0efc89873fbb3da840b0e38aa4e736e24",
+   "bytes": 15499,
+   "sha256": "54a5896d103710a460ff8f2166f14128d21adfa64d615102dc67bca54d34e129",
    "pre_redaction_sha256": "f1a8e55065c3ca061af6ead77bb00d91c2841887cb2a1e299443334838fcb4ef",
    "pre_redaction_bytes": 15421,
    "component": "r1_rank_sidecar",
@@ -27200,7 +27200,14 @@
    ],
    "redactions": {
     "H02": 1
-   }
+   },
+   "editorial_edits": [
+    {
+     "old": "**Status (2026-11-01):** built on the cluster, not yet part of any release.",
+     "new": "**Status (2026-11-01):** built on the cluster. Published in the scoring bundle on 1 November 2026 (anonymous repository, directory scoring-bundle-r1r2).",
+     "count": 1
+    }
+   ]
   },
   {
    "path": "cluster/r1-rank-sidecar-20261101/build/build_sidecar-d3b2fdbe.py",

@@ -11,18 +11,18 @@
  },
  {
   "path": "MANIFEST.json",
-  "bytes": 2028952,
-  "sha256": "fd9b893101952c09bd69d491b03a4dd41d7176135034dda7ea1c2be924163228"
+  "bytes": 2031445,
+  "sha256": "754e7a0c49365947182b34be5bb2b95ef04b71819d25e7a82fd6438bbb009b44"
  },
  {
   "path": "README.md",
-  "bytes": 32567,
-  "sha256": "26515ea2585a73608a3cb84b10fba18b04c15f2f04000cd0df48d39cb57ee874"
+  "bytes": 32955,
+  "sha256": "9c4f1ad584f6f854b2bc05fb98bc98bd1cc938492a94bce2f4d277ff250354a6"
  },
  {
   "path": "REDACTIONS.md",
-  "bytes": 111513,
-  "sha256": "84cc1c70172001fef8a1c808fe16d381662cf0290e78865b4e49853d362d99f4"
+  "bytes": 112133,
+  "sha256": "140df07df5700ca54183124281afe005a96028f172a0f063de2c18abdf95cee5"
  },
  {
   "path": "cluster/d-a39-lane-extract-20261101/out/extract-full.json",
@@ -1311,8 +1311,8 @@
  },
  {
   "path": "cluster/r1-rank-sidecar-20261101/README.md",
-  "bytes": 15422,
-  "sha256": "10da85fda2f34d6ca8b5aa65c0f1adc0efc89873fbb3da840b0e38aa4e736e24"
+  "bytes": 15499,
+  "sha256": "54a5896d103710a460ff8f2166f14128d21adfa64d615102dc67bca54d34e129"
  },
  {
   "path": "cluster/r1-rank-sidecar-20261101/build/build_sidecar-d3b2fdbe.py",
