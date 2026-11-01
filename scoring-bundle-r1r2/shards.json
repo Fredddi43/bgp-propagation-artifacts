@@ -10007,6 +10007,94 @@
   ]
  },
  {
+  "path": "leak-audit-data/labels/events_ranked.parquet",
+  "bytes": 31880475,
+  "sha256": "7e7c7f487b5327866a8c328b3c782c344ddf6acf9df900ae2cd63ed1c1750037",
+  "compression": "xz",
+  "compressed_bytes": 29817152,
+  "compressed_sha256": "e818963f369da76de52c9bdd9186f274cd1dbf0eee60a515ac0e4ac10f14b326",
+  "parts": [
+   "leak-audit-data/labels/events_ranked.parquet.xz.part0000",
+   "leak-audit-data/labels/events_ranked.parquet.xz.part0001",
+   "leak-audit-data/labels/events_ranked.parquet.xz.part0002",
+   "leak-audit-data/labels/events_ranked.parquet.xz.part0003",
+   "leak-audit-data/labels/events_ranked.parquet.xz.part0004"
+  ]
+ },
+ {
+  "path": "leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet",
+  "bytes": 27619687,
+  "sha256": "a5ae4aaec60ec4d1786c16c60660740efd31f0de13f9369e90ad47a5e8341179",
+  "compression": "xz",
+  "compressed_bytes": 26135188,
+  "compressed_sha256": "36cffeb26fcd29ce804c89fc3a49100b20d0dcbcdad029710ce5c296ffbfda8f",
+  "parts": [
+   "leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet.xz.part0000",
+   "leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet.xz.part0001",
+   "leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet.xz.part0002",
+   "leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet.xz.part0003"
+  ]
+ },
+ {
+  "path": "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet",
+  "bytes": 30210862,
+  "sha256": "8b10628ee4205631fd3becd651450f8054997142bf3b214acdc26bb7baf4150a",
+  "compression": "xz",
+  "compressed_bytes": 28821316,
+  "compressed_sha256": "ffdfd894d5118c36c78f7ad3b47d9decb963b66bb28b6a7ac56a2f069da1dc5b",
+  "parts": [
+   "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet.xz.part0000",
+   "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet.xz.part0001",
+   "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet.xz.part0002",
+   "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet.xz.part0003",
+   "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet.xz.part0004"
+  ]
+ },
+ {
+  "path": "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet",
+  "bytes": 31353506,
+  "sha256": "99e3102017522e9683be3cb39986c802a5bd51fb353729a19a11842bd34e9b92",
+  "compression": "xz",
+  "compressed_bytes": 29960720,
+  "compressed_sha256": "c76fce988d025d262768f2932fb068680994d9e801305590136bf00b4c104255",
+  "parts": [
+   "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet.xz.part0000",
+   "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet.xz.part0001",
+   "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet.xz.part0002",
+   "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet.xz.part0003",
+   "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet.xz.part0004"
+  ]
+ },
+ {
+  "path": "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet",
+  "bytes": 30241969,
+  "sha256": "508a614bd4a02ac1eeee1c1c6bb5dff1efa08943db2dc33f751620cae4fc99a8",
+  "compression": "xz",
+  "compressed_bytes": 28762124,
+  "compressed_sha256": "793a28760293c901c71fd7a2093a059f7493b2e6a1ce86c7f2202c2e3a4f40ec",
+  "parts": [
+   "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet.xz.part0000",
+   "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet.xz.part0001",
+   "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet.xz.part0002",
+   "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet.xz.part0003",
+   "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet.xz.part0004"
+  ]
+ },
+ {
+  "path": "leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet",
+  "bytes": 29136023,
+  "sha256": "9dd21034884029b0f49552f538124421df0e3bf2c18475dec24cebb4ae3b5c06",
+  "compression": "xz",
+  "compressed_bytes": 27752004,
+  "compressed_sha256": "9bead8a82948fc5b20f14035bc5c3af7466a605a95580b852568ff44fbad68a9",
+  "parts": [
+   "leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet.xz.part0000",
+   "leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet.xz.part0001",
+   "leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet.xz.part0002",
+   "leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet.xz.part0003"
+  ]
+ },
+ {
   "path": "repo/.agents/operations/r1-v11-posteval-20261024/evidence/released/report.json",
   "bytes": 15327753,
   "sha256": "7e303d3957ad43d90597a9cc5bc96587b5d66b9d5ba0920a6ed9f7127453592f",

@@ -2,26 +2,26 @@
 What early observations of a BGP event show depends on when the clock starts, which events a study selects, and what the collectors see.
 We replay ten public collectors from January 2022 to August 2026 and follow \num{65934} origin changes and \num{17217} route leaks for two hours.
 
-From the first observation of the new origin, invalid origins show 0.61--0.74 of their two-hour AS set after 30\,s in 2023--2026, and valid origins 0.32--0.42.
-In 2023--2025, a label-free sample shows that catalogue selection raises this share for invalid origins.
-Valid and unknown origins often appeared long before the identified change.
+From the first observation, invalid new origins show 0.61--0.74 of their two-hour AS set after 30\,s in 2023--2026, and valid origins 0.32--0.42.
+In 2023--2025, a label-free sample shows that catalogue selection raises it for invalid origins.
+Valid and unknown origins often appeared before the identified change.
 For events first observed near it, the lead shrinks to at most 0.24, but this rule keeps far fewer valid events.
 
 Of \num{20256} matched pairs of a valid-to-invalid change and its return, most are flips of under a minute.
-In these flips the return set exceeds the outward set, which an early end of the invalid route, ROV or path exploration may explain.
+In these flips the return set is larger, which an early end of the invalid route, ROV or path exploration may explain.
 A controlled invalid beacon lost about half its relative reach at our collectors in early 2024.
 
 We forecast the two-hour AS set of a leak from its first 30\,s.
 On large leaks selected by final size, persistence reaches Jaccard 0.509 in exploratory tests.
-A graph model (SAGE) reaches 0.708, the optimistic best of 13 or more variants, and past-event history 0.698.
+A graph model (SAGE), best of 13 or more variants, reaches 0.708, and past-event history 0.698.
 
 We also score selected leak candidates of late 2025 (R1, retrospective) and autumn 2026 (R2, prespecified replication).
-SAGE with history forecasts sets within 0.001 Jaccard of persistence by point estimate (intervals within 0.003), also on fast-growing leaks.
+By point estimate, SAGE with history stays within 0.001 Jaccard of persistence (intervals within 0.003), also on leaks selected at issue time by early growth.
 Neither period detects an average-precision (AP) difference between SAGE with history and online history on shared candidates.
 On its native candidates, online history reaches 0.024 (R1) and 0.030 (R2) more AP than SAGE with history, as complete systems.
 
-In R2, online history is more precise at ten on shared candidates at 30\,s and beats the frozen model in AP.
-Its size rule forms worse sets than persistence, which SAGE matches.
+In R2, six prespecified rejections favour online history: three on native candidates, two against the frozen 2025 model, and one in precision at ten.
+Six favour SAGE in Jaccard, because history's size rule adds too many ASes.
 % Round 7 (review-r6 section 6: "Six prespecified rejections ... reads like an audit ledger; a short statement of the ranking/set
 %   distinction would communicate more"): same twelve rejections as the src list above (ranking: AP or P@10; sets: full-target and slice Jaccard).
 % Round 7 (panel-r7 DA #1/#3, methodology, EIC): the R2 sentence names its comparisons (P@10 C2@30 shared; C5@60 frozen in AP and P@10;

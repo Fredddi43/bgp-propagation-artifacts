@@ -35,7 +35,7 @@ Each pair is a \emph{link}, and we measure both directions with the same rule.
 
 For each collector, peer and prefix, we take the first observed transition from the preceding origin to the target origin at or after its identifier.
 We keep the ASes on the paths of that transition, with a clock that starts at its first observation.
-We do not count ordinary announcements of the valid origin before its return, so routes that never left do not inflate the return footprint.
+We do not count ordinary announcements of the valid origin before its return, so routes that never left do not inflate the return.
 
 We exclude links with missing source files, no qualifying transition, under two hours of follow-up, or a return before its outward change.
 Of \num{20464} identified links, \num{20256} remain.

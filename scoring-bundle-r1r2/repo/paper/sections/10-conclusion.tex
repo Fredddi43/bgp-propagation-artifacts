@@ -3,11 +3,9 @@
 We replayed ten public collectors from January 2022 to August 2026 and followed origin changes and route leaks for two hours.
 From the first observation of the new origin, invalid-origin events show the largest share of their final AS set within 30\,s.
 This gap is sensitive to the event definition, because valid and unknown origins were often visible long before the identified change.
-For events first observed near the change, the class differences in 2023--2026 are smaller, but this rule keeps far fewer valid than invalid events.
 In 2023--2025, catalogue selection also raises the \floor of invalid events.
 
 For gaps of at least 15 minutes between the identifiers, the return shows more of its final set early.
-Day-block intervals exclude zero in three of five years.
 Most matched pairs are flips of less than a minute, in which the observed return set is larger, for reasons that we did not test.
 The relative reach of a controlled invalid beacon fell by about half in early 2024, and two upstream changes coincide with its April steps.
 
@@ -39,17 +37,16 @@ We did not test this ranking in R2.
 %   left the abstract and the intro; it stays in sections/app-protocol.tex "Month boundary" (moved from sections/08-forecast.tex in round 6), with its leaker x day interval [-0.0005, +0.0136]
 %   (month_boundary_actor.json), which includes zero.
 
-The clock decides the class lead: the ordering holds at every collector but shrinks under a near-onset rule.
-SAGE gains on leaks selected by final size, but on leaks selected at issue time its sets match persistence.
-With seven of ten collectors, the R2 forecasts lose 0.07 to 0.12 Jaccard against the fixed target.
+The class ordering holds at every collector, but it shrinks under a near-onset rule, which also changes the cohort.
+Within R1 and R2, SAGE stays close to persistence even on the slice selected by early growth.
+With seven of ten collectors, the R2 forecasts lose 0.07 to 0.12 Jaccard, a measure of input sensitivity.
 % round 7 (panel-r7 DA #10, EIC M14): the thesis states what was tested and where it held or failed. src: 05-propagation.tex
 %   (ordering at each collector; near-onset lead 0.10 / 0.24, intervals including zero in 2025-2026); 08-forecast.tex slow regime
 %   (selected by final size) and slice_vs_persistence.json (|SAGE - persistence| < 0.001); newperiod-lanes.json H3 (-0.073..-0.122,
 %   SAGE and no message passing).
 % layout (round 5, page limit): "Our forecasts vary the selection but not the clock, because they all start at the observed onset" left;
 %   sections/09-discussion.tex keeps the oracle trigger ("Every forecast uses an oracle trigger, the observed onset").
-Future BGP forecasts should report a history baseline next to persistence, and test whether the leaker's own past events help.
-They should also score the ASes that join after the issue time.
+Future BGP forecasts should report a history baseline next to persistence, test the leaker's own past events, and score the ASes that join later.
 % src: sections/app-protocol.tex "Month boundary" (moved from sections/08-forecast.tex in round 6) (paper/generated/month_boundary.json: R1 C2@30 no_day1 +0.0066 [+0.0008, +0.0118]; R2 C2 no_day1 intervals
 %   include zero at both horizons; native shrink 16--25 %) and "Secondary metrics" (C1/C3/C4 Jaccard < 0.0003; median history: lead 0.29--0.32 falls to 0.07--0.12,
 %   tab:history-size). The former sentence "As set forecasts, no learned model beats persistence on these leaks" had no R1/R2 number (round-3 review NEW-3).

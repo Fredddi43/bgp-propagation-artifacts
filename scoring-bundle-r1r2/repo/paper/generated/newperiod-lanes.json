@@ -1,6 +1,6 @@
 {
  "kind": "newperiod_r2_secondary_lanes_D-A39_D-A40_extract_v1",
- "generated_utc": "2026-11-01T04:35:10Z",
+ "generated_utc": "2026-11-01T11:11:33Z",
  "records": "<FORECAST_ROOT>/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39",
  "run_log": "<FORECAST_ROOT>/newperiod-g2-inference-v1-20261027/r2-rescore-D-A39-logs/r2-d-a39-v2-52728251.out",
  "job_id": "52728251",

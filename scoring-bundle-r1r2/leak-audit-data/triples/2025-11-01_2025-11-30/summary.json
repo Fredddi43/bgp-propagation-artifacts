@@ -1,0 +1,208 @@
+{
+ "collectors": 26,
+ "days_with_triples": 30,
+ "triples_loaded": 153920439,
+ "triple_candidates": 1552121,
+ "both_known": 1354408,
+ "leak_like": 65001,
+ "by_kind": [
+  {
+   "learned_from": "customer",
+   "exported_to": "peer",
+   "len": 818717
+  },
+  {
+   "learned_from": "customer",
+   "exported_to": "customer",
+   "len": 231987
+  },
+  {
+   "learned_from": "customer",
+   "exported_to": "provider",
+   "len": 194787
+  },
+  {
+   "learned_from": null,
+   "exported_to": "peer",
+   "len": 84186
+  },
+  {
+   "learned_from": "peer",
+   "exported_to": "peer",
+   "len": 53892
+  },
+  {
+   "learned_from": "peer",
+   "exported_to": "customer",
+   "len": 41473
+  },
+  {
+   "learned_from": "customer",
+   "exported_to": null,
+   "len": 40246
+  },
+  {
+   "learned_from": null,
+   "exported_to": "provider",
+   "len": 32198
+  },
+  {
+   "learned_from": null,
+   "exported_to": "customer",
+   "len": 22016
+  },
+  {
+   "learned_from": null,
+   "exported_to": null,
+   "len": 14622
+  },
+  {
+   "learned_from": "peer",
+   "exported_to": "provider",
+   "len": 4395
+  },
+  {
+   "learned_from": "provider",
+   "exported_to": "peer",
+   "len": 3982
+  }
+ ],
+ "leaks_all": {
+  "labels": 11207,
+  "hit": 2421,
+  "recall": 0.216,
+  "by_size": [
+   {
+    "bucket": "1-9",
+    "n": 7483,
+    "recall": 0.14285714285714285
+   },
+   {
+    "bucket": "10-49",
+    "n": 2457,
+    "recall": 0.34676434676434675
+   },
+   {
+    "bucket": "50+",
+    "n": 1267,
+    "recall": 0.39463299131807417
+   }
+  ],
+  "candidates": 1552121
+ },
+ "leaks_all_null_shift": {
+  "labels": 11207,
+  "hit": 150,
+  "recall": 0.013,
+  "by_size": [
+   {
+    "bucket": "1-9",
+    "n": 7483,
+    "recall": 0.011893625551249499
+   },
+   {
+    "bucket": "10-49",
+    "n": 2457,
+    "recall": 0.016687016687016686
+   },
+   {
+    "bucket": "50+",
+    "n": 1267,
+    "recall": 0.01578531965272297
+   }
+  ],
+  "candidates": 1552121
+ },
+ "leaks_leak_like": {
+  "labels": 11207,
+  "hit": 1316,
+  "recall": 0.117,
+  "by_size": [
+   {
+    "bucket": "1-9",
+    "n": 7483,
+    "recall": 0.07283175197113458
+   },
+   {
+    "bucket": "10-49",
+    "n": 2457,
+    "recall": 0.1978021978021978
+   },
+   {
+    "bucket": "50+",
+    "n": 1267,
+    "recall": 0.2249408050513023
+   }
+  ],
+  "candidates": 65001
+ },
+ "leaks_leak_like_null_shift": {
+  "labels": 11207,
+  "hit": 13,
+  "recall": 0.001,
+  "by_size": [
+   {
+    "bucket": "1-9",
+    "n": 7483,
+    "recall": 0.0009354536950420954
+   },
+   {
+    "bucket": "10-49",
+    "n": 2457,
+    "recall": 0.001628001628001628
+   },
+   {
+    "bucket": "50+",
+    "n": 1267,
+    "recall": 0.0015785319652722968
+   }
+  ],
+  "candidates": 65001
+ },
+ "leaks_leak_like_or_unknown": {
+  "labels": 11207,
+  "hit": 1621,
+  "recall": 0.145,
+  "by_size": [
+   {
+    "bucket": "1-9",
+    "n": 7483,
+    "recall": 0.08860082854470132
+   },
+   {
+    "bucket": "10-49",
+    "n": 2457,
+    "recall": 0.24664224664224665
+   },
+   {
+    "bucket": "50+",
+    "n": 1267,
+    "recall": 0.27782162588792425
+   }
+  ],
+  "candidates": 262714
+ },
+ "leaks_leak_like_or_unknown_null_shift": {
+  "labels": 11207,
+  "hit": 36,
+  "recall": 0.003,
+  "by_size": [
+   {
+    "bucket": "1-9",
+    "n": 7483,
+    "recall": 0.0025390886008285446
+   },
+   {
+    "bucket": "10-49",
+    "n": 2457,
+    "recall": 0.002849002849002849
+   },
+   {
+    "bucket": "50+",
+    "n": 1267,
+    "recall": 0.007892659826361484
+   }
+  ],
+  "candidates": 262714
+ }
+}

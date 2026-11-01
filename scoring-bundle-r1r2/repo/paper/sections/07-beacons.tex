@@ -20,7 +20,7 @@ The unknown twin reaches the same share of sessions as the valid one (0.363 agai
 
 Against the RIPE valid twin, the two IPv4 invalid beacons of Snijders reach 0.29 and 0.31.
 Against the RIPE valid twin of each address family, the two Cloudflare invalid beacons reach 0.55 and 0.52, in line with earlier reports~\cite{testart2020filter,madory2022kentik,madory2024kentik}.
-These beacons have other origins, so their ratios also reflect their origins' upstreams.
+These beacons have other origins, so their ratios also reflect other upstreams.
 % src: docs/paper/corrections-2026-10-16/beacon-independent-verification.json (retained_shares)
 % src (round 4, panel-r4 NEW-8 / X1): scripts/beacon_rib_scan.py BEACONS scans no Cloudflare valid prefix; the ratios use the RIPE twins:
 %   retained_shares median_share cloudflare_v4_invalid_length 0.200 / ripe_v4_valid 0.362 = 0.55; cloudflare_v6_invalid_asn 0.149 / ripe_v6_valid 0.286
@@ -37,6 +37,8 @@ The unknown twin is 1.00 in all 57 months, January 2022 to September 2026.
 
 The IPv6 invalid beacon declines from 0.57 in 2022 to 0.12 in 2026.
 Its monthly median also falls from 0.390 in March 2024 to 0.286 in April and 0.175 in May, at the time of the IPv4 steps.
+It rises again to 0.35 and 0.36 in August and September 2024 and falls to 0.18 in October.
+% src (round 8, criterion M12(b)): paper/figures/rpki/beacon_trend.csv RIPE v6 invalid 2024-07 0.194, 2024-08 0.348, 2024-09 0.359, 2024-10 0.179.
 % src: paper/figures/rpki/beacon_trend.csv, RIPE v6 invalid ratio_to_valid_p50: 2024-03 0.3902, 2024-04 0.2857, 2024-05 0.175; yearly medians of the
 %   monthly medians 2022 0.567, 2026 0.125 (round-3 review NEW-12 / X3: "no single step" removed).
 The Snijders IPv4 beacon has zero reach from November 2025 to June 2026 and then returns.
@@ -64,7 +66,7 @@ The share of invalid prefix--origin pairs visible to at least 30\,\% of RouteVie
 The beacon ratio varies by collector, from 0.056 at rrc12 to 0.36 at rrc15 in 2024.
 We also replayed the 2024 events against Packet Clearing House (PCH) feeds at DE-CIX~\cite{pch_mrt}, from 12--13 of 17 configured sites per day.
 Of the \num{1602} selected leaks and \num{18367} selected origin changes of 2024, we exclude 378 and \num{2134} whose PCH window crosses midnight.
-Our PCH replay can lose one of the two days of such a window.
+Our PCH replay can lose one of the two days of such a window, and we did not compare the excluded events with the others.
 
 PCH observes 35.8\,\% of the remaining \num{1224} leaks and 34.6\,\% of the \num{16233} origin changes.
 ASes seen only at PCH form 0.08\,\% of the union for leaks and 0.02\,\% for origin changes.

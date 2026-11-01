@@ -33,7 +33,8 @@ A retrospective allowlist removes pairs of prefix and new origin that change in 
 %   (e.g. January 10--49 peers 0.690, 50+ 0.81 of 177), the source of the printed 2024 recall. docs/paper/corrections-2026-10-16/README.md:
 %   "The origin-change whitelist is computed over the analysis window, rather than being an online rolling detector."
 %   The threshold of the 2022, 2023, 2025 and 2026 runs, "not established" in round 4, is now established (round 5, next src comment).
-A revision analysis finds a threshold of 50 bins in 2024, but 200--221 per month, or 50 per week, in the other years.
+A revision analysis finds a threshold of 50 bins in 2024.
+In the other years it is 50 bins per week, or 200 to 221 per month.
 A flat 50 would remove 22.5, 18.4, 9.8 and 14.3\,\% of the selected origin changes of 2022, 2023, 2025 and 2026.
 % src (round 5, panel-r5 NEW-9 / X10, A-R1(a), domain B2; review-r5 W4, item 4): paper/generated/allowlist_by_year.json
 %   (scripts/paper_allowlist_by_year.py, first commit b644cf6b 2026-10-31 17:47 UTC): by_year.2024 {rule flat, thresholds_bins [50]},
@@ -51,10 +52,12 @@ Monthly recall of the stricter 2024 identifier is 0.66--0.73 against Cloudflare 
 
 A \emph{route leak} candidate is a path triple $(x, a, b)$ that is new in the current month.
 It must violate valley-freeness under CAIDA's AS relationships~\cite{luckie2013relationships,caida_asrel}, where AS $a$ learns the route from $b$ and exports it to $x$.
+The identifier applies this one file, inferred from IPv4 paths, to IPv6 paths as well.
+% src (round 8, criterion M5(a)): src/bgbench/leakcheck.py relationship_table ({ym}01.as-rel.txt for every path).
 New triples that violate valley-freeness match 8--11\,\% of the Radar leak labels per month in 2024.
 All new triples match 17--22\,\%, in checks at 26 collectors.
 % src (round 5): docs/paper/corrections-2026-10-16/identifier-summary-verification.json months[*].leak.collectors = 26 in all 12 months of 2024.
-The identifier thus misses leaks on reused triples.
+It thus misses leaks on reused triples.
 
 We do not analyse withdrawal waves, because only 56 of 301 have the recent reference RIB at all ten collectors that their path loss needs.
 % src: docs/paper/corrections-2026-10-16/identifier-summary-verification.json; withdrawal/withdrawal-baseline-verification.json (50 waves 2024 + 6 in 2025 supported of 301)
@@ -109,7 +112,7 @@ The archive has no documented snapshot time, so a ROA change on the event day ca
 % round 5 (panel-r5 NEW-10 / X11, domain B3): "all five trust anchors" is not guaranteed: scripts/fetch_roas.py (TALS ripencc, arin, apnic,
 %   lacnic, afrinic) skips a trust anchor whose daily file returns HTTP 404 and writes the day file from the others; src/bgbench/rpki_validate.py
 %   roas_for falls back to an earlier day only when the whole day file is missing. A missing anchor turns its invalid routes into unknown ones.
-A revision analysis finds AFRINIC missing on 2026-04-04, and one anchor below 90\,\% of its local median size on 46 more days, none in R2.
+A revision analysis finds AFRINIC missing on 2026-04-04, and one anchor below 90\,\% of its median size over 30 neighbouring files on 46 more days, none in R2.
 % local median: the median of the same trust anchor over the 15 files on each side (scripts/paper_roa_anchor_check.py NEIGHBOURS, SHORT_RATIO).
 These 47 days hold \num{1049} of \num{79870} events, and 12 of them change a label with the anchor of the nearest earlier or later day.
 Both days agree on 3 changes from unknown to invalid, a fourth event changes differently with each, and 8 change with one day only.

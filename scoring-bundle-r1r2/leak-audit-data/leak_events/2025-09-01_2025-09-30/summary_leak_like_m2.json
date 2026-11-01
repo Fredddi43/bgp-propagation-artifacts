@@ -1,0 +1,81 @@
+{
+ "events": 9973,
+ "labelled_events": 982,
+ "labels": 11269,
+ "labels_hit": 1296,
+ "label_recall_by_peer_count": [
+  {
+   "b": "1-9",
+   "n": 7572,
+   "recall": 0.07290015847860538
+  },
+  {
+   "b": "10-49",
+   "n": 2491,
+   "recall": 0.1902850260939382
+  },
+  {
+   "b": "50+",
+   "n": 1206,
+   "recall": 0.22388059701492538
+  }
+ ],
+ "events_by_collectors": [
+  {
+   "n_collectors": 2,
+   "n": 2997,
+   "labelled": 0.03003003003003003
+  },
+  {
+   "n_collectors": 3,
+   "n": 1908,
+   "labelled": 0.03878406708595388
+  },
+  {
+   "n_collectors": 4,
+   "n": 1114,
+   "labelled": 0.05834829443447038
+  },
+  {
+   "n_collectors": 5,
+   "n": 718,
+   "labelled": 0.0905292479108635
+  },
+  {
+   "n_collectors": 6,
+   "n": 922,
+   "labelled": 0.0911062906724512
+  },
+  {
+   "n_collectors": 7,
+   "n": 404,
+   "labelled": 0.14603960396039603
+  },
+  {
+   "n_collectors": 8,
+   "n": 424,
+   "labelled": 0.2358490566037736
+  },
+  {
+   "n_collectors": 9,
+   "n": 542,
+   "labelled": 0.3173431734317343
+  },
+  {
+   "n_collectors": 10,
+   "n": 944,
+   "labelled": 0.2891949152542373
+  }
+ ],
+ "duration_min_p50": 0.0,
+ "duration_min_p90": 5.0,
+ "n_upstreams_p50": 1.0,
+ "n_prefixes_p50": 1.0,
+ "window": [
+  "2025-09-01",
+  "2025-09-30"
+ ],
+ "mode": "leak_like",
+ "min_collectors": 2,
+ "min_msgs": 3
+}

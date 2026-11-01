@@ -1,0 +1,2711 @@
+{
+ "question": "Effective origin-change allowlist threshold (bins per monthly analysis window) per year",
+ "summary": "A retrospective allowlist removes (prefix, new origin) pairs that change in at least T five-minute bins of their calendar month: T = 50 in 2024, the year of the recall validation, and T = round(50 x days / 7), i.e. 50 bins per week or 200-221 bins per month, in 2022, 2023, 2025 and 2026, so the 2024 allowlist is about four times stricter.",
+ "by_year": {
+  "2022": {
+   "rule": "per_week_scaled",
+   "thresholds_bins": [
+    200,
+    214,
+    221
+   ],
+   "confidence": "established"
+  },
+  "2023": {
+   "rule": "per_week_scaled",
+   "thresholds_bins": [
+    200,
+    214,
+    221
+   ],
+   "confidence": "established"
+  },
+  "2024": {
+   "rule": "flat",
+   "thresholds_bins": [
+    50
+   ],
+   "confidence": "established"
+  },
+  "2025": {
+   "rule": "per_week_scaled",
+   "thresholds_bins": [
+    200,
+    214,
+    221
+   ],
+   "confidence": "established"
+  },
+  "2026": {
+   "rule": "per_week_scaled",
+   "thresholds_bins": [
+    200,
+    214,
+    221
+   ],
+   "confidence": "established"
+  }
+ },
+ "validation_threshold_note": {
+  "same_threshold_as_other_years": false,
+  "text": "The 2024 recall validation (10-49 peers: 0.662-0.727) scored the flat T = 50 event tables. The other years' event tables used T = 200-221. Their own same-run windowed evaluations at 10-49 peers 2023: 0.78-0.86 over 9 months; 2026: 0.81-0.88 over 8 months (none for 2022 and 2025, which had no Cloudflare hijack labels when they ran). These figures are not a controlled comparison: label coverage and year differ.",
+  "scaled_year_recall_10_49": {
+   "2022": null,
+   "2023": [
+    0.783,
+    0.86,
+    9
+   ],
+   "2025": null,
+   "2026": [
+    0.81,
+    0.876,
+    8
+   ]
+  }
+ },
+ "leak_events": "The leak identifier (first-seen path triples: leakcheck.triple_candidates/classify_triples, leak_events.build_events) applies no allowlist; see code_and_docs.leak_* citations.",
+ "method": "Effective threshold T bounded from the outputs: max over kept pairs of sum(n_bins) < T <= min(bins) of flapper_whitelist.parquet; summary.json records only the unscaled flapper_bins.",
+ "commit_dates": {
+  "86b9b4b2": "2026-09-04T21:05:10+09:00",
+  "ac4ad7a8": "2026-09-09T09:37:25+09:00"
+ },
+ "paper_2024_recall_provenance": {
+  "source": "docs/paper/corrections-2026-10-16/identifier-summary-verification.json (input_sha256)",
+  "evaluation_files_pinned": 12,
+  "pinned_hashes_equal_flat_F50_outputs": 12,
+  "recall_10_49_range_2024": [
+   0.662,
+   0.727
+  ]
+ },
+ "years": {
+  "2022": {
+   "rule": "per_week_scaled",
+   "F_param": 50,
+   "threshold_bins_by_window_length": [
+    [
+     28,
+     200
+    ],
+    [
+     30,
+     214
+    ],
+    [
+     31,
+     221
+    ]
+   ],
+   "months": 12,
+   "confidence": "established",
+   "whitelist_mtime_range_utc": [
+    "2026-09-14 19:06:34",
+    "2026-09-14 19:07:54"
+   ],
+   "all_written_before_86b9b4b2": false,
+   "run_logs": {
+    "writer": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2022_m1_50616672.log",
+    "driver": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/extend_2022_50604932.log"
+   },
+   "run_log_repo_at": {
+    "driver": "536b67d"
+   },
+   "run_commits_contain_86b9b4b2": {
+    "536b67d": true
+   },
+   "downstream": {
+    "chain": "ranking.load_year_events(year, tag='m2_b5_events_f50') globs identifier2/<y>-*_<y>-*/m2_b5_events_f50/origin_change_events.parquet -> inventory/<y>/events_ranked.parquet -> select-replay -> replay_selection.parquet -> replay_manifest.tsv -> eventset/<y>/events.parquet",
+    "identifier2_event_rows": 3246816,
+    "events_ranked_rows": 3246816,
+    "events_ranked_rows_found_in_identifier2": 3246816,
+    "identifier2_unique_event_keys": 3246816,
+    "events_ranked_unique_event_keys": 3246816,
+    "replay_selection_rows": 4977,
+    "replay_selection_matched_in_identifier2": 4977,
+    "replay_selection_by_identifier2_window": {
+     "2022-01-01_2022-01-31": 297,
+     "2022-02-01_2022-02-28": 355,
+     "2022-03-01_2022-03-31": 444,
+     "2022-04-01_2022-04-30": 370,
+     "2022-05-01_2022-05-31": 482,
+     "2022-06-01_2022-06-30": 430,
+     "2022-07-01_2022-07-31": 443,
+     "2022-08-01_2022-08-31": 438,
+     "2022-09-01_2022-09-30": 356,
+     "2022-10-01_2022-10-31": 440,
+     "2022-11-01_2022-11-30": 499,
+     "2022-12-01_2022-12-31": 423
+    },
+    "replay_selected_in_pairs_bins_ge_F_lt_scaled": 1120,
+    "eventset_rows": 4977,
+    "eventset_ids_in_replay_selection": 4977,
+    "release_replay_selection_sha256_equals_cluster": true,
+    "release_eventset_sha256_equals_cluster": false,
+    "release_eventset_rows": 4977,
+    "release_eventset_ids_in_release_replay_selection": 4977,
+    "cluster_mtimes_utc": {
+     "events_ranked.parquet": "2026-09-14 19:15:22",
+     "replay_selection.parquet": "2026-09-15 06:37:46",
+     "replay_manifest.tsv": "2026-09-15 06:37:51"
+    }
+   },
+   "run_notes": "extend_year.sh -> inventory_year.sh driver synced to 536b67d (contains 86b9b4b2) and submitted array 50616672; the month jobs wrote events and whitelist on 2026-09-14 19:06-19:07 UTC, then crashed in the hijack evaluation (no 2022 Cloudflare hijack labels: ColumnNotFoundError min_hijack_ts), hence no summary.json. The traceback cites cli.py:683 and identifier2.py:373, the line numbers of the post-86b9b4b2 file.",
+   "monthly": [
+    {
+     "window": "2022-01-01_2022-01-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 432,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 213537,
+     "kept_pairs_bins_ge_F_lt_scaled": 1383,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 61152,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:06:40",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-02-01_2022-02-28",
+     "days": 28,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 200,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      200,
+      200
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 200,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 200,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 305,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 199,
+     "events": 243607,
+     "kept_pairs_bins_ge_F_lt_scaled": 1292,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 51695,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:06:36",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-03-01_2022-03-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      222
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 222,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 618,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 281886,
+     "kept_pairs_bins_ge_F_lt_scaled": 1410,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 58934,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:06:37",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-04-01_2022-04-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      213,
+      215
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 215,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 899,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 212,
+     "events": 214858,
+     "kept_pairs_bins_ge_F_lt_scaled": 1258,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 47469,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:06:40",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-05-01_2022-05-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 279,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 376454,
+     "kept_pairs_bins_ge_F_lt_scaled": 1789,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 69661,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:06:34",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-06-01_2022-06-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 945,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 213,
+     "events": 295040,
+     "kept_pairs_bins_ge_F_lt_scaled": 1552,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 60123,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:06:43",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-07-01_2022-07-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 1387,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 451369,
+     "kept_pairs_bins_ge_F_lt_scaled": 3169,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 154577,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:07:09",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-08-01_2022-08-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 8,
+     "whitelisted_pairs_parquet": 3128,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 246681,
+     "kept_pairs_bins_ge_F_lt_scaled": 1743,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 64876,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:07:31",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-09-01_2022-09-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      213,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 1386,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 212,
+     "events": 241204,
+     "kept_pairs_bins_ge_F_lt_scaled": 1072,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 31971,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:07:34",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-10-01_2022-10-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 3863,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 232021,
+     "kept_pairs_bins_ge_F_lt_scaled": 1161,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 40685,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:07:54",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-11-01_2022-11-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      213,
+      216
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 216,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 1401,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 212,
+     "events": 235161,
+     "kept_pairs_bins_ge_F_lt_scaled": 1094,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 40266,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:07:08",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2022-12-01_2022-12-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 1155,
+     "whitelisted_pairs_summary": null,
+     "summary_json": "absent (run crashed in the label evaluation after writing the parquet files)",
+     "max_kept_pair_bins": 220,
+     "events": 214998,
+     "kept_pairs_bins_ge_F_lt_scaled": 1535,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 60921,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-14 19:07:05",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    }
+   ]
+  },
+  "2023": {
+   "rule": "per_week_scaled",
+   "F_param": 50,
+   "threshold_bins_by_window_length": [
+    [
+     28,
+     200
+    ],
+    [
+     30,
+     214
+    ],
+    [
+     31,
+     221
+    ]
+   ],
+   "months": 12,
+   "confidence": "established",
+   "whitelist_mtime_range_utc": [
+    "2026-09-09 00:38:25",
+    "2026-09-09 00:39:22"
+   ],
+   "all_written_before_86b9b4b2": false,
+   "run_logs": {
+    "writer": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2023_leak_m1_50435357.log",
+    "driver": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inventory_2023_50430718.log",
+    "earlier": [
+     "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2023_m1_50426372.log",
+     "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2023_m1_50434683.log"
+    ],
+    "earlier_driver": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inventory_2023_50425278.log"
+   },
+   "run_log_repo_at": {
+    "driver": "5c360e3",
+    "earlier_driver": "1f28986"
+   },
+   "run_commits_contain_86b9b4b2": {
+    "5c360e3": true,
+    "1f28986": true
+   },
+   "downstream": {
+    "chain": "ranking.load_year_events(year, tag='m2_b5_events_f50') globs identifier2/<y>-*_<y>-*/m2_b5_events_f50/origin_change_events.parquet -> inventory/<y>/events_ranked.parquet -> select-replay -> replay_selection.parquet -> replay_manifest.tsv -> eventset/<y>/events.parquet",
+    "identifier2_event_rows": 2744589,
+    "events_ranked_rows": 2744589,
+    "events_ranked_rows_found_in_identifier2": 2744589,
+    "identifier2_unique_event_keys": 2744589,
+    "events_ranked_unique_event_keys": 2744589,
+    "replay_selection_rows": 11107,
+    "replay_selection_matched_in_identifier2": 11107,
+    "replay_selection_by_identifier2_window": {
+     "2023-01-01_2023-01-31": 344,
+     "2023-02-01_2023-02-28": 446,
+     "2023-03-01_2023-03-31": 429,
+     "2023-04-01_2023-04-30": 1367,
+     "2023-05-01_2023-05-31": 1558,
+     "2023-06-01_2023-06-30": 1402,
+     "2023-07-01_2023-07-31": 851,
+     "2023-08-01_2023-08-31": 1111,
+     "2023-09-01_2023-09-30": 796,
+     "2023-10-01_2023-10-31": 783,
+     "2023-11-01_2023-11-30": 1050,
+     "2023-12-01_2023-12-31": 970
+    },
+    "replay_selected_in_pairs_bins_ge_F_lt_scaled": 2044,
+    "eventset_rows": 11107,
+    "eventset_ids_in_replay_selection": 11107,
+    "release_replay_selection_sha256_equals_cluster": true,
+    "release_eventset_sha256_equals_cluster": false,
+    "release_eventset_rows": 11107,
+    "release_eventset_ids_in_release_replay_selection": 11107,
+    "cluster_mtimes_utc": {
+     "events_ranked.parquet": "2026-09-08 23:55:21",
+     "replay_selection.parquet": "2026-09-17 15:45:47",
+     "replay_manifest.tsv": "2026-09-17 15:45:58"
+    }
+   },
+   "run_notes": "Three identify2-events runs, all after 86b9b4b2: array 50426372 (driver at 1f28986, 2026-09-08 ~19:22 UTC), array 50434683 (driver at 5c360e3; crashed with KeyError 'recall' after writing the parquet files), and the run logged as inv_2023_leak_m*_50435357 (2026-09-09 00:38 UTC, right after ac4ad7a8 fixed that KeyError), which wrote the files now on disk; its log has no 'repo at' line, but the shared checkout is only reset forward from 5c360e3. January whitelisted_pairs is 841 in the first and the last run.",
+   "monthly": [
+    {
+     "window": "2023-01-01_2023-01-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 841,
+     "whitelisted_pairs_summary": 841,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 262662,
+     "kept_pairs_bins_ge_F_lt_scaled": 1639,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 97048,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:25",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2023-02-01_2023-02-28",
+     "days": 28,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 200,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      200,
+      200
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 200,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 200,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 1048,
+     "whitelisted_pairs_summary": 1048,
+     "summary_json": "present",
+     "max_kept_pair_bins": 199,
+     "events": 239036,
+     "kept_pairs_bins_ge_F_lt_scaled": 1961,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 67410,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:49",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2023-03-01_2023-03-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 15,
+     "whitelisted_pairs_parquet": 944,
+     "whitelisted_pairs_summary": 944,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 258915,
+     "kept_pairs_bins_ge_F_lt_scaled": 1546,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 64889,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:51",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2023-04-01_2023-04-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      215
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 215,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 904,
+     "whitelisted_pairs_summary": 904,
+     "summary_json": "present",
+     "max_kept_pair_bins": 213,
+     "events": 209310,
+     "kept_pairs_bins_ge_F_lt_scaled": 1139,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 39692,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:49",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.44,
+       1487
+      ],
+      "10-49": [
+       0.859,
+       510
+      ],
+      "50+": [
+       0.878,
+       82
+      ]
+     }
+    },
+    {
+     "window": "2023-05-01_2023-05-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      220,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 538,
+     "whitelisted_pairs_summary": 538,
+     "summary_json": "present",
+     "max_kept_pair_bins": 219,
+     "events": 214847,
+     "kept_pairs_bins_ge_F_lt_scaled": 1796,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 54193,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:51",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.431,
+       2786
+      ],
+      "10-49": [
+       0.823,
+       685
+      ],
+      "50+": [
+       0.803,
+       127
+      ]
+     }
+    },
+    {
+     "window": "2023-06-01_2023-06-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      212,
+      215
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 215,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 380,
+     "whitelisted_pairs_summary": 380,
+     "summary_json": "present",
+     "max_kept_pair_bins": 211,
+     "events": 218607,
+     "kept_pairs_bins_ge_F_lt_scaled": 2052,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 74094,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:39:22",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.501,
+       2295
+      ],
+      "10-49": [
+       0.831,
+       592
+      ],
+      "50+": [
+       0.895,
+       19
+      ]
+     }
+    },
+    {
+     "window": "2023-07-01_2023-07-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      220,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 605,
+     "whitelisted_pairs_summary": 605,
+     "summary_json": "present",
+     "max_kept_pair_bins": 219,
+     "events": 186501,
+     "kept_pairs_bins_ge_F_lt_scaled": 1196,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 49090,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:59",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.456,
+       1504
+      ],
+      "10-49": [
+       0.86,
+       242
+      ],
+      "50+": [
+       0.696,
+       23
+      ]
+     }
+    },
+    {
+     "window": "2023-08-01_2023-08-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 578,
+     "whitelisted_pairs_summary": 578,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 282552,
+     "kept_pairs_bins_ge_F_lt_scaled": 1692,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 65575,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:58",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.428,
+       2650
+      ],
+      "10-49": [
+       0.809,
+       398
+      ],
+      "50+": [
+       0.707,
+       41
+      ]
+     }
+    },
+    {
+     "window": "2023-09-01_2023-09-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      213,
+      215
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 215,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 723,
+     "whitelisted_pairs_summary": 723,
+     "summary_json": "present",
+     "max_kept_pair_bins": 212,
+     "events": 220922,
+     "kept_pairs_bins_ge_F_lt_scaled": 1496,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 70569,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:56",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.333,
+       1490
+      ],
+      "10-49": [
+       0.838,
+       222
+      ],
+      "50+": [
+       0.556,
+       9
+      ]
+     }
+    },
+    {
+     "window": "2023-10-01_2023-10-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 836,
+     "whitelisted_pairs_summary": 836,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 223441,
+     "kept_pairs_bins_ge_F_lt_scaled": 1531,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 65141,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:55",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.373,
+       1946
+      ],
+      "10-49": [
+       0.783,
+       332
+      ],
+      "50+": [
+       0.9,
+       10
+      ]
+     }
+    },
+    {
+     "window": "2023-11-01_2023-11-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 444,
+     "whitelisted_pairs_summary": 444,
+     "summary_json": "present",
+     "max_kept_pair_bins": 213,
+     "events": 242026,
+     "kept_pairs_bins_ge_F_lt_scaled": 1776,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 90396,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:38:56",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.4,
+       2632
+      ],
+      "10-49": [
+       0.79,
+       476
+      ],
+      "50+": [
+       0.914,
+       35
+      ]
+     }
+    },
+    {
+     "window": "2023-12-01_2023-12-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 735,
+     "whitelisted_pairs_summary": 735,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 185770,
+     "kept_pairs_bins_ge_F_lt_scaled": 1647,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 53344,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-09 00:39:12",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.338,
+       2491
+      ],
+      "10-49": [
+       0.845,
+       420
+      ],
+      "50+": [
+       0.971,
+       34
+      ]
+     }
+    }
+   ]
+  },
+  "2024": {
+   "rule": "flat",
+   "F_param": 50,
+   "threshold_bins_by_window_length": [
+    [
+     7,
+     50
+    ],
+    [
+     29,
+     50
+    ],
+    [
+     30,
+     50
+    ],
+    [
+     31,
+     50
+    ]
+   ],
+   "months": 13,
+   "confidence": "established",
+   "whitelist_mtime_range_utc": [
+    "2026-09-03 19:10:38",
+    "2026-09-04 11:49:03"
+   ],
+   "all_written_before_86b9b4b2": true,
+   "run_logs": {
+    "writer": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/ident2024d_50183224.log",
+    "eval": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/identeval_50183617.log"
+   },
+   "run_log_repo_at": {
+    "writer": "a0919ae",
+    "eval": "1c61676"
+   },
+   "run_commits_contain_86b9b4b2": {
+    "a0919ae": false,
+    "1c61676": false
+   },
+   "downstream": {
+    "chain": "ranking.load_year_events(year, tag='m2_b5_events_f50') globs identifier2/<y>-*_<y>-*/m2_b5_events_f50/origin_change_events.parquet -> inventory/<y>/events_ranked.parquet -> select-replay -> replay_selection.parquet -> replay_manifest.tsv -> eventset/<y>/events.parquet",
+    "identifier2_event_rows": 2102090,
+    "events_ranked_rows": 2130452,
+    "events_ranked_rows_found_in_identifier2": 2130452,
+    "identifier2_unique_event_keys": 2087909,
+    "events_ranked_unique_event_keys": 2087909,
+    "replay_selection_rows": 20959,
+    "replay_selection_matched_in_identifier2": 20959,
+    "replay_selection_by_identifier2_window": {
+     "2024-01-01_2024-01-31": 1643,
+     "2024-02-01_2024-02-29": 1431,
+     "2024-03-01_2024-03-31": 1838,
+     "2024-04-01_2024-04-30": 1192,
+     "2024-05-01_2024-05-31": 1278,
+     "2024-06-01_2024-06-30": 1394,
+     "2024-06-01_2024-06-30+2024-06-10_2024-06-16": 361,
+     "2024-06-10_2024-06-16": 112,
+     "2024-07-01_2024-07-31": 1811,
+     "2024-08-01_2024-08-31": 1741,
+     "2024-09-01_2024-09-30": 1672,
+     "2024-10-01_2024-10-31": 3361,
+     "2024-11-01_2024-11-30": 1544,
+     "2024-12-01_2024-12-31": 1581
+    },
+    "replay_selected_in_pairs_bins_ge_F_lt_scaled": 0,
+    "eventset_rows": 20959,
+    "eventset_ids_in_replay_selection": 20959,
+    "release_replay_selection_sha256_equals_cluster": true,
+    "release_eventset_sha256_equals_cluster": false,
+    "release_eventset_rows": 20959,
+    "release_eventset_ids_in_release_replay_selection": 20959,
+    "cluster_mtimes_utc": {
+     "events_ranked.parquet": "2026-09-04 12:11:08",
+     "replay_selection.parquet": "2026-09-16 06:39:01",
+     "replay_manifest.tsv": "2026-09-16 06:39:04"
+    }
+   },
+   "run_notes": "jobs/ident2024.sh run 50183224 (git pull at a0919ae, 2026-09-04 18:53 +0900, which does not contain 86b9b4b2; its run_events calls dedupe_origin_events(oc_c, flapper_bins)) wrote all twelve months on 2026-09-04 11:41-11:49 UTC, i.e. 16-24 minutes before 86b9b4b2 was committed (12:05 UTC). identify2-eval (run 50183617 at 1c61676, also before 86b9b4b2) re-scored the saved events with windowed labels into evaluation_windowed.json without recomputing the whitelist. The 7-day RIS beacon-week window 2024-06-10_2024-06-16 (23 RRCs, run 2026-09-03) also has an m2_b5_events_f50 table; ranking.load_year_events' glob includes it, so it feeds the 2024 ranking and selection (threshold 50 bins in 7 days, where the flat and per-week rules coincide). No 2024 month was re-run after 86b9b4b2.",
+   "monthly": [
+    {
+     "window": "2024-01-01_2024-01-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 134,
+     "whitelisted_pairs_parquet": 3134,
+     "whitelisted_pairs_summary": 3134,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 123855,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 2451,
+     "whitelist_mtime_utc": "2026-09-04 11:41:09",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.026,
+       33342
+      ],
+      "10-49": [
+       0.07,
+       8441
+      ],
+      "50+": [
+       0.061,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.289,
+       2959
+      ],
+      "10-49": [
+       0.69,
+       855
+      ],
+      "50+": [
+       0.808,
+       177
+      ]
+     },
+     "evaluation_windowed_sha256": "e464623eb4c17d490cc3092dd15a5f9eee3790f0b948025027ba5b5797fc94fd"
+    },
+    {
+     "window": "2024-02-01_2024-02-29",
+     "days": 29,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 207,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 96,
+     "whitelisted_pairs_parquet": 2811,
+     "whitelisted_pairs_summary": 2811,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 143008,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 2414,
+     "whitelist_mtime_utc": "2026-09-04 11:41:44",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.027,
+       33342
+      ],
+      "10-49": [
+       0.063,
+       8441
+      ],
+      "50+": [
+       0.047,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.342,
+       2605
+      ],
+      "10-49": [
+       0.707,
+       755
+      ],
+      "50+": [
+       0.742,
+       151
+      ]
+     },
+     "evaluation_windowed_sha256": "e52de1f1f6738d0fecdc18fb8dc9957910f00d809d1f003ee685b494f9aaad5d"
+    },
+    {
+     "window": "2024-03-01_2024-03-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 32,
+     "whitelisted_pairs_parquet": 2722,
+     "whitelisted_pairs_summary": 2722,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 139329,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 1837,
+     "whitelist_mtime_utc": "2026-09-04 11:42:29",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.027,
+       33342
+      ],
+      "10-49": [
+       0.072,
+       8441
+      ],
+      "50+": [
+       0.07,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.305,
+       2935
+      ],
+      "10-49": [
+       0.714,
+       853
+      ],
+      "50+": [
+       0.814,
+       204
+      ]
+     },
+     "evaluation_windowed_sha256": "206a05f88c16fff9e373f301dbcc87fd018c66811b94f37f7f27ae96ec99d651"
+    },
+    {
+     "window": "2024-04-01_2024-04-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 214,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 37,
+     "whitelisted_pairs_parquet": 2094,
+     "whitelisted_pairs_summary": 2094,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 162647,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 1489,
+     "whitelist_mtime_utc": "2026-09-04 11:43:11",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.032,
+       33342
+      ],
+      "10-49": [
+       0.05,
+       8441
+      ],
+      "50+": [
+       0.012,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.424,
+       2518
+      ],
+      "10-49": [
+       0.727,
+       579
+      ],
+      "50+": [
+       0.718,
+       39
+      ]
+     },
+     "evaluation_windowed_sha256": "06ebecb8e2b103a692f390896fba5d64a9e92ec2db75dcf35802b9b64c02b77b"
+    },
+    {
+     "window": "2024-05-01_2024-05-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 15,
+     "whitelisted_pairs_parquet": 1593,
+     "whitelisted_pairs_summary": 1593,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 160417,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 925,
+     "whitelist_mtime_utc": "2026-09-04 11:43:54",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.037,
+       33342
+      ],
+      "10-49": [
+       0.05,
+       8441
+      ],
+      "50+": [
+       0.015,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.419,
+       2946
+      ],
+      "10-49": [
+       0.703,
+       603
+      ],
+      "50+": [
+       0.583,
+       60
+      ]
+     },
+     "evaluation_windowed_sha256": "236e95ce6e3dd30c6ad87d53cd4cf4c08c9b3a57ad7e1a735c4aa14ec94ef6e7"
+    },
+    {
+     "window": "2024-06-01_2024-06-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 214,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 36,
+     "whitelisted_pairs_parquet": 1700,
+     "whitelisted_pairs_summary": 1700,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 179389,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 1284,
+     "whitelist_mtime_utc": "2026-09-04 11:44:32",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.028,
+       33342
+      ],
+      "10-49": [
+       0.055,
+       8441
+      ],
+      "50+": [
+       0.07,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.347,
+       2700
+      ],
+      "10-49": [
+       0.72,
+       643
+      ],
+      "50+": [
+       0.706,
+       235
+      ]
+     },
+     "evaluation_windowed_sha256": "6f8663f2963b5398d17ac2a71c2f415925eba65a8561b2ba53d1c084063c5500"
+    },
+    {
+     "window": "2024-06-10_2024-06-16",
+     "days": 7,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "seven_day_window_flat_equals_scaled",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 50,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 474,
+     "whitelisted_pairs_summary": 474,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 41195,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-03 19:10:38",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.391,
+       447
+      ],
+      "10-49": [
+       0.881,
+       59
+      ],
+      "50+": [
+       0.875,
+       8
+      ]
+     }
+    },
+    {
+     "window": "2024-07-01_2024-07-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 57,
+     "whitelisted_pairs_parquet": 3017,
+     "whitelisted_pairs_summary": 3017,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 222234,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 2194,
+     "whitelist_mtime_utc": "2026-09-04 11:45:17",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.031,
+       33342
+      ],
+      "10-49": [
+       0.057,
+       8441
+      ],
+      "50+": [
+       0.069,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.401,
+       2608
+      ],
+      "10-49": [
+       0.662,
+       720
+      ],
+      "50+": [
+       0.68,
+       241
+      ]
+     },
+     "evaluation_windowed_sha256": "a8712257f4fc6b41bdcb4ea4b6d97e993f583d4dca746f2bf64b962f378eb392"
+    },
+    {
+     "window": "2024-08-01_2024-08-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 72,
+     "whitelisted_pairs_parquet": 3312,
+     "whitelisted_pairs_summary": 3312,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 205728,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 2810,
+     "whitelist_mtime_utc": "2026-09-04 11:46:04",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.029,
+       33342
+      ],
+      "10-49": [
+       0.06,
+       8441
+      ],
+      "50+": [
+       0.073,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.334,
+       2894
+      ],
+      "10-49": [
+       0.688,
+       731
+      ],
+      "50+": [
+       0.749,
+       231
+      ]
+     },
+     "evaluation_windowed_sha256": "b8f69efb579b8f25542b4286b0e572249cd2d45255f69956b0c749772c2ce577"
+    },
+    {
+     "window": "2024-09-01_2024-09-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 214,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 85,
+     "whitelisted_pairs_parquet": 2627,
+     "whitelisted_pairs_summary": 2627,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 160787,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 2032,
+     "whitelist_mtime_utc": "2026-09-04 11:46:48",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.027,
+       33342
+      ],
+      "10-49": [
+       0.06,
+       8441
+      ],
+      "50+": [
+       0.076,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.311,
+       2906
+      ],
+      "10-49": [
+       0.708,
+       712
+      ],
+      "50+": [
+       0.642,
+       279
+      ]
+     },
+     "evaluation_windowed_sha256": "63839a94b11f88384e453af6abafa60e84739a1f3efd3c6cba7c344ef6e8b472"
+    },
+    {
+     "window": "2024-10-01_2024-10-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 90,
+     "whitelisted_pairs_parquet": 2462,
+     "whitelisted_pairs_summary": 2462,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 197883,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 1925,
+     "whitelist_mtime_utc": "2026-09-04 11:47:33",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.027,
+       33342
+      ],
+      "10-49": [
+       0.058,
+       8441
+      ],
+      "50+": [
+       0.074,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.33,
+       2773
+      ],
+      "10-49": [
+       0.666,
+       733
+      ],
+      "50+": [
+       0.663,
+       264
+      ]
+     },
+     "evaluation_windowed_sha256": "894009eedd32c6e8c642fc13892de8612c30e98b62de4d59f19ea9cc931cda4a"
+    },
+    {
+     "window": "2024-11-01_2024-11-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 214,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 89,
+     "whitelisted_pairs_parquet": 2153,
+     "whitelisted_pairs_summary": 2153,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 178231,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 1653,
+     "whitelist_mtime_utc": "2026-09-04 11:48:17",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.033,
+       33342
+      ],
+      "10-49": [
+       0.059,
+       8441
+      ],
+      "50+": [
+       0.078,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.37,
+       2948
+      ],
+      "10-49": [
+       0.691,
+       724
+      ],
+      "50+": [
+       0.715,
+       256
+      ]
+     },
+     "evaluation_windowed_sha256": "fe328794ea6d618e9c07d558506d1a1facb4ae1e94118fee437b28c8c6ec3374"
+    },
+    {
+     "window": "2024-12-01_2024-12-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 50,
+     "rule": "flat",
+     "threshold_interval_from_outputs": [
+      50,
+      50
+     ],
+     "flat_F_consistent": true,
+     "scaled_value": 221,
+     "scaled_consistent": false,
+     "whitelist_min_bins": 50,
+     "whitelist_pairs_at_min": 52,
+     "whitelisted_pairs_parquet": 2555,
+     "whitelisted_pairs_summary": 2555,
+     "summary_json": "present",
+     "max_kept_pair_bins": 49,
+     "events": 187387,
+     "kept_pairs_bins_ge_F_lt_scaled": 0,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 0,
+     "whitelist_pairs_bins_lt_scaled": 1848,
+     "whitelist_mtime_utc": "2026-09-04 11:49:03",
+     "written_before_86b9b4b2": true,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.028,
+       33342
+      ],
+      "10-49": [
+       0.044,
+       8441
+      ],
+      "50+": [
+       0.07,
+       2361
+      ]
+     },
+     "hijack_recall_same_run_note": "superseded: this run scored one month of events against the whole year's labels (fixed in a8cabbee); see evaluation_windowed_recall",
+     "evaluation_windowed_recall": {
+      "1-9": [
+       0.372,
+       2550
+      ],
+      "10-49": [
+       0.704,
+       533
+      ],
+      "50+": [
+       0.737,
+       224
+      ]
+     },
+     "evaluation_windowed_sha256": "4d615bcd4adb8013fca15a9466b911fcf43ee253257f7769e09f5fd4e6dcc035"
+    }
+   ]
+  },
+  "2025": {
+   "rule": "per_week_scaled",
+   "F_param": 50,
+   "threshold_bins_by_window_length": [
+    [
+     28,
+     200
+    ],
+    [
+     30,
+     214
+    ],
+    [
+     31,
+     221
+    ]
+   ],
+   "months": 12,
+   "confidence": "established",
+   "whitelist_mtime_range_utc": [
+    "2026-09-08 20:40:52",
+    "2026-09-08 20:41:09"
+   ],
+   "all_written_before_86b9b4b2": false,
+   "run_logs": {
+    "writer": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2025_m1_50430821.log",
+    "driver": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inventory_2025_50425883.log",
+    "later_skip_ident": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2025_m1_50435574.log"
+   },
+   "run_log_repo_at": {
+    "driver": "c8a768c"
+   },
+   "run_commits_contain_86b9b4b2": {
+    "c8a768c": true
+   },
+   "downstream": {
+    "chain": "ranking.load_year_events(year, tag='m2_b5_events_f50') globs identifier2/<y>-*_<y>-*/m2_b5_events_f50/origin_change_events.parquet -> inventory/<y>/events_ranked.parquet -> select-replay -> replay_selection.parquet -> replay_manifest.tsv -> eventset/<y>/events.parquet",
+    "identifier2_event_rows": 3182094,
+    "events_ranked_rows": 3182094,
+    "events_ranked_rows_found_in_identifier2": 3182094,
+    "identifier2_unique_event_keys": 3182094,
+    "events_ranked_unique_event_keys": 3182094,
+    "replay_selection_rows": 25579,
+    "replay_selection_matched_in_identifier2": 25579,
+    "replay_selection_by_identifier2_window": {
+     "2025-01-01_2025-01-31": 1379,
+     "2025-02-01_2025-02-28": 1511,
+     "2025-03-01_2025-03-31": 1921,
+     "2025-04-01_2025-04-30": 3982,
+     "2025-05-01_2025-05-31": 5275,
+     "2025-06-01_2025-06-30": 2151,
+     "2025-07-01_2025-07-31": 1533,
+     "2025-08-01_2025-08-31": 1434,
+     "2025-09-01_2025-09-30": 1662,
+     "2025-10-01_2025-10-31": 1598,
+     "2025-11-01_2025-11-30": 1488,
+     "2025-12-01_2025-12-31": 1645
+    },
+    "replay_selected_in_pairs_bins_ge_F_lt_scaled": 2496,
+    "eventset_rows": 25579,
+    "eventset_ids_in_replay_selection": 25579,
+    "release_replay_selection_sha256_equals_cluster": true,
+    "release_eventset_sha256_equals_cluster": false,
+    "release_eventset_rows": 25579,
+    "release_eventset_ids_in_release_replay_selection": 25579,
+    "cluster_mtimes_utc": {
+     "events_ranked.parquet": "2026-09-09 00:53:34",
+     "replay_selection.parquet": "2026-09-17 05:19:32",
+     "replay_manifest.tsv": "2026-09-17 05:19:38"
+    }
+   },
+   "run_notes": "inventory_year.sh driver at c8a768c (contains 86b9b4b2) submitted array 50430821, which wrote the files on 2026-09-08 20:40-20:41 UTC; summary.json has no hijack evaluation because no Cloudflare hijack label file existed at that time. The later array 50435574 (driver at 3c32cf2) ran with SKIP_IDENT and reused these files.",
+   "monthly": [
+    {
+     "window": "2025-01-01_2025-01-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 647,
+     "whitelisted_pairs_summary": 647,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 228322,
+     "kept_pairs_bins_ge_F_lt_scaled": 1533,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 61126,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:09",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-02-01_2025-02-28",
+     "days": 28,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 200,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      200,
+      200
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 200,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 200,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 491,
+     "whitelisted_pairs_summary": 491,
+     "summary_json": "present",
+     "max_kept_pair_bins": 199,
+     "events": 239555,
+     "kept_pairs_bins_ge_F_lt_scaled": 2063,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 95004,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:40:57",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-03-01_2025-03-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 496,
+     "whitelisted_pairs_summary": 496,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 214638,
+     "kept_pairs_bins_ge_F_lt_scaled": 1900,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 75792,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:04",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-04-01_2025-04-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 513,
+     "whitelisted_pairs_summary": 513,
+     "summary_json": "present",
+     "max_kept_pair_bins": 213,
+     "events": 219736,
+     "kept_pairs_bins_ge_F_lt_scaled": 1193,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 54359,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:03",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-05-01_2025-05-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      220,
+      222
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 222,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 542,
+     "whitelisted_pairs_summary": 542,
+     "summary_json": "present",
+     "max_kept_pair_bins": 219,
+     "events": 315904,
+     "kept_pairs_bins_ge_F_lt_scaled": 1562,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 65803,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:04",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-06-01_2025-06-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 1286,
+     "whitelisted_pairs_summary": 1286,
+     "summary_json": "present",
+     "max_kept_pair_bins": 213,
+     "events": 198372,
+     "kept_pairs_bins_ge_F_lt_scaled": 1240,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 45090,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:04",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-07-01_2025-07-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 4,
+     "whitelisted_pairs_parquet": 1437,
+     "whitelisted_pairs_summary": 1437,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 239386,
+     "kept_pairs_bins_ge_F_lt_scaled": 2696,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 101357,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:05",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-08-01_2025-08-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 3,
+     "whitelisted_pairs_parquet": 393,
+     "whitelisted_pairs_summary": 393,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 221343,
+     "kept_pairs_bins_ge_F_lt_scaled": 1438,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 64177,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:02",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-09-01_2025-09-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 5,
+     "whitelisted_pairs_parquet": 676,
+     "whitelisted_pairs_summary": 676,
+     "summary_json": "present",
+     "max_kept_pair_bins": 213,
+     "events": 284076,
+     "kept_pairs_bins_ge_F_lt_scaled": 2999,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 139548,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:05",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-10-01_2025-10-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      220,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 755,
+     "whitelisted_pairs_summary": 755,
+     "summary_json": "present",
+     "max_kept_pair_bins": 219,
+     "events": 341498,
+     "kept_pairs_bins_ge_F_lt_scaled": 4164,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 165752,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:41:07",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-11-01_2025-11-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      213,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 5,
+     "whitelisted_pairs_parquet": 604,
+     "whitelisted_pairs_summary": 604,
+     "summary_json": "present",
+     "max_kept_pair_bins": 212,
+     "events": 352994,
+     "kept_pairs_bins_ge_F_lt_scaled": 3218,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 157103,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:40:52",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    },
+    {
+     "window": "2025-12-01_2025-12-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 528,
+     "whitelisted_pairs_summary": 528,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 326270,
+     "kept_pairs_bins_ge_F_lt_scaled": 2861,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 141783,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-08 20:40:59",
+     "written_before_86b9b4b2": false,
+     "confidence": "established"
+    }
+   ]
+  },
+  "2026": {
+   "rule": "per_week_scaled",
+   "F_param": 50,
+   "threshold_bins_by_window_length": [
+    [
+     28,
+     200
+    ],
+    [
+     30,
+     214
+    ],
+    [
+     31,
+     221
+    ]
+   ],
+   "months": 8,
+   "confidence": "established",
+   "whitelist_mtime_range_utc": [
+    "2026-09-15 12:32:50",
+    "2026-09-15 12:33:21"
+   ],
+   "all_written_before_86b9b4b2": false,
+   "run_logs": {
+    "writer": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/inv_2026_m1_50648648.log",
+    "driver": "<RESULTS_ROOT>/nobackup/<PROJECT>/logs/extend_2026_50618948.log"
+   },
+   "run_log_repo_at": {
+    "driver": "c8703f6"
+   },
+   "run_commits_contain_86b9b4b2": {
+    "c8703f6": true
+   },
+   "downstream": {
+    "chain": "ranking.load_year_events(year, tag='m2_b5_events_f50') globs identifier2/<y>-*_<y>-*/m2_b5_events_f50/origin_change_events.parquet -> inventory/<y>/events_ranked.parquet -> select-replay -> replay_selection.parquet -> replay_manifest.tsv -> eventset/<y>/events.parquet",
+    "identifier2_event_rows": 2342486,
+    "events_ranked_rows": 2342486,
+    "events_ranked_rows_found_in_identifier2": 2342486,
+    "identifier2_unique_event_keys": 2342486,
+    "events_ranked_unique_event_keys": 2342486,
+    "replay_selection_rows": 17248,
+    "replay_selection_matched_in_identifier2": 17248,
+    "replay_selection_by_identifier2_window": {
+     "2026-01-01_2026-01-31": 1887,
+     "2026-02-01_2026-02-28": 1720,
+     "2026-03-01_2026-03-31": 5469,
+     "2026-04-01_2026-04-30": 1670,
+     "2026-05-01_2026-05-31": 1690,
+     "2026-06-01_2026-06-30": 1899,
+     "2026-07-01_2026-07-31": 1491,
+     "2026-08-01_2026-08-31": 1422
+    },
+    "replay_selected_in_pairs_bins_ge_F_lt_scaled": 2465,
+    "eventset_rows": 17248,
+    "eventset_ids_in_replay_selection": 17248,
+    "release_replay_selection_sha256_equals_cluster": true,
+    "release_eventset_sha256_equals_cluster": false,
+    "release_eventset_rows": 17248,
+    "release_eventset_ids_in_release_replay_selection": 17248,
+    "cluster_mtimes_utc": {
+     "events_ranked.parquet": "2026-09-15 12:36:20",
+     "replay_selection.parquet": "2026-09-17 05:18:58",
+     "replay_manifest.tsv": "2026-09-17 05:19:03"
+    }
+   },
+   "run_notes": "extend_year.sh -> inventory_year.sh driver synced to c8703f6 (contains 86b9b4b2) and submitted array 50648648, which wrote the files on 2026-09-15 12:32-12:33 UTC.",
+   "monthly": [
+    {
+     "window": "2026-01-01_2026-01-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      222
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 222,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 506,
+     "whitelisted_pairs_summary": 506,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 312433,
+     "kept_pairs_bins_ge_F_lt_scaled": 2848,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 133838,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:32:50",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.506,
+       2469
+      ],
+      "10-49": [
+       0.848,
+       565
+      ],
+      "50+": [
+       0.9,
+       150
+      ]
+     }
+    },
+    {
+     "window": "2026-02-01_2026-02-28",
+     "days": 28,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 200,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      198,
+      200
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 200,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 200,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 631,
+     "whitelisted_pairs_summary": 631,
+     "summary_json": "present",
+     "max_kept_pair_bins": 197,
+     "events": 226809,
+     "kept_pairs_bins_ge_F_lt_scaled": 2059,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 72101,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:32:51",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.502,
+       2394
+      ],
+      "10-49": [
+       0.859,
+       517
+      ],
+      "50+": [
+       0.857,
+       189
+      ]
+     }
+    },
+    {
+     "window": "2026-03-01_2026-03-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      217,
+      223
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 223,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 515,
+     "whitelisted_pairs_summary": 515,
+     "summary_json": "present",
+     "max_kept_pair_bins": 216,
+     "events": 356450,
+     "kept_pairs_bins_ge_F_lt_scaled": 3550,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 197248,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:32:52",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.503,
+       3030
+      ],
+      "10-49": [
+       0.817,
+       520
+      ],
+      "50+": [
+       0.888,
+       214
+      ]
+     }
+    },
+    {
+     "window": "2026-04-01_2026-04-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      213,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 350,
+     "whitelisted_pairs_summary": 350,
+     "summary_json": "present",
+     "max_kept_pair_bins": 212,
+     "events": 278105,
+     "kept_pairs_bins_ge_F_lt_scaled": 2725,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 147377,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:33:17",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.479,
+       2505
+      ],
+      "10-49": [
+       0.836,
+       499
+      ],
+      "50+": [
+       0.923,
+       156
+      ]
+     }
+    },
+    {
+     "window": "2026-05-01_2026-05-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      222
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 222,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 428,
+     "whitelisted_pairs_summary": 428,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 317255,
+     "kept_pairs_bins_ge_F_lt_scaled": 2861,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 188106,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:33:13",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.458,
+       2522
+      ],
+      "10-49": [
+       0.81,
+       522
+      ],
+      "50+": [
+       0.896,
+       134
+      ]
+     }
+    },
+    {
+     "window": "2026-06-01_2026-06-30",
+     "days": 30,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 214,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      214,
+      214
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 214,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 214,
+     "whitelist_pairs_at_min": 4,
+     "whitelisted_pairs_parquet": 453,
+     "whitelisted_pairs_summary": 453,
+     "summary_json": "present",
+     "max_kept_pair_bins": 213,
+     "events": 361829,
+     "kept_pairs_bins_ge_F_lt_scaled": 3255,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 230542,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:33:21",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.474,
+       2436
+      ],
+      "10-49": [
+       0.843,
+       496
+      ],
+      "50+": [
+       0.893,
+       140
+      ]
+     }
+    },
+    {
+     "window": "2026-07-01_2026-07-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      220,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 2,
+     "whitelisted_pairs_parquet": 415,
+     "whitelisted_pairs_summary": 415,
+     "summary_json": "present",
+     "max_kept_pair_bins": 219,
+     "events": 291965,
+     "kept_pairs_bins_ge_F_lt_scaled": 2588,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 167647,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:33:02",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.47,
+       2628
+      ],
+      "10-49": [
+       0.836,
+       432
+      ],
+      "50+": [
+       0.864,
+       169
+      ]
+     }
+    },
+    {
+     "window": "2026-08-01_2026-08-31",
+     "days": 31,
+     "subdir": "m2_b5_events_f50",
+     "F_param": 50,
+     "threshold_bins_applied": 221,
+     "rule": "per_week_scaled",
+     "threshold_interval_from_outputs": [
+      221,
+      221
+     ],
+     "flat_F_consistent": false,
+     "scaled_value": 221,
+     "scaled_consistent": true,
+     "whitelist_min_bins": 221,
+     "whitelist_pairs_at_min": 1,
+     "whitelisted_pairs_parquet": 360,
+     "whitelisted_pairs_summary": 360,
+     "summary_json": "present",
+     "max_kept_pair_bins": 220,
+     "events": 197640,
+     "kept_pairs_bins_ge_F_lt_scaled": 1623,
+     "kept_events_in_pairs_bins_ge_F_lt_scaled": 61942,
+     "whitelist_pairs_bins_lt_scaled": 0,
+     "whitelist_mtime_utc": "2026-09-15 12:33:14",
+     "written_before_86b9b4b2": false,
+     "confidence": "established",
+     "hijack_recall_same_run": {
+      "1-9": [
+       0.465,
+       2614
+      ],
+      "10-49": [
+       0.876,
+       420
+      ],
+      "50+": [
+       0.939,
+       98
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "code_and_docs": {
+  "dedupe_origin_events_threshold": "src/bgbench/identifier2.py:295",
+  "run_events_scaling": "src/bgbench/identifier2.py:342",
+  "run_events_default_per_week": "src/bgbench/identifier2.py:332",
+  "out_dir_unscaled_name": "src/bgbench/identifier2.py:348",
+  "summary_records_unscaled_only": "src/bgbench/identifier2.py:368",
+  "cli_no_per_week_option": "src/bgbench/cli.py:674",
+  "job_2024": "jobs/ident2024.sh:17",
+  "job_other_years": "jobs/inventory_year.sh:27",
+  "ranking_reads_f50_tables": "src/bgbench/ranking.py:19",
+  "trailing_whitelist_defined_never_called": "src/bgbench/identifier2.py:410",
+  "doc_2024_flat_F50": "docs/results/2026-09-04-inventory-2024.md:3",
+  "doc_2024_fix_planned": "docs/results/2026-09-04-inventory-2024.md:33",
+  "leak_identifier_no_allowlist_candidates": "src/bgbench/leakcheck.py:126",
+  "leak_identifier_no_allowlist_events": "src/bgbench/leak_events.py:25",
+  "paper_text": "paper/sections/03-data.tex:36",
+  "trailing_whitelist_call_sites": [],
+  "cli_exposes_flapper_per_week": false,
+  "leak_code_mentions_whitelist_or_flapper": false,
+  "scaling_commit": "86b9b4b2 2026-09-04T21:05:10+09:00 identifier2: flapper whitelist threshold specified per week and scaled to the window length",
+  "label_fix_commit": "ac4ad7a8 2026-09-09T09:37:25+09:00 Leak evaluations tolerate years without Cloudflare leak labels (none before 2024); eval_hijacks always reports recall",
+  "identifier2_history": [
+   "ac4ad7a8 2026-09-09T09:37:25+09:00 Leak evaluations tolerate years without Cloudflare leak labels (none before 2024); eval_hijacks always reports recall",
+   "86b9b4b2 2026-09-04T21:05:10+09:00 identifier2: flapper whitelist threshold specified per week and scaled to the window length",
+   "1c61676d 2026-09-04T20:57:06+09:00 identifier2: window labels in run() too",
+   "a8cabbee 2026-09-04T20:56:20+09:00 identifier2: window labels to the evaluated period (monthly recall was divided by 12); identify2-eval re-scores saved events",
+   "66920590 2026-09-04T15:45:03+09:00 identifier2: new_edge_candidates uses example_prefix (schema change)",
+   "163aaeab 2026-09-04T14:13:55+09:00 identifier2: circular time shift for the null model (review finding)",
+   "7cf17c71 2026-09-04T05:12:07+02:00 lint: ruff --fix + format (run on cluster)",
+   "454721ce 2026-09-04T04:27:17+09:00 new_edges: keep example prefix/path (for valley-free leak check); trailing-window flapper whitelist",
+   "6f01f615 2026-09-04T04:08:35+09:00 identifier2: event-level dedupe (gap-merge) + persistent-flapper whitelist, evaluated vs hijack labels",
+   "0cf2bdad 2026-09-04T04:02:39+09:00 identifier2: per-file load with collector cast (mixed cat/str files)",
+   "0886f897 2026-09-04T03:12:10+09:00 identifier v2: per-prefix origin-change + new-edge candidates with cross-collector agreement; per-event evaluation vs Cloudflare labels with shifted-time null model"
+  ]
+ },
+ "generated_by": "scripts/paper_allowlist_by_year.py",
+ "generated_at_utc": "2026-11-01T11:12:00+00:00"
+}

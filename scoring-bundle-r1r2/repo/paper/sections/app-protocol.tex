@@ -1,7 +1,7 @@
 \section{Forecast methods and the R2 protocol}\label{app:protocol}
 
 This appendix gives the forecast methods and metrics of R1 and R2, the failed arms, further results, and what a reader needs to judge R2.
-A deviation ledger and review records in the project repository record each item, and the released package does not yet hold them (\Cref{sec:openscience}).
+A deviation ledger and review records record each item, and the scoring bundle holds them (\Cref{sec:openscience}).
 % round-3 review NEW-9: the ledger is not released, so its identifiers (D-A17 ... D-A39) are no longer printed; each item keeps its ID in a comment.
 
 \paragraph{Supplementary tables.}\label{app:tables}
@@ -13,10 +13,11 @@ At the end of this appendix, \Cref{fig:pairs,tab:recovery-gap,tab:recovery-daybl
 \Cref{tab:slice-persistence} compares the issue-time slice with persistence, and \Cref{tab:leak-audit} gives the audit of R1 test leaks.
 \Cref{tab:r2-lanes} gives the secondary lanes of R2 from the two disclosed re-scorings.
 \Cref{tab:recovery-dayblock,tab:month-boundary,tab:actor-bootstrap,tab:month-boundary-actor,tab:set-errors,tab:leaker-split,tab:slice-persistence,tab:leak-audit} hold revision analyses, which we designed after the R1 and R2 results.
-% src: first commits of their scripts from 2026-10-30 16:11 UTC to 2026-10-31 17:47 UTC, after the R2 label join (sections/app-protocol.tex
+% src: first commits of their scripts from 2026-10-30 16:11 UTC to 2026-11-01 02:28 UTC (scripts/paper_native_vs_shared.py, 2c985bbc), after the R2 label join (sections/app-protocol.tex
 %   "Revision analyses" src comment; round 6 corrected the former "on 2026-10-31 UTC", c280001d is 2026-10-30 16:11 UTC);
 %   scripts/paper_slice_vs_persistence.py and scripts/paper_leak_audit.py: b644cf6b 2026-10-31 17:47 UTC (TZ=UTC git log --diff-filter=A).
 
+\subsection{Methods and further results}
 \paragraph{Terms.}
 \begin{itemize}
 \item \emph{Issue time}: the onset plus $\Dl$, 30 or 60\,s.
@@ -160,12 +161,13 @@ No failed cell or role is scored, and the reports list each one with its reason.
 29 Oct, 21:00 & C2 at 30\,s named the headline contrast. \\
 30 Oct, 08:53 & Labels joined to forecasts once; primary result written (attempt 12). \\
 30 Oct, 11:28 & One disclosed re-scoring of the secondary lanes approved. \\
-30 Oct--1 Nov & Revision analyses of the R1 and R2 scores committed from 30 Oct, 16:11, to 1 Nov, 06:06, after the primary result. \\
+30 Oct--1 Nov & Revision analyses of the R1 and R2 scores committed from 30 Oct, 16:11, to 1 Nov, 02:28, after the primary result. \\
 31 Oct, 08:46 & Second label read, for the secondary lanes, with the primary result recomputed as a check. \\
 31 Oct, 21:53 & Re-scoring run ends, with the stable-peer lane failed. \\
 31 Oct, 23:24 & A further re-scoring of the stable-peer lane approved. \\
 1 Nov, 02:59 & Third label read, for the stable-peer lane only, with the primary result recomputed as a check. \\
 1 Nov, 03:29 & Stable-lane re-scoring run ends. \\
+1 Nov, 06:06 & Last revision analyses committed (R1 ranking file, leak-audit evidence); they read no R2 label. \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -176,7 +178,7 @@ No failed cell or role is scored, and the reports list each one with its reason.
 %   "The recomputed primary (primary-recomputed-D-A39.json) is canonically identical to attempt 12's primary.json except the unblinded-marker
 %   path"; run end: paper/generated/newperiod-lanes.json completion.utc "2026-10-31T21:53:11Z". "D-A40 (approved by the authors 2026-10-31T23:24Z ...):
 %   one disclosed third label read for the stable-peer lane only"; its outcome is left for the owner (not printed). Revision analyses: first
-%   commit c280001d 2026-10-30 16:11:31 UTC (scripts/paper_month_boundary.py, paper_recovery_dayblock.py), last b644cf6b 2026-10-31 17:47:33 UTC
+%   commit c280001d 2026-10-30 16:11:31 UTC (scripts/paper_month_boundary.py, paper_recovery_dayblock.py), last before the third label read 2c985bbc 2026-11-01 02:28 UTC, after it f6b527d0 06:02 and 8bc96dbc 06:06 UTC; formerly b644cf6b 2026-10-31 17:47:33 UTC
 %   (git log --diff-filter=A, %aI; src comment of "Revision analyses" below). The former "31 Oct" for this row missed the 30 Oct commit.
 % src (round 4, review-r4 W3 "18 October ordering"; panel-r4 Q11 / T7): git commit times in UTC (TZ=UTC git log):
 %   8c471701 2026-10-17 18:34:15 "ranking-primary protocol revision (per-event AP)" (docs/paper/forecasting-improvement-20261017/PRIMARY-METRIC-REVISION.md,
@@ -248,6 +250,7 @@ The mean of C2 thus combines a lead of SAGE with history on small events and a l
 %   online_history 0.035 / 0.048 / 0.211 / 0.580; online_history_native 0.046 / 0.051 / 0.234 / 0.682.
 % layout (round 4, page limit): moved unchanged from sections/08-forecast.tex "Magnitudes".
 
+\subsection{Revision analyses}
 \paragraph{Month boundary.}
 First-of-month identifier dates hold 15\,\% of R1 and 13\,\% of R2 events, against 3.3\,\% and 4.4\,\% for uniform dates (\Cref{sec:disc}).
 In R1, 65 of the 99 volume-selected events fall on that day, and the R2 scores lack the selection reason.
@@ -378,7 +381,7 @@ A repeat leaker is thus an AS-level notion relative to these selections, not to 
 A persistent valley path from a complex AS relationship would also recur under the same leaker.
 % src (round 5, panel-r5 NEW-11, domain B5, DA #10): leaker_split.json definitions.library (released event tables, error null);
 %   sections/03-data.tex "Replay selections" (Radar matches plus the top candidates by volume; 2023 holds only the top 396). Complex AS
-%   relationships (partial transit, hybrid, siblings) are the domain reviewer's alternative; no triple-level recurrence was computed.
+%   relationships (partial transit, hybrid, siblings) are an alternative explanation; no triple-level recurrence was computed.
 % src: paper/generated/leaker_split.json definitions.leaker, definitions.repeat ("onset + 7200 s <= this event's onset"), definitions.library;
 %   R1.provenance.leaker_check (events_checked 3,543, identifier_matches_event_table_a true); R1.provenance.library_tables (2023, 2024, 2025);
 %   R2.provenance.library_tables (2023--2026) and R2.history_gap ("the other 22 (onset outside the window) ... classed first-seen here";
@@ -488,6 +491,9 @@ The routes of these five events were visible from the start of the look-back, an
 The identifier keeps triples whose first and last AS are the same, such as 131111-131736-131111.
 They are 4 of the \num{16602} audited triples, and no class rests on them alone.
 The identifier also applies the CAIDA relationships, which CAIDA infers from IPv4 paths, to IPv6 paths, and 21 audited leaks are IPv6-only.
+This can explain part of the two IPv6-only events of Hurricane Electric in the relationship-consistent class.
+Under CAIDA's IPv6 relationships, 15 to 30\,\% of their triples still violate valley-freeness.
+% src (round 8, methodology): leak_audit.json events 20250903T120129_leak_6939 rel_v6 106 of 518 violating, 20251201T000000_leak_6939 1,428 of 4,702.
 % src (round 7, domain B1): src/bgbench/leakcheck.py relationship_table (one {ym}01.as-rel.txt for all paths); leak_audit.json independent
 %   (ipv6_only events: 21; two of the five AS6939 events are IPv6-only, three mixed); CAIDA IPv6 relationships as a descriptor only.
 % src (round 7, criterion M23(h)): leak_audit.json events[*].triples with x == b: 20251101T000019_leak_131736 (131111-131736-131111, rule A2,
@@ -512,17 +518,24 @@ This check therefore does not measure precision.
 %   0.9565 [0.8220, 0.9873]. AS3356 (org LPL-141-ARIN) and AS209 (org CCL-534-ARIN) differ in all four snapshots, so the Lumen pair counts as
 %   independent: "independent" bounds the support from above (siblings.note). No sibling pair in any Radar-matched or likely-FP event.
 
-A second class rates the same leaks by fixed rules, without CAIDA relationships and without the arm results.
+A second class rates the same leaks by fixed rules, without the identifier's relationship test and without the arm results.
+Two dated addenda, both before any contrast, handle missing RIPEstat data and can only remove support.
 % src (round 7, review-r6 W1 item 1): leak_audit.json independent.rules, rules_fixed_utc 2026-11-01T03:57:38Z, blind_to_arm_results;
 %   two dated addenda for missing data and the end-state check, both before any contrast.
 A leak is independently supported if a Radar label names the same ASes, or if a new route in RIS~\cite{ripe_ris} ends within two hours.
 % src: independent.rules I3_radar_segment ({leak_seg[0], leak_seg[2]} == {x, b}), I5_path_evolution P1..P5 (absent from the previous month's
 %   new triples and, in RIPEstat BGPlay, at t0 - 1 h; seen by RIS in the window; no RIS peer carries it at t0 + 2 h).
 It is independently contradicted if every triple joins two ASes of one organisation, and uncertain otherwise.
-Of the 120 leaks, 71 are independently supported, 4 independently contradicted and 45 uncertain, among them 10 IPv6-only leaks.
+
+Of the 120 leaks, 71 are independently supported, 50 by a Radar label and 21 by a short new route, 4 contradicted and 45 uncertain.
+A short new route shows an anomaly, not a policy violation, so these classes corroborate and do not validate.
 % src: independent.sample_totals 71 / 4 / 45; rule_totals I3 50, I5 21, I1 4, I4_ipv6_only 10, I6 35; cohort_estimate supported 0.8337 [0.6721, 0.9196].
-The 61 eligible supported leaks give wide intervals for C2 ($+0.025$) and the native contrast ($-0.003$, AP at 30\,s).
-Radar also uses inferred relationships and the same collectors, so this class corroborates leaks but does not measure precision.
+
+On the 61 eligible supported leaks, unweighted, C2 is $+0.025$ with an interval above zero, and the native contrast is $-0.003$.
+Both intervals contain the values over all eligible events.
+For 25 of the 50 leaks that Radar supports, RIS or the previous month already shows the path before the onset.
+This subset holds only 1 of the 30 sampled volume-selected leaks of day 1, so it cannot show why the native contrast differs.
+Radar also uses CAIDA relationships, among others, and the same collectors, so this class corroborates leaks but does not measure precision.
 % src: sensitivity["C2@30"].sample_independently_supported +0.0251 [+0.0049, +0.0562], 61 events, 37 blocks; native@30 -0.0031 [-0.0304, +0.0301].
 %   The supported subset holds 1 of the 30 volume day-1 events, so the near-zero native contrast does not show that the native gain
 %   comes from false positives (INDEPENDENT-PROPOSAL.md).
@@ -565,6 +578,7 @@ Native history gains $+0.029$ [$+0.026$, $+0.032$] AP in R1 and $+0.030$ [$+0.02
 % src: paper/generated/native_vs_shared.json (scripts/paper_native_vs_shared.py, round 7): R1 30 s +0.0291 [+0.0263, +0.0325], 60 s +0.0266
 %   [+0.0232, +0.0305]; R2 30 s +0.0301 [+0.0253, +0.0353], 60 s +0.0245 [+0.0190, +0.0302]; 10,000 repetitions, seed 1701, unadjusted.
 
+\subsection{Protocol record}
 \paragraph{Choices that affect reported numbers.}
 \begin{itemize}
 \item \emph{Primary metric.} We changed the primary metric from Jaccard to AP over new members after the development fits.
@@ -644,13 +658,24 @@ Attempts 1--11 stopped before it opened the label table, and none produced an ou
 Attempt 12 opened the labels once and wrote the primary result of \Cref{sec:forecast-newperiod}.
 It then failed while it scored the secondary lanes, because the scoring module repeats the float32 decision check below in float64.
 
+\paragraph{Lane definitions.}
+Candidate expansion (H1) adds to the candidates of each event the 500 ASNs with most participation in completed earlier events.
+Development validation Jaccard chose this number among 100, 500 and \num{1000}.
+The stable-peer lane keeps only the messages of the 639 peer identities that all 44 monthly peer lists of the ten collectors hold.
+We chose these peers from coverage data before any outcome, and the lane rebuilds the seeds, the inputs and the two-hour target from their messages.
+The frozen models score it without retraining, and an event without stable-peer input is an abstention with an empty forecast.
+% src (round 8, review-r8 W5): docs/paper/forecasting-improvement-20261017/CANDIDATE-EXPANSION.md (top K by completed-event participation,
+%   K from 100/500/1000 by development validation Jaccard; K = 500 per the lane records, build_lanes.py comparator);
+%   PEER-CHURN.md "The stable-peer sensitivity" (639 identities listed in all 44 monthly snapshots; inputs and target rebuilt; abstention rule);
+%   src/bgbench/forecast_stable_peer.py STABLE_PEER_COUNT 639.
+
 \paragraph{Re-scorings of the secondary lanes.}
 On 30 October, the authors approved one disclosed re-scoring of the secondary lanes, with the same float32 comparison.
 It read the labels a second time, on 31 October at 08:46 UTC.
 It also recomputed the primary result as a check, which matched attempt 12 apart from the path of its marker file.
 The primary result stays the one of attempt 12.
-The re-scoring scored 266 of the 344 secondary roles.
-It stopped on the stable-peer lane at an event whose stable-peer target and forecast were both empty, where the Jaccard is undefined.
+Its stable-peer lane failed at an event whose stable-peer target and forecast were both empty, where the Jaccard is undefined.
+The run went on and scored the other families, 266 of the 344 secondary roles.
 
 The completion gate of this run therefore refused it, so the run is not certified.
 Its record also marks the outcome as not authorised for release, which each driver records by design.
@@ -666,8 +691,8 @@ Only the 29 events at 30\,s and the 25 at 60\,s without input have an empty fore
 These sets are the same in every arm, so the arms stay paired.
 This re-scoring read the labels a third time, on 1 November at 02:59 UTC.
 
-It removed the same 3 events at 30\,s and at 60\,s and scored all 24 roles of the lane.
-It recomputed the primary result identically, and its completion gate passed, with the other eight families recorded as out of scope.
+It removed the same 3 events at both horizons, scored all 24 roles, and recomputed the primary result identically apart from its marker path.
+Its completion gate passed, with the other eight families recorded as out of scope.
 We wrote no separate data validator for it, and an independent review checked its record and the extraction of \Cref{tab:r2-lanes}.
 Thus the scored lanes come from two runs, and no single check certifies their union.
 The printed lane values are partial verified results, not a certified completion of the evaluation.

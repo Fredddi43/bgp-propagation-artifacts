@@ -38,13 +38,11 @@ We operated its seal ourselves, no third party timestamped it, and an AI session
 \paragraph{Contributions.}
 Our four contributions show how the clock, the selection or the collectors shape early observations.
 \begin{itemize}
-\item \textbf{The clock and the selection decide class comparisons (\Cref{sec:prop}).} From the first observation of the new origin, invalid-origin events show the largest share of their two-hour AS set at 30\,s.
-It is 0.61--0.74 in 2023--2026, against 0.32--0.42 for valid origins.
+\item \textbf{The clock and the selection decide class comparisons (\Cref{sec:prop}).} From the first observation, invalid-origin events show the largest share of their two-hour AS set at 30\,s, 0.61--0.74 against 0.32--0.42 for valid origins.
 The new origin was visible more than a minute before the identified change for 54--72\,\% of valid events, but for only 6--16\,\% of invalid events.
 For events first observed near the change, class differences in 2023--2026 shrink, but this rule keeps 84--94\,\% of invalid and 28--46\,\% of valid events.
 In 2023--2025, a label-free sample shows that catalogue selection also raises the 30-s share of invalid events.
 \item \textbf{The return differs by identifier gap (\Cref{sec:recovery}).} For pairs with an identifier gap of at least 15 minutes, the return shows more of its final set at 30\,s.
-Its day-block intervals are above zero in 2022, 2023 and 2025.
 Most of the \num{20256} matched pairs, 55--65\,\%, are flips less than one minute apart.
 In these flips the observed return set is larger than the outward set.
 An early end of the outward change, ROV or path exploration may explain it, and we did not test which.
@@ -52,15 +50,13 @@ An early end of the outward change, ROV or path exploration may explain it, and 
 Two upstream changes in April coincide with the steps of this fall, on top of an earlier decline.
 \item \textbf{Forecast comparisons depend on the selection and the setup (\Cref{sec:forecast}).} On large leaks selected by final size, graph models gain up to $+0.20$ Jaccard over persistence in exploratory tests, and history almost as much.
 In R1, which differs in selection, training and calibration, the set forecast of SAGE with history equals persistence for 95\,\% of events at 30\,s.
-A revision analysis finds it within 0.001 Jaccard of persistence by point estimate also on fast-growing events.
 % round 6 (panel-r6 NEW-4(b) / X5; review-r6 "add by point estimate"): the slice intervals reach -0.0028 and +0.0014, and the R1 30-s
 %   interval [+0.0003, +0.0014] excludes zero (sections/08-forecast.tex "Secondary metrics", tab:slice-persistence); "events that grow by issue time"
 %   -> "events with fast early growth" (the slice: early growth >= 12 at 30 s, >= 22 at 60 s; 966 of 3,543 R1 events at 30 s).
-
-Message passing and history each add about 0.06 average precision (AP) alone, and 0.01--0.02 given the other.
-On the same candidates, we detect no AP difference between SAGE with history and online history.
+%   Round 8: the slice sentence left the intro for length; the abstract and sections/08-forecast.tex keep it.
+On the same candidates, we detect no average-precision (AP) difference between SAGE with history and online history.
 Online history with its own, nearly complete candidate set reaches a higher AP, in a comparison of complete systems.
-A prespecified replication on autumn 2026 (R2) repeats these Holm decisions, and its other rejections favour history in ranking and SAGE in Jaccard.
+A prespecified replication on autumn 2026 (R2) repeats these Holm decisions, and its other rejections favour history in ranking and SAGE in sets.
 \end{itemize}
 
 We release the code and the derived data (\Cref{sec:openscience}).

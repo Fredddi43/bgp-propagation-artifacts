@@ -374,6 +374,9 @@ def small_interval(diff, ci):
     return f"{s(diff)} [{s(ci[0])}, {s(ci[1])}]"
 
 
+PANEL_A_ARMS = ("sage_on", "online_history", "history_median", "persistence")   # rows of set_errors.tex (R1 only)
+
+
 def write_tex(path, res):
     dash = "--"
     lines = [
@@ -405,15 +408,20 @@ def write_tex(path, res):
                      f"{thousands(entry['eligible_events'])})"]
             i = 0
             for arm in TABLE_ARMS:
+                in_panel_a = period == "R1" and arm in PANEL_A_ARMS   # panel A prints these R1 values already
+                if arm == "persistence" and in_panel_a:
+                    continue                                       # nothing left to print
                 if arm == "persistence":
-                    cells = [dash, f"{entry['persistence']['jaccard']:.3f}", dash, "0", "0"]
+                    cells = [dash, dash if in_panel_a else f"{entry['persistence']['jaccard']:.3f}", dash,
+                             dash if in_panel_a else "0", dash if in_panel_a else "0"]
                 elif arm in entry["arms"]:
                     e = entry["arms"][arm]
                     mp = e["set"]["minus_persistence"]
-                    cells = [f"{e['ranking']['precision_at']['10']['mean']:.3f}", f"{e['set']['jaccard']['mean']:.3f}",
+                    cells = [f"{e['ranking']['precision_at']['10']['mean']:.3f}",
+                             dash if in_panel_a else f"{e['set']['jaccard']['mean']:.3f}",
                              small_interval(mp["difference"], mp["ci95"]),
-                             f"{e['set']['no_growth_any_share']['mean']:.3f}",
-                             f"{e['set']['no_growth_false_mean']['mean']:.2f}"]
+                             dash if in_panel_a else f"{e['set']['no_growth_any_share']['mean']:.3f}",
+                             dash if in_panel_a else f"{e['set']['no_growth_false_mean']['mean']:.2f}"]
                 else:
                     continue
                 lead = leads[i] if i < len(leads) else " & "

@@ -895,6 +895,12 @@
 /cluster/r1-release-parallel-v11-20261024/control-v1/results/per_event/withhold__withhold__transfer__transfer-repaired_c3_sage_history-on_d60_seed4.json
 /cluster/r1-release-parallel-v11-20261024/control-v1/results/per_event/withhold__withhold__transfer__transfer-repaired_gbdt_config4_d30_seed0.json
 /cluster/r1-release-parallel-v11-20261024/control-v1/results/per_event/withhold__withhold__transfer__transfer-repaired_gbdt_config4_d60_seed0.json
+/leak-audit-data/labels/events_ranked.parquet
+/leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet
+/leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet
+/leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet
+/leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet
+/leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet
 /repo/.agents/operations/r1-v11-posteval-20261024/evidence/released/report.json
 /repo/paper/generated/leak_audit.json
 *.restoring

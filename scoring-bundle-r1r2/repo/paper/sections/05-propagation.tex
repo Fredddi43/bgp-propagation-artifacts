@@ -73,6 +73,8 @@ The stratified sample, which depends less on the catalogue, has a floor of 0.41-
 The replay searches the new origin from one hour before the identifier (\Cref{sec:data}).
 For invalid origins, the first observation is usually the identified change itself, with a median lag of 0\,s.
 Valid and unknown origins often appear earlier, and valid origins have median lags of $-700$ to $-1{,}800$\,s over all events of a year.
+We did not compute incident-weighted floors, because the event tables hold no incident identifier.
+% src (round 8, criterion M11): data/corrected-release-20261016/eventset/<year>/events.parquet columns (no incident identifier).
 
 In 2023--2026, the new origin was visible more than 60\,s before the identifier for 54--72\,\% of valid events.
 The share is 29--43\,\% for unknown and 6--16\,\% for invalid events (\Cref{fig:headline}b).
@@ -147,7 +149,7 @@ We therefore keep each AS at its last ratio before 31 May 2025 for later events.
 
 For each event, the carriers are the ASes on observed paths to the new origin within two hours.
 The frontier holds their CAIDA one-hop neighbours that are not carriers.
-Each event gets the log-odds of the protected share in its measured frontier relative to its measured carriers, with one half added to each cell.
+Each event gets the log-odds of the protected share in its measured frontier relative to its measured carriers, adding one half to each cell.
 
 In the catalogue population of 2023--2026, the mean is $+0.41$ to $+0.67$ for invalid origins and negative for valid and unknown origins (\Cref{fig:headline}c).
 Invalid minus valid is $+1.10$ to $+1.30$, and invalid minus unknown $+1.00$ to $+1.34$.

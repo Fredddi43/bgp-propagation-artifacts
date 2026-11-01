@@ -1,7 +1,6 @@
 # R1/R2 scoring bundle
 
-**Status: assembled locally, not uploaded.** This directory is the anonymized scoring bundle of the retrospective (R1)
-and new-period (R2) forecast evaluations. Nothing has been pushed or published.
+This directory is the anonymized scoring bundle of the retrospective (R1) and new-period (R2) forecast evaluations.
 
 - `MANIFEST.json`: every file with its size, SHA-256, component, role and source; for redacted files also the SHA-256 of
   the original bytes; the hash checks made at assembly; the list of excluded items.
@@ -11,8 +10,10 @@ and new-period (R2) forecast evaluations. Nothing has been pushed or published.
   call `<FORECAST_ROOT>`: a path `<FORECAST_ROOT>/x` in any record is the file `cluster/x` here.
 - `repo/`: files of the source repository at their repository paths (code, records, paper outputs). A path `<REPO>/x` in
   a record is `repo/x` here.
+- `leak-audit-data/`: the store inputs of the leak audit (`paper_leak_audit.py --data`): `leak_events/`, `triples/` and
+  `labels/`. A path `<data>/x` in `leak_audit.json` is `leak-audit-data/x` here.
 
-**Size:** 3,242 files, 36,348,418,707 bytes (36.3 GB), including the four top-level documents
+**Size:** 3,288 files, 36,538,293,157 bytes (36.5 GB), including the four top-level documents
 (`README.md`, `MANIFEST.json`, `REDACTIONS.md`, `LICENSE`), which `MANIFEST.json` does not list.
 
 ## What is included
@@ -21,7 +22,7 @@ and new-period (R2) forecast evaluations. Nothing has been pushed or published.
 |---|---|---|---|
 | `r2_results` | R2 primary result of attempt 12, its per-event scores and intent; local copies of `primary.json` and the facts projection | 5 | 54,313,721 |
 | `r2_secondary` | D-A39 re-scoring records and the nine family files with their manifests; D-A40 stable-lane records | 35 | 6,203,266,755 |
-| `r2_lanes` | the paper's lane table and its JSON | 3 | 107,557 |
+| `r2_lanes` | the paper's lane table and its JSON | 3 | 107,693 |
 | `lane_extraction` | D-A39 and D-A40 lane extractions: scripts, inputs and outputs, validator rev5 runs | 47 | 1,321,930 |
 | `r2_labels` | R2 label table and G4 receipt | 2 | 611,351,309 |
 | `access_log` | custodian access log | 1 | 10,651,188,863 |
@@ -34,8 +35,9 @@ and new-period (R2) forecast evaluations. Nothing has been pushed or published.
 | `evaluator` | R2 runner, chain code (attempt 12, D-A39, D-A40), G2 tools, validator, completion records, 90 closure sources | 243 | 2,806,050 |
 | `wrappers` | in-process wrappers of the evaluator | 23 | 124,243 |
 | `review_records` | review and approval records of the R1 and R2 steps | 1,689 | 6,568,490 |
-| `analysis_over_bundle` | paper analyses that read the bundle, and their outputs | 33 | 19,291,877 |
-| `paper_sections` | paper section source (`paper/sections/*.tex`) at the repository's current commit | 14 | 260,926 |
+| `analysis_over_bundle` | paper analyses that read the bundle, and their outputs | 54 | 20,166,561 |
+| `leak_audit_data` | leak-audit store inputs: leak-event and new-triple tables (pipeline-derived), Cloudflare Radar route-leak labels (CC BY-NC 4.0) | 24 | 188,924,927 |
+| `paper_sections` | paper section source (`paper/sections/*.tex`) and `paper/refs.bib` at the repository's current commit | 15 | 307,548 |
 
 In detail:
 
@@ -86,9 +88,13 @@ In detail:
 - **R1 ranking file** (`cluster/r1-rank-sidecar-20261101/`): `sidecar/{cells,events,sets}.parquet` with its
   `MANIFEST.json`, the README, the build scripts and the checker results; the checker is
   `repo/scripts/r1_rank_sidecar_check.py`. It replaces the raw R1 forecasts for the ranking metrics.
-- **Paper analyses over the bundle**: the scripts under `repo/scripts/` listed below and their outputs under
-  `repo/paper/generated/`.
-- **Paper sections**: `repo/paper/sections/*.tex` at the repository's current commit.
+- **Paper analyses over the bundle**: every revision analysis, with its script under `repo/scripts/` and its outputs
+  under `repo/paper/generated/` (table below), plus the generated facts two of them read (`propagation-facts.json`,
+  `frontier_facts.json`) and `paper_propagation_tables.py`, which the onset analyses import.
+- **Leak-audit inputs** (`leak-audit-data/`): the month leak-event tables of the identifier (`leak_events/`), the month
+  new-triple tables (`triples/`), both derived by the pipeline, and the Cloudflare Radar route-leak labels with the replay
+  selection (`labels/`; Cloudflare Radar, CC BY-NC 4.0). Each file that `leak_audit.json` cites matches its recorded hash.
+- **Paper sections**: `repo/paper/sections/*.tex` and `repo/paper/refs.bib` at the repository's current commit.
 
 ## What is excluded, and why
 
@@ -103,11 +109,12 @@ In detail:
 | Run specifications and read inventories of attempt 12, the D-A39 and the D-A40 runs (`r2-inventory.json`, `spec.json`, `read-inventory.json`, `template.json`, `work/`) | the large ones about 120 to 130 MB each | Run plumbing; the pinned R2 execution spec is included. Available on request. | `ready.json`, run records |
 | CAIDA AS-to-organisation files `20250901`, `20251001`, `20251101`, `20251201` `.as-org2info.txt.gz` (input of `paper_leak_audit.py --as2org`) | not redistributed | CAIDA Acceptable Use Agreement. Obtain them from <https://publicdata.caida.org/datasets/as-organizations/>; SHA-256 below. | `repo/paper/generated/leak_audit.json` (`inputs_sha256`) |
 | CAIDA AS-relationship files `YYYYMM01.as-rel.v6-stable.txt.bz2`, 202508 to 202601 (input of `paper_leak_audit.py --asrel-v6`) | not redistributed | CAIDA Acceptable Use Agreement. Obtain them from <https://publicdata.caida.org/datasets/as-relationships/serial-1/>; SHA-256 below. | `repo/paper/generated/leak_audit.json` (`inputs_sha256`) |
+| CAIDA-derived relationship tables `graphs/YYYYMM01.rel.parquet`, 202508 to 202601 (the `graphs/` part of `paper_leak_audit.py --data`) | not redistributed | Built from CAIDA serial-1 AS-relationship files (<https://publicdata.caida.org/datasets/as-relationships/serial-1/>) with `bgbench.leakcheck.relationship_table`; CAIDA Acceptable Use Agreement. SHA-256 below. | `leak_audit.json` (`inputs_sha256`) |
 | RIPEstat BGPlay downloads of `paper_leak_audit.py --ris` (207 files and their `MANIFEST.json`, about 913 MB) | not included | Public and re-fetchable: `--ris <dir> --ris-fetch` downloads them again; their `MANIFEST.json` records URL, fetch time and SHA-256 of each file. | `leak_audit.json` (`inputs_sha256`), `<ris>/MANIFEST.json` SHA-256 `2dcad61825c8bc7f504cc1fca928bc46f8e6a9a8f990848b2c72f37077a62213` |
 | Eight synthetic `ROOT-GO.json` test fixtures in pytest temporary directories of two review runs | small | Test output, not review records. | none |
 
 Also not included: raw MRT archives, model checkpoints, credentials and the private repository history. The public data
-products of the 16 October package are not repeated here; one analysis input comes from that package (below).
+products of the 16 October package are not repeated here; several analyses read its `data/` tree (below).
 
 ## Restoring the files
 
@@ -235,8 +242,13 @@ Common inputs, with `R1=cluster/r1-release-parallel-v11-20261024/control-v1` and
 | `paper_leaker_split.py` | `--r1-events`, `--eventset-root <16 October package>/data/eventset` | `leaker_split.{json,tex}` |
 | `paper_slice_vs_persistence.py` | none (no `--r1-events`) | `slice_vs_persistence.{json,tex}` |
 | `paper_native_vs_shared.py` | none (no `--r1-events`); writes only `--out-json` | `native_vs_shared.json` |
+| `paper_recovery_dayblock.py` | only the 16 October package's `data/` directory (positional) | `recovery_dayblock.{json,tex}` |
+| `paper_measurement_checks.py` | only the 16 October `data/` directory and the output directory (positional); reads `propagation-facts.json` and `frontier_facts.json` | `measurement-checks-facts.json`, `recovery_gap.tex`, `recovery_summary_rows.tex`, `floor_bins.tex`, `frontier_diff.tex`, `floor_dayblock.tex` |
+| `paper_onset_sensitivity.py`, `paper_onset_sensitivity_ci.py` | only the 16 October `data/` directory and the output directory (positional); read `propagation-facts.json` | `onset_sensitivity.json`, `onset_sensitivity_ci.json` |
+| `paper_allowlist_by_year.py` | `--cache <dir>`: a read-only collection of identifier outputs from the store; **not included** (store intermediates) | `allowlist_by_year.json` |
+| `paper_roa_anchor_check.py` | `collect` over the 16 October `data/` tree and the new-period finalize output (a store intermediate, **not included**), then `ripe-check`, which downloads RIPE NCC RPKI archive files (third party) | `roa_anchor_check.json` |
 | `paper_r1_arm_levels.py` | only `--report` (the R1 report) and `--comparisons paper/generated/r1-comparisons.json` | `r1-arm-levels.{json,tex}` |
-| `paper_leak_audit.py` | `--events` (the same 16 October `events.parquet`), `--data <copy of leak_events/, triples/, graphs/, labels/>`: **those store inputs are not in this bundle**; `--as2org` and `--asrel-v6` with the CAIDA files below, `--ris <dir>` (with `--ris-fetch`) for the RIPEstat BGPlay files; no `--r2-scores`, `--r2-report` | `leak_audit.{json,tex}`, `leak_audit_sample.csv` (`leak_audit_novolume.json` with `--novolume-only`) |
+| `paper_leak_audit.py` | `--events` (the same 16 October `events.parquet`), `--data "$B/leak-audit-data"` after adding the CAIDA-derived `graphs/` there (command below); `--as2org` and `--asrel-v6` with the CAIDA files below, `--ris <dir>` (with `--ris-fetch`) for the RIPEstat BGPlay files; no `--r2-scores`, `--r2-report` | `leak_audit.{json,tex}`, `leak_audit_sample.csv` (`leak_audit_novolume.json` with `--novolume-only`) |
 
 The reader-obtained inputs of `paper_leak_audit.py` (not included, see above), with the SHA-256 recorded in
 `leak_audit.json`:
@@ -253,7 +265,25 @@ The reader-obtained inputs of `paper_leak_audit.py` (not included, see above), w
 | `20251101.as-rel.v6-stable.txt.bz2` | `6e46d578613786345102d7f608d0b7c0ffe225b38c0b241bcf32f873a132fc18` |
 | `20251201.as-rel.v6-stable.txt.bz2` | `516032a32bec715e30f1b4f7d686fe61f773de11d55a78ff6628cb6ac520ac34` |
 | `20260101.as-rel.v6-stable.txt.bz2` | `352cb095cd80fed1af531820c9e18af97565082db63ec2d3f3154077bc8e65b5` |
+| `graphs/20250801.rel.parquet` | `1c388429bc626ab8cdecfa636b14092fd2ade2d3938ca7fa927ef7dfa413f073` |
+| `graphs/20250901.rel.parquet` | `043ac6405f6321664fe5e880c57729634e1604bffff7d1670c2269d5867938ac` |
+| `graphs/20251001.rel.parquet` | `98da405a4dba0de40c7578ef59bd08af7cbf83d9f7a3306aa1e9b6274aa15a29` |
+| `graphs/20251101.rel.parquet` | `22a7f4d3fad809e244ae662ad26f3c032bfb007d9756d885570b7b8b1163c145` |
+| `graphs/20251201.rel.parquet` | `135725bf3a81b68dbeedc79a68e4dde24a4187911321f2aad15f1220ff670b81` |
+| `graphs/20260101.rel.parquet` | `836ca07ee7a39e5d66c03182dcfe465b920005b30c867c7a48ab0bf03cdb667d` |
 | RIPEstat BGPlay `MANIFEST.json` (`--ris` directory) | `2dcad61825c8bc7f504cc1fca928bc46f8e6a9a8f990848b2c72f37077a62213` |
+
+To rerun the leak audit, put the CAIDA-derived `graphs/` into `leak-audit-data/`, apply the R1-report adjustment below in
+a copy of `repo/`, copy the 16 October package's events table into that copy
+(`mkdir -p data/eventset/2025_leak && cp "$PKG/data/eventset/2025_leak/events.parquet" data/eventset/2025_leak/`; the script
+records input paths only relative to `--data`, `--ris` or the repository and refuses others), and run from that copy
+(`$PKG` is the 16 October package, `$CAIDA` holds the CAIDA files):
+
+```bash
+python3 -I -B scripts/paper_leak_audit.py --events data/eventset/2025_leak/events.parquet --data "$B/leak-audit-data" --r1-report .agents/operations/r1-v11-posteval-20261024/evidence/released/report.json --r1-per-event "$B/cluster/r1-release-parallel-v11-20261024/control-v1/results/per_event" --r1-arm-spec .agents/operations/r1-arm-spec-20261020/arm-spec.json --r1-manifest-30 .agents/operations/r1-v11-posteval-20261024/evidence/released/retrospective-2025-v6-d30.json --r1-manifest-60 .agents/operations/r1-v11-posteval-20261024/evidence/released/retrospective-2025-v6-d60.json --as2org "$CAIDA"/2025{09,10,11,12}01.as-org2info.txt.gz --asrel-v6 "$CAIDA"/*.as-rel.v6-stable.txt.bz2 --ris /tmp/ris_bgplay --ris-fetch --out-json /tmp/leak_audit.json --out-tex /tmp/leak_audit.tex --out-csv /tmp/leak_audit_sample.csv
+```
+
+`--ris-fetch` downloads the RIPEstat BGPlay files into the `--ris` directory again. Checked when the bundle was assembled, with the 16 October `events.parquet`, the CAIDA files and the RIPEstat files of the paper's run: `leak_audit.tex` and `leak_audit_sample.csv` came out byte-identical; `leak_audit.json` differed only in recorded input hashes (the events table's path and hash, the redacted R1 report and cohort manifests).
 
 Every script takes `--out-json` and (except `paper_native_vs_shared.py`) `--out-tex` (and `paper_leak_audit.py` also `--out-csv`); the full command of each is in
 its docstring. The scripts check every R1 per-event file against the report's `per_event_sha256` (the per-event files
@@ -294,16 +324,20 @@ from the paper's only in those provenance hashes (`provenance/R1/report_sha256`,
   two runs are in `cluster/d-a39-lane-extract-20261101/out/validate-*.jsonl` and the explanation is in
   `repo/paper/generated/newperiod-lanes.json` (`validator_explanation`). No single check certifies the union of the
   D-A39 and D-A40 records.
-- `repo/scratch/experiment-finish-20261030/code-backup/docs/experiment-completion-20261030/deviation-D-A39.md` is the
-  record written before the run and still reads "pending execution"; the outcomes are in the deviation ledger (entries
-  "D-A39 outcome" and "D-A40 outcome") and in the two `completion.json` files.
+- Both re-scorings have run. `repo/scratch/experiment-finish-20261030/code-backup/docs/experiment-completion-20261030/deviation-D-A39.md`
+  is the record written before D-A39 ran and still reads "pending execution". The outcomes are recorded in the deviation
+  ledger (entries "D-A39 outcome" and "D-A40 outcome") and in the two completion records:
+  `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/completion.json` (`passed: false`, blocking
+  `families_failed: [stable]`, 2026-10-31T21:53:11Z) and
+  `cluster/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/completion.json` (`passed: true`, 2026-11-01T03:29:53Z).
 
 ## Licences
 
 - **Code** (scripts, `src/`, chain code): MIT (`LICENSE`).
 - **Derived data** keep the terms and citation rules of their sources:
   - RouteViews: CC BY 4.0.
-  - Cloudflare Radar: CC BY-NC 4.0.
+  - Cloudflare Radar: CC BY-NC 4.0. The route-leak labels in `leak-audit-data/labels/` are Cloudflare Radar data under
+    this licence; name Cloudflare Radar as the source.
   - PCH: no PCH-derived files are in this bundle (no `2024_pchorigin` or `2024_leakpch` event sets or their event-id
     lists), because the PCH data page names two conflicting licences.
   - RIPE RIS: name the RIPE NCC and RIS as the source (required for commercial use). The RIS-derived tables in this

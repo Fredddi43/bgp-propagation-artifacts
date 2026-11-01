@@ -1,0 +1,1043 @@
+% BGP Anomaly Detection — paper landscape (compiled from literature scan, June 2026)
+% Verification notes from the scan are preserved in bgp_anomalies/CONTEXT.md.
+% Items confirmed via index metadata only (paywalled/JS landing) are marked NOTE in the entry.
+% Camera-ready proposal 2026-10-29: corrected copy of paper/refs.bib; every change is listed in
+% docs/paper/camera-ready-20261030/REFERENCE-VERIFICATION.md. Keys are unchanged.
+
+@article{almusawi2017survey,
+  title = {{BGP} Anomaly Detection Techniques: A Survey},
+  author = {Al-Musawi, Bahaa and Branch, Philip and Armitage, Grenville},
+  journal = {IEEE Communications Surveys \& Tutorials},
+  volume = {19},
+  number = {1},
+  pages = {377--396},
+  year = {2017},
+  doi = {10.1109/COMST.2016.2622240}
+}
+
+@article{scott2024survey,
+  title = {A Survey of Advanced {Border Gateway Protocol} Attack Detection Techniques},
+  author = {Scott, Ben A. and Johnstone, Michael N. and Szewczyk, Patryk},
+  journal = {Sensors},
+  volume = {24},
+  number = {19},
+  pages = {6414},
+  year = {2024},
+  annote = {178 techniques surveyed},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC11479385/},
+  doi = {10.3390/s24196414}
+}
+
+@article{scott2024groupdynamics,
+  title = {{BGP} anomaly detection as a group dynamics problem},
+  author = {Scott, Ben A. and Johnstone, Michael N. and Szewczyk, Patryk and Richardson, Steven},
+  journal = {Computer Networks},
+  year = {2025},
+  doi = {10.1016/j.comnet.2024.110926},
+  volume = {257},
+  pages = {110926}
+}
+
+@inproceedings{cheng2016mslstm,
+  title = {{MS-LSTM}: A Multi-Scale {LSTM} Model for {BGP} Anomaly Detection},
+  author = {Cheng, Min and Xu, Qian and Lv, Jianming and Liu, Wenyin and Li, Qing and Wang, Jianping},
+  booktitle = {Proc. IEEE 24th International Conference on Network Protocols ({ICNP})},
+  year = {2016},
+  url = {https://ieeexplore.ieee.org/document/7785326},
+  pages = {1--6},
+  doi = {10.1109/ICNP.2016.7785326}
+}
+
+@article{shapira2022bgp2vec,
+  title = {{BGP2Vec}: Unveiling the Latent Characteristics of Autonomous Systems},
+  author = {Shapira, Tal and Shavitt, Yuval},
+  journal = {IEEE Transactions on Network and Service Management},
+  year = {2022},
+  url = {https://talshapira.github.io/publications/},
+  volume = {19},
+  number = {4},
+  pages = {4516--4530},
+  doi = {10.1109/TNSM.2022.3169638}
+}
+
+@article{peng2021multiview,
+  title = {A Multi-View Framework for {BGP} Anomaly Detection via Graph Attention Network},
+  author = {Peng, Songtao and Nie, Jiaqi and Shu, Xincheng and Ruan, Zhongyuan and Wang, Lei and Sheng, Yunxuan and Xuan, Qi},
+  journal = {Computer Networks},
+  year = {2022},
+  eprint = {2112.12793},
+  archiveprefix = {arXiv},
+  annote = {Author is Peng et al. (the scan's notes mislabeled this "Sanchez"); also in Computer Networks 2022},
+  volume = {214},
+  pages = {109129},
+  doi = {10.1016/j.comnet.2022.109129}
+}
+
+@inproceedings{elroy2025graph,
+  title = {{Border Gateway Protocol} Hijacks and Anomalies Detection: A Graph-Based Deep Learning Approach},
+  author = {Elroy, Or and Yosipof, Abraham},
+  booktitle = {Artificial Intelligence Applications and Innovations (AIAI 2025), Proceedings, Part II},
+  publisher = {Springer},
+  year = {2025},
+  doi = {10.1007/978-3-031-96228-8_6},
+  series = {IFIP Advances in Information and Communication Technology},
+  pages = {75--86}
+}
+
+@inproceedings{testart2019serialhijackers,
+  title = {Profiling {BGP} Serial Hijackers: Capturing Persistent Misbehavior in the Global Routing Table},
+  author = {Testart, Cecilia and Richter, Philipp and King, Alistair and Dainotti, Alberto and Clark, David},
+  booktitle = {ACM IMC},
+  year = {2019},
+  doi = {10.1145/3355369.3355581}
+}
+
+@article{sermpezis2018artemis,
+  title = {{ARTEMIS}: Neutralizing {BGP} Hijacking Within a Minute},
+  author = {Sermpezis, Pavlos and Kotronis, Vasileios and Gigis, Petros and Dimitropoulos, Xenofontas and Cicalese, Danilo and King, Alistair and Dainotti, Alberto},
+  journal = {IEEE/ACM Transactions on Networking},
+  volume = {26},
+  number = {6},
+  pages = {2471--2486},
+  year = {2018},
+  doi = {10.1109/TNET.2018.2869798}
+}
+
+@article{alfroy2024mvp,
+  title = {Measuring Internet Routing from the Most Valuable Points},
+  author = {Alfroy, Thomas and Holterbach, Thomas and Krenc, Thomas and Claffy, K. C. and Pelsser, Cristel},
+  journal = {arXiv preprint arXiv:2405.13172},
+  year = {2024},
+  eprint = {2405.13172},
+  archiveprefix = {arXiv}
+}
+
+@article{li2025bear,
+  title = {{BEAR}: {BGP} Event Analysis and Reporting},
+  author = {Li, Hanqing and Fedeli, Melania and Kolar, Vinay and Klabjan, Diego},
+  journal = {arXiv preprint arXiv:2506.04514},
+  year = {2025},
+  eprint = {2506.04514},
+  archiveprefix = {arXiv},
+  annote = {LLM event-explanation; Thread-C baseline (report-only, not multimodal)}
+}
+
+@article{li2025radosa,
+  title = {Understanding {BGP} with Large Language Models: Towards Routing Anomaly Detection and Root Cause Analysis},
+  author = {Li, Pengfei and Liu, Yujing and Su, Jinshu and Yu, Bo},
+  journal = {SSRN preprint 5278780},
+  year = {2025},
+  annote = {Radosa. KG (CAIDA+RPKI) + GAE detector + LLM-RAG RCA; 15 events 2008-2023. The Thread-C scoop risk -- see CONTEXT.md},
+  url = {https://ssrn.com/abstract=5278780}
+}
+
+@article{zhao2025bgpshield,
+  title = {From Topology to Behavioral Semantics: Enhancing {BGP} Security by Understanding {BGP}'s Language with {LLMs}},
+  author = {Zhao, Heng and Wang, Ruoyu and Zheng, Tianhang and Li, Qi and Lv, Bo and Wang, Yuyi and Du, Wenliang},
+  journal = {arXiv preprint arXiv:2511.14467},
+  year = {2025},
+  eprint = {2511.14467},
+  archiveprefix = {arXiv},
+  annote = {LLM-embedding detection + attribution; related, not RCA}
+}
+
+@article{adebayo2025blindspot,
+  title = {The Blind Spot of {BGP} Anomaly Detection: Why {LSTM} Autoencoders Fail on Real-World Outages},
+  author = {Adebayo, Samuel Oluwafemi},
+  journal = {arXiv preprint arXiv:2506.17821},
+  year = {2025},
+  eprint = {2506.17821},
+  archiveprefix = {arXiv},
+  annote = {LSTM-autoencoders fail on signal-loss outages; motivation + test case}
+}
+
+@article{giaconia2025crunching,
+  title = {Is Crunching Public Data the Right Approach to Detect {BGP} Hijacks?},
+  author = {Giaconia, Alessandro and Tran, Muoi and Vanbever, Laurent and Vissicchio, Stefano},
+  journal = {arXiv preprint arXiv:2507.20434},
+  year = {2025},
+  eprint = {2507.20434},
+  archiveprefix = {arXiv},
+  annote = {DFOH and BEAM are data-poisoning evadable; key threat-to-validity}
+}
+
+@inproceedings{shi2012argus,
+  title = {Detecting Prefix Hijackings in the {Internet} with {Argus}},
+  author = {Shi, Xingang and Xiang, Yang and Wang, Zhiliang and Yin, Xia and Wu, Jianping},
+  booktitle = {Proc. 2012 Internet Measurement Conference ({IMC} '12)},
+  year = {2012},
+  pages = {15--28},
+  publisher = {ACM},
+  doi = {10.1145/2398776.2398779},
+  annote = {Verified 2026-11-01 via api.crossref.org (DOI 10.1145/2398776.2398779)}
+}
+
+@inproceedings{holterbach2024dfoh,
+  title = {A System to Detect Forged-Origin {BGP} Hijacks},
+  author = {Holterbach, Thomas and Alfroy, Thomas and Phokeer, Amreesh and Dainotti, Alberto and Pelsser, Cristel},
+  booktitle = {Proc. 21st USENIX Symposium on Networked Systems Design and Implementation ({NSDI} 24)},
+  year = {2024},
+  annote = {Forged-origin hijack detector; the standard system baseline (evadable)},
+  pages = {1751--1770},
+  url = {https://www.usenix.org/conference/nsdi24/presentation/holterbach}
+}
+
+@inproceedings{beam2024,
+  title = {Learning with Semantics: Towards a Semantics-Aware Routing Anomaly Detection System},
+  author = {Chen, Yihao and Yin, Qilei and Li, Qi and Liu, Zhuotao and Xu, Ke and Xu, Yi and Xu, Mingwei and Liu, Ziqian and Wu, Jianping},
+  eprint = {2402.16025},
+  archiveprefix = {arXiv},
+  annote = {USENIX Security 2024; 18 RouteViews sets, 11B+ announcements; strongest large-scale baseline (evadable)},
+  booktitle = {Proc. 33rd USENIX Security Symposium ({USENIX} Security 24)},
+  pages = {5143--5160},
+  year = {2024},
+  url = {https://www.usenix.org/conference/usenixsecurity24/presentation/chen-yihao}
+}
+
+@inproceedings{anoshift2022,
+  title = {{AnoShift}: A Distribution Shift Benchmark for Unsupervised Anomaly Detection},
+  author = {Dragoi, Marius and Burceanu, Elena and Haller, Emanuela and Manolache, Andrei and Brad, Florin},
+  eprint = {2206.15476},
+  archiveprefix = {arXiv},
+  annote = {IID/NEAR/FAR temporal-split protocol to import into Thread B (never applied to BGP)},
+  booktitle = {Advances in Neural Information Processing Systems 35 ({NeurIPS} 2022), Datasets and Benchmarks Track},
+  pages = {32854--32867},
+  year = {2022}
+}
+
+@article{wang2026gatae,
+  title = {Large-Scale {BGP} Routing Anomaly Detection Based on Graph Attention Auto-Encoder},
+  author = {Wang, Zekang and Yuan, Fuxiang and Qiu, Han and Liu, Yan and Luo, Xiangyang},
+  journal = {IEEE Transactions on Network and Service Management},
+  year = {2026},
+  annote = {NOTE: index-confirmed only (doc 11328038); the only fully-2026 GNN method found},
+  volume = {23},
+  pages = {487--501},
+  doi = {10.1109/TNSM.2025.3631527}
+}
+
+@article{hide2025,
+  title = {Data-Plane Telemetry to Mitigate Long-Distance {BGP} Hijacks},
+  author = {Sengupta, Satadal and Kim, Hyojoon and Jubas, Daniel and Apostolaki, Maria and Rexford, Jennifer},
+  journal = {arXiv preprint arXiv:2507.14842},
+  year = {2025},
+  eprint = {2507.14842},
+  archiveprefix = {arXiv}
+}
+
+@article{torch2026,
+  title = {{TORCH}: Characterizing Invalid Route Filtering via Tunnelled Observation},
+  author = {Tian, Renrui and Li, Yahui and Yin, Xia and Zhang, Han and Shi, Xingang and Wang, Zhiliang},
+  journal = {arXiv preprint arXiv:2603.29207},
+  year = {2026},
+  eprint = {2603.29207},
+  archiveprefix = {arXiv}
+}
+
+@inproceedings{bgpstream2016,
+  title = {{BGPStream}: A Software Framework for Live and Historical {BGP} Data Analysis},
+  author = {Orsini, Chiara and King, Alistair and Giordano, Danilo and Giotsas, Vasileios and Dainotti, Alberto},
+  booktitle = {ACM IMC},
+  year = {2016},
+  url = {https://bgpstream.caida.org},
+  doi = {10.1145/2987443.2987482},
+  pages = {429--444}
+}
+
+@misc{grip,
+  year = {2026},
+  title = {{GRIP}: Global Routing Intelligence Platform},
+  author = {{Georgia Tech InetIntel}},
+  url = {https://grip.inetintel.cc.gatech.edu},
+  lastaccessed = {October 29, 2026},
+  annote = {Hijack-event tagging/labels (Georgia Tech InetIntel, not CAIDA). Year = year of access: undated, continuously updated resource. Accessed 2026-10-29}
+}
+
+@misc{madory2026ephemeral,
+  title = {Ephemeral Leaks and Automated {BGP} Route Leak Detection},
+  author = {Madory, Doug},
+  howpublished = {APNIC Blog},
+  year = {2026},
+  annote = {Most leaks are sub-second; false-positive framing for the ephemeral-leak analysis},
+  url = {https://blog.apnic.net/2026/05/25/ephemeral-leaks-and-automated-bgp-route-leak-detection/},
+  month = may
+}
+
+@inproceedings{netllm2024,
+  title     = {{NetLLM}: Adapting Large Language Models for Networking},
+  author = {Wu, Duo and Wang, Xianda and Qiao, Yaqi and Wang, Zhi and Jiang, Junchen and Cui, Shuguang and Wang, Fangxin},
+  booktitle = {ACM SIGCOMM}, year = {2024},
+  annote      = {Flagship LLM-for-networking paper; positioning anchor for Thread A/C}
+}
+
+% =====================================================================
+% Entries added 2026-09-13 for the IMC draft (sections 02–04 and the RPKI/ROV line).
+% Details taken from docs/research/2026-09-07-related-work.md,
+% docs/research/2026-09-09-rpki-rov-propagation-prior-art.md, docs/research/2026-09-03-scoop-check.md
+% and docs/paper/draft-back.md. Fields the notes do not establish carry `note = {VERIFY: ...}`;
+% author lists marked VERIFY were completed from memory and must be checked against the source.
+% =====================================================================
+
+% ==== convergence and vantage points ====
+
+% Verified against RFC text and IETF metadata, 2026-09-18.
+% RFC 7196 prints "Pradosh" in its author address section.
+@techreport{rfc7196,
+  title = {Making Route Flap Damping Usable},
+  author = {Pelsser, Cristel and Bush, Randy and Patel, Keyur and Mohapatra, Pradosh and Maennel, Olaf},
+  institution = {IETF},
+  type = {RFC},
+  number = {7196},
+  year = {2014},
+  month = may,
+  doi = {10.17487/RFC7196},
+  url = {https://www.rfc-editor.org/rfc/rfc7196}
+}
+
+@techreport{rfc4271,
+  title = {A Border Gateway Protocol 4 ({BGP}-4)},
+  author = {Rekhter, Yakov and Li, Tony and Hares, Susan},
+  institution = {IETF},
+  type = {RFC},
+  number = {4271},
+  year = {2006},
+  month = jan,
+  doi = {10.17487/RFC4271},
+  url = {https://www.rfc-editor.org/rfc/rfc4271}
+}
+
+% Author order follows the paper, not the University of Arizona metadata.
+% https://irl.cs.ucla.edu/data/files/papers/cheng2010bgp.pdf
+% Journal fields and DOI checked against the university record, 2026-09-18.
+@article{cheng2010monitorfailures,
+  title = {Longitudinal Study of {BGP} Monitor Session Failures},
+  author = {Cheng, Pei-chun and Zhao, Xin and Zhang, Beichuan and Zhang, Lixia},
+  journal = {ACM SIGCOMM Computer Communication Review},
+  volume = {40},
+  number = {2},
+  pages = {34--42},
+  year = {2010},
+  month = apr,
+  doi = {10.1145/1764873.1764879},
+  url = {https://irl.cs.ucla.edu/data/files/papers/cheng2010bgp.pdf}
+}
+
+@inproceedings{labovitz2000delayed,
+  title = {Delayed {Internet} Routing Convergence},
+  author = {Labovitz, Craig and Ahuja, Abha and Bose, Abhijit and Jahanian, Farnam},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2000},
+  pages = {175--187},
+  doi = {10.1145/347057.347428}
+}
+
+@inproceedings{mao2002damping,
+  title = {Route Flap Damping Exacerbates {Internet} Routing Convergence},
+  author = {Mao, Z. Morley and Govindan, Ramesh and Varghese, George and Katz, Randy H.},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2002},
+  doi = {10.1145/633025.633047}
+}
+
+@inproceedings{mao2003convergence,
+  title = {{BGP} Beacons},
+  author = {Mao, Z. Morley and Bush, Randy and Griffin, Timothy G. and Roughan, Matthew},
+  booktitle = {Proc. ACM IMC},
+  year = {2003},
+  doi = {10.1145/948205.948207}
+}
+
+@inproceedings{zhang2007,
+  title = {On the Impact of Route Monitor Selection},
+  author = {Zhang, Ying and Zhang, Zheng and Mao, Z. Morley and Hu, Y. Charlie and Maggs, Bruce MacDowell},
+  booktitle = {Proc. ACM IMC},
+  year = {2007},
+  doi = {10.1145/1298306.1298336},
+  pages = {215--220}
+}
+
+@inproceedings{oliveira2009completeness,
+  title     = {Quantifying Path Exploration in the {Internet}},
+  author = {Oliveira, Ricardo and Zhang, Beichuan and Pei, Dan and Izhak-Ratzin, Rafit and Zhang, Lixia},
+  booktitle = {Proc. ACM IMC},
+  year      = {2006},
+  doi       = {10.1145/1177080.1177116}
+}
+
+% ==== relationships and leaks ====
+
+@article{gao2001relationships,
+  title = {On Inferring Autonomous System Relationships in the {Internet}},
+  author = {Gao, Lixin},
+  journal = {IEEE/ACM Transactions on Networking},
+  volume = {9},
+  number = {6},
+  pages = {733--745},
+  year = {2001},
+  doi = {10.1109/90.974527}
+}
+
+@article{gaorexford2001stable,
+  title = {Stable {Internet} Routing without Global Coordination},
+  author = {Gao, Lixin and Rexford, Jennifer},
+  journal = {IEEE/ACM Transactions on Networking},
+  volume = {9},
+  number = {6},
+  pages = {681--692},
+  year = {2001},
+  doi = {10.1109/90.974523}
+}
+
+@inproceedings{luckie2013relationships,
+  title = {{AS} Relationships, Customer Cones, and Validation},
+  author = {Luckie, Matthew and Huffaker, Bradley and Dhamdhere, Amogh and Giotsas, Vasileios and claffy, kc},
+  booktitle = {Proc. ACM IMC},
+  year = {2013},
+  pages = {243--256},
+  doi = {10.1145/2504730.2504735}
+}
+
+@inproceedings{jin2019problink,
+  title = {Stable and Practical {AS} Relationship Inference with {ProbLink}},
+  author = {Jin, Yuchen and Scott, Colin and Dhamdhere, Amogh and Giotsas, Vasileios and Krishnamurthy, Arvind and Shenker, Scott},
+  booktitle = {Proc. USENIX NSDI},
+  year = {2019},
+  url = {https://www.usenix.org/conference/nsdi19/presentation/jin}
+}
+
+@inproceedings{jin2020toposcope,
+  title = {{TopoScope}: Recover {AS} Relationships from Fragmentary Observations},
+  author = {Jin, Zitong and Shi, Xingang and Yang, Yan and Yin, Xia and Wang, Zhiliang and Wu, Jianping},
+  booktitle = {Proc. ACM IMC},
+  year = {2020},
+  pages = {266--280},
+  doi = {10.1145/3419394.3423627}
+}
+
+@techreport{rfc7908,
+  title = {Problem Definition and Classification of {BGP} Route Leaks},
+  author = {Sriram, Kotikalapudi and Montgomery, Doug and McPherson, Danny and Osterweil, Eric and Dickson, Brian},
+  institution = {IETF},
+  type = {RFC},
+  number = {7908},
+  year = {2016},
+  url = {https://www.rfc-editor.org/rfc/rfc7908.txt},
+  month = jun,
+  doi = {10.17487/RFC7908}
+}
+
+@techreport{rfc9234,
+  title = {Route Leak Prevention and Detection Using Roles in {UPDATE} and {OPEN} Messages},
+  author = {Azimov, Alexander and Bogomazov, Eugene and Bush, Randy and Patel, Keyur and Sriram, Kotikalapudi},
+  institution = {IETF},
+  type = {RFC},
+  number = {9234},
+  year = {2022},
+  url = {https://www.rfc-editor.org/rfc/rfc9234.txt}
+}
+
+@misc{cloudflare2022leakdetection,
+  title = {How We Detect Route Leaks and Our New {Cloudflare Radar} Route Leak Service},
+  author = {Zhang, Mingwei and Giotsas, Vasilis and Martinho, Celso},
+  howpublished = {Cloudflare Blog},
+  year = {2022},
+  url = {https://blog.cloudflare.com/route-leak-detection-with-cloudflare-radar/},
+  month = nov,
+  lastaccessed = {October 29, 2026},
+  annote = {Accessed 2026-10-29}
+}
+
+@misc{cloudflare2023hijack,
+  title = {{Cloudflare Radar}'s New {BGP} Origin Hijack Detection System},
+  author = {Zhang, Mingwei and Martinho, Celso},
+  howpublished = {Cloudflare Blog},
+  year         = {2023},
+  month        = jul,
+  url          = {https://blog.cloudflare.com/bgp-hijack-detection/},
+  lastaccessed = {October 29, 2026},
+  annote       = {Accessed 2026-10-29}
+}
+
+% ==== hijack detection and evaluation critique ====
+
+@article{milolidakis2023,
+  title = {On the Effectiveness of {BGP} Hijackers That Evade Public Route Collectors},
+  author = {Milolidakis, Alexandros and B{\"u}hler, Tobias and Wang, Kunyu and Chiesa, Marco and Vanbever, Laurent and Vissicchio, Stefano},
+  journal = {IEEE Access},
+  volume = {11},
+  year = {2023},
+  doi = {10.1109/ACCESS.2023.3261128}
+}
+
+@inproceedings{liu2026,
+  title = {The Surprising Effectiveness of {LLMs} in {BGP} Security: Mining An Unprecedented Amount of Incidents and Boosting Anomaly Detection},
+  author = {Liu, Libin and Yang, Wenzhou and Chen, Li and Li, Dan and Xu, Xiuting},
+  booktitle = {Proc. IEEE ICNP},
+  year = {2026},
+  eprint = {2608.22812},
+  archiveprefix = {arXiv},
+  url = {https://github.com/vvcode1/RouteLLM}
+}
+
+@inproceedings{sanchez2019,
+  title = {Comparing Machine Learning Algorithms for {BGP} Anomaly Detection Using Graph Features},
+  author = {Sanchez, Odnan Ref and Ferlin, Simone and Pelsser, Cristel and Bush, Randy},
+  booktitle = {Proc. ACM CoNEXT Workshop on Big Data, Machine Learning and Artificial Intelligence for Data Communication Networks (Big-DAMA)},
+  year = {2019},
+  doi = {10.1145/3359992.3366640}
+}
+
+@inproceedings{hoarau2021,
+  title = {Suitability of Graph Representation for {BGP} Anomaly Detection},
+  author = {Hoarau, Kevin and Tournoux, Pierre Ugo and Razafindralambo, Tahiry},
+  booktitle = {Proc. IEEE LCN},
+  year = {2021},
+  doi = {10.1109/LCN52139.2021.9524941}
+}
+
+@article{graphbgp2025,
+  title = {{GraphBGP}: {BGP} Anomaly Detection Based on Dynamic Graph Learning},
+  author = {Wu, Zheng and Li, Yanbiao and Wang, Xin and Diao, Zulong and Fan, Weibei and Xiao, Fu and Xie, Gaogang},
+  journal = {IEEE Transactions on Information Forensics and Security},
+  year = {2025},
+  doi = {10.1109/TIFS.2025.3607239}
+}
+
+@inproceedings{madbgp2026,
+  title     = {When {BGP} Goes {MAD}: Multi-Scale Anomaly Detection in {Internet} Routing},
+  author    = {Loye, Justin and Bautista, Esteban and Fontugne, Romain},
+  booktitle = {Proc. ACM IMC},
+  year      = {2026},
+  url       = {https://conferences.sigcomm.org/imc/2026/accepted-papers/}
+}
+
+% ==== temporal graph learning ====
+
+@inproceedings{kumar2019,
+  title = {Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks},
+  author = {Kumar, Srijan and Zhang, Xikun and Leskovec, Jure},
+  booktitle = {Proc. ACM KDD},
+  year = {2019},
+  eprint = {1908.01207},
+  archiveprefix = {arXiv},
+  annote = {JODIE.}
+}
+
+@inproceedings{trivedi2019dyrep,
+  title = {{DyRep}: Learning Representations over Dynamic Graphs},
+  author = {Trivedi, Rakshit and Farajtabar, Mehrdad and Biswal, Prasenjeet and Zha, Hongyuan},
+  booktitle = {Proc. ICLR},
+  year = {2019},
+  url = {https://openreview.net/forum?id=HyePrhR5KX}
+}
+
+@inproceedings{xu2020tgat,
+  title = {Inductive Representation Learning on Temporal Graphs},
+  author = {Xu, Da and Ruan, Chuanwei and Korpeoglu, Evren and Kumar, Sushant and Achan, Kannan},
+  booktitle = {Proc. ICLR},
+  year = {2020},
+  eprint = {2002.07962},
+  archiveprefix = {arXiv},
+  annote = {TGAT.}
+}
+
+@article{rossi2020tgn,
+  title = {Temporal Graph Networks for Deep Learning on Dynamic Graphs},
+  author = {Rossi, Emanuele and Chamberlain, Ben and Frasca, Fabrizio and Eynard, Davide and Monti, Federico and Bronstein, Michael},
+  journal = {arXiv preprint arXiv:2006.10637},
+  year = {2020},
+  eprint = {2006.10637},
+  archiveprefix = {arXiv}
+}
+
+@inproceedings{poursafaei2022,
+  title = {Towards Better Evaluation for Dynamic Link Prediction},
+  author = {Poursafaei, Farimah and Huang, Shenyang and Pelrine, Kellin and Rabbany, Reihaneh},
+  booktitle = {Proc. NeurIPS Datasets and Benchmarks Track},
+  volume = {35},
+  pages = {32928--32941},
+  year = {2022},
+  doi = {10.52202/068431-2386},
+  eprint = {2207.10128},
+  archiveprefix = {arXiv},
+  annote = {EdgeBank.}
+}
+
+@inproceedings{huang2023tgb,
+  title     = {Temporal Graph Benchmark for Machine Learning on Temporal Graphs},
+  author    = {Huang, Shenyang and Poursafaei, Farimah and Danovitch, Jacob and Fey, Matthias and Hu, Weihua and Rossi, Emanuele and Leskovec, Jure and Bronstein, Michael and Rabusseau, Guillaume and Rabbany, Reihaneh},
+  booktitle = {Proc. NeurIPS Datasets and Benchmarks Track},
+  volume    = {36},
+  pages     = {2056--2073},
+  year      = {2023},
+  doi       = {10.52202/075280-0099},
+  eprint    = {2307.01026},
+  archivePrefix = {arXiv},
+  annote = {TGB.}
+}
+
+% ==== time-series foundation models ====
+
+@inproceedings{das2023timesfm,
+  title = {A Decoder-Only Foundation Model for Time-Series Forecasting},
+  author = {Das, Abhimanyu and Kong, Weihao and Sen, Rajat and Zhou, Yichen},
+  year = {2024},
+  eprint = {2310.10688},
+  archiveprefix = {arXiv},
+  annote = {TimesFM.},
+  booktitle = {Proc. ICML},
+  series = {PMLR},
+  volume = {235},
+  pages = {10148--10167}
+}
+
+@inproceedings{woo2024moirai,
+  title = {Unified Training of Universal Time Series Forecasting Transformers},
+  author = {Woo, Gerald and Liu, Chenghao and Kumar, Akshat and Xiong, Caiming and Savarese, Silvio and Sahoo, Doyen},
+  year = {2024},
+  eprint = {2402.02592},
+  archiveprefix = {arXiv},
+  annote = {Moirai.},
+  booktitle = {Proc. ICML},
+  series = {PMLR},
+  volume = {235},
+  pages = {53140--53164}
+}
+
+@misc{ansari2025chronos2,
+  title = {Chronos-2: From Univariate to Universal Forecasting},
+  author = {Ansari, Abdul Fatir and Shchur, Oleksandr and K{\"u}ken, Jaris and Auer, Andreas and Han, Boran and Mercado, Pedro and Rangapuram, Syama Sundar and Shen, Huibin and Stella, Lorenzo and Zhang, Xiyuan and Goswami, Mononito and Kapoor, Shubham and Maddix, Danielle C. and Guerron, Pablo and Hu, Tony and Yin, Junming and Erickson, Nick and Desai, Prateek Mutalik and Wang, Hao and Rangwala, Huzefa and Karypis, George and Wang, Yuyang and Bohlke-Schneider, Michael},
+  howpublished = {arXiv preprint arXiv:2510.15821},
+  year = {2025}
+}
+
+@article{ansari2024chronos,
+  title = {Chronos: Learning the Language of Time Series},
+  author = {Ansari, Abdul Fatir and Stella, Lorenzo and Turkmen, Caner and Zhang, Xiyuan and Mercado, Pedro and Shen, Huibin and Shchur, Oleksandr and Rangapuram, Syama Sundar and Pineda Arango, Sebastian and Kapoor, Shubham and Zschiegner, Jasper and Maddix, Danielle C. and Wang, Hao and Mahoney, Michael W. and Torkkola, Kari and Wilson, Andrew Gordon and Bohlke-Schneider, Michael and Wang, Yuyang},
+  journal = {Transactions on Machine Learning Research},
+  year = {2024},
+  eprint = {2403.07815},
+  archiveprefix = {arXiv},
+  url = {https://openreview.net/forum?id=gerNCVqqtR}
+}
+
+@article{guthula2025netburst,
+  title = {{NetBurst}: Event-Centric Forecasting of Bursty, Intermittent Time Series},
+  author = {Guthula, Satyandra and Daneshamooz, Jaber and Fleming, Charles and Wu, Kesheng and Willinger, Walter and Gupta, Arpit},
+  journal = {arXiv preprint arXiv:2510.22397},
+  year = {2025},
+  eprint = {2510.22397},
+  archiveprefix = {arXiv},
+  annote = {v2 2026-06-10}
+}
+
+@inproceedings{liu2025,
+  title = {Time-Series Foundation Models for {ISP} Traffic Forecasting},
+  author = {Liu, Fan and Farkiani, Behrooz and Crowley, Patrick},
+  booktitle = {Proc. IEEE/IFIP NOMS},
+  year = {2026},
+  pages = {1--9},
+  doi = {10.1109/NOMS69089.2026.11668147},
+  eprint = {2511.17529},
+  archivePrefix = {arXiv}
+}
+
+% ==== contagion and simulation ====
+
+@inproceedings{goldberg2010secure,
+  title = {How Secure Are Secure Interdomain Routing Protocols?},
+  author = {Goldberg, Sharon and Schapira, Michael and Hummon, Peter and Rexford, Jennifer},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2010},
+  doi = {10.1145/1851182.1851195}
+}
+
+@inproceedings{gill2011letmarket,
+  title = {Let the Market Drive Deployment: A Strategy for Transitioning to {BGP} Security},
+  author = {Gill, Phillipa and Schapira, Michael and Goldberg, Sharon},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2011},
+  doi = {10.1145/2018436.2018439}
+}
+
+@inproceedings{lychev2013security,
+  title = {{BGP} Security in Partial Deployment: Is the Juice Worth the Squeeze?},
+  author = {Lychev, Robert and Goldberg, Sharon and Schapira, Michael},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2013},
+  doi = {10.1145/2486001.2486010}
+}
+
+@inproceedings{furuness2023,
+  title = {{BGPy}: The {BGP} {Python} Security Simulator},
+  author = {Furuness, Justin and Morris, Cameron and Morillo, Reynaldo and Herzberg, Amir and Wang, Bing},
+  booktitle = {Proc. Cyber Security Experimentation and Test Workshop (CSET)},
+  year = {2023},
+  pages = {41--56},
+  doi = {10.1145/3607505.3607509}
+}
+
+@inproceedings{sermpezis2021impact,
+  title = {Estimating the Impact of {BGP} Prefix Hijacking},
+  author = {Sermpezis, Pavlos and Kotronis, Vasileios and Arakadakis, Konstantinos and Vakali, Athena},
+  booktitle = {Proc. IFIP Networking},
+  year = {2021},
+  pages = {1--10},
+  doi = {10.23919/IFIPNetworking52078.2021.9472813},
+  eprint = {2105.02346},
+  archiveprefix = {arXiv},
+  url = {https://arxiv.org/pdf/2105.02346}
+}
+
+@inproceedings{shaman2026,
+  title = {Understanding the Stealthy {BGP} Hijacking Risk in the {ROV} Era},
+  author = {Chen, Yihao and Li, Qi and Xu, Ke and Liu, Zhuotao and Wu, Jianping},
+  booktitle = {Proc. NDSS},
+  year = {2026},
+  eprint = {2606.23071},
+  archiveprefix = {arXiv},
+  doi = {10.14722/ndss.2026.230097}
+}
+
+@inproceedings{cui2026,
+  title     = {Predict Boldly, Recover Cautiously: Fast On-Router Route Anomaly Prediction and Recovery},
+  author = {Cui, Hang and Hu, Cenjie and Wang, Zexin and Li, Jingjing and Hu, Juncheng and Pei, Dan and Pei, Changhua and Xie, Gaogang},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2026},
+  doi       = {10.1145/3789240.3830299}
+}
+
+% ==== RPKI / ROV measurement ====
+
+@techreport{rfc6480,
+  title = {An Infrastructure to Support Secure {Internet} Routing},
+  author = {Lepinski, Matt and Kent, Stephen},
+  institution = {IETF},
+  type = {RFC},
+  number = {6480},
+  year = {2012},
+  month = feb,
+  doi = {10.17487/RFC6480},
+  url = {https://www.rfc-editor.org/rfc/rfc6480.txt}
+}
+
+@techreport{rfc6811,
+  title = {{BGP} Prefix Origin Validation},
+  author = {Mohapatra, Pradosh and Scudder, John and Ward, David and Bush, Randy and Austein, Rob},
+  institution = {IETF},
+  type = {RFC},
+  number = {6811},
+  year = {2013},
+  month = jan,
+  doi = {10.17487/RFC6811},
+  url = {https://www.rfc-editor.org/rfc/rfc6811.txt}
+}
+
+@inproceedings{gilad2017,
+  title = {Are We There Yet? {On} {RPKI}'s Deployment and Security},
+  author = {Gilad, Yossi and Cohen, Avichai and Herzberg, Amir and Schapira, Michael and Shulman, Haya},
+  booktitle = {Proc. NDSS},
+  year = {2017},
+  url = {https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_06A-3_Gilad_paper.pdf}
+}
+
+@article{reuter2018rov,
+  title = {Towards a Rigorous Methodology for Measuring Adoption of {RPKI} Route Validation and Filtering},
+  author = {Reuter, Andreas and Bush, Randy and Cunha, {\'I}talo and Katz-Bassett, Ethan and Schmidt, Thomas C. and W{\"a}hlisch, Matthias},
+  journal = {ACM SIGCOMM Computer Communication Review},
+  volume = {48},
+  number = {1},
+  pages = {19--27},
+  year = {2018},
+  doi = {10.1145/3211852.3211856},
+  eprint = {1706.04263},
+  archiveprefix = {arXiv}
+}
+
+@inproceedings{chung2019rpki,
+  title = {{RPKI} is Coming of Age: A Longitudinal Study of {RPKI} Deployment and Invalid Route Origins},
+  author = {Chung, Taejoong and Aben, Emile and Bruijnzeels, Tim and Chandrasekaran, Balakrishnan and Choffnes, David and Levin, Dave and Maggs, Bruce M. and Mislove, Alan and van Rijswijk-Deij, Roland and Rula, John and Sullivan, Nick},
+  booktitle = {Proc. ACM IMC},
+  year = {2019},
+  pages = {406--419},
+  doi = {10.1145/3355369.3355596},
+  url = {https://www.khoury.northeastern.edu/home/amislove/publications/RPKI-IMC.pdf}
+}
+
+@inproceedings{testart2020filter,
+  title = {To Filter or Not to Filter: Measuring the Benefits of Registering in the {RPKI} Today},
+  author = {Testart, Cecilia and Richter, Philipp and King, Alistair and Dainotti, Alberto and Clark, David},
+  booktitle = {Proc. PAM},
+  series = {LNCS},
+  volume = {12048},
+  pages = {71--87},
+  year = {2020},
+  doi = {10.1007/978-3-030-44081-7_5},
+  url = {https://www.prichter.com/pam2020_rpki.pdf}
+}
+
+@inproceedings{li2023rovista,
+  title = {{RoVista}: Measuring and Analyzing the Route Origin Validation ({ROV}) in {RPKI}},
+  author = {Li, Weitong and Lin, Zhexiao and Ashiq, Md. Ishtiaq and Aben, Emile and Fontugne, Romain and Phokeer, Amreesh and Chung, Taejoong},
+  booktitle = {Proc. ACM IMC},
+  year = {2023},
+  doi = {10.1145/3618257.3624806},
+  url = {https://amreesh.github.io/assets/pdf/2023-rovista-imc.pdf},
+  pages = {73--88}
+}
+
+@inproceedings{hlavacek2023rov,
+  title = {Keep Your Friends Close, but Your Routeservers Closer: Insights into {RPKI} Validation in the {Internet}},
+  author = {Hlavacek, Tomas and Shulman, Haya and Vogel, Niklas and Waidner, Michael},
+  year = {2023},
+  eprint = {2303.11772},
+  archiveprefix = {arXiv},
+  url = {https://www.usenix.org/conference/usenixsecurity23/presentation/hlavacek},
+  booktitle = {Proc. USENIX Security Symposium},
+  pages = {4841--4858}
+}
+
+@inproceedings{li2026rscope,
+  title = {{RScope}: Unveiling Global {ROV} Deployments and Dependencies in the Post-{ROV} Era},
+  author = {Li, Weitong and Xu, Yongzhe and Zhang, Mingwei and Giotsas, Vasileios and Chung, Taejoong},
+  booktitle = {Proc. ACM IMC},
+  year = {2026},
+  pages = {888--902},
+  doi = {10.1145/3777912.3809144},
+  url = {https://weitongli.com/publications/papers/li-2026-rscope.pdf}
+}
+
+@inproceedings{li2026demystifying,
+  title = {Demystifying {RPKI}-Invalid Prefixes: Hidden Causes and Security Risks},
+  author = {Li, Weitong and Wan, Tao and Chung, Taejoong},
+  booktitle = {Proc. NDSS},
+  year = {2026},
+  url = {https://weitongli.com/publications/papers/li-2026-demystifying.pdf},
+  doi = {10.14722/ndss.2026.230161}
+}
+
+@misc{madory2022kentik,
+  title = {How Much Does {RPKI} {ROV} Reduce the Propagation of Invalid Routes?},
+  author = {Madory, Doug and Snijders, Job},
+  howpublished = {Kentik Blog},
+  month = aug,
+  year = {2022},
+  url = {https://www.kentik.com/blog/how-much-does-rpki-rov-reduce-the-propagation-of-invalid-routes/},
+  lastaccessed = {October 29, 2026},
+  annote = {Accessed 2026-10-29}
+}
+
+@misc{madory2024kentik,
+  title = {{RPKI} {ROV} Deployment Reaches Major Milestone},
+  author = {Madory, Doug and Snijders, Job},
+  howpublished = {Kentik Blog},
+  month = may,
+  year = {2024},
+  url = {https://www.kentik.com/blog/rpki-rov-deployment-reaches-major-milestone/},
+  lastaccessed = {October 29, 2026},
+  annote = {Accessed 2026-10-29}
+}
+
+@misc{huston2023apnic,
+  title = {How We Measure: {RPKI} {ROA} Signing and Route Origination Validation},
+  author = {Huston, Geoff},
+  howpublished = {APNIC Blog},
+  month = nov,
+  year = {2023},
+  url = {https://blog.apnic.net/2023/11/09/how-we-measure-rpki-roa-signing-and-route-origination-validation/}
+}
+
+@misc{cloudflare2020isbgpsafeyet,
+  title = {Is {BGP} Safe Yet? {No}. {But} We Are Tracking It Carefully},
+  author = {Poinsignon, Louis},
+  howpublished = {Cloudflare Blog and \url{https://isbgpsafeyet.com/}},
+  year = {2020},
+  url = {https://blog.cloudflare.com/is-bgp-safe-yet-rpki-routing-security-initiative/},
+  month = apr
+}
+
+@misc{ripe2011beacons,
+  title = {Routing Certification Beacons},
+  author = {Dranse, Mark},
+  howpublished = {RIPE Labs},
+  year = {2010},
+  url = {https://labs.ripe.net/author/markd/routing-certification-beacons/},
+  month = dec,
+  lastaccessed = {October 29, 2026},
+  annote = {Accessed 2026-10-29}
+}
+
+@misc{ripe_ris_routing_beacons,
+  year = {2026},
+  title = {Routing Beacons},
+  author = {{RIPE NCC}},
+  howpublished = {RIPE NCC Routing Information Service ({RIS}) documentation},
+  url = {https://ris.ripe.net/docs/routing-beacons/},
+  lastaccessed = {September 7, 2026},
+  annote = {Year = year of access: undated, continuously updated resource. Accessed 2026-09-07}
+}
+
+@misc{bgpkit,
+  title = {{BGPKIT}: {BGP} data processing tools ({bgpkit-parser}, {bgpkit-broker}) and peer statistics},
+  author = {{BGPKIT}},
+  howpublished = {\url{https://bgpkit.com/} and \url{https://github.com/bgpkit}},
+  year = {2026},
+  url = {https://data.bgpkit.com/peer-stats/},
+  lastaccessed = {October 29, 2026},
+  annote = {Software; no paper to cite (checked 2026-09-14). Accessed 2026-09-14; peer-stats URL accessed 2026-10-29; all three URLs returned HTTP 200 on 2026-10-29 (REFERENCE-VERIFICATION.md)}
+}
+
+@misc{ripe_ris,
+  year = {2026},
+  title = {Routing Information Service ({RIS}) raw data},
+  author = {{RIPE NCC}},
+  howpublished = {\url{https://ris.ripe.net/}},
+  url = {https://data.ris.ripe.net/},
+  lastaccessed = {September 20, 2026},
+  annote = {Year = year of access: undated, continuously updated resource. Accessed 2026-09-20}
+}
+
+@misc{routeviews,
+  year = {2026},
+  title = {{RouteViews} project},
+  author = {{University of Oregon}},
+  howpublished = {\url{https://www.routeviews.org/}. \href{https://doi.org/10.7264/1y7v-2d90}{doi:10.7264/1y7v-2d90}},
+  url = {https://archive.routeviews.org/},
+  lastaccessed = {September 20, 2026},
+  annote = {Year = year of access: undated, continuously updated resource. Accessed 2026-09-20. DOI from the RouteViews licence page (https://www.routeviews.org/routeviews/, checked 2026-10-30): "For citations, the DOI is 10.7264/1y7v-2d90"; data under CC BY 4.0 with attribution to RouteViews}
+}
+
+% ---- Data sources used as data (added 2026-10-30; each URL and title checked on that day) ----
+
+@misc{caida_asrel,
+  year = {2026},
+  title = {The {CAIDA} {AS} Relationships Dataset, January 2022 -- October 2026},
+  author = {{CAIDA}},
+  howpublished = {Monthly serial-1 files (as-rel and ppdc-ases)},
+  url = {https://www.caida.org/catalog/datasets/as-relationships/},
+  lastaccessed = {October 30, 2026},
+  annote = {Year = year of access (undated, continuously updated resource). Citation form required by the dataset page and the CAIDA public AUA (dataset name plus the date range used). Months used: 2022-01 to 2026-10 (src/bgbench/diffusion.py CAIDA_SERIAL1 and CAIDA_CONE; scripts/custodian_newperiod_identify.py MONTHS 202609, 202610). ppdc-ases is in the same serial-1 directory. Report the publication to CAIDA after acceptance.}
+}
+
+@misc{ripe_rpki_archive,
+  year = {2026},
+  title = {{RPKI} Repository Archive},
+  author = {{RIPE NCC}},
+  howpublished = {Daily {ROA} files for the five {RIR} trust anchors},
+  url = {https://ftp.ripe.net/rpki/},
+  lastaccessed = {October 30, 2026},
+  annote = {Year = year of access (undated, continuously updated resource). README.txt in that directory: "This directory contains the RIPE NCC's RPKI repository archive." Files used: <tal>.tal/YYYY/MM/DD/roas.csv.xz (scripts/fetch_roas.py).}
+}
+
+@misc{rovista_data,
+  year = {2026},
+  title = {{RoVista}},
+  author = {{RoVista}},
+  howpublished = {Per-{AS} {ROV} ratio series from the public {API}, \url{https://api.rovista.netsecurelab.org/rovista/api}},
+  url = {https://rovista.netsecurelab.org/},
+  lastaccessed = {October 31, 2026},
+  annote = {Page last accessed 2026-10-31 (terms check); the data series was fetched 2026-09-09. Year = year of access (undated, continuously updated resource). Page title "RoVista"; operating organisation not stated on the page, so the project name is the author. Development series fetched 2026-09-09, ending 2026-08-31 (scripts/fetch_rovista.py, scripts/custodian_fetch_rovista_extension.py).}
+}
+
+@misc{cloudflare_radar_bgp,
+  year = {2026},
+  title = {{BGP} Anomalies},
+  author = {{Cloudflare}},
+  howpublished = {Cloudflare Radar documentation. Hijack and route leak events from the Radar {API}, \texttt{radar/bgp/hijacks/events} and \texttt{radar/bgp/leaks/events}},
+  url = {https://developers.cloudflare.com/radar/investigate/bgp-anomalies/},
+  lastaccessed = {October 30, 2026},
+  annote = {Year = year of access (undated, continuously updated resource). Endpoints used: src/bgbench/labels.py CF_BASE + {hijacks,leaks}/events.}
+}
+
+@misc{cc_by_nc_sa_4,
+  title = {Attribution-{NonCommercial}-{ShareAlike} 4.0 International ({CC} {BY-NC-SA} 4.0), Legal Code},
+  author = {{Creative Commons}},
+  year = {2013},
+  url = {https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode},
+  lastaccessed = {November 1, 2026},
+  annote = {Licence page linked from https://downloads.pch.net/BGP_Routing_Data (checked 2026-11-01); version 4.0 published 2013.}
+}
+
+@misc{pch_mrt,
+  year = {2026},
+  title = {{MRT} Routing Updates},
+  author = {{Packet Clearing House}},
+  howpublished = {{PCH} route collector archive. Routing data under a Creative Commons Attribution-ShareAlike licence},
+  url = {https://downloads.pch.net/BGP_Routing_Data},
+  lastaccessed = {October 30, 2026},
+  annote = {Year = year of access (undated, continuously updated resource). Resource name and URL from the pch.net Resources menu (2026-10-30). The code reads https://downloads.pch.net/files/BGP_Routing_Data (src/bgbench/broker.py, verified 2026-09-09). Terms (checked 2026-11-01 on https://downloads.pch.net/BGP_Routing_Data): text 'Creative Commons Attribution ShareAlike 4.0', link to CC BY-NC-SA 4.0; the CC BY-NC-SA 3.0 statement on pch.net applies to the IXP directory API, not the routing data. The paper applies the stricter non-commercial ShareAlike terms (owner correction of the 2026-10-31 decision premise). The artifact releases no raw PCH data.}
+}
+
+% Added 2026-10-30 for sections/02-background.tex; metadata checked against Crossref (DOI records).
+% fontugne2019zombies: venue is PAM 2019 (LNCS), not IMC; the LNCS volume number could not be fetched directly, so it is left out.
+@inproceedings{holterbach2017swift,
+  title = {{SWIFT}: Predictive Fast Reroute},
+  author = {Holterbach, Thomas and Vissicchio, Stefano and Dainotti, Alberto and Vanbever, Laurent},
+  booktitle = {Proc. ACM SIGCOMM},
+  year = {2017},
+  pages = {460--473},
+  doi = {10.1145/3098822.3098856}
+}
+
+@inproceedings{fontugne2019zombies,
+  title = {{BGP} Zombies: An Analysis of Beacons Stuck Routes},
+  author = {Fontugne, Romain and Bautista, Esteban and Petrie, Colin and Nomura, Yutaro and Abry, Patrice and Gon{\c{c}}alves, Paulo and Fukuda, Kensuke and Aben, Emile},
+  booktitle = {Proc. Passive and Active Measurement Conference (PAM)},
+  publisher = {Springer},
+  year = {2019},
+  pages = {197--209},
+  doi = {10.1007/978-3-030-15986-3_13}
+}
+
+% Method citations added 2026-10-30 (final-gate review F11). Each entry was checked against a primary record:
+% GraphSAGE: proceedings.neurips.cc abstract page and its BibTeX (no page numbers there, so none given);
+% GAT: iclr.cc 2018 poster schedule (links openreview rJXMpikCZ) and arXiv 1710.10903 byline;
+% Holm: JSTOR stable 4615733 citation (vol. 6, no. 2, pp. 65-70; no registered DOI resolves);
+% LoRA: iclr.cc 2022 poster page (links openreview nZeVKeeFYf9) and arXiv 2106.09685 author list;
+% Kempe et al.: Crossref record of DOI 10.1145/956750.956769 (ACM; pages 137-146).
+@inproceedings{hamilton2017graphsage,
+  author    = {Hamilton, Will and Ying, Zhitao and Leskovec, Jure},
+  title     = {Inductive Representation Learning on Large Graphs},
+  booktitle = {Advances in Neural Information Processing Systems 30 ({NIPS} 2017)},
+  volume    = {30},
+  publisher = {Curran Associates, Inc.},
+  year      = {2017},
+  url       = {https://proceedings.neurips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html}
+}
+
+@inproceedings{velickovic2018gat,
+  author    = {Veli{\v{c}}kovi{\'c}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li{\`o}, Pietro and Bengio, Yoshua},
+  title     = {Graph Attention Networks},
+  booktitle = {International Conference on Learning Representations ({ICLR})},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=rJXMpikCZ}
+}
+
+@article{holm1979,
+  author  = {Holm, Sture},
+  title   = {A Simple Sequentially Rejective Multiple Test Procedure},
+  journal = {Scandinavian Journal of Statistics},
+  volume  = {6},
+  number  = {2},
+  pages   = {65--70},
+  year    = {1979},
+  url     = {https://www.jstor.org/stable/4615733}
+}
+
+@inproceedings{hu2022lora,
+  author    = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  title     = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  booktitle = {International Conference on Learning Representations ({ICLR})},
+  year      = {2022},
+  url       = {https://openreview.net/forum?id=nZeVKeeFYf9}
+}
+
+@inproceedings{kempe2003influence,
+  author    = {Kempe, David and Kleinberg, Jon and Tardos, {\'E}va},
+  title     = {Maximizing the Spread of Influence through a Social Network},
+  booktitle = {Proceedings of the Ninth {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining ({KDD})},
+  pages     = {137--146},
+  publisher = {ACM},
+  year      = {2003},
+  doi       = {10.1145/956750.956769}
+}

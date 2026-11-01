@@ -30,6 +30,15 @@ R2 (\S\ref{sec:forecast-newperiod}) & Identified leaks, 1 Sep--16 Oct 2026: \num
 \end{table}
 
 \subsection{Slow-regime experiments}\label{sec:forecast-legacy}
+% round 8 (layout): the ladder figure is defined at the start of the subsection, so it can float to the next page top before
+%   the body reaches it.
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/ladder-2025/ladder_leak200}
+\caption{Slow-regime ladder in 2024 (a, b) and 2025 (c, d), leaks selected by a final size of at least 200 ASes. (a, c) Jaccard gain over persistence at $\Dl=30$\,s (filled) and 60\,s (open), with paired event-bootstrap 95\,\% intervals. (b, d) sMAPE of the two-hour extent at 30\,s. History reaches almost the gain of the graph models, and the cascade falls below persistence. We scored at least 13 SAGE variants on the 2025 test split, so the best gain there is optimistic.}
+\Description{Two forecast ladders. In both years history, SAGE, GAT, TGN and DyRep-style gain over persistence with overlapping intervals, and the cascade loses; the extent error of persistence and cascade is far above that of history and the graph models.}
+\label{fig:ladder}
+\end{figure*}
 
 \paragraph{Task and candidates.}
 The slow regime holds the leaks that still grow at the issue time and reach at least 200 ASes by two hours.
@@ -53,13 +62,6 @@ The graph models are a GraphSAGE (SAGE)~\cite{hamilton2017graphsage} with an agg
 They share node features: degree, customer cone, onset visibility, valley counts and participation in completed past events.
 They share a membership head and a threshold tuned on training data.
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\linewidth]{figures/ladder-2025/ladder_leak200}
-\caption{Slow-regime ladder in 2024 (a, b) and 2025 (c, d), leaks selected by a final size of at least 200 ASes. (a, c) Jaccard gain over persistence at $\Dl=30$\,s (filled) and 60\,s (open), with paired event-bootstrap 95\,\% intervals. (b, d) sMAPE of the two-hour extent at 30\,s. History reaches almost the gain of the graph models, and the cascade falls below persistence. We scored at least 13 SAGE variants on the 2025 test split, so the best gain there is optimistic.}
-\Description{Two forecast ladders. In both years history, SAGE, GAT, TGN and DyRep-style gain over persistence with overlapping intervals, and the cascade loses; the extent error of persistence and cascade is far above that of history and the graph models.}
-\label{fig:ladder}
-\end{figure*}
 
 \paragraph{History reaches most of the graph-model gain.}
 At 30\,s, SAGE raises Jaccard from 0.509 to 0.708, a gain of $+0.198$ [$+0.178$, $+0.219$] (\Cref{fig:ladder}).
@@ -75,11 +77,11 @@ The independent cascade falls below persistence, and the count-only foundation m
 
 \paragraph{The gain lies in what is known at onset.}
 The gain over persistence falls with the horizon: $+0.198$, $+0.121$, $+0.047$ and $+0.016$ at 30\,s, 1, 5 and 15\,min.
-To test what the model knows at onset, we shift its trigger by $-30$\,s, so that it sees only the onset observations.
-It still reaches Jaccard 0.574, against 0.045 for persistence.
+With its trigger shifted by $-30$\,s, so that it sees only the onset observations, the model still reaches Jaccard 0.574, against 0.045 for persistence.
 Most of the Jaccard gain therefore comes from what the model knows at onset, not from the early spread of the event.
 It knows the seed ASes, the actor and the topology, and training on large leaks only gives it their typical final size.
-This finding shaped R1 and R2: they score only the ranking of new members, the ASes that join after issue time.
+This finding shaped R1 and R2: they score only the ranking of new members, which join after issue time.
+We made this switch after every learned arm had stayed at persistence in development Jaccard (\Cref{app:protocol}).
 % round 6 (panel-r6 NEW-4(a), T4; DA #1): the former "This information [present at onset] includes ... the selection by final size"
 %   called the final size onset information. The final size is unknown at onset (paragraph "Task and candidates" and sec:forecast); the model
 %   learns it only through its training split, which holds leaks of at least 200 ASes at 2 h (forecast-facts.json, 692 training events).
@@ -94,6 +96,38 @@ This finding shaped R1 and R2: they score only the ranking of new members, the A
 % layout (round 4, page limit): the paragraph "Other models and regimes" moved unchanged to sections/app-protocol.tex "Other slow-regime models".
 
 \subsection{Retrospective evaluation (R1)}\label{sec:forecast-r1}
+% round 8 (layout): tab:r1 is defined at the start of the subsection, so it can float to the next page top.
+\begin{table*}[t]
+\caption{R1 results on the selected leak candidates of September--December 2025. Upper: mean AP over eligible events (\num{2661} at 30\,s, \num{2130} at 60\,s), mean over five seeds; coverage (cov.) is the event-macro mean share of new members inside the candidate set, an upper limit of AP. Lower: paired AP differences with ordinary 95\,\% intervals over seeds and day blocks, not simultaneous and not Holm-adjusted, and Holm-adjusted $p$ (C1--C4: family of eight; native: family of two). ${\leq}$: Holm $p$ at the smallest value the bootstrap can give.}
+\label{tab:r1}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}[t]{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{30\,s} & \multicolumn{2}{c}{60\,s} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Arm & AP & cov. & AP & cov. \\
+\midrule
+SAGE, history & 0.212 & 0.834 & 0.200 & 0.844 \\
+SAGE, no history & 0.198 & 0.834 & 0.188 & 0.844 \\
+No message passing (MP), history & 0.194 & 0.834 & 0.184 & 0.844 \\
+No MP, no history & 0.130 & 0.834 & 0.124 & 0.844 \\
+Online history, shared candidates & 0.207 & 0.834 & 0.198 & 0.844 \\
+Online history, native candidates & 0.236 & 1.000 & 0.225 & 0.999 \\
+\bottomrule
+\end{tabular}\hfill
+\begin{tabular}[t]{@{}lcc@{}}
+\toprule
+Contrast (first minus second) & 30\,s: diff.\ [95\,\% CI] ($p$) & 60\,s: diff.\ [95\,\% CI] ($p$) \\
+\midrule
+C1 SAGE vs no MP, both with history & $+0.018$ [$+0.011$, $+0.025$] (${\leq}$.0016) & $+0.017$ [$+0.012$, $+0.022$] (${\leq}$.0016) \\
+C2 SAGE with history vs online history & $+0.005$ [$-0.000$, $+0.011$] (.13) & $+0.002$ [$-0.003$, $+0.008$] (.43) \\
+C3 SAGE: history vs none & $+0.014$ [$+0.008$, $+0.018$] (${\leq}$.0016) & $+0.013$ [$+0.007$, $+0.019$] (${\leq}$.0016) \\
+C4 no MP: history vs none & $+0.063$ [$+0.057$, $+0.070$] (${\leq}$.0016) & $+0.059$ [$+0.053$, $+0.065$] (${\leq}$.0016) \\
+SAGE with history vs native history & $-0.024$ [$-0.031$, $-0.017$] (${\leq}$.0004) & $-0.024$ [$-0.032$, $-0.017$] (${\leq}$.0004) \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 \paragraph{Task and metric.}
 R1 forecasts the selected leak candidates of 2025 (\Cref{tab:forecast-setups}).
@@ -126,37 +160,6 @@ R1 counts its 90 failed cells, all of TGN arms, as failures (\Cref{app:protocol}
 %   history sensitivities, as failures" is shortened; sections/app-protocol.tex "Failed arms" keeps the full account (1,156 declared, 90 failed).
 % src: paper/generated/r1-comparisons.json failed_cells (90: R-temporal 10, R-mean 10, R-temporal-order 10, R-delay 40 and R-withhold 20 with parent_arm R-temporal or R-mean)
 
-\begin{table*}[t]
-\caption{R1 results on the selected leak candidates of September--December 2025. Upper: mean AP over eligible events (\num{2661} at 30\,s, \num{2130} at 60\,s), mean over five seeds; coverage (cov.) is the event-macro mean share of new members inside the candidate set, an upper limit of AP. Lower: paired AP differences with ordinary 95\,\% intervals over seeds and day blocks, not simultaneous and not Holm-adjusted, and Holm-adjusted $p$ (C1--C4: family of eight; native: family of two). ${\leq}$: Holm $p$ at the smallest value the bootstrap can give.}
-\label{tab:r1}
-\small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}[t]{@{}lcccc@{}}
-\toprule
- & \multicolumn{2}{c}{30\,s} & \multicolumn{2}{c}{60\,s} \\
-\cmidrule(lr){2-3}\cmidrule(l){4-5}
-Arm & AP & cov. & AP & cov. \\
-\midrule
-SAGE, history & 0.212 & 0.834 & 0.200 & 0.844 \\
-SAGE, no history & 0.198 & 0.834 & 0.188 & 0.844 \\
-No message passing (MP), history & 0.194 & 0.834 & 0.184 & 0.844 \\
-No MP, no history & 0.130 & 0.834 & 0.124 & 0.844 \\
-Online history, shared candidates & 0.207 & 0.834 & 0.198 & 0.844 \\
-Online history, native candidates & 0.236 & 1.000 & 0.225 & 0.999 \\
-\bottomrule
-\end{tabular}\hfill
-\begin{tabular}[t]{@{}lcc@{}}
-\toprule
-Contrast (first minus second) & 30\,s: diff.\ [95\,\% CI] ($p$) & 60\,s: diff.\ [95\,\% CI] ($p$) \\
-\midrule
-C1 SAGE vs no MP, both with history & $+0.018$ [$+0.011$, $+0.025$] (${\leq}$.0016) & $+0.017$ [$+0.012$, $+0.022$] (${\leq}$.0016) \\
-C2 SAGE with history vs online history & $+0.005$ [$-0.000$, $+0.011$] (.13) & $+0.002$ [$-0.003$, $+0.008$] (.43) \\
-C3 SAGE: history vs none & $+0.014$ [$+0.008$, $+0.018$] (${\leq}$.0016) & $+0.013$ [$+0.007$, $+0.019$] (${\leq}$.0016) \\
-C4 no MP: history vs none & $+0.063$ [$+0.057$, $+0.070$] (${\leq}$.0016) & $+0.059$ [$+0.053$, $+0.065$] (${\leq}$.0016) \\
-SAGE with history vs native history & $-0.024$ [$-0.031$, $-0.017$] (${\leq}$.0004) & $-0.024$ [$-0.032$, $-0.017$] (${\leq}$.0004) \\
-\bottomrule
-\end{tabular}
-\end{table*}
 % src: paper/generated/r1-arm-levels.json; paper/generated/r1-comparisons.json (C1--C4: Holm over eight, p 0.0016 / 0.1272 / 0.4266;
 %   0.0016 = 8 x 0.0002, the Holm floor of a family of eight, so C1, C3 and C4 print as <= .0016 (round-3 review X5);
 %   native: separate family of two, Holm p <= 0.0004, the bootstrap floor). C2 30 s interval [-0.0003, 0.0107] prints as [-0.000, +0.011].
@@ -400,7 +403,8 @@ The frozen minus the refitted SAGE with history is $-0.008$ [$-0.015$, $-0.001$]
 
 \paragraph{Secondary lanes.}
 Five secondary lanes expand the candidates, use seven of the ten collectors, fix stable peers, shift the input timing, or forecast origin changes.
-Two disclosed re-scorings scored 290 of the 344 secondary roles, without intervals or tests, and each recomputed the primary result identically (\Cref{app:protocol,tab:r2-lanes}).
+Two disclosed re-scorings scored 290 of the 344 secondary roles, without intervals or tests (\Cref{app:protocol,tab:r2-lanes}).
+Each reproduced the primary result apart from a marker path.
 Seven of ten collectors lower the recorded full-target Jaccard of SAGE by 0.07 to 0.12 against the fixed ten-collector target.
 The arm without message passing moves by about as much, so this lane measures input sensitivity, not forecast skill or global visibility.
 % src (round 7, criteria M3(b), (c), M14): newperiod-lanes.json reduced_collectors groups (full_reference): SAGE -0.0731..-0.1220, none

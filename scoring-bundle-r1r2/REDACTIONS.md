@@ -6,9 +6,9 @@ The bundle is an anonymized copy. Identity markers were replaced by neutral plac
 
 | Rule | What it replaces | Placeholder | Replacements |
 |---|---|---|---|
-| P01 | cluster path: forecasting root of the project storage | `<FORECAST_ROOT>` | 22,909,579 |
-| P02 | cluster path: model storage root | `<MODELS_ROOT>` | 890,364 |
-| P03 | cluster path: results storage root | `<RESULTS_ROOT>` | 17,419,677 |
+| P01 | cluster path: forecasting root of the project storage | `<FORECAST_ROOT>` | 22,909,615 |
+| P02 | cluster path: model storage root | `<MODELS_ROOT>` | 890,376 |
+| P03 | cluster path: results storage root | `<RESULTS_ROOT>` | 17,419,694 |
 | P04 | cluster path: NFS export of the storage | `<CLUSTER_EXPORT>` | 3 |
 | P05 | cluster path: other storage mount, and its truncated fragments in interleaved log lines | `<CLUSTER_STORAGE>` | 6,436 |
 | P06 | storage/project directory name, and its fragments in interleaved log lines | `<PROJECT_STORAGE>` | 6,435 |
@@ -16,7 +16,7 @@ The bundle is an anonymized copy. Identity markers were replaced by neutral plac
 | P08 | home directory path | `<HOME>` | 38 |
 | P09 | AI agent session scratch directory | `<AGENT_SCRATCH>` | 0 |
 | P10 | AI agent temporary directory | `<AGENT_TMP>` | 11 |
-| P11 | private project/repository name (it also names a public dataset of the author), and its fragments | `<PROJECT>` | 1,007,957 |
+| P11 | private project/repository name (it also names a public dataset of the author), and its fragments | `<PROJECT>` | 1,007,986 |
 | E01 | e-mail address | `<EMAIL>` | 0 |
 | N01 | cluster user name | `<USER>` | 18,475,280 |
 | N02 | personal account name | `<USER>` | 2 |
@@ -28,7 +28,7 @@ The bundle is an anonymized copy. Identity markers were replaced by neutral plac
 | I03 | institution gateway host | `<GATEWAY_HOST>` | 1 |
 | I04 | institution name | `<INSTITUTION>` | 0 |
 | I05 | institution city/region | `<LOCATION>` | 0 |
-| H01 | cluster batch host name | `<BATCH_HOST>` | 845,856 |
+| H01 | cluster batch host name | `<BATCH_HOST>` | 845,861 |
 | H02 | cluster submit host name | `<SUBMIT_HOST>` | 107 |
 | H03 | personal workstation host name | `<WORKSTATION>` | 35 |
 | H04 | cluster compute node name | `<COMPUTE_NODE>` | 17,629,756 |
@@ -44,7 +44,7 @@ Rule A04 keeps the word before the identifier (for example `session `) and repla
 
 ## Binary files
 
-4 pickles contained storage-root paths inside string values: `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/families/counts.pkl.part0000`, `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/families/membership-ordinary.pkl.part0000`, `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/families/stable.pkl.part0000`, `cluster/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/stable-result-raw.pkl.part0000`. Only rules P01 to P03 and P11 were applied to them, as same-length byte replacements (the placeholder is padded with underscores to the original length), so each pickle still loads and every other byte is unchanged. The other 10 binary files hold no marker and are byte-identical to the originals.
+4 pickles contained storage-root paths inside string values: `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/families/counts.pkl.part0000`, `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/families/membership-ordinary.pkl.part0000`, `cluster/data-custodian/single-R2-v1/arms/000/rescore-secondary-D-A39/families/stable.pkl.part0000`, `cluster/data-custodian/single-R2-v1/arms/000/rescore-stable-D-A40/stable-result-raw.pkl.part0000`. Only rules P01 to P03 and P11 were applied to them, as same-length byte replacements (the placeholder is padded with underscores to the original length), so each pickle still loads and every other byte is unchanged. The other 23 binary files hold no marker and are byte-identical to the originals.
 
 ## Effect on recorded hashes
 
@@ -52,7 +52,7 @@ Many records cite the SHA-256 of other files (seal, freeze, marker, receipts, fa
 
 ## Replacements per file
 
-954 files changed. Counts per rule:
+958 files changed. Counts per rule:
 
 | File | Replacements by rule |
 |---|---|
@@ -995,7 +995,9 @@ Many records cite the SHA-256 of other files (seal, freeze, marker, receipts, fa
 | `repo/docs/paper/forecasting-improvement-20261017/EXPOSURE-LEDGER-DRAFT.json` | H01 1, H03 1, P11 1 |
 | `repo/docs/paper/newperiod-final-20261030/facts/facts.json` | P01 1 |
 | `repo/docs/paper/r2-report-20261030/primary.json` | P01 1 |
+| `repo/paper/generated/allowlist_by_year.json` | P03 14, P11 14 |
 | `repo/paper/generated/newperiod-lanes.json` | P01 14 |
+| `repo/paper/generated/roa_anchor_check.json` | H01 2, P01 35, P02 9, P11 9 |
 | `repo/scratch/experiment-finish-20261030/audit/validate_final_data.py` | P01 17, P03 1, P05 1 |
 | `repo/scratch/experiment-finish-20261030/code-backup/docs/experiment-completion-20261030/deviation-D-A39.md` | N05 1 |
 | `repo/scratch/experiment-finish-20261030/code-backup/docs/experiment-completion-20261030/runner-review.md` | H02 1, P03 1 |
@@ -1005,7 +1007,9 @@ Many records cite the SHA-256 of other files (seal, freeze, marker, receipts, fa
 | `repo/scratch/experiment-finish-20261030/review-validator-snapshot-rev5.py` | P01 17, P03 1, P05 1 |
 | `repo/scratch/experiment-finish-20261030/review-validator-snapshot-v2.py` | P01 17, P03 1, P05 1 |
 | `repo/scratch/experiment-finish-20261030/review-validator-snapshot.py` | H01 1, P01 1, P03 1, P05 1 |
+| `repo/scripts/paper_allowlist_by_year.py` | H01 2, P02 2, P03 2, P11 4 |
 | `repo/scripts/paper_month_boundary.py` | P05 2 |
+| `repo/scripts/paper_roa_anchor_check.py` | H01 1, P01 1, P02 1, P03 1, P11 2 |
 | `repo/src/bgbench/config.py` | H01 1, P02 1, P03 2, P11 3 |
 | `repo/src/bgbench/forecast_retrospective_custody.py` | P01 1 |
 | `repo/src/bgbench/parse.py` | P03 1, P11 1 |

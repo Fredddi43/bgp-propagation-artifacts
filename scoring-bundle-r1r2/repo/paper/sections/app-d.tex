@@ -40,11 +40,9 @@ It gives instructions to reproduce the main tables and figures with Python 3.12.
 % src: docs/artifacts-release.md; public release MANIFEST.json and REPRODUCE.md
 % src: docs/artifacts-release.md (release of 16 October 2026: 115 graph-model results, retained final checkpoints, 27 event tables).
 
-The package dates from 16 October 2026, before R1 and R2.
-It does not yet hold the R1 report or the R2 forecasts and labels.
-It also lacks the freeze and seal ledgers, the access log, the deviation ledger and the review records.
+The package dates from 16 October 2026, before R1 and R2, so it holds no R1 or R2 results, ledgers or review records.
 
-Before submission, we will upload these items as a separate scoring bundle with these contents:
+On 1 November 2026, we added a scoring bundle in the directory \texttt{scoring-bundle-r1r2} of the same repository, with these contents:
 \begin{itemize}
 \item the R1 report, the R1 per-event score files of every arm, the R2 primary result and the R2 per-event scores
 \item the R1 test labels and the R2 label file, both derived from public archives
@@ -54,7 +52,7 @@ Before submission, we will upload these items as a separate scoring bundle with 
 \item the freeze, seal and deviation ledgers, the access log of the custodian and the review records
 \item the scripts, inputs and outputs of the revision analyses
 \item the records of the two re-scorings of the secondary lanes, with their completion and validator records, the validator and the scripts that extract their table
-\item the inputs of the leak audit, except the CAIDA relationship and AS-to-organisation files, which a reader obtains from CAIDA
+\item the inputs of the leak audit, except the CAIDA files and the RIPEstat downloads, which a reader obtains from these public sources
 \item a manifest with the size and SHA-256 hash of every file
 \end{itemize}
 The per-event score files name no forecast AS and no new member, and only the R2 files name the seeds (\Cref{app:protocol}).
@@ -83,12 +81,18 @@ The checker needs about 3 minutes on a workstation in its fast mode.
 
 The revision analyses of the R1 and R2 scores run as Python scripts on a workstation in minutes, from the released per-event scores.
 The allowlist and trust-anchor checks of \Cref{sec:data} read intermediate replay outputs and the ROA archive, which the bundle does not hold.
-To score R2 again, the runner of the evaluator reads the freeze, the seal and the label file.
+
+The released R2 per-event scores support every R2 aggregate of the paper, but re-scoring R2 needs the unreleased sealed forecasts.
+With them, the runner of the evaluator reads the freeze, the seal and the label file.
 Each of our runs requested about 2\,TB of memory on one node.
 Attempt 12 ran for 8 hours, and the two re-scorings for 15 and 2 hours.
 % src (round 7, EIC B6, B7; criterion M9(d)): sacct 52700052 Elapsed 08:12:57, 52728251 14:53:03, 52750274 01:54:06; memory request
 %   1,950,000 MiB (DEVIATIONS-LEDGER.md D-A35c; Slurm MaxRSS sums the parallel workers and is not printed). Runner: the evaluator's runner.py.
-\pending{upload of the scoring bundle, with its manifest hash, and refresh of the anonymous mirror}
+Its manifest has the SHA-256 hash \texttt{649eac5b2b65d482}\ldots, and a restore script checks every file against it.
+% src: upload of 2026-11-01 (author approval "Upload when ready"): the anonymous repository behind the BE40 mirror, commits ccff7a5e, c85b413d,
+%   f963dc38 (anonymous identity); scoring-bundle-r1r2/MANIFEST.json sha256 649eac5b2b65d4825c425757a3cf698de59054df776aa3afe2637555ced44bcf,
+%   PUBLISHED.json 2d6af053967ecef19acb82c07e88b252b8a54c0b89eea41455217225e2004722; restore_bundle.py --check passed on the pushed clone.
+%   The BE40 mirror serves the repository after the owner refreshes it in the 4open.science dashboard.
 % src (round 4, panel-r4 P6 / T3, NEW-7; review-r4 W3 and section 8 item 3): scratch/release-scoring-bundle-20261031/README.md
 %   ("What would go in" table) and MANIFEST.json (schema bgbench-scoring-bundle-staging/1, 2,014 entries; summary_by_component: r1_results,
 %   r1_forecasts incl. 1,066 per-event score tables and the prediction ledger, raw R1 forecasts 432,123,440,381 bytes "decision needed: size";
@@ -99,18 +103,18 @@ Attempt 12 ran for 8 hours, and the two re-scorings for 15 and 2 hours.
 %   No date is printed: the upload waits for the D-A39 run, a size decision for the raw R1 forecasts and an anonymity pass (README "Before the
 %   upload" 1--3). The README's author decision of 2026-10-31 (full bundle before submission) stands.
 % Round 5 (2026-11-01; panel-r5 V5 / T1, review-r5 W5): "Before submission, we will upload" is now printed, per the authors' decision
-%   of 2026-10-31 (full scoring bundle before submission); still no date, and the \pending line stays until the upload.
+%   of 2026-10-31 (full scoring bundle before submission); uploaded on 2026-11-01 (manifest hash printed above).
 % src: docs/artifacts-release.md; scratch/release-public-final-20261016/MANIFEST.json (2,193 paths, none new-period, seal, ledger, review or R1).
 % Author decision of 2026-10-31: release the FULL scoring bundle before submission (R1/R2 forecasts and labels derived from public data,
 %   evaluator and wrappers, freeze/seal/deviation ledgers, access log, review records, hashes, refreshed anonymous mirror).
 %   NOT released when this text was written. Staging list (local only, nothing uploaded): scratch/release-scoring-bundle-20261031/{README.md,MANIFEST.json}.
-%   FLIP after the upload: replace the two "does not yet hold / lacks" sentences and the \pending line with a description of the
+%   Done 2026-11-01: the two "does not yet hold / lacks" sentences and the \pending line were replaced by a description of the
 %   released bundle, its package date and the manifest hash, and update item [3] of the comment list below.
 % Round 6 (2026-11-01; panel-r6 M2 (a), (b), T3; review-r6 W4): owner instruction of 2026-11-01 (authors' release decision: the full
 %   scoring bundle; the 432 GB raw R1 forecasts are too large for the anonymous mirror, so "available on request / later archival deposit"
 %   replaces "their place of publication is still open"). Bundle list: the lane records are added as one item (family, completion and validator
 %   records of the D-A39 re-scoring and the lane-extraction scripts: paper/generated/newperiod-lanes.json records, extraction, validator; the
-%   D-A40 records join it after that run). The release stays under the \pending line. Round 7: the released copies of generated files carry
+%   D-A40 records join it after that run). Uploaded 2026-11-01. Round 7: the released copies of generated files carry
 %   placeholders for hosts and paths (printed above); the audit inputs a reader must obtain are listed; the allowlist needle matches 03-data.
 
 The code is under the MIT licence.
@@ -124,7 +128,7 @@ Because the two licences conflict, the scoring bundle holds no PCH-derived file.
 %   is left as published.
 % src (round 7, criterion M8(b)): scratch/release-public-final-20261016/MANIFEST.json: data/eventset/2024_pchorigin/*, data/eventset/2024_leakpch/*
 %   (events, pch_vs_public, persistence splits, summary) and data/verification/frozen-event-ids/2024_{pchorigin,leakpch}.parquet.
-The 16 October package holds no raw PCH data, only derived per-event counts and AS sets.
+The 16 October package holds no raw PCH data, only derived counts and AS sets in two event sets, under the linked CC~BY-NC-SA~4.0.
 % src: author decision 2026-10-31 (PCH terms CC BY-NC-SA 3.0 for IXP routing data; refs.bib pch_mrt). The 16 October package holds PCH-derived
 %   per-event tables only: data/eventset/2024_{leakpch,pchorigin}/{events,pch_vs_public}.parquet, summary/scope JSON and persistence CSVs
 %   (scratch/release-public-final-20261016/MANIFEST.json); events.parquet carries per-event AS counts and AS sets (set_* columns), so
@@ -142,6 +146,7 @@ BGPKIT states that its peer statistics are free to use for any legal purpose~\ci
 The RIPE NCC requires attribution for commercial use of RIS data~\cite{ripe_ris}.
 Its terms of service limit the redistribution of its data, so we release no RIS archive file.
 The event tables hold derived research results, event times and AS sets, and our data card names RIS as their source.
+We read these derived tables as outside the redistribution restriction, which in our reading covers the RIS data themselves.
 % Author decision 2026-11-01: release the derived tables as research results with RIS attribution (no RIPE NCC request).
 % round 7 (review-r6 W5, Open Science "RIS sentence"): release basis stated. Terms of service: https://www.ripe.net/about-us/legal/terms-of-service/
 %   Art. 3.5 (src comment below). Data card: scratch/release-public-final-20261016/docs/benchmark/data-card.md lines 6 and 42 ("RIPE RIS:
@@ -203,20 +208,20 @@ The package manifest lists the size and SHA-256 hash of every file, so a reader 
 This appendix describes the package whose manifest has the SHA-256 hash \texttt{a05edbba0c4fb182b55f3019a3568298\allowbreak 6dc2d27530daeb70ef54030a86b6596b}.
 % src (round 4, panel-r4 P6 / NEW-7 "print the manifest hash the paper describes"): docs/artifacts-release.md ("Its manifest SHA-256 is
 %   a05edbba0c4fb182b55f3019a35682986dc2d27530daeb70ef54030a86b6596b"; 2,194 published files, 3,559,198,650 bytes). The anonymous mirror served
-%   the initial manifest 48818b1b... when last checked (same file, "Publication status"); its refresh is part of the \pending line above.
+%   the initial manifest 48818b1b... when last checked (same file, "Publication status"); its refresh is the owner's step after the 2026-11-01 upload.
 % round-3 review NEW-9: "such as the anonymous mirror" removed, because the mirror served its initial manifest when last checked (item [3] below).
 % Release plan: docs/artifacts/release-20261030/DECISIONS-FOR-AUTHORS.md proposed D1--D13 on 2026-10-30 (D3/D4: hold the new-period material
 %   and the deviation ledger until the evaluation is final). The authors decided on 2026-10-31 to release the FULL scoring bundle before
-%   submission (see the comment after the \pending line above); this supersedes D1--D4 and D12 of that proposal.
+%   submission (see the upload comment above); this supersedes D1--D4 and D12 of that proposal.
 % AUTHOR FACTS (peer review 2, check (5) and (a)1; kept as a comment, not printed).
 %   Closed on 2026-10-31 (author answers to the owner): no BGP announcements or active probes and no software vulnerability (sec:ethics,
 %   both confirmed true); the approval sentence and the tool list of sec:genai (confirmed as written); PCH terms (CC BY-NC-SA 3.0 for
 %   IXP routing data, cited through pch_mrt; no raw PCH data released).
 %   Still open:
-%   [3] release of the scoring bundle: decided (full bundle before submission), NOT yet uploaded; the printed \pending line marks it.
+%   [3] release of the scoring bundle: decided (full bundle before submission), uploaded 2026-11-01 (scoring-bundle-r1r2; manifest hash printed).
 %       Refresh the anonymous mirror BE40, which still served its INITIAL manifest 48818b1b... when last checked on 16 October 2026
 %       (docs/artifacts-release.md "Publication status"); the corrected package manifest a05edbba... is now printed (round 4).
-%       The planned bundle contents are now printed as a list (round 4); FLIP after the upload as described under the \pending line.
+%       The planned bundle contents are now printed as a list (round 4); flipped after the 2026-11-01 upload.
 %   [4] terms of the data sources (round 4, checked on the official pages on 2026-10-31):
 %       RIPE RIS: printed (commercial-use attribution, see the src comment under the licence paragraph). Open: whether the general RIPE NCC
 %         terms of service (Art. 3.5, no re-distribution) or the RIPE Data Repository terms (Art. 3(2), 3(3); round-6 check of 2026-11-01, src

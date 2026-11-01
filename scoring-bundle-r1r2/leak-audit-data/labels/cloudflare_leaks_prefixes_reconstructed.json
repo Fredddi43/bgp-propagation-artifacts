@@ -1,0 +1,13 @@
+{
+ "radar_leaks": 104111,
+ "matched_to_our_events": 10868,
+ "exact_count_match": 8698,
+ "our_ge_radar": 10134,
+ "ratio_p10_p50_p90": [
+  1.0,
+  1.0,
+  1.667
+ ],
+ "radar_prefix_count_p50": 1.0,
+ "our_prefix_count_p50": 1.0
+}

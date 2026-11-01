@@ -1,16 +1,16 @@
 {
  "schema": "bgbench-scoring-bundle/1",
- "status": "LOCAL STAGING (not uploaded). Anonymized copy; see README.md and REDACTIONS.md.",
- "written_utc": "2026-11-01T06:17:15Z",
+ "status": "Anonymized copy of the R1/R2 scoring records; see README.md and REDACTIONS.md.",
+ "written_utc": "2026-11-01T11:32:06Z",
  "redaction_rules_sha256": "4243a42696e1bcb0486dc2fe94bc90af7cc375cb58923fec1905bdcbf5a8b830",
  "build": {
   "mode": "incremental",
-  "reused_outputs": 3200
+  "reused_outputs": 3271
  },
  "totals": {
-  "files": 3238,
-  "bytes": 36346272682,
-  "redacted_files": 954
+  "files": 3284,
+  "bytes": 36536119051,
+  "redacted_files": 958
  },
  "summary_by_component": {
   "access_log": {
@@ -19,9 +19,9 @@
    "redacted_files": 1
   },
   "analysis_over_bundle": {
-   "files": 33,
-   "bytes": 19291877,
-   "redacted_files": 1
+   "files": 54,
+   "bytes": 20166561,
+   "redacted_files": 5
   },
   "approvals": {
    "files": 19,
@@ -38,14 +38,19 @@
    "bytes": 1321930,
    "redacted_files": 33
   },
+  "leak_audit_data": {
+   "files": 24,
+   "bytes": 188924927,
+   "redacted_files": 0
+  },
   "ledgers": {
    "files": 28,
    "bytes": 464920103,
    "redacted_files": 24
   },
   "paper_sections": {
-   "files": 14,
-   "bytes": 260926,
+   "files": 15,
+   "bytes": 307548,
    "redacted_files": 0
   },
   "r1_forecasts": {
@@ -75,7 +80,7 @@
   },
   "r2_lanes": {
    "files": 3,
-   "bytes": 107557,
+   "bytes": 107693,
    "redacted_files": 1
   },
   "r2_results": {
@@ -104,7 +109,7 @@
   "A02": 3,
   "A03": 5,
   "A04": 129,
-  "H01": 845856,
+  "H01": 845861,
   "H02": 107,
   "H03": 35,
   "H04": 17629756,
@@ -115,16 +120,16 @@
   "N01": 18475280,
   "N02": 2,
   "N05": 25,
-  "P01": 22909579,
-  "P02": 890364,
-  "P03": 17419677,
+  "P01": 22909615,
+  "P02": 890376,
+  "P03": 17419694,
   "P04": 3,
   "P05": 6436,
   "P06": 6435,
   "P07": 6693,
   "P08": 38,
   "P10": 11,
-  "P11": 1007957
+  "P11": 1007986
  },
  "problems": [],
  "excluded": [
@@ -23084,8 +23089,8 @@
   },
   {
    "path": "repo/scripts/paper_set_errors_r2.py",
-   "bytes": 31849,
-   "sha256": "a8f9f6b87ca33f28a4cba18ed4747e18804920a221d366e1c9eafbe8ba73fae6",
+   "bytes": 32426,
+   "sha256": "7f1bbb74713b6a18668636bf9b0565d201351fe8dee3f653c43b394341ce8903",
    "component": "analysis_over_bundle",
    "role": "paper analysis that reads the bundle, and its output",
    "source": "repository: scripts/paper_set_errors_r2.py",
@@ -23130,7 +23135,7 @@
   {
    "path": "repo/paper/generated/set_errors_r2.json",
    "bytes": 128643,
-   "sha256": "923e1f54424f144bc42c9356519b8dc81e4842e8b30cfa98b6101bfa0c030eb1",
+   "sha256": "15c1c0b83cce123558413524b076b351a889d202ff9f8cf9796985ee8c217b7d",
    "component": "analysis_over_bundle",
    "role": "paper analysis that reads the bundle, and its output",
    "source": "repository: paper/generated/set_errors_r2.json",
@@ -23138,8 +23143,8 @@
   },
   {
    "path": "repo/paper/generated/set_errors_r2.tex",
-   "bytes": 3150,
-   "sha256": "26d825af17414a3f28a817f4ae891792c81f84508e1f48c34c3e40f49277dde1",
+   "bytes": 3005,
+   "sha256": "b7073fb69c6d3b1831428aa0a3b700c18c9cdb88dab9c0584f13a85e2fe2835c",
    "component": "analysis_over_bundle",
    "role": "paper analysis that reads the bundle, and its output",
    "source": "repository: paper/generated/set_errors_r2.tex",
@@ -23229,8 +23234,8 @@
   {
    "path": "repo/paper/generated/newperiod-lanes.json",
    "bytes": 102527,
-   "sha256": "8e13e2fb36fe1850c75d5963b708a7ea3b64fc27074156eb2e774ad5d5f666fd",
-   "pre_redaction_sha256": "bad3c13a07851d87b5be83adc219356439a9ce709f8afb5fda2d5a7b27637195",
+   "sha256": "cc146652439c57fe631c9432c7018d3ea19bde89d6d197a3d4bee3660af5ef08",
+   "pre_redaction_sha256": "14962dd907dff23ac8cdd411b65ab6ff9667b455e82a87f46960664e95a2a87b",
    "pre_redaction_bytes": 103297,
    "component": "r2_lanes",
    "role": "R2 secondary-lane table of the paper (tab:r2-lanes) built from the D-A39 extraction",
@@ -23242,8 +23247,8 @@
   },
   {
    "path": "repo/paper/generated/newperiod-lanes.tex",
-   "bytes": 3902,
-   "sha256": "9de5fc5ef4c04983d9e1da25c24248982e8306a6b9ec3ad30e18d42bd6f3c269",
+   "bytes": 4038,
+   "sha256": "b07bc248b00d7aff1f2e8d0310a9adc6777ad64624c57788d6f33e429a5d35dd",
    "component": "r2_lanes",
    "role": "R2 secondary-lane table of the paper (tab:r2-lanes) built from the D-A39 extraction",
    "source": "repository: paper/generated/newperiod-lanes.tex",
@@ -23793,6 +23798,226 @@
    "kind": "text"
   },
   {
+   "path": "repo/scripts/paper_recovery_dayblock.py",
+   "bytes": 18009,
+   "sha256": "5d5ea40a3066170e02ac01f8a68f3435b93e12ff973cd49f22652bf62dc26438",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_recovery_dayblock.py",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/recovery_dayblock.json",
+   "bytes": 23654,
+   "sha256": "1826df00bd81df417ec8fa1bbebb5fd773f63849e9718712f12373c56ccfc793",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/recovery_dayblock.json",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/recovery_dayblock.tex",
+   "bytes": 3281,
+   "sha256": "3d1fd7bd4e7ac708d6a3ab7dbc6bb774b12351aa9243cbfcddac76c038edf6fe",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/recovery_dayblock.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/scripts/paper_measurement_checks.py",
+   "bytes": 31270,
+   "sha256": "7485c0e94f7d982a3d059c952226c36d246beb381877481c38190f8b25717073",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_measurement_checks.py",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/measurement-checks-facts.json",
+   "bytes": 43671,
+   "sha256": "4f44d57e0294904310ede01d0a8ec8a7f10a359a5609157ab2e8d3d05fa7978a",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/measurement-checks-facts.json",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/recovery_gap.tex",
+   "bytes": 2391,
+   "sha256": "9067e18b53102108117fa08bbe1e42111ef377a74501a9ecad116bf6f6607829",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/recovery_gap.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/recovery_summary_rows.tex",
+   "bytes": 833,
+   "sha256": "b6e72d3d5a181a3a4623fcf89045612ce979ea3e94e45c9b4c7df8f62ed0e69b",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/recovery_summary_rows.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/floor_bins.tex",
+   "bytes": 948,
+   "sha256": "eaa2ffe7d67235c9a8fa10357faabdd9f5452efa87adbd81c9dbf53a8afff855",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/floor_bins.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/frontier_diff.tex",
+   "bytes": 782,
+   "sha256": "ae01eb2d2208ff4b00e86b41354df33aa37ae0c828f6ae0da72f2be1a498d532",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/frontier_diff.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/floor_dayblock.tex",
+   "bytes": 1318,
+   "sha256": "12f394f59e65c2669de2435f2604f65d8f30c7f39c896f5333e77dff01436e1c",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/floor_dayblock.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/scripts/paper_allowlist_by_year.py",
+   "bytes": 28152,
+   "sha256": "131fd907fea5beb19ae2777b602bff8f52c5bd4ea3d882683a6128cd2b9b5aed",
+   "pre_redaction_sha256": "ea2dfaa4681bd3aae22191cc79f4130423582657f3e463c1f5011f22b6bdf97c",
+   "pre_redaction_bytes": 28224,
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_allowlist_by_year.py",
+   "kind": "text",
+   "redactions": {
+    "P02": 2,
+    "P03": 2,
+    "P11": 4,
+    "H01": 2
+   }
+  },
+  {
+   "path": "repo/paper/generated/allowlist_by_year.json",
+   "bytes": 80573,
+   "sha256": "89db3456311157d14f9928ff2911218acdc6ca0ec4765e9845f23ba9f1fca76a",
+   "pre_redaction_sha256": "79b1976f12d2cd3f8cad075beb1ec8733124fbceb28c4c8a811084c1729a70e8",
+   "pre_redaction_bytes": 80811,
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/allowlist_by_year.json",
+   "kind": "text",
+   "redactions": {
+    "P03": 14,
+    "P11": 14
+   }
+  },
+  {
+   "path": "repo/scripts/paper_roa_anchor_check.py",
+   "bytes": 42980,
+   "sha256": "2d31754527646e72f88b863f1c33efbe10db4d7ebc5b540a2b77916f488ab01f",
+   "pre_redaction_sha256": "d8ee7412b5ab0a4cba3712554f2cf92a83d0827bbcdf54253a5efcd2da721319",
+   "pre_redaction_bytes": 43071,
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_roa_anchor_check.py",
+   "kind": "text",
+   "redactions": {
+    "P01": 1,
+    "P02": 1,
+    "P03": 1,
+    "P11": 2,
+    "H01": 1
+   }
+  },
+  {
+   "path": "repo/paper/generated/roa_anchor_check.json",
+   "bytes": 275922,
+   "sha256": "2d2b16832d9f24e0f8a54c73c4291883cd3ead3159322db1c347f67e73abcecc",
+   "pre_redaction_sha256": "2194f5fb1851930e7c45ca978c3a2f51de0de27c0135a71d8e88f73626895a9b",
+   "pre_redaction_bytes": 278004,
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/roa_anchor_check.json",
+   "kind": "text",
+   "redactions": {
+    "P01": 35,
+    "P02": 9,
+    "P11": 9,
+    "H01": 2
+   }
+  },
+  {
+   "path": "repo/scripts/paper_onset_sensitivity.py",
+   "bytes": 3370,
+   "sha256": "f3f0a1811ce7d0791afa49bbec59f830347de49d3e36ef77ccc0e59dac5eaa5f",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_onset_sensitivity.py",
+   "kind": "text"
+  },
+  {
+   "path": "repo/scripts/paper_onset_sensitivity_ci.py",
+   "bytes": 3540,
+   "sha256": "f6862d2f271e32d5642718717a2622cc24e9df719f0dbb6ed72dc143ef8a7a8b",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_onset_sensitivity_ci.py",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/onset_sensitivity.json",
+   "bytes": 9263,
+   "sha256": "c52e0d4ab9c06fd10be0225bcf3a3753d029c1633dd0d0995676150a2a53aece",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/onset_sensitivity.json",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/onset_sensitivity_ci.json",
+   "bytes": 3739,
+   "sha256": "4cd6ab3c727e63bbd7f9b782070d40ff22dac073ffb374356aaebfaf56a39a09",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/onset_sensitivity_ci.json",
+   "kind": "text"
+  },
+  {
+   "path": "repo/scripts/paper_propagation_tables.py",
+   "bytes": 10645,
+   "sha256": "e858ea880a5711dd507b628195f3a05dbcc3a92de6cea5d15408c64ca0898635",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: scripts/paper_propagation_tables.py",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/propagation-facts.json",
+   "bytes": 272276,
+   "sha256": "d16512b2ce729bbe9933d3192ee61ccd46bf9f64e5e4c05922cce5eaee862299",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/propagation-facts.json",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/generated/frontier_facts.json",
+   "bytes": 17635,
+   "sha256": "805a96d288c1a175e5fb890fefb8e6aae2faada1462f9b15429dc6c1bd0096d2",
+   "component": "analysis_over_bundle",
+   "role": "paper revision analysis (script, dependency or output)",
+   "source": "repository: paper/generated/frontier_facts.json",
+   "kind": "text"
+  },
+  {
    "path": "repo/scripts/r1_rank_sidecar_check.py",
    "bytes": 15558,
    "sha256": "5b0d7470440273e22811c18de9236ee9966a87168778d145d921e688c29f03ef",
@@ -23803,8 +24028,8 @@
   },
   {
    "path": "repo/paper/sections/00-abstract.tex",
-   "bytes": 9872,
-   "sha256": "8879301cbb823388e3cb322c6a256434aa521908ea0036992aaa5e9f65123291",
+   "bytes": 9883,
+   "sha256": "90e43b9e642e63125fd4395a7c0a7d62d3cca2f596b55abf1a3b169cbb6c305b",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/00-abstract.tex",
@@ -23812,8 +24037,8 @@
   },
   {
    "path": "repo/paper/sections/01-intro.tex",
-   "bytes": 9606,
-   "sha256": "f3fb25fcd78cab24e25cb023fa259d093f0e291502f70d1a80db70ddbbab76ba",
+   "bytes": 9408,
+   "sha256": "4e7900919a8b34e3aedceb17104911a23fa304f2291947b3a010eacec02dcb66",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/01-intro.tex",
@@ -23821,8 +24046,8 @@
   },
   {
    "path": "repo/paper/sections/02-background.tex",
-   "bytes": 5759,
-   "sha256": "3894adc79c1cee25799d43c59ca09aafb7c3348e96b05ccc76b48dc683c0d80d",
+   "bytes": 5740,
+   "sha256": "f907ada2e2f704bc1e135b44af8ea32733b191f790d9dda8df7bc3bc582d56cb",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/02-background.tex",
@@ -23830,8 +24055,8 @@
   },
   {
    "path": "repo/paper/sections/03-data.tex",
-   "bytes": 16048,
-   "sha256": "d6b563d21efab3a46aaac85cbb9627d77100b8b20e1b7ccc528fc4b89e83d5d7",
+   "bytes": 16266,
+   "sha256": "81719db6612708ccc3cb13a2ed5d07d859ca43aa76920bce1ff7f1c0d3b09231",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/03-data.tex",
@@ -23839,8 +24064,8 @@
   },
   {
    "path": "repo/paper/sections/05-propagation.tex",
-   "bytes": 15532,
-   "sha256": "42be72e36cbd9671b8daa718e958da4613aa727aa44fc3573b97076c690ea202",
+   "bytes": 15756,
+   "sha256": "4b5921252e85e4499ec76dfc65bbb74841fd6e42d0a6bd4aca332d012f3aa072",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/05-propagation.tex",
@@ -23848,8 +24073,8 @@
   },
   {
    "path": "repo/paper/sections/06-recovery.tex",
-   "bytes": 10391,
-   "sha256": "72b8deb3064188d3371a3715bdcb4a6a8a579d4c1ae24f186b38872ab9d02eaf",
+   "bytes": 10381,
+   "sha256": "1779a80552a7c1fb1a4bc7f7df00545b943c0055dbb92cc7c1f414c08761c9fc",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/06-recovery.tex",
@@ -23857,8 +24082,8 @@
   },
   {
    "path": "repo/paper/sections/07-beacons.tex",
-   "bytes": 6460,
-   "sha256": "39693f09ae2fe6f1366515289c7645aa80ababcb116c8d8898ecea8c6db1f021",
+   "bytes": 6749,
+   "sha256": "86cba6f0b09a0404058eebffbaa61a05ffa945deb1abb2229f9a17eb802161be",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/07-beacons.tex",
@@ -23866,8 +24091,8 @@
   },
   {
    "path": "repo/paper/sections/08-forecast.tex",
-   "bytes": 41409,
-   "sha256": "20fac6aef4e9c0055ba974e2098f2001fe5117ebd7530fbcb3c82fdead58f403",
+   "bytes": 41756,
+   "sha256": "02be814a1576a6764848513d6061f65a464be33fe5df9fd627278991c97b26f1",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/08-forecast.tex",
@@ -23875,8 +24100,8 @@
   },
   {
    "path": "repo/paper/sections/09-discussion.tex",
-   "bytes": 13864,
-   "sha256": "6d580e2dc398845f1733e908a969e538abc4e3f395868bb8cdca2f4afcc1a0f1",
+   "bytes": 13869,
+   "sha256": "5ce03a12b7926c8e76c16f690a366aaae43090626c0cc03590d0ad03e6c0c6f6",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/09-discussion.tex",
@@ -23884,8 +24109,8 @@
   },
   {
    "path": "repo/paper/sections/10-conclusion.tex",
-   "bytes": 10072,
-   "sha256": "2d2490dd5d4bfcd72fe093c9e70ef0e933c7fa6b1fdd9947888efa04c39e9a96",
+   "bytes": 9821,
+   "sha256": "d9851dff278bc839800f15bb07e14c9ced84b1ed098196a7499104485ac1f4f9",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/10-conclusion.tex",
@@ -23902,8 +24127,8 @@
   },
   {
    "path": "repo/paper/sections/app-d.tex",
-   "bytes": 30260,
-   "sha256": "8e9539050b1bcc46618109f7e22edf4585d99011447a7e1857e21a509b42122b",
+   "bytes": 30987,
+   "sha256": "cc16e0ee2c110b84b79fef01f342d08de010173bdd0ea05d41328863322dcb27",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/app-d.tex",
@@ -23911,8 +24136,8 @@
   },
   {
    "path": "repo/paper/sections/app-protocol.tex",
-   "bytes": 73790,
-   "sha256": "29738782fd013ff8a63bcc79d5e05156f3c2ec3bcd0fb9807c75207b0c216c7c",
+   "bytes": 76160,
+   "sha256": "98ac4ee5820c279edc238956ef3aec828311db318f68b1916f401c8335e9d667",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/app-protocol.tex",
@@ -23920,11 +24145,20 @@
   },
   {
    "path": "repo/paper/sections/app-tables.tex",
-   "bytes": 16972,
-   "sha256": "08c121fb7a6039ad6fb9e5f9f23adc2f23e26abda602c10c8995193442df365e",
+   "bytes": 17133,
+   "sha256": "f3ace179ed04ae5c6c4aada9a9a13637caf6943f6a0935b2e2c5d60863d3f494",
    "component": "paper_sections",
    "role": "paper section source (repository HEAD)",
    "source": "repository: paper/sections/app-tables.tex",
+   "kind": "text"
+  },
+  {
+   "path": "repo/paper/refs.bib",
+   "bytes": 42748,
+   "sha256": "72c4336ed15b9da5209ff7ea0cfb688d3725f0da06687839abb28db61e03f03d",
+   "component": "paper_sections",
+   "role": "paper bibliography (repository HEAD)",
+   "source": "repository: paper/refs.bib",
    "kind": "text"
   },
   {
@@ -27277,6 +27511,292 @@
      "ok": true
     }
    ]
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-09-01_2025-09-30/events_leak_like_m2.parquet",
+   "bytes": 395550,
+   "sha256": "1605dc639b703c1deb7132e434a74e189c486fd801090293e6a0cf7ad46ec2c6",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-09-01_2025-09-30/events_leak_like_m2.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "1605dc639b703c1deb7132e434a74e189c486fd801090293e6a0cf7ad46ec2c6",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-09-01_2025-09-30/summary_leak_like_m2.json",
+   "bytes": 1282,
+   "sha256": "32d311c81a068e546e260638629b70d760553568b9d1e2f8b1341cb0817f4922",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-09-01_2025-09-30/summary_leak_like_m2.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-10-01_2025-10-31/events_leak_like_m2.parquet",
+   "bytes": 422108,
+   "sha256": "7d40d40c61c8b7e2fde03028644ceb661e99a9bff661944d92d2aa8bd2402f3a",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-10-01_2025-10-31/events_leak_like_m2.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "7d40d40c61c8b7e2fde03028644ceb661e99a9bff661944d92d2aa8bd2402f3a",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-10-01_2025-10-31/summary_leak_like_m2.json",
+   "bytes": 1290,
+   "sha256": "33254baa2dc96e069104de5e5d8b3037758801ca88672443aee2859d2452f5b3",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-10-01_2025-10-31/summary_leak_like_m2.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-11-01_2025-11-30/events_leak_like_m2.parquet",
+   "bytes": 401546,
+   "sha256": "9f069f3cef9758bc459bca1e021be23e7046020439636cab3aa24cf58c258670",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-11-01_2025-11-30/events_leak_like_m2.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "9f069f3cef9758bc459bca1e021be23e7046020439636cab3aa24cf58c258670",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-11-01_2025-11-30/summary_leak_like_m2.json",
+   "bytes": 1289,
+   "sha256": "e457fea827a74d17fdd0532e9cea3ad5f94b0247531c9ccce9e93ff88d3fec11",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-11-01_2025-11-30/summary_leak_like_m2.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-12-01_2025-12-31/events_leak_like_m2.parquet",
+   "bytes": 397890,
+   "sha256": "d76756af5968df9afd3f76bb69a8b95df0e77f8416ea40428d9330e92e0ff149",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-12-01_2025-12-31/events_leak_like_m2.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "d76756af5968df9afd3f76bb69a8b95df0e77f8416ea40428d9330e92e0ff149",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/leak_events/2025-12-01_2025-12-31/summary_leak_like_m2.json",
+   "bytes": 1285,
+   "sha256": "3b05b5ac344366b749c54f9f1a79b34d58a5412bfb60e7a42099bb2eb8c36bfc",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month leak-event tables of the identifier (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/leak_events/2025-12-01_2025-12-31/summary_leak_like_m2.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/triples/2025-08-01_2025-08-31/new_triples_classified.parquet",
+   "bytes": 27619687,
+   "sha256": "a5ae4aaec60ec4d1786c16c60660740efd31f0de13f9369e90ad47a5e8341179",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-08-01_2025-08-31/new_triples_classified.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "a5ae4aaec60ec4d1786c16c60660740efd31f0de13f9369e90ad47a5e8341179",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/triples/2025-08-01_2025-08-31/summary.json",
+   "bytes": 3379,
+   "sha256": "9e5fa6bda18711ba7ef9ce3f4e56841a7f6e11702e4735bc3c185f5114ca157c",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-08-01_2025-08-31/summary.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/triples/2025-09-01_2025-09-30/new_triples_classified.parquet",
+   "bytes": 30210862,
+   "sha256": "8b10628ee4205631fd3becd651450f8054997142bf3b214acdc26bb7baf4150a",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-09-01_2025-09-30/new_triples_classified.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "8b10628ee4205631fd3becd651450f8054997142bf3b214acdc26bb7baf4150a",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/triples/2025-09-01_2025-09-30/summary.json",
+   "bytes": 3378,
+   "sha256": "a8e55e653389e77011f77aa117fb7b1f1f5a7d6f0f2fd2a876b006df8c47f429",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-09-01_2025-09-30/summary.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/triples/2025-10-01_2025-10-31/new_triples_classified.parquet",
+   "bytes": 31353506,
+   "sha256": "99e3102017522e9683be3cb39986c802a5bd51fb353729a19a11842bd34e9b92",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-10-01_2025-10-31/new_triples_classified.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "99e3102017522e9683be3cb39986c802a5bd51fb353729a19a11842bd34e9b92",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/triples/2025-10-01_2025-10-31/summary.json",
+   "bytes": 3374,
+   "sha256": "811f3c54fabc66d04199b521994d90eb9e5d7279729d048d3df99f9560f348db",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-10-01_2025-10-31/summary.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/triples/2025-11-01_2025-11-30/new_triples_classified.parquet",
+   "bytes": 30241969,
+   "sha256": "508a614bd4a02ac1eeee1c1c6bb5dff1efa08943db2dc33f751620cae4fc99a8",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-11-01_2025-11-30/new_triples_classified.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "508a614bd4a02ac1eeee1c1c6bb5dff1efa08943db2dc33f751620cae4fc99a8",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/triples/2025-11-01_2025-11-30/summary.json",
+   "bytes": 3382,
+   "sha256": "ffd1682b114e70ef0a225d45956586140eed7bfa3b142965a9609b1b6e17375f",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-11-01_2025-11-30/summary.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/triples/2025-12-01_2025-12-31/new_triples_classified.parquet",
+   "bytes": 29136023,
+   "sha256": "9dd21034884029b0f49552f538124421df0e3bf2c18475dec24cebb4ae3b5c06",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-12-01_2025-12-31/new_triples_classified.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "9dd21034884029b0f49552f538124421df0e3bf2c18475dec24cebb4ae3b5c06",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/triples/2025-12-01_2025-12-31/summary.json",
+   "bytes": 3366,
+   "sha256": "84fef6be9de0e921eb04685353fbed65ef31b2838d34d80763d555d7f26e211b",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: month new-triple tables (pipeline-derived)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/triples/2025-12-01_2025-12-31/summary.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/labels/cloudflare_leaks.parquet",
+   "bytes": 2235951,
+   "sha256": "e9a7dda268d502c6bd0bb9f32e7f62d6879d327f84b42b1828a3a726bd9263b2",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: Cloudflare Radar route-leak labels and the replay selection (CC BY-NC 4.0)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/labels/cloudflare_leaks.parquet",
+   "kind": "binary",
+   "hash_checks": [
+    {
+     "against": "paper/generated/leak_audit.json inputs_sha256",
+     "expected": "e9a7dda268d502c6bd0bb9f32e7f62d6879d327f84b42b1828a3a726bd9263b2",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "path": "leak-audit-data/labels/cloudflare_leaks_prefixes_reconstructed.json",
+   "bytes": 223,
+   "sha256": "9f60b8dd494c3b5ec89d5a67c2ad338f14953430763cdceffbd20aeb066dc56f",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: Cloudflare Radar route-leak labels and the replay selection (CC BY-NC 4.0)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/labels/cloudflare_leaks_prefixes_reconstructed.json",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/labels/cloudflare_leaks_prefixes_reconstructed.parquet",
+   "bytes": 3134824,
+   "sha256": "79726a47e1389bc6544eb1949202ff905a68cc42817c2f846f434d7431297c5b",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: Cloudflare Radar route-leak labels and the replay selection (CC BY-NC 4.0)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/labels/cloudflare_leaks_prefixes_reconstructed.parquet",
+   "kind": "binary"
+  },
+  {
+   "path": "leak-audit-data/labels/events_ranked.parquet",
+   "bytes": 31880475,
+   "sha256": "7e7c7f487b5327866a8c328b3c782c344ddf6acf9df900ae2cd63ed1c1750037",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: Cloudflare Radar route-leak labels and the replay selection (CC BY-NC 4.0)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/labels/events_ranked.parquet",
+   "kind": "binary"
+  },
+  {
+   "path": "leak-audit-data/labels/leak_replay_manifest.tsv",
+   "bytes": 938179,
+   "sha256": "615f62d3e2a70c7165e5ada28360e3c87bd74211826741a3ba325741deac94d6",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: Cloudflare Radar route-leak labels and the replay selection (CC BY-NC 4.0)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/labels/leak_replay_manifest.tsv",
+   "kind": "text"
+  },
+  {
+   "path": "leak-audit-data/labels/leak_replay_selection.parquet",
+   "bytes": 534109,
+   "sha256": "045fa1abe50f8c32405439adc283ff41589e0a2ab2f5947a4a5fa946db78416b",
+   "component": "leak_audit_data",
+   "role": "leak-audit input: Cloudflare Radar route-leak labels and the replay selection (CC BY-NC 4.0)",
+   "source": "leak-audit input (read-only copy of the store files; paper_leak_audit.py --data): <data>/labels/leak_replay_selection.parquet",
+   "kind": "binary"
   },
   {
    "path": "cluster/r1-release-parallel-v11-20261024/control-v1/results/per_event/baseline-d30__history-knn-mean_matched_d30.json",
